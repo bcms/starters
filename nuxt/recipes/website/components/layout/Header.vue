@@ -1,12 +1,49 @@
 <template>
-  <header class="bg-appAccent text-appAccent/100 py-[13px]">
+  <header class="bg-appAccent">
     <nav>
       <div class="container">
-        <div class="flex items-center justify-between">
-          <div class="relative">
-            <NuxtLink to="/" class="flex w-[120px] h-auto">
+        <div
+          class="relative flex items-center justify-between py-[13px] max-md:justify-center md:py-4"
+        >
+          <div class="flex items-center">
+            <NuxtLink
+              to="/"
+              class="flex max-md:absolute max-md:left-0 max-md:-bottom-[50px] md:mr-8"
+              aria-label="Home page"
+            >
               <BCMSImage :media="data.logo" svg class="w-full" />
             </NuxtLink>
+            <ContentManager
+              :item="data.nav[0]"
+              class="text-sm leading-none tracking-[-0.41px] text-appAccent-100 underline transition-colors duration-300 hover:text-white focus-visible:text-white"
+            />
+          </div>
+          <button
+            class="flex items-center justify-center w-8 h-8 bg-white/70 rounded-full max-md:absolute max-md:right-0 max-md:-bottom-[54px] md:hidden"
+            @click="showMobileNav = !showMobileNav"
+            aria-label="Toggle mobile nav"
+          >
+            <XIcon
+              v-if="showMobileNav"
+              class="flex w-[18px] h-[18px] text-appAccent"
+            />
+            <MenuIcon v-else class="flex w-[18px] h-[18px]" />
+          </button>
+          <div
+            ref="navItemsDOM"
+            class="flex flex-col items-center gap-6 md:flex-row"
+            :class="[
+              showMobileNav
+                ? 'max-md:absolute max-md:-bottom-16 max-md:right-0 max-md:translate-y-full max-md:bg-white max-md:px-2 max-md:py-4 max-md:rounded max-md:shadow-lg'
+                : 'max-md:hidden',
+            ]"
+          >
+            <ContentManager
+              v-for="(navItem, index) in data.nav.slice(1)"
+              :key="index"
+              :item="navItem"
+              class="text-sm leading-none tracking-[-0.41px] text-appAccent/70 font-medium transition-colors duration-300 hover:text-appAccent focus-visible:text-appAccent md:text-appAccent-100 md:hover:text-white md:focus-visible:text-white"
+            />
           </div>
         </div>
       </div>
@@ -18,11 +55,42 @@
 import { PropType } from "vue";
 import { BCMSImage } from "~~/bcms-components";
 import { HeaderEntryMeta } from "~~/bcms/types";
+import MenuIcon from "@/assets/icons/nav/menu.svg";
+import XIcon from "@/assets/icons/nav/x.svg";
 
 defineProps({
   data: {
     type: Object as PropType<HeaderEntryMeta>,
     required: true,
   },
+});
+
+const navItemsDOM = ref<HTMLElement>();
+const showMobileNav = ref(false);
+
+const handleMobileNavClickOutside = (event: MouseEvent) => {
+  const navItemsEl = navItemsDOM.value as HTMLElement;
+
+  if (!navItemsEl.contains(event.target as Node)) {
+    showMobileNav.value = false;
+  }
+};
+
+watch(showMobileNav, (isOpen) => {
+  const navItemsEl = navItemsDOM.value;
+
+  if (navItemsEl) {
+    if (isOpen) {
+      setTimeout(() => {
+        document.addEventListener("click", handleMobileNavClickOutside);
+      }, 0);
+    } else {
+      document.removeEventListener("click", handleMobileNavClickOutside);
+    }
+  }
+});
+
+onMounted(() => {
+  showMobileNav.value = false;
 });
 </script>
