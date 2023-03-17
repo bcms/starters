@@ -1,6 +1,10 @@
 import { createBcmsNuxtConfig } from "nuxt-plugin-bcms/config";
 import bcmsRoutes from "./bcms.routes";
 
+const _ = require("lodash");
+const svgPrefix = {};
+svgPrefix.toString = () => `${_.uniqueId()}_`;
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   vite: {
@@ -26,6 +30,7 @@ export default defineNuxtConfig({
   },
   css: ["~/assets/css/main.css"],
   modules: [
+    "nuxt-svgo",
     [
       "nuxt-plugin-bcms",
       createBcmsNuxtConfig({
@@ -48,6 +53,20 @@ export default defineNuxtConfig({
       }),
     ],
   ],
+  svgo: {
+    svgoConfig: {
+      plugins: [
+        {
+          name: "preset-default",
+          params: {
+            overrides: {
+              cleanupIDs: { prefix: svgPrefix },
+            },
+          },
+        },
+      ],
+    },
+  },
   postcss: {
     plugins: {
       tailwindcss: {},

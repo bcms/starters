@@ -11,7 +11,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        appAccent: "#0A2213",
+        appAccent: {
+          100: "#9FA8A3",
+          DEFAULT: "#0A2213",
+        },
         appGray: {
           100: "#F9F7F5",
           200: "#E6E9E7",
@@ -21,6 +24,12 @@ module.exports = {
           600: "#4A4752",
           700: "#37353D",
           800: "#121212",
+        },
+      },
+      container: {
+        padding: {
+          DEFAULT: "1rem",
+          lg: "2rem",
         },
       },
       fontFamily: {

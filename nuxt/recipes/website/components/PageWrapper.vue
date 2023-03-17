@@ -1,5 +1,6 @@
 <template>
   <div>
+    <LayoutHeader :data="header" />
     <main>
       <slot />
     </main>
