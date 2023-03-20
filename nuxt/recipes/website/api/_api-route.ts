@@ -1,5 +1,10 @@
 import type { BCMSMost, BCMSMostServerRoute } from "@becomes/cms-most/types";
-import { HeaderEntry, HeaderEntryMeta } from "~/bcms/types";
+import {
+  FooterEntry,
+  FooterEntryMeta,
+  HeaderEntry,
+  HeaderEntryMeta,
+} from "~/bcms/types";
 import { APIResponse, Languages } from "~~/types";
 
 interface Route<Result = unknown, Body = unknown>
@@ -37,10 +42,15 @@ export function apiRoute<Result = unknown, Body = unknown>(
         "header",
         async (e) => e.meta.en.slug === "header"
       )) as unknown as HeaderEntry;
+      const footer = (await data.bcms.content.entry.findOne(
+        "footer",
+        async (e) => e.meta.en.slug === "footer"
+      )) as unknown as FooterEntry;
       const result = await route.handler(data);
       return {
         data: result,
         header: header.meta[lng] as HeaderEntryMeta,
+        footer: footer.meta[lng] as FooterEntryMeta,
       };
     },
   };
