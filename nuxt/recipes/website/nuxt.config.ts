@@ -14,6 +14,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      titleTemplate: `%s - Flavour Fushion`,
       link: [
         { rel: "preconnect", href: "https://fonts.googleapis.com" },
         {
@@ -28,7 +29,11 @@ export default defineNuxtConfig({
       ],
     },
   },
-  css: ["~/assets/css/main.css"],
+  css: [
+    "~/assets/css/main.css",
+    "~/assets/css/reset.css",
+    "~/assets/css/transition.css",
+  ],
   modules: [
     "nuxt-svgo",
     [

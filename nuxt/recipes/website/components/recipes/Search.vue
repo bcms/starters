@@ -1,0 +1,63 @@
+<template>
+  <div>
+    <label
+      class="flex items-center bg-white rounded-lg px-4 w-[300px] border border-transparent transition-colors duration-300 focus-within:border-appAccent"
+      :style="{
+        filter: 'drop-shadow(0px 0px 8px rgba(10, 34, 19, 0.25))',
+      }"
+    >
+      <SearchIcon class="w-5 h-5" />
+      <input
+        v-model="searchValue"
+        placeholder="Search recipes"
+        class="px-1.5 py-3 bg-transparent text-sm leading-none font-medium tracking-[-0.41px] w-full focus:outline-none"
+      />
+    </label>
+    <Transition name="fade">
+      <div
+        v-if="searchValue"
+        class="absolute -bottom-1 left-0 w-full translate-y-full grid grid-cols-1 gap-px bg-[#EBEBEB] border border-[#EBEBEB] rounded-lg overflow-hidden"
+      >
+        <template v-if="filteredRecipes.length > 0">
+          <NuxtLink
+            v-for="(recipe, index) in filteredRecipes"
+            :to="`/recipes/${recipe.slug}`"
+            :key="index"
+            class="flex bg-white px-4 py-3 text-sm leading-none font-medium tracking-[-0.41px] text-appGray-500 transition-colors duration-300 hover:text-appAccent"
+          >
+            {{ recipe.title }}
+          </NuxtLink>
+        </template>
+        <div
+          v-else
+          class="flex bg-white px-4 py-3 text-sm leading-none font-medium tracking-[-0.41px] text-appGray-500"
+        >
+          There are no recipes for that search term
+        </div>
+      </div>
+    </Transition>
+  </div>
+</template>
+
+<script setup lang="ts">
+import { PropType } from "vue";
+import SearchIcon from "@/assets/icons/search.svg";
+import { RecipeEntryMeta } from "~~/bcms/types";
+
+const props = defineProps({
+  recipes: {
+    type: Array as PropType<RecipeEntryMeta[]>,
+    required: true,
+  },
+});
+
+const searchValue = ref("");
+
+const filteredRecipes = computed(() => {
+  return props.recipes.filter((e) => {
+    return `${e.title} ${e.description}`
+      .toLowerCase()
+      .includes(searchValue.value.toLowerCase());
+  });
+});
+</script>

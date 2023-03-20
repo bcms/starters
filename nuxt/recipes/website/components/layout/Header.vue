@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-appAccent">
+  <header class="relative z-50 bg-appAccent">
     <nav>
       <div class="container">
         <div
