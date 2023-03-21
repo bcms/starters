@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white py-8 lg:py-20 xl:pt-[128px] xl:pb-[120px]">
+  <section class="py-8 lg:py-20 xl:pt-[128px] xl:pb-[120px]">
     <div class="container">
       <RecipesSearch
         :recipes="((data.recipes.map((e) => e.meta.en)) as RecipeEntryMeta[])"

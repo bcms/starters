@@ -9,5 +9,5 @@
 }
 
 body {
-  @apply font-Inter overflow-x-hidden bg-gray-400;
+  @apply font-Inter overflow-x-hidden bg-white;
 }
