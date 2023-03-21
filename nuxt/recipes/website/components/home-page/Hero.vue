@@ -20,7 +20,7 @@
         </div>
         <RecipesSearch
           :recipes="recipes"
-          class="absolute z-10 top-10 right-0 max-lg:hidden"
+          class="absolute z-10 top-10 right-0 w-[300px] max-lg:hidden"
         />
       </div>
     </div>

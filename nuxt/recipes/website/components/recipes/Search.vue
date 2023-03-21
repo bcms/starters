@@ -1,22 +1,25 @@
 <template>
   <div>
     <label
-      class="flex items-center bg-white rounded-lg px-4 w-[300px] border border-transparent transition-colors duration-300 focus-within:border-appAccent"
+      class="flex items-center w-full bg-white rounded-lg px-4 border transition-colors duration-300 focus-within:border-appAccent"
+      :class="[static ? 'border-[#DEDEDE]' : 'border-transparent']"
       :style="{
-        filter: 'drop-shadow(0px 0px 8px rgba(10, 34, 19, 0.25))',
+        filter: !static
+          ? 'drop-shadow(0px 0px 8px rgba(10, 34, 19, 0.25))'
+          : '',
       }"
     >
       <SearchIcon class="w-5 h-5" />
       <input
         v-model="searchValue"
         placeholder="Search recipes"
-        class="px-1.5 py-3 bg-transparent text-sm leading-none font-medium tracking-[-0.41px] w-full focus:outline-none"
+        class="px-1.5 py-3 bg-transparent text-sm leading-none font-medium tracking-[-0.41px] w-full placeholder:text-appGray-400 focus:outline-none"
       />
     </label>
     <Transition name="fade">
       <div
         v-if="searchValue"
-        class="absolute -bottom-1 left-0 w-full translate-y-full grid grid-cols-1 gap-px bg-[#EBEBEB] border border-[#EBEBEB] rounded-lg overflow-hidden"
+        class="absolute -bottom-1 left-0 w-full translate-y-full grid grid-cols-1 gap-px bg-[#EBEBEB] border border-[#EBEBEB] rounded-lg overflow-hidden max-h-[200px] overflow-y-auto"
       >
         <template v-if="filteredRecipes.length > 0">
           <NuxtLink
@@ -24,6 +27,7 @@
             :to="`/recipes/${recipe.slug}`"
             :key="index"
             class="flex bg-white px-4 py-3 text-sm leading-none font-medium tracking-[-0.41px] text-appGray-500 transition-colors duration-300 hover:text-appAccent"
+            v-click-outside="() => (searchValue = '')"
           >
             {{ recipe.title }}
           </NuxtLink>
@@ -48,6 +52,10 @@ const props = defineProps({
   recipes: {
     type: Array as PropType<RecipeEntryMeta[]>,
     required: true,
+  },
+  static: {
+    type: Boolean,
+    required: false,
   },
 });
 
