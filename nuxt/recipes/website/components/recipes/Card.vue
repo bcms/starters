@@ -17,11 +17,11 @@
       <div class="mb-4 lg:flex lg:flex-row-reverse lg:justify-between lg:mb-3">
         <div class="flex flex-wrap gap-2 mb-2.5">
           <div
-            v-for="(tag, index) in card.tags"
+            v-for="(category, index) in card.categories"
             :key="index"
             class="px-2.5 py-[7px] bg-[#BCBD87]/10 rounded-[5px] text-xs leading-none font-medium tracking-[-0.41px] text-appAccent lg:px-[14px] lg:py-[9px] lg:text-sm lg:leading-none"
           >
-            {{ tag.meta.en?.title }}
+            {{ category.meta.en?.title }}
           </div>
         </div>
         <div
