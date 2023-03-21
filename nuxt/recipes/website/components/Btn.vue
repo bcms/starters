@@ -2,7 +2,7 @@
   <component
     :is="to ? NuxtLink : 'button'"
     :to="to"
-    class="flex items-center leading-none font-medium transition-colors duration-300 border border-transparent lg:text-xl lg:leading-none"
+    class="flex items-center leading-none font-medium transition-colors duration-300 border border-transparent focus:outline-none lg:text-xl lg:leading-none"
     :class="[
       theme === 'light'
         ? 'bg-appGray-200 text-appAccent hover:bg-appAccent hover:text-appGray-200 hover:border-appGray-200'

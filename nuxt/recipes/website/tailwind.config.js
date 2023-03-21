@@ -25,6 +25,7 @@ module.exports = {
           700: "#37353D",
           800: "#121212",
         },
+        appWarning: "#FC5E5E",
       },
       container: {
         center: true,

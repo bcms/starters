@@ -3,6 +3,7 @@
     <HomePageHero :data="data.data.meta.hero" :recipes="data.data.recipes" />
     <HomePageRecipes :data="data.data.meta.recipes" />
     <HomePageAboutUs :data="data.data.meta.about_us" />
+    <HomePageLetsTalk :data="data.data.meta.lets_talk" />
   </PageWrapper>
 </template>
 
