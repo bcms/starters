@@ -5,8 +5,23 @@ import {
   RecipesPageEntry,
   RecipesPageEntryMeta,
 } from "~~/bcms/types";
-import { RecipesPageData } from "~~/types";
+import { RecipeLight, RecipesPageData } from "~~/types";
 import { apiRoute } from "./_api-route";
+
+export const recipeToLight = (recipes: RecipeEntry[]): RecipeLight[] => {
+  return recipes.map((e) => {
+    const meta = e.meta.en as RecipeEntryMeta;
+
+    return {
+      title: meta.title,
+      slug: meta.slug,
+      cover: meta.cover_image,
+      categories: meta.categories.map((i) => i.meta.en?.title || ""),
+      description: meta.description,
+      popular: meta.popular,
+    };
+  });
+};
 
 export const RecipesApi = createBcmsMostServerRoutes({
   "/recipes.json": apiRoute<RecipesPageData>({
@@ -28,7 +43,7 @@ export const RecipesApi = createBcmsMostServerRoutes({
 
       return {
         meta: entry.meta.en as RecipesPageEntryMeta,
-        recipes: recipes.map((e) => e.meta.en) as RecipeEntryMeta[],
+        recipes: recipeToLight(recipes),
       };
     },
   }),

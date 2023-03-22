@@ -1,11 +1,7 @@
 import { createBcmsMostServerRoutes } from "@becomes/cms-most";
-import {
-  HomePageEntry,
-  HomePageEntryMeta,
-  RecipeEntry,
-  RecipeEntryMeta,
-} from "~~/bcms/types";
+import { HomePageEntry, HomePageEntryMeta, RecipeEntry } from "~~/bcms/types";
 import { HomePageData } from "~~/types";
+import { recipeToLight } from "./recipes";
 import { apiRoute } from "./_api-route";
 
 export const HomeApi = createBcmsMostServerRoutes({
@@ -28,7 +24,7 @@ export const HomeApi = createBcmsMostServerRoutes({
 
       return {
         meta: entry.meta.en as HomePageEntryMeta,
-        recipes: recipes.map((e) => e.meta.en) as RecipeEntryMeta[],
+        recipes: recipeToLight(recipes),
       };
     },
   }),

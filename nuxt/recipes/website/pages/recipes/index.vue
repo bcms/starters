@@ -65,7 +65,7 @@ const { data } = useAsyncData(async (ctx) => {
   });
 });
 
-const recipesListDOM = ref<HTMLElement>()
+const recipesListDOM = ref<HTMLElement>();
 
 const searchValue = ref("");
 const popularValue = ref("");
@@ -88,9 +88,8 @@ const categoriesOptions = computed(() => {
   return (
     data.value?.data.recipes.reduce((acc, e) => {
       e.categories.forEach((category) => {
-        const categoryTitle = category.meta.en?.title || "";
-        if (!acc.includes(categoryTitle)) {
-          acc.push(categoryTitle);
+        if (!acc.includes(category)) {
+          acc.push(category);
         }
       });
       return acc;
@@ -116,11 +115,7 @@ const filteredRecipes = computed(() => {
       }
 
       if (categoriesValue.value) {
-        show =
-          show &&
-          !!e.categories.find(
-            (i) => i.meta.en?.title === categoriesValue.value
-          );
+        show = show && !!e.categories.find((i) => i === categoriesValue.value);
       }
 
       return show;
@@ -136,13 +131,13 @@ const totalPaginationPages = computed(() => {
 });
 
 watch(paginationPage, () => {
-  if(recipesListDOM.value) {
+  if (recipesListDOM.value) {
     window.scrollTo({
       top: recipesListDOM.value.offsetTop - 50,
-      behavior: 'smooth'
-    })
+      behavior: "smooth",
+    });
   }
-})
+});
 
 onMounted(() => {
   if (window.innerWidth >= 1024) {

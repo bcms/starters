@@ -1,6 +1,26 @@
+import {
+  BCMSEntryContentParsedItem,
+  BCMSPropMediaDataParsed,
+  BCMSPropRichTextDataParsed,
+} from "@becomes/cms-client/types";
 import { RecipeEntryMeta, RecipesPageEntryMeta } from "~~/bcms/types";
+
+export interface RecipeLight {
+  title: string;
+  slug: string;
+  cover: BCMSPropMediaDataParsed;
+  description: BCMSPropRichTextDataParsed;
+  categories: string[];
+  popular?: boolean;
+}
 
 export interface RecipesPageData {
   meta: RecipesPageEntryMeta;
-  recipes: RecipeEntryMeta[];
+  recipes: RecipeLight[];
+}
+
+export interface RecipePageData {
+  meta: RecipeEntryMeta;
+  content: BCMSEntryContentParsedItem[];
+  similarRecipes: RecipeLight[];
 }

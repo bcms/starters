@@ -2,7 +2,7 @@
   <section class="py-8 lg:py-20 xl:pt-[128px] xl:pb-[120px]">
     <div class="container">
       <RecipesSearch
-        :recipes="((data.recipes.map((e) => e.meta.en)) as RecipeEntryMeta[])"
+        :recipes="recipes"
         static
         class="relative z-10 mb-8 lg:hidden"
       />
@@ -15,7 +15,7 @@
         class="grid grid-cols-2 gap-x-5 gap-y-8 mb-8 lg:grid-cols-3 lg:mb-16 xl:gap-x-12 xl:gap-y-16"
       >
         <RecipesCard
-          v-for="(card, index) in ((data.recipes.map((e) => e.meta.en)) as RecipeEntryMeta[])"
+          v-for="(card, index) in recipes"
           :key="index"
           :card="card"
         />
@@ -35,10 +35,24 @@ import { PropType } from "vue";
 import { HomeRecipesGroup, RecipeEntryMeta } from "~~/bcms/types";
 import ArrowIcon from "@/assets/icons/arrow-right.svg";
 
-defineProps({
+const props = defineProps({
   data: {
     type: Object as PropType<HomeRecipesGroup>,
     required: true,
   },
+});
+
+const recipes = computed(() => {
+  return props.data.recipes.map((e) => {
+    const meta = e.meta.en as RecipeEntryMeta;
+
+    return {
+      title: meta.title,
+      slug: meta.slug,
+      cover: meta.cover_image,
+      categories: meta.categories.map((i) => i.meta.en?.title || ""),
+      description: meta.description,
+    };
+  });
 });
 </script>

@@ -58,11 +58,11 @@
 <script setup lang="ts">
 import { PropType } from "vue";
 import SearchIcon from "@/assets/icons/search.svg";
-import { RecipeEntryMeta } from "~~/bcms/types";
+import { RecipeLight } from "~~/types";
 
 const props = defineProps({
   recipes: {
-    type: Array as PropType<RecipeEntryMeta[]>,
+    type: Array as PropType<RecipeLight[]>,
     required: false,
   },
   static: {

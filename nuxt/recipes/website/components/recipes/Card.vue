@@ -3,7 +3,7 @@
     <NuxtLink :to="`/recipes/${card.slug}`" class="flex flex-col">
       <dir class="relative">
         <BCMSImage
-          :media="card.cover_image"
+          :media="card.cover"
           :alt="card.title"
           class="rounded-[10px] aspect-square overflow-hidden cover mb-[14px]"
         />
@@ -15,13 +15,13 @@
         </Btn>
       </dir>
       <div class="mb-4 lg:flex lg:flex-row-reverse lg:justify-between lg:mb-3">
-        <div class="flex flex-wrap gap-2 mb-2.5">
+        <div class="flex flex-wrap gap-2 mb-2.5 lg:mb-0">
           <div
             v-for="(category, index) in card.categories"
             :key="index"
             class="px-2.5 py-[7px] bg-[#BCBD87]/10 rounded-[5px] text-xs leading-none font-medium tracking-[-0.41px] text-appAccent lg:px-[14px] lg:py-[9px] lg:text-sm lg:leading-none"
           >
-            {{ category.meta.en?.title }}
+            {{ category }}
           </div>
         </div>
         <div
@@ -56,13 +56,13 @@
 <script setup lang="ts">
 import { PropType } from "vue";
 import { BCMSImage } from "~~/bcms-components";
-import { RecipeEntryMeta } from "~~/bcms/types";
 import ArrowIcon from "@/assets/icons/arrow-right.svg";
 import DownloadIcon from "@/assets/icons/download.svg";
+import { RecipeLight } from "~~/types";
 
 defineProps({
   card: {
-    type: Object as PropType<RecipeEntryMeta>,
+    type: Object as PropType<RecipeLight>,
     required: true,
   },
 });

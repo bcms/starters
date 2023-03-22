@@ -57,8 +57,9 @@
 <script setup lang="ts">
 import { PropType } from "vue";
 import { BCMSImage } from "~~/bcms-components";
-import { HomeHeroGroup, RecipeEntryMeta } from "~~/bcms/types";
+import { HomeHeroGroup } from "~~/bcms/types";
 import ArrowIcon from "@/assets/icons/arrow-right.svg";
+import { RecipeLight } from "~~/types";
 
 defineProps({
   data: {
@@ -66,7 +67,7 @@ defineProps({
     required: true,
   },
   recipes: {
-    type: Array as PropType<RecipeEntryMeta[]>,
+    type: Array as PropType<RecipeLight[]>,
     required: true,
   },
 });
