@@ -11,7 +11,16 @@
               class="flex max-md:absolute max-md:left-0 max-md:-bottom-[50px] md:mr-8"
               aria-label="Home page"
             >
-              <BCMSImage :media="data.logo" svg class="w-full" />
+              <BCMSImage
+                :media="data.logo"
+                svg
+                class="w-full md:grayscale md:brightness-0 md:invert"
+                :class="[
+                  $route.name === 'index'
+                    ? 'grayscale brightness-0 invert'
+                    : '',
+                ]"
+              />
             </NuxtLink>
             <ContentManager
               :item="data.nav[0]"
