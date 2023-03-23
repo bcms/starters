@@ -1,5 +1,4 @@
 import {
-  BCMSEntryContentParsedItem,
   BCMSPropMediaDataParsed,
   BCMSPropRichTextDataParsed,
 } from "@becomes/cms-client/types";
@@ -21,6 +20,7 @@ export interface RecipesPageData {
 
 export interface RecipePageData {
   meta: RecipeEntryMeta;
-  content: BCMSEntryContentParsedItem[];
   similarRecipes: RecipeLight[];
+  popular: string[];
+  categories: string[];
 }

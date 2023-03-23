@@ -19,7 +19,8 @@
       <div
         v-if="showOptions"
         v-click-outside="() => (showOptions = !showOptions)"
-        class="absolute -bottom-1 left-0 w-full translate-y-full grid grid-cols-1 gap-px border border-[#EBEBEB] bg-[#EBEBEB] rounded-lg max-h-[194px] overflow-y-auto lg:-bottom-4 lg:w-[470px] lg:flex lg:flex-wrap lg:gap-4 lg:bg-white lg:p-6 xl:w-[636px]"
+        class="absolute -bottom-1 w-full translate-y-full grid grid-cols-1 gap-px border border-[#EBEBEB] bg-[#EBEBEB] rounded-lg max-h-[194px] overflow-y-auto lg:-bottom-4 lg:w-[470px] lg:flex lg:flex-wrap lg:gap-4 lg:bg-white lg:p-6 xl:w-[636px]"
+        :class="[dropdownPosition === 'left' ? 'right-0' : 'left-0']"
       >
         <button
           v-for="(option, index) in options"
@@ -36,7 +37,7 @@
           @click="handleOptionSelect(option)"
         >
           <span
-            class="relative z-10 transition-colors duration-300 group-hover:text-white"
+            class="relative z-10 transition-colors duration-300 group-hover:text-appGray-400 lg:group-hover:text-white"
           >
             {{ option }}
           </span>
@@ -66,6 +67,11 @@ const props = defineProps({
   placeholder: {
     type: String,
     required: true,
+  },
+  dropdownPosition: {
+    type: String as PropType<"left" | "right">,
+    required: false,
+    default: "right",
   },
 });
 

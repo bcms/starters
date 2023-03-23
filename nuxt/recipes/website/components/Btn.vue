@@ -8,7 +8,7 @@
         ? 'bg-appGray-200 text-appAccent hover:bg-appAccent hover:text-appGray-200 hover:border-appGray-200'
         : theme === 'dark'
         ? 'bg-appAccent text-appGray-200 hover:bg-appGray-200 hover:text-appAccent hover:border-appAccent'
-        : 'bg-[#F2F2F2] text-appGray-600 hover:border-appAccent',
+        : 'bg-[#F2F2F2] text-appGray-600 hover:border-appAccent disabled:bg-[#F2F5F3] disabled:text-[#BABDBB] disabled:hover:border-transparent',
       size === 'regular'
         ? 'px-4 py-[13px] rounded-lg text-sm lg:px-8 lg:py-[18px]'
         : 'p-2.5 rounded-[5px] text-xs lg:px-6 lg:py-4 lg:rounded-lg',

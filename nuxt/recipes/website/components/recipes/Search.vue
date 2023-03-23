@@ -17,7 +17,7 @@
         :class="[size === 'lg' ? 'lg:w-6  lg:h-6' : '']"
       />
       <input
-        v-model="searchValue"
+        :value="value || searchValue"
         placeholder="Search recipes"
         class="px-1.5 py-3 bg-transparent text-sm leading-none font-medium tracking-[-0.41px] w-full placeholder:text-appGray-400 focus:outline-none"
         :class="[
@@ -26,6 +26,7 @@
             : '',
         ]"
         @input="handleInput"
+        @keypress.enter="handleEnter"
       />
     </label>
     <Transition name="fade">
@@ -61,6 +62,10 @@ import SearchIcon from "@/assets/icons/search.svg";
 import { RecipeLight } from "~~/types";
 
 const props = defineProps({
+  value: {
+    type: String,
+    required: false,
+  },
   recipes: {
     type: Array as PropType<RecipeLight[]>,
     required: false,
@@ -81,7 +86,7 @@ const props = defineProps({
   },
 });
 
-const emits = defineEmits(["input"]);
+const emits = defineEmits(["input", "enter"]);
 
 const searchValue = ref("");
 
@@ -98,6 +103,14 @@ const filteredRecipes = computed(() => {
 const handleInput = (event: Event) => {
   const target = event.target as HTMLInputElement;
 
+  searchValue.value = target.value;
+
   emits("input", target.value);
+};
+
+const handleEnter = (event: Event) => {
+  const target = event.target as HTMLInputElement;
+
+  emits("enter", target.value);
 };
 </script>

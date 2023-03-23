@@ -9,6 +9,7 @@
         class="relative z-10 grid grid-cols-2 gap-x-3 gap-y-[14px] mb-8 max-w-[608px] mx-auto lg:gap-6 lg:mb-24"
       >
         <RecipesSearch
+          :value="searchValue"
           static
           size="lg"
           :show-results="false"
@@ -58,6 +59,8 @@
 
 <script setup lang="ts">
 import { APIResponse, RecipesPageData } from "~~/types";
+
+const route = useRoute();
 
 const { data } = useAsyncData(async (ctx) => {
   return await ctx?.$bcms.request<APIResponse<RecipesPageData>>({
@@ -130,6 +133,14 @@ const totalPaginationPages = computed(() => {
   return Math.ceil((filteredRecipes.value.length || 0) / recipesPerPage.value);
 });
 
+const routeQueries = computed(() => {
+  return route.query as {
+    s?: string;
+    p?: string;
+    c?: string;
+  };
+});
+
 watch(paginationPage, () => {
   if (recipesListDOM.value) {
     window.scrollTo({
@@ -142,6 +153,15 @@ watch(paginationPage, () => {
 onMounted(() => {
   if (window.innerWidth >= 1024) {
     recipesPerPage.value = 12;
+  }
+  if (routeQueries.value.s) {
+    searchValue.value = routeQueries.value.s;
+  }
+  if (routeQueries.value.p) {
+    popularValue.value = routeQueries.value.p;
+  }
+  if (routeQueries.value.c) {
+    categoriesValue.value = routeQueries.value.c;
   }
 });
 
