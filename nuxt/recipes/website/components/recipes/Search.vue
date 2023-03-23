@@ -14,20 +14,33 @@
     >
       <SearchIcon
         class="w-5 h-5"
-        :class="[size === 'lg' ? 'lg:w-6  lg:h-6' : '']"
+        :class="[size === 'lg' ? 'lg:w-6 lg:h-6' : '']"
       />
-      <input
-        :value="value || searchValue"
-        placeholder="Search recipes"
-        class="px-1.5 py-3 bg-transparent text-sm leading-none font-medium tracking-[-0.41px] w-full placeholder:text-appGray-400 focus:outline-none"
-        :class="[
-          size === 'lg'
-            ? 'lg:px-2.5 lg:py-[18px] lg:text-base lg:leading-none'
-            : '',
-        ]"
-        @input="handleInput"
-        @keypress.enter="handleEnter"
-      />
+      <div class="relative">
+        <input
+          :value="(value || searchValue).toLowerCase()"
+          placeholder="Search recipes"
+          class="px-1.5 py-3 bg-transparent text-sm leading-none font-medium tracking-[-0.41px] w-full placeholder:text-appGray-400 focus:outline-none"
+          :class="[
+            size === 'lg'
+              ? 'lg:px-2.5 lg:py-[18px] lg:text-base lg:leading-none'
+              : '',
+          ]"
+          @input="handleInput"
+          @keypress.enter="handleEnter"
+        />
+        <span
+          v-if="filteredRecipes.length > 0 && showResults && searchValue"
+          class="absolute top-1/2 left-[7px] translate-y-[calc(-50%-1px)] text-sm leading-none font-medium tracking-[-0.41px] pointer-events-none"
+        >
+          <span class="opacity-0">
+            {{ placeholderSuggestion.slice(0, searchValue.length) }}
+          </span>
+          <span class="text-appGray-400">
+            {{ placeholderSuggestion.slice(searchValue.length) }}
+          </span>
+        </span>
+      </div>
     </label>
     <Transition name="fade">
       <div
@@ -97,6 +110,25 @@ const filteredRecipes = computed(() => {
         .toLowerCase()
         .includes(searchValue.value.toLowerCase());
     }) || []
+  );
+});
+
+const placeholderSuggestion = computed(() => {
+  const suggestions: string[] = [];
+
+  for (let i = 0; i < filteredRecipes.value.length; i++) {
+    const recipe = filteredRecipes.value[i];
+    if (
+      `${recipe.title} ${recipe.description}`
+        .toLowerCase()
+        .includes(searchValue.value.toLowerCase())
+    ) {
+      suggestions.push(recipe.title.toLowerCase());
+    }
+  }
+
+  return suggestions[0].slice(
+    suggestions[0].lastIndexOf(searchValue.value.toLowerCase())
   );
 });
 
