@@ -34,10 +34,10 @@
           class="absolute top-1/2 left-[7px] translate-y-[calc(-50%-1px)] text-sm leading-none font-medium tracking-[-0.41px] pointer-events-none"
         >
           <span class="opacity-0">
-            {{ placeholderSuggestion.slice(0, searchValue.length) }}
+            {{ placeholderSuggestion?.slice(0, searchValue.length) }}
           </span>
           <span class="text-appGray-400">
-            {{ placeholderSuggestion.slice(searchValue.length) }}
+            {{ placeholderSuggestion?.slice(searchValue.length) }}
           </span>
         </span>
       </div>
@@ -118,18 +118,23 @@ const placeholderSuggestion = computed(() => {
 
   for (let i = 0; i < filteredRecipes.value.length; i++) {
     const recipe = filteredRecipes.value[i];
+
+    const words = recipe.title.split(" ");
+
     if (
-      `${recipe.title} ${recipe.description}`
-        .toLowerCase()
-        .includes(searchValue.value.toLowerCase())
+      words.some((e) =>
+        e.toLowerCase().startsWith(searchValue.value.toLowerCase())
+      )
     ) {
       suggestions.push(recipe.title.toLowerCase());
     }
   }
 
-  return suggestions[0].slice(
-    suggestions[0].lastIndexOf(searchValue.value.toLowerCase())
-  );
+  if (suggestions[0]) {
+    return suggestions[0].slice(
+      suggestions[0].indexOf(searchValue.value.toLowerCase())
+    );
+  }
 });
 
 const handleInput = (event: Event) => {
