@@ -12,7 +12,24 @@ export default defineNuxtConfig({
       include: ["axios", "@becomes/cms-client"],
     },
   },
-  css: ["~/assets/css/main.css"],
+  app: {
+    head: {
+      titleTemplate: `%s - Hospitale`,
+      link: [
+        { rel: "preconnect", href: "https://fonts.googleapis.com" },
+        {
+          rel: "preconnect",
+          href: "https://fonts.gstatic.com",
+          crossorigin: "anonymous",
+        },
+        {
+          href: "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap",
+          rel: "stylesheet",
+        },
+      ],
+    },
+  },
+  css: ["~/assets/css/main.css", "~/assets/css/reset.css"],
   modules: [
     [
       "nuxt-plugin-bcms",
