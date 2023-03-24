@@ -29,8 +29,13 @@ export default defineNuxtConfig({
       ],
     },
   },
-  css: ["~/assets/css/main.css", "~/assets/css/reset.css"],
+  css: [
+    "~/assets/css/main.css",
+    "~/assets/css/reset.css",
+    "~/assets/css/transition.css",
+  ],
   modules: [
+    "nuxt-svgo",
     [
       "nuxt-plugin-bcms",
       createBcmsNuxtConfig({
