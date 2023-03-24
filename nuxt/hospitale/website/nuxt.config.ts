@@ -1,25 +1,30 @@
-import { createBcmsNuxtConfig } from 'nuxt-plugin-bcms/config';
-import bcmsRoutes from './bcms.routes';
+import { createBcmsNuxtConfig } from "nuxt-plugin-bcms/config";
+import bcmsRoutes from "./bcms.routes";
+
+const _ = require("lodash");
+const svgPrefix = {};
+svgPrefix.toString = () => `${_.uniqueId()}_`;
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   vite: {
     optimizeDeps: {
-      include: ['axios', '@becomes/cms-client'],
+      include: ["axios", "@becomes/cms-client"],
     },
   },
+  css: ["~/assets/css/main.css"],
   modules: [
     [
-      'nuxt-plugin-bcms',
+      "nuxt-plugin-bcms",
       createBcmsNuxtConfig({
         cms: {
-          origin: process.env.BCMS_API_ORIGIN || '',
+          origin: process.env.BCMS_API_ORIGIN || "",
           key: {
-            id: process.env.BCMS_API_KEY || '',
-            secret: process.env.BCMS_API_SECRET || '',
+            id: process.env.BCMS_API_KEY || "",
+            secret: process.env.BCMS_API_SECRET || "",
           },
         },
-        websiteDomain: 'http://localhost:3000',
+        websiteDomain: "http://localhost:3000",
         media: {
           download: false,
         },
@@ -31,4 +36,24 @@ export default defineNuxtConfig({
       }),
     ],
   ],
+  svgo: {
+    svgoConfig: {
+      plugins: [
+        {
+          name: "preset-default",
+          params: {
+            overrides: {
+              cleanupIDs: { prefix: svgPrefix },
+            },
+          },
+        },
+      ],
+    },
+  },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 });
