@@ -76,7 +76,7 @@ defineProps({
 }
 .homeTestimonials--pagination {
   &-btn {
-    @apply flex flex-1 w-full h-[3px] rounded-[3px] bg-[#BDBBB7] transition-colors duration-300;
+    @apply flex flex-1 w-full h-[3px] rounded-[3px] bg-[#BDBBB7] transition-colors duration-300 lg:h-1;
     &_active {
       @apply bg-appAccent;
     }
