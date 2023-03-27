@@ -9,7 +9,7 @@
 
 .scaleBtnArrow-enter-active,
 .scaleBtnArrow-leave-active {
-  transition: opacity 0.15s ease, width 0.15s ease;
+  transition: opacity 0.2s ease, width 0.2s ease;
 }
 .scaleBtnArrow-enter-from,
 .scaleBtnArrow-leave-to {

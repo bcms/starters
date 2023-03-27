@@ -1,12 +1,17 @@
 <template>
   <component
-    :is="to ? NuxtLink : 'button'"
+    :is="tag ? tag : to ? NuxtLink : 'button'"
     :to="to"
-    class="group relative flex items-center text-sm leading-none font-medium tracking-[-0.41px] px-5 py-[17px] rounded-[32px] transition-all duration-300 focus:outline-none hover:px-7 lg:px-7 lg:py-[21px]"
+    class="group relative flex items-center text-sm leading-none font-medium tracking-[-0.41px] px-5 rounded-[32px] border transition-all duration-300 focus:outline-none hover:px-7 lg:px-7"
     :class="[
       theme === 'accent'
-        ? 'bg-appAccent text-white'
-        : 'bg-appAccent/10 text-appAccent',
+        ? 'bg-appAccent text-white border-transparent'
+        : theme === 'pale'
+        ? 'bg-appAccent/10 text-appAccent border-transparent'
+        : theme === 'dark'
+        ? 'bg-appText text-white border-transparent'
+        : 'border border-appAccent text-appAccent',
+      size === 'sm' ? 'py-3 lg:py-4' : 'py-4 lg:py-5',
     ]"
     @mouseover="showArrow = true"
     @mouseleave="showArrow = false"
@@ -31,11 +36,20 @@ defineProps({
     required: false,
   },
   theme: {
-    type: String as PropType<"accent" | "pale">,
+    type: String as PropType<"accent" | "pale" | "dark" | "accent-outline">,
     required: false,
     default: "accent",
   },
   hideArrow: Boolean,
+  tag: {
+    type: String,
+    required: false,
+  },
+  size: {
+    type: String as PropType<"sm" | "regular">,
+    required: false,
+    default: "regular",
+  },
 });
 
 const NuxtLink = resolveComponent("NuxtLink");

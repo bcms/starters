@@ -28,6 +28,7 @@
           ]"
           @input="handleInput"
           @keypress.enter="handleEnter"
+          @keydown.tab.prevent="handleTabPress"
         />
         <span
           v-if="filteredRecipes.length > 0 && showResults && searchValue"
@@ -149,5 +150,13 @@ const handleEnter = (event: Event) => {
   const target = event.target as HTMLInputElement;
 
   emits("enter", target.value);
+};
+const handleTabPress = (event: KeyboardEvent) => {
+  const placeholderValue = placeholderSuggestion.value?.slice(
+    searchValue.value.length
+  );
+  if (event.key === "Tab" && placeholderValue && placeholderValue.length > 0) {
+    searchValue.value = `${searchValue.value}${placeholderValue}`;
+  }
 };
 </script>

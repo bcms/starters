@@ -30,11 +30,11 @@
                 v-for="(btn, index) in data.buttons"
                 :key="index"
                 :to="btn.path"
-                class="flex items-center rounded-[32px] px-[14px] py-2.5 transition-all duration-300 lg:px-6 lg:py-[13px]"
+                class="flex items-center rounded-[32px] px-[14px] py-2.5 border transition-all duration-300 lg:px-6 lg:py-[13px]"
                 :class="[
                   index === 0
-                    ? 'border border-appText hover:border-transparent hover:bg-appGray-100'
-                    : 'bg-appText text-white',
+                    ? ' border-appText hover:border-transparent hover:bg-appGray-100'
+                    : 'bg-appText border-transparent text-white',
                 ]"
               >
                 <span
