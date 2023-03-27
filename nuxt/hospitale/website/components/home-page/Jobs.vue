@@ -38,7 +38,7 @@
         class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8"
       >
         <JobsCard
-          v-for="(card, index) in filteredJobs"
+          v-for="(card, index) in paginatedJobs"
           :key="index"
           :card="card"
         />
@@ -46,7 +46,7 @@
           class="flex flex-col justify-center items-center md:col-span-2 md:mt-6 lg:col-span-3"
         >
           <Btn
-            v-if="filteredJobs.length < jobs.length"
+            v-if="paginatedJobs.length < filteredJobs.length"
             theme="accent-outline"
             size="sm"
             class="justify-center w-full max-md:mb-4 md:max-w-max"
@@ -103,30 +103,32 @@ const jobTypeValue = ref("");
 const locationValue = ref("");
 
 const filteredJobs = computed(() => {
-  return props.jobs
-    .filter((e) => {
-      let show = true;
+  return props.jobs.filter((e) => {
+    let show = true;
 
-      if (searchValue.value) {
-        show =
-          show &&
-          `${e.title} ${e.description}`
-            .toLowerCase()
-            .includes(searchValue.value.toLowerCase());
-      }
-      if (jobTypeValue.value) {
-        show = show && e.type === jobTypeValue.value;
-      }
+    if (searchValue.value) {
+      show =
+        show &&
+        `${e.title} ${e.description}`
+          .toLowerCase()
+          .includes(searchValue.value.toLowerCase());
+    }
+    if (jobTypeValue.value) {
+      show = show && e.type === jobTypeValue.value;
+    }
 
-      if (locationValue.value) {
-        show =
-          show &&
-          e.location.toLowerCase().includes(locationValue.value.toLowerCase());
-      }
+    if (locationValue.value) {
+      show =
+        show &&
+        e.location.toLowerCase().includes(locationValue.value.toLowerCase());
+    }
 
-      return show;
-    })
-    .slice(0, paginationPage.value * jobsPerPage.value);
+    return show;
+  });
+});
+
+const paginatedJobs = computed(() => {
+  return filteredJobs.value.slice(0, paginationPage.value * jobsPerPage.value);
 });
 
 const loadMore = () => {
