@@ -1,5 +1,5 @@
 <template>
-  <section class="py-12 md:py-20 lg:py-[120px]">
+  <section ref="sectionDOM" id="homeJobs" class="py-12 md:py-20 lg:py-[120px]">
     <div class="container">
       <h2
         class="text-2xl leading-[1.2] font-medium text-center font-PlayfairDisplay tracking-[-0.41px] max-w-[258px] mx-auto mb-4 md:text-3xl md:max-w-[300px] lg:text-5xl lg:leading-[1.2] lg:max-w-[525px] lg:mb-5"
@@ -34,20 +34,28 @@
         />
       </div>
       <div
+        v-if="filteredJobs.length > 0"
         class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8"
       >
-        <JobsCard v-for="(card, index) in jobs" :key="index" :card="card" />
+        <JobsCard
+          v-for="(card, index) in filteredJobs"
+          :key="index"
+          :card="card"
+        />
         <div
           class="flex flex-col justify-center items-center md:col-span-2 md:mt-6 lg:col-span-3"
         >
           <Btn
+            v-if="filteredJobs.length < jobs.length"
             theme="accent-outline"
             size="sm"
             class="justify-center w-full max-md:mb-4 md:max-w-max"
+            @click="loadMore"
           >
             <span>Load more jobs</span>
           </Btn>
           <Btn
+            v-if="filteredJobs.length >= 5"
             theme="dark"
             size="sm"
             class="justify-center w-full md:hidden"
@@ -56,6 +64,12 @@
             <span>Back to top</span>
           </Btn>
         </div>
+      </div>
+      <div
+        v-else
+        class="flex justify-center text-sm leading-none font-medium tracking-[-0.41px] text-appGray-500"
+      >
+        There are no jobs for the applied filters
       </div>
     </div>
   </section>
@@ -68,7 +82,7 @@ import { JobLight } from "~~/types";
 import JobTypeIcon from "@/assets/icons/briefcase.svg";
 import LocationIcon from "@/assets/icons/location.svg";
 
-defineProps({
+const props = defineProps({
   data: {
     type: Object as PropType<HomeJobsGroup>,
     required: true,
@@ -79,9 +93,52 @@ defineProps({
   },
 });
 
+const sectionDOM = ref<HTMLElement>();
+
+const paginationPage = ref(1);
+const jobsPerPage = ref(9);
+
 const searchValue = ref("");
 const jobTypeValue = ref("");
 const locationValue = ref("");
 
-const scrollToTop = () => {};
+const filteredJobs = computed(() => {
+  return props.jobs
+    .filter((e) => {
+      let show = true;
+
+      if (searchValue.value) {
+        show =
+          show &&
+          `${e.title} ${e.description}`
+            .toLowerCase()
+            .includes(searchValue.value.toLowerCase());
+      }
+      if (jobTypeValue.value) {
+        show = show && e.type === jobTypeValue.value;
+      }
+
+      if (locationValue.value) {
+        show =
+          show &&
+          e.location.toLowerCase().includes(locationValue.value.toLowerCase());
+      }
+
+      return show;
+    })
+    .slice(0, paginationPage.value * jobsPerPage.value);
+});
+
+const loadMore = () => {
+  paginationPage.value++;
+};
+
+const scrollToTop = () => {
+  if (sectionDOM.value) {
+    window.scrollTo({
+      top: sectionDOM.value.offsetTop,
+      behavior: "smooth",
+    });
+  }
+};
 </script>

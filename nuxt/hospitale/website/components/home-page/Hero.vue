@@ -24,7 +24,7 @@
           :item="data.description"
           class="text-sm leading-[1.4] font-medium tracking-[-0.41px] text-center text-appGray-600 mb-8 md:text-base lg:leading-none lg:mb-10"
         />
-        <Btn class="mx-auto mb-12 lg:mb-[120px]">
+        <Btn class="mx-auto mb-12 lg:mb-[120px]" @click="scrollToJobs">
           <span>Search Jobs Now</span>
         </Btn>
       </div>
@@ -50,6 +50,14 @@ defineProps({
     required: true,
   },
 });
+
+const scrollToJobs = () => {
+  const jobs = document.getElementById("homeJobs");
+
+  if (jobs) {
+    jobs.scrollIntoView({ behavior: "smooth" });
+  }
+};
 </script>
 
 <style lang="scss">

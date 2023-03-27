@@ -55,7 +55,10 @@
             <div
               class="px-[18px] lg:flex lg:items-center lg:justify-center lg:gap-[14px]"
             >
-              <Btn class="justify-center w-full max-lg:mb-[14px] lg:max-w-max">
+              <Btn
+                class="justify-center w-full max-lg:mb-[14px] lg:max-w-max"
+                @click="scrollToJobs"
+              >
                 <span>Search Jobs Now</span>
               </Btn>
               <Btn theme="pale" class="justify-center w-full lg:max-w-max">
@@ -79,4 +82,12 @@ defineProps({
     required: true,
   },
 });
+
+const scrollToJobs = () => {
+  const jobs = document.getElementById("homeJobs");
+
+  if (jobs) {
+    jobs.scrollIntoView({ behavior: "smooth" });
+  }
+};
 </script>
