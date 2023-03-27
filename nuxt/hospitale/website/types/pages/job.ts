@@ -1,4 +1,5 @@
 import { BCMSPropRichTextDataParsed } from "@becomes/cms-client/types";
+import { JobEntryMeta } from "~~/bcms/types";
 
 export interface JobLight {
   title: string;
@@ -7,4 +8,9 @@ export interface JobLight {
   description: BCMSPropRichTextDataParsed;
   type: string;
   featured: boolean;
+}
+
+export interface JobPageData {
+  meta: JobEntryMeta;
+  jobs: JobLight[];
 }
