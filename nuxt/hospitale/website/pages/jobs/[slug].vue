@@ -101,7 +101,11 @@
           </div>
         </div>
         <div class="mt-6 mb-12 lg:hidden">
-          <Btn size="sm" class="justify-center w-full mb-[14px]">
+          <Btn
+            size="sm"
+            class="justify-center w-full mb-[14px]"
+            @click="showApplyModal = true"
+          >
             <span>Apply for this job</span>
           </Btn>
           <Btn size="sm" theme="pale" class="justify-center w-full">
@@ -129,7 +133,11 @@
             class="text-xs leading-normal font-medium tracking-[-0.41px] text-appGray-500 lg:text-sm lg:leading-normal"
           />
           <div class="mt-8 max-lg:hidden">
-            <Btn size="sm" class="justify-center w-full mb-4">
+            <Btn
+              size="sm"
+              class="justify-center w-full mb-4"
+              @click="showApplyModal = true"
+            >
               <span>Apply for this job</span>
             </Btn>
             <Btn size="sm" theme="pale" class="justify-center w-full">
@@ -181,6 +189,15 @@
         </div>
       </div>
     </div>
+    <Teleport to="body">
+      <Transition name="fade">
+        <JobsApplyModal
+          v-if="showApplyModal"
+          :job="data.data.meta"
+          @close="showApplyModal = false"
+        />
+      </Transition>
+    </Teleport>
   </PageWrapper>
 </template>
 
@@ -229,6 +246,8 @@ const scrollToTop = () => {
     });
   }
 };
+
+const showApplyModal = ref(false);
 
 useHead({
   title: data.value?.data.meta.title,
