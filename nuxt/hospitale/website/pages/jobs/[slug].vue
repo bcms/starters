@@ -249,9 +249,9 @@ const scrollToTop = () => {
 
 const showApplyModal = ref(false);
 
-useHead({
+useHead(() => ({
   title: data.value?.data.meta.title,
-});
+}));
 </script>
 
 <style lang="scss">

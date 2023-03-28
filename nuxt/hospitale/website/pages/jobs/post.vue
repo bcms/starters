@@ -384,7 +384,7 @@ const handleNextStep = () => {
   }
 };
 
-useHead({
+useHead(() => ({
   title: data.value?.data.meta.title,
-});
+}));
 </script>

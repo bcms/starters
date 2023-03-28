@@ -49,9 +49,9 @@ const meta = computed(() => {
   return data.value?.data.meta;
 });
 
-useHead({
+useHead(() => ({
   title: data.value?.data.meta.title,
-});
+}));
 </script>
 
 <style lang="scss">
