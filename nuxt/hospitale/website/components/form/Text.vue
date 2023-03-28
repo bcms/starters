@@ -11,7 +11,8 @@
       :value="modelValue"
       :type="type"
       :placeholder="placeholder"
-      class="border border-[#C2C0BC] bg-transparent rounded-[40px] px-4 py-[14px] text-xs leading-none font-medium tracking-[-0.41px] placeholder:text-[#56565F] focus:outline-none lg:px-5 lg:py-[17px] lg:text-sm lg:leading-none"
+      class="border bg-transparent rounded-[40px] px-4 py-[14px] text-xs leading-none font-medium tracking-[-0.41px] transition-colors duration-300 placeholder:text-[#56565F] focus:outline-none lg:px-5 lg:py-[17px] lg:text-sm lg:leading-none"
+      :class="[error ? 'border-red-500' : 'border-[#C2C0BC]']"
       :style="{
         boxShadow: '0px 0px 4px rgba(196, 202, 217, 0.3)',
       }"
@@ -21,7 +22,8 @@
       v-else
       :value="modelValue"
       :placeholder="placeholder"
-      class="border border-[#C2C0BC] bg-transparent rounded-[10px] px-4 py-[14px] text-xs leading-none font-medium tracking-[-0.41px] placeholder:text-[#56565F] resize-none h-[96px] focus:outline-none lg:px-5 lg:py-[17px] lg:text-sm lg:leading-none lg:h-[152px]"
+      class="border bg-transparent rounded-[10px] px-4 py-[14px] text-xs leading-none font-medium tracking-[-0.41px] placeholder:text-[#56565F] resize-none h-[96px] transition-colors duration-300 focus:outline-none lg:px-5 lg:py-[17px] lg:text-sm lg:leading-none lg:h-[152px]"
+      :class="[error ? 'border-red-500' : 'border-[#C2C0BC]']"
       :style="{
         boxShadow: '0px 0px 4px rgba(196, 202, 217, 0.3)',
       }"

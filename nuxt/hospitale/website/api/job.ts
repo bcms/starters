@@ -1,6 +1,7 @@
 import { createBcmsMostServerRoutes } from "@becomes/cms-most";
+import { PostJobPageEntry, PostJobPageEntryMeta } from "~~/bcms/types";
 import { JobEntry, JobEntryMeta } from "~~/bcms/types/entry/job";
-import { JobLight, JobPageData } from "~~/types";
+import { JobLight, JobPageData, JobPostPageData } from "~~/types";
 import { apiRoute } from "./_api-route";
 
 export const jobToLight = (jobs: JobEntry[]): JobLight[] => {
@@ -19,6 +20,23 @@ export const jobToLight = (jobs: JobEntry[]): JobLight[] => {
 };
 
 export const JobsApi = createBcmsMostServerRoutes({
+  "/post-job.json": apiRoute<JobPostPageData>({
+    method: "get",
+    async handler({ bcms }) {
+      const entry = (await bcms.content.entry.findOne(
+        "post_job_page",
+        async () => true
+      )) as unknown as PostJobPageEntry;
+
+      if (!entry) {
+        throw new Error("Job post page entry does not exist.");
+      }
+
+      return {
+        meta: entry.meta.en as PostJobPageEntryMeta,
+      };
+    },
+  }),
   "/jobs/:slug/data.json": apiRoute<JobPageData>({
     method: "get",
     async handler({ bcms, params }) {

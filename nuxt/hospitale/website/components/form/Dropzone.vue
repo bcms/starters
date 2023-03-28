@@ -11,11 +11,13 @@
       @dragenter.prevent
       @dragleave.prevent="isDropzoneActive = false"
       @dragover.prevent="isDropzoneActive = true"
-      class="flex flex-col items-center justify-center text-center p-5 rounded-[10px] border border-dashed border-[#C2C0BC] w-full cursor-pointer min-h-[100px] transition-colors duration-300 hover:border-[#56565F] lg:py-[45px] lg:min-h-[154px]"
+      class="flex flex-col items-center justify-center text-center p-5 rounded-[10px] border border-dashed w-full cursor-pointer min-h-[100px] transition-colors duration-300 lg:py-[45px] lg:min-h-[154px]"
       :class="[
-        isDropzoneActive || modelValue
+        error
+          ? 'border-red-500'
+          : isDropzoneActive || modelValue
           ? 'border-appAccent text-appAccent'
-          : 'text-[#56565F]',
+          : 'text-[#56565F] border-[#C2C0BC] hover:border-[#56565F]',
       ]"
     >
       <input
@@ -45,6 +47,10 @@ defineProps({
     required: false,
   },
   label: {
+    type: String,
+    required: false,
+  },
+  error: {
     type: String,
     required: false,
   },
