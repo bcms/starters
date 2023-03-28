@@ -103,13 +103,10 @@
         <div class="mt-6 mb-12 lg:hidden">
           <Btn
             size="sm"
-            class="justify-center w-full mb-[14px]"
+            class="justify-center w-full"
             @click="showApplyModal = true"
           >
             <span>Apply for this job</span>
-          </Btn>
-          <Btn size="sm" theme="pale" class="justify-center w-full">
-            <span>Share this job</span>
           </Btn>
         </div>
         <div
@@ -135,13 +132,10 @@
           <div class="mt-8 max-lg:hidden">
             <Btn
               size="sm"
-              class="justify-center w-full mb-4"
+              class="justify-center w-full"
               @click="showApplyModal = true"
             >
               <span>Apply for this job</span>
-            </Btn>
-            <Btn size="sm" theme="pale" class="justify-center w-full">
-              <span>Share this job</span>
             </Btn>
           </div>
         </div>
