@@ -16,7 +16,7 @@ const { data } = useAsyncData(async (ctx) => {
   });
 });
 
-useHead({
+useHead(() => ({
   title: data.value?.data.meta.title,
-});
+}));
 </script>

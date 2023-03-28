@@ -178,9 +178,9 @@ watch(categoriesValue, (newVal) => {
   filterRedirect("c", newVal);
 });
 
-useHead({
+useHead(() => ({
   title: data.value?.data.meta.title,
-});
+}));
 </script>
 
 <style lang="scss">
