@@ -4,6 +4,10 @@
   object-fit: cover;
 }
 
+.bcmsImage.object-top img {
+  object-position: top;
+}
+
 .bcmsImage svg {
   width: 100%;
 }
