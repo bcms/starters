@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-appText py-10 md:py-12">
     <div class="container">
-      <div class="grid grid-cols-[auto,1fr]">
+      <div class="md:grid md:grid-cols-[auto,1fr]">
         <ContentManager
           :item="data.location"
           class="text-sm leading-[1.3] uppercase tracking-[-0.41px] text-appGray-500 text-center mb-8 md:text-base md:leading-[1.3] md:text-left"
