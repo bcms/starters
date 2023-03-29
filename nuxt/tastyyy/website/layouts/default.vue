@@ -8,5 +8,5 @@
 import { BCMSImageConfig } from "@becomes/cms-most/frontend";
 
 BCMSImageConfig.cmsOrigin = "http://localhost:8080";
-BCMSImageConfig.publicApiKeyId = "641d60cd2a29ceb11f9ce26c";
+BCMSImageConfig.publicApiKeyId = "6423fe69c4d0f7aa085d5e86";
 </script>
