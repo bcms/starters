@@ -61,7 +61,11 @@
               >
                 <span>Search Jobs Now</span>
               </Btn>
-              <Btn theme="pale" class="justify-center w-full lg:max-w-max">
+              <Btn
+                to="/jobs/post"
+                theme="pale"
+                class="justify-center w-full lg:max-w-max"
+              >
                 <span>Post Jobs Now</span>
               </Btn>
             </div>

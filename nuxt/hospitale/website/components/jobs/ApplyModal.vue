@@ -6,36 +6,49 @@
       <form @submit.prevent="handleSubmit" class="grid grid-cols-1 gap-6">
         <fieldset class="grid grid-cols-2 items-end gap-2 lg:gap-3">
           <FormText
-            v-model="form.firstName"
+            v-model="form.firstName.value"
+            :error="form.firstName.error"
             label="Name"
             placeholder="First name..."
           />
-          <FormText v-model="form.firstName" placeholder="Last name..." />
+          <FormText
+            v-model="form.lastName.value"
+            :error="form.lastName.error"
+            placeholder="Last name..."
+          />
         </fieldset>
         <FormText
-          v-model="form.address"
+          v-model="form.address.value"
+          :error="form.address.error"
           label="Address"
           placeholder="Enter your address..."
         />
         <FormText
-          v-model="form.email"
+          v-model="form.email.value"
+          :error="form.email.error"
           label="Email"
           type="email"
           placeholder="Enter your email address..."
         />
         <FormText
-          v-model="form.birthDate"
+          v-model="form.birthDate.value"
+          :error="form.birthDate.error"
           label="Birth date"
           type="date"
           placeholder="DD/MM/YY"
         />
         <FormText
-          v-model="form.description"
+          v-model="form.description.value"
+          :error="form.description.error"
           label="Describe yourself"
           type="textarea"
           placeholder="Describe yourself..."
         />
-        <FormDropzone v-model="form.document" label="Upload your document" />
+        <FormDropzone
+          v-model="form.document.value"
+          :error="form.document.error"
+          label="Upload your document"
+        />
         <Btn size="sm" class="justify-center w-full lg:mt-4">
           <span>Submit</span>
         </Btn>
@@ -61,17 +74,52 @@ defineProps({
 
 defineEmits(["close"]);
 
+const { checkForInputErrors } = useError();
+
 const form = ref({
-  firstName: "",
-  lastName: "",
-  address: "",
-  email: "",
-  birthDate: "",
-  description: "",
-  document: undefined as File | undefined,
+  firstName: {
+    value: "",
+    error: "",
+  },
+  lastName: {
+    value: "",
+    error: "",
+  },
+  address: {
+    value: "",
+    error: "",
+  },
+  email: {
+    value: "",
+    error: "",
+  },
+  birthDate: {
+    value: "",
+    error: "",
+  },
+  description: {
+    value: "",
+    error: "",
+  },
+  document: {
+    value: undefined as File | undefined,
+    error: "",
+  },
 });
 
 const handleSubmit = () => {
-  //
+  const errors = checkForInputErrors([
+    form.value.firstName,
+    form.value.lastName,
+    form.value.address,
+    form.value.email,
+    form.value.birthDate,
+    form.value.description,
+    form.value.document,
+  ]);
+
+  if (!errors) {
+    // TODO: Submit
+  }
 };
 </script>
