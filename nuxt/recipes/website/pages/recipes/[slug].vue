@@ -123,6 +123,7 @@
 import { BCMSImage } from "~~/bcms-components";
 import { APIResponse, RecipePageData } from "~~/types";
 
+const { setOgHead } = useHeadTags();
 const route = useRoute();
 const router = useRouter();
 
@@ -178,9 +179,11 @@ watch(categoriesValue, (newVal) => {
   filterRedirect("c", newVal);
 });
 
-useHead(() => ({
-  title: data.value?.data.meta.title,
-}));
+useHead(() =>
+  setOgHead({
+    title: data.value?.data.meta.title,
+  })
+);
 </script>
 
 <style lang="scss">

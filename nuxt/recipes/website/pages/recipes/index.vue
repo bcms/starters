@@ -60,6 +60,7 @@
 <script setup lang="ts">
 import { APIResponse, RecipesPageData } from "~~/types";
 
+const { setOgHead } = useHeadTags();
 const route = useRoute();
 
 const { data } = useAsyncData(async (ctx) => {
@@ -165,9 +166,11 @@ onMounted(() => {
   }
 });
 
-useHead(() => ({
-  title: data.value?.data.meta.title,
-}));
+useHead(() =>
+  setOgHead({
+    title: data.value?.data.meta.title,
+  })
+);
 </script>
 
 <style lang="scss">

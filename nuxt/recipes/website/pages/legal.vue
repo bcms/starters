@@ -38,6 +38,8 @@ const { data } = useAsyncData(async (ctx) => {
   });
 });
 
+const { setOgHead } = useHeadTags();
+
 const updatedDate = (val: number) => {
   const date = new Date(val);
 
@@ -50,7 +52,9 @@ const updatedDate = (val: number) => {
   return `${day} ${month} ${year}`;
 };
 
-useHead({
-  title: "Legal",
-});
+useHead(() =>
+  setOgHead({
+    title: "Legal",
+  })
+);
 </script>

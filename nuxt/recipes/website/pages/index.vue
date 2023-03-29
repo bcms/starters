@@ -16,7 +16,11 @@ const { data } = useAsyncData(async (ctx) => {
   });
 });
 
-useHead(() => ({
-  title: data.value?.data.meta.title,
-}));
+const { setOgHead } = useHeadTags();
+
+useHead(() =>
+  setOgHead({
+    title: data.value?.data.meta.title,
+  })
+);
 </script>
