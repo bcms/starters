@@ -45,44 +45,47 @@
           class="border border-[#E0E0E0] rounded-lg p-4 lg:p-8"
         >
           <label
-            class="relative flex border border-[#F0F0F0] rounded-lg overflow-hidden w-full mb-3 lg:mb-6"
+            class="relative flex border rounded-lg overflow-hidden w-full mb-3 transition-colors duration-300 lg:mb-6"
+            :class="[form.name.error ? 'border-red-500' : 'border-[#F0F0F0]']"
           >
             <input
-              v-model="form.name"
+              v-model="form.name.value"
               type="text"
               class="w-full text-xs leading-none tracking-[-0.41px] font-medium px-4 py-[14px] focus:outline-none lg:px-6 lg:py-[15px] lg:text-base lg:leading-none"
             />
             <span
-              v-if="!form.name"
+              v-if="!form.name.value"
               class="absolute top-1/2 left-4 -translate-y-1/2 text-xs leading-none font-medium tracking-[-0.41px] text-appGray-500 pointer-events-none lg:left-6 lg:text-base lg:leading-none"
             >
               Full name<span class="text-appWarning">*</span>
             </span>
           </label>
           <label
-            class="relative flex border border-[#F0F0F0] rounded-lg overflow-hidden w-full mb-3 lg:mb-6"
+            class="relative flex border rounded-lg overflow-hidden w-full mb-3 transition-colors duration-300 lg:mb-6"
+            :class="[form.name.error ? 'border-red-500' : 'border-[#F0F0F0]']"
           >
             <input
-              v-model="form.email"
+              v-model="form.email.value"
               type="email"
               class="w-full text-xs leading-none tracking-[-0.41px] font-medium px-4 py-[14px] focus:outline-none lg:px-6 lg:py-[15px] lg:text-base lg:leading-none"
             />
             <span
-              v-if="!form.email"
+              v-if="!form.email.value"
               class="absolute top-1/2 left-4 -translate-y-1/2 text-xs leading-none font-medium tracking-[-0.41px] text-appGray-500 pointer-events-none lg:left-6 lg:text-base lg:leading-none"
             >
               Email<span class="text-appWarning">*</span>
             </span>
           </label>
           <label
-            class="relative flex border border-[#F0F0F0] rounded-lg overflow-hidden w-full mb-6 lg:mb-8"
+            class="relative flex border rounded-lg overflow-hidden w-full mb-6 transition-colors duration-300 lg:mb-8"
+            :class="[form.name.error ? 'border-red-500' : 'border-[#F0F0F0]']"
           >
             <textarea
-              v-model="form.question"
+              v-model="form.question.value"
               class="w-full text-xs leading-none tracking-[-0.41px] font-medium px-4 py-[14px] resize-none h-[140px] focus:outline-none lg:px-6 lg:py-[15px] lg:text-base lg:leading-none lg:h-[260px]"
             />
             <span
-              v-if="!form.question"
+              v-if="!form.question.value"
               class="absolute top-5 left-4 -translate-y-1/2 text-xs leading-none font-medium tracking-[-0.41px] text-appGray-500 pointer-events-none lg:left-6 lg:text-base lg:leading-none lg:top-6"
             >
               Question<span class="text-appWarning">*</span>
@@ -109,11 +112,32 @@ defineProps({
   },
 });
 
+const { checkForInputErrors } = useError();
+
 const form = ref({
-  name: "",
-  email: "",
-  question: "",
+  name: {
+    value: "",
+    error: "",
+  },
+  email: {
+    value: "",
+    error: "",
+  },
+  question: {
+    value: "",
+    error: "",
+  },
 });
 
-const handleSubmit = () => {};
+const handleSubmit = () => {
+  const errors = checkForInputErrors([
+    form.value.name,
+    form.value.email,
+    form.value.question,
+  ]);
+
+  if (!errors) {
+    // TODO: Submit
+  }
+};
 </script>
