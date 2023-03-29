@@ -60,6 +60,7 @@ const { data } = useAsyncData(async (ctx) => {
   });
 });
 
+const { setOgHead } = useHeadTags();
 const { checkForInputErrors } = useError();
 
 const meta = computed(() => data.value?.data.meta);
@@ -96,7 +97,9 @@ const handleSubmit = () => {
   }
 };
 
-useHead(() => ({
-  title: data.value?.data.meta.title,
-}));
+useHead(() =>
+  setOgHead({
+    title: data.value?.data.meta.title,
+  })
+);
 </script>

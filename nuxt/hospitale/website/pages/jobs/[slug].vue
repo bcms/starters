@@ -200,6 +200,7 @@ import { BCMSImage } from "~~/bcms-components";
 import { APIResponse, JobPageData } from "~~/types";
 import LocationIcon from "@/assets/icons/location.svg";
 
+const { setOgHead } = useHeadTags();
 const route = useRoute();
 
 const { data } = useAsyncData(async (ctx) => {
@@ -243,9 +244,11 @@ const scrollToTop = () => {
 
 const showApplyModal = ref(false);
 
-useHead(() => ({
-  title: data.value?.data.meta.title,
-}));
+useHead(() =>
+  setOgHead({
+    title: data.value?.data.meta.title,
+  })
+);
 </script>
 
 <style lang="scss">

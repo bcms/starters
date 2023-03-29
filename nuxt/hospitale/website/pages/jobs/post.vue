@@ -205,6 +205,7 @@ const { data } = useAsyncData(async (ctx) => {
   });
 });
 
+const { setOgHead } = useHeadTags();
 const { checkForInputErrors } = useError();
 
 const activeStep = ref(1);
@@ -384,7 +385,9 @@ const handleNextStep = () => {
   }
 };
 
-useHead(() => ({
-  title: data.value?.data.meta.title,
-}));
+useHead(() =>
+  setOgHead({
+    title: data.value?.data.meta.title,
+  })
+);
 </script>

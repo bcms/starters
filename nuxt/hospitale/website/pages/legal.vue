@@ -33,7 +33,11 @@ const { data } = useAsyncData(async (ctx) => {
   });
 });
 
-useHead({
-  title: "Legal",
-});
+const { setOgHead } = useHeadTags();
+
+useHead(() =>
+  setOgHead({
+    title: "Legal",
+  })
+);
 </script>

@@ -45,13 +45,17 @@ const { data } = useAsyncData(async (ctx) => {
   });
 });
 
+const { setOgHead } = useHeadTags();
+
 const meta = computed(() => {
   return data.value?.data.meta;
 });
 
-useHead(() => ({
-  title: data.value?.data.meta.title,
-}));
+useHead(() =>
+  setOgHead({
+    title: data.value?.data.meta.title,
+  })
+);
 </script>
 
 <style lang="scss">
