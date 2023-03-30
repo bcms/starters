@@ -519,7 +519,7 @@
   "6424420cc4d0f7aa085d5e90": {
     "_id": "6424420cc4d0f7aa085d5e90",
     "createdAt": 1680097804319,
-    "updatedAt": 1680170238112,
+    "updatedAt": 1680170646114,
     "cid": "3",
     "templateId": "64243f75c4d0f7aa085d5e8f",
     "userId": "111111111111111111111111",
@@ -583,7 +583,7 @@
                       "id": "9f2447d5-b95d-4744-8e2c-7b1fdc6213c5",
                       "data": [
                         {
-                          "id": "959d4e9f-ec49-419d-a6ff-ac6d0c819f6d",
+                          "id": "529b2e35-288c-4e4d-9bc1-e9ac20a1ddfa",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -621,7 +621,7 @@
                                 "id": "f5819cc2-4514-43ec-b6f1-56a020a587d3",
                                 "data": [
                                   {
-                                    "id": "2b74625d-1e1b-4763-94d6-d1c3b93c0dea",
+                                    "id": "a3d455ad-1837-4c7e-b8fd-41093c30a1a2",
                                     "nodes": [
                                       {
                                         "type": "paragraph",
@@ -654,7 +654,7 @@
                                 "id": "f5819cc2-4514-43ec-b6f1-56a020a587d3",
                                 "data": [
                                   {
-                                    "id": "4fa3f673-4872-40d7-96d4-8c4e0fe73e8f",
+                                    "id": "94f38526-2a8b-4695-a750-07ad0f89e017",
                                     "nodes": [
                                       {
                                         "type": "paragraph",
@@ -687,7 +687,7 @@
                                 "id": "f5819cc2-4514-43ec-b6f1-56a020a587d3",
                                 "data": [
                                   {
-                                    "id": "8e147266-51a2-4c8c-8f75-c4cd09026282",
+                                    "id": "64ec8186-49c8-429e-903b-a46e7ace6f1e",
                                     "nodes": [
                                       {
                                         "type": "paragraph",
@@ -739,7 +739,7 @@
                       "id": "a73d46da-e1dc-4451-a0b7-f8b1c92cc329",
                       "data": [
                         {
-                          "id": "7339ca1c-4f93-43f0-82c2-2c2ddc6872fe",
+                          "id": "ad79ea6e-456c-49fa-a411-710a8215ff7e",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -793,14 +793,14 @@
                       "id": "a898652f-c574-45a5-b176-960c286e8569",
                       "data": [
                         {
-                          "id": "8d4a9816-631a-478c-b0b9-af1d42b8ff41",
+                          "id": "2a3164a5-a38f-42b2-bd1e-05e14cd9efd4",
                           "nodes": [
                             {
                               "type": "paragraph",
                               "content": [
                                 {
                                   "type": "text",
-                                  "text": "Experience the magic of the season with our exquisite selection of seasonal dishes, designed to celebrate the finest ingredients of the moment and elevate your"
+                                  "text": "Experience the magic of the season with our exquisite selection of seasonal dishes, designed to celebrate the finest ingredients of the moment and elevate your dining experience to new heights."
                                 }
                               ]
                             }
