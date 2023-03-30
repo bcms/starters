@@ -1,0 +1,468 @@
+{
+  "6414331f5d4d29a17ac96046": {
+    "_id": "6414331f5d4d29a17ac96046",
+    "createdAt": 1679045407125,
+    "updatedAt": 1679045439318,
+    "cid": "15",
+    "desc": "",
+    "label": "Header",
+    "name": "header",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "f29e02ce-886e-40dc-917d-dfde076a1297",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "3125c3bc-a57c-4d68-a796-345222ae7d09",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "9fde78f1-4639-487a-8f36-7921623c210e",
+        "name": "logo",
+        "label": "Logo",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "cc2a5b56-7d6f-4e84-a1c6-9cfbc6841744",
+        "name": "nav",
+        "label": "Nav",
+        "array": true,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
+  },
+  "641817f8f7d73b81da796da2": {
+    "_id": "641817f8f7d73b81da796da2",
+    "createdAt": 1679300600511,
+    "updatedAt": 1679300706531,
+    "cid": "16",
+    "desc": "",
+    "label": "Footer",
+    "name": "footer",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "e412c792-dba7-4e21-b368-0e220d41fc12",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "8db34b10-99c5-4ebf-aa8a-9dcf19cea913",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "ba0d0a98-d5d0-46d2-93bc-49f30d8fb8bd",
+        "name": "logo",
+        "label": "Logo",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "da9139e4-2cd9-40ae-adc6-7a665e637ce1",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "c67d0044-4547-485e-b185-cfb113962e23",
+        "name": "nav",
+        "label": "Nav",
+        "array": true,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
+  },
+  "64182b23f7d73b81da796da5": {
+    "_id": "64182b23f7d73b81da796da5",
+    "createdAt": 1679305507176,
+    "updatedAt": 1679390471024,
+    "cid": "17",
+    "desc": "",
+    "label": "Home page",
+    "name": "home_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "ecfdffcd-ec8c-47a6-bea2-04ef518585e0",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "44ea5af8-8c92-4755-aab5-478b0ea01af1",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "023072a5-3c19-4704-8f0d-9e72cb4e525e",
+        "name": "hero",
+        "label": "Hero",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64182b34f7d73b81da796da6"
+        }
+      },
+      {
+        "id": "f796c29c-3fe4-4555-b7df-92268bee5027",
+        "name": "recipes",
+        "label": "Recipes",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "641869219406d67a48c8afba"
+        }
+      },
+      {
+        "id": "1f8adb78-fb10-49aa-8e2c-3ca8ae03203a",
+        "name": "about_us",
+        "label": "About us",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64196b139eeca76eacf3fac2"
+        }
+      },
+      {
+        "id": "5ff4e617-acaf-45df-9933-506581b88e62",
+        "name": "lets_talk",
+        "label": "Let's talk",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "641976739eeca76eacf3fac5"
+        }
+      }
+    ]
+  },
+  "64182bc0f7d73b81da796da7": {
+    "_id": "64182bc0f7d73b81da796da7",
+    "createdAt": 1679305664236,
+    "updatedAt": 1679481388649,
+    "cid": "18",
+    "desc": "",
+    "label": "Recipe",
+    "name": "recipe",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "38ea9e7d-0c2f-4afa-80f7-1c1a5f849cb3",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "0055d367-6a80-4616-a27d-286b2e73cf38",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "d2e4ed3a-5400-40b1-a847-8374efa3eceb",
+        "name": "cover_image",
+        "label": "Cover image",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "aece2589-9fa1-46c4-9c61-5d5eb09834d7",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "2c15cc2e-e154-4870-ad96-bfded1029fb1",
+        "name": "extended_description",
+        "label": "Extended Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "2380d149-10e5-40ee-a0c5-a43cd2542de7",
+        "name": "cook_time",
+        "label": "Cook time",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "9705dd06-56fb-4769-b607-b0a73f4a4a6d",
+        "name": "categories",
+        "label": "Categories",
+        "array": true,
+        "required": true,
+        "type": "ENTRY_POINTER",
+        "defaultData": [
+          {
+            "displayProp": "title",
+            "templateId": "64182bcef7d73b81da796da8",
+            "entryIds": []
+          }
+        ]
+      },
+      {
+        "id": "fb0cf739-6f88-483a-be11-dcd446a1dd37",
+        "name": "popular",
+        "label": "Popular",
+        "array": false,
+        "required": false,
+        "type": "BOOLEAN",
+        "defaultData": [
+          false
+        ]
+      },
+      {
+        "id": "c545369a-d813-4a7f-a874-0f901a4efff6",
+        "name": "qa",
+        "label": "QA",
+        "array": true,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "641ad9167ea0642549cf765b"
+        }
+      },
+      {
+        "id": "3d51a123-2aa7-4b9e-912b-3bbd2fec3065",
+        "name": "ingredients",
+        "label": "Ingredients",
+        "array": true,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "ca2ec2a6-7248-4d2a-9c37-9046395bc9e8",
+        "name": "steps",
+        "label": "Steps",
+        "array": true,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "641ada087ea0642549cf765c"
+        }
+      }
+    ]
+  },
+  "64182bcef7d73b81da796da8": {
+    "_id": "64182bcef7d73b81da796da8",
+    "createdAt": 1679305678996,
+    "updatedAt": 1679481400550,
+    "cid": "19",
+    "desc": "",
+    "label": "Recipe category",
+    "name": "recipe_category",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "8937744b-9108-4ca2-8c32-405462fd074e",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "4ed3c8fc-c37c-4358-b77c-35308ad1bdb1",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
+  },
+  "64199dbb9eeca76eacf3faca": {
+    "_id": "64199dbb9eeca76eacf3faca",
+    "createdAt": 1679400379350,
+    "updatedAt": 1679400392872,
+    "cid": "1a",
+    "desc": "",
+    "label": "Recipes page",
+    "name": "recipes_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "ac8f6d71-c852-4b46-b7c7-b50f4b58ec02",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "7c882384-4d84-47d2-b005-4f4a743d5013",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "44bc0026-b30d-4155-a3fe-4577c4cb0a04",
+        "name": "headline",
+        "label": "Headline",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
+  },
+  "641c111cb5e52ba9ac9365e2": {
+    "_id": "641c111cb5e52ba9ac9365e2",
+    "createdAt": 1679560988166,
+    "updatedAt": 1679560988166,
+    "cid": "1b",
+    "desc": "",
+    "label": "Legal page",
+    "name": "legal_page",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "6c5b3ce0-f10a-456b-8ee3-d5a863f37932",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "0d01a520-a78a-464f-b9ad-270b4e18f1f6",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
+  }
+}
