@@ -353,5 +353,71 @@
         ]
       }
     ]
+  },
+  "64258da608334637f5466f7c": {
+    "_id": "64258da608334637f5466f7c",
+    "createdAt": 1680182694308,
+    "updatedAt": 1680182704635,
+    "cid": "9",
+    "desc": "",
+    "label": "Testimonial author",
+    "name": "testimonial_author",
+    "props": [
+      {
+        "id": "d5690f2c-d4b5-42df-9e1e-80c8184bb7da",
+        "name": "name",
+        "label": "Name",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "452b54cc-b1c8-4dd8-bb6d-08e2a08e9dc3",
+        "name": "avatar",
+        "label": "Avatar",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      }
+    ]
+  },
+  "64258e3508334637f5466f80": {
+    "_id": "64258e3508334637f5466f80",
+    "createdAt": 1680182837030,
+    "updatedAt": 1680182855774,
+    "cid": "a",
+    "desc": "",
+    "label": "Home testimonials",
+    "name": "home_testimonials",
+    "props": [
+      {
+        "id": "a4057707-7d68-47a8-b19b-9084e7756663",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "088f411b-f725-4178-8308-466ab42da312",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
   }
 }

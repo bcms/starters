@@ -2,7 +2,7 @@
   "6423fe69c4d0f7aa085d5e86": {
     "_id": "6423fe69c4d0f7aa085d5e86",
     "createdAt": 1680080489610,
-    "updatedAt": 1680180591089,
+    "updatedAt": 1680182645663,
     "access": {
       "templates": [
         {
@@ -56,6 +56,14 @@
         {
           "_id": "6425855108334637f5466f73",
           "name": "event",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "64258d6d08334637f5466f7b",
+          "name": "testimonial",
           "get": true,
           "post": false,
           "put": false,

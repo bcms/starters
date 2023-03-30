@@ -508,5 +508,39 @@
     "caption": "",
     "height": 5184,
     "width": 3456
+  },
+  "64258e1308334637f5466f7d": {
+    "_id": "64258e1308334637f5466f7d",
+    "createdAt": 1680182803918,
+    "updatedAt": 1680182803918,
+    "hasChildren": true,
+    "isInRoot": true,
+    "mimetype": "dir",
+    "name": "testimonials",
+    "parentId": "",
+    "size": 0,
+    "type": "DIR",
+    "userId": "111111111111111111111111",
+    "altText": "",
+    "caption": "",
+    "height": -1,
+    "width": -1
+  },
+  "64258e1708334637f5466f7e": {
+    "_id": "64258e1708334637f5466f7e",
+    "createdAt": 1680182807459,
+    "updatedAt": 1680182807459,
+    "hasChildren": false,
+    "isInRoot": false,
+    "mimetype": "image/png",
+    "name": "lady-margaret.png",
+    "parentId": "64258e1308334637f5466f7d",
+    "size": 29106,
+    "type": "IMG",
+    "userId": "111111111111111111111111",
+    "altText": "",
+    "caption": "",
+    "height": 128,
+    "width": 128
   }
 }

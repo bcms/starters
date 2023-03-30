@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="overflow-hidden">
     <div class="container">
       <div class="flex flex-col items-center mb-8 lg:mb-20">
         <div

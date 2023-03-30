@@ -519,7 +519,7 @@
   "6424420cc4d0f7aa085d5e90": {
     "_id": "6424420cc4d0f7aa085d5e90",
     "createdAt": 1680097804319,
-    "updatedAt": 1680181052805,
+    "updatedAt": 1680182928116,
     "cid": "3",
     "templateId": "64243f75c4d0f7aa085d5e8f",
     "userId": "111111111111111111111111",
@@ -583,7 +583,7 @@
                       "id": "9f2447d5-b95d-4744-8e2c-7b1fdc6213c5",
                       "data": [
                         {
-                          "id": "04e708b4-0640-4874-8e49-0a54ffb06c30",
+                          "id": "2aa0af57-d3ff-4909-88f7-37bd189c81d4",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -621,7 +621,7 @@
                                 "id": "f5819cc2-4514-43ec-b6f1-56a020a587d3",
                                 "data": [
                                   {
-                                    "id": "18dc7358-1b02-4979-a298-e122f4d8781f",
+                                    "id": "57d6475c-af9c-4be9-a07a-d8f68c78d331",
                                     "nodes": [
                                       {
                                         "type": "paragraph",
@@ -654,7 +654,7 @@
                                 "id": "f5819cc2-4514-43ec-b6f1-56a020a587d3",
                                 "data": [
                                   {
-                                    "id": "e32d62dc-283b-411d-9812-9d8a8568c596",
+                                    "id": "b54905f5-a487-45df-bac5-82ca85e61540",
                                     "nodes": [
                                       {
                                         "type": "paragraph",
@@ -687,7 +687,7 @@
                                 "id": "f5819cc2-4514-43ec-b6f1-56a020a587d3",
                                 "data": [
                                   {
-                                    "id": "88df5d2b-353c-4f48-9dcb-a67d764fab36",
+                                    "id": "97457cef-c72f-4c18-97e2-c369265131f1",
                                     "nodes": [
                                       {
                                         "type": "paragraph",
@@ -739,7 +739,7 @@
                       "id": "a73d46da-e1dc-4451-a0b7-f8b1c92cc329",
                       "data": [
                         {
-                          "id": "65146106-9acf-4a5f-9df9-97700a092afd",
+                          "id": "bc48893e-438d-49d8-a7f6-231bf742a254",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -793,7 +793,7 @@
                       "id": "a898652f-c574-45a5-b176-960c286e8569",
                       "data": [
                         {
-                          "id": "20471082-b465-4f05-8c63-4ee3d1b86411",
+                          "id": "b7c435f1-0c94-4367-ad8c-e1cd95df6de6",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -851,7 +851,7 @@
                       "id": "f6f6ebf0-b81e-4ae2-b771-b7379ab42275",
                       "data": [
                         {
-                          "id": "8efe8a59-f197-45de-9818-03ccdf03cc1c",
+                          "id": "57fbf7c8-adc8-4145-b88e-c292ca8effe9",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -996,7 +996,7 @@
                       "id": "46190ae5-413a-4ec3-a267-89f2dc8ef770",
                       "data": [
                         {
-                          "id": "8da1031e-f416-442f-8662-763b0eab1ef1",
+                          "id": "c8e23168-4a30-4f29-9927-049e03e819be",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1033,7 +1033,7 @@
                       "id": "f6f77dc8-1814-4846-9c07-2d6f594a8ccf",
                       "data": [
                         {
-                          "id": "0c2b78b1-27d7-4640-8060-98c4d164ef30",
+                          "id": "63a121cd-9788-4394-84f5-e6627080458f",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1041,6 +1041,43 @@
                                 {
                                   "type": "text",
                                   "text": "At our distinguished restaurant, we are proud to host a variety of exclusive events that are a true celebration of elegance, sophistication, and luxury."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "d3f8719b-a5bc-484b-9ad2-a916183b02c3",
+            "data": {
+              "_id": "64258e3508334637f5466f80",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "a4057707-7d68-47a8-b19b-9084e7756663",
+                      "data": [
+                        "Testimonials"
+                      ]
+                    },
+                    {
+                      "id": "088f411b-f725-4178-8308-466ab42da312",
+                      "data": [
+                        {
+                          "id": "06c8ec1b-dd45-43f6-8c63-34a1f384dce0",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "If you're looking for a dining experience that exudes elegance and luxury, look no further than our restaurant. But don't take our word for it – hear what some of our esteemed customers have to say."
                                 }
                               ]
                             }
@@ -2194,6 +2231,88 @@
             "data": [
               "(TUE) 14th February, 6PM"
             ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "64258e2908334637f5466f7f": {
+    "_id": "64258e2908334637f5466f7f",
+    "createdAt": 1680182825689,
+    "updatedAt": 1680182825689,
+    "cid": "13",
+    "templateId": "64258d6d08334637f5466f7b",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "a3b7b363-98d9-4651-8465-92e0cedebc3c",
+            "data": [
+              "Lady Margaret"
+            ]
+          },
+          {
+            "id": "470e9066-6cdb-4600-bb55-eba47de06a67",
+            "data": [
+              "lady-margaret"
+            ]
+          },
+          {
+            "id": "cbd57167-99da-47c6-96e2-4dd7fd97af78",
+            "data": [
+              {
+                "id": "1aff67ef-cb7a-4a0e-b07c-75da2fddcc42",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "From the moment we walked in, we were transported to a world of opulence and refinement. The attention to detail in both the decor and the menu was truly impressive. And the flavors? Simply divine. I felt like royalty throughout the entire meal."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "a5181318-0874-49cb-b559-cac4a5776358",
+            "data": {
+              "_id": "64258da608334637f5466f7c",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "d5690f2c-d4b5-42df-9e1e-80c8184bb7da",
+                      "data": [
+                        "Lady Margaret"
+                      ]
+                    },
+                    {
+                      "id": "452b54cc-b1c8-4dd8-bb6d-08e2a08e9dc3",
+                      "data": [
+                        {
+                          "_id": "64258e1708334637f5466f7e",
+                          "alt_text": "Lady Margaret",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
           }
         ]
       }

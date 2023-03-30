@@ -4,6 +4,8 @@ import {
   FoodItemEntryMeta,
   HomePageEntry,
   HomePageEntryMeta,
+  TestimonialEntry,
+  TestimonialEntryMeta,
 } from "~~/bcms/types";
 import { EventEntry, EventEntryMeta } from "~~/bcms/types/entry/event";
 import { HomePageData } from "~~/types";
@@ -32,10 +34,18 @@ export const HomeApi = createBcmsMostServerRoutes({
         async () => true
       )) as unknown as EventEntry[];
 
+      const testimonials = (await bcms.content.entry.find(
+        "testimonial",
+        async () => true
+      )) as unknown as TestimonialEntry[];
+
       return {
         meta: entry.meta.en as HomePageEntryMeta,
         specials: specials.map((e) => e.meta.en) as FoodItemEntryMeta[],
         events: events.map((e) => e.meta.en) as EventEntryMeta[],
+        testimonials: testimonials.map(
+          (e) => e.meta.en
+        ) as TestimonialEntryMeta[],
       };
     },
   }),

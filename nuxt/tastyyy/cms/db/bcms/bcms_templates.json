@@ -120,7 +120,7 @@
   "64243f75c4d0f7aa085d5e8f": {
     "_id": "64243f75c4d0f7aa085d5e8f",
     "createdAt": 1680097141932,
-    "updatedAt": 1680180814260,
+    "updatedAt": 1680182904993,
     "cid": "3",
     "desc": "",
     "label": "Home page",
@@ -214,6 +214,17 @@
         "type": "GROUP_POINTER",
         "defaultData": {
           "_id": "6425863308334637f5466f7a"
+        }
+      },
+      {
+        "id": "d3f8719b-a5bc-484b-9ad2-a916183b02c3",
+        "name": "testimonials",
+        "label": "Testimonials",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64258e3508334637f5466f80"
         }
       }
     ]
@@ -515,6 +526,65 @@
         "defaultData": [
           ""
         ]
+      }
+    ]
+  },
+  "64258d6d08334637f5466f7b": {
+    "_id": "64258d6d08334637f5466f7b",
+    "createdAt": 1680182637835,
+    "updatedAt": 1680182717247,
+    "cid": "8",
+    "desc": "",
+    "label": "Testimonial",
+    "name": "testimonial",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "a3b7b363-98d9-4651-8465-92e0cedebc3c",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "470e9066-6cdb-4600-bb55-eba47de06a67",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "cbd57167-99da-47c6-96e2-4dd7fd97af78",
+        "name": "quote",
+        "label": "Quote",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "a5181318-0874-49cb-b559-cac4a5776358",
+        "name": "author",
+        "label": "Author",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64258da608334637f5466f7c"
+        }
       }
     ]
   }

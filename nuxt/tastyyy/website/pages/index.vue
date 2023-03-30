@@ -9,6 +9,10 @@
       :items="data.data.specials"
     />
     <HomePageEvents :data="data.data.meta.events" :items="data.data.events" />
+    <HomePageTestimonials
+      :data="data.data.meta.testimonials"
+      :items="data.data.testimonials"
+    />
   </PageWrapper>
 </template>
 
