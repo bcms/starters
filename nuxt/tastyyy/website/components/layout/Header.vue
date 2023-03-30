@@ -47,7 +47,7 @@
     </div>
     <div
       v-if="showMobileMenu"
-      class="absolute top-0 left-0 w-screen h-screen bg-appAccent md:hidden"
+      class="fixed top-0 left-0 w-screen h-screen bg-appAccent md:hidden"
     />
   </header>
 </template>

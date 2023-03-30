@@ -8,6 +8,10 @@
   object-position: top;
 }
 
+.bcmsImage.object-bottom img {
+  object-position: bottom;
+}
+
 .bcmsImage svg {
   width: 100%;
 }
