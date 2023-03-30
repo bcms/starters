@@ -87,7 +87,16 @@
               backgroundImage: `url(${imageUtils.getPath(item.image)})`,
               width: `${item.image.width / 5}px`,
             }"
-            class="image h-4 flex-shrink-0 mx-2 translate-y-[3px] bg-center bg-cover lg:h-10 lg:mx-4 lg:min-w-[105px]"
+            class="image image_sm h-4 flex-shrink-0 mx-2 translate-y-[3px] bg-center bg-cover"
+          />
+          <span
+            v-if="item.image"
+            :key="index"
+            :style="{
+              backgroundImage: `url(${imageUtils.getPath(item.image)})`,
+              width: `${item.image.width / 2}px`,
+            }"
+            class="image image_lg h-10 flex-shrink-0 mx-4 translate-y-[3px] bg-center bg-cover"
           />
         </template>
       </div>
@@ -126,6 +135,17 @@ defineProps({
     }
     .image {
       @apply inline-block;
+      &_lg {
+        @apply hidden;
+      }
+      @media screen and (min-width: 1024px) {
+        &_sm {
+          @apply hidden;
+        }
+        &_lg {
+          @apply inline-block;
+        }
+      }
     }
   }
 }
