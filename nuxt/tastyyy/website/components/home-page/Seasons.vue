@@ -3,7 +3,7 @@
     <div class="container">
       <div class="flex flex-col items-center mb-8 lg:mb-[88px]">
         <div
-          class="text-xs leading-none mb-2.5 lg:text-base lg:leading-none lg:mb-[14p]"
+          class="text-xs leading-none mb-2.5 lg:text-base lg:leading-none lg:mb-[14px]"
         >
           [ 2 ]
         </div>

@@ -318,5 +318,40 @@
         ]
       }
     ]
+  },
+  "6425863308334637f5466f7a": {
+    "_id": "6425863308334637f5466f7a",
+    "createdAt": 1680180787871,
+    "updatedAt": 1680180798976,
+    "cid": "8",
+    "desc": "",
+    "label": "Home events",
+    "name": "home_events",
+    "props": [
+      {
+        "id": "54a93fc6-b4bc-4414-8703-c730b1163212",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "f6f77dc8-1814-4846-9c07-2d6f594a8ccf",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
   }
 }

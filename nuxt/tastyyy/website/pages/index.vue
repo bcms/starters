@@ -8,6 +8,7 @@
       :data="data.data.meta.specials"
       :items="data.data.specials"
     />
+    <HomePageEvents :data="data.data.meta.events" :items="data.data.events" />
   </PageWrapper>
 </template>
 

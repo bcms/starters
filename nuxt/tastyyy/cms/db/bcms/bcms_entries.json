@@ -519,7 +519,7 @@
   "6424420cc4d0f7aa085d5e90": {
     "_id": "6424420cc4d0f7aa085d5e90",
     "createdAt": 1680097804319,
-    "updatedAt": 1680174399237,
+    "updatedAt": 1680181052805,
     "cid": "3",
     "templateId": "64243f75c4d0f7aa085d5e8f",
     "userId": "111111111111111111111111",
@@ -583,7 +583,7 @@
                       "id": "9f2447d5-b95d-4744-8e2c-7b1fdc6213c5",
                       "data": [
                         {
-                          "id": "27dfcb80-7eb6-4529-8a40-0963de21a6d9",
+                          "id": "04e708b4-0640-4874-8e49-0a54ffb06c30",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -621,7 +621,7 @@
                                 "id": "f5819cc2-4514-43ec-b6f1-56a020a587d3",
                                 "data": [
                                   {
-                                    "id": "4245af48-514e-4ddc-9ec6-a79aa0f847ed",
+                                    "id": "18dc7358-1b02-4979-a298-e122f4d8781f",
                                     "nodes": [
                                       {
                                         "type": "paragraph",
@@ -654,7 +654,7 @@
                                 "id": "f5819cc2-4514-43ec-b6f1-56a020a587d3",
                                 "data": [
                                   {
-                                    "id": "f1e39913-5035-4f2a-9a05-1805a68b832c",
+                                    "id": "e32d62dc-283b-411d-9812-9d8a8568c596",
                                     "nodes": [
                                       {
                                         "type": "paragraph",
@@ -687,7 +687,7 @@
                                 "id": "f5819cc2-4514-43ec-b6f1-56a020a587d3",
                                 "data": [
                                   {
-                                    "id": "02d0d85a-4bd4-4072-9f95-e9a837f5806e",
+                                    "id": "88df5d2b-353c-4f48-9dcb-a67d764fab36",
                                     "nodes": [
                                       {
                                         "type": "paragraph",
@@ -739,7 +739,7 @@
                       "id": "a73d46da-e1dc-4451-a0b7-f8b1c92cc329",
                       "data": [
                         {
-                          "id": "72c7c401-6afa-43df-9ac4-99606b7adb62",
+                          "id": "65146106-9acf-4a5f-9df9-97700a092afd",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -793,7 +793,7 @@
                       "id": "a898652f-c574-45a5-b176-960c286e8569",
                       "data": [
                         {
-                          "id": "b990af41-0b1a-4dfe-8927-d23d6f650321",
+                          "id": "20471082-b465-4f05-8c63-4ee3d1b86411",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -851,7 +851,7 @@
                       "id": "f6f6ebf0-b81e-4ae2-b771-b7379ab42275",
                       "data": [
                         {
-                          "id": "4a8dc85a-4cc6-4c73-a655-2c2f70be1c33",
+                          "id": "8efe8a59-f197-45de-9818-03ccdf03cc1c",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -996,7 +996,7 @@
                       "id": "46190ae5-413a-4ec3-a267-89f2dc8ef770",
                       "data": [
                         {
-                          "id": "ae927b16-6546-4b42-8726-2e17f97ce7d5",
+                          "id": "8da1031e-f416-442f-8662-763b0eab1ef1",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1004,6 +1004,43 @@
                                 {
                                   "type": "text",
                                   "text": "At our esteemed restaurant, we pride ourselves on offering a daily specials menu that is a true celebration of culinary excellence. Each day, our expert chefs create a unique and exclusive menu that is only available for that day, featuring the finest ingredients and the most innovative cooking techniques."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "749c073d-d0f8-418e-902f-b2f6e1297340",
+            "data": {
+              "_id": "6425863308334637f5466f7a",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "54a93fc6-b4bc-4414-8703-c730b1163212",
+                      "data": [
+                        "Events"
+                      ]
+                    },
+                    {
+                      "id": "f6f77dc8-1814-4846-9c07-2d6f594a8ccf",
+                      "data": [
+                        {
+                          "id": "0c2b78b1-27d7-4640-8060-98c4d164ef30",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "At our distinguished restaurant, we are proud to host a variety of exclusive events that are a true celebration of elegance, sophistication, and luxury."
                                 }
                               ]
                             }
@@ -2016,6 +2053,146 @@
                 "tid": "64255b56a881adc726bbf40f",
                 "eid": "64255c6fa881adc726bbf415"
               }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "6425861008334637f5466f78": {
+    "_id": "6425861008334637f5466f78",
+    "createdAt": 1680180752332,
+    "updatedAt": 1680180752332,
+    "cid": "11",
+    "templateId": "6425855108334637f5466f73",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "bf58ba9d-5e85-43ac-a5c8-f25ef7aaad9b",
+            "data": [
+              "Saturday Jazz"
+            ]
+          },
+          {
+            "id": "0eaf0d86-000b-45e0-89dd-2c2d5f7070b8",
+            "data": [
+              "saturday-jazz"
+            ]
+          },
+          {
+            "id": "061cbc9d-e216-4e89-aaf5-88850f0e7e3b",
+            "data": [
+              {
+                "id": "e4f5ebd4-d7b4-4532-8612-7ba389919009",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Enjoy Jazz Music? Join us this Saturday and share some of the best moments with your friends, enjoying best food in town and listening to the World famous Jazz Trio from our own hometown."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "cf480522-63cc-4ff1-af46-241de03e829f",
+            "data": [
+              {
+                "_id": "642585ee08334637f5466f76",
+                "alt_text": "Saturday Jazz",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "e579c795-0ed3-46ec-bce2-04dee60a02b0",
+            "data": [
+              "(Sat) 10th March, 8PM"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "6425862a08334637f5466f79": {
+    "_id": "6425862a08334637f5466f79",
+    "createdAt": 1680180778067,
+    "updatedAt": 1680180778067,
+    "cid": "12",
+    "templateId": "6425855108334637f5466f73",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "bf58ba9d-5e85-43ac-a5c8-f25ef7aaad9b",
+            "data": [
+              "Valentine’s Day"
+            ]
+          },
+          {
+            "id": "0eaf0d86-000b-45e0-89dd-2c2d5f7070b8",
+            "data": [
+              "valentines-day"
+            ]
+          },
+          {
+            "id": "061cbc9d-e216-4e89-aaf5-88850f0e7e3b",
+            "data": [
+              {
+                "id": "589a08ce-397c-4e50-8852-22cca70830ea",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Looking for a place to go out with your partner? We have prepared for you a guest of surprise who will enrichen the atmosphere and leave your partner breathless. Besides that, look out for our special offers and discounts, available only on this day."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "cf480522-63cc-4ff1-af46-241de03e829f",
+            "data": [
+              {
+                "_id": "642585ee08334637f5466f77",
+                "alt_text": "Valentine’s Day",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "e579c795-0ed3-46ec-bce2-04dee60a02b0",
+            "data": [
+              "(TUE) 14th February, 6PM"
             ]
           }
         ]

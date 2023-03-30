@@ -120,7 +120,7 @@
   "64243f75c4d0f7aa085d5e8f": {
     "_id": "64243f75c4d0f7aa085d5e8f",
     "createdAt": 1680097141932,
-    "updatedAt": 1680174374751,
+    "updatedAt": 1680180814260,
     "cid": "3",
     "desc": "",
     "label": "Home page",
@@ -203,6 +203,17 @@
         "type": "GROUP_POINTER",
         "defaultData": {
           "_id": "64256c3708334637f5466f66"
+        }
+      },
+      {
+        "id": "749c073d-d0f8-418e-902f-b2f6e1297340",
+        "name": "events",
+        "label": "Events",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "6425863308334637f5466f7a"
         }
       }
     ]
@@ -435,6 +446,74 @@
             "templateId": "64255b56a881adc726bbf40f",
             "entryIds": []
           }
+        ]
+      }
+    ]
+  },
+  "6425855108334637f5466f73": {
+    "_id": "6425855108334637f5466f73",
+    "createdAt": 1680180561590,
+    "updatedAt": 1680180579671,
+    "cid": "7",
+    "desc": "",
+    "label": "Event",
+    "name": "event",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "bf58ba9d-5e85-43ac-a5c8-f25ef7aaad9b",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "0eaf0d86-000b-45e0-89dd-2c2d5f7070b8",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "061cbc9d-e216-4e89-aaf5-88850f0e7e3b",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "cf480522-63cc-4ff1-af46-241de03e829f",
+        "name": "cover",
+        "label": "Cover",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "e579c795-0ed3-46ec-bce2-04dee60a02b0",
+        "name": "date",
+        "label": "Date",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
         ]
       }
     ]
