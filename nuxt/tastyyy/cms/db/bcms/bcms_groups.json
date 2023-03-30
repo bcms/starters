@@ -206,5 +206,82 @@
         ]
       }
     ]
+  },
+  "6425605a08334637f5466f5e": {
+    "_id": "6425605a08334637f5466f5e",
+    "createdAt": 1680171098060,
+    "updatedAt": 1680171564177,
+    "cid": "5",
+    "desc": "",
+    "label": "Home ambience",
+    "name": "home_ambience",
+    "props": [
+      {
+        "id": "31ce0f6e-c080-408e-9130-d769ad224092",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "f6f6ebf0-b81e-4ae2-b771-b7379ab42275",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "9a6b2319-17db-4f2b-ab83-a38f261ef303",
+        "name": "items",
+        "label": "Items",
+        "array": true,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "6425621108334637f5466f5f"
+        }
+      }
+    ]
+  },
+  "6425621108334637f5466f5f": {
+    "_id": "6425621108334637f5466f5f",
+    "createdAt": 1680171537204,
+    "updatedAt": 1680171550865,
+    "cid": "6",
+    "desc": "",
+    "label": "Ambience item",
+    "name": "ambience_item",
+    "props": [
+      {
+        "id": "a6403ce8-79c8-41bc-b6a2-9bc8804ca8d1",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "0f4877d5-72d5-44de-94d9-0c2e80100459",
+        "name": "cover",
+        "label": "Cover",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      }
+    ]
   }
 }

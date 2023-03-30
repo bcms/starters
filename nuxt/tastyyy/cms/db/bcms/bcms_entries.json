@@ -519,7 +519,7 @@
   "6424420cc4d0f7aa085d5e90": {
     "_id": "6424420cc4d0f7aa085d5e90",
     "createdAt": 1680097804319,
-    "updatedAt": 1680170646114,
+    "updatedAt": 1680171923706,
     "cid": "3",
     "templateId": "64243f75c4d0f7aa085d5e8f",
     "userId": "111111111111111111111111",
@@ -583,7 +583,7 @@
                       "id": "9f2447d5-b95d-4744-8e2c-7b1fdc6213c5",
                       "data": [
                         {
-                          "id": "529b2e35-288c-4e4d-9bc1-e9ac20a1ddfa",
+                          "id": "1035e52e-3013-4d89-ae40-6b0ad3d2cf1e",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -621,7 +621,7 @@
                                 "id": "f5819cc2-4514-43ec-b6f1-56a020a587d3",
                                 "data": [
                                   {
-                                    "id": "a3d455ad-1837-4c7e-b8fd-41093c30a1a2",
+                                    "id": "80682042-8118-4bcd-af35-38b5fd9d85a6",
                                     "nodes": [
                                       {
                                         "type": "paragraph",
@@ -654,7 +654,7 @@
                                 "id": "f5819cc2-4514-43ec-b6f1-56a020a587d3",
                                 "data": [
                                   {
-                                    "id": "94f38526-2a8b-4695-a750-07ad0f89e017",
+                                    "id": "7784086c-530e-44bd-b10d-a0afff419112",
                                     "nodes": [
                                       {
                                         "type": "paragraph",
@@ -687,7 +687,7 @@
                                 "id": "f5819cc2-4514-43ec-b6f1-56a020a587d3",
                                 "data": [
                                   {
-                                    "id": "64ec8186-49c8-429e-903b-a46e7ace6f1e",
+                                    "id": "af390e78-6127-4b00-9e90-c32f6e89e550",
                                     "nodes": [
                                       {
                                         "type": "paragraph",
@@ -739,7 +739,7 @@
                       "id": "a73d46da-e1dc-4451-a0b7-f8b1c92cc329",
                       "data": [
                         {
-                          "id": "ad79ea6e-456c-49fa-a411-710a8215ff7e",
+                          "id": "7286cf76-570e-472d-8a82-379d1b28bb86",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -793,7 +793,7 @@
                       "id": "a898652f-c574-45a5-b176-960c286e8569",
                       "data": [
                         {
-                          "id": "2a3164a5-a38f-42b2-bd1e-05e14cd9efd4",
+                          "id": "3b88d01d-ed31-4d4f-9eba-703438b2e8ac",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -828,6 +828,151 @@
                           "eid": "64255caaa881adc726bbf418"
                         }
                       ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "e38bbe78-7e89-4a98-8fa4-0ea7521c41a3",
+            "data": {
+              "_id": "6425605a08334637f5466f5e",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "31ce0f6e-c080-408e-9130-d769ad224092",
+                      "data": [
+                        "Ambience"
+                      ]
+                    },
+                    {
+                      "id": "f6f6ebf0-b81e-4ae2-b771-b7379ab42275",
+                      "data": [
+                        {
+                          "id": "4d576ff0-a302-4fad-bbbc-6cf2ed065af1",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Welcome to the exquisite dining experience where every detail has been curated to create a luxurious ambiance that will transport you to a world of refinement and sophistication. As you step into our restaurant, you will be enveloped by the warm glow of our carefully chosen lighting, which adds a touch of elegance."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "9a6b2319-17db-4f2b-ab83-a38f261ef303",
+                      "data": {
+                        "_id": "6425621108334637f5466f5f",
+                        "items": [
+                          {
+                            "props": [
+                              {
+                                "id": "a6403ce8-79c8-41bc-b6a2-9bc8804ca8d1",
+                                "data": [
+                                  "Entrance"
+                                ]
+                              },
+                              {
+                                "id": "0f4877d5-72d5-44de-94d9-0c2e80100459",
+                                "data": [
+                                  {
+                                    "_id": "6425631c08334637f5466f61",
+                                    "alt_text": "Entrance",
+                                    "caption": ""
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "props": [
+                              {
+                                "id": "a6403ce8-79c8-41bc-b6a2-9bc8804ca8d1",
+                                "data": [
+                                  "Entrance"
+                                ]
+                              },
+                              {
+                                "id": "0f4877d5-72d5-44de-94d9-0c2e80100459",
+                                "data": [
+                                  {
+                                    "_id": "6425631c08334637f5466f62",
+                                    "alt_text": "Entrance",
+                                    "caption": ""
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "props": [
+                              {
+                                "id": "a6403ce8-79c8-41bc-b6a2-9bc8804ca8d1",
+                                "data": [
+                                  "Main hall 2nd floor"
+                                ]
+                              },
+                              {
+                                "id": "0f4877d5-72d5-44de-94d9-0c2e80100459",
+                                "data": [
+                                  {
+                                    "_id": "6425631c08334637f5466f63",
+                                    "alt_text": "Main hall 2nd floor",
+                                    "caption": ""
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "props": [
+                              {
+                                "id": "a6403ce8-79c8-41bc-b6a2-9bc8804ca8d1",
+                                "data": [
+                                  "Main hall"
+                                ]
+                              },
+                              {
+                                "id": "0f4877d5-72d5-44de-94d9-0c2e80100459",
+                                "data": [
+                                  {
+                                    "_id": "6425631c08334637f5466f64",
+                                    "alt_text": "Main hall",
+                                    "caption": ""
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "props": [
+                              {
+                                "id": "a6403ce8-79c8-41bc-b6a2-9bc8804ca8d1",
+                                "data": [
+                                  "Bar"
+                                ]
+                              },
+                              {
+                                "id": "0f4877d5-72d5-44de-94d9-0c2e80100459",
+                                "data": [
+                                  {
+                                    "_id": "6425631c08334637f5466f65",
+                                    "alt_text": "Bar",
+                                    "caption": ""
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
                     }
                   ]
                 }

@@ -120,7 +120,7 @@
   "64243f75c4d0f7aa085d5e8f": {
     "_id": "64243f75c4d0f7aa085d5e8f",
     "createdAt": 1680097141932,
-    "updatedAt": 1680170210294,
+    "updatedAt": 1680171823266,
     "cid": "3",
     "desc": "",
     "label": "Home page",
@@ -181,6 +181,17 @@
         "type": "GROUP_POINTER",
         "defaultData": {
           "_id": "64255cbca881adc726bbf419"
+        }
+      },
+      {
+        "id": "e38bbe78-7e89-4a98-8fa4-0ea7521c41a3",
+        "name": "ambience",
+        "label": "Ambience",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "6425605a08334637f5466f5e"
         }
       }
     ]

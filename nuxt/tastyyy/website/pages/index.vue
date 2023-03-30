@@ -3,6 +3,7 @@
     <HomePageHero :data="data.data.meta.hero" />
     <HomePageMenu :data="data.data.meta.menu" />
     <HomePageSeasons :data="data.data.meta.seasons" />
+    <HomePageAmbience :data="data.data.meta.ambience" />
   </PageWrapper>
 </template>
 
