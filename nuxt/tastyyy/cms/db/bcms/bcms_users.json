@@ -1,0 +1,110 @@
+{
+  "111111111111111111111111": {
+    "_id": "111111111111111111111111",
+    "createdAt": 1680078193481,
+    "updatedAt": 1680166344298,
+    "email": "dev@thebcms.com",
+    "username": "Dev User",
+    "password": "gVoRnAz72TxQuZLC3bEMiUJ+PJJCX7S5vVrEImWOcgoXYyMR67k3BSLvKkV9xmEbvQd5CGJKstHNZqaPXHsdVA==",
+    "customPool": {
+      "address": {
+        "city": "",
+        "country": "",
+        "state": "",
+        "street": {
+          "name": "",
+          "number": ""
+        },
+        "zip": ""
+      },
+      "personal": {
+        "firstName": "Dev",
+        "lastName": "User",
+        "avatarUri": ""
+      },
+      "policy": {
+        "media": {
+          "delete": false,
+          "get": false,
+          "post": false,
+          "put": false
+        },
+        "templates": [],
+        "plugins": []
+      }
+    },
+    "roles": [
+      {
+        "name": "ADMIN",
+        "permissions": [
+          {
+            "name": "READ"
+          },
+          {
+            "name": "WRITE"
+          },
+          {
+            "name": "DELETE"
+          },
+          {
+            "name": "EXECUTE"
+          }
+        ]
+      }
+    ]
+  },
+  "211111111111111111111111": {
+    "_id": "211111111111111111111111",
+    "createdAt": 1680078193481,
+    "updatedAt": 1680166344299,
+    "email": "dev2@thebcms.com",
+    "username": "Normal User",
+    "password": "ijMQjPuoe7ODmXG332gaz8y6eRZfL9NEnqGwFHZvjBgwJhR3J6BTQDe1sGH5HEsTDA95e6xXaWc67hfXCmapxg==",
+    "customPool": {
+      "address": {
+        "city": "",
+        "country": "",
+        "state": "",
+        "street": {
+          "name": "",
+          "number": ""
+        },
+        "zip": ""
+      },
+      "personal": {
+        "firstName": "Normal",
+        "lastName": "User",
+        "avatarUri": ""
+      },
+      "policy": {
+        "media": {
+          "delete": false,
+          "get": false,
+          "post": false,
+          "put": false
+        },
+        "templates": [],
+        "plugins": []
+      }
+    },
+    "roles": [
+      {
+        "name": "USER",
+        "permissions": [
+          {
+            "name": "READ"
+          },
+          {
+            "name": "WRITE"
+          },
+          {
+            "name": "DELETE"
+          },
+          {
+            "name": "EXECUTE"
+          }
+        ]
+      }
+    ]
+  }
+}

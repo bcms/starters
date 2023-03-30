@@ -1,0 +1,13 @@
+{
+  "642435dec4d0f7aa085d5e8d": {
+    "_id": "642435dec4d0f7aa085d5e8d",
+    "createdAt": 1680094686959,
+    "updatedAt": 1680094686959,
+    "label": "Layout",
+    "name": "layout",
+    "templateIds": [
+      "642435dbc4d0f7aa085d5e8c",
+      "64241704c4d0f7aa085d5e88"
+    ]
+  }
+}

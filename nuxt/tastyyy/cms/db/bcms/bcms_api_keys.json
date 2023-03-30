@@ -1,0 +1,57 @@
+{
+  "6423fe69c4d0f7aa085d5e86": {
+    "_id": "6423fe69c4d0f7aa085d5e86",
+    "createdAt": 1680080489610,
+    "updatedAt": 1680169819068,
+    "access": {
+      "templates": [
+        {
+          "_id": "64241704c4d0f7aa085d5e88",
+          "name": "header",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "642435dbc4d0f7aa085d5e8c",
+          "name": "footer",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "64243f75c4d0f7aa085d5e8f",
+          "name": "home_page",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "642552c0a881adc726bbf404",
+          "name": "meal_type",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "64255b56a881adc726bbf40f",
+          "name": "season",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        }
+      ],
+      "functions": []
+    },
+    "blocked": false,
+    "desc": "This is an API key created automatically by the BCMS CLI.",
+    "name": "Development key",
+    "secret": "d0128c9f142a7f609c9f787d782feef791ba0bb5c823494f70199a16d88035ac",
+    "userId": "111111111111111111111111"
+  }
+}

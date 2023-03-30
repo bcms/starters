@@ -1,0 +1,1360 @@
+{
+  "642417dcc4d0f7aa085d5e8b": {
+    "_id": "642417dcc4d0f7aa085d5e8b",
+    "createdAt": 1680087004181,
+    "updatedAt": 1680090999343,
+    "cid": "1",
+    "templateId": "64241704c4d0f7aa085d5e88",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "a4052364-efc4-482d-a800-8f204d180eaa",
+            "data": [
+              "Header"
+            ]
+          },
+          {
+            "id": "fb0bfe5b-362c-4b5f-b589-4bfe2f40a96e",
+            "data": [
+              "header"
+            ]
+          },
+          {
+            "id": "601aca73-7d67-4f5d-a70f-ca3eceed7ed5",
+            "data": [
+              {
+                "_id": "6424173ec4d0f7aa085d5e89",
+                "alt_text": "Logo",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "876d3a7e-2b10-4d38-9c66-fec23229998e",
+            "data": [
+              {
+                "id": "5ba02dfb-b0ad-4b58-9c4f-638a77971632",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Home"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "55e28d01-913e-4a4d-b8f2-2983564cb6fe",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Menu"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "5f199d6f-fd75-4fbb-a090-a9c200808849",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Events"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "6cf5ce9a-beb7-4718-abe8-8b6f4a00332e",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Reservation"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642435e8c4d0f7aa085d5e8e": {
+    "_id": "642435e8c4d0f7aa085d5e8e",
+    "createdAt": 1680094696058,
+    "updatedAt": 1680095843261,
+    "cid": "2",
+    "templateId": "642435dbc4d0f7aa085d5e8c",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "0aeec494-b1ff-496a-91a4-37205468dbe4",
+            "data": [
+              "Footer"
+            ]
+          },
+          {
+            "id": "7a9cc8c2-cf50-4ac1-bba5-641691c57274",
+            "data": [
+              "footer"
+            ]
+          },
+          {
+            "id": "21a0c6fc-1abe-4c8c-800f-ea5a96e373f6",
+            "data": [
+              {
+                "id": "52d2f59a-cee1-4652-a0f5-816f5c003ee2",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "California 166166,"
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "text",
+                        "text": "quai de Stalingrad"
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "text",
+                        "text": "92130 Issy-Les-Moulineaux"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1229c3b5-e696-4e74-a514-d0ede1840522",
+            "data": [
+              {
+                "id": "a5925db7-1d8c-4d36-9901-c1ddd851ef37",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Connect"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "bulletList",
+                    "content": [
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [
+                                  {
+                                    "type": "link",
+                                    "attrs": {
+                                      "href": "https://www.instagram.com/",
+                                      "target": "_blank",
+                                      "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                                    }
+                                  }
+                                ],
+                                "text": "Instagram"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [
+                                  {
+                                    "type": "link",
+                                    "attrs": {
+                                      "href": "https://www.facebook.com/",
+                                      "target": "_blank",
+                                      "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                                    }
+                                  }
+                                ],
+                                "text": "Facebook"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [
+                                  {
+                                    "type": "link",
+                                    "attrs": {
+                                      "href": "https://twitter.com/",
+                                      "target": "_blank",
+                                      "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                                    }
+                                  }
+                                ],
+                                "text": "Twitter"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "da4172f7-4f55-47d2-92d1-4ff13342f89f",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Get in touch"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "bulletList",
+                    "content": [
+                      {
+                        "type": "listItem",
+                        "attrs": {
+                          "list": true
+                        },
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [
+                                  {
+                                    "type": "link",
+                                    "attrs": {
+                                      "href": "tel:+18129231823",
+                                      "target": "_blank",
+                                      "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                                    }
+                                  }
+                                ],
+                                "text": "(+1) 812 9231 823"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "attrs": {
+                          "list": true
+                        },
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [
+                                  {
+                                    "type": "link",
+                                    "attrs": {
+                                      "href": "mailto:tastyyy@mail.com",
+                                      "target": "_blank",
+                                      "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                                    }
+                                  }
+                                ],
+                                "text": "tastyyy@mail.com"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "6fffa507-e514-4f5c-a5c7-29548cbfc535",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Shop"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "bulletList",
+                    "content": [
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [
+                                  {
+                                    "type": "link",
+                                    "attrs": {
+                                      "href": "/",
+                                      "target": "_blank",
+                                      "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                                    }
+                                  }
+                                ],
+                                "text": "Pickup"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [
+                                  {
+                                    "type": "link",
+                                    "attrs": {
+                                      "href": "/",
+                                      "target": "_blank",
+                                      "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                                    }
+                                  }
+                                ],
+                                "text": "Location"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ed4455d7-365f-4df0-99e4-444845d2f37f",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Legal"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "bulletList",
+                    "content": [
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [
+                                  {
+                                    "type": "link",
+                                    "attrs": {
+                                      "href": "/",
+                                      "target": "_blank",
+                                      "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                                    }
+                                  }
+                                ],
+                                "text": "Terms & condition"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [
+                                  {
+                                    "type": "link",
+                                    "attrs": {
+                                      "href": "/",
+                                      "target": "_blank",
+                                      "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                                    }
+                                  }
+                                ],
+                                "text": "Privacy policy"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "6424420cc4d0f7aa085d5e90": {
+    "_id": "6424420cc4d0f7aa085d5e90",
+    "createdAt": 1680097804319,
+    "updatedAt": 1680170238112,
+    "cid": "3",
+    "templateId": "64243f75c4d0f7aa085d5e8f",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "4d56c710-b292-44a5-b183-0454b8b49a6c",
+            "data": [
+              "Home"
+            ]
+          },
+          {
+            "id": "3dc303df-23a9-4fd1-b240-8595f59f25c7",
+            "data": [
+              "home"
+            ]
+          },
+          {
+            "id": "21370914-a0a5-453a-8241-51d2b3e26fbd",
+            "data": {
+              "_id": "64244871c4d0f7aa085d5e98",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "f77bc021-8a8d-4fb5-8e07-1855d683cf7b",
+                      "data": [
+                        "Tastyyy"
+                      ]
+                    },
+                    {
+                      "id": "52f48868-c98b-4783-9b09-3c06fac729f7",
+                      "data": [
+                        {
+                          "_id": "64244495c4d0f7aa085d5e94",
+                          "alt_text": "Tastyyy",
+                          "caption": ""
+                        }
+                      ]
+                    },
+                    {
+                      "id": "0b1de8fd-d09f-42c6-950c-1eea8b93aa16",
+                      "data": [
+                        "Birmingham, St. 9"
+                      ]
+                    },
+                    {
+                      "id": "9eb94686-8145-4e47-a03d-6c185447d77d",
+                      "data": [
+                        {
+                          "_id": "64254dd3a881adc726bbf403",
+                          "alt_text": "Map",
+                          "caption": ""
+                        }
+                      ]
+                    },
+                    {
+                      "id": "9f2447d5-b95d-4744-8e2c-7b1fdc6213c5",
+                      "data": [
+                        {
+                          "id": "959d4e9f-ec49-419d-a6ff-ac6d0c819f6d",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "Open 9AM-9PM"
+                                },
+                                {
+                                  "type": "hardBreak"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "(Mon-Sat)"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "b8bf8572-5069-4e98-b4eb-4bd9218ba4f1",
+                      "data": {
+                        "_id": "6424424fc4d0f7aa085d5e92",
+                        "items": [
+                          {
+                            "props": [
+                              {
+                                "id": "f5819cc2-4514-43ec-b6f1-56a020a587d3",
+                                "data": [
+                                  {
+                                    "id": "2b74625d-1e1b-4763-94d6-d1c3b93c0dea",
+                                    "nodes": [
+                                      {
+                                        "type": "paragraph",
+                                        "content": [
+                                          {
+                                            "type": "text",
+                                            "text": "Welcome to Tastyyy,"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "f15748d8-7402-4d03-881f-8a5513894f8c",
+                                "data": [
+                                  {
+                                    "_id": "642444fbc4d0f7aa085d5e95",
+                                    "alt_text": "Tastyyy",
+                                    "caption": ""
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "props": [
+                              {
+                                "id": "f5819cc2-4514-43ec-b6f1-56a020a587d3",
+                                "data": [
+                                  {
+                                    "id": "4fa3f673-4872-40d7-96d4-8c4e0fe73e8f",
+                                    "nodes": [
+                                      {
+                                        "type": "paragraph",
+                                        "content": [
+                                          {
+                                            "type": "text",
+                                            "text": "where we bring you the best dining experience in town. Our restaurant offers a warm and inviting atmosphere, delicious food"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "f15748d8-7402-4d03-881f-8a5513894f8c",
+                                "data": [
+                                  {
+                                    "_id": "642444fbc4d0f7aa085d5e96",
+                                    "alt_text": "Tastyyy",
+                                    "caption": ""
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "props": [
+                              {
+                                "id": "f5819cc2-4514-43ec-b6f1-56a020a587d3",
+                                "data": [
+                                  {
+                                    "id": "8e147266-51a2-4c8c-8f75-c4cd09026282",
+                                    "nodes": [
+                                      {
+                                        "type": "paragraph",
+                                        "content": [
+                                          {
+                                            "type": "text",
+                                            "text": ", and exceptional service that will leave you satisfied and wanting to come back for more."
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "f15748d8-7402-4d03-881f-8a5513894f8c",
+                                "data": [
+                                  {
+                                    "_id": "",
+                                    "alt_text": "",
+                                    "caption": ""
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "1dc00640-7e2a-41da-9aed-f6175489e085",
+            "data": {
+              "_id": "64255323a881adc726bbf409",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "8370ad87-3511-4845-8200-edf021008707",
+                      "data": [
+                        "Menu"
+                      ]
+                    },
+                    {
+                      "id": "a73d46da-e1dc-4451-a0b7-f8b1c92cc329",
+                      "data": [
+                        {
+                          "id": "7339ca1c-4f93-43f0-82c2-2c2ddc6872fe",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Allow us to take you on a journey of culinary discovery, where every dish is a masterpiece of flavor and artistry. With our menu section, you can expect nothing less than the finest ingredients, meticulous preparation, anD beauty presentation."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "e8073df8-76eb-4361-a9b5-e7ce61990462",
+                      "data": [
+                        {
+                          "tid": "642552c0a881adc726bbf404",
+                          "eid": "642552cba881adc726bbf405"
+                        },
+                        {
+                          "tid": "642552c0a881adc726bbf404",
+                          "eid": "642552d3a881adc726bbf406"
+                        },
+                        {
+                          "tid": "642552c0a881adc726bbf404",
+                          "eid": "642552daa881adc726bbf407"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "54514b43-ce5d-437d-b93f-f17ac5e22876",
+            "data": {
+              "_id": "64255cbca881adc726bbf419",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "42b99f26-bd3b-4fe4-9684-cffd72d7c503",
+                      "data": [
+                        "Seasonal dishes"
+                      ]
+                    },
+                    {
+                      "id": "a898652f-c574-45a5-b176-960c286e8569",
+                      "data": [
+                        {
+                          "id": "8d4a9816-631a-478c-b0b9-af1d42b8ff41",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Experience the magic of the season with our exquisite selection of seasonal dishes, designed to celebrate the finest ingredients of the moment and elevate your"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "d1fcac64-5f03-4c09-93a8-aeed8706705b",
+                      "data": [
+                        {
+                          "tid": "64255b56a881adc726bbf40f",
+                          "eid": "64255c6fa881adc726bbf415"
+                        },
+                        {
+                          "tid": "64255b56a881adc726bbf40f",
+                          "eid": "64255c88a881adc726bbf416"
+                        },
+                        {
+                          "tid": "64255b56a881adc726bbf40f",
+                          "eid": "64255c9ba881adc726bbf417"
+                        },
+                        {
+                          "tid": "64255b56a881adc726bbf40f",
+                          "eid": "64255caaa881adc726bbf418"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642552cba881adc726bbf405": {
+    "_id": "642552cba881adc726bbf405",
+    "createdAt": 1680167627029,
+    "updatedAt": 1680168129449,
+    "cid": "4",
+    "templateId": "642552c0a881adc726bbf404",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "840fe638-4ac4-4227-afa0-bae44536719c",
+            "data": [
+              "Breakfast"
+            ]
+          },
+          {
+            "id": "fbae5ceb-ef03-4feb-b9f6-c859aa2c60ec",
+            "data": [
+              "breakfast"
+            ]
+          },
+          {
+            "id": "698f46a7-26ec-4e68-8636-049f976bb39a",
+            "data": [
+              {
+                "id": "30011aa0-8b00-44e9-aa7c-0638fc619baf",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Experience a morning of indulgence with our exquisite breakfast menu. Savor the sumptuous flavors of our carefully crafted dishes, prepared with only the freshest ingredients and served with unparalleled elegance."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "3b56c18e-11a6-4236-ab60-7ed69f15e5d3",
+            "data": [
+              {
+                "_id": "642554b2a881adc726bbf40c",
+                "alt_text": "Breakfast",
+                "caption": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642552d3a881adc726bbf406": {
+    "_id": "642552d3a881adc726bbf406",
+    "createdAt": 1680167635232,
+    "updatedAt": 1680168135821,
+    "cid": "5",
+    "templateId": "642552c0a881adc726bbf404",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "840fe638-4ac4-4227-afa0-bae44536719c",
+            "data": [
+              "Lunch"
+            ]
+          },
+          {
+            "id": "fbae5ceb-ef03-4feb-b9f6-c859aa2c60ec",
+            "data": [
+              "lunch"
+            ]
+          },
+          {
+            "id": "698f46a7-26ec-4e68-8636-049f976bb39a",
+            "data": [
+              {
+                "id": "8507738d-277d-4148-811d-f2428039b90b",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Join us for a lunch experience that will transport you to a world of refined elegance and culinary excellence. Our impeccable service and luxurious ambiance create the perfect setting for a meal that is sure to impress."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "3b56c18e-11a6-4236-ab60-7ed69f15e5d3",
+            "data": [
+              {
+                "_id": "642554b2a881adc726bbf40e",
+                "alt_text": "Lunch",
+                "caption": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642552daa881adc726bbf407": {
+    "_id": "642552daa881adc726bbf407",
+    "createdAt": 1680167642557,
+    "updatedAt": 1680168142173,
+    "cid": "6",
+    "templateId": "642552c0a881adc726bbf404",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "840fe638-4ac4-4227-afa0-bae44536719c",
+            "data": [
+              "Dinner"
+            ]
+          },
+          {
+            "id": "fbae5ceb-ef03-4feb-b9f6-c859aa2c60ec",
+            "data": [
+              "dinner"
+            ]
+          },
+          {
+            "id": "698f46a7-26ec-4e68-8636-049f976bb39a",
+            "data": [
+              {
+                "id": "d9c522e1-675d-49a3-9368-cad8a02240d8",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Enter a world of refined indulgence with our exceptional dinner menu, crafted to entice your senses with a variety of premium flavors and sophisticated presentation. Explore a culinary adventure that is truly unique."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "3b56c18e-11a6-4236-ab60-7ed69f15e5d3",
+            "data": [
+              {
+                "_id": "642554b2a881adc726bbf40d",
+                "alt_text": "Dinner",
+                "caption": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642552e1a881adc726bbf408": {
+    "_id": "642552e1a881adc726bbf408",
+    "createdAt": 1680167649088,
+    "updatedAt": 1680168148416,
+    "cid": "7",
+    "templateId": "642552c0a881adc726bbf404",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "840fe638-4ac4-4227-afa0-bae44536719c",
+            "data": [
+              "Dessert"
+            ]
+          },
+          {
+            "id": "fbae5ceb-ef03-4feb-b9f6-c859aa2c60ec",
+            "data": [
+              "dessert"
+            ]
+          },
+          {
+            "id": "698f46a7-26ec-4e68-8636-049f976bb39a",
+            "data": [
+              {
+                "id": "92501b93-67f0-4643-a15f-97cc6c7ebe53",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Dessert copy here"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "3b56c18e-11a6-4236-ab60-7ed69f15e5d3",
+            "data": [
+              {
+                "_id": "642554b2a881adc726bbf40d",
+                "alt_text": "Dessert",
+                "caption": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "64255c6fa881adc726bbf415": {
+    "_id": "64255c6fa881adc726bbf415",
+    "createdAt": 1680170095231,
+    "updatedAt": 1680170096192,
+    "cid": "8",
+    "templateId": "64255b56a881adc726bbf40f",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "49449a9b-a14e-45b1-a86a-97afe29385a7",
+            "data": [
+              "Spring"
+            ]
+          },
+          {
+            "id": "71365066-89b4-4681-a9ac-0a0fa47203cc",
+            "data": [
+              "spring"
+            ]
+          },
+          {
+            "id": "ace57af1-6f93-4e35-885e-03eb51bf0de3",
+            "data": [
+              {
+                "id": "18d428aa-c04d-4b48-b9bc-3d12003c21d7",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "As the frost of winter recedes and yields to the gentle warmth of the sun, the season of renewal and rejuvenation arises, heralded by the vibrant blossoms and lush foliage"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "834a3cd8-57ad-4c43-a515-60648453edf0",
+            "data": [
+              {
+                "_id": "64255c67a881adc726bbf411",
+                "alt_text": "Spring",
+                "caption": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "64255c88a881adc726bbf416": {
+    "_id": "64255c88a881adc726bbf416",
+    "createdAt": 1680170120077,
+    "updatedAt": 1680170120077,
+    "cid": "9",
+    "templateId": "64255b56a881adc726bbf40f",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "49449a9b-a14e-45b1-a86a-97afe29385a7",
+            "data": [
+              "Summer"
+            ]
+          },
+          {
+            "id": "71365066-89b4-4681-a9ac-0a0fa47203cc",
+            "data": [
+              "summer"
+            ]
+          },
+          {
+            "id": "ace57af1-6f93-4e35-885e-03eb51bf0de3",
+            "data": [
+              {
+                "id": "3a385d0b-3f99-47cc-9b81-d84dff16dde8",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Summer copy here"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "834a3cd8-57ad-4c43-a515-60648453edf0",
+            "data": [
+              {
+                "_id": "64255c68a881adc726bbf412",
+                "alt_text": "Summer",
+                "caption": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "64255c9ba881adc726bbf417": {
+    "_id": "64255c9ba881adc726bbf417",
+    "createdAt": 1680170139544,
+    "updatedAt": 1680170139544,
+    "cid": "a",
+    "templateId": "64255b56a881adc726bbf40f",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "49449a9b-a14e-45b1-a86a-97afe29385a7",
+            "data": [
+              "Fall"
+            ]
+          },
+          {
+            "id": "71365066-89b4-4681-a9ac-0a0fa47203cc",
+            "data": [
+              "fall"
+            ]
+          },
+          {
+            "id": "ace57af1-6f93-4e35-885e-03eb51bf0de3",
+            "data": [
+              {
+                "id": "ab69d576-fbfd-445b-8a63-20307dbab025",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Fall description here"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "834a3cd8-57ad-4c43-a515-60648453edf0",
+            "data": [
+              {
+                "_id": "64255c68a881adc726bbf413",
+                "alt_text": "Fall",
+                "caption": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "64255caaa881adc726bbf418": {
+    "_id": "64255caaa881adc726bbf418",
+    "createdAt": 1680170154004,
+    "updatedAt": 1680170154004,
+    "cid": "b",
+    "templateId": "64255b56a881adc726bbf40f",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "49449a9b-a14e-45b1-a86a-97afe29385a7",
+            "data": [
+              "Winter"
+            ]
+          },
+          {
+            "id": "71365066-89b4-4681-a9ac-0a0fa47203cc",
+            "data": [
+              "winter"
+            ]
+          },
+          {
+            "id": "ace57af1-6f93-4e35-885e-03eb51bf0de3",
+            "data": [
+              {
+                "id": "598e4670-2bd8-4f50-859b-bb83958fc32a",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Winter description here"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "834a3cd8-57ad-4c43-a515-60648453edf0",
+            "data": [
+              {
+                "_id": "64255c68a881adc726bbf414",
+                "alt_text": "Winter",
+                "caption": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  }
+}

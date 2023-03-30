@@ -1,0 +1,210 @@
+{
+  "6424424fc4d0f7aa085d5e92": {
+    "_id": "6424424fc4d0f7aa085d5e92",
+    "createdAt": 1680097871812,
+    "updatedAt": 1680097881242,
+    "cid": "1",
+    "desc": "",
+    "label": "Inline text with image",
+    "name": "inline_text_with_image",
+    "props": [
+      {
+        "id": "f5819cc2-4514-43ec-b6f1-56a020a587d3",
+        "name": "text",
+        "label": "Text",
+        "array": false,
+        "required": false,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "f15748d8-7402-4d03-881f-8a5513894f8c",
+        "name": "image",
+        "label": "Image",
+        "array": false,
+        "required": false,
+        "type": "MEDIA",
+        "defaultData": []
+      }
+    ]
+  },
+  "64244871c4d0f7aa085d5e98": {
+    "_id": "64244871c4d0f7aa085d5e98",
+    "createdAt": 1680099441570,
+    "updatedAt": 1680099497096,
+    "cid": "2",
+    "desc": "",
+    "label": "Home hero",
+    "name": "home_hero",
+    "props": [
+      {
+        "id": "f77bc021-8a8d-4fb5-8e07-1855d683cf7b",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "52f48868-c98b-4783-9b09-3c06fac729f7",
+        "name": "cover",
+        "label": "Cover",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "0b1de8fd-d09f-42c6-950c-1eea8b93aa16",
+        "name": "address",
+        "label": "Address",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "9eb94686-8145-4e47-a03d-6c185447d77d",
+        "name": "map",
+        "label": "Map",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "9f2447d5-b95d-4744-8e2c-7b1fdc6213c5",
+        "name": "open_time",
+        "label": "Open time",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "b8bf8572-5069-4e98-b4eb-4bd9218ba4f1",
+        "name": "description",
+        "label": "Description",
+        "array": true,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "6424424fc4d0f7aa085d5e92"
+        }
+      }
+    ]
+  },
+  "64255323a881adc726bbf409": {
+    "_id": "64255323a881adc726bbf409",
+    "createdAt": 1680167715541,
+    "updatedAt": 1680168590761,
+    "cid": "3",
+    "desc": "",
+    "label": "Home menu",
+    "name": "home_menu",
+    "props": [
+      {
+        "id": "8370ad87-3511-4845-8200-edf021008707",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "a73d46da-e1dc-4451-a0b7-f8b1c92cc329",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "e8073df8-76eb-4361-a9b5-e7ce61990462",
+        "name": "meals",
+        "label": "Meals",
+        "array": true,
+        "required": true,
+        "type": "ENTRY_POINTER",
+        "defaultData": [
+          {
+            "displayProp": "title",
+            "templateId": "642552c0a881adc726bbf404",
+            "entryIds": []
+          }
+        ]
+      }
+    ]
+  },
+  "64255cbca881adc726bbf419": {
+    "_id": "64255cbca881adc726bbf419",
+    "createdAt": 1680170172915,
+    "updatedAt": 1680170191579,
+    "cid": "4",
+    "desc": "",
+    "label": "Home seasons",
+    "name": "home_seasons",
+    "props": [
+      {
+        "id": "42b99f26-bd3b-4fe4-9684-cffd72d7c503",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "a898652f-c574-45a5-b176-960c286e8569",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "d1fcac64-5f03-4c09-93a8-aeed8706705b",
+        "name": "seasons",
+        "label": "Seasons",
+        "array": true,
+        "required": true,
+        "type": "ENTRY_POINTER",
+        "defaultData": [
+          {
+            "displayProp": "title",
+            "templateId": "64255b56a881adc726bbf40f",
+            "entryIds": []
+          }
+        ]
+      }
+    ]
+  }
+}
