@@ -2,7 +2,7 @@
   "6423fe69c4d0f7aa085d5e86": {
     "_id": "6423fe69c4d0f7aa085d5e86",
     "createdAt": 1680080489610,
-    "updatedAt": 1680169819068,
+    "updatedAt": 1680174359281,
     "access": {
       "templates": [
         {
@@ -40,6 +40,14 @@
         {
           "_id": "64255b56a881adc726bbf40f",
           "name": "season",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "64256c9208334637f5466f67",
+          "name": "food_item",
           "get": true,
           "post": false,
           "put": false,

@@ -120,7 +120,7 @@
   "64243f75c4d0f7aa085d5e8f": {
     "_id": "64243f75c4d0f7aa085d5e8f",
     "createdAt": 1680097141932,
-    "updatedAt": 1680171823266,
+    "updatedAt": 1680174374751,
     "cid": "3",
     "desc": "",
     "label": "Home page",
@@ -192,6 +192,17 @@
         "type": "GROUP_POINTER",
         "defaultData": {
           "_id": "6425605a08334637f5466f5e"
+        }
+      },
+      {
+        "id": "51c834f0-94df-421b-81fa-871b1573a088",
+        "name": "specials",
+        "label": "Specials",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64256c3708334637f5466f66"
         }
       }
     ]
@@ -307,6 +318,124 @@
         "required": true,
         "type": "MEDIA",
         "defaultData": []
+      }
+    ]
+  },
+  "64256c9208334637f5466f67": {
+    "_id": "64256c9208334637f5466f67",
+    "createdAt": 1680174226735,
+    "updatedAt": 1680176444472,
+    "cid": "6",
+    "desc": "",
+    "label": "Food Item",
+    "name": "food_item",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "616f0364-c597-4bad-ac6f-798928299749",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "cf62382f-64e5-4385-a7f2-4818c4cf30b1",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "8fc26954-2ecd-47ae-b543-3189ade98cdc",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "818693b1-c41a-4349-b5f6-8b0ba940d9fe",
+        "name": "cover",
+        "label": "Cover",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "ea38a4ae-6d67-44f2-b430-fa0cbdc9b3cc",
+        "name": "special",
+        "label": "Special",
+        "array": false,
+        "required": true,
+        "type": "BOOLEAN",
+        "defaultData": [
+          false
+        ]
+      },
+      {
+        "id": "54e21be6-3f6e-4f14-97f4-ab160139139d",
+        "name": "day_available",
+        "label": "Day available",
+        "array": false,
+        "required": true,
+        "type": "ENUMERATION",
+        "defaultData": {
+          "items": [
+            "MON",
+            "TUE",
+            "WED",
+            "THU",
+            "FRI",
+            "SAT",
+            "SUN"
+          ],
+          "selected": ""
+        }
+      },
+      {
+        "id": "4c471530-8261-477a-88d3-32045daa54c8",
+        "name": "type",
+        "label": "Type",
+        "array": true,
+        "required": true,
+        "type": "ENTRY_POINTER",
+        "defaultData": [
+          {
+            "displayProp": "title",
+            "templateId": "642552c0a881adc726bbf404",
+            "entryIds": []
+          }
+        ]
+      },
+      {
+        "id": "e7904998-ff61-41b6-b559-a0de0c13202b",
+        "name": "seasons",
+        "label": "Seasons",
+        "array": true,
+        "required": true,
+        "type": "ENTRY_POINTER",
+        "defaultData": [
+          {
+            "displayProp": "title",
+            "templateId": "64255b56a881adc726bbf40f",
+            "entryIds": []
+          }
+        ]
       }
     ]
   }

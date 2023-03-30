@@ -283,5 +283,40 @@
         "defaultData": []
       }
     ]
+  },
+  "64256c3708334637f5466f66": {
+    "_id": "64256c3708334637f5466f66",
+    "createdAt": 1680174135474,
+    "updatedAt": 1680174146102,
+    "cid": "7",
+    "desc": "",
+    "label": "Home specials",
+    "name": "home_specials",
+    "props": [
+      {
+        "id": "45125f08-3b53-4d1b-af93-50e57ec22fff",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "46190ae5-413a-4ec3-a267-89f2dc8ef770",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
   }
 }

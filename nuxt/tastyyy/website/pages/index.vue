@@ -4,6 +4,10 @@
     <HomePageMenu :data="data.data.meta.menu" />
     <HomePageSeasons :data="data.data.meta.seasons" />
     <HomePageAmbience :data="data.data.meta.ambience" />
+    <HomePageSpecials
+      :data="data.data.meta.specials"
+      :items="data.data.specials"
+    />
   </PageWrapper>
 </template>
 

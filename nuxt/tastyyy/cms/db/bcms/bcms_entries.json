@@ -519,7 +519,7 @@
   "6424420cc4d0f7aa085d5e90": {
     "_id": "6424420cc4d0f7aa085d5e90",
     "createdAt": 1680097804319,
-    "updatedAt": 1680171923706,
+    "updatedAt": 1680174399237,
     "cid": "3",
     "templateId": "64243f75c4d0f7aa085d5e8f",
     "userId": "111111111111111111111111",
@@ -583,7 +583,7 @@
                       "id": "9f2447d5-b95d-4744-8e2c-7b1fdc6213c5",
                       "data": [
                         {
-                          "id": "1035e52e-3013-4d89-ae40-6b0ad3d2cf1e",
+                          "id": "27dfcb80-7eb6-4529-8a40-0963de21a6d9",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -621,7 +621,7 @@
                                 "id": "f5819cc2-4514-43ec-b6f1-56a020a587d3",
                                 "data": [
                                   {
-                                    "id": "80682042-8118-4bcd-af35-38b5fd9d85a6",
+                                    "id": "4245af48-514e-4ddc-9ec6-a79aa0f847ed",
                                     "nodes": [
                                       {
                                         "type": "paragraph",
@@ -654,7 +654,7 @@
                                 "id": "f5819cc2-4514-43ec-b6f1-56a020a587d3",
                                 "data": [
                                   {
-                                    "id": "7784086c-530e-44bd-b10d-a0afff419112",
+                                    "id": "f1e39913-5035-4f2a-9a05-1805a68b832c",
                                     "nodes": [
                                       {
                                         "type": "paragraph",
@@ -687,7 +687,7 @@
                                 "id": "f5819cc2-4514-43ec-b6f1-56a020a587d3",
                                 "data": [
                                   {
-                                    "id": "af390e78-6127-4b00-9e90-c32f6e89e550",
+                                    "id": "02d0d85a-4bd4-4072-9f95-e9a837f5806e",
                                     "nodes": [
                                       {
                                         "type": "paragraph",
@@ -739,7 +739,7 @@
                       "id": "a73d46da-e1dc-4451-a0b7-f8b1c92cc329",
                       "data": [
                         {
-                          "id": "7286cf76-570e-472d-8a82-379d1b28bb86",
+                          "id": "72c7c401-6afa-43df-9ac4-99606b7adb62",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -793,7 +793,7 @@
                       "id": "a898652f-c574-45a5-b176-960c286e8569",
                       "data": [
                         {
-                          "id": "3b88d01d-ed31-4d4f-9eba-703438b2e8ac",
+                          "id": "b990af41-0b1a-4dfe-8927-d23d6f650321",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -851,7 +851,7 @@
                       "id": "f6f6ebf0-b81e-4ae2-b771-b7379ab42275",
                       "data": [
                         {
-                          "id": "4d576ff0-a302-4fad-bbbc-6cf2ed065af1",
+                          "id": "4a8dc85a-4cc6-4c73-a655-2c2f70be1c33",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -973,6 +973,43 @@
                           }
                         ]
                       }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "51c834f0-94df-421b-81fa-871b1573a088",
+            "data": {
+              "_id": "64256c3708334637f5466f66",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "45125f08-3b53-4d1b-af93-50e57ec22fff",
+                      "data": [
+                        "Daily specials"
+                      ]
+                    },
+                    {
+                      "id": "46190ae5-413a-4ec3-a267-89f2dc8ef770",
+                      "data": [
+                        {
+                          "id": "ae927b16-6546-4b42-8726-2e17f97ce7d5",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "At our esteemed restaurant, we pride ourselves on offering a daily specials menu that is a true celebration of culinary excellence. Each day, our expert chefs create a unique and exclusive menu that is only available for that day, featuring the finest ingredients and the most innovative cooking techniques."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
@@ -1488,6 +1525,496 @@
                 "_id": "64255c68a881adc726bbf414",
                 "alt_text": "Winter",
                 "caption": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "6425758708334637f5466f6e": {
+    "_id": "6425758708334637f5466f6e",
+    "createdAt": 1680176519420,
+    "updatedAt": 1680176519420,
+    "cid": "c",
+    "templateId": "64256c9208334637f5466f67",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "616f0364-c597-4bad-ac6f-798928299749",
+            "data": [
+              "Kebab"
+            ]
+          },
+          {
+            "id": "cf62382f-64e5-4385-a7f2-4818c4cf30b1",
+            "data": [
+              "kebab"
+            ]
+          },
+          {
+            "id": "8fc26954-2ecd-47ae-b543-3189ade98cdc",
+            "data": [
+              {
+                "id": "8568e975-b2d3-489e-8930-603aacce026f",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Freshly baked bread brushed with garlic butter and served with a side of marinara sauce"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "818693b1-c41a-4349-b5f6-8b0ba940d9fe",
+            "data": [
+              {
+                "_id": "64256f4e08334637f5466f69",
+                "alt_text": "Kebab",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "ea38a4ae-6d67-44f2-b430-fa0cbdc9b3cc",
+            "data": [
+              true
+            ]
+          },
+          {
+            "id": "54e21be6-3f6e-4f14-97f4-ab160139139d",
+            "data": [
+              "SUN"
+            ]
+          },
+          {
+            "id": "4c471530-8261-477a-88d3-32045daa54c8",
+            "data": [
+              {
+                "tid": "642552c0a881adc726bbf404",
+                "eid": "642552d3a881adc726bbf406"
+              },
+              {
+                "tid": "642552c0a881adc726bbf404",
+                "eid": "642552daa881adc726bbf407"
+              }
+            ]
+          },
+          {
+            "id": "e7904998-ff61-41b6-b559-a0de0c13202b",
+            "data": [
+              {
+                "tid": "64255b56a881adc726bbf40f",
+                "eid": "64255c6fa881adc726bbf415"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642575f608334637f5466f6f": {
+    "_id": "642575f608334637f5466f6f",
+    "createdAt": 1680176630071,
+    "updatedAt": 1680176631251,
+    "cid": "d",
+    "templateId": "64256c9208334637f5466f67",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "616f0364-c597-4bad-ac6f-798928299749",
+            "data": [
+              "Meatballs"
+            ]
+          },
+          {
+            "id": "cf62382f-64e5-4385-a7f2-4818c4cf30b1",
+            "data": [
+              "meatballs"
+            ]
+          },
+          {
+            "id": "8fc26954-2ecd-47ae-b543-3189ade98cdc",
+            "data": [
+              {
+                "id": "3589dc48-1710-4f66-a835-6f86de36503b",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Freshly baked bread brushed with garlic butter and served with a side of marinara sauce"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "818693b1-c41a-4349-b5f6-8b0ba940d9fe",
+            "data": [
+              {
+                "_id": "64256f4e08334637f5466f6a",
+                "alt_text": "Meatballs",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "ea38a4ae-6d67-44f2-b430-fa0cbdc9b3cc",
+            "data": [
+              true
+            ]
+          },
+          {
+            "id": "54e21be6-3f6e-4f14-97f4-ab160139139d",
+            "data": [
+              "SUN"
+            ]
+          },
+          {
+            "id": "4c471530-8261-477a-88d3-32045daa54c8",
+            "data": [
+              {
+                "tid": "642552c0a881adc726bbf404",
+                "eid": "642552d3a881adc726bbf406"
+              },
+              {
+                "tid": "642552c0a881adc726bbf404",
+                "eid": "642552daa881adc726bbf407"
+              }
+            ]
+          },
+          {
+            "id": "e7904998-ff61-41b6-b559-a0de0c13202b",
+            "data": [
+              {
+                "tid": "64255b56a881adc726bbf40f",
+                "eid": "64255c6fa881adc726bbf415"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "6425763a08334637f5466f70": {
+    "_id": "6425763a08334637f5466f70",
+    "createdAt": 1680176698860,
+    "updatedAt": 1680176698860,
+    "cid": "e",
+    "templateId": "64256c9208334637f5466f67",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "616f0364-c597-4bad-ac6f-798928299749",
+            "data": [
+              "Avocado Toast With Egg"
+            ]
+          },
+          {
+            "id": "cf62382f-64e5-4385-a7f2-4818c4cf30b1",
+            "data": [
+              "avocado-toast-with-egg"
+            ]
+          },
+          {
+            "id": "8fc26954-2ecd-47ae-b543-3189ade98cdc",
+            "data": [
+              {
+                "id": "4585ec02-a4e0-4757-9fb8-2f1368f27481",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Freshly baked bread brushed with garlic butter and served with a side of marinara sauce"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "818693b1-c41a-4349-b5f6-8b0ba940d9fe",
+            "data": [
+              {
+                "_id": "64256f4e08334637f5466f6b",
+                "alt_text": "Avocado Toast With Egg",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "ea38a4ae-6d67-44f2-b430-fa0cbdc9b3cc",
+            "data": [
+              true
+            ]
+          },
+          {
+            "id": "54e21be6-3f6e-4f14-97f4-ab160139139d",
+            "data": [
+              "SUN"
+            ]
+          },
+          {
+            "id": "4c471530-8261-477a-88d3-32045daa54c8",
+            "data": [
+              {
+                "tid": "642552c0a881adc726bbf404",
+                "eid": "642552cba881adc726bbf405"
+              }
+            ]
+          },
+          {
+            "id": "e7904998-ff61-41b6-b559-a0de0c13202b",
+            "data": [
+              {
+                "tid": "64255b56a881adc726bbf40f",
+                "eid": "64255c6fa881adc726bbf415"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "6425768608334637f5466f71": {
+    "_id": "6425768608334637f5466f71",
+    "createdAt": 1680176774132,
+    "updatedAt": 1680176774132,
+    "cid": "f",
+    "templateId": "64256c9208334637f5466f67",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "616f0364-c597-4bad-ac6f-798928299749",
+            "data": [
+              "Salad"
+            ]
+          },
+          {
+            "id": "cf62382f-64e5-4385-a7f2-4818c4cf30b1",
+            "data": [
+              "salad"
+            ]
+          },
+          {
+            "id": "8fc26954-2ecd-47ae-b543-3189ade98cdc",
+            "data": [
+              {
+                "id": "19324ca6-f353-432c-b97c-4874a0729cd8",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Freshly baked bread brushed with garlic butter and served with a side of marinara sauce"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "818693b1-c41a-4349-b5f6-8b0ba940d9fe",
+            "data": [
+              {
+                "_id": "64256f4e08334637f5466f6c",
+                "alt_text": "Salad",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "ea38a4ae-6d67-44f2-b430-fa0cbdc9b3cc",
+            "data": [
+              true
+            ]
+          },
+          {
+            "id": "54e21be6-3f6e-4f14-97f4-ab160139139d",
+            "data": [
+              "SUN"
+            ]
+          },
+          {
+            "id": "4c471530-8261-477a-88d3-32045daa54c8",
+            "data": [
+              {
+                "tid": "642552c0a881adc726bbf404",
+                "eid": "642552cba881adc726bbf405"
+              },
+              {
+                "tid": "642552c0a881adc726bbf404",
+                "eid": "642552d3a881adc726bbf406"
+              },
+              {
+                "tid": "642552c0a881adc726bbf404",
+                "eid": "642552daa881adc726bbf407"
+              }
+            ]
+          },
+          {
+            "id": "e7904998-ff61-41b6-b559-a0de0c13202b",
+            "data": [
+              {
+                "tid": "64255b56a881adc726bbf40f",
+                "eid": "64255c6fa881adc726bbf415"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642576a108334637f5466f72": {
+    "_id": "642576a108334637f5466f72",
+    "createdAt": 1680176801537,
+    "updatedAt": 1680176801537,
+    "cid": "10",
+    "templateId": "64256c9208334637f5466f67",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "616f0364-c597-4bad-ac6f-798928299749",
+            "data": [
+              "Pizza"
+            ]
+          },
+          {
+            "id": "cf62382f-64e5-4385-a7f2-4818c4cf30b1",
+            "data": [
+              "pizza"
+            ]
+          },
+          {
+            "id": "8fc26954-2ecd-47ae-b543-3189ade98cdc",
+            "data": [
+              {
+                "id": "b30cef47-af0e-4e1d-b64e-fcc86009534e",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Freshly baked bread brushed with garlic butter and served with a side of marinara sauce"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "818693b1-c41a-4349-b5f6-8b0ba940d9fe",
+            "data": [
+              {
+                "_id": "64256f4f08334637f5466f6d",
+                "alt_text": "Pizza",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "ea38a4ae-6d67-44f2-b430-fa0cbdc9b3cc",
+            "data": [
+              true
+            ]
+          },
+          {
+            "id": "54e21be6-3f6e-4f14-97f4-ab160139139d",
+            "data": [
+              "SUN"
+            ]
+          },
+          {
+            "id": "4c471530-8261-477a-88d3-32045daa54c8",
+            "data": [
+              {
+                "tid": "642552c0a881adc726bbf404",
+                "eid": "642552d3a881adc726bbf406"
+              },
+              {
+                "tid": "642552c0a881adc726bbf404",
+                "eid": "642552daa881adc726bbf407"
+              }
+            ]
+          },
+          {
+            "id": "e7904998-ff61-41b6-b559-a0de0c13202b",
+            "data": [
+              {
+                "tid": "64255b56a881adc726bbf40f",
+                "eid": "64255c6fa881adc726bbf415"
               }
             ]
           }
