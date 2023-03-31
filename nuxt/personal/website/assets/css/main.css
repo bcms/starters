@@ -9,5 +9,5 @@
 }
 
 body {
-  @apply font-Helvetica overflow-x-hidden bg-appBody text-appText;
+  @apply font-Inter overflow-x-hidden bg-appBody text-appText;
 }

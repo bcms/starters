@@ -11,24 +11,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        appAccent: "#A48A63",
-        appBody: "#F4F2E8",
-        appText: "#272424",
+        appAccent: "#EF4141",
+        appBody: "#fff",
+        appText: "#171717",
         appGray: {
-          100: "#E0E0E0",
-          200: "#6A6A75",
-          300: "#63635F",
-          400: "#8F8E88",
-          500: "#9C9090",
-          600: "#786F6F",
-          700: "#454040",
+          100: "#EBEBEB",
+          200: "#D4D4D4",
+          300: "#828282",
+          400: "#636363",
+          500: "#525252",
+          600: "#242424",
         },
       },
       container: {
         center: true,
         padding: {
           DEFAULT: "1.5rem",
-          lg: "2rem",
         },
         screens: {
           sm: "640px",
@@ -40,7 +38,7 @@ module.exports = {
       },
       fontFamily: {
         Helvetica: ["Helvetica", "sans-serif"],
-        Gloock: ["Gloock", "serif"],
+        Inter: ["Inter", "sans-serif"],
       },
     },
   },
