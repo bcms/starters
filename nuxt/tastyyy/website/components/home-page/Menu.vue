@@ -18,7 +18,12 @@
         />
       </div>
     </div>
-    <div v-for="(meal, index) in data.meals" :key="index" class="relative">
+    <NuxtLink
+      v-for="(meal, index) in data.meals"
+      :key="index"
+      :to="`/menu?s=${meal.meta.en?.title.toLowerCase()}`"
+      class="flex relative"
+    >
       <div v-if="meal.meta.en" class="container">
         <div
           class="relative z-10 flex flex-col items-center text-center py-12 max-w-[765px] mx-auto lg:py-[150px]"
@@ -39,7 +44,7 @@
         />
         <div class="absolute top-0 left-0 w-full h-full bg-black/40" />
       </div>
-    </div>
+    </NuxtLink>
     <HomePageDivider />
   </section>
 </template>

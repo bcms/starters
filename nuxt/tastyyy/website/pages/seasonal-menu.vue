@@ -18,25 +18,25 @@
               class="grid grid-cols-2 gap-x-3 gap-y-4 mb-8 md:flex md:items-center md:justify-center lg:gap-4 lg:mb-10"
             >
               <button
-                v-for="(mealType, index) in data.data.mealTypes"
+                v-for="(season, index) in data.data.seasons"
                 :key="index"
                 class="flex justify-center w-full px-[18px] py-3 border rounded-[32px] transition-colors duration-300 lg:max-w-max"
                 :class="[
-                  mealType.title.toLowerCase() === activeMealType
+                  season.title.toLowerCase() === activeSeason
                     ? 'border-appAccent bg-appAccent text-appBody'
                     : 'border-appText',
                 ]"
-                @click="activeMealType = mealType.title.toLowerCase()"
+                @click="activeSeason = season.title.toLowerCase()"
               >
                 <span
                   class="text-xs leading-none tracking-[-0.41px] lg:text-base lg:leading-none"
                 >
-                  {{ mealType.title }}
+                  {{ season.title }}
                 </span>
               </button>
             </div>
             <ContentManager
-              :item="activeMealTypeDescription"
+              :item="activeSeasonDescription"
               class="text-sm leading-[1.3] tracking-[-0.41px] uppercase text-appGray-700 lg:text-base lg:leading-[1.3]"
             />
           </div>
@@ -85,23 +85,23 @@
 
 <script setup lang="ts">
 import { BCMSImage } from "~~/bcms-components";
-import { APIResponse, MenuPageData } from "~~/types";
+import { APIResponse, SeasonalMenuPageData } from "~~/types";
 
 const { data } = useAsyncData(async (ctx) => {
-  return await ctx?.$bcms.request<APIResponse<MenuPageData>>({
-    url: "/menu.json",
+  return await ctx?.$bcms.request<APIResponse<SeasonalMenuPageData>>({
+    url: "/seasonal-menu.json",
   });
 });
 
 const route = useRoute();
 const { setOgHead } = useHeadTags();
 
-const activeMealType = ref("breakfast");
+const activeSeason = ref("spring");
 
-const activeMealTypeDescription = computed(() => {
+const activeSeasonDescription = computed(() => {
   return (
-    data.value?.data.mealTypes.find(
-      (mealType) => mealType.title.toLowerCase() === activeMealType.value
+    data.value?.data.seasons.find(
+      (season) => season.title.toLowerCase() === activeSeason.value
     )?.description || []
   );
 });
@@ -109,8 +109,8 @@ const activeMealTypeDescription = computed(() => {
 const filteredFoodItems = computed(() => {
   return (
     data.value?.data.foodItems.filter((item) => {
-      return item.type.find(
-        (e) => e.meta.en?.title.toLowerCase() === activeMealType.value
+      return item.seasons.find(
+        (e) => e.meta.en?.title.toLowerCase() === activeSeason.value
       );
     }) || []
   );
@@ -118,7 +118,7 @@ const filteredFoodItems = computed(() => {
 
 onMounted(() => {
   if (route.query.s) {
-    activeMealType.value = route.query.s as string;
+    activeSeason.value = route.query.s as string;
   }
 });
 

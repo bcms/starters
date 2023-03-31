@@ -690,5 +690,40 @@
         ]
       }
     ]
+  },
+  "6426aedb5650bcf839e49fe6": {
+    "_id": "6426aedb5650bcf839e49fe6",
+    "createdAt": 1680256731667,
+    "updatedAt": 1680256731667,
+    "cid": "b",
+    "desc": "",
+    "label": "Events page",
+    "name": "events_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "da6c3e8a-07ae-4e92-98d0-fbb5d4ec981f",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "d4743669-183b-4b4a-ae22-f702d03eb9a5",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
   }
 }

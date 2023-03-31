@@ -1488,7 +1488,7 @@
   "64255c9ba881adc726bbf417": {
     "_id": "64255c9ba881adc726bbf417",
     "createdAt": 1680170139544,
-    "updatedAt": 1680170139544,
+    "updatedAt": 1680257283137,
     "cid": "a",
     "templateId": "64255b56a881adc726bbf40f",
     "userId": "111111111111111111111111",
@@ -1513,14 +1513,14 @@
             "id": "ace57af1-6f93-4e35-885e-03eb51bf0de3",
             "data": [
               {
-                "id": "ab69d576-fbfd-445b-8a63-20307dbab025",
+                "id": "c3b7ce5a-6838-4d75-8fb0-73adb346e93a",
                 "nodes": [
                   {
                     "type": "paragraph",
                     "content": [
                       {
                         "type": "text",
-                        "text": "Fall description here"
+                        "text": "Fall copy here"
                       }
                     ]
                   }
@@ -1552,7 +1552,7 @@
   "64255caaa881adc726bbf418": {
     "_id": "64255caaa881adc726bbf418",
     "createdAt": 1680170154004,
-    "updatedAt": 1680170154004,
+    "updatedAt": 1680257279445,
     "cid": "b",
     "templateId": "64255b56a881adc726bbf40f",
     "userId": "111111111111111111111111",
@@ -1577,14 +1577,14 @@
             "id": "ace57af1-6f93-4e35-885e-03eb51bf0de3",
             "data": [
               {
-                "id": "598e4670-2bd8-4f50-859b-bb83958fc32a",
+                "id": "93b447e8-1261-43a8-930f-1448c9d15c4a",
                 "nodes": [
                   {
                     "type": "paragraph",
                     "content": [
                       {
                         "type": "text",
-                        "text": "Winter description here"
+                        "text": "Winter copy here"
                       }
                     ]
                   }
