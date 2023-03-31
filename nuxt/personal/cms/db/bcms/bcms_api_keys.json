@@ -1,0 +1,16 @@
+{
+  "6426db7f153ad5151b28771c": {
+    "_id": "6426db7f153ad5151b28771c",
+    "createdAt": 1680268159911,
+    "updatedAt": 1680268159911,
+    "access": {
+      "templates": [],
+      "functions": []
+    },
+    "blocked": false,
+    "desc": "This is an API key created automatically by the BCMS CLI.",
+    "name": "Development key",
+    "secret": "4c12dcd5e4bc50c614a6725f7a00277f73e7f0cb8b66f859d1d0a2411791441e",
+    "userId": "111111111111111111111111"
+  }
+}

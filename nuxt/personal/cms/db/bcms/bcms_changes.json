@@ -1,0 +1,65 @@
+{
+  "6426db79153ad5151b287713": {
+    "_id": "6426db79153ad5151b287713",
+    "createdAt": 1680268153740,
+    "updatedAt": 1680268153740,
+    "name": "color",
+    "count": 0
+  },
+  "6426db79153ad5151b287714": {
+    "_id": "6426db79153ad5151b287714",
+    "createdAt": 1680268153740,
+    "updatedAt": 1680268153740,
+    "name": "entry",
+    "count": 0
+  },
+  "6426db79153ad5151b287715": {
+    "_id": "6426db79153ad5151b287715",
+    "createdAt": 1680268153740,
+    "updatedAt": 1680268153740,
+    "name": "group",
+    "count": 0
+  },
+  "6426db79153ad5151b287716": {
+    "_id": "6426db79153ad5151b287716",
+    "createdAt": 1680268153740,
+    "updatedAt": 1680268153740,
+    "name": "language",
+    "count": 0
+  },
+  "6426db79153ad5151b287717": {
+    "_id": "6426db79153ad5151b287717",
+    "createdAt": 1680268153740,
+    "updatedAt": 1680268153740,
+    "name": "media",
+    "count": 0
+  },
+  "6426db79153ad5151b287718": {
+    "_id": "6426db79153ad5151b287718",
+    "createdAt": 1680268153740,
+    "updatedAt": 1680268153740,
+    "name": "status",
+    "count": 0
+  },
+  "6426db79153ad5151b287719": {
+    "_id": "6426db79153ad5151b287719",
+    "createdAt": 1680268153740,
+    "updatedAt": 1680268153740,
+    "name": "tag",
+    "count": 0
+  },
+  "6426db79153ad5151b28771a": {
+    "_id": "6426db79153ad5151b28771a",
+    "createdAt": 1680268153740,
+    "updatedAt": 1680268153740,
+    "name": "templates",
+    "count": 0
+  },
+  "6426db79153ad5151b28771b": {
+    "_id": "6426db79153ad5151b28771b",
+    "createdAt": 1680268153740,
+    "updatedAt": 1680268153740,
+    "name": "widget",
+    "count": 0
+  }
+}
