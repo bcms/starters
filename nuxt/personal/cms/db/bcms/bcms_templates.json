@@ -1,0 +1,59 @@
+{
+  "6426e3fa109812372e9c9588": {
+    "_id": "6426e3fa109812372e9c9588",
+    "createdAt": 1680270330250,
+    "updatedAt": 1680270372767,
+    "cid": "1",
+    "desc": "",
+    "label": "Header",
+    "name": "header",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "62f48c00-23ab-4f20-b3d8-cdbda6c72145",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "5cf4e8b7-8d47-47b7-9e98-b307f34799dd",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "943c445a-c5a4-4d98-b940-143241aa8fe1",
+        "name": "logo",
+        "label": "Logo",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "a88194c4-4090-46c6-9f20-59f6de33c233",
+        "name": "nav",
+        "label": "Nav",
+        "array": true,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "6426e4ef109812372e9c958b": {
+    "_id": "6426e4ef109812372e9c958b",
+    "createdAt": 1680270575101,
+    "updatedAt": 1680270710342,
+    "cid": "1",
+    "templateId": "6426e3fa109812372e9c9588",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "62f48c00-23ab-4f20-b3d8-cdbda6c72145",
+            "data": [
+              "Header"
+            ]
+          },
+          {
+            "id": "5cf4e8b7-8d47-47b7-9e98-b307f34799dd",
+            "data": [
+              "header"
+            ]
+          },
+          {
+            "id": "943c445a-c5a4-4d98-b940-143241aa8fe1",
+            "data": [
+              {
+                "_id": "6426e4af109812372e9c9589",
+                "alt_text": "Logo",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "a88194c4-4090-46c6-9f20-59f6de33c233",
+            "data": [
+              {
+                "id": "f3616911-048b-4234-815a-5fcef635663f",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Home"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "1beec917-caba-44cb-9bc4-442282f0f48d",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Services"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "4b81299f-3a45-4577-a300-e155433fa4b7",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "About"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "0e22022b-4265-43d6-be78-1ffa0b141569",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Portfolio"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "68b168d7-3dda-4e13-bd94-5adad45bda71",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Testimonials"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "6020fe08-e30a-4cce-b9cd-ef8f970646fe",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Contact"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  }
+}
