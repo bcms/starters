@@ -1,5 +1,12 @@
 import { createBcmsMostServerRoutes } from "@becomes/cms-most";
-import { AboutApi, ContactApi, HomeApi, MenuApi, ReservationApi } from "./api";
+import {
+  AboutApi,
+  ContactApi,
+  HomeApi,
+  LegalApi,
+  MenuApi,
+  ReservationApi,
+} from "./api";
 import { EventsApi } from "./api/events";
 
 export default createBcmsMostServerRoutes({
@@ -9,4 +16,5 @@ export default createBcmsMostServerRoutes({
   ...EventsApi,
   ...ReservationApi,
   ...ContactApi,
+  ...LegalApi,
 });

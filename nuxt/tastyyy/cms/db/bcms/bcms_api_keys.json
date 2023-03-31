@@ -2,7 +2,7 @@
   "6423fe69c4d0f7aa085d5e86": {
     "_id": "6423fe69c4d0f7aa085d5e86",
     "createdAt": 1680080489610,
-    "updatedAt": 1680261917069,
+    "updatedAt": 1680263564949,
     "access": {
       "templates": [
         {
@@ -104,6 +104,14 @@
         {
           "_id": "6426c2fc5650bcf839e49fea",
           "name": "contact_page",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "6426c9885650bcf839e49ff0",
+          "name": "legal_page",
           "get": true,
           "post": false,
           "put": false,

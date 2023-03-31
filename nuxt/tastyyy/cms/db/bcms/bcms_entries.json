@@ -148,7 +148,7 @@
   "642435e8c4d0f7aa085d5e8e": {
     "_id": "642435e8c4d0f7aa085d5e8e",
     "createdAt": 1680094696058,
-    "updatedAt": 1680095843261,
+    "updatedAt": 1680263754096,
     "cid": "2",
     "templateId": "642435dbc4d0f7aa085d5e8c",
     "userId": "111111111111111111111111",
@@ -173,7 +173,7 @@
             "id": "21a0c6fc-1abe-4c8c-800f-ea5a96e373f6",
             "data": [
               {
-                "id": "52d2f59a-cee1-4652-a0f5-816f5c003ee2",
+                "id": "74349484-8d33-402a-867f-0abb9d781a25",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -206,7 +206,7 @@
             "id": "1229c3b5-e696-4e74-a514-d0ede1840522",
             "data": [
               {
-                "id": "a5925db7-1d8c-4d36-9901-c1ddd851ef37",
+                "id": "d48eeb3b-76b8-4013-89bc-73ada189afab",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -297,7 +297,7 @@
                 ]
               },
               {
-                "id": "da4172f7-4f55-47d2-92d1-4ff13342f89f",
+                "id": "bc67a44e-d281-47d6-9109-c245835b5997",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -313,9 +313,6 @@
                     "content": [
                       {
                         "type": "listItem",
-                        "attrs": {
-                          "list": true
-                        },
                         "content": [
                           {
                             "type": "paragraph",
@@ -340,9 +337,6 @@
                       },
                       {
                         "type": "listItem",
-                        "attrs": {
-                          "list": true
-                        },
                         "content": [
                           {
                             "type": "paragraph",
@@ -370,7 +364,7 @@
                 ]
               },
               {
-                "id": "6fffa507-e514-4f5c-a5c7-29548cbfc535",
+                "id": "c8a5cb59-65f0-4106-9274-b00faf7c3570",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -437,7 +431,7 @@
                 ]
               },
               {
-                "id": "ed4455d7-365f-4df0-99e4-444845d2f37f",
+                "id": "2a686f80-44da-4922-8997-e666af3777ce",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -453,6 +447,9 @@
                     "content": [
                       {
                         "type": "listItem",
+                        "attrs": {
+                          "list": true
+                        },
                         "content": [
                           {
                             "type": "paragraph",
@@ -463,7 +460,7 @@
                                   {
                                     "type": "link",
                                     "attrs": {
-                                      "href": "/",
+                                      "href": "/legal",
                                       "target": "_blank",
                                       "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
                                     }
@@ -477,6 +474,9 @@
                       },
                       {
                         "type": "listItem",
+                        "attrs": {
+                          "list": true
+                        },
                         "content": [
                           {
                             "type": "paragraph",
@@ -487,7 +487,7 @@
                                   {
                                     "type": "link",
                                     "attrs": {
-                                      "href": "/",
+                                      "href": "/legal",
                                       "target": "_blank",
                                       "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
                                     }
@@ -3353,6 +3353,286 @@
         "lng": "en",
         "nodes": [],
         "plainText": ""
+      }
+    ]
+  },
+  "6426c9e85650bcf839e49ff1": {
+    "_id": "6426c9e85650bcf839e49ff1",
+    "createdAt": 1680263656019,
+    "updatedAt": 1680263656019,
+    "cid": "1e",
+    "templateId": "6426c9885650bcf839e49ff0",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "b1beb4cd-a864-449b-8257-af34245f6341",
+            "data": [
+              "Privacy Policy"
+            ]
+          },
+          {
+            "id": "4c0565b5-f64e-44fb-9b48-b7192615095c",
+            "data": [
+              "privacy-policy"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This privacy policy applies to the website [Tastyyy], operated by [company name]. At Tastyyy, we are committed to protecting your privacy and ensuring that your personal information is safe and secure. This policy outlines the types of information we collect, how we use and protect that information, and your rights and choices with respect to your personal information."
+              }
+            ]
+          }
+        ],
+        "plainText": "this privacy policy applies to the website [tastyyy], operated by [company name]. at tastyyy, we are committed to protecting your privacy and ensuring that your personal information is safe and secure. this policy outlines the types of information we collect, how we use and protect that information, and your rights and choices with respect to your personal information.\n\n"
+      }
+    ]
+  },
+  "6426c9f05650bcf839e49ff2": {
+    "_id": "6426c9f05650bcf839e49ff2",
+    "createdAt": 1680263664012,
+    "updatedAt": 1680263664012,
+    "cid": "1f",
+    "templateId": "6426c9885650bcf839e49ff0",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "b1beb4cd-a864-449b-8257-af34245f6341",
+            "data": [
+              "Information we collect"
+            ]
+          },
+          {
+            "id": "4c0565b5-f64e-44fb-9b48-b7192615095c",
+            "data": [
+              "information-we-collect"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "When you use Tastyyy, we may collect certain personal information that you provide to us, such as your name, email address, phone number, and other contact information. We may also collect information about your education, employment history, skills, and experience, as well as any other information you choose to provide in your profile or job applications."
+              }
+            ]
+          }
+        ],
+        "plainText": "when you use tastyyy, we may collect certain personal information that you provide to us, such as your name, email address, phone number, and other contact information. we may also collect information about your education, employment history, skills, and experience, as well as any other information you choose to provide in your profile or job applications.\n\n"
+      }
+    ]
+  },
+  "6426c9f95650bcf839e49ff3": {
+    "_id": "6426c9f95650bcf839e49ff3",
+    "createdAt": 1680263673899,
+    "updatedAt": 1680263673899,
+    "cid": "20",
+    "templateId": "6426c9885650bcf839e49ff0",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "b1beb4cd-a864-449b-8257-af34245f6341",
+            "data": [
+              "How we use your information"
+            ]
+          },
+          {
+            "id": "4c0565b5-f64e-44fb-9b48-b7192615095c",
+            "data": [
+              "how-we-use-your-information"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We use the information we collect to provide our services, including matching job seekers with potential employers and facilitating the application process. We may also use your information to communicate with you, provide customer support, and improve our services."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "We may share your information with third-party service providers who assist us in providing our services, such as email and hosting providers. We may also share your information with employers who have job openings that match your skills and experience. However, we will never share your information with third parties for marketing purposes without your consent."
+              }
+            ]
+          }
+        ],
+        "plainText": "we use the information we collect to provide our services, including matching job seekers with potential employers and facilitating the application process. we may also use your information to communicate with you, provide customer support, and improve our services.we may share your information with third-party service providers who assist us in providing our services, such as email and hosting providers. we may also share your information with employers who have job openings that match your skills and experience. however, we will never share your information with third parties for marketing purposes without your consent.\n\n"
+      }
+    ]
+  },
+  "6426ca015650bcf839e49ff4": {
+    "_id": "6426ca015650bcf839e49ff4",
+    "createdAt": 1680263681797,
+    "updatedAt": 1680263681797,
+    "cid": "21",
+    "templateId": "6426c9885650bcf839e49ff0",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "b1beb4cd-a864-449b-8257-af34245f6341",
+            "data": [
+              "How we protect your information"
+            ]
+          },
+          {
+            "id": "4c0565b5-f64e-44fb-9b48-b7192615095c",
+            "data": [
+              "how-we-protect-your-information"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We take reasonable and appropriate measures to protect your personal information from unauthorized access, disclosure, and misuse. We use industry-standard security technologies and procedures to safeguard your information, and we regularly review and update our security practices to ensure that your information is safe and secure."
+              }
+            ]
+          }
+        ],
+        "plainText": "we take reasonable and appropriate measures to protect your personal information from unauthorized access, disclosure, and misuse. we use industry-standard security technologies and procedures to safeguard your information, and we regularly review and update our security practices to ensure that your information is safe and secure.\n\n"
+      }
+    ]
+  },
+  "6426ca095650bcf839e49ff5": {
+    "_id": "6426ca095650bcf839e49ff5",
+    "createdAt": 1680263689346,
+    "updatedAt": 1680263689346,
+    "cid": "22",
+    "templateId": "6426c9885650bcf839e49ff0",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "b1beb4cd-a864-449b-8257-af34245f6341",
+            "data": [
+              "Your rights and choices"
+            ]
+          },
+          {
+            "id": "4c0565b5-f64e-44fb-9b48-b7192615095c",
+            "data": [
+              "your-rights-and-choices"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "You have the right to access, update, and delete the personal information we hold about you. You may also object to the processing of your personal information or request that we restrict the use of your information. To exercise your rights or make a request, please contact us using the contact information below."
+              }
+            ]
+          }
+        ],
+        "plainText": "you have the right to access, update, and delete the personal information we hold about you. you may also object to the processing of your personal information or request that we restrict the use of your information. to exercise your rights or make a request, please contact us using the contact information below.\n\n"
+      }
+    ]
+  },
+  "6426ca105650bcf839e49ff6": {
+    "_id": "6426ca105650bcf839e49ff6",
+    "createdAt": 1680263696197,
+    "updatedAt": 1680263696197,
+    "cid": "23",
+    "templateId": "6426c9885650bcf839e49ff0",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "b1beb4cd-a864-449b-8257-af34245f6341",
+            "data": [
+              "Contact Us"
+            ]
+          },
+          {
+            "id": "4c0565b5-f64e-44fb-9b48-b7192615095c",
+            "data": [
+              "contact-us"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "If you have any questions or concerns about this privacy policy or our use of your personal information, please contact us at [contact email]. We will respond to your request as soon as possible."
+              }
+            ]
+          }
+        ],
+        "plainText": "if you have any questions or concerns about this privacy policy or our use of your personal information, please contact us at [contact email]. we will respond to your request as soon as possible.\n\n"
       }
     ]
   }

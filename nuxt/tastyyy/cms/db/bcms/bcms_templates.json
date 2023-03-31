@@ -830,5 +830,40 @@
         "defaultData": []
       }
     ]
+  },
+  "6426c9885650bcf839e49ff0": {
+    "_id": "6426c9885650bcf839e49ff0",
+    "createdAt": 1680263560366,
+    "updatedAt": 1680263560366,
+    "cid": "e",
+    "desc": "",
+    "label": "Legal page",
+    "name": "legal_page",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "b1beb4cd-a864-449b-8257-af34245f6341",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "4c0565b5-f64e-44fb-9b48-b7192615095c",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
   }
 }
