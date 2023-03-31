@@ -419,5 +419,97 @@
         ]
       }
     ]
+  },
+  "6425970608334637f5466f82": {
+    "_id": "6425970608334637f5466f82",
+    "createdAt": 1680185094014,
+    "updatedAt": 1680185113623,
+    "cid": "b",
+    "desc": "",
+    "label": "About hero",
+    "name": "about_hero",
+    "props": [
+      {
+        "id": "93f60df9-53ea-4014-be04-e3592bee8e3f",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "1b5ae596-83fa-41e3-8139-2dadda91b16f",
+        "name": "subtitle",
+        "label": "Subtitle",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "cd44de8a-0963-44eb-82b1-b6083a3288c4",
+        "name": "cover",
+        "label": "Cover",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "eef1b742-be81-4d4b-b764-b6794c6334b5",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
+  },
+  "6425a23708334637f5466f86": {
+    "_id": "6425a23708334637f5466f86",
+    "createdAt": 1680187959039,
+    "updatedAt": 1680187981860,
+    "cid": "c",
+    "desc": "",
+    "label": "Text with image",
+    "name": "text_with_image",
+    "props": [
+      {
+        "id": "bec3c949-de6b-4dd4-9308-f1f3940f2fda",
+        "name": "text",
+        "label": "Text",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "85cc6aee-0c42-4035-ad87-aa17c68cbca0",
+        "name": "image",
+        "label": "Image",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      }
+    ]
   }
 }

@@ -587,5 +587,62 @@
         }
       }
     ]
+  },
+  "642596df08334637f5466f81": {
+    "_id": "642596df08334637f5466f81",
+    "createdAt": 1680185055145,
+    "updatedAt": 1680187997877,
+    "cid": "9",
+    "desc": "",
+    "label": "About page",
+    "name": "about_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "c0943c29-ef38-4b40-8aaf-512a36a484c9",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "1ab2b791-9aa6-4606-9163-1eefd337126d",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "96c9b333-eb4f-4d33-923d-d5615d4a5ce6",
+        "name": "hero",
+        "label": "Hero",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "6425970608334637f5466f82"
+        }
+      },
+      {
+        "id": "6a702ed7-4471-4811-9ea8-fa302ed244d4",
+        "name": "text_image_cols",
+        "label": "Text image cols",
+        "array": true,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "6425a23708334637f5466f86"
+        }
+      }
+    ]
   }
 }

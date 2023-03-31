@@ -2,24 +2,24 @@
   "64241704c4d0f7aa085d5e87": {
     "_id": "64241704c4d0f7aa085d5e87",
     "createdAt": 1680086788429,
-    "updatedAt": 1680182637834,
-    "count": 9,
+    "updatedAt": 1680185055145,
+    "count": 10,
     "name": "Templates",
     "forId": "templates"
   },
   "642417dcc4d0f7aa085d5e8a": {
     "_id": "642417dcc4d0f7aa085d5e8a",
     "createdAt": 1680087004181,
-    "updatedAt": 1680182825689,
-    "count": 20,
+    "updatedAt": 1680185242560,
+    "count": 21,
     "name": "Entries",
     "forId": "entries"
   },
   "6424424fc4d0f7aa085d5e91": {
     "_id": "6424424fc4d0f7aa085d5e91",
     "createdAt": 1680097871812,
-    "updatedAt": 1680182837029,
-    "count": 11,
+    "updatedAt": 1680187959039,
+    "count": 13,
     "name": "Groups",
     "forId": "groups"
   },

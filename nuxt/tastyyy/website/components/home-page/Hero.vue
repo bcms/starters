@@ -100,7 +100,7 @@
           />
         </template>
       </div>
-      <Btn class="uppercase mx-auto">
+      <Btn to="/about-us" class="uppercase max-w-max mx-auto">
         <span>Learn more</span>
       </Btn>
       <HomePageDivider />

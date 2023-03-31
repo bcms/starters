@@ -8,12 +8,14 @@
             svg
             class="w-[60px] md:w-[101px]"
             :class="[
-              showMobileMenu ? 'max-md:grayscale-0 max-md:brightness-[0.2] max-md:invert-0' : '',
+              showMobileMenu
+                ? 'max-md:grayscale-0 max-md:brightness-[0.2] max-md:invert-0'
+                : '',
             ]"
           />
         </NuxtLink>
         <ul
-          class="flex flex-col gap-4 max-md:absolute max-md:left-0 max-md:-bottom-9 max-md:translate-y-full max-md:w-full md:flex-row md:flex-1 lg:gap-8"
+          class="flex flex-col gap-4 max-md:absolute max-md:left-0 max-md:-bottom-9 max-md:translate-y-full max-md:w-full md:flex-row md:flex-1 md:justify-center lg:gap-8"
           :class="[showMobileMenu ? 'flex flex-col' : 'max-md:hidden']"
         >
           <li v-for="(item, index) in data.nav" :key="index">

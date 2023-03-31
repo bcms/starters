@@ -2324,5 +2324,253 @@
         "plainText": ""
       }
     ]
+  },
+  "6425979a08334637f5466f85": {
+    "_id": "6425979a08334637f5466f85",
+    "createdAt": 1680185242560,
+    "updatedAt": 1680188126910,
+    "cid": "14",
+    "templateId": "642596df08334637f5466f81",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "c0943c29-ef38-4b40-8aaf-512a36a484c9",
+            "data": [
+              "About us"
+            ]
+          },
+          {
+            "id": "1ab2b791-9aa6-4606-9163-1eefd337126d",
+            "data": [
+              "about-us"
+            ]
+          },
+          {
+            "id": "96c9b333-eb4f-4d33-923d-d5615d4a5ce6",
+            "data": {
+              "_id": "6425970608334637f5466f82",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "93f60df9-53ea-4014-be04-e3592bee8e3f",
+                      "data": [
+                        {
+                          "id": "d3e42389-d014-415e-8a51-64052c632329",
+                          "nodes": [
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 1
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "underline"
+                                    }
+                                  ],
+                                  "text": "Each dish is made"
+                                },
+                                {
+                                  "type": "hardBreak"
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "underline"
+                                    }
+                                  ],
+                                  "text": "with care and attentions"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "1b5ae596-83fa-41e3-8139-2dadda91b16f",
+                      "data": [
+                        {
+                          "id": "d56cf411-8243-4bbd-90da-d204d93042c5",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "To detail to ensure the"
+                                },
+                                {
+                                  "type": "hardBreak"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "best taste and quality."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "cd44de8a-0963-44eb-82b1-b6083a3288c4",
+                      "data": [
+                        {
+                          "_id": "6425976008334637f5466f84",
+                          "alt_text": "About us",
+                          "caption": ""
+                        }
+                      ]
+                    },
+                    {
+                      "id": "eef1b742-be81-4d4b-b764-b6794c6334b5",
+                      "data": [
+                        {
+                          "id": "b4314e9d-0f92-48e3-ae77-4cb2494e88a8",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Our menu offers a variety of options that cater to all tastes and preferences. Whether you're in the mood for a juicy steak, a flavorful pasta dish, or a healthy salad, we've got you covered. And if you're looking for vegetarian or gluten-free options, we have a selection of dishes that are specially crafted to meet your needs."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "6a702ed7-4471-4811-9ea8-fa302ed244d4",
+            "data": {
+              "_id": "6425a23708334637f5466f86",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "bec3c949-de6b-4dd4-9308-f1f3940f2fda",
+                      "data": [
+                        {
+                          "id": "0db40ab8-e04d-43d2-884b-bc7ccc953712",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "But the experience at Tastyyy is not just about the food. Our friendly and attentive staff is dedicated to providing you with exceptional service that will make you feel at home. From the moment you walk in, you'll be greeted with a warm smile and treated like family throughout your entire visit."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "85cc6aee-0c42-4035-ad87-aa17c68cbca0",
+                      "data": [
+                        {
+                          "_id": "6425a2b808334637f5466f87",
+                          "alt_text": "Image",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "bec3c949-de6b-4dd4-9308-f1f3940f2fda",
+                      "data": [
+                        {
+                          "id": "e056391b-3ecb-4a87-b3cb-f636b574fedf",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "In addition to our delicious food and exceptional service, we also offer a variety of drinks to complement your meal. Our selection of wines, beers, and cocktails are carefully curated to pair perfectly with our menu items, making your dining experience all the more enjoyable."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "85cc6aee-0c42-4035-ad87-aa17c68cbca0",
+                      "data": [
+                        {
+                          "_id": "6425a2b808334637f5466f89",
+                          "alt_text": "Image",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "bec3c949-de6b-4dd4-9308-f1f3940f2fda",
+                      "data": [
+                        {
+                          "id": "a065d0a5-707f-4524-b392-fa1bfbc574a2",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "So whether you're celebrating a special occasion or just looking for a great meal with family and friends, we invite you to join us at Tastyyy. We promise to make your visit a memorable one."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "85cc6aee-0c42-4035-ad87-aa17c68cbca0",
+                      "data": [
+                        {
+                          "_id": "6425a2b808334637f5466f88",
+                          "alt_text": "Image",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
   }
 }

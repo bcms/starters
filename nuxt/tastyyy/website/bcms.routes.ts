@@ -1,6 +1,7 @@
 import { createBcmsMostServerRoutes } from "@becomes/cms-most";
-import { HomeApi } from "./api";
+import { AboutApi, HomeApi } from "./api";
 
 export default createBcmsMostServerRoutes({
   ...HomeApi,
+  ...AboutApi,
 });
