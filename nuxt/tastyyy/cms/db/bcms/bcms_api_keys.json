@@ -2,7 +2,7 @@
   "6423fe69c4d0f7aa085d5e86": {
     "_id": "6423fe69c4d0f7aa085d5e86",
     "createdAt": 1680080489610,
-    "updatedAt": 1680185058075,
+    "updatedAt": 1680252315751,
     "access": {
       "templates": [
         {
@@ -72,6 +72,14 @@
         {
           "_id": "642596df08334637f5466f81",
           "name": "about_page",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "64269d945650bcf839e49fda",
+          "name": "menu_page",
           "get": true,
           "post": false,
           "put": false,

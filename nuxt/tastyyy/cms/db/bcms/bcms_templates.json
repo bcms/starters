@@ -346,7 +346,7 @@
   "64256c9208334637f5466f67": {
     "_id": "64256c9208334637f5466f67",
     "createdAt": 1680174226735,
-    "updatedAt": 1680176444472,
+    "updatedAt": 1680252373283,
     "cid": "6",
     "desc": "",
     "label": "Food Item",
@@ -397,6 +397,17 @@
         "required": true,
         "type": "MEDIA",
         "defaultData": []
+      },
+      {
+        "id": "be9e0e51-77e1-4fb8-b484-80f57c98370b",
+        "name": "price",
+        "label": "Price",
+        "array": false,
+        "required": true,
+        "type": "NUMBER",
+        "defaultData": [
+          0
+        ]
       },
       {
         "id": "ea38a4ae-6d67-44f2-b430-fa0cbdc9b3cc",
@@ -642,6 +653,41 @@
         "defaultData": {
           "_id": "6425a23708334637f5466f86"
         }
+      }
+    ]
+  },
+  "64269d945650bcf839e49fda": {
+    "_id": "64269d945650bcf839e49fda",
+    "createdAt": 1680252308803,
+    "updatedAt": 1680252308803,
+    "cid": "a",
+    "desc": "",
+    "label": "Menu page",
+    "name": "menu_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "0fd9a892-dcaa-4e9c-9a81-0628c6bd209f",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "6612d28a-54e8-4450-bb43-86840861056c",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
       }
     ]
   }
