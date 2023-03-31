@@ -712,5 +712,39 @@
     "caption": "",
     "height": 3015,
     "width": 4522
+  },
+  "6426c3bb5650bcf839e49fed": {
+    "_id": "6426c3bb5650bcf839e49fed",
+    "createdAt": 1680262075555,
+    "updatedAt": 1680262075555,
+    "hasChildren": true,
+    "isInRoot": true,
+    "mimetype": "dir",
+    "name": "contact-page",
+    "parentId": "",
+    "size": 0,
+    "type": "DIR",
+    "userId": "111111111111111111111111",
+    "altText": "",
+    "caption": "",
+    "height": -1,
+    "width": -1
+  },
+  "6426c9155650bcf839e49fef": {
+    "_id": "6426c9155650bcf839e49fef",
+    "createdAt": 1680263445625,
+    "updatedAt": 1680263445625,
+    "hasChildren": false,
+    "isInRoot": false,
+    "mimetype": "image/jpeg",
+    "name": "map.jpg",
+    "parentId": "6426c3bb5650bcf839e49fed",
+    "size": 129572,
+    "type": "IMG",
+    "userId": "111111111111111111111111",
+    "altText": "",
+    "caption": "",
+    "height": 672,
+    "width": 1056
   }
 }

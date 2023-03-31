@@ -9,9 +9,9 @@
   "6423f5709585ceebd056bb5c": {
     "_id": "6423f5709585ceebd056bb5c",
     "createdAt": 1680078192883,
-    "updatedAt": 1680258718610,
+    "updatedAt": 1680263455518,
     "name": "entry",
-    "count": 64
+    "count": 68
   },
   "6423f5709585ceebd056bb5d": {
     "_id": "6423f5709585ceebd056bb5d",
@@ -30,9 +30,9 @@
   "6423f5709585ceebd056bb5f": {
     "_id": "6423f5709585ceebd056bb5f",
     "createdAt": 1680078192883,
-    "updatedAt": 1680255796984,
+    "updatedAt": 1680263445625,
     "name": "media",
-    "count": 46
+    "count": 52
   },
   "6423f5709585ceebd056bb60": {
     "_id": "6423f5709585ceebd056bb60",
@@ -51,9 +51,9 @@
   "6423f5709585ceebd056bb62": {
     "_id": "6423f5709585ceebd056bb62",
     "createdAt": 1680078192883,
-    "updatedAt": 1680258434309,
+    "updatedAt": 1680261908600,
     "name": "templates",
-    "count": 65
+    "count": 68
   },
   "6423f5709585ceebd056bb63": {
     "_id": "6423f5709585ceebd056bb63",

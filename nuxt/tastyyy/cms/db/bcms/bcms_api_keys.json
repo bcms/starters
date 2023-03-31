@@ -2,7 +2,7 @@
   "6423fe69c4d0f7aa085d5e86": {
     "_id": "6423fe69c4d0f7aa085d5e86",
     "createdAt": 1680080489610,
-    "updatedAt": 1680258445714,
+    "updatedAt": 1680261917069,
     "access": {
       "templates": [
         {
@@ -96,6 +96,14 @@
         {
           "_id": "6426b5825650bcf839e49fe8",
           "name": "reservation_page",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "6426c2fc5650bcf839e49fea",
+          "name": "contact_page",
           "get": true,
           "post": false,
           "put": false,

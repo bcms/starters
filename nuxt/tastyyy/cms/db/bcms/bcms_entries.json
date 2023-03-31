@@ -3226,5 +3226,134 @@
         "plainText": ""
       }
     ]
+  },
+  "6426c3b55650bcf839e49fec": {
+    "_id": "6426c3b55650bcf839e49fec",
+    "createdAt": 1680262069781,
+    "updatedAt": 1680263455518,
+    "cid": "1d",
+    "templateId": "6426c2fc5650bcf839e49fea",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "1b9668b3-7190-401a-9626-1f22d1795ac6",
+            "data": [
+              "Contact us"
+            ]
+          },
+          {
+            "id": "ccbb22f4-0a2b-4d98-87a2-26d102845fc6",
+            "data": [
+              "contact-us"
+            ]
+          },
+          {
+            "id": "4af9c16f-d00c-410e-8b0c-f75ce20715d8",
+            "data": [
+              {
+                "id": "82505cd3-81c5-4b27-9942-d0843d1d06f2",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "California 166166,"
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "text",
+                        "text": "quai de Stalingrad"
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "text",
+                        "text": "92130 Issy-Les-Moulineaux"
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "text",
+                        "text": "("
+                      },
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "tel:+18129231923",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "+1) 812 9231 823 "
+                      },
+                      {
+                        "type": "text",
+                        "text": " "
+                      },
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "text": "·  "
+                      },
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "mailto:tastyyy@mail.com",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "tastyyy@mail.com"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "d76de52b-8af2-4d93-8c65-1a566825372a",
+            "data": [
+              {
+                "_id": "6426c9155650bcf839e49fef",
+                "alt_text": "Map",
+                "caption": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
   }
 }

@@ -34,7 +34,7 @@
           </li>
         </ul>
         <div class="flex justify-end max-md:hidden md:flex-1">
-          <Btn to="/" class="uppercase">
+          <Btn to="/contact" class="uppercase">
             <span>Contact us</span>
           </Btn>
         </div>

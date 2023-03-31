@@ -773,5 +773,62 @@
         ]
       }
     ]
+  },
+  "6426c2fc5650bcf839e49fea": {
+    "_id": "6426c2fc5650bcf839e49fea",
+    "createdAt": 1680261884406,
+    "updatedAt": 1680261908599,
+    "cid": "d",
+    "desc": "",
+    "label": "Contact page",
+    "name": "contact_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "1b9668b3-7190-401a-9626-1f22d1795ac6",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "ccbb22f4-0a2b-4d98-87a2-26d102845fc6",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "4af9c16f-d00c-410e-8b0c-f75ce20715d8",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "d76de52b-8af2-4d93-8c65-1a566825372a",
+        "name": "map",
+        "label": "Map",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      }
+    ]
   }
 }
