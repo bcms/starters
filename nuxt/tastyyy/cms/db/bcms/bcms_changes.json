@@ -9,9 +9,9 @@
   "6423f5709585ceebd056bb5c": {
     "_id": "6423f5709585ceebd056bb5c",
     "createdAt": 1680078192883,
-    "updatedAt": 1680257491442,
+    "updatedAt": 1680258718610,
     "name": "entry",
-    "count": 62
+    "count": 64
   },
   "6423f5709585ceebd056bb5d": {
     "_id": "6423f5709585ceebd056bb5d",
@@ -51,9 +51,9 @@
   "6423f5709585ceebd056bb62": {
     "_id": "6423f5709585ceebd056bb62",
     "createdAt": 1680078192883,
-    "updatedAt": 1680257448734,
+    "updatedAt": 1680258434309,
     "name": "templates",
-    "count": 64
+    "count": 65
   },
   "6423f5709585ceebd056bb63": {
     "_id": "6423f5709585ceebd056bb63",

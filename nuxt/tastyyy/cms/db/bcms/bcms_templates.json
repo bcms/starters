@@ -738,5 +738,40 @@
         ]
       }
     ]
+  },
+  "6426b5825650bcf839e49fe8": {
+    "_id": "6426b5825650bcf839e49fe8",
+    "createdAt": 1680258434308,
+    "updatedAt": 1680258434308,
+    "cid": "c",
+    "desc": "",
+    "label": "Reservation page",
+    "name": "reservation_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "6247b4ff-3cef-425d-83fd-f1e036faa42f",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "3ca57e5e-0aff-43a6-9364-e14ae97cac6f",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
   }
 }

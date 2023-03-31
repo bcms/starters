@@ -2,7 +2,7 @@
   "642417dcc4d0f7aa085d5e8b": {
     "_id": "642417dcc4d0f7aa085d5e8b",
     "createdAt": 1680087004181,
-    "updatedAt": 1680257420472,
+    "updatedAt": 1680258718609,
     "cid": "1",
     "templateId": "64241704c4d0f7aa085d5e88",
     "userId": "111111111111111111111111",
@@ -37,7 +37,7 @@
             "id": "876d3a7e-2b10-4d38-9c66-fec23229998e",
             "data": [
               {
-                "id": "6847619a-444b-4b73-9e60-e38f30c2088f",
+                "id": "2e7ced29-9323-4d37-890e-f92722b0b2dd",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -61,7 +61,7 @@
                 ]
               },
               {
-                "id": "dfbf03ce-a295-44f6-9b82-011edc736e98",
+                "id": "9d1f8e4d-490e-4d8b-aaef-ed13f872a2e8",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -85,7 +85,7 @@
                 ]
               },
               {
-                "id": "93ff9273-bd65-4339-91cb-87d54e9188fc",
+                "id": "438b1e12-78c6-44af-b547-7fc934dfd720",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -109,7 +109,7 @@
                 ]
               },
               {
-                "id": "2f9486aa-a593-4340-8b0a-92e24d3b00a7",
+                "id": "101f018e-7c36-4012-a5b3-853dac1066d9",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -120,7 +120,7 @@
                           {
                             "type": "link",
                             "attrs": {
-                              "href": "/",
+                              "href": "/reservation",
                               "target": "_blank",
                               "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
                             }
@@ -3179,6 +3179,41 @@
                   }
                 ]
               }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "6426b59c5650bcf839e49fe9": {
+    "_id": "6426b59c5650bcf839e49fe9",
+    "createdAt": 1680258460848,
+    "updatedAt": 1680258460848,
+    "cid": "1c",
+    "templateId": "6426b5825650bcf839e49fe8",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "6247b4ff-3cef-425d-83fd-f1e036faa42f",
+            "data": [
+              "Reservation"
+            ]
+          },
+          {
+            "id": "3ca57e5e-0aff-43a6-9364-e14ae97cac6f",
+            "data": [
+              "reservation"
             ]
           }
         ]

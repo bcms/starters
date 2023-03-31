@@ -6,8 +6,14 @@
     :class="[
       theme === 'fill'
         ? 'bg-[#D1D0C7] text-white border-transparent'
+        : theme === 'accent'
+        ? 'bg-appAccent text-white border-transparent'
         : 'border-appText',
-      size === 'sm' ? '' : 'px-4 py-[13px] md:px-6 md:py-4',
+      size === 'sm'
+        ? ''
+        : size === 'lg'
+        ? 'px-4 py-[17px] lg:p-6'
+        : 'px-4 py-[13px] md:px-6 md:py-4',
     ]"
     @mouseover="isArrowVisible = true"
     @mouseleave="isArrowVisible = false"
@@ -32,7 +38,7 @@ defineProps({
     required: false,
   },
   theme: {
-    type: String as PropType<"fill" | "outline">,
+    type: String as PropType<"fill" | "outline" | "accent">,
     required: false,
     default: "outline",
   },
@@ -42,7 +48,7 @@ defineProps({
     required: false,
   },
   size: {
-    type: String as PropType<"sm" | "regular">,
+    type: String as PropType<"sm" | "regular" | "lg">,
     required: false,
     default: "regular",
   },
