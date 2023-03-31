@@ -694,7 +694,7 @@
   "6426aedb5650bcf839e49fe6": {
     "_id": "6426aedb5650bcf839e49fe6",
     "createdAt": 1680256731667,
-    "updatedAt": 1680256731667,
+    "updatedAt": 1680257448733,
     "cid": "b",
     "desc": "",
     "label": "Events page",
@@ -722,6 +722,19 @@
         "type": "STRING",
         "defaultData": [
           ""
+        ]
+      },
+      {
+        "id": "bedcdc27-1606-41e6-8380-73cc2606e2f0",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
         ]
       }
     ]

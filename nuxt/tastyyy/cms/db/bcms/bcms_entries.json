@@ -2,7 +2,7 @@
   "642417dcc4d0f7aa085d5e8b": {
     "_id": "642417dcc4d0f7aa085d5e8b",
     "createdAt": 1680087004181,
-    "updatedAt": 1680252653874,
+    "updatedAt": 1680257420472,
     "cid": "1",
     "templateId": "64241704c4d0f7aa085d5e88",
     "userId": "111111111111111111111111",
@@ -37,7 +37,7 @@
             "id": "876d3a7e-2b10-4d38-9c66-fec23229998e",
             "data": [
               {
-                "id": "85f236ca-4012-487a-959f-4b4cafc13d2a",
+                "id": "6847619a-444b-4b73-9e60-e38f30c2088f",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -61,7 +61,7 @@
                 ]
               },
               {
-                "id": "48b5cffc-9482-4e65-9c2a-4f3e2958725d",
+                "id": "dfbf03ce-a295-44f6-9b82-011edc736e98",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -85,7 +85,7 @@
                 ]
               },
               {
-                "id": "9df8f2fe-5b48-41d2-bcba-4145f67f9165",
+                "id": "93ff9273-bd65-4339-91cb-87d54e9188fc",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -96,7 +96,7 @@
                           {
                             "type": "link",
                             "attrs": {
-                              "href": "/",
+                              "href": "/events",
                               "target": "_blank",
                               "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
                             }
@@ -109,7 +109,7 @@
                 ]
               },
               {
-                "id": "fbbd0651-1cf4-4316-aacb-2a4dd78e3565",
+                "id": "2f9486aa-a593-4340-8b0a-92e24d3b00a7",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -3124,6 +3124,60 @@
               {
                 "tid": "64255b56a881adc726bbf40f",
                 "eid": "64255c6fa881adc726bbf415"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "6426b1d35650bcf839e49fe7": {
+    "_id": "6426b1d35650bcf839e49fe7",
+    "createdAt": 1680257491441,
+    "updatedAt": 1680257491441,
+    "cid": "1b",
+    "templateId": "6426aedb5650bcf839e49fe6",
+    "userId": "111111111111111111111111",
+    "status": "6423f5709585ceebd056bb59",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "da6c3e8a-07ae-4e92-98d0-fbb5d4ec981f",
+            "data": [
+              "Events"
+            ]
+          },
+          {
+            "id": "d4743669-183b-4b4a-ae22-f702d03eb9a5",
+            "data": [
+              "events"
+            ]
+          },
+          {
+            "id": "bedcdc27-1606-41e6-8380-73cc2606e2f0",
+            "data": [
+              {
+                "id": "1558ae79-2de9-402f-b722-5a72bc864f69",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "At our distinguished restaurant, we are proud to host a variety of exclusive events that are a true celebration of elegance, sophistication, and luxury."
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
