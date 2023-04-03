@@ -55,5 +55,64 @@
         ]
       }
     ]
+  },
+  "6426f0fc109812372e9c958c": {
+    "_id": "6426f0fc109812372e9c958c",
+    "createdAt": 1680273660676,
+    "updatedAt": 1680509016664,
+    "cid": "2",
+    "desc": "",
+    "label": "Footer",
+    "name": "footer",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "498d35c6-9db6-4dca-a63b-f20782c03db3",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "2fa1517b-20a2-4b21-ab0f-f6c54a50fb27",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "fddd7b74-dbf4-402c-a39e-00e7159f12c9",
+        "name": "nav",
+        "label": "Nav",
+        "array": true,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "4482103d-9ff3-4675-b1a9-cabe75ace267",
+        "name": "social",
+        "label": "Social",
+        "array": true,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "642a880c3effc7142eea9d90"
+        }
+      }
+    ]
   }
 }

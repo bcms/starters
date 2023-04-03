@@ -192,5 +192,229 @@
         "plainText": ""
       }
     ]
+  },
+  "642a893b3effc7142eea9d95": {
+    "_id": "642a893b3effc7142eea9d95",
+    "createdAt": 1680509243593,
+    "updatedAt": 1680510723737,
+    "cid": "2",
+    "templateId": "6426f0fc109812372e9c958c",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "498d35c6-9db6-4dca-a63b-f20782c03db3",
+            "data": [
+              "Let’s create something beautiful together"
+            ]
+          },
+          {
+            "id": "2fa1517b-20a2-4b21-ab0f-f6c54a50fb27",
+            "data": [
+              "footer"
+            ]
+          },
+          {
+            "id": "fddd7b74-dbf4-402c-a39e-00e7159f12c9",
+            "data": [
+              {
+                "id": "1897411c-7f3f-44af-884d-632c7edc3786",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "tel:+173481238162",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "(+1) 734 8123 8162"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "9c919b46-6177-45be-b5ea-94698eadbda9",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "mailto:qwerty@mail.com",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "qwerty@mail.com"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f6a58d42-aae4-4a30-a265-35c272c0d6ff",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Legal page"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "4482103d-9ff3-4675-b1a9-cabe75ace267",
+            "data": {
+              "_id": "642a880c3effc7142eea9d90",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "5ded76dd-d715-4e5a-94db-3b68a2c3a695",
+                      "data": [
+                        "Dribbble"
+                      ]
+                    },
+                    {
+                      "id": "800c816b-0519-4d87-9ee2-759092018fc6",
+                      "data": [
+                        "https://dribbble.com/"
+                      ]
+                    },
+                    {
+                      "id": "08aa07d4-13b8-40e8-b148-709a3b985724",
+                      "data": [
+                        {
+                          "_id": "642a88ee3effc7142eea9d92",
+                          "alt_text": "Dribbble",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "5ded76dd-d715-4e5a-94db-3b68a2c3a695",
+                      "data": [
+                        "Linkedin"
+                      ]
+                    },
+                    {
+                      "id": "800c816b-0519-4d87-9ee2-759092018fc6",
+                      "data": [
+                        "https://www.linkedin.com/"
+                      ]
+                    },
+                    {
+                      "id": "08aa07d4-13b8-40e8-b148-709a3b985724",
+                      "data": [
+                        {
+                          "_id": "642a88ee3effc7142eea9d94",
+                          "alt_text": "Linkedin",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "5ded76dd-d715-4e5a-94db-3b68a2c3a695",
+                      "data": [
+                        "Twitter"
+                      ]
+                    },
+                    {
+                      "id": "800c816b-0519-4d87-9ee2-759092018fc6",
+                      "data": [
+                        "https://twitter.com/"
+                      ]
+                    },
+                    {
+                      "id": "08aa07d4-13b8-40e8-b148-709a3b985724",
+                      "data": [
+                        {
+                          "_id": "642a88ee3effc7142eea9d93",
+                          "alt_text": "Twitter",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "5ded76dd-d715-4e5a-94db-3b68a2c3a695",
+                      "data": [
+                        "Contact me"
+                      ]
+                    },
+                    {
+                      "id": "800c816b-0519-4d87-9ee2-759092018fc6",
+                      "data": [
+                        "/"
+                      ]
+                    },
+                    {
+                      "id": "08aa07d4-13b8-40e8-b148-709a3b985724",
+                      "data": [
+                        {
+                          "_id": "",
+                          "alt_text": "",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
   }
 }

@@ -2,12 +2,20 @@
   "6426db7f153ad5151b28771c": {
     "_id": "6426db7f153ad5151b28771c",
     "createdAt": 1680268159911,
-    "updatedAt": 1680270484018,
+    "updatedAt": 1680273673373,
     "access": {
       "templates": [
         {
           "_id": "6426e3fa109812372e9c9588",
           "name": "header",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "6426f0fc109812372e9c958c",
+          "name": "footer",
           "get": true,
           "post": false,
           "put": false,

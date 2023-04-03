@@ -1,0 +1,44 @@
+{
+  "642a880c3effc7142eea9d90": {
+    "_id": "642a880c3effc7142eea9d90",
+    "createdAt": 1680508940883,
+    "updatedAt": 1680510703558,
+    "cid": "1",
+    "desc": "",
+    "label": "Link",
+    "name": "link",
+    "props": [
+      {
+        "id": "5ded76dd-d715-4e5a-94db-3b68a2c3a695",
+        "name": "label",
+        "label": "Label",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "800c816b-0519-4d87-9ee2-759092018fc6",
+        "name": "url",
+        "label": "Url",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "08aa07d4-13b8-40e8-b148-709a3b985724",
+        "name": "icon",
+        "label": "Icon",
+        "array": false,
+        "required": false,
+        "type": "MEDIA",
+        "defaultData": []
+      }
+    ]
+  }
+}
