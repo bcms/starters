@@ -40,5 +40,60 @@
         "defaultData": []
       }
     ]
+  },
+  "642aaafb3effc7142eea9d98": {
+    "_id": "642aaafb3effc7142eea9d98",
+    "createdAt": 1680517883664,
+    "updatedAt": 1680517918886,
+    "cid": "2",
+    "desc": "",
+    "label": "Home hero",
+    "name": "home_hero",
+    "props": [
+      {
+        "id": "aa233c1a-cea8-4708-a3b3-0c3730aec6a0",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "470c35ed-da21-475d-a49e-557cc1e24505",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "636e238d-b338-4165-8c76-ee73e9d56425",
+        "name": "social",
+        "label": "Social",
+        "array": true,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "642a880c3effc7142eea9d90"
+        }
+      },
+      {
+        "id": "dbd337af-a507-444b-b022-ffbb9a43e551",
+        "name": "image",
+        "label": "Image",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      }
+    ]
   }
 }

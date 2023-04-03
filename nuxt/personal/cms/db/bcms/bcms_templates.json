@@ -114,5 +114,51 @@
         }
       }
     ]
+  },
+  "642aa3ae3effc7142eea9d96": {
+    "_id": "642aa3ae3effc7142eea9d96",
+    "createdAt": 1680516014394,
+    "updatedAt": 1680518222645,
+    "cid": "3",
+    "desc": "",
+    "label": "Home page",
+    "name": "home_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "52fa287b-2786-47fe-96b3-609a087e7c60",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "3b30f3d0-3b0c-4754-b18a-75f223b6c93c",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "47e5009f-cce5-415d-ae8e-c8fada5a6e7f",
+        "name": "hero",
+        "label": "Hero",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "642aaafb3effc7142eea9d98"
+        }
+      }
+    ]
   }
 }

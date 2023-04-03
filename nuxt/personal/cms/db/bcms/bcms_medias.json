@@ -83,5 +83,39 @@
     "caption": "",
     "height": 16,
     "width": 16
+  },
+  "642aac353effc7142eea9d99": {
+    "_id": "642aac353effc7142eea9d99",
+    "createdAt": 1680518197028,
+    "updatedAt": 1680518197028,
+    "hasChildren": true,
+    "isInRoot": true,
+    "mimetype": "dir",
+    "name": "home-page",
+    "parentId": "",
+    "size": 0,
+    "type": "DIR",
+    "userId": "111111111111111111111111",
+    "altText": "",
+    "caption": "",
+    "height": -1,
+    "width": -1
+  },
+  "642aac3c3effc7142eea9d9a": {
+    "_id": "642aac3c3effc7142eea9d9a",
+    "createdAt": 1680518205377,
+    "updatedAt": 1680518205377,
+    "hasChildren": false,
+    "isInRoot": false,
+    "mimetype": "image/jpeg",
+    "name": "avatar.jpg",
+    "parentId": "642aac353effc7142eea9d99",
+    "size": 150266,
+    "type": "IMG",
+    "userId": "111111111111111111111111",
+    "altText": "",
+    "caption": "",
+    "height": 1168,
+    "width": 1522
   }
 }
