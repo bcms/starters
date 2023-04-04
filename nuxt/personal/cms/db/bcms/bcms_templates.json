@@ -118,7 +118,7 @@
   "642aa3ae3effc7142eea9d96": {
     "_id": "642aa3ae3effc7142eea9d96",
     "createdAt": 1680516014394,
-    "updatedAt": 1680518222645,
+    "updatedAt": 1680531651494,
     "cid": "3",
     "desc": "",
     "label": "Home page",
@@ -158,6 +158,98 @@
         "defaultData": {
           "_id": "642aaafb3effc7142eea9d98"
         }
+      },
+      {
+        "id": "7553ea9e-2140-4ee7-bfab-e370f0d846f1",
+        "name": "services",
+        "label": "Services",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "642adf503effc7142eea9d9b"
+        }
+      }
+    ]
+  },
+  "642adf8b3effc7142eea9d9d": {
+    "_id": "642adf8b3effc7142eea9d9d",
+    "createdAt": 1680531339600,
+    "updatedAt": 1680592847647,
+    "cid": "4",
+    "desc": "",
+    "label": "Service",
+    "name": "service",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "d91838c1-1c7d-457f-8585-e2c1e0f94a46",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "1bb69a7b-47dd-4396-956d-693553ecfaa6",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "1b43f18a-d0d4-4fa3-96fb-59e7e9188b87",
+        "name": "abbreviation",
+        "label": "Abbreviation",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "12b5b020-1813-4405-9134-9d62fb78f61c",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "d8a5f72a-a2a0-40a3-a59f-861e21fa0ce6",
+        "name": "start_price",
+        "label": "Start price",
+        "array": false,
+        "required": true,
+        "type": "NUMBER",
+        "defaultData": [
+          0
+        ]
+      },
+      {
+        "id": "0d93fdbc-b8a9-4b30-acab-6442a9776985",
+        "name": "theme",
+        "label": "Theme",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
       }
     ]
   }

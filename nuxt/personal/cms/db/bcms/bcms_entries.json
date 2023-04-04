@@ -420,7 +420,7 @@
   "642aa3b23effc7142eea9d97": {
     "_id": "642aa3b23effc7142eea9d97",
     "createdAt": 1680516018227,
-    "updatedAt": 1680518288588,
+    "updatedAt": 1680531691073,
     "cid": "3",
     "templateId": "642aa3ae3effc7142eea9d96",
     "userId": "111111111111111111111111",
@@ -458,7 +458,7 @@
                       "id": "470c35ed-da21-475d-a49e-557cc1e24505",
                       "data": [
                         {
-                          "id": "414fc011-5bdb-490f-94aa-e491961f5a22",
+                          "id": "cfc0e8b5-9fc0-45de-8114-bc65e10a193f",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -573,6 +573,501 @@
                 }
               ]
             }
+          },
+          {
+            "id": "7553ea9e-2140-4ee7-bfab-e370f0d846f1",
+            "data": {
+              "_id": "642adf503effc7142eea9d9b",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "cb24ca1d-b07e-4a7b-9bea-32b1dd0974b7",
+                      "data": [
+                        "Services"
+                      ]
+                    },
+                    {
+                      "id": "2970d510-14de-429b-a0f2-68a8b0c8e0b7",
+                      "data": [
+                        {
+                          "id": "0082216f-37bc-4385-b150-474db9c1d8f7",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Sed ut perspiciatis unde omnis iste "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "natus error sit voluptatem accusantium"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "voluptatem quia voluptas"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " sit aspernatur aut odit aut fugit."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642adfd93effc7142eea9d9e": {
+    "_id": "642adfd93effc7142eea9d9e",
+    "createdAt": 1680531417127,
+    "updatedAt": 1680592864359,
+    "cid": "4",
+    "templateId": "642adf8b3effc7142eea9d9d",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "d91838c1-1c7d-457f-8585-e2c1e0f94a46",
+            "data": [
+              "User Interface"
+            ]
+          },
+          {
+            "id": "1bb69a7b-47dd-4396-956d-693553ecfaa6",
+            "data": [
+              "user-interface"
+            ]
+          },
+          {
+            "id": "1b43f18a-d0d4-4fa3-96fb-59e7e9188b87",
+            "data": [
+              "UI"
+            ]
+          },
+          {
+            "id": "12b5b020-1813-4405-9134-9d62fb78f61c",
+            "data": [
+              {
+                "id": "bda0ca6c-90dc-4515-90cb-6381e70afb44",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol ore magna"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "d8a5f72a-a2a0-40a3-a59f-861e21fa0ce6",
+            "data": [
+              600
+            ]
+          },
+          {
+            "id": "0d93fdbc-b8a9-4b30-acab-6442a9776985",
+            "data": [
+              "#FFCD1933"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642adfdc3effc7142eea9d9f": {
+    "_id": "642adfdc3effc7142eea9d9f",
+    "createdAt": 1680531420240,
+    "updatedAt": 1680592872873,
+    "cid": "5",
+    "templateId": "642adf8b3effc7142eea9d9d",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "d91838c1-1c7d-457f-8585-e2c1e0f94a46",
+            "data": [
+              "User Experience"
+            ]
+          },
+          {
+            "id": "1bb69a7b-47dd-4396-956d-693553ecfaa6",
+            "data": [
+              "user-experience"
+            ]
+          },
+          {
+            "id": "1b43f18a-d0d4-4fa3-96fb-59e7e9188b87",
+            "data": [
+              "UX"
+            ]
+          },
+          {
+            "id": "12b5b020-1813-4405-9134-9d62fb78f61c",
+            "data": [
+              {
+                "id": "38363bda-c469-47c6-8ef5-6b706c75ee31",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol ore magna"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "d8a5f72a-a2a0-40a3-a59f-861e21fa0ce6",
+            "data": [
+              600
+            ]
+          },
+          {
+            "id": "0d93fdbc-b8a9-4b30-acab-6442a9776985",
+            "data": [
+              "#EE713C33"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642adfe93effc7142eea9da0": {
+    "_id": "642adfe93effc7142eea9da0",
+    "createdAt": 1680531433859,
+    "updatedAt": 1680592881071,
+    "cid": "6",
+    "templateId": "642adf8b3effc7142eea9d9d",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "d91838c1-1c7d-457f-8585-e2c1e0f94a46",
+            "data": [
+              "Prototype Animation"
+            ]
+          },
+          {
+            "id": "1bb69a7b-47dd-4396-956d-693553ecfaa6",
+            "data": [
+              "prototype-animation"
+            ]
+          },
+          {
+            "id": "1b43f18a-d0d4-4fa3-96fb-59e7e9188b87",
+            "data": [
+              "PA"
+            ]
+          },
+          {
+            "id": "12b5b020-1813-4405-9134-9d62fb78f61c",
+            "data": [
+              {
+                "id": "807a6dd7-9c61-444b-8e70-847dd6220358",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol ore magna"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "d8a5f72a-a2a0-40a3-a59f-861e21fa0ce6",
+            "data": [
+              600
+            ]
+          },
+          {
+            "id": "0d93fdbc-b8a9-4b30-acab-6442a9776985",
+            "data": [
+              "#88C63A33"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642adfff3effc7142eea9da1": {
+    "_id": "642adfff3effc7142eea9da1",
+    "createdAt": 1680531455318,
+    "updatedAt": 1680592890357,
+    "cid": "7",
+    "templateId": "642adf8b3effc7142eea9d9d",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "d91838c1-1c7d-457f-8585-e2c1e0f94a46",
+            "data": [
+              "Logo Branding"
+            ]
+          },
+          {
+            "id": "1bb69a7b-47dd-4396-956d-693553ecfaa6",
+            "data": [
+              "logo-branding"
+            ]
+          },
+          {
+            "id": "1b43f18a-d0d4-4fa3-96fb-59e7e9188b87",
+            "data": [
+              "LB"
+            ]
+          },
+          {
+            "id": "12b5b020-1813-4405-9134-9d62fb78f61c",
+            "data": [
+              {
+                "id": "fbba73cb-6463-4f25-924d-aa10124b9367",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol ore magna"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "d8a5f72a-a2a0-40a3-a59f-861e21fa0ce6",
+            "data": [
+              600
+            ]
+          },
+          {
+            "id": "0d93fdbc-b8a9-4b30-acab-6442a9776985",
+            "data": [
+              "#0048D033"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642ae0093effc7142eea9da2": {
+    "_id": "642ae0093effc7142eea9da2",
+    "createdAt": 1680531465905,
+    "updatedAt": 1680592898606,
+    "cid": "8",
+    "templateId": "642adf8b3effc7142eea9d9d",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "d91838c1-1c7d-457f-8585-e2c1e0f94a46",
+            "data": [
+              "Product Design"
+            ]
+          },
+          {
+            "id": "1bb69a7b-47dd-4396-956d-693553ecfaa6",
+            "data": [
+              "product-design"
+            ]
+          },
+          {
+            "id": "1b43f18a-d0d4-4fa3-96fb-59e7e9188b87",
+            "data": [
+              "PD"
+            ]
+          },
+          {
+            "id": "12b5b020-1813-4405-9134-9d62fb78f61c",
+            "data": [
+              {
+                "id": "c3ffcf25-a6db-4981-9ea9-3ec7a586fb26",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol ore magna"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "d8a5f72a-a2a0-40a3-a59f-861e21fa0ce6",
+            "data": [
+              600
+            ]
+          },
+          {
+            "id": "0d93fdbc-b8a9-4b30-acab-6442a9776985",
+            "data": [
+              "#3B00D033"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642ae0163effc7142eea9da3": {
+    "_id": "642ae0163effc7142eea9da3",
+    "createdAt": 1680531478158,
+    "updatedAt": 1680592905991,
+    "cid": "9",
+    "templateId": "642adf8b3effc7142eea9d9d",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "d91838c1-1c7d-457f-8585-e2c1e0f94a46",
+            "data": [
+              "Front-end Development"
+            ]
+          },
+          {
+            "id": "1bb69a7b-47dd-4396-956d-693553ecfaa6",
+            "data": [
+              "front-end-development"
+            ]
+          },
+          {
+            "id": "1b43f18a-d0d4-4fa3-96fb-59e7e9188b87",
+            "data": [
+              "FD"
+            ]
+          },
+          {
+            "id": "12b5b020-1813-4405-9134-9d62fb78f61c",
+            "data": [
+              {
+                "id": "ac4c1094-9685-4f49-b121-4fe538d7988e",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol ore magna"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "d8a5f72a-a2a0-40a3-a59f-861e21fa0ce6",
+            "data": [
+              600
+            ]
+          },
+          {
+            "id": "0d93fdbc-b8a9-4b30-acab-6442a9776985",
+            "data": [
+              "#F65A5A33"
+            ]
           }
         ]
       }
