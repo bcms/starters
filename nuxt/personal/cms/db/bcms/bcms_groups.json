@@ -130,5 +130,220 @@
         ]
       }
     ]
+  },
+  "642bd7831599a48b5156b9e4": {
+    "_id": "642bd7831599a48b5156b9e4",
+    "createdAt": 1680594819770,
+    "updatedAt": 1680594860083,
+    "cid": "5",
+    "desc": "",
+    "label": "About education",
+    "name": "about_education",
+    "props": [
+      {
+        "id": "656fd660-867b-4ae3-828e-b5e923f96cab",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "f5405693-d5a2-43b6-a185-d64d90680bbc",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "95f37b90-1568-4bfe-be94-4546a81d05d1",
+        "name": "degrees",
+        "label": "Degrees",
+        "array": true,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
+  },
+  "642bd8591599a48b5156b9e5": {
+    "_id": "642bd8591599a48b5156b9e5",
+    "createdAt": 1680595033949,
+    "updatedAt": 1680595101036,
+    "cid": "6",
+    "desc": "",
+    "label": "About work history",
+    "name": "about_work_history",
+    "props": [
+      {
+        "id": "f1a8f410-2906-4f6a-a18a-2f1ca5096d28",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "8e9596de-68a9-4f62-be72-cbc90968673a",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "b87747d9-6da0-43c6-ae62-c79f43a080df",
+        "name": "items",
+        "label": "Items",
+        "array": true,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "642bd8821599a48b5156b9e6"
+        }
+      }
+    ]
+  },
+  "642bd8821599a48b5156b9e6": {
+    "_id": "642bd8821599a48b5156b9e6",
+    "createdAt": 1680595074116,
+    "updatedAt": 1680595090206,
+    "cid": "7",
+    "desc": "",
+    "label": "Work history item",
+    "name": "work_history_item",
+    "props": [
+      {
+        "id": "926f5fb6-353f-477b-b23e-2a9bd3b23a8e",
+        "name": "company_name",
+        "label": "Company name",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "f636bb18-8b4e-4964-9195-c602813f27e9",
+        "name": "from",
+        "label": "From",
+        "array": false,
+        "required": true,
+        "type": "DATE",
+        "defaultData": [
+          0
+        ]
+      },
+      {
+        "id": "2c85093e-66ae-4ae8-88e6-dbf607382f28",
+        "name": "to",
+        "label": "To",
+        "array": false,
+        "required": false,
+        "type": "DATE",
+        "defaultData": [
+          0
+        ]
+      }
+    ]
+  },
+  "642be1e51599a48b5156b9e8": {
+    "_id": "642be1e51599a48b5156b9e8",
+    "createdAt": 1680597477482,
+    "updatedAt": 1680597540670,
+    "cid": "8",
+    "desc": "",
+    "label": "About awards",
+    "name": "about_awards",
+    "props": [
+      {
+        "id": "7709a4de-6799-4802-b981-e254cc098b77",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "31bc69a4-6b14-44a0-968f-6e027355188d",
+        "name": "items",
+        "label": "Items",
+        "array": true,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "642be1f61599a48b5156b9e9"
+        }
+      }
+    ]
+  },
+  "642be1f61599a48b5156b9e9": {
+    "_id": "642be1f61599a48b5156b9e9",
+    "createdAt": 1680597494930,
+    "updatedAt": 1680597530788,
+    "cid": "9",
+    "desc": "",
+    "label": "About award item",
+    "name": "about_award_item",
+    "props": [
+      {
+        "id": "4b8398e6-c204-4f42-8959-c53c3dea4f06",
+        "name": "place",
+        "label": "Place",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "47281ef3-fd3a-46bb-8fcf-a12eb86935bc",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "f1943049-6b9d-4e34-a43b-454d948887bf",
+        "name": "year",
+        "label": "Year",
+        "array": false,
+        "required": true,
+        "type": "DATE",
+        "defaultData": [
+          0
+        ]
+      }
+    ]
   }
 }

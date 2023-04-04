@@ -252,5 +252,95 @@
         ]
       }
     ]
+  },
+  "642bd7621599a48b5156b9e3": {
+    "_id": "642bd7621599a48b5156b9e3",
+    "createdAt": 1680594786098,
+    "updatedAt": 1680597558345,
+    "cid": "5",
+    "desc": "",
+    "label": "About page",
+    "name": "about_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "00309124-b713-45d2-ae9b-ff34b42f3468",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "d4b9ad2a-baf8-4ec3-b123-612449abee11",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "a1c74561-7fc8-4ef1-a4a1-4ea7dfeec033",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "8320359d-1013-441f-a516-fe50a254b257",
+        "name": "education",
+        "label": "Education",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "642bd7831599a48b5156b9e4"
+        }
+      },
+      {
+        "id": "e656ca91-d254-4e16-aa5c-dfdf67cfc4ec",
+        "name": "work_history",
+        "label": "Work history",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "642bd8591599a48b5156b9e5"
+        }
+      },
+      {
+        "id": "41b21b82-67de-41df-9806-ae8cec733a4e",
+        "name": "cover",
+        "label": "Cover",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "1d7f2d43-5a00-473a-8fb1-7014a34fffc2",
+        "name": "awards",
+        "label": "Awards",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "642be1e51599a48b5156b9e8"
+        }
+      }
+    ]
   }
 }

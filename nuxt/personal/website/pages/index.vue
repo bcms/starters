@@ -5,6 +5,7 @@
       :data="data.data.meta.services"
       :services="data.data.services"
     />
+    <HomePageAbout :data="data.data.about" />
   </PageWrapper>
 </template>
 

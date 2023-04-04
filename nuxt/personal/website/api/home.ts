@@ -6,6 +6,7 @@ import {
 import { apiRoute } from "./_api-route";
 import { HomePageData } from "~~/types";
 import { ServiceEntry, ServiceEntryMeta } from "~~/bcms/types/entry/service";
+import { AboutPageEntry, AboutPageEntryMeta } from "~~/bcms/types";
 
 export const HomeApi = createBcmsMostServerRoutes({
   "/home.json": apiRoute<HomePageData>({
@@ -25,9 +26,22 @@ export const HomeApi = createBcmsMostServerRoutes({
         async () => true
       )) as unknown as ServiceEntry[];
 
+      const about = (await bcms.content.entry.findOne(
+        "about_page",
+        async () => true
+      )) as unknown as AboutPageEntry;
+
+      const aboutMeta = about.meta.en as AboutPageEntryMeta;
+
       return {
         meta: entry.meta.en as HomePageEntryMeta,
         services: services.map((s) => s.meta.en) as ServiceEntryMeta[],
+        about: {
+          title: aboutMeta.title,
+          description: aboutMeta.description,
+          education: aboutMeta.education,
+          workHistory: aboutMeta.work_history,
+        },
       };
     },
   }),

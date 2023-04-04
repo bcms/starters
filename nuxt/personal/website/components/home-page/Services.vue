@@ -2,9 +2,9 @@
   <section class="pb-10 lg:pb-14">
     <div class="container">
       <div
-        class="mb-5 md:flex md:items-center md:justify-between md:gap-16 md:mb-10 lg:gap-20"
+        class="mb-5 md:flex md:items-start md:justify-between md:gap-16 md:mb-10 lg:gap-20"
       >
-        <div class="flex items-center mb-[14px]">
+        <div class="flex items-center mb-[14px] md:mt-4">
           <div
             class="w-1.5 h-1.5 bg-appText rounded-full mr-2 lg:w-2.5 lg:h-2.5 lg:mr-4 lg:mt-1"
           />
