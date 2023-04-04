@@ -1560,5 +1560,396 @@
         "plainText": ""
       }
     ]
+  },
+  "642bf4511599a48b5156b9ef": {
+    "_id": "642bf4511599a48b5156b9ef",
+    "createdAt": 1680602193969,
+    "updatedAt": 1680602589910,
+    "cid": "b",
+    "templateId": "642bf4351599a48b5156b9ee",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "4827df6b-8061-4f26-89ab-f2cafbe94d77",
+            "data": [
+              "Portfolio"
+            ]
+          },
+          {
+            "id": "7aa9cd63-0db5-442c-94cf-fd4f133f247d",
+            "data": [
+              "portfolio"
+            ]
+          },
+          {
+            "id": "0861af4a-9b2c-4bef-8e5d-55f54e3ba86d",
+            "data": [
+              {
+                "id": "22834820-c1d6-40df-bede-735c93cdbb40",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, "
+                      },
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "text": "eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae"
+                      },
+                      {
+                        "type": "text",
+                        "text": " vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642bf62e1599a48b5156b9f3": {
+    "_id": "642bf62e1599a48b5156b9f3",
+    "createdAt": 1680602670688,
+    "updatedAt": 1680605231622,
+    "cid": "c",
+    "templateId": "642bf54b1599a48b5156b9f2",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "b06821e7-9cc3-4ac4-b1c2-ce260290bbee",
+            "data": [
+              "Flavour Fushion"
+            ]
+          },
+          {
+            "id": "454e7885-3d63-4c82-b200-129767e772d9",
+            "data": [
+              "flavour-fushion"
+            ]
+          },
+          {
+            "id": "1b6f935a-a548-418f-a4c2-4602d393adf6",
+            "data": [
+              "https://www.google.com"
+            ]
+          },
+          {
+            "id": "65488b5c-c244-4d8f-a385-ab734f52cde9",
+            "data": [
+              {
+                "id": "4b3bfe73-f076-47ca-9c6e-7ad0c3bd2117",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "9c7a694f-06b7-4972-894b-24893e8e3242",
+            "data": [
+              {
+                "_id": "642bf7e01599a48b5156b9f5",
+                "alt_text": "Flavour Fushion",
+                "caption": ""
+              },
+              {
+                "_id": "642bf7e01599a48b5156b9f5",
+                "alt_text": "Flavour Fushion",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "61debc0b-0b62-416a-a3d6-0ecea052fe06",
+            "data": [
+              "#FFCD19"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642bf9cc1599a48b5156b9fb": {
+    "_id": "642bf9cc1599a48b5156b9fb",
+    "createdAt": 1680603596351,
+    "updatedAt": 1680605241924,
+    "cid": "d",
+    "templateId": "642bf54b1599a48b5156b9f2",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "b06821e7-9cc3-4ac4-b1c2-ce260290bbee",
+            "data": [
+              "Hospitale"
+            ]
+          },
+          {
+            "id": "454e7885-3d63-4c82-b200-129767e772d9",
+            "data": [
+              "hospitale"
+            ]
+          },
+          {
+            "id": "1b6f935a-a548-418f-a4c2-4602d393adf6",
+            "data": [
+              "https://www.google.com"
+            ]
+          },
+          {
+            "id": "65488b5c-c244-4d8f-a385-ab734f52cde9",
+            "data": [
+              {
+                "id": "f458f46a-c6b8-43b7-862e-5cdf6d264af4",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "9c7a694f-06b7-4972-894b-24893e8e3242",
+            "data": [
+              {
+                "_id": "642bf91e1599a48b5156b9f9",
+                "alt_text": "Hospitale",
+                "caption": ""
+              },
+              {
+                "_id": "642bf91e1599a48b5156b9f9",
+                "alt_text": "Hospitale",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "61debc0b-0b62-416a-a3d6-0ecea052fe06",
+            "data": [
+              "#EE713C"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642bf9fd1599a48b5156b9fc": {
+    "_id": "642bf9fd1599a48b5156b9fc",
+    "createdAt": 1680603645619,
+    "updatedAt": 1680605250722,
+    "cid": "e",
+    "templateId": "642bf54b1599a48b5156b9f2",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "b06821e7-9cc3-4ac4-b1c2-ce260290bbee",
+            "data": [
+              "Tastyyy"
+            ]
+          },
+          {
+            "id": "454e7885-3d63-4c82-b200-129767e772d9",
+            "data": [
+              "tastyyy"
+            ]
+          },
+          {
+            "id": "1b6f935a-a548-418f-a4c2-4602d393adf6",
+            "data": [
+              "https://www.google.com"
+            ]
+          },
+          {
+            "id": "65488b5c-c244-4d8f-a385-ab734f52cde9",
+            "data": [
+              {
+                "id": "2ccb97bb-64f8-432f-baa8-060180cf721a",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "9c7a694f-06b7-4972-894b-24893e8e3242",
+            "data": [
+              {
+                "_id": "642bf91e1599a48b5156b9fa",
+                "alt_text": "Tastyyy",
+                "caption": ""
+              },
+              {
+                "_id": "642bf91e1599a48b5156b9fa",
+                "alt_text": "Tastyyy",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "61debc0b-0b62-416a-a3d6-0ecea052fe06",
+            "data": [
+              "#0048D0"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642bfa191599a48b5156b9fd": {
+    "_id": "642bfa191599a48b5156b9fd",
+    "createdAt": 1680603673169,
+    "updatedAt": 1680605259919,
+    "cid": "f",
+    "templateId": "642bf54b1599a48b5156b9f2",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "b06821e7-9cc3-4ac4-b1c2-ce260290bbee",
+            "data": [
+              "BCMS"
+            ]
+          },
+          {
+            "id": "454e7885-3d63-4c82-b200-129767e772d9",
+            "data": [
+              "bcms"
+            ]
+          },
+          {
+            "id": "1b6f935a-a548-418f-a4c2-4602d393adf6",
+            "data": [
+              "https://thebcms.com/"
+            ]
+          },
+          {
+            "id": "65488b5c-c244-4d8f-a385-ab734f52cde9",
+            "data": [
+              {
+                "id": "4044fcca-2c56-49dc-957c-fd316ee3db1e",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "9c7a694f-06b7-4972-894b-24893e8e3242",
+            "data": [
+              {
+                "_id": "642bf7e11599a48b5156b9f8",
+                "alt_text": "BCMS",
+                "caption": ""
+              },
+              {
+                "_id": "642bf7e11599a48b5156b9f8",
+                "alt_text": "BCMS",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "61debc0b-0b62-416a-a3d6-0ecea052fe06",
+            "data": [
+              "#3B00D0"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
   }
 }

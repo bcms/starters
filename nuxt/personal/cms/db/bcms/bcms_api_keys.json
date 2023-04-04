@@ -2,7 +2,7 @@
   "6426db7f153ad5151b28771c": {
     "_id": "6426db7f153ad5151b28771c",
     "createdAt": 1680268159911,
-    "updatedAt": 1680598525926,
+    "updatedAt": 1680602529071,
     "access": {
       "templates": [
         {
@@ -40,6 +40,22 @@
         {
           "_id": "642bd7621599a48b5156b9e3",
           "name": "about_page",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "642bf4351599a48b5156b9ee",
+          "name": "portfolio_page",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "642bf54b1599a48b5156b9f2",
+          "name": "portfolio_item",
           "get": true,
           "post": false,
           "put": false,

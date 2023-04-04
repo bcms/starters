@@ -6,7 +6,14 @@ import {
 import { apiRoute } from "./_api-route";
 import { HomePageData } from "~~/types";
 import { ServiceEntry, ServiceEntryMeta } from "~~/bcms/types/entry/service";
-import { AboutPageEntry, AboutPageEntryMeta } from "~~/bcms/types";
+import {
+  AboutPageEntry,
+  AboutPageEntryMeta,
+  PortfolioItemEntry,
+  PortfolioItemEntryMeta,
+  PortfolioPageEntry,
+  PortfolioPageEntryMeta,
+} from "~~/bcms/types";
 
 export const HomeApi = createBcmsMostServerRoutes({
   "/home.json": apiRoute<HomePageData>({
@@ -33,6 +40,18 @@ export const HomeApi = createBcmsMostServerRoutes({
 
       const aboutMeta = about.meta.en as AboutPageEntryMeta;
 
+      const portfolio = (await bcms.content.entry.findOne(
+        "portfolio_page",
+        async () => true
+      )) as unknown as PortfolioPageEntry;
+
+      const portfolioMeta = portfolio.meta.en as PortfolioPageEntryMeta;
+
+      const portfolioItems = (await bcms.content.entry.find(
+        "portfolio_item",
+        async () => true
+      )) as unknown as PortfolioItemEntry[];
+
       return {
         meta: entry.meta.en as HomePageEntryMeta,
         services: services.map((s) => s.meta.en) as ServiceEntryMeta[],
@@ -41,6 +60,13 @@ export const HomeApi = createBcmsMostServerRoutes({
           description: aboutMeta.description,
           education: aboutMeta.education,
           workHistory: aboutMeta.work_history,
+        },
+        portfolio: {
+          title: portfolioMeta.title,
+          description: portfolioMeta.description,
+          items: portfolioItems
+            .map((e) => e.meta.en as PortfolioItemEntryMeta)
+            .slice(0, 4),
         },
       };
     },

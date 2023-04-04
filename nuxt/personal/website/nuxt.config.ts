@@ -62,6 +62,7 @@ export default defineNuxtConfig({
   ],
   modules: [
     "nuxt-svgo",
+    "nuxt-swiper",
     [
       "nuxt-plugin-bcms",
       createBcmsNuxtConfig({

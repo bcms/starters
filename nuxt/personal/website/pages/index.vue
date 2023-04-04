@@ -6,6 +6,7 @@
       :services="data.data.services"
     />
     <HomePageAbout :data="data.data.about" />
+    <HomePagePortfolio :data="data.data.portfolio" />
   </PageWrapper>
 </template>
 
@@ -17,4 +18,12 @@ const { data } = useAsyncData(async (ctx) => {
     url: "/home.json",
   });
 });
+
+const { setOgHead } = useHeadTags();
+
+useHead(() =>
+  setOgHead({
+    title: data.value?.data.meta.title,
+  })
+);
 </script>

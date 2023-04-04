@@ -342,5 +342,132 @@
         }
       }
     ]
+  },
+  "642bf4351599a48b5156b9ee": {
+    "_id": "642bf4351599a48b5156b9ee",
+    "createdAt": 1680602165125,
+    "updatedAt": 1680602431511,
+    "cid": "7",
+    "desc": "",
+    "label": "Portfolio page",
+    "name": "portfolio_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "4827df6b-8061-4f26-89ab-f2cafbe94d77",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "7aa9cd63-0db5-442c-94cf-fd4f133f247d",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "0861af4a-9b2c-4bef-8e5d-55f54e3ba86d",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
+  },
+  "642bf54b1599a48b5156b9f2": {
+    "_id": "642bf54b1599a48b5156b9f2",
+    "createdAt": 1680602443082,
+    "updatedAt": 1680605215277,
+    "cid": "8",
+    "desc": "",
+    "label": "Portfolio item",
+    "name": "portfolio_item",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "b06821e7-9cc3-4ac4-b1c2-ce260290bbee",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "454e7885-3d63-4c82-b200-129767e772d9",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "1b6f935a-a548-418f-a4c2-4602d393adf6",
+        "name": "url",
+        "label": "Url",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "65488b5c-c244-4d8f-a385-ab734f52cde9",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "9c7a694f-06b7-4972-894b-24893e8e3242",
+        "name": "gallery",
+        "label": "Gallery",
+        "array": true,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "61debc0b-0b62-416a-a3d6-0ecea052fe06",
+        "name": "theme",
+        "label": "Theme",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
   }
 }
