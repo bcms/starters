@@ -2,7 +2,7 @@
   "6426e4ef109812372e9c958b": {
     "_id": "6426e4ef109812372e9c958b",
     "createdAt": 1680270575101,
-    "updatedAt": 1680688228833,
+    "updatedAt": 1680698623020,
     "cid": "1",
     "templateId": "6426e3fa109812372e9c9588",
     "userId": "111111111111111111111111",
@@ -37,7 +37,7 @@
             "id": "a88194c4-4090-46c6-9f20-59f6de33c233",
             "data": [
               {
-                "id": "05204da1-acc6-4748-8f02-d21c72ee2a6b",
+                "id": "4c74ac61-943b-42e6-a961-0986f2fc273b",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -61,7 +61,7 @@
                 ]
               },
               {
-                "id": "f566ffd7-275f-4775-a287-0b41c45b7541",
+                "id": "0bb3f06e-98cc-4021-8856-26e411790c1c",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -85,7 +85,7 @@
                 ]
               },
               {
-                "id": "82d46e40-cdcc-4082-bcc4-515933dbe2c1",
+                "id": "c923eabd-f930-4617-b6b6-3e25fa5122d0",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -96,7 +96,7 @@
                           {
                             "type": "link",
                             "attrs": {
-                              "href": "/",
+                              "href": "/about",
                               "target": "_blank",
                               "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
                             }
@@ -109,7 +109,7 @@
                 ]
               },
               {
-                "id": "1599f4b0-0f00-40a0-848b-1ddf1d56c824",
+                "id": "edb0b02c-e055-4500-a558-c0a2243af482",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -133,7 +133,7 @@
                 ]
               },
               {
-                "id": "f7568fba-e69f-4ee0-ba7d-6406215e588b",
+                "id": "d74f3d8a-02f7-4011-8d7d-c117b254cd1f",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -157,7 +157,7 @@
                 ]
               },
               {
-                "id": "5aebd63a-e9e0-429f-aef1-16485eb8ab41",
+                "id": "9b7aeeb3-2662-4c1f-9ebe-f54d3bc8418c",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -1083,7 +1083,7 @@
   "642bda981599a48b5156b9e7": {
     "_id": "642bda981599a48b5156b9e7",
     "createdAt": 1680595608852,
-    "updatedAt": 1680598510053,
+    "updatedAt": 1680708489230,
     "cid": "a",
     "templateId": "642bd7621599a48b5156b9e3",
     "userId": "111111111111111111111111",
@@ -1108,7 +1108,7 @@
             "id": "a1c74561-7fc8-4ef1-a4a1-4ea7dfeec033",
             "data": [
               {
-                "id": "51776969-eeba-4018-8151-046ab90c9cbb",
+                "id": "eeca8bac-cf44-43d1-b58a-9cbb4c903b53",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -1189,21 +1189,14 @@
                       "id": "f5405693-d5a2-43b6-a185-d64d90680bbc",
                       "data": [
                         {
-                          "id": "77870733-3bef-4a0e-906b-c088935f9e35",
+                          "id": "9a8361e2-1829-4f63-8ee6-84286555e8e6",
                           "nodes": [
                             {
                               "type": "paragraph",
                               "content": [
                                 {
                                   "type": "text",
-                                  "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, "
-                                },
-                                {
-                                  "type": "hardBreak"
-                                },
-                                {
-                                  "type": "text",
-                                  "text": "eaque ipsa quae ab illo "
+                                  "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo "
                                 },
                                 {
                                   "type": "text",
@@ -1273,21 +1266,14 @@
                       "id": "8e9596de-68a9-4f62-be72-cbc90968673a",
                       "data": [
                         {
-                          "id": "a202b245-73e6-4413-836b-9cad03ea576e",
+                          "id": "25b84628-4ef9-44d4-af5d-a548e0e6f14e",
                           "nodes": [
                             {
                               "type": "paragraph",
                               "content": [
                                 {
                                   "type": "text",
-                                  "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, "
-                                },
-                                {
-                                  "type": "hardBreak"
-                                },
-                                {
-                                  "type": "text",
-                                  "text": "eaque ipsa quae ab illo "
+                                  "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo "
                                 },
                                 {
                                   "type": "text",
@@ -1449,10 +1435,13 @@
                       "id": "7709a4de-6799-4802-b981-e254cc098b77",
                       "data": [
                         {
-                          "id": "b297df2b-88e7-4a14-8a28-ef2caef099c9",
+                          "id": "24a9ba58-4843-4c98-a578-fecd38b796c7",
                           "nodes": [
                             {
-                              "type": "paragraph",
+                              "type": "heading",
+                              "attrs": {
+                                "level": 2
+                              },
                               "content": [
                                 {
                                   "type": "text",

@@ -30,12 +30,15 @@ const titleDOM = ref<HTMLHeadingElement>();
 
 onMounted(() => {
   if (titleDOM.value) {
+    const containerWidth =
+      document.querySelector(".container")?.clientWidth || 0;
+
     gsap.to(titleDOM.value, {
-      x: "-100%",
+      x: containerWidth - titleDOM.value.clientWidth,
       scrollTrigger: {
         start: "top left",
         end: "bottom right",
-        scrub: true,
+        scrub: 1,
       },
     });
   }
