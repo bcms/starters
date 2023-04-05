@@ -1,10 +1,7 @@
 <template>
   <PageWrapper v-if="data" :header="data.header" :footer="data.footer">
     <HomePageHero :data="data.data.meta.hero" />
-    <HomePageServices
-      :data="data.data.meta.services"
-      :services="data.data.services"
-    />
+    <HomePageServices :data="data.data.services" />
     <HomePageAbout :data="data.data.about" />
     <HomePagePortfolio :data="data.data.portfolio" />
     <HomePageTestimonials :data="data.data.testimonials" />

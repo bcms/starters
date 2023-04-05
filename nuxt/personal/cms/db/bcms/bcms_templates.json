@@ -118,7 +118,7 @@
   "642aa3ae3effc7142eea9d96": {
     "_id": "642aa3ae3effc7142eea9d96",
     "createdAt": 1680516014394,
-    "updatedAt": 1680531651494,
+    "updatedAt": 1680687997625,
     "cid": "3",
     "desc": "",
     "label": "Home page",
@@ -157,17 +157,6 @@
         "type": "GROUP_POINTER",
         "defaultData": {
           "_id": "642aaafb3effc7142eea9d98"
-        }
-      },
-      {
-        "id": "7553ea9e-2140-4ee7-bfab-e370f0d846f1",
-        "name": "services",
-        "label": "Services",
-        "array": false,
-        "required": true,
-        "type": "GROUP_POINTER",
-        "defaultData": {
-          "_id": "642adf503effc7142eea9d9b"
         }
       }
     ]

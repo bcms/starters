@@ -105,4 +105,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  build: {
+    transpile: ["gsap"],
+  },
 });

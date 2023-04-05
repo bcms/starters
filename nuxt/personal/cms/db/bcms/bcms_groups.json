@@ -96,41 +96,6 @@
       }
     ]
   },
-  "642adf503effc7142eea9d9b": {
-    "_id": "642adf503effc7142eea9d9b",
-    "createdAt": 1680531280343,
-    "updatedAt": 1680531296532,
-    "cid": "3",
-    "desc": "",
-    "label": "Home services",
-    "name": "home_services",
-    "props": [
-      {
-        "id": "cb24ca1d-b07e-4a7b-9bea-32b1dd0974b7",
-        "name": "title",
-        "label": "Title",
-        "array": false,
-        "required": true,
-        "type": "STRING",
-        "defaultData": [
-          ""
-        ]
-      },
-      {
-        "id": "2970d510-14de-429b-a0f2-68a8b0c8e0b7",
-        "name": "description",
-        "label": "Description",
-        "array": false,
-        "required": true,
-        "type": "RICH_TEXT",
-        "defaultData": [
-          {
-            "nodes": []
-          }
-        ]
-      }
-    ]
-  },
   "642bd7831599a48b5156b9e4": {
     "_id": "642bd7831599a48b5156b9e4",
     "createdAt": 1680594819770,

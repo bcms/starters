@@ -21,7 +21,7 @@
       </div>
       <ul class="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
         <li
-          v-for="(service, index) in services"
+          v-for="(service, index) in data.items"
           :key="index"
           class="bg-[#F7F7F7] rounded-2xl p-6"
         >
@@ -52,15 +52,11 @@
 
 <script setup lang="ts">
 import { PropType } from "vue";
-import { HomeServicesGroup, ServiceEntryMeta } from "~~/bcms/types";
+import { HomeServices } from "~~/types";
 
 defineProps({
   data: {
-    type: Object as PropType<HomeServicesGroup>,
-    required: true,
-  },
-  services: {
-    type: Array as PropType<ServiceEntryMeta[]>,
+    type: Object as PropType<HomeServices>,
     required: true,
   },
 });
