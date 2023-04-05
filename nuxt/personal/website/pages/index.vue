@@ -7,6 +7,7 @@
     />
     <HomePageAbout :data="data.data.about" />
     <HomePagePortfolio :data="data.data.portfolio" />
+    <HomePageTestimonials :data="data.data.testimonials" />
   </PageWrapper>
 </template>
 

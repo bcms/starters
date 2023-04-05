@@ -2,7 +2,7 @@
   "6426db7f153ad5151b28771c": {
     "_id": "6426db7f153ad5151b28771c",
     "createdAt": 1680268159911,
-    "updatedAt": 1680602529071,
+    "updatedAt": 1680616690752,
     "access": {
       "templates": [
         {
@@ -56,6 +56,22 @@
         {
           "_id": "642bf54b1599a48b5156b9f2",
           "name": "portfolio_item",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "642c2cee1599a48b5156b9ff",
+          "name": "testimonial_item",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "642c2cdd1599a48b5156b9fe",
+          "name": "testimonials_page",
           "get": true,
           "post": false,
           "put": false,

@@ -13,6 +13,10 @@ import {
   PortfolioItemEntryMeta,
   PortfolioPageEntry,
   PortfolioPageEntryMeta,
+  TestimonialItemEntry,
+  TestimonialItemEntryMeta,
+  TestimonialsPageEntry,
+  TestimonialsPageEntryMeta,
 } from "~~/bcms/types";
 
 export const HomeApi = createBcmsMostServerRoutes({
@@ -52,6 +56,19 @@ export const HomeApi = createBcmsMostServerRoutes({
         async () => true
       )) as unknown as PortfolioItemEntry[];
 
+      const testimonials = (await bcms.content.entry.findOne(
+        "testimonials_page",
+        async () => true
+      )) as unknown as TestimonialsPageEntry;
+
+      const testimonialsMeta = testimonials.meta
+        .en as TestimonialsPageEntryMeta;
+
+      const testimonialsItems = (await bcms.content.entry.find(
+        "testimonial_item",
+        async () => true
+      )) as unknown as TestimonialItemEntry[];
+
       return {
         meta: entry.meta.en as HomePageEntryMeta,
         services: services.map((s) => s.meta.en) as ServiceEntryMeta[],
@@ -67,6 +84,13 @@ export const HomeApi = createBcmsMostServerRoutes({
           items: portfolioItems
             .map((e) => e.meta.en as PortfolioItemEntryMeta)
             .slice(0, 4),
+        },
+        testimonials: {
+          title: testimonialsMeta.title,
+          description: testimonialsMeta.description,
+          items: testimonialsItems.map(
+            (e) => e.meta.en as TestimonialItemEntryMeta
+          ),
         },
       };
     },

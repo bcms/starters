@@ -345,5 +345,36 @@
         ]
       }
     ]
+  },
+  "642c2d061599a48b5156ba00": {
+    "_id": "642c2d061599a48b5156ba00",
+    "createdAt": 1680616710268,
+    "updatedAt": 1680679107610,
+    "cid": "d",
+    "desc": "",
+    "label": "Testimonial author",
+    "name": "testimonial_author",
+    "props": [
+      {
+        "id": "442772e1-d8de-4a90-9bd2-164b2a4a7c58",
+        "name": "name",
+        "label": "Name",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "72f06351-10b3-4479-b1a5-2657c3a2ec28",
+        "name": "avatar",
+        "label": "Avatar",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      }
+    ]
   }
 }

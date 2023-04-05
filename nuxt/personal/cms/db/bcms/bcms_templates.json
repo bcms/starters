@@ -469,5 +469,112 @@
         ]
       }
     ]
+  },
+  "642c2cdd1599a48b5156b9fe": {
+    "_id": "642c2cdd1599a48b5156b9fe",
+    "createdAt": 1680616669891,
+    "updatedAt": 1680616674466,
+    "cid": "9",
+    "desc": "",
+    "label": "Testimonials page",
+    "name": "testimonials_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "6bd0d213-7522-4666-b3ca-02ceb49949fe",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "5decf9fa-97d1-4abb-95c8-ed61a57e81b5",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "55a9547b-b495-46ec-8942-0e761d572967",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
+  },
+  "642c2cee1599a48b5156b9ff": {
+    "_id": "642c2cee1599a48b5156b9ff",
+    "createdAt": 1680616686474,
+    "updatedAt": 1680679103834,
+    "cid": "a",
+    "desc": "",
+    "label": "Testimonial item",
+    "name": "testimonial_item",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "f804b5b7-bb07-4656-8472-2deee38cccde",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "c6d4d6be-577c-4a9a-93c3-31f612c32258",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "e782bd52-505d-4db4-8b0f-ec9b4dbd3bb7",
+        "name": "author",
+        "label": "Author",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "642c2d061599a48b5156ba00"
+        }
+      },
+      {
+        "id": "eea5273d-e9ef-45dc-a742-9c9aac00dfc8",
+        "name": "content",
+        "label": "Content",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
   }
 }
