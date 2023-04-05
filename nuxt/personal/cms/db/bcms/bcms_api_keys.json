@@ -2,7 +2,7 @@
   "6426db7f153ad5151b28771c": {
     "_id": "6426db7f153ad5151b28771c",
     "createdAt": 1680268159911,
-    "updatedAt": 1680616690752,
+    "updatedAt": 1680685966948,
     "access": {
       "templates": [
         {
@@ -31,7 +31,7 @@
         },
         {
           "_id": "642adf8b3effc7142eea9d9d",
-          "name": "service",
+          "name": "service_item",
           "get": true,
           "post": false,
           "put": false,
@@ -72,6 +72,14 @@
         {
           "_id": "642c2cdd1599a48b5156b9fe",
           "name": "testimonials_page",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "642d3af894b4bb4f437826b1",
+          "name": "services_page",
           "get": true,
           "post": false,
           "put": false,

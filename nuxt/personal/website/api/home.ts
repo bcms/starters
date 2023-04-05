@@ -5,8 +5,9 @@ import {
 } from "~~/bcms/types/entry/home_page";
 import { apiRoute } from "./_api-route";
 import { HomePageData } from "~~/types";
-import { ServiceEntry, ServiceEntryMeta } from "~~/bcms/types/entry/service";
 import {
+  ServiceItemEntry,
+  ServiceItemEntryMeta,
   AboutPageEntry,
   AboutPageEntryMeta,
   PortfolioItemEntry,
@@ -17,6 +18,8 @@ import {
   TestimonialItemEntryMeta,
   TestimonialsPageEntry,
   TestimonialsPageEntryMeta,
+  ServicesPageEntry,
+  ServicesPageEntryMeta,
 } from "~~/bcms/types";
 
 export const HomeApi = createBcmsMostServerRoutes({
@@ -32,10 +35,17 @@ export const HomeApi = createBcmsMostServerRoutes({
         throw new Error("Home page entry does not exist.");
       }
 
-      const services = (await bcms.content.entry.find(
-        "service",
+      const services = (await bcms.content.entry.findOne(
+        "services_page",
         async () => true
-      )) as unknown as ServiceEntry[];
+      )) as unknown as ServicesPageEntry;
+
+      const servicesMeta = services.meta.en as ServicesPageEntryMeta;
+
+      const serviceItems = (await bcms.content.entry.find(
+        "service_item",
+        async () => true
+      )) as unknown as ServiceItemEntry[];
 
       const about = (await bcms.content.entry.findOne(
         "about_page",
@@ -71,7 +81,11 @@ export const HomeApi = createBcmsMostServerRoutes({
 
       return {
         meta: entry.meta.en as HomePageEntryMeta,
-        services: services.map((s) => s.meta.en) as ServiceEntryMeta[],
+        services: {
+          title: servicesMeta.title,
+          description: servicesMeta.description,
+          items: serviceItems.map((s) => s.meta.en) as ServiceItemEntryMeta[],
+        },
         about: {
           title: aboutMeta.title,
           description: aboutMeta.description,

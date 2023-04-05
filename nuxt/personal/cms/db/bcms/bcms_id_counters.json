@@ -2,16 +2,16 @@
   "6426e3fa109812372e9c9587": {
     "_id": "6426e3fa109812372e9c9587",
     "createdAt": 1680270330250,
-    "updatedAt": 1680616686474,
-    "count": 11,
+    "updatedAt": 1680685816936,
+    "count": 12,
     "name": "Templates",
     "forId": "templates"
   },
   "6426e4ef109812372e9c958a": {
     "_id": "6426e4ef109812372e9c958a",
     "createdAt": 1680270575101,
-    "updatedAt": 1680679477489,
-    "count": 20,
+    "updatedAt": 1680685872216,
+    "count": 21,
     "name": "Entries",
     "forId": "entries"
   },

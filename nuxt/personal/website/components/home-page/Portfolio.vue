@@ -55,7 +55,7 @@
               :pagination="{
                 el: `.homePortfolio--galleryPagination_${index}`,
               }"
-              class="w-full"
+              class="w-full rounded-3xl overflow-hidden"
             >
               <SwiperSlide
                 v-for="(galleryItem, galleryIndex) in item.gallery"
@@ -83,6 +83,19 @@
                 />
               </SwiperSlide>
             </Swiper>
+            <div
+              class="absolute z-10 top-0 left-0 w-full h-full rounded-3xl flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 group-hover:opacity-100"
+              :style="{
+                background:
+                  'radial-gradient(50% 50% at 50% 50%, rgba(217, 217, 217, 0) 0%, #FFFFFF 100%)',
+              }"
+            >
+              <div
+                class="px-6 py-4 bg-appText rounded-[32px] leading-none font-medium tracking-[-0.41px] text-white"
+              >
+                Open project
+              </div>
+            </div>
           </NuxtLink>
           <div
             v-if="item.gallery.length > 0"

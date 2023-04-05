@@ -175,11 +175,11 @@
   "642adf8b3effc7142eea9d9d": {
     "_id": "642adf8b3effc7142eea9d9d",
     "createdAt": 1680531339600,
-    "updatedAt": 1680592847647,
+    "updatedAt": 1680685928877,
     "cid": "4",
     "desc": "",
-    "label": "Service",
-    "name": "service",
+    "label": "Service item",
+    "name": "service_item",
     "singleEntry": false,
     "userId": "111111111111111111111111",
     "props": [
@@ -566,6 +566,54 @@
         "id": "eea5273d-e9ef-45dc-a742-9c9aac00dfc8",
         "name": "content",
         "label": "Content",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
+  },
+  "642d3af894b4bb4f437826b1": {
+    "_id": "642d3af894b4bb4f437826b1",
+    "createdAt": 1680685816937,
+    "updatedAt": 1680685833048,
+    "cid": "b",
+    "desc": "",
+    "label": "Services page",
+    "name": "services_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "6e0c2be9-b240-4f2a-81d9-a0bb42bdfa65",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "2f36cfab-c152-46b5-957b-eaaefeb779ae",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "5fd9029e-0ba5-4018-a74c-50bfcac0aca6",
+        "name": "description",
+        "label": "Description",
         "array": false,
         "required": true,
         "type": "RICH_TEXT",

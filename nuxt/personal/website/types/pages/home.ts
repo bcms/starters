@@ -3,10 +3,16 @@ import {
   AboutEducationGroup,
   AboutWorkHistoryGroup,
   PortfolioItemEntryMeta,
+  ServiceItemEntryMeta,
   TestimonialItemEntryMeta,
 } from "~~/bcms/types";
 import { HomePageEntryMeta } from "~~/bcms/types/entry/home_page";
-import { ServiceEntryMeta } from "~~/bcms/types/entry/service";
+
+export interface HomeServices {
+  title: string;
+  description: BCMSPropRichTextDataParsed;
+  items: ServiceItemEntryMeta[];
+}
 
 export interface HomeAbout {
   title: string;
@@ -29,7 +35,7 @@ export interface HomeTestimonials {
 
 export interface HomePageData {
   meta: HomePageEntryMeta;
-  services: ServiceEntryMeta[];
+  services: HomeServices;
   about: HomeAbout;
   portfolio: HomePortfolio;
   testimonials: HomeTestimonials;

@@ -1,8 +1,8 @@
 <template>
   <section class="pb-10 lg:pb-14">
-    <div class="container">
+    <div class="relative container">
       <div
-        class="md:flex md:items-start md:justify-between md:gap-16 lg:gap-20"
+        class="relative z-10 md:flex md:items-start md:justify-between md:gap-16 lg:gap-20"
       >
         <div class="flex items-center mb-[14px] md:mt-4">
           <div
@@ -73,6 +73,12 @@
           </div>
         </div>
       </div>
+      <div
+        class="absolute top-[40%] -translate-y-1/2 left-0 w-[296px] h-[296px] rounded-full opacity-20 blur-[120px] bg-blend-overlay bg-[#FFBF4B] pointer-events-none max-md:hidden"
+      />
+      <div
+        class="absolute top-[80%] -translate-y-1/2 -left-[15%] w-[296px] h-[296px] rounded-full opacity-20 blur-[120px] bg-blend-overlay bg-[#3A437E] pointer-events-none max-md:hidden"
+      />
     </div>
   </section>
 </template>
