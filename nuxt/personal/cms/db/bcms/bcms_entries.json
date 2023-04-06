@@ -2,7 +2,7 @@
   "6426e4ef109812372e9c958b": {
     "_id": "6426e4ef109812372e9c958b",
     "createdAt": 1680270575101,
-    "updatedAt": 1680698623020,
+    "updatedAt": 1680764808663,
     "cid": "1",
     "templateId": "6426e3fa109812372e9c9588",
     "userId": "111111111111111111111111",
@@ -37,7 +37,7 @@
             "id": "a88194c4-4090-46c6-9f20-59f6de33c233",
             "data": [
               {
-                "id": "4c74ac61-943b-42e6-a961-0986f2fc273b",
+                "id": "558b931f-a199-4cd1-b1e4-48922b230d45",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -61,7 +61,7 @@
                 ]
               },
               {
-                "id": "0bb3f06e-98cc-4021-8856-26e411790c1c",
+                "id": "3611b542-cef0-4f13-9345-a2a031b4a81f",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -85,7 +85,7 @@
                 ]
               },
               {
-                "id": "c923eabd-f930-4617-b6b6-3e25fa5122d0",
+                "id": "1bd57d55-5ea7-493e-8363-a1fc35528a02",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -109,7 +109,7 @@
                 ]
               },
               {
-                "id": "edb0b02c-e055-4500-a558-c0a2243af482",
+                "id": "ea71b09e-e93b-4448-be3c-0a4a7d20ab4a",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -120,7 +120,7 @@
                           {
                             "type": "link",
                             "attrs": {
-                              "href": "/",
+                              "href": "/portfolio",
                               "target": "_blank",
                               "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
                             }
@@ -133,7 +133,7 @@
                 ]
               },
               {
-                "id": "d74f3d8a-02f7-4011-8d7d-c117b254cd1f",
+                "id": "42d6f9a8-6b97-49ad-827c-ef6e571978a8",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -157,7 +157,7 @@
                 ]
               },
               {
-                "id": "9b7aeeb3-2662-4c1f-9ebe-f54d3bc8418c",
+                "id": "37adcbfb-76b6-4c40-a713-5bac01dce647",
                 "nodes": [
                   {
                     "type": "paragraph",
