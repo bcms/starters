@@ -4,7 +4,7 @@
       <div class="container">
         <AnimatedTitle
           :title="data.data.meta.title"
-          class="mb-10 lg:mb-[192px]"
+          class="mb-10 md:mb-20 lg:mb-[192px]"
           title-class="text-[114px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[190px] md:text-[220px] lg:text-[300px] lg:tracking-[5.59px] xl:text-[464px]"
         />
         <div class="grid grid-cols-1 gap-10 lg:gap-[72px]">

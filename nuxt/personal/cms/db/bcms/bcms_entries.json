@@ -2,7 +2,7 @@
   "6426e4ef109812372e9c958b": {
     "_id": "6426e4ef109812372e9c958b",
     "createdAt": 1680270575101,
-    "updatedAt": 1680764808663,
+    "updatedAt": 1680769581384,
     "cid": "1",
     "templateId": "6426e3fa109812372e9c9588",
     "userId": "111111111111111111111111",
@@ -37,7 +37,7 @@
             "id": "a88194c4-4090-46c6-9f20-59f6de33c233",
             "data": [
               {
-                "id": "558b931f-a199-4cd1-b1e4-48922b230d45",
+                "id": "0383aa46-e4a3-48d9-9842-929270ee198f",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -61,7 +61,7 @@
                 ]
               },
               {
-                "id": "3611b542-cef0-4f13-9345-a2a031b4a81f",
+                "id": "49cbd32a-dee2-4951-b0ae-b455588b4dc7",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -85,7 +85,7 @@
                 ]
               },
               {
-                "id": "1bd57d55-5ea7-493e-8363-a1fc35528a02",
+                "id": "d289a941-e0d1-4fb5-b984-3e47c1c2b87f",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -109,7 +109,7 @@
                 ]
               },
               {
-                "id": "ea71b09e-e93b-4448-be3c-0a4a7d20ab4a",
+                "id": "9d2f95b0-8de2-432c-bf25-4f1073293b0f",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -133,7 +133,7 @@
                 ]
               },
               {
-                "id": "42d6f9a8-6b97-49ad-827c-ef6e571978a8",
+                "id": "ff3047f5-9fb9-485b-adb1-a927ef919e11",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -144,7 +144,7 @@
                           {
                             "type": "link",
                             "attrs": {
-                              "href": "/",
+                              "href": "/testimonials",
                               "target": "_blank",
                               "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
                             }
@@ -157,7 +157,7 @@
                 ]
               },
               {
-                "id": "37adcbfb-76b6-4c40-a713-5bac01dce647",
+                "id": "2af798e0-800f-4ffe-9be1-e7a02015b0a9",
                 "nodes": [
                   {
                     "type": "paragraph",

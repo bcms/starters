@@ -4,7 +4,7 @@
       <div class="container">
         <AnimatedTitle
           :title="data.data.meta.title"
-          class="mb-10 lg:mb-[192px]"
+          class="mb-10 md:mb-20 lg:mb-[192px]"
           title-class="text-[114px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[190px] md:text-[220px] lg:text-[300px] lg:tracking-[5.59px] xl:text-[464px]"
         />
         <div class="grid grid-cols-1 gap-[33px] lg:gap-20">
@@ -25,9 +25,12 @@
             />
             <div class="lg:flex lg:items-start lg:justify-between">
               <h3
-                class="text-sm leading-none tracking-[-0.41px] font-Helvetica mb-3 md:text-2xl md:leading-none lg:text-[32px]"
+                class="flex text-sm leading-none tracking-[-0.41px] font-Helvetica mb-3 md:text-2xl md:leading-none lg:text-[32px]"
               >
-                {{ item.title }} <span class="text-[10px]">&#169;</span>
+                {{ item.title }}
+                <span class="text-[10px] ml-1.5 md:text-sm lg:text-xl"
+                  >&#169;</span
+                >
               </h3>
               <ContentManager
                 :item="item.description"
