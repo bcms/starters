@@ -3,3 +3,4 @@ export * from "./services";
 export * from "./about";
 export * from "./portfolio";
 export * from "./testimonials";
+export * from "./legal";

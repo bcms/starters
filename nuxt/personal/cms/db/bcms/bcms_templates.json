@@ -613,5 +613,40 @@
         ]
       }
     ]
+  },
+  "642ebee626d420f1dbe66ff5": {
+    "_id": "642ebee626d420f1dbe66ff5",
+    "createdAt": 1680785126178,
+    "updatedAt": 1680785163412,
+    "cid": "c",
+    "desc": "",
+    "label": "Legal page",
+    "name": "legal_page",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "1a8240af-5cbe-4500-8572-619b93b6de2e",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "c1f94ef4-55fb-4ae1-9e6c-130a7f284a71",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
   }
 }

@@ -2,7 +2,7 @@
   "6426db7f153ad5151b28771c": {
     "_id": "6426db7f153ad5151b28771c",
     "createdAt": 1680268159911,
-    "updatedAt": 1680685966948,
+    "updatedAt": 1680785130059,
     "access": {
       "templates": [
         {
@@ -80,6 +80,14 @@
         {
           "_id": "642d3af894b4bb4f437826b1",
           "name": "services_page",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "642ebee626d420f1dbe66ff5",
+          "name": "legal_page",
           "get": true,
           "post": false,
           "put": false,
