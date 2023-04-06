@@ -6,6 +6,7 @@ import {
   PortfolioApi,
   TestimonialsApi,
   LegalApi,
+  ContactApi,
 } from "./api";
 
 export default createBcmsMostServerRoutes({
@@ -15,4 +16,5 @@ export default createBcmsMostServerRoutes({
   ...PortfolioApi,
   ...TestimonialsApi,
   ...LegalApi,
+  ...ContactApi,
 });

@@ -648,5 +648,40 @@
         ]
       }
     ]
+  },
+  "642ec35326d420f1dbe66ffc": {
+    "_id": "642ec35326d420f1dbe66ffc",
+    "createdAt": 1680786259807,
+    "updatedAt": 1680786259807,
+    "cid": "d",
+    "desc": "",
+    "label": "Contact page",
+    "name": "contact_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "d58193c3-a9c0-4e8f-b4f4-b2a32ef91153",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "461bde47-3d7e-41db-a273-565e590ea37a",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
   }
 }

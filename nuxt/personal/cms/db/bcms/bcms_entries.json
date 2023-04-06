@@ -2,7 +2,7 @@
   "6426e4ef109812372e9c958b": {
     "_id": "6426e4ef109812372e9c958b",
     "createdAt": 1680270575101,
-    "updatedAt": 1680769581384,
+    "updatedAt": 1680786106737,
     "cid": "1",
     "templateId": "6426e3fa109812372e9c9588",
     "userId": "111111111111111111111111",
@@ -37,7 +37,7 @@
             "id": "a88194c4-4090-46c6-9f20-59f6de33c233",
             "data": [
               {
-                "id": "0383aa46-e4a3-48d9-9842-929270ee198f",
+                "id": "9754b527-898d-4ade-a107-b16fb0bda8fe",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -61,7 +61,7 @@
                 ]
               },
               {
-                "id": "49cbd32a-dee2-4951-b0ae-b455588b4dc7",
+                "id": "ab07b67a-54af-49c2-b795-9d0159ece297",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -85,7 +85,7 @@
                 ]
               },
               {
-                "id": "d289a941-e0d1-4fb5-b984-3e47c1c2b87f",
+                "id": "ec910529-0d41-4d6d-a18e-d73f8582bece",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -109,7 +109,7 @@
                 ]
               },
               {
-                "id": "9d2f95b0-8de2-432c-bf25-4f1073293b0f",
+                "id": "ccd2d0fc-c820-4dbc-9d31-8a4848861d8c",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -133,7 +133,7 @@
                 ]
               },
               {
-                "id": "ff3047f5-9fb9-485b-adb1-a927ef919e11",
+                "id": "33d8bb1c-d7af-4eb4-9498-de15e171f21f",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -157,7 +157,7 @@
                 ]
               },
               {
-                "id": "2af798e0-800f-4ffe-9be1-e7a02015b0a9",
+                "id": "56ba2cd6-b76f-44c9-bf07-86fa15fd7059",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -168,7 +168,7 @@
                           {
                             "type": "link",
                             "attrs": {
-                              "href": "/",
+                              "href": "/contact",
                               "target": "_blank",
                               "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
                             }
@@ -196,7 +196,7 @@
   "642a893b3effc7142eea9d95": {
     "_id": "642a893b3effc7142eea9d95",
     "createdAt": 1680509243593,
-    "updatedAt": 1680785477802,
+    "updatedAt": 1680786331229,
     "cid": "2",
     "templateId": "6426f0fc109812372e9c958c",
     "userId": "111111111111111111111111",
@@ -221,7 +221,7 @@
             "id": "fddd7b74-dbf4-402c-a39e-00e7159f12c9",
             "data": [
               {
-                "id": "e11a5cc2-3e2d-460c-8386-05ff72f8f1ef",
+                "id": "b6e73d4b-bdfa-4a4f-a248-7405d5a27c3a",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -245,7 +245,7 @@
                 ]
               },
               {
-                "id": "eb859eeb-7b28-4989-81cc-66b87bd75c75",
+                "id": "ae932f89-ea02-449f-9257-1f3b84d55941",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -269,7 +269,7 @@
                 ]
               },
               {
-                "id": "3f32f3c9-220b-4788-bae0-40f24eab135c",
+                "id": "4434d002-3c28-475b-8335-07ea55a5881f",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -388,7 +388,7 @@
                     {
                       "id": "800c816b-0519-4d87-9ee2-759092018fc6",
                       "data": [
-                        "/"
+                        "/contact"
                       ]
                     },
                     {
@@ -2566,6 +2566,41 @@
           }
         ],
         "plainText": "you have the right to access, update, and delete the personal information we hold about you. you may also object to the processing of your personal information or request that we restrict the use of your information. to exercise your rights or make a request, please contact us using the contact information below.\n\n"
+      }
+    ]
+  },
+  "642ec37426d420f1dbe66ffd": {
+    "_id": "642ec37426d420f1dbe66ffd",
+    "createdAt": 1680786292823,
+    "updatedAt": 1680786292823,
+    "cid": "1b",
+    "templateId": "642ec35326d420f1dbe66ffc",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "d58193c3-a9c0-4e8f-b4f4-b2a32ef91153",
+            "data": [
+              "Contact"
+            ]
+          },
+          {
+            "id": "461bde47-3d7e-41db-a273-565e590ea37a",
+            "data": [
+              "contact"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
       }
     ]
   }
