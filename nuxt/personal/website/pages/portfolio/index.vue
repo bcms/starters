@@ -8,7 +8,11 @@
           title-class="text-[114px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[190px] md:text-[220px] lg:text-[300px] lg:tracking-[5.59px] xl:text-[464px]"
         />
         <div class="grid grid-cols-1 gap-[33px] lg:gap-20">
-          <div v-for="(item, index) in data.data.items" :key="index">
+          <NuxtLink
+            :to="`/portfolio/${item.slug}`"
+            v-for="(item, index) in data.data.items"
+            :key="index"
+          >
             <BCMSImage
               :media="item.gallery[0]"
               :options="{
@@ -27,7 +31,7 @@
               <h3
                 class="flex text-sm leading-none tracking-[-0.41px] font-Helvetica mb-3 md:text-2xl md:leading-none lg:text-[32px]"
               >
-                {{ item.title }}
+                {{ item.brand_name }}
                 <span class="text-[10px] ml-1.5 md:text-sm lg:text-xl"
                   >&#169;</span
                 >
@@ -37,7 +41,7 @@
                 class="text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 lg:text-[15px] lg:max-w-[551px]"
               />
             </div>
-          </div>
+          </NuxtLink>
         </div>
       </div>
     </div>

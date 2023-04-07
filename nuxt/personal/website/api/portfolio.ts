@@ -6,9 +6,26 @@ import {
   PortfolioPageEntry,
   PortfolioPageEntryMeta,
 } from "~~/bcms/types";
-import { PortfolioPageData } from "~~/types";
+import { PortfolioItemPageData, PortfolioPageData } from "~~/types";
 
 export const PortfolioApi = createBcmsMostServerRoutes({
+  "/portfolio/:slug/data.json": apiRoute<PortfolioItemPageData>({
+    method: "get",
+    async handler({ bcms, params }) {
+      const entry = (await bcms.content.entry.findOne(
+        "portfolio_item",
+        async (e) => e.meta.en.slug === params.slug
+      )) as unknown as PortfolioItemEntry;
+
+      if (!entry) {
+        throw new Error("Portfolio item entry does not exist.");
+      }
+
+      return {
+        meta: entry.meta.en as PortfolioItemEntryMeta,
+      };
+    },
+  }),
   "/portfolio.json": apiRoute<PortfolioPageData>({
     method: "get",
     async handler({ bcms }) {

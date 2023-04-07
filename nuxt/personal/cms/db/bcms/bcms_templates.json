@@ -383,7 +383,7 @@
   "642bf54b1599a48b5156b9f2": {
     "_id": "642bf54b1599a48b5156b9f2",
     "createdAt": 1680602443082,
-    "updatedAt": 1680605215277,
+    "updatedAt": 1680790478569,
     "cid": "8",
     "desc": "",
     "label": "Portfolio item",
@@ -414,14 +414,47 @@
         ]
       },
       {
-        "id": "1b6f935a-a548-418f-a4c2-4602d393adf6",
-        "name": "url",
-        "label": "Url",
+        "id": "2a421563-73bd-4476-920e-2631c796f475",
+        "name": "project_no",
+        "label": "Project No",
         "array": false,
         "required": true,
         "type": "STRING",
         "defaultData": [
           ""
+        ]
+      },
+      {
+        "id": "b73834b5-868f-4318-b810-9a6f17d91c9a",
+        "name": "brand_name",
+        "label": "Brand name",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "80f91064-9874-4764-8a4f-cc9f46cebbe7",
+        "name": "role",
+        "label": "Role",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "122ca502-1b99-447e-be47-ed6efe49faec",
+        "name": "year",
+        "label": "Year",
+        "array": false,
+        "required": true,
+        "type": "DATE",
+        "defaultData": [
+          0
         ]
       },
       {

@@ -1620,7 +1620,7 @@
   "642bf62e1599a48b5156b9f3": {
     "_id": "642bf62e1599a48b5156b9f3",
     "createdAt": 1680602670688,
-    "updatedAt": 1680605231622,
+    "updatedAt": 1680790383799,
     "cid": "c",
     "templateId": "642bf54b1599a48b5156b9f2",
     "userId": "111111111111111111111111",
@@ -1632,13 +1632,37 @@
           {
             "id": "b06821e7-9cc3-4ac4-b1c2-ce260290bbee",
             "data": [
-              "Flavour Fushion"
+              "Recipe website"
             ]
           },
           {
             "id": "454e7885-3d63-4c82-b200-129767e772d9",
             "data": [
-              "flavour-fushion"
+              "recipe-website"
+            ]
+          },
+          {
+            "id": "2a421563-73bd-4476-920e-2631c796f475",
+            "data": [
+              "1"
+            ]
+          },
+          {
+            "id": "b73834b5-868f-4318-b810-9a6f17d91c9a",
+            "data": [
+              "Flavour Fushion"
+            ]
+          },
+          {
+            "id": "80f91064-9874-4764-8a4f-cc9f46cebbe7",
+            "data": [
+              "UI Designer"
+            ]
+          },
+          {
+            "id": "122ca502-1b99-447e-be47-ed6efe49faec",
+            "data": [
+              0
             ]
           },
           {
@@ -1651,7 +1675,7 @@
             "id": "65488b5c-c244-4d8f-a385-ab734f52cde9",
             "data": [
               {
-                "id": "4b3bfe73-f076-47ca-9c6e-7ad0c3bd2117",
+                "id": "ef4585fb-4811-448b-bb36-631a2d244e7b",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -1701,7 +1725,7 @@
   "642bf9cc1599a48b5156b9fb": {
     "_id": "642bf9cc1599a48b5156b9fb",
     "createdAt": 1680603596351,
-    "updatedAt": 1680605241924,
+    "updatedAt": 1680790406682,
     "cid": "d",
     "templateId": "642bf54b1599a48b5156b9f2",
     "userId": "111111111111111111111111",
@@ -1713,13 +1737,37 @@
           {
             "id": "b06821e7-9cc3-4ac4-b1c2-ce260290bbee",
             "data": [
-              "Hospitale"
+              "Find job website"
             ]
           },
           {
             "id": "454e7885-3d63-4c82-b200-129767e772d9",
             "data": [
-              "hospitale"
+              "find-job-website"
+            ]
+          },
+          {
+            "id": "2a421563-73bd-4476-920e-2631c796f475",
+            "data": [
+              "2"
+            ]
+          },
+          {
+            "id": "b73834b5-868f-4318-b810-9a6f17d91c9a",
+            "data": [
+              "Hospitale"
+            ]
+          },
+          {
+            "id": "80f91064-9874-4764-8a4f-cc9f46cebbe7",
+            "data": [
+              "UI Designer"
+            ]
+          },
+          {
+            "id": "122ca502-1b99-447e-be47-ed6efe49faec",
+            "data": [
+              0
             ]
           },
           {
@@ -1732,7 +1780,7 @@
             "id": "65488b5c-c244-4d8f-a385-ab734f52cde9",
             "data": [
               {
-                "id": "f458f46a-c6b8-43b7-862e-5cdf6d264af4",
+                "id": "9d5dfb8a-1096-4665-a6a1-8f07bab9264b",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -1782,7 +1830,7 @@
   "642bf9fd1599a48b5156b9fc": {
     "_id": "642bf9fd1599a48b5156b9fc",
     "createdAt": 1680603645619,
-    "updatedAt": 1680605250722,
+    "updatedAt": 1680790423241,
     "cid": "e",
     "templateId": "642bf54b1599a48b5156b9f2",
     "userId": "111111111111111111111111",
@@ -1794,13 +1842,37 @@
           {
             "id": "b06821e7-9cc3-4ac4-b1c2-ce260290bbee",
             "data": [
-              "Tastyyy"
+              "Restaurant website"
             ]
           },
           {
             "id": "454e7885-3d63-4c82-b200-129767e772d9",
             "data": [
-              "tastyyy"
+              "restaurant-website"
+            ]
+          },
+          {
+            "id": "2a421563-73bd-4476-920e-2631c796f475",
+            "data": [
+              "3"
+            ]
+          },
+          {
+            "id": "b73834b5-868f-4318-b810-9a6f17d91c9a",
+            "data": [
+              "Tastyyy"
+            ]
+          },
+          {
+            "id": "80f91064-9874-4764-8a4f-cc9f46cebbe7",
+            "data": [
+              "UI Designer"
+            ]
+          },
+          {
+            "id": "122ca502-1b99-447e-be47-ed6efe49faec",
+            "data": [
+              0
             ]
           },
           {
@@ -1813,7 +1885,7 @@
             "id": "65488b5c-c244-4d8f-a385-ab734f52cde9",
             "data": [
               {
-                "id": "2ccb97bb-64f8-432f-baa8-060180cf721a",
+                "id": "4cf20e55-c8b8-4833-bf7e-d5eb5829c8dc",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -1863,7 +1935,7 @@
   "642bfa191599a48b5156b9fd": {
     "_id": "642bfa191599a48b5156b9fd",
     "createdAt": 1680603673169,
-    "updatedAt": 1680605259919,
+    "updatedAt": 1680790438872,
     "cid": "f",
     "templateId": "642bf54b1599a48b5156b9f2",
     "userId": "111111111111111111111111",
@@ -1875,13 +1947,37 @@
           {
             "id": "b06821e7-9cc3-4ac4-b1c2-ce260290bbee",
             "data": [
-              "BCMS"
+              "Headless CMS"
             ]
           },
           {
             "id": "454e7885-3d63-4c82-b200-129767e772d9",
             "data": [
-              "bcms"
+              "headless-cms"
+            ]
+          },
+          {
+            "id": "2a421563-73bd-4476-920e-2631c796f475",
+            "data": [
+              "4"
+            ]
+          },
+          {
+            "id": "b73834b5-868f-4318-b810-9a6f17d91c9a",
+            "data": [
+              "BCMS"
+            ]
+          },
+          {
+            "id": "80f91064-9874-4764-8a4f-cc9f46cebbe7",
+            "data": [
+              "UI Designer"
+            ]
+          },
+          {
+            "id": "122ca502-1b99-447e-be47-ed6efe49faec",
+            "data": [
+              0
             ]
           },
           {
@@ -1894,7 +1990,7 @@
             "id": "65488b5c-c244-4d8f-a385-ab734f52cde9",
             "data": [
               {
-                "id": "4044fcca-2c56-49dc-957c-fd316ee3db1e",
+                "id": "16873c35-f307-42d4-8e3e-2e2c87a63af0",
                 "nodes": [
                   {
                     "type": "paragraph",

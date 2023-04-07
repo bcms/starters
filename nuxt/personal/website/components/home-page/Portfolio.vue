@@ -43,8 +43,7 @@
             {{ item.title }}
           </h3>
           <NuxtLink
-            :to="item.url"
-            target="_blank"
+            :to="`/portfolio/${item.slug}`"
             class="group relative flex mb-auto w-full xl:flex-1"
           >
             <Swiper
