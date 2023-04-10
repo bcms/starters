@@ -29,5 +29,53 @@
         ]
       }
     ]
+  },
+  "6433e3fa049fc6eba4f8e490": {
+    "_id": "6433e3fa049fc6eba4f8e490",
+    "createdAt": 1681122298127,
+    "updatedAt": 1681122319051,
+    "cid": "2",
+    "desc": "",
+    "label": "Home hero",
+    "name": "home_hero",
+    "props": [
+      {
+        "id": "bdd6c9eb-77f8-4020-a9bb-de42a244986a",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "c203f502-a32d-4331-89e4-a60ca326674e",
+        "name": "subtitle",
+        "label": "Subtitle",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "8a6d21c1-b5f1-473b-94e8-576140ff5f37",
+        "name": "featured_blogs",
+        "label": "Featured blogs",
+        "array": true,
+        "required": true,
+        "type": "ENTRY_POINTER",
+        "defaultData": [
+          {
+            "displayProp": "title",
+            "templateId": "6433e36f049fc6eba4f8e48f",
+            "entryIds": []
+          }
+        ]
+      }
+    ]
   }
 }

@@ -42,10 +42,10 @@
         </button>
       </nav>
     </div>
-    <div
-      v-if="showMobileMenu"
-      class="fixed top-0 left-0 w-screen h-screen bg-appText md:hidden"
-    />
+    <template v-if="showMobileMenu">
+      <div class="fixed top-0 left-0 w-screen h-screen bg-appText md:hidden" />
+      <TopGradient class="md:hidden" />
+    </template>
   </header>
 </template>
 

@@ -114,5 +114,119 @@
         }
       }
     ]
+  },
+  "6433e34b049fc6eba4f8e48e": {
+    "_id": "6433e34b049fc6eba4f8e48e",
+    "createdAt": 1681122123499,
+    "updatedAt": 1681122926098,
+    "cid": "3",
+    "desc": "",
+    "label": "Home page",
+    "name": "home_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "2fcebd27-0c30-4829-a759-8244ecbc2e8d",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "38ed6bf0-797a-4758-b45a-638d35ebbbac",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "3619bcf6-a785-433b-9c2c-4251a222f261",
+        "name": "hero",
+        "label": "Hero",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "6433e3fa049fc6eba4f8e490"
+        }
+      }
+    ]
+  },
+  "6433e36f049fc6eba4f8e48f": {
+    "_id": "6433e36f049fc6eba4f8e48f",
+    "createdAt": 1681122159516,
+    "updatedAt": 1681122331167,
+    "cid": "4",
+    "desc": "",
+    "label": "Blog",
+    "name": "blog",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "f1ac5594-2fa1-4641-8685-5cb21c133173",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "9b128943-3631-46a6-8aa6-3d2f658bf9e9",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "49d57bd5-c4fe-464b-8d83-4480aaf8c27c",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "cb7f5343-0cc3-4b51-8d91-fbe223dbb96e",
+        "name": "date",
+        "label": "Date",
+        "array": false,
+        "required": true,
+        "type": "DATE",
+        "defaultData": [
+          0
+        ]
+      },
+      {
+        "id": "c7238c0e-17d0-45c9-9cba-45f94d6cab3b",
+        "name": "cover",
+        "label": "Cover",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      }
+    ]
   }
 }
