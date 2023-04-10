@@ -1,4 +1,5 @@
 import type { BCMSMost, BCMSMostServerRoute } from "@becomes/cms-most/types";
+import { HeaderEntry, HeaderEntryMeta } from "~~/bcms/types";
 import { APIResponse, Languages } from "~~/types";
 
 interface Route<Result = unknown, Body = unknown>
@@ -32,9 +33,14 @@ export function apiRoute<Result = unknown, Body = unknown>(
     method: route.method,
     async handler(data) {
       const lng = data.params.lng ? (data.params.lng as Languages) : "en";
+      const header = (await data.bcms.content.entry.findOne(
+        "header",
+        async () => true
+      )) as unknown as HeaderEntry;
       const result = await route.handler(data);
       return {
         data: result,
+        header: header.meta[lng] as HeaderEntryMeta,
       };
     },
   };

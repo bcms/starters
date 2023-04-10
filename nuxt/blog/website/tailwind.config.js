@@ -28,6 +28,7 @@ module.exports = {
         padding: {
           DEFAULT: "1.5rem",
           lg: "2rem",
+          xl: "3rem",
         },
         screens: {
           sm: "640px",

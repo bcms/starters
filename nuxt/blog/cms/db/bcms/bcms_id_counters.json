@@ -1,0 +1,18 @@
+{
+  "6433c56b049fc6eba4f8e47c": {
+    "_id": "6433c56b049fc6eba4f8e47c",
+    "createdAt": 1681114475273,
+    "updatedAt": 1681114475273,
+    "count": 2,
+    "name": "Templates",
+    "forId": "templates"
+  },
+  "6433c5ea049fc6eba4f8e47f": {
+    "_id": "6433c5ea049fc6eba4f8e47f",
+    "createdAt": 1681114602425,
+    "updatedAt": 1681114602425,
+    "count": 2,
+    "name": "Entries",
+    "forId": "entries"
+  }
+}

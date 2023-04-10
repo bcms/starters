@@ -1,0 +1,148 @@
+{
+  "6433c5ea049fc6eba4f8e480": {
+    "_id": "6433c5ea049fc6eba4f8e480",
+    "createdAt": 1681114602425,
+    "updatedAt": 1681114602425,
+    "cid": "1",
+    "templateId": "6433c56b049fc6eba4f8e47d",
+    "userId": "111111111111111111111111",
+    "status": "6433b6824c02e25452a8a93c",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "7ba57ce7-dce1-4bbb-956c-6b4d2994b51b",
+            "data": [
+              "Header"
+            ]
+          },
+          {
+            "id": "6fcccc35-6397-4304-b07e-9f1479fc9aa8",
+            "data": [
+              "header"
+            ]
+          },
+          {
+            "id": "7a7b77c7-4ea0-40a0-ac77-08e38d042f1c",
+            "data": [
+              {
+                "_id": "6433c59f049fc6eba4f8e47e",
+                "alt_text": "Logo",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "5ae961f6-718c-4661-8c03-f8612aecba46",
+            "data": [
+              {
+                "id": "7d8a6bb6-ae3e-48ec-81b6-39777899be02",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Home"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "69030f49-65c2-4ca8-b119-e73bbb1e7366",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Blog"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "fbdac108-30fb-4e41-9a8a-75446901ad58",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "About me"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f02e83b4-0753-40a3-a0fa-b58f2d7d6c84",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Contact"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  }
+}
