@@ -144,5 +144,147 @@
         "plainText": ""
       }
     ]
+  },
+  "6433ce4a049fc6eba4f8e482": {
+    "_id": "6433ce4a049fc6eba4f8e482",
+    "createdAt": 1681116746557,
+    "updatedAt": 1681119647846,
+    "cid": "2",
+    "templateId": "6433ce3e049fc6eba4f8e481",
+    "userId": "111111111111111111111111",
+    "status": "6433b6824c02e25452a8a93c",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "9ee89073-c9ad-4dd0-b3d5-dd67de485fbc",
+            "data": [
+              "My Memorable Journey Straight To Your Inbox"
+            ]
+          },
+          {
+            "id": "a9682fe7-16a5-43b8-ac37-6ed2644e03cf",
+            "data": [
+              "footer"
+            ]
+          },
+          {
+            "id": "570bd581-75a3-4cb5-b5e7-0c180be2d141",
+            "data": [
+              {
+                "id": "022c38c8-7b8b-4244-9dab-d7b0955fdffd",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Sign up to my weekly newsletter to be the first to know my journey updates"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "fcdc16e0-5d15-407d-aae1-6bc93936a931",
+            "data": {
+              "_id": "6433cf0c049fc6eba4f8e484",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "245016ee-561d-4c77-8c10-cb8e2b099839",
+                      "data": [
+                        {
+                          "_id": "6433d992049fc6eba4f8e48d",
+                          "alt_text": "Facebook",
+                          "caption": ""
+                        }
+                      ]
+                    },
+                    {
+                      "id": "a42f864a-67d6-4d16-ab53-f07ed1c4e92d",
+                      "data": [
+                        "https://www.facebook.com/"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "245016ee-561d-4c77-8c10-cb8e2b099839",
+                      "data": [
+                        {
+                          "_id": "6433d992049fc6eba4f8e48c",
+                          "alt_text": "Pinterest",
+                          "caption": ""
+                        }
+                      ]
+                    },
+                    {
+                      "id": "a42f864a-67d6-4d16-ab53-f07ed1c4e92d",
+                      "data": [
+                        "https://www.pinterest.com/"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "245016ee-561d-4c77-8c10-cb8e2b099839",
+                      "data": [
+                        {
+                          "_id": "6433d992049fc6eba4f8e48b",
+                          "alt_text": "Instagram",
+                          "caption": ""
+                        }
+                      ]
+                    },
+                    {
+                      "id": "a42f864a-67d6-4d16-ab53-f07ed1c4e92d",
+                      "data": [
+                        "https://www.instagram.com/"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "245016ee-561d-4c77-8c10-cb8e2b099839",
+                      "data": [
+                        {
+                          "_id": "6433d992049fc6eba4f8e48a",
+                          "alt_text": "Twitter",
+                          "caption": ""
+                        }
+                      ]
+                    },
+                    {
+                      "id": "a42f864a-67d6-4d16-ab53-f07ed1c4e92d",
+                      "data": [
+                        "https://twitter.com/"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
   }
 }

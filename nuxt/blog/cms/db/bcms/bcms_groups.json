@@ -1,0 +1,33 @@
+{
+  "6433cf0c049fc6eba4f8e484": {
+    "_id": "6433cf0c049fc6eba4f8e484",
+    "createdAt": 1681116940525,
+    "updatedAt": 1681117095836,
+    "cid": "1",
+    "desc": "",
+    "label": "Social Link",
+    "name": "social_link",
+    "props": [
+      {
+        "id": "245016ee-561d-4c77-8c10-cb8e2b099839",
+        "name": "icon",
+        "label": "Icon",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "a42f864a-67d6-4d16-ab53-f07ed1c4e92d",
+        "name": "url",
+        "label": "Url",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
+  }
+}
