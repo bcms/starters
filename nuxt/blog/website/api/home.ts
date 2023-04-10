@@ -19,17 +19,15 @@ export const HomeApi = createBcmsMostServerRoutes({
 
       const blogs = (await bcms.content.entry.find("blog", async (e) =>
         entry.meta.en?.hero.featured_blogs.find(
-          (e) => e.meta.en?.slug !== e.meta.en?.slug
+          (i) => e.meta.en?.slug !== i.meta.en?.slug
         )
       )) as unknown as BlogEntry[];
 
       return {
         meta: entry.meta.en as HomePageEntryMeta,
         blogs: blogToLight(
-          blogs
-            .sort((a, b) => (b.meta.en?.date || 0) - (a.meta.en?.date || 0))
-            .slice(0, 6)
-        ),
+          blogs.sort((a, b) => (b.meta.en?.date || 0) - (a.meta.en?.date || 0))
+        ).slice(0, 6),
       };
     },
   }),

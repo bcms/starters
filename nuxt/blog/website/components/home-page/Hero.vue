@@ -1,5 +1,5 @@
 <template>
-  <section class="relative pt-10 pb-8">
+  <section class="relative pt-10 pb-8 md:py-[72px] lg:pb-[100px] xl:pb-[128px]">
     <div class="container">
       <div
         class="flex flex-col-reverse items-center text-center gap-2.5 mb-8 md:gap-4 md:mb-10 lg:gap-5 lg:mb-12"
@@ -36,7 +36,7 @@
           v-for="(blog, index) in lightBlogs"
           :key="index"
           :to="`/blogs/${blog.slug}`"
-          class="relative rounded-lg overflow-hidden"
+          class="group relative rounded-lg overflow-hidden"
           :class="[
             index > 0 && index % 2 === 0
               ? 'col-span-2'
@@ -45,7 +45,7 @@
         >
           <div class="relative z-10 flex flex-col p-4 h-full md:p-7 lg:p-10">
             <h3
-              class="text-sm leading-none font-medium tracking-[-0.41px] text-white md:text-xl md:leading-none lg:text-[32px] lg:leading-none"
+              class="text-sm leading-none font-medium tracking-[-0.41px] text-white group-hover:underline md:text-xl md:leading-none lg:text-[32px] lg:leading-none"
             >
               {{ blog.title }}
             </h3>
