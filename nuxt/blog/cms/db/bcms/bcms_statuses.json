@@ -1,0 +1,18 @@
+{
+  "6433b6824c02e25452a8a93b": {
+    "_id": "6433b6824c02e25452a8a93b",
+    "createdAt": 1681110658593,
+    "updatedAt": 1681110658593,
+    "color": "",
+    "label": "Draft",
+    "name": "draft"
+  },
+  "6433b6824c02e25452a8a93c": {
+    "_id": "6433b6824c02e25452a8a93c",
+    "createdAt": 1681110658593,
+    "updatedAt": 1681110658593,
+    "color": "",
+    "label": "Active",
+    "name": "active"
+  }
+}

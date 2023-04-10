@@ -1,0 +1,16 @@
+{
+  "6433b6994c02e25452a8a947": {
+    "_id": "6433b6994c02e25452a8a947",
+    "createdAt": 1681110681543,
+    "updatedAt": 1681110681543,
+    "access": {
+      "templates": [],
+      "functions": []
+    },
+    "blocked": false,
+    "desc": "This is an API key created automatically by the BCMS CLI.",
+    "name": "Development key",
+    "secret": "4107ecd203ff708a1789439376934e315781d66134d6c0da058bc87583f6e0c9",
+    "userId": "111111111111111111111111"
+  }
+}
