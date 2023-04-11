@@ -17,9 +17,9 @@
           </h2>
         </div>
       </div>
+      <TopGradient />
     </div>
     <ContactPageForm :email="data.data.meta.email" />
-    <TopGradient />
   </PageWrapper>
 </template>
 

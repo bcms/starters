@@ -1,6 +1,6 @@
 <template>
   <PageWrapper v-if="data" :header="data.header" :footer="data.footer">
-    <div class="pt-10 pb-8 md:py-[72px] lg:pb-[104px]">
+    <div class="relative pt-10 pb-8 md:py-[72px] lg:pb-[104px]">
       <div class="container">
         <div class="md:mb-20 lg:mb-[128px]">
           <div class="flex flex-col items-center mb-8 md:mb-14 lg:mb-20">
@@ -53,8 +53,8 @@
           </div>
         </div>
       </div>
+      <TopGradient />
     </div>
-    <TopGradient />
   </PageWrapper>
 </template>
 
