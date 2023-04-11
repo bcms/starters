@@ -10,6 +10,7 @@
 import { BCMSPropRichTextDataParsed } from "@becomes/cms-client/types";
 import { PropType } from "vue";
 import { BCMSContentManager } from "~~/bcms-components";
+import TextWithImage from "~~/components/widgets/TextWithImage.vue";
 
 defineProps({
   item: {
@@ -19,7 +20,9 @@ defineProps({
   widgetComponents: {
     type: Object,
     required: false,
-    default: {},
+    default: {
+      text_with_image: TextWithImage,
+    },
   },
 });
 

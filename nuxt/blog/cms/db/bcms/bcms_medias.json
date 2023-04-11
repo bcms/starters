@@ -185,5 +185,39 @@
     "caption": "",
     "height": 1104,
     "width": 2688
+  },
+  "6435407f85d8365f26e2cc97": {
+    "_id": "6435407f85d8365f26e2cc97",
+    "createdAt": 1681211520387,
+    "updatedAt": 1681211520387,
+    "hasChildren": false,
+    "isInRoot": false,
+    "mimetype": "image/jpeg",
+    "name": "img-2.jpg",
+    "parentId": "6433e574049fc6eba4f8e491",
+    "size": 392041,
+    "type": "IMG",
+    "userId": "111111111111111111111111",
+    "altText": "",
+    "caption": "",
+    "height": 1104,
+    "width": 2688
+  },
+  "6435408085d8365f26e2cc98": {
+    "_id": "6435408085d8365f26e2cc98",
+    "createdAt": 1681211520501,
+    "updatedAt": 1681211520501,
+    "hasChildren": false,
+    "isInRoot": false,
+    "mimetype": "image/jpeg",
+    "name": "img-1.jpg",
+    "parentId": "6433e574049fc6eba4f8e491",
+    "size": 194987,
+    "type": "IMG",
+    "userId": "111111111111111111111111",
+    "altText": "",
+    "caption": "",
+    "height": 1280,
+    "width": 1456
   }
 }

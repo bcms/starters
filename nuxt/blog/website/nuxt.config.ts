@@ -58,6 +58,7 @@ export default defineNuxtConfig({
     "~/assets/css/main.css",
     "~/assets/css/reset.css",
     "~/assets/css/transition.css",
+    "~/assets/css/prose.css",
   ],
   modules: [
     "nuxt-svgo",

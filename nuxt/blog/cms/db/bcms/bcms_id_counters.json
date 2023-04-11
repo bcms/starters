@@ -22,5 +22,13 @@
     "count": 3,
     "name": "Groups",
     "forId": "groups"
+  },
+  "64353f5985d8365f26e2cc95": {
+    "_id": "64353f5985d8365f26e2cc95",
+    "createdAt": 1681211225084,
+    "updatedAt": 1681211225084,
+    "count": 2,
+    "name": "Widgets",
+    "forId": "widgets"
   }
 }

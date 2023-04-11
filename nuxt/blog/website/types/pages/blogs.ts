@@ -3,7 +3,7 @@ import {
   BCMSPropMediaDataParsed,
   BCMSPropRichTextDataParsed,
 } from "@becomes/cms-client/types";
-import { BlogsPageEntryMeta } from "~~/bcms/types";
+import { BlogEntryMeta, BlogsPageEntryMeta } from "~~/bcms/types";
 
 export interface BlogLight {
   title: string;
@@ -17,4 +17,10 @@ export interface BlogLight {
 export interface BlogsPageData {
   meta: BlogsPageEntryMeta;
   blogs: BlogLight[];
+}
+
+export interface BlogPageData {
+  meta: BlogEntryMeta;
+  content: BCMSPropRichTextDataParsed;
+  otherBlogs: BlogLight[];
 }
