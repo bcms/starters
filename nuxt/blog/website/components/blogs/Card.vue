@@ -3,6 +3,16 @@
     <NuxtLink :to="`/blogs/${blog.slug}`">
       <BCMSImage
         :media="blog.cover"
+        :options="{
+          sizes: {
+            exec: [
+              {
+                width: 800,
+                height: 800,
+              },
+            ],
+          },
+        }"
         class="w-full cover aspect-[1.48] rounded-2xl overflow-hidden mb-4 xl:aspect-[1.04] xl:mb-6"
       />
       <div

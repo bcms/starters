@@ -228,5 +228,62 @@
         "defaultData": []
       }
     ]
+  },
+  "64342185049fc6eba4f8e49b": {
+    "_id": "64342185049fc6eba4f8e49b",
+    "createdAt": 1681138053037,
+    "updatedAt": 1681197462111,
+    "cid": "5",
+    "desc": "",
+    "label": "Contact page",
+    "name": "contact_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "f363e4cc-1fc4-4c58-95d0-1b3286fde3a3",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "70e5c383-8fd8-4f12-9f49-8668690cad65",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "9de77a07-cfd3-423a-a644-5e3b3978c451",
+        "name": "subtitle",
+        "label": "Subtitle",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "bd981be9-920c-45e6-b988-b5f540a942af",
+        "name": "email",
+        "label": "Email",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
   }
 }

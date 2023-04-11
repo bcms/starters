@@ -2,7 +2,7 @@
   "6433b6994c02e25452a8a947": {
     "_id": "6433b6994c02e25452a8a947",
     "createdAt": 1681110681543,
-    "updatedAt": 1681122959315,
+    "updatedAt": 1681138520438,
     "access": {
       "templates": [
         {
@@ -32,6 +32,14 @@
         {
           "_id": "6433e34b049fc6eba4f8e48e",
           "name": "home_page",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "64342185049fc6eba4f8e49b",
+          "name": "contact_page",
           "get": true,
           "post": false,
           "put": false,

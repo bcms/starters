@@ -2,7 +2,7 @@
   "6433c5ea049fc6eba4f8e480": {
     "_id": "6433c5ea049fc6eba4f8e480",
     "createdAt": 1681114602425,
-    "updatedAt": 1681114602425,
+    "updatedAt": 1681138630038,
     "cid": "1",
     "templateId": "6433c56b049fc6eba4f8e47d",
     "userId": "111111111111111111111111",
@@ -37,7 +37,7 @@
             "id": "5ae961f6-718c-4661-8c03-f8612aecba46",
             "data": [
               {
-                "id": "7d8a6bb6-ae3e-48ec-81b6-39777899be02",
+                "id": "dd0b178e-813e-439c-9969-58b3a16d50b6",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -61,7 +61,7 @@
                 ]
               },
               {
-                "id": "69030f49-65c2-4ca8-b119-e73bbb1e7366",
+                "id": "6d0a0d37-4202-426c-9d44-a0ebe46a62b3",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -85,7 +85,7 @@
                 ]
               },
               {
-                "id": "fbdac108-30fb-4e41-9a8a-75446901ad58",
+                "id": "ce775588-f551-4907-bcf8-eedbb6c3cf65",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -109,7 +109,7 @@
                 ]
               },
               {
-                "id": "f02e83b4-0753-40a3-a0fa-b58f2d7d6c84",
+                "id": "110b81aa-0e03-4961-b694-c73e51812417",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -120,7 +120,7 @@
                           {
                             "type": "link",
                             "attrs": {
-                              "href": "/",
+                              "href": "/contact",
                               "target": "_blank",
                               "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
                             }
@@ -626,7 +626,7 @@
   "6433e686049fc6eba4f8e49a": {
     "_id": "6433e686049fc6eba4f8e49a",
     "createdAt": 1681122950307,
-    "updatedAt": 1681122951333,
+    "updatedAt": 1681196652211,
     "cid": "7",
     "templateId": "6433e34b049fc6eba4f8e48e",
     "userId": "111111111111111111111111",
@@ -638,13 +638,13 @@
           {
             "id": "2fcebd27-0c30-4829-a759-8244ecbc2e8d",
             "data": [
-              "Home"
+              "A Fashionable Journey Around the World"
             ]
           },
           {
             "id": "38ed6bf0-797a-4758-b45a-638d35ebbbac",
             "data": [
-              "home"
+              "a-fashionable-journey-around-the-world"
             ]
           },
           {
@@ -687,6 +687,53 @@
                 }
               ]
             }
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "64342367049fc6eba4f8e49c": {
+    "_id": "64342367049fc6eba4f8e49c",
+    "createdAt": 1681138535035,
+    "updatedAt": 1681197475184,
+    "cid": "8",
+    "templateId": "64342185049fc6eba4f8e49b",
+    "userId": "111111111111111111111111",
+    "status": "6433b6824c02e25452a8a93c",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "f363e4cc-1fc4-4c58-95d0-1b3286fde3a3",
+            "data": [
+              "Feel free to reach out to me"
+            ]
+          },
+          {
+            "id": "70e5c383-8fd8-4f12-9f49-8668690cad65",
+            "data": [
+              "contact"
+            ]
+          },
+          {
+            "id": "9de77a07-cfd3-423a-a644-5e3b3978c451",
+            "data": [
+              "Contact"
+            ]
+          },
+          {
+            "id": "bd981be9-920c-45e6-b988-b5f540a942af",
+            "data": [
+              "insightfulink@mail.com"
+            ]
           }
         ]
       }
