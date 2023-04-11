@@ -35,7 +35,7 @@
         <NuxtLink
           v-for="(blog, index) in lightBlogs"
           :key="index"
-          :to="`/blogs/${blog.slug}`"
+          :to="`/blog/${blog.slug}`"
           class="group relative rounded-lg overflow-hidden"
           :class="[
             index > 0 && index % 2 === 0

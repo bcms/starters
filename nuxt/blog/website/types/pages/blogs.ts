@@ -1,7 +1,9 @@
 import {
+  BCMSPropEnumData,
   BCMSPropMediaDataParsed,
   BCMSPropRichTextDataParsed,
 } from "@becomes/cms-client/types";
+import { BlogsPageEntryMeta } from "~~/bcms/types";
 
 export interface BlogLight {
   title: string;
@@ -9,4 +11,10 @@ export interface BlogLight {
   cover: BCMSPropMediaDataParsed;
   description: BCMSPropRichTextDataParsed;
   date: number;
+  category: BCMSPropEnumData;
+}
+
+export interface BlogsPageData {
+  meta: BlogsPageEntryMeta;
+  blogs: BlogLight[];
 }

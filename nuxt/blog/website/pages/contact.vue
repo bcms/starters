@@ -19,6 +19,7 @@
       </div>
     </div>
     <ContactPageForm :email="data.data.meta.email" />
+    <TopGradient />
   </PageWrapper>
 </template>
 

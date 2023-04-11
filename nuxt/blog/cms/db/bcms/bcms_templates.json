@@ -164,7 +164,7 @@
   "6433e36f049fc6eba4f8e48f": {
     "_id": "6433e36f049fc6eba4f8e48f",
     "createdAt": 1681122159516,
-    "updatedAt": 1681122331167,
+    "updatedAt": 1681204371909,
     "cid": "4",
     "desc": "",
     "label": "Blog",
@@ -226,6 +226,23 @@
         "required": true,
         "type": "MEDIA",
         "defaultData": []
+      },
+      {
+        "id": "1529ac30-d4fb-4032-949b-1629ab25ccbf",
+        "name": "category",
+        "label": "Category",
+        "array": false,
+        "required": true,
+        "type": "ENUMERATION",
+        "defaultData": {
+          "items": [
+            "FASHION",
+            "TRAVEL",
+            "LIFESTYLE",
+            "FOOD"
+          ],
+          "selected": ""
+        }
       }
     ]
   },
@@ -277,6 +294,52 @@
         "id": "bd981be9-920c-45e6-b988-b5f540a942af",
         "name": "email",
         "label": "Email",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
+  },
+  "64351a6e85d8365f26e2cc93": {
+    "_id": "64351a6e85d8365f26e2cc93",
+    "createdAt": 1681201774705,
+    "updatedAt": 1681201807818,
+    "cid": "6",
+    "desc": "",
+    "label": "Blogs page",
+    "name": "blogs_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "16dc3854-ea8e-450b-8960-05489938abfd",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "5ca6e04f-b10f-44db-9f75-66bb0eafbeec",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "24edfe87-e297-4be3-ba3b-74a31d881bd5",
+        "name": "subtitle",
+        "label": "Subtitle",
         "array": false,
         "required": true,
         "type": "STRING",

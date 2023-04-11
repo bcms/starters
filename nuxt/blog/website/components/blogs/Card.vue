@@ -1,6 +1,6 @@
 <template>
   <article>
-    <NuxtLink :to="`/blogs/${blog.slug}`">
+    <NuxtLink :to="`/blog/${blog.slug}`">
       <BCMSImage
         :media="blog.cover"
         :options="{

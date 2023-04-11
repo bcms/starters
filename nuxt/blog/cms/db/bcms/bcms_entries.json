@@ -2,7 +2,7 @@
   "6433c5ea049fc6eba4f8e480": {
     "_id": "6433c5ea049fc6eba4f8e480",
     "createdAt": 1681114602425,
-    "updatedAt": 1681138630038,
+    "updatedAt": 1681201721674,
     "cid": "1",
     "templateId": "6433c56b049fc6eba4f8e47d",
     "userId": "111111111111111111111111",
@@ -37,7 +37,7 @@
             "id": "5ae961f6-718c-4661-8c03-f8612aecba46",
             "data": [
               {
-                "id": "dd0b178e-813e-439c-9969-58b3a16d50b6",
+                "id": "c7071864-7dcd-47f0-83f4-6eac250871ca",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -61,7 +61,7 @@
                 ]
               },
               {
-                "id": "6d0a0d37-4202-426c-9d44-a0ebe46a62b3",
+                "id": "d2850a78-0d09-43ce-9846-08cc9750e357",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -72,7 +72,7 @@
                           {
                             "type": "link",
                             "attrs": {
-                              "href": "/",
+                              "href": "/blog",
                               "target": "_blank",
                               "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
                             }
@@ -85,7 +85,7 @@
                 ]
               },
               {
-                "id": "ce775588-f551-4907-bcf8-eedbb6c3cf65",
+                "id": "5f7452c6-606d-404a-9537-70ac85a8f80d",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -109,7 +109,7 @@
                 ]
               },
               {
-                "id": "110b81aa-0e03-4961-b694-c73e51812417",
+                "id": "2891cc49-2814-4db7-9cd0-eaf912b91cc6",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -290,7 +290,7 @@
   "6433e5b4049fc6eba4f8e496": {
     "_id": "6433e5b4049fc6eba4f8e496",
     "createdAt": 1681122740384,
-    "updatedAt": 1681122784481,
+    "updatedAt": 1681204394335,
     "cid": "3",
     "templateId": "6433e36f049fc6eba4f8e48f",
     "userId": "111111111111111111111111",
@@ -315,7 +315,7 @@
             "id": "49d57bd5-c4fe-464b-8d83-4480aaf8c27c",
             "data": [
               {
-                "id": "c0018843-7601-4f1c-8af4-79d18add08cb",
+                "id": "67dafa3f-f8e0-42cb-8ca1-0897a4e1681e",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -359,6 +359,12 @@
                 "caption": ""
               }
             ]
+          },
+          {
+            "id": "1529ac30-d4fb-4032-949b-1629ab25ccbf",
+            "data": [
+              "LIFESTYLE"
+            ]
           }
         ]
       }
@@ -374,7 +380,7 @@
   "6433e60b049fc6eba4f8e497": {
     "_id": "6433e60b049fc6eba4f8e497",
     "createdAt": 1681122827273,
-    "updatedAt": 1681122876568,
+    "updatedAt": 1681204387787,
     "cid": "4",
     "templateId": "6433e36f049fc6eba4f8e48f",
     "userId": "111111111111111111111111",
@@ -399,7 +405,7 @@
             "id": "49d57bd5-c4fe-464b-8d83-4480aaf8c27c",
             "data": [
               {
-                "id": "7ddcf804-bed9-4123-839d-64ee47641ce1",
+                "id": "5b83a2c2-ad6f-41ed-a96b-e283d86b5a8e",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -443,6 +449,12 @@
                 "caption": ""
               }
             ]
+          },
+          {
+            "id": "1529ac30-d4fb-4032-949b-1629ab25ccbf",
+            "data": [
+              "LIFESTYLE"
+            ]
           }
         ]
       }
@@ -458,7 +470,7 @@
   "6433e621049fc6eba4f8e498": {
     "_id": "6433e621049fc6eba4f8e498",
     "createdAt": 1681122849041,
-    "updatedAt": 1681122871283,
+    "updatedAt": 1681204399501,
     "cid": "5",
     "templateId": "6433e36f049fc6eba4f8e48f",
     "userId": "111111111111111111111111",
@@ -483,7 +495,7 @@
             "id": "49d57bd5-c4fe-464b-8d83-4480aaf8c27c",
             "data": [
               {
-                "id": "c7abd1fc-3096-45d0-92d8-5ddd5074c040",
+                "id": "c8f2ba9e-c6ed-4c5b-ae4a-980b3013018c",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -527,6 +539,12 @@
                 "caption": ""
               }
             ]
+          },
+          {
+            "id": "1529ac30-d4fb-4032-949b-1629ab25ccbf",
+            "data": [
+              "TRAVEL"
+            ]
           }
         ]
       }
@@ -542,7 +560,7 @@
   "6433e642049fc6eba4f8e499": {
     "_id": "6433e642049fc6eba4f8e499",
     "createdAt": 1681122882208,
-    "updatedAt": 1681122892957,
+    "updatedAt": 1681204404011,
     "cid": "6",
     "templateId": "6433e36f049fc6eba4f8e48f",
     "userId": "111111111111111111111111",
@@ -567,7 +585,7 @@
             "id": "49d57bd5-c4fe-464b-8d83-4480aaf8c27c",
             "data": [
               {
-                "id": "7ba07759-3be3-4b02-82a4-395d5a5b3db5",
+                "id": "277471a8-c135-41f2-919e-c3b7c398e827",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -610,6 +628,12 @@
                 "alt_text": "Trip to Kilimanjaro",
                 "caption": ""
               }
+            ]
+          },
+          {
+            "id": "1529ac30-d4fb-4032-949b-1629ab25ccbf",
+            "data": [
+              "TRAVEL"
             ]
           }
         ]
@@ -733,6 +757,47 @@
             "id": "bd981be9-920c-45e6-b988-b5f540a942af",
             "data": [
               "insightfulink@mail.com"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "64351a8a85d8365f26e2cc94": {
+    "_id": "64351a8a85d8365f26e2cc94",
+    "createdAt": 1681201802067,
+    "updatedAt": 1681201812877,
+    "cid": "9",
+    "templateId": "64351a6e85d8365f26e2cc93",
+    "userId": "111111111111111111111111",
+    "status": "6433b6824c02e25452a8a93c",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "16dc3854-ea8e-450b-8960-05489938abfd",
+            "data": [
+              "Happy reading for my amazing journey"
+            ]
+          },
+          {
+            "id": "5ca6e04f-b10f-44db-9f75-66bb0eafbeec",
+            "data": [
+              "happy-reading-for-my-amazing-journey"
+            ]
+          },
+          {
+            "id": "24edfe87-e297-4be3-ba3b-74a31d881bd5",
+            "data": [
+              "All posts"
             ]
           }
         ]
