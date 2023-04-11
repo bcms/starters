@@ -2,7 +2,7 @@
   "6433c5ea049fc6eba4f8e480": {
     "_id": "6433c5ea049fc6eba4f8e480",
     "createdAt": 1681114602425,
-    "updatedAt": 1681201721674,
+    "updatedAt": 1681220374010,
     "cid": "1",
     "templateId": "6433c56b049fc6eba4f8e47d",
     "userId": "111111111111111111111111",
@@ -37,7 +37,7 @@
             "id": "5ae961f6-718c-4661-8c03-f8612aecba46",
             "data": [
               {
-                "id": "c7071864-7dcd-47f0-83f4-6eac250871ca",
+                "id": "47dfe6bf-50ff-4de4-ac3f-99fc2502dca0",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -61,7 +61,7 @@
                 ]
               },
               {
-                "id": "d2850a78-0d09-43ce-9846-08cc9750e357",
+                "id": "4eb08af5-1d19-4928-b137-f887aa1b731a",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -85,7 +85,7 @@
                 ]
               },
               {
-                "id": "5f7452c6-606d-404a-9537-70ac85a8f80d",
+                "id": "ded018cf-b7e1-48f1-9c81-2e944b8f1b1b",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -96,7 +96,7 @@
                           {
                             "type": "link",
                             "attrs": {
-                              "href": "/",
+                              "href": "/about-me",
                               "target": "_blank",
                               "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
                             }
@@ -109,7 +109,7 @@
                 ]
               },
               {
-                "id": "2891cc49-2814-4db7-9cd0-eaf912b91cc6",
+                "id": "b4ef81f7-ede5-43ff-b984-28fe3a6bcd04",
                 "nodes": [
                   {
                     "type": "paragraph",

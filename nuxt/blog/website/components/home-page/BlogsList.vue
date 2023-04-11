@@ -8,7 +8,7 @@
           Recent post
         </h2>
         <NuxtLink
-          to="/"
+          to="/blog"
           class="flex items-center px-[15px] py-2.5 bg-appAccent rounded-[32px]"
         >
           <span
