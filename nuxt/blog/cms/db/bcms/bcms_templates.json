@@ -348,5 +348,73 @@
         ]
       }
     ]
+  },
+  "6435675585d8365f26e2cc99": {
+    "_id": "6435675585d8365f26e2cc99",
+    "createdAt": 1681221461908,
+    "updatedAt": 1681223316139,
+    "cid": "7",
+    "desc": "",
+    "label": "About page",
+    "name": "about_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "b0a12a1f-0c8e-4234-b644-5be2095ff773",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "d72a9494-94d2-42ab-9fa6-1ba7f6141249",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "159b39ae-eb9e-4f9d-8755-0bb3fe491e5c",
+        "name": "subtitle",
+        "label": "Subtitle",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "7c7c06bb-d31f-4aa9-8a18-6741b6cf05b1",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "ba3fd7ff-8569-4452-b328-c0b85e9b51fb",
+        "name": "cover",
+        "label": "Cover",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      }
+    ]
   }
 }
