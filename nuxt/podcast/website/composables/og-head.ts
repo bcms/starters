@@ -29,7 +29,7 @@ export const useHeadTags = () => {
         },
         {
           property: "og:site_name",
-          content: `${title} - Tastyyy`,
+          content: `${title} - The Podium`,
         },
         { property: "og:type", content: "website" },
         { property: "twitter:card", content: "summary_large_image" },
@@ -41,7 +41,7 @@ export const useHeadTags = () => {
         {
           hid: "ogTitle",
           property: "og:title",
-          content: `${title} - Tastyyy`,
+          content: `${title} - The Podium`,
         },
         {
           hid: "ogDescription",
@@ -61,7 +61,7 @@ export const useHeadTags = () => {
         {
           hid: "twitterTitle",
           property: "twitter:title",
-          content: `${title} - Tastyyy`,
+          content: `${title} - The Podium`,
         },
         {
           hid: "twitterDescription",
