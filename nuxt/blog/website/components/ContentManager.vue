@@ -3,6 +3,7 @@
     ref="managerDOM"
     :items="item"
     :widget-components="widgetComponents"
+    @vnode-mounted="parseInternalLinks"
   />
 </template>
 
@@ -30,24 +31,24 @@ const managerDOM = ref<any>();
 
 const parseInternalLinks = () => {
   if (managerDOM.value.$el) {
-    const links = managerDOM.value.$el.querySelectorAll("a");
+    setTimeout(() => {
+      const links = managerDOM.value.$el.querySelectorAll("a");
 
-    links.forEach((link: HTMLAnchorElement) => {
-      const href = link.getAttribute("href");
+      console.log(links, managerDOM.value.$el);
 
-      if (href && href.startsWith("/")) {
-        link.target = "_self";
-        link.addEventListener("click", (event) => {
-          event.preventDefault();
+      links.forEach((link: HTMLAnchorElement) => {
+        const href = link.getAttribute("href");
 
-          navigateTo(href);
-        });
-      }
-    });
+        if (href && href.startsWith("/")) {
+          link.target = "_self";
+          link.addEventListener("click", (event) => {
+            event.preventDefault();
+
+            navigateTo(href);
+          });
+        }
+      });
+    }, 0);
   }
 };
-
-onMounted(() => {
-  parseInternalLinks();
-});
 </script>
