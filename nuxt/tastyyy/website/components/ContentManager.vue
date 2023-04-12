@@ -23,7 +23,6 @@ defineProps({
   },
 });
 
-const router = useRouter();
 const managerDOM = ref<any>();
 
 const parseInternalLinks = () => {
@@ -38,7 +37,7 @@ const parseInternalLinks = () => {
         link.addEventListener("click", (event) => {
           event.preventDefault();
 
-          router.push(href);
+          navigateTo(href);
         });
       }
     });

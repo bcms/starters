@@ -125,7 +125,6 @@ import { APIResponse, RecipePageData } from "~~/types";
 
 const { setOgHead } = useHeadTags();
 const route = useRoute();
-const router = useRouter();
 
 const recipeSlug = route.params.slug as string;
 
@@ -160,7 +159,7 @@ const similarRecipes = computed(() => {
 
 const filterRedirect = (key: string, val: string) => {
   if (val) {
-    router.push({
+    navigateTo({
       name: "recipes",
       query: {
         [key]: val,
