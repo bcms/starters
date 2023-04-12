@@ -15,22 +15,11 @@
           {{ data.subtitle }}
         </h2>
       </div>
-      <form
-        @submit.prevent
-        class="flex items-center border border-appGray-100 rounded-[48px] px-4 max-w-[848px] mx-auto mb-8 md:px-6 md:mb-16 lg:px-8 lg:mb-24"
-      >
-        <SearchIcon
-          class="w-[14px] h-[14px] mr-1.5 md:w-6 md:h-6 md:mr-2.5 lg:w-8 lg:h-6 lg:mr-[14px]"
-        />
-        <label class="w-full">
-          <input
-            v-model="searchVal"
-            type="search"
-            placeholder="Search"
-            class="placeholder:text-appText bg-transparent py-[11px] text-sm leading-none tracking-[-0.41px] w-full focus:outline-none md:text-lg md:leading-none md:py-4 lg:text-2xl lg:leading-none lg:py-[21px]"
-          />
-        </label>
-      </form>
+      <Search
+        v-model="searchValue"
+        class="mb-8 md:mb-16 lg:mb-24"
+        @enter="handleSearchEnter"
+      />
       <div class="grid grid-cols-2 gap-4 auto-rows-fr md:gap-8 lg:gap-12">
         <NuxtLink
           v-for="(blog, index) in lightBlogs"
@@ -77,7 +66,6 @@
 <script setup lang="ts">
 import { PropType } from "vue";
 import { BlogEntryMeta, HomeHeroGroup } from "~~/bcms/types";
-import SearchIcon from "@/assets/icons/search.svg";
 import { BlogLight } from "~~/types";
 import { BCMSImage } from "~~/bcms-components";
 
@@ -88,7 +76,11 @@ const props = defineProps({
   },
 });
 
-const searchVal = ref("");
+const searchValue = ref("");
+
+const handleSearchEnter = () => {
+  navigateTo(`/blog?s=${searchValue.value}`);
+};
 
 const lightBlogs = computed<BlogLight[]>(() =>
   props.data.featured_blogs.map((e) => {

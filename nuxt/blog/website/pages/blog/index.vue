@@ -18,22 +18,7 @@
             </h2>
           </div>
           <div class="max-w-[848px] mx-auto">
-            <form
-              @submit.prevent
-              class="flex items-center border border-appGray-100 rounded-[48px] px-4 mb-3 md:px-6 lg:px-8 lg:mb-6"
-            >
-              <SearchIcon
-                class="w-[14px] h-[14px] mr-1.5 md:w-6 md:h-6 md:mr-2.5 lg:w-8 lg:h-6 lg:mr-[14px]"
-              />
-              <label class="w-full">
-                <input
-                  v-model="searchVal"
-                  type="search"
-                  placeholder="Search"
-                  class="placeholder:text-appText bg-transparent py-[11px] text-sm leading-none tracking-[-0.41px] w-full focus:outline-none md:text-lg md:leading-none md:py-4 lg:text-2xl lg:leading-none lg:py-[21px]"
-                />
-              </label>
-            </form>
+            <Search v-model="searchVal" class="mb-3 lg:mb-6" />
             <div
               class="grid grid-cols-2 gap-2.5 md:grid-cols-3 lg:grid-cols-5 lg:gap-[18px]"
             >
@@ -108,7 +93,6 @@
 
 <script setup lang="ts">
 import { APIResponse, BlogsPageData } from "~~/types";
-import SearchIcon from "@/assets/icons/search.svg";
 
 const { data } = useAsyncData(async (ctx) => {
   return await ctx?.$bcms.request<APIResponse<BlogsPageData>>({
@@ -116,6 +100,7 @@ const { data } = useAsyncData(async (ctx) => {
   });
 });
 
+const route = useRoute();
 const { setOgHead } = useHeadTags();
 
 const searchVal = ref("");
@@ -147,6 +132,12 @@ const filteredBlogs = computed(() => {
       return show;
     }) || []
   );
+});
+
+onMounted(() => {
+  if (route.query.s) {
+    searchVal.value = route.query.s as string;
+  }
 });
 
 useHead(() =>
