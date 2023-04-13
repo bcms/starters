@@ -1,0 +1,233 @@
+{
+  "6436b899621f5ab5d1b5e7e8": {
+    "_id": "6436b899621f5ab5d1b5e7e8",
+    "createdAt": 1681307801577,
+    "updatedAt": 1681308538484,
+    "cid": "1",
+    "templateId": "6436b809621f5ab5d1b5e7e6",
+    "userId": "111111111111111111111111",
+    "status": "6436adcd346e3258041e354c",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "bab7dfcc-90c1-4918-9ed0-808655d1cabd",
+            "data": [
+              "Header"
+            ]
+          },
+          {
+            "id": "dc65d141-134a-482e-9376-d3f4f5262f7b",
+            "data": [
+              "header"
+            ]
+          },
+          {
+            "id": "b19d2a0e-b42d-4c3e-b8c9-a2f085307c2e",
+            "data": [
+              {
+                "_id": "6436bb72621f5ab5d1b5e7e9",
+                "alt_text": "Logo",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "ea9a9f7e-f63d-448e-9885-678695cefa87",
+            "data": [
+              {
+                "id": "8266bf9a-e653-41be-8aa4-8faf46ca8643",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Home"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f6372982-c092-490e-b642-f3f1ed77bfc4",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Episodes"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "7a6dc978-4cb2-49f6-b56c-9e490418314d",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "About"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "6436c031621f5ab5d1b5e7eb": {
+    "_id": "6436c031621f5ab5d1b5e7eb",
+    "createdAt": 1681309745598,
+    "updatedAt": 1681310044815,
+    "cid": "2",
+    "templateId": "6436c027621f5ab5d1b5e7ea",
+    "userId": "111111111111111111111111",
+    "status": "6436adcd346e3258041e354c",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "75c84d52-7582-477a-8679-eb954f2bfabb",
+            "data": [
+              "Footer"
+            ]
+          },
+          {
+            "id": "80529f3b-6693-4b09-ac86-17f0d2f3db78",
+            "data": [
+              "footer"
+            ]
+          },
+          {
+            "id": "8e58525e-0309-4765-85a8-afb25dee2b08",
+            "data": [
+              "Thepodium@mail.com"
+            ]
+          },
+          {
+            "id": "1b297aa7-7981-405f-9e62-114458fd187b",
+            "data": {
+              "_id": "6436c090621f5ab5d1b5e7ed",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "5ba6741e-b5e8-4668-b06e-37538bc61dc3",
+                      "data": [
+                        {
+                          "_id": "6436c135621f5ab5d1b5e7f0",
+                          "alt_text": "Youtube",
+                          "caption": ""
+                        }
+                      ]
+                    },
+                    {
+                      "id": "8bba2da8-f606-4c22-8949-d0871fe3826c",
+                      "data": [
+                        "https://www.youtube.com/"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "5ba6741e-b5e8-4668-b06e-37538bc61dc3",
+                      "data": [
+                        {
+                          "_id": "6436c135621f5ab5d1b5e7ee",
+                          "alt_text": "Spotify",
+                          "caption": ""
+                        }
+                      ]
+                    },
+                    {
+                      "id": "8bba2da8-f606-4c22-8949-d0871fe3826c",
+                      "data": [
+                        "https://open.spotify.com/"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "5ba6741e-b5e8-4668-b06e-37538bc61dc3",
+                      "data": [
+                        {
+                          "_id": "6436c135621f5ab5d1b5e7ef",
+                          "alt_text": "Twitter",
+                          "caption": ""
+                        }
+                      ]
+                    },
+                    {
+                      "id": "8bba2da8-f606-4c22-8949-d0871fe3826c",
+                      "data": [
+                        "https://twitter.com/"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  }
+}

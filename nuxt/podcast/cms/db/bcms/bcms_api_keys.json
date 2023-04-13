@@ -2,9 +2,26 @@
   "6436aded346e3258041e3557": {
     "_id": "6436aded346e3258041e3557",
     "createdAt": 1681305069796,
-    "updatedAt": 1681305069796,
+    "updatedAt": 1681309739802,
     "access": {
-      "templates": [],
+      "templates": [
+        {
+          "_id": "6436b809621f5ab5d1b5e7e6",
+          "name": "header",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "6436c027621f5ab5d1b5e7ea",
+          "name": "footer",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        }
+      ],
       "functions": []
     },
     "blocked": false,

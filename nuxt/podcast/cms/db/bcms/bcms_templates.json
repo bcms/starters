@@ -1,0 +1,116 @@
+{
+  "6436b809621f5ab5d1b5e7e6": {
+    "_id": "6436b809621f5ab5d1b5e7e6",
+    "createdAt": 1681307657551,
+    "updatedAt": 1681308520937,
+    "cid": "1",
+    "desc": "",
+    "label": "Header",
+    "name": "header",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "bab7dfcc-90c1-4918-9ed0-808655d1cabd",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "dc65d141-134a-482e-9376-d3f4f5262f7b",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "b19d2a0e-b42d-4c3e-b8c9-a2f085307c2e",
+        "name": "logo",
+        "label": "Logo",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "ea9a9f7e-f63d-448e-9885-678695cefa87",
+        "name": "nav",
+        "label": "Nav",
+        "array": true,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
+  },
+  "6436c027621f5ab5d1b5e7ea": {
+    "_id": "6436c027621f5ab5d1b5e7ea",
+    "createdAt": 1681309735050,
+    "updatedAt": 1681309898105,
+    "cid": "2",
+    "desc": "",
+    "label": "Footer",
+    "name": "footer",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "75c84d52-7582-477a-8679-eb954f2bfabb",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "80529f3b-6693-4b09-ac86-17f0d2f3db78",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "8e58525e-0309-4765-85a8-afb25dee2b08",
+        "name": "email",
+        "label": "Email",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "1b297aa7-7981-405f-9e62-114458fd187b",
+        "name": "social",
+        "label": "Social",
+        "array": true,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "6436c090621f5ab5d1b5e7ed"
+        }
+      }
+    ]
+  }
+}

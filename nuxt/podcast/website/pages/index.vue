@@ -1,5 +1,6 @@
 <template>
-  <PageWrapper v-if="data"> </PageWrapper>
+  <PageWrapper v-if="data" :header="data.header" :footer="data.footer">
+  </PageWrapper>
 </template>
 
 <script setup lang="ts">
