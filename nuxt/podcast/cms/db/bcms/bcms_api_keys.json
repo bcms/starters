@@ -2,7 +2,7 @@
   "6436aded346e3258041e3557": {
     "_id": "6436aded346e3258041e3557",
     "createdAt": 1681305069796,
-    "updatedAt": 1681309739802,
+    "updatedAt": 1681381459790,
     "access": {
       "templates": [
         {
@@ -16,6 +16,30 @@
         {
           "_id": "6436c027621f5ab5d1b5e7ea",
           "name": "footer",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "6437c034e88842074b79ce25",
+          "name": "episode",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "6437bffde88842074b79ce24",
+          "name": "home_page",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "6437c156e88842074b79ce26",
+          "name": "guest",
           "get": true,
           "post": false,
           "put": false,

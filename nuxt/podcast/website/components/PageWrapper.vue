@@ -5,6 +5,7 @@
       <slot />
     </main>
     <LayoutFooter :data="footer" />
+    <LayoutPlayingEpisode />
   </div>
 </template>
 

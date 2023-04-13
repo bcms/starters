@@ -112,5 +112,198 @@
         }
       }
     ]
+  },
+  "6437bffde88842074b79ce24": {
+    "_id": "6437bffde88842074b79ce24",
+    "createdAt": 1681375229959,
+    "updatedAt": 1681376899957,
+    "cid": "3",
+    "desc": "",
+    "label": "Home page",
+    "name": "home_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "8079837b-3255-4eea-b186-a3d69595e275",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "18a9ce30-3684-43b0-afef-87a6541dbb2a",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "189bdd9a-cb88-426c-98ff-c94260623505",
+        "name": "hero",
+        "label": "Hero",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "6437c660e88842074b79ce28"
+        }
+      }
+    ]
+  },
+  "6437c034e88842074b79ce25": {
+    "_id": "6437c034e88842074b79ce25",
+    "createdAt": 1681375284049,
+    "updatedAt": 1681375873521,
+    "cid": "4",
+    "desc": "",
+    "label": "Episode",
+    "name": "episode",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "976bcc92-69b0-4293-84af-6070f4d5aba3",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "93a740cf-52bd-4741-a7df-012ce42f7fe6",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "1ed64dbb-f82e-40ca-b3e6-fdf252d74469",
+        "name": "file",
+        "label": "File",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "db449c19-9afc-4cc6-a55d-9e0c08d7dcf6",
+        "name": "cover",
+        "label": "Cover",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "fc594ab8-cb22-4c61-b12e-bf2d029437c8",
+        "name": "guest",
+        "label": "Guest",
+        "array": false,
+        "required": false,
+        "type": "ENTRY_POINTER",
+        "defaultData": [
+          {
+            "displayProp": "title",
+            "templateId": "6437c156e88842074b79ce26",
+            "entryIds": []
+          }
+        ]
+      },
+      {
+        "id": "23b5e06b-300d-426e-9eb8-ccca8b483508",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "2e2c6e45-dd8a-4e7f-9c15-02260cce4202",
+        "name": "tags",
+        "label": "Tags",
+        "array": true,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "9a379b15-7792-4c59-a40f-9de22e53425c",
+        "name": "date",
+        "label": "Date",
+        "array": false,
+        "required": true,
+        "type": "DATE",
+        "defaultData": [
+          0
+        ]
+      }
+    ]
+  },
+  "6437c156e88842074b79ce26": {
+    "_id": "6437c156e88842074b79ce26",
+    "createdAt": 1681375574763,
+    "updatedAt": 1681378393701,
+    "cid": "5",
+    "desc": "",
+    "label": "Guest",
+    "name": "guest",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "f0ab99ed-4438-482a-8488-d4e8b1b9a47f",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "d53ad95a-0045-4d4c-ac84-94ccb87264d4",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "190223aa-c1a5-405d-9647-1a1fe9f52c3a",
+        "name": "avatar",
+        "label": "Avatar",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      }
+    ]
   }
 }

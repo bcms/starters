@@ -31,8 +31,6 @@ const parseInternalLinks = () => {
     setTimeout(() => {
       const links = managerDOM.value.$el.querySelectorAll("a");
 
-      console.log(links, managerDOM.value.$el);
-
       links.forEach((link: HTMLAnchorElement) => {
         const href = link.getAttribute("href");
 

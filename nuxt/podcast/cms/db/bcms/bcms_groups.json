@@ -29,5 +29,51 @@
         ]
       }
     ]
+  },
+  "6437c660e88842074b79ce28": {
+    "_id": "6437c660e88842074b79ce28",
+    "createdAt": 1681376864530,
+    "updatedAt": 1681376884403,
+    "cid": "3",
+    "desc": "",
+    "label": "Home hero",
+    "name": "home_hero",
+    "props": [
+      {
+        "id": "487d51d9-f400-4ab6-80c0-2a82145ea6c4",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "24844d0e-6d72-4f38-80c0-fd7c805bd110",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "bc130da9-0b20-4f0b-9631-1101958413c9",
+        "name": "cover",
+        "label": "Cover",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      }
+    ]
   }
 }
