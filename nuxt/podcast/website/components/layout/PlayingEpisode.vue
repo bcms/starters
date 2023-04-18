@@ -49,8 +49,8 @@
                 class="flex items-center justify-center w-8 h-8 bg-white rounded-full"
                 @click="setIsPlaying(!isPlaying)"
               >
-                <PauseIcon v-if="isPlaying" class="w-6 h-6" />
-                <PlayIcon v-else class="w-6 h-6" />
+                <PauseIcon v-if="isPlaying" class="text-appAccent w-6 h-6" />
+                <PlayIcon v-else class="text-appAccent w-6 h-6" />
               </button>
               <button class="flex">
                 <ForwardIcon class="w-6 h-6" />

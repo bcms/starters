@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    to="/"
+    :to="`/episode/${item.slug}`"
     class="group grid grid-cols-[16px,24px,1fr,70px] gap-[5px] items-center px-[14px] py-2.5 text-left lg:grid-cols-[32px,64px,1fr,125px] lg:gap-4 lg:px-5 lg:py-6"
   >
     <button
@@ -20,12 +20,12 @@
               episode.slug !== item.slug
             : true
         "
-        class="w-4 group-hover:inline-block lg:w-8"
+        class="w-4 text-appAccent group-hover:inline-block lg:w-8"
         :class="[!episode || episode.slug !== item.slug ? 'hidden' : '']"
       />
       <PauseIcon
         v-if="episode ? episode.slug === item.slug && isPlaying : false"
-        class="w-4 lg:w-8"
+        class="w-4 text-appAccent lg:w-8"
       />
     </button>
     <BCMSImage
