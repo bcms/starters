@@ -2,7 +2,7 @@
   "6436aded346e3258041e3557": {
     "_id": "6436aded346e3258041e3557",
     "createdAt": 1681305069796,
-    "updatedAt": 1681381459790,
+    "updatedAt": 1681811800893,
     "access": {
       "templates": [
         {
@@ -40,6 +40,14 @@
         {
           "_id": "6437c156e88842074b79ce26",
           "name": "guest",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "643e68f90a76d51c7228b6a0",
+          "name": "about_page",
           "get": true,
           "post": false,
           "put": false,

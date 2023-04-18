@@ -316,5 +316,62 @@
         "defaultData": []
       }
     ]
+  },
+  "643e68f90a76d51c7228b6a0": {
+    "_id": "643e68f90a76d51c7228b6a0",
+    "createdAt": 1681811705600,
+    "updatedAt": 1681813787397,
+    "cid": "6",
+    "desc": "",
+    "label": "About page",
+    "name": "about_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "83f283c1-cb11-4de0-9809-e51ee90fa0cd",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "92f80cde-f075-4bc7-938e-c1b7b3126839",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "affce152-74f4-4763-94ba-41be257197f6",
+        "name": "cover",
+        "label": "Cover",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "2eac768b-ce79-4b56-bd97-0ea5993c20c6",
+        "name": "content",
+        "label": "Content",
+        "array": true,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
   }
 }

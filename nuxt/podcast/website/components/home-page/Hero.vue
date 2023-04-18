@@ -18,6 +18,7 @@
             :key="index"
             :item="episode"
             :index="index + 1"
+            class="bg-appBody/80"
           />
         </div>
       </div>

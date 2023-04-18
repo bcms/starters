@@ -2,7 +2,7 @@
   "6436b899621f5ab5d1b5e7e8": {
     "_id": "6436b899621f5ab5d1b5e7e8",
     "createdAt": 1681307801577,
-    "updatedAt": 1681308538484,
+    "updatedAt": 1681812231535,
     "cid": "1",
     "templateId": "6436b809621f5ab5d1b5e7e6",
     "userId": "111111111111111111111111",
@@ -37,7 +37,7 @@
             "id": "ea9a9f7e-f63d-448e-9885-678695cefa87",
             "data": [
               {
-                "id": "8266bf9a-e653-41be-8aa4-8faf46ca8643",
+                "id": "e2a10cf4-25c7-4fb1-98e7-bec8a285a503",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -61,7 +61,7 @@
                 ]
               },
               {
-                "id": "f6372982-c092-490e-b642-f3f1ed77bfc4",
+                "id": "67ca06cb-c4c5-463e-8a0f-513788c3a30e",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -85,7 +85,7 @@
                 ]
               },
               {
-                "id": "7a6dc978-4cb2-49f6-b56c-9e490418314d",
+                "id": "696470b1-58a1-454e-a942-be3f792cd738",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -96,7 +96,7 @@
                           {
                             "type": "link",
                             "attrs": {
-                              "href": "/",
+                              "href": "/about",
                               "target": "_blank",
                               "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
                             }
@@ -1713,6 +1713,170 @@
             "id": "9a379b15-7792-4c59-a40f-9de22e53425c",
             "data": [
               1672704000000
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "643e69960a76d51c7228b6a2": {
+    "_id": "643e69960a76d51c7228b6a2",
+    "createdAt": 1681811862128,
+    "updatedAt": 1681814072165,
+    "cid": "16",
+    "templateId": "643e68f90a76d51c7228b6a0",
+    "userId": "111111111111111111111111",
+    "status": "6436adcd346e3258041e354c",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "83f283c1-cb11-4de0-9809-e51ee90fa0cd",
+            "data": [
+              "About us"
+            ]
+          },
+          {
+            "id": "92f80cde-f075-4bc7-938e-c1b7b3126839",
+            "data": [
+              "about-us"
+            ]
+          },
+          {
+            "id": "affce152-74f4-4763-94ba-41be257197f6",
+            "data": [
+              {
+                "_id": "6437d220e88842074b79ce32",
+                "alt_text": "Cover",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "2eac768b-ce79-4b56-bd97-0ea5993c20c6",
+            "data": [
+              {
+                "id": "3983fac0-396f-4360-b28d-deef330b8cab",
+                "nodes": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 2
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "John Smith"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "text",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "99d7cda1-de41-4cb7-ac87-7cb2cabeed64",
+                "nodes": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 2
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "History"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "27b465ab-7b32-4ae8-b471-ec43e5248a64",
+                "nodes": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 2
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Goals"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "0762957b-436c-4d20-9cff-2fe28d6f235b",
+                "nodes": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 2
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Mission"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                      }
+                    ]
+                  }
+                ]
+              }
             ]
           }
         ]

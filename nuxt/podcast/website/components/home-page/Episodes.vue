@@ -1,5 +1,5 @@
 <template>
-  <section class="relative z-0 pt-8 pb-10 lg:pt-[151px] lg:pb-[128px]">
+  <section class="relative pt-8 pb-10 lg:pt-[151px] lg:pb-[128px]">
     <div class="container max-w-[1229px]">
       <ContentManager
         :item="data.title"
@@ -7,16 +7,17 @@
       />
       <ContentManager
         :item="data.description"
-        class="text-sm leading-[1.3] tracking-[-0.8px] text-appGray-300 text-center max-w-[220px] mx-auto mb-8 lg:text-xl lg:leading-none lg:max-w-none lg:mb-[72px]"
+        class="text-sm leading-[1.3] tracking-[-0.8px] text-appGray-300 text-center max-w-[220px] mx-auto mb-8 lg:text-xl lg:leading-none lg:max-w-none lg:mb-16"
       />
       <div
-        class="grid grid-cols-1 rounded-2xl bg-[#383838]/20 overflow-hidden space-y-px"
+        class="grid grid-cols-1 rounded-2xl bg-[#383838]/80 overflow-hidden space-y-px"
       >
         <EpisodesItem
           v-for="(episode, index) in episodes"
           :key="index"
           :item="episode"
           :index="index + 1"
+          class="bg-appBody"
         />
       </div>
     </div>
