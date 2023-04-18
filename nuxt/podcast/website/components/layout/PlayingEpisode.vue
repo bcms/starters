@@ -9,6 +9,7 @@
           <div class="flex items-center">
             <BCMSImage
               :media="episode.cover"
+              :key="episode.cover.src"
               :options="{
                 sizes: {
                   exec: [
@@ -62,7 +63,7 @@
             </div>
             <div class="flex items-center space-x-2.5">
               <div class="leading-none tracking-[-0.8px] text-appGray-400">
-                15:00
+                00:00
               </div>
               <div
                 class="relative w-[128px] h-1 rounded overflow-hidden bg-[#2E2E2E]"
@@ -72,19 +73,30 @@
                 />
               </div>
               <div class="leading-none tracking-[-0.8px] text-appGray-400">
-                30:00
+                {{ fileLength }}
               </div>
             </div>
           </div>
           <div class="flex items-center max-lg:hidden">
             <VolumeIcon class="w-6 h-6 mr-4" />
-            <div
-              class="relative w-[128px] h-1 rounded overflow-hidden bg-[#2E2E2E]"
-            >
-              <div
-                class="absolute top-0 left-0 w-2/3 h-full bg-white rounded"
+            <label class="relative w-[128px]">
+              <div class="relative h-1 rounded overflow-hidden bg-[#2E2E2E]">
+                <div
+                  class="absolute top-0 left-0 h-full bg-white rounded"
+                  :style="{
+                    width: volumeWidth,
+                  }"
+                />
+              </div>
+              <input
+                v-model="volume"
+                type="range"
+                step="0.01"
+                min="0"
+                max="1"
+                class="absolute top-1/2 -translate-y-1/2 left-0 w-full h-5 opacity-0"
               />
-            </div>
+            </label>
           </div>
           <button
             class="flex lg:hidden"
@@ -107,5 +119,26 @@ import VolumeIcon from "@/assets/icons/volume.svg";
 import ForwardIcon from "@/assets/icons/forward.svg";
 import BackwardIcon from "@/assets/icons/backward.svg";
 
-const { episode, isPlaying, setIsPlaying } = usePlayingEpisode();
+const { episode, isPlaying, setIsPlaying, getPlayingEpisodeFileLength } =
+  usePlayingEpisode();
+
+const volume = ref(0.5);
+
+const fileLength = ref("");
+
+const volumeWidth = computed(() => {
+  return `${volume.value * 100}%`;
+});
+
+watch(episode, () => {
+  nextTick(() => {
+    setFileLength();
+  });
+});
+
+const setFileLength = () => {
+  const { durationInMinutes } = getPlayingEpisodeFileLength.value;
+
+  fileLength.value = `${durationInMinutes.toString().padStart(2, "0")}:00`;
+};
 </script>

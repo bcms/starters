@@ -233,7 +233,7 @@
   "6437c700e88842074b79ce2b": {
     "_id": "6437c700e88842074b79ce2b",
     "createdAt": 1681377024285,
-    "updatedAt": 1681382202379,
+    "updatedAt": 1681810467110,
     "cid": "3",
     "templateId": "6437bffde88842074b79ce24",
     "userId": "111111111111111111111111",
@@ -265,7 +265,7 @@
                       "id": "487d51d9-f400-4ab6-80c0-2a82145ea6c4",
                       "data": [
                         {
-                          "id": "3306ef44-0738-41e7-ae24-f6f1a2d961bf",
+                          "id": "a105d0d1-6e71-4bb5-b613-4801fb5b12d5",
                           "nodes": [
                             {
                               "type": "heading",
@@ -296,7 +296,7 @@
                       "id": "24844d0e-6d72-4f38-80c0-fd7c805bd110",
                       "data": [
                         {
-                          "id": "6cd17ef7-4874-4c93-b99c-57813d6497cd",
+                          "id": "c6079bce-b22c-439d-bba7-b4741c34ac63",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -318,6 +318,68 @@
                           "_id": "6437c6e5e88842074b79ce2a",
                           "alt_text": "Home",
                           "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "420eb339-78d9-4962-b49f-2c664122f140",
+            "data": {
+              "_id": "643e63e90a76d51c7228b69f",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "ef80c678-d576-42d5-8917-b2219ed4154c",
+                      "data": [
+                        {
+                          "id": "554b547f-59d3-45d5-a77a-8bb0067990d4",
+                          "nodes": [
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 2
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "See all "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "underline"
+                                    }
+                                  ],
+                                  "text": "Episodes"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "4ee0a394-7e74-4039-9992-55ff902b549c",
+                      "data": [
+                        {
+                          "id": "dd7514ec-8b25-4a7e-a317-aadcd2606d94",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Your guide to a healthier life, one episode at the time"
+                                }
+                              ]
+                            }
+                          ]
                         }
                       ]
                     }
@@ -493,7 +555,7 @@
   "6437d2afe88842074b79ce35": {
     "_id": "6437d2afe88842074b79ce35",
     "createdAt": 1681380015024,
-    "updatedAt": 1681381842466,
+    "updatedAt": 1681807396227,
     "cid": "6",
     "templateId": "6437c034e88842074b79ce25",
     "userId": "111111111111111111111111",
@@ -528,7 +590,7 @@
             "id": "db449c19-9afc-4cc6-a55d-9e0c08d7dcf6",
             "data": [
               {
-                "_id": "6437d220e88842074b79ce32",
+                "_id": "643e580d0a76d51c7228b68b",
                 "alt_text": "Optimizing Your Nutrition for Practice",
                 "caption": ""
               }
@@ -547,7 +609,7 @@
             "id": "23b5e06b-300d-426e-9eb8-ccca8b483508",
             "data": [
               {
-                "id": "ffe18a02-46d1-4de6-a69e-95c667edac19",
+                "id": "5470cad9-f22a-47f8-9111-675c5e956438",
                 "nodes": [
                   {
                     "type": "heading",
@@ -646,7 +708,7 @@
   "6437d74ce88842074b79ce38": {
     "_id": "6437d74ce88842074b79ce38",
     "createdAt": 1681381196268,
-    "updatedAt": 1681381854359,
+    "updatedAt": 1681807403563,
     "cid": "9",
     "templateId": "6437c034e88842074b79ce25",
     "userId": "111111111111111111111111",
@@ -681,7 +743,7 @@
             "id": "db449c19-9afc-4cc6-a55d-9e0c08d7dcf6",
             "data": [
               {
-                "_id": "6437d220e88842074b79ce32",
+                "_id": "643e580d0a76d51c7228b68c",
                 "alt_text": "The Science of Running",
                 "caption": ""
               }
@@ -695,7 +757,925 @@
             "id": "23b5e06b-300d-426e-9eb8-ccca8b483508",
             "data": [
               {
-                "id": "38679f5f-cfc4-4ce2-b34e-2eb92ea437f3",
+                "id": "918b3ba2-5e9b-404f-aa0e-812c7a066c03",
+                "nodes": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 2
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Description"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "This episode focuses on the fundamentals of strength training. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "2e2c6e45-dd8a-4e7f-9c15-02260cce4202",
+            "data": [
+              "Strenght training",
+              "Beginner"
+            ]
+          },
+          {
+            "id": "9a379b15-7792-4c59-a40f-9de22e53425c",
+            "data": [
+              1672704000000
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "643e5dc10a76d51c7228b68d": {
+    "_id": "643e5dc10a76d51c7228b68d",
+    "createdAt": 1681808833700,
+    "updatedAt": 1681808833700,
+    "cid": "a",
+    "templateId": "6437c156e88842074b79ce26",
+    "userId": "111111111111111111111111",
+    "status": "6436adcd346e3258041e354c",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "f0ab99ed-4438-482a-8488-d4e8b1b9a47f",
+            "data": [
+              "Jane Smith"
+            ]
+          },
+          {
+            "id": "d53ad95a-0045-4d4c-ac84-94ccb87264d4",
+            "data": [
+              "jane-smith"
+            ]
+          },
+          {
+            "id": "190223aa-c1a5-405d-9647-1a1fe9f52c3a",
+            "data": [
+              {
+                "_id": "6437cc51e88842074b79ce2f",
+                "alt_text": "Jane Smith",
+                "caption": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "643e5dca0a76d51c7228b68e": {
+    "_id": "643e5dca0a76d51c7228b68e",
+    "createdAt": 1681808842530,
+    "updatedAt": 1681808842530,
+    "cid": "b",
+    "templateId": "6437c156e88842074b79ce26",
+    "userId": "111111111111111111111111",
+    "status": "6436adcd346e3258041e354c",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "f0ab99ed-4438-482a-8488-d4e8b1b9a47f",
+            "data": [
+              "Sarah Jones"
+            ]
+          },
+          {
+            "id": "d53ad95a-0045-4d4c-ac84-94ccb87264d4",
+            "data": [
+              "sarah-jones"
+            ]
+          },
+          {
+            "id": "190223aa-c1a5-405d-9647-1a1fe9f52c3a",
+            "data": [
+              {
+                "_id": "6437cc51e88842074b79ce2f",
+                "alt_text": "Sarah Jones",
+                "caption": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "643e5dd40a76d51c7228b68f": {
+    "_id": "643e5dd40a76d51c7228b68f",
+    "createdAt": 1681808852882,
+    "updatedAt": 1681808852882,
+    "cid": "c",
+    "templateId": "6437c156e88842074b79ce26",
+    "userId": "111111111111111111111111",
+    "status": "6436adcd346e3258041e354c",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "f0ab99ed-4438-482a-8488-d4e8b1b9a47f",
+            "data": [
+              "Tom Johnson"
+            ]
+          },
+          {
+            "id": "d53ad95a-0045-4d4c-ac84-94ccb87264d4",
+            "data": [
+              "tom-johnson"
+            ]
+          },
+          {
+            "id": "190223aa-c1a5-405d-9647-1a1fe9f52c3a",
+            "data": [
+              {
+                "_id": "6437cc51e88842074b79ce2f",
+                "alt_text": "Tom Johnson",
+                "caption": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "643e5de50a76d51c7228b690": {
+    "_id": "643e5de50a76d51c7228b690",
+    "createdAt": 1681808869636,
+    "updatedAt": 1681808869636,
+    "cid": "d",
+    "templateId": "6437c156e88842074b79ce26",
+    "userId": "111111111111111111111111",
+    "status": "6436adcd346e3258041e354c",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "f0ab99ed-4438-482a-8488-d4e8b1b9a47f",
+            "data": [
+              "Dr. Rachel Kim"
+            ]
+          },
+          {
+            "id": "d53ad95a-0045-4d4c-ac84-94ccb87264d4",
+            "data": [
+              "dr-rachel-kim"
+            ]
+          },
+          {
+            "id": "190223aa-c1a5-405d-9647-1a1fe9f52c3a",
+            "data": [
+              {
+                "_id": "6437cc51e88842074b79ce2f",
+                "alt_text": "Dr. Rachel Kim",
+                "caption": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "643e5df00a76d51c7228b691": {
+    "_id": "643e5df00a76d51c7228b691",
+    "createdAt": 1681808880604,
+    "updatedAt": 1681808880604,
+    "cid": "e",
+    "templateId": "6437c156e88842074b79ce26",
+    "userId": "111111111111111111111111",
+    "status": "6436adcd346e3258041e354c",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "f0ab99ed-4438-482a-8488-d4e8b1b9a47f",
+            "data": [
+              "Mark Johnson"
+            ]
+          },
+          {
+            "id": "d53ad95a-0045-4d4c-ac84-94ccb87264d4",
+            "data": [
+              "mark-johnson"
+            ]
+          },
+          {
+            "id": "190223aa-c1a5-405d-9647-1a1fe9f52c3a",
+            "data": [
+              {
+                "_id": "6437cc51e88842074b79ce2f",
+                "alt_text": "Mark Johnson",
+                "caption": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "643e5dfa0a76d51c7228b692": {
+    "_id": "643e5dfa0a76d51c7228b692",
+    "createdAt": 1681808890499,
+    "updatedAt": 1681808890499,
+    "cid": "f",
+    "templateId": "6437c156e88842074b79ce26",
+    "userId": "111111111111111111111111",
+    "status": "6436adcd346e3258041e354c",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "f0ab99ed-4438-482a-8488-d4e8b1b9a47f",
+            "data": [
+              "Maria Garcia"
+            ]
+          },
+          {
+            "id": "d53ad95a-0045-4d4c-ac84-94ccb87264d4",
+            "data": [
+              "maria-garcia"
+            ]
+          },
+          {
+            "id": "190223aa-c1a5-405d-9647-1a1fe9f52c3a",
+            "data": [
+              {
+                "_id": "6437cc51e88842074b79ce2f",
+                "alt_text": "Maria Garcia",
+                "caption": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "643e5e000a76d51c7228b693": {
+    "_id": "643e5e000a76d51c7228b693",
+    "createdAt": 1681808896434,
+    "updatedAt": 1681809318088,
+    "cid": "10",
+    "templateId": "6437c034e88842074b79ce25",
+    "userId": "111111111111111111111111",
+    "status": "6436adcd346e3258041e354c",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "976bcc92-69b0-4293-84af-6070f4d5aba3",
+            "data": [
+              "The Mental Side of Fitness"
+            ]
+          },
+          {
+            "id": "93a740cf-52bd-4741-a7df-012ce42f7fe6",
+            "data": [
+              "the-mental-side-of-fitness"
+            ]
+          },
+          {
+            "id": "1ed64dbb-f82e-40ca-b3e6-fdf252d74469",
+            "data": [
+              {
+                "_id": "6437d280e88842074b79ce33",
+                "alt_text": "The Mental Side of Fitness",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "db449c19-9afc-4cc6-a55d-9e0c08d7dcf6",
+            "data": [
+              {
+                "_id": "643e5f880a76d51c7228b699",
+                "alt_text": "The Mental Side of Fitness",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "fc594ab8-cb22-4c61-b12e-bf2d029437c8",
+            "data": [
+              {
+                "tid": "6437c156e88842074b79ce26",
+                "eid": "643e5dc10a76d51c7228b68d"
+              }
+            ]
+          },
+          {
+            "id": "23b5e06b-300d-426e-9eb8-ccca8b483508",
+            "data": [
+              {
+                "id": "789fb527-f5b0-4ef6-aa6b-c0340280798f",
+                "nodes": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 2
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Description"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "This episode focuses on the fundamentals of strength training. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "2e2c6e45-dd8a-4e7f-9c15-02260cce4202",
+            "data": [
+              "Strenght training",
+              "Beginner"
+            ]
+          },
+          {
+            "id": "9a379b15-7792-4c59-a40f-9de22e53425c",
+            "data": [
+              1672704000000
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "643e5e260a76d51c7228b694": {
+    "_id": "643e5e260a76d51c7228b694",
+    "createdAt": 1681808934936,
+    "updatedAt": 1681809326920,
+    "cid": "11",
+    "templateId": "6437c034e88842074b79ce25",
+    "userId": "111111111111111111111111",
+    "status": "6436adcd346e3258041e354c",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "976bcc92-69b0-4293-84af-6070f4d5aba3",
+            "data": [
+              "Mastering Yoga for Better Health"
+            ]
+          },
+          {
+            "id": "93a740cf-52bd-4741-a7df-012ce42f7fe6",
+            "data": [
+              "mastering-yoga-for-better-health"
+            ]
+          },
+          {
+            "id": "1ed64dbb-f82e-40ca-b3e6-fdf252d74469",
+            "data": [
+              {
+                "_id": "6437d280e88842074b79ce33",
+                "alt_text": "Mastering Yoga for Better Health",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "db449c19-9afc-4cc6-a55d-9e0c08d7dcf6",
+            "data": [
+              {
+                "_id": "643e5f880a76d51c7228b69a",
+                "alt_text": "Mastering Yoga for Better Health",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "fc594ab8-cb22-4c61-b12e-bf2d029437c8",
+            "data": [
+              {
+                "tid": "6437c156e88842074b79ce26",
+                "eid": "643e5dca0a76d51c7228b68e"
+              }
+            ]
+          },
+          {
+            "id": "23b5e06b-300d-426e-9eb8-ccca8b483508",
+            "data": [
+              {
+                "id": "c376a707-a9e9-41f3-b3d4-178eae614a30",
+                "nodes": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 2
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Description"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "This episode focuses on the fundamentals of strength training. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "2e2c6e45-dd8a-4e7f-9c15-02260cce4202",
+            "data": [
+              "Strenght training",
+              "Beginner"
+            ]
+          },
+          {
+            "id": "9a379b15-7792-4c59-a40f-9de22e53425c",
+            "data": [
+              1672704000000
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "643e5e360a76d51c7228b695": {
+    "_id": "643e5e360a76d51c7228b695",
+    "createdAt": 1681808950518,
+    "updatedAt": 1681809341282,
+    "cid": "12",
+    "templateId": "6437c034e88842074b79ce25",
+    "userId": "111111111111111111111111",
+    "status": "6436adcd346e3258041e354c",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "976bcc92-69b0-4293-84af-6070f4d5aba3",
+            "data": [
+              "HIIT: High-Intensity Interval Training"
+            ]
+          },
+          {
+            "id": "93a740cf-52bd-4741-a7df-012ce42f7fe6",
+            "data": [
+              "hiit-high-intensity-interval-training"
+            ]
+          },
+          {
+            "id": "1ed64dbb-f82e-40ca-b3e6-fdf252d74469",
+            "data": [
+              {
+                "_id": "6437d280e88842074b79ce33",
+                "alt_text": "HIIT: High-Intensity Interval Training",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "db449c19-9afc-4cc6-a55d-9e0c08d7dcf6",
+            "data": [
+              {
+                "_id": "643e5f880a76d51c7228b69b",
+                "alt_text": "HIIT: High-Intensity Interval Training",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "fc594ab8-cb22-4c61-b12e-bf2d029437c8",
+            "data": [
+              {
+                "tid": "6437c156e88842074b79ce26",
+                "eid": "643e5dd40a76d51c7228b68f"
+              }
+            ]
+          },
+          {
+            "id": "23b5e06b-300d-426e-9eb8-ccca8b483508",
+            "data": [
+              {
+                "id": "b27b4dae-926b-4659-9bef-fb12e785cbed",
+                "nodes": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 2
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Description"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "This episode focuses on the fundamentals of strength training. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "2e2c6e45-dd8a-4e7f-9c15-02260cce4202",
+            "data": [
+              "Strenght training",
+              "Beginner"
+            ]
+          },
+          {
+            "id": "9a379b15-7792-4c59-a40f-9de22e53425c",
+            "data": [
+              1672704000000
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "643e5e470a76d51c7228b696": {
+    "_id": "643e5e470a76d51c7228b696",
+    "createdAt": 1681808967070,
+    "updatedAt": 1681809351471,
+    "cid": "13",
+    "templateId": "6437c034e88842074b79ce25",
+    "userId": "111111111111111111111111",
+    "status": "6436adcd346e3258041e354c",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "976bcc92-69b0-4293-84af-6070f4d5aba3",
+            "data": [
+              "The Importance of Recovery"
+            ]
+          },
+          {
+            "id": "93a740cf-52bd-4741-a7df-012ce42f7fe6",
+            "data": [
+              "the-importance-of-recovery"
+            ]
+          },
+          {
+            "id": "1ed64dbb-f82e-40ca-b3e6-fdf252d74469",
+            "data": [
+              {
+                "_id": "6437d280e88842074b79ce33",
+                "alt_text": "The Importance of Recovery",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "db449c19-9afc-4cc6-a55d-9e0c08d7dcf6",
+            "data": [
+              {
+                "_id": "643e5f880a76d51c7228b69c",
+                "alt_text": "The Importance of Recovery",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "fc594ab8-cb22-4c61-b12e-bf2d029437c8",
+            "data": [
+              {
+                "tid": "6437c156e88842074b79ce26",
+                "eid": "643e5de50a76d51c7228b690"
+              }
+            ]
+          },
+          {
+            "id": "23b5e06b-300d-426e-9eb8-ccca8b483508",
+            "data": [
+              {
+                "id": "b16c1a38-3aaa-421d-96f7-f1114139ae02",
+                "nodes": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 2
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Description"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "This episode focuses on the fundamentals of strength training. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "2e2c6e45-dd8a-4e7f-9c15-02260cce4202",
+            "data": [
+              "Strenght training",
+              "Beginner"
+            ]
+          },
+          {
+            "id": "9a379b15-7792-4c59-a40f-9de22e53425c",
+            "data": [
+              1672704000000
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "643e5e590a76d51c7228b697": {
+    "_id": "643e5e590a76d51c7228b697",
+    "createdAt": 1681808985830,
+    "updatedAt": 1681809362276,
+    "cid": "14",
+    "templateId": "6437c034e88842074b79ce25",
+    "userId": "111111111111111111111111",
+    "status": "6436adcd346e3258041e354c",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "976bcc92-69b0-4293-84af-6070f4d5aba3",
+            "data": [
+              "Functional Training for Real-Life Movement"
+            ]
+          },
+          {
+            "id": "93a740cf-52bd-4741-a7df-012ce42f7fe6",
+            "data": [
+              "functional-training-for-real-life-movement"
+            ]
+          },
+          {
+            "id": "1ed64dbb-f82e-40ca-b3e6-fdf252d74469",
+            "data": [
+              {
+                "_id": "6437d280e88842074b79ce33",
+                "alt_text": "Functional Training for Real-Life Movement",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "db449c19-9afc-4cc6-a55d-9e0c08d7dcf6",
+            "data": [
+              {
+                "_id": "643e5f880a76d51c7228b69d",
+                "alt_text": "Functional Training for Real-Life Movement",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "fc594ab8-cb22-4c61-b12e-bf2d029437c8",
+            "data": [
+              {
+                "tid": "6437c156e88842074b79ce26",
+                "eid": "643e5df00a76d51c7228b691"
+              }
+            ]
+          },
+          {
+            "id": "23b5e06b-300d-426e-9eb8-ccca8b483508",
+            "data": [
+              {
+                "id": "2e6773fe-ed48-4e93-b909-1eb83ea0327a",
+                "nodes": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 2
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Description"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "This episode focuses on the fundamentals of strength training. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "2e2c6e45-dd8a-4e7f-9c15-02260cce4202",
+            "data": [
+              "Strenght training",
+              "Beginner"
+            ]
+          },
+          {
+            "id": "9a379b15-7792-4c59-a40f-9de22e53425c",
+            "data": [
+              1672704000000
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "643e5e700a76d51c7228b698": {
+    "_id": "643e5e700a76d51c7228b698",
+    "createdAt": 1681809008817,
+    "updatedAt": 1681809372926,
+    "cid": "15",
+    "templateId": "6437c034e88842074b79ce25",
+    "userId": "111111111111111111111111",
+    "status": "6436adcd346e3258041e354c",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "976bcc92-69b0-4293-84af-6070f4d5aba3",
+            "data": [
+              "Bodyweight Workouts for All Levels"
+            ]
+          },
+          {
+            "id": "93a740cf-52bd-4741-a7df-012ce42f7fe6",
+            "data": [
+              "bodyweight-workouts-for-all-levels"
+            ]
+          },
+          {
+            "id": "1ed64dbb-f82e-40ca-b3e6-fdf252d74469",
+            "data": [
+              {
+                "_id": "6437d280e88842074b79ce33",
+                "alt_text": "Bodyweight Workouts for All Levels",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "db449c19-9afc-4cc6-a55d-9e0c08d7dcf6",
+            "data": [
+              {
+                "_id": "643e5f880a76d51c7228b69e",
+                "alt_text": "Bodyweight Workouts for All Levels",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "fc594ab8-cb22-4c61-b12e-bf2d029437c8",
+            "data": [
+              {
+                "tid": "6437c156e88842074b79ce26",
+                "eid": "643e5dfa0a76d51c7228b692"
+              }
+            ]
+          },
+          {
+            "id": "23b5e06b-300d-426e-9eb8-ccca8b483508",
+            "data": [
+              {
+                "id": "7fc1d6ab-740a-45bc-b9cb-3d93fdc919b1",
                 "nodes": [
                   {
                     "type": "heading",

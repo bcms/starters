@@ -116,7 +116,7 @@
   "6437bffde88842074b79ce24": {
     "_id": "6437bffde88842074b79ce24",
     "createdAt": 1681375229959,
-    "updatedAt": 1681376899957,
+    "updatedAt": 1681810439557,
     "cid": "3",
     "desc": "",
     "label": "Home page",
@@ -155,6 +155,17 @@
         "type": "GROUP_POINTER",
         "defaultData": {
           "_id": "6437c660e88842074b79ce28"
+        }
+      },
+      {
+        "id": "420eb339-78d9-4962-b49f-2c664122f140",
+        "name": "episodes",
+        "label": "Episodes",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "643e63e90a76d51c7228b69f"
         }
       }
     ]

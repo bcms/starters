@@ -17,7 +17,7 @@
             v-for="(episode, index) in episodes"
             :key="index"
             :item="episode"
-            :index="index"
+            :index="index + 1"
           />
         </div>
       </div>

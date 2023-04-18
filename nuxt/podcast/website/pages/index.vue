@@ -4,6 +4,10 @@
       :data="data.data.meta.hero"
       :episodes="data.data.episodes.slice(0, 3)"
     />
+    <HomePageEpisodes
+      :data="data.data.meta.episodes"
+      :episodes="data.data.episodes"
+    />
   </PageWrapper>
 </template>
 

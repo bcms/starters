@@ -1,10 +1,10 @@
 <template>
   <NuxtLink
     to="/"
-    class="grid grid-cols-[16px,24px,1fr,70px] gap-[5px] items-center px-[14px] py-2.5 bg-appBody/80 text-left lg:grid-cols-[32px,64px,1fr,125px] lg:gap-4 lg:px-5 lg:py-6"
+    class="group grid grid-cols-[16px,24px,1fr,70px] gap-[5px] items-center px-[14px] py-2.5 bg-appBody/80 text-left lg:grid-cols-[32px,64px,1fr,125px] lg:gap-4 lg:px-5 lg:py-6"
   >
     <button
-      class="group flex items-center justify-center"
+      class="flex items-center justify-center"
       @click.prevent="handlePlayPause"
     >
       <span
@@ -97,7 +97,14 @@ const props = defineProps({
 });
 
 const audioDOM = ref<HTMLAudioElement>();
-const { episode, setEpisode, isPlaying, setIsPlaying } = usePlayingEpisode();
+const {
+  episode,
+  setEpisode,
+  isPlaying,
+  setIsPlaying,
+  getFileLength,
+  setEpisodeDOM,
+} = usePlayingEpisode();
 
 const fileLength = ref("...");
 
@@ -105,6 +112,9 @@ const handlePlayPause = () => {
   if (!episode.value) {
     setEpisode(props.item);
     setIsPlaying(true);
+    if (audioDOM.value) {
+      setEpisodeDOM(audioDOM.value);
+    }
   } else {
     if (episode.value.slug === props.item.slug) {
       setIsPlaying(!isPlaying.value);
@@ -117,16 +127,13 @@ const handlePlayPause = () => {
 
 onMounted(() => {
   nextTick(() => {
-    getFileLength();
+    setFileLength();
   });
 });
 
-const getFileLength = () => {
+const setFileLength = () => {
   if (audioDOM.value) {
-    const target = audioDOM.value;
-
-    const durationInSeconds = target.duration;
-    const durationInMinutes = +(durationInSeconds / 60).toFixed(0);
+    const { durationInMinutes } = getFileLength(audioDOM.value);
 
     fileLength.value = `${durationInMinutes} min${
       durationInMinutes > 1 ? "s" : ""

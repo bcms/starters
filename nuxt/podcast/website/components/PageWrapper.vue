@@ -1,7 +1,7 @@
 <template>
   <div>
     <LayoutHeader :data="header" />
-    <main class="relative z-10">
+    <main>
       <slot />
     </main>
     <LayoutFooter :data="footer" />
