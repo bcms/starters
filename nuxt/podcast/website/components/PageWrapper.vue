@@ -5,7 +5,7 @@
       <slot />
     </main>
     <LayoutFooter :data="footer" />
-    <LayoutPlayingEpisode />
+    <LayoutPlayingEpisode v-if="$route.name !== 'now-playing'" />
   </div>
 </template>
 

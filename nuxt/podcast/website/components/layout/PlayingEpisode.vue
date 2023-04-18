@@ -6,7 +6,7 @@
     >
       <div class="container">
         <div class="flex items-center justify-between">
-          <div class="flex items-center">
+          <NuxtLink to="/now-playing" class="flex items-center">
             <BCMSImage
               :media="episode.cover"
               :key="episode.cover.src"
@@ -34,7 +34,7 @@
                 {{ episode.guest?.meta?.en?.title || "N / A" }}
               </div>
             </div>
-          </div>
+          </NuxtLink>
           <div class="flex flex-col items-center max-lg:hidden">
             <div class="flex items-center space-x-7 mb-2">
               <button
@@ -66,7 +66,7 @@
                 00:00
               </div>
               <div
-                class="relative w-[128px] h-1 rounded overflow-hidden bg-[#2E2E2E]"
+                class="relative w-[128px] h-1 rounded overflow-hidden bg-appGray-800"
               >
                 <div
                   class="absolute top-0 left-0 w-2/3 h-full bg-white rounded"
@@ -80,7 +80,7 @@
           <div class="flex items-center max-lg:hidden">
             <VolumeIcon class="w-6 h-6 mr-4" />
             <label class="relative w-[128px]">
-              <div class="relative h-1 rounded overflow-hidden bg-[#2E2E2E]">
+              <div class="relative h-1 rounded overflow-hidden bg-appGray-800">
                 <div
                   class="absolute top-0 left-0 h-full bg-white rounded"
                   :style="{
