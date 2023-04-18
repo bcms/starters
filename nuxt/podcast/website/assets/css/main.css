@@ -7,7 +7,9 @@
 *::after {
   @apply box-border m-0 p-0;
 }
-
+html {
+  @apply scroll-smooth;
+}
 body {
-  @apply font-Inter overflow-x-hidden bg-appBody text-appText;
+  @apply font-Inter overflow-x-hidden bg-appBody text-appText scroll-smooth;
 }

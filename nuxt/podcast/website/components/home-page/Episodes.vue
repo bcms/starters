@@ -1,5 +1,8 @@
 <template>
-  <section class="relative pt-8 pb-10 lg:pt-[151px] lg:pb-[128px]">
+  <section
+    id="episodes"
+    class="relative pt-8 pb-10 lg:pt-[151px] lg:pb-[128px]"
+  >
     <div class="container max-w-[1229px]">
       <ContentManager
         :item="data.title"

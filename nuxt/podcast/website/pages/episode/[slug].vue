@@ -43,8 +43,11 @@
           <div class="flex items-center">
             <button
               class="flex items-center justify-center w-12 h-12 bg-appText rounded-full mr-4 max-lg:hidden"
+              @click="handlePlayPause"
             >
-              <PlayIcon class="w-8 h-8 text-appBody" />
+              <!-- TODO: Check if slug of the playing episode is same as route.params -->
+              <PauseIcon v-if="isPlaying" class="w-8 h-8 text-appBody" />
+              <PlayIcon v-else class="w-8 h-8 text-appBody" />
             </button>
             <div class="flex flex-wrap gap-2.5">
               <div
@@ -101,6 +104,7 @@ import { bcmsMediaToUrl } from "@becomes/cms-most/frontend";
 import { BCMSImage } from "~~/bcms-components";
 import { APIResponse, EpisodePageData } from "~~/types";
 import PlayIcon from "@/assets/icons/play.svg";
+import PauseIcon from "@/assets/icons/pause.svg";
 
 const route = useRoute();
 
@@ -110,7 +114,14 @@ const { data } = useAsyncData(async (ctx) => {
   });
 });
 
-const { getFileLength } = usePlayingEpisode();
+const {
+  episode,
+  setEpisode,
+  setEpisodeDOM,
+  getFileLength,
+  isPlaying,
+  setIsPlaying,
+} = usePlayingEpisode();
 
 const audioDOM = ref<HTMLAudioElement>();
 const fileLength = ref("...");
@@ -120,6 +131,23 @@ const setFileLength = () => {
     const { durationInMinutes } = getFileLength(audioDOM.value);
 
     fileLength.value = `${durationInMinutes.toString().padStart(2, "0")}:00`;
+  }
+};
+
+const handlePlayPause = () => {
+  if (!episode.value && data.value?.data?.meta) {
+    setEpisode(data.value.data.meta);
+    setIsPlaying(true);
+    if (audioDOM.value) {
+      setEpisodeDOM(audioDOM.value);
+    }
+  } else if (episode.value && data.value?.data?.meta) {
+    if (episode.value.slug === data.value.data.meta.slug) {
+      setIsPlaying(!isPlaying.value);
+    } else {
+      setEpisode(data.value.data.meta);
+      setIsPlaying(true);
+    }
   }
 };
 

@@ -2,7 +2,7 @@
   "6436b899621f5ab5d1b5e7e8": {
     "_id": "6436b899621f5ab5d1b5e7e8",
     "createdAt": 1681307801577,
-    "updatedAt": 1681812231535,
+    "updatedAt": 1681826335790,
     "cid": "1",
     "templateId": "6436b809621f5ab5d1b5e7e6",
     "userId": "111111111111111111111111",
@@ -37,7 +37,7 @@
             "id": "ea9a9f7e-f63d-448e-9885-678695cefa87",
             "data": [
               {
-                "id": "e2a10cf4-25c7-4fb1-98e7-bec8a285a503",
+                "id": "b1a1528b-ea56-47b8-adc1-85109f6f8e33",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -61,7 +61,7 @@
                 ]
               },
               {
-                "id": "67ca06cb-c4c5-463e-8a0f-513788c3a30e",
+                "id": "efc2b535-c90a-4b98-82a5-a08b6a201245",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -72,7 +72,7 @@
                           {
                             "type": "link",
                             "attrs": {
-                              "href": "/",
+                              "href": "/#episodes",
                               "target": "_blank",
                               "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
                             }
@@ -85,7 +85,7 @@
                 ]
               },
               {
-                "id": "696470b1-58a1-454e-a942-be3f792cd738",
+                "id": "363212c9-07a7-49e2-bc07-8e453412a123",
                 "nodes": [
                   {
                     "type": "paragraph",
