@@ -23,6 +23,7 @@
           <PlayIcon class="w-8 h-8 text-appBody" />
         </button>
         <BCMSImage
+          :key="data.data.meta.slug"
           :media="data.data.meta.cover"
           class="absolute top-0 left-0 w-full h-full cover rounded overflow-hidden lg:rounded-2xl"
         />
@@ -45,9 +46,24 @@
               class="flex items-center justify-center w-12 h-12 bg-appText rounded-full mr-4 max-lg:hidden"
               @click="handlePlayPause"
             >
-              <!-- TODO: Check if slug of the playing episode is same as route.params -->
-              <PauseIcon v-if="isPlaying" class="w-8 h-8 text-appBody" />
-              <PlayIcon v-else class="w-8 h-8 text-appBody" />
+              <PlayIcon
+                v-if="
+                  episode
+                    ? (episode.slug === data.data.meta.slug &&
+                        !settings.playing) ||
+                      episode.slug !== data.data.meta.slug
+                    : true
+                "
+                class="w-8 h-8 text-appBody"
+              />
+              <PauseIcon
+                v-if="
+                  episode
+                    ? episode.slug === data.data.meta.slug && settings.playing
+                    : false
+                "
+                class="w-8 h-8 text-appBody"
+              />
             </button>
             <div class="flex flex-wrap gap-2.5">
               <div
@@ -89,12 +105,6 @@
           </div>
         </div>
       </div>
-      <audio
-        ref="audioDOM"
-        :src="bcmsMediaToUrl(data.data.meta.file)"
-        type="audio/mpeg"
-        class="sr-only"
-      />
     </div>
   </PageWrapper>
 </template>
@@ -119,41 +129,51 @@ const {
   setEpisode,
   setEpisodeDOM,
   getFileLength,
-  isPlaying,
-  setIsPlaying,
+  settings,
+  setSettings,
 } = usePlayingEpisode();
 
 const audioDOM = ref<HTMLAudioElement>();
 const fileLength = ref("...");
 
-const setFileLength = () => {
-  if (audioDOM.value) {
-    const { durationInMinutes } = getFileLength(audioDOM.value);
-
-    fileLength.value = `${durationInMinutes.toString().padStart(2, "0")}:00`;
-  }
-};
-
 const handlePlayPause = () => {
   if (!episode.value && data.value?.data?.meta) {
     setEpisode(data.value.data.meta);
-    setIsPlaying(true);
     if (audioDOM.value) {
       setEpisodeDOM(audioDOM.value);
     }
+    setSettings({
+      playing: true,
+    });
   } else if (episode.value && data.value?.data?.meta) {
     if (episode.value.slug === data.value.data.meta.slug) {
-      setIsPlaying(!isPlaying.value);
+      setSettings({
+        playing: !settings.value.playing,
+      });
     } else {
       setEpisode(data.value.data.meta);
-      setIsPlaying(true);
+      setSettings({
+        playing: true,
+      });
     }
   }
 };
 
 onMounted(() => {
   nextTick(() => {
-    setFileLength();
+    if (data.value) {
+      const audio = new Audio(bcmsMediaToUrl(data.value.data.meta.file));
+      audio.preload = "metadata";
+
+      audio.onloadedmetadata = () => {
+        audioDOM.value = audio;
+        const { durationInMinutes } = getFileLength(audio);
+
+        fileLength.value = `${durationInMinutes
+          .toString()
+          .padStart(2, "0")}:00`;
+      };
+    }
   });
 });
 

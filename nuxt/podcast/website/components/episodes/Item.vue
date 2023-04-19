@@ -16,7 +16,7 @@
       <PlayIcon
         v-if="
           episode
-            ? (episode.slug === item.slug && !isPlaying) ||
+            ? (episode.slug === item.slug && !settings.playing) ||
               episode.slug !== item.slug
             : true
         "
@@ -24,7 +24,7 @@
         :class="[!episode || episode.slug !== item.slug ? 'hidden' : '']"
       />
       <PauseIcon
-        v-if="episode ? episode.slug === item.slug && isPlaying : false"
+        v-if="episode ? episode.slug === item.slug && settings.playing : false"
         class="w-4 text-appAccent lg:w-8"
       />
     </button>
@@ -68,12 +68,6 @@
         </div>
       </div>
     </div>
-    <audio
-      ref="audioDOM"
-      :src="bcmsMediaToUrl(item.file)"
-      type="audio/mpeg"
-      class="sr-only"
-    />
   </NuxtLink>
 </template>
 
@@ -100,10 +94,10 @@ const audioDOM = ref<HTMLAudioElement>();
 const {
   episode,
   setEpisode,
-  isPlaying,
-  setIsPlaying,
-  getFileLength,
   setEpisodeDOM,
+  settings,
+  setSettings,
+  getFileLength,
 } = usePlayingEpisode();
 
 const fileLength = ref("...");
@@ -111,33 +105,37 @@ const fileLength = ref("...");
 const handlePlayPause = () => {
   if (!episode.value) {
     setEpisode(props.item);
-    setIsPlaying(true);
     if (audioDOM.value) {
       setEpisodeDOM(audioDOM.value);
     }
+    setSettings({
+      playing: true,
+    });
   } else {
     if (episode.value.slug === props.item.slug) {
-      setIsPlaying(!isPlaying.value);
+      setSettings({
+        playing: !settings.value.playing,
+      });
     } else {
       setEpisode(props.item);
-      setIsPlaying(true);
+      setSettings({
+        playing: true,
+      });
     }
   }
 };
 
 onMounted(() => {
   nextTick(() => {
-    setFileLength();
+    const audio = new Audio(bcmsMediaToUrl(props.item.file));
+    audio.preload = "metadata";
+
+    audio.onloadedmetadata = () => {
+      audioDOM.value = audio;
+      const { durationInMinutes } = getFileLength(audio);
+
+      fileLength.value = `${durationInMinutes.toString().padStart(2, "0")}:00`;
+    };
   });
 });
-
-const setFileLength = () => {
-  if (audioDOM.value) {
-    const { durationInMinutes } = getFileLength(audioDOM.value);
-
-    fileLength.value = `${durationInMinutes} min${
-      durationInMinutes > 1 ? "s" : ""
-    }`;
-  }
-};
 </script>

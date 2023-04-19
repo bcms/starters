@@ -47,9 +47,16 @@
               </button>
               <button
                 class="flex items-center justify-center w-8 h-8 bg-white rounded-full"
-                @click="setIsPlaying(!isPlaying)"
+                @click="
+                  setSettings({
+                    playing: !settings.playing,
+                  })
+                "
               >
-                <PauseIcon v-if="isPlaying" class="text-appAccent w-6 h-6" />
+                <PauseIcon
+                  v-if="settings.playing"
+                  class="text-appAccent w-6 h-6"
+                />
                 <PlayIcon v-else class="text-appAccent w-6 h-6" />
               </button>
               <button class="flex">
@@ -69,7 +76,10 @@
                 class="relative w-[128px] h-1 rounded overflow-hidden bg-appGray-800"
               >
                 <div
-                  class="absolute top-0 left-0 w-2/3 h-full bg-white rounded"
+                  class="absolute top-0 left-0 h-full bg-white rounded"
+                  :style="{
+                    width: episodeTime,
+                  }"
                 />
               </div>
               <div class="leading-none tracking-[-0.8px] text-appGray-400">
@@ -89,20 +99,29 @@
                 />
               </div>
               <input
-                v-model="volume"
+                :value="settings.volume"
                 type="range"
                 step="0.01"
                 min="0"
                 max="1"
+                @change="handleVolumeChange"
                 class="absolute top-1/2 -translate-y-1/2 left-0 w-full h-5 opacity-0"
               />
             </label>
           </div>
           <button
             class="flex lg:hidden"
-            @click="isPlaying ? setIsPlaying(false) : setIsPlaying(true)"
+            @click="
+              settings.playing
+                ? setSettings({
+                    playing: false,
+                  })
+                : setSettings({
+                    playing: true,
+                  })
+            "
           >
-            <PauseIcon v-if="isPlaying" class="w-5 h-5" />
+            <PauseIcon v-if="settings.playing" class="w-5 h-5" />
             <PlayIcon v-else class="w-5 h-5" />
           </button>
         </div>
@@ -119,16 +138,30 @@ import VolumeIcon from "@/assets/icons/volume.svg";
 import ForwardIcon from "@/assets/icons/forward.svg";
 import BackwardIcon from "@/assets/icons/backward.svg";
 
-const { episode, isPlaying, setIsPlaying, getPlayingEpisodeFileLength } =
+const { episode, settings, setSettings, getPlayingEpisodeFileLength } =
   usePlayingEpisode();
-
-const volume = ref(0.5);
 
 const fileLength = ref("");
 
 const volumeWidth = computed(() => {
-  return `${volume.value * 100}%`;
+  return `${settings.value.volume * 100}%`;
 });
+
+const episodeTime = computed(() => {
+  return `${
+    (settings.value.currentTime /
+      getPlayingEpisodeFileLength.value.durationInSeconds) *
+    100
+  }%`;
+});
+
+const handleVolumeChange = (event: Event) => {
+  const target = event.target as HTMLInputElement;
+
+  setSettings({
+    volume: +target.value,
+  });
+};
 
 watch(episode, () => {
   nextTick(() => {

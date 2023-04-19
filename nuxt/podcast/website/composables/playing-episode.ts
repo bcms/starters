@@ -17,11 +17,6 @@ export const usePlayingEpisode = () => {
     episode.value = val;
   };
 
-  const isPlaying = useState("is-playing", () => false);
-  const setIsPlaying = (val: boolean) => {
-    isPlaying.value = val;
-  };
-
   const getFileLength = (el: HTMLAudioElement) => {
     const target = el;
 
@@ -52,14 +47,64 @@ export const usePlayingEpisode = () => {
     }
   });
 
+  const settings = useState("episode-settings", () => {
+    return {
+      volume: 0.1,
+      currentTime: 0,
+      playing: false,
+    };
+  });
+  const setSettings = (obj: {
+    volume?: number;
+    currentTime?: number;
+    playing?: boolean;
+  }) => {
+    if (typeof obj.volume === "number") {
+      settings.value.volume = obj.volume;
+      if (episodeDOM.value) {
+        episodeDOM.value.volume = obj.volume;
+      }
+    }
+    if (typeof obj.currentTime === "number") {
+      settings.value.currentTime = obj.currentTime;
+      if (episodeDOM.value) {
+        episodeDOM.value.currentTime = obj.currentTime;
+      }
+    }
+    if (typeof obj.playing === "boolean") {
+      settings.value.playing = obj.playing;
+      if (episodeDOM.value) {
+        if (obj.playing) {
+          episodeDOM.value.play();
+        } else {
+          episodeDOM.value.pause();
+        }
+      }
+    }
+  };
+
+  watch(settings.value, (newVal) => {
+    if (newVal.playing && episodeDOM.value) {
+      episodeDOM.value.volume = newVal.volume;
+    }
+  });
+
+  watch(episode, (newVal, oldVal) => {
+    if (newVal?.slug !== oldVal?.slug) {
+      setSettings({
+        currentTime: 0,
+      });
+    }
+  });
+
   return {
     episode,
     episodeDOM,
     setEpisode,
     setEpisodeDOM,
-    isPlaying,
-    setIsPlaying,
     getFileLength,
     getPlayingEpisodeFileLength,
+    settings,
+    setSettings,
   };
 };

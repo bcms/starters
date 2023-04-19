@@ -35,22 +35,24 @@
               <div
                 class="absolute top-0 left-0 h-full bg-white rounded-md"
                 :style="{
-                  width: `${currentProgress}%`,
+                  width: episodeTime,
                 }"
               />
             </div>
             <div
               class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-2.5 h-2.5 bg-white rounded-full lg:w-[15px] lg:h-[15px]"
               :style="{
-                left: `${currentProgress}%`,
+                left: episodeTime,
               }"
             />
+            <!-- TODO: Handle on Change -->
             <input
-              v-model="currentProgress"
+              v-if="episodeDOM"
+              :value="episodeTime"
               type="range"
               step="1"
               min="0"
-              max="100"
+              :max="episodeDOM.duration"
               class="absolute top-1/2 -translate-y-1/2 left-0 w-full h-5 opacity-0"
             />
           </label>
@@ -73,10 +75,14 @@
           </button>
           <button
             class="flex items-center justify-center w-8 h-8 bg-white rounded-full lg:w-[60px] lg:h-[60px]"
-            @click="setIsPlaying(!isPlaying)"
+            @click="
+              setSettings({
+                playing: !settings.playing,
+              })
+            "
           >
             <PauseIcon
-              v-if="isPlaying"
+              v-if="settings.playing"
               class="text-appBody w-6 h-6 lg:w-8 lg:h-8"
             />
             <PlayIcon v-else class="text-appBody w-6 h-6 lg:w-8 lg:h-8" />
@@ -98,8 +104,13 @@ import PauseIcon from "@/assets/icons/pause.svg";
 import ForwardIcon from "@/assets/icons/forward.svg";
 import BackwardIcon from "@/assets/icons/backward.svg";
 
-const { episode, isPlaying, setIsPlaying, getPlayingEpisodeFileLength } =
-  usePlayingEpisode();
+const {
+  episode,
+  episodeDOM,
+  settings,
+  setSettings,
+  getPlayingEpisodeFileLength,
+} = usePlayingEpisode();
 
 const { data } = useAsyncData(async (ctx) => {
   return await ctx?.$bcms.request<APIResponse<NowPlayingPageData>>({
@@ -109,7 +120,13 @@ const { data } = useAsyncData(async (ctx) => {
 
 const { setOgHead } = useHeadTags();
 
-const currentProgress = ref(5);
+const episodeTime = computed(() => {
+  return `${
+    (settings.value.currentTime /
+      getPlayingEpisodeFileLength.value.durationInSeconds) *
+    100
+  }%`;
+});
 
 onMounted(() => {
   if (!episode.value) {
