@@ -2,12 +2,9 @@
   <PageWrapper v-if="data" :header="data.header" :footer="data.footer">
     <HomePageHero
       :data="data.data.meta.hero"
-      :episodes="data.data.episodes.slice(0, 3)"
+      :episodes="episodes.slice(0, 3)"
     />
-    <HomePageEpisodes
-      :data="data.data.meta.episodes"
-      :episodes="data.data.episodes"
-    />
+    <HomePageEpisodes :data="data.data.meta.episodes" :episodes="episodes" />
   </PageWrapper>
 </template>
 
@@ -21,6 +18,7 @@ const { data } = useAsyncData(async (ctx) => {
 });
 
 const { setOgHead } = useHeadTags();
+const { episodes } = useEpisodes();
 
 useHead(() =>
   setOgHead({

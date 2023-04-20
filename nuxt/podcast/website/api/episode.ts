@@ -22,4 +22,15 @@ export const EpisodeApi = createBcmsMostServerRoutes({
       };
     },
   }),
+  "/episode": apiRoute<EpisodeEntryMeta[]>({
+    method: "get",
+    async handler({ bcms }) {
+      const entries = (await bcms.content.entry.find(
+        "episode",
+        async () => true
+      )) as unknown as EpisodeEntry[];
+
+      return entries.map((e) => e.meta.en as EpisodeEntryMeta);
+    },
+  }),
 });

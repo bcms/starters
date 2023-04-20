@@ -12,7 +12,12 @@
           <li v-for="(item, index) in data.nav" :key="index">
             <ContentManager
               :item="item"
-              class="text-lg leading-none font-semibold tracking-[-0.8px] md:text-xl md:leading-none md:text-appGray-300"
+              class="text-lg leading-none font-semibold tracking-[-0.8px] md:text-xl md:leading-none"
+              :class="[
+                $route.path === getNavLinkPath(item)
+                  ? ''
+                  : 'md:text-appGray-300',
+              ]"
             />
           </li>
         </ul>
@@ -38,6 +43,10 @@ import { BCMSImage } from "~~/bcms-components";
 import { HeaderEntryMeta } from "~~/bcms/types";
 import MenuIcon from "@/assets/icons/menu.svg";
 import XIcon from "@/assets/icons/x.svg";
+import {
+  BCMSEntryContentParsedItem,
+  BCMSPropRichTextDataParsed,
+} from "@becomes/cms-client/types";
 
 defineProps({
   data: {
@@ -47,4 +56,21 @@ defineProps({
 });
 
 const showMobileMenu = ref(false);
+
+const getNavLinkPath = (content: BCMSPropRichTextDataParsed) => {
+  let path = "";
+
+  for (let i = 0; i < content.length; i++) {
+    const item = content[i] as BCMSEntryContentParsedItem;
+
+    const href = (item.value as string).match(/href="([^"]*)"/)?.[1];
+
+    if (href) {
+      path = href;
+      break;
+    }
+  }
+
+  return path;
+};
 </script>

@@ -1,6 +1,10 @@
+import { bcmsMediaToUrl } from "@becomes/cms-most/frontend";
 import { EpisodeEntryMeta } from "~~/bcms/types";
+import { EpisodeWithSettings } from "~~/types";
 
 export const usePlayingEpisode = () => {
+  const { episodes } = useEpisodes();
+
   const episodeDOM = useState<HTMLAudioElement | undefined>(
     "playing-episode-dom",
     () => undefined
@@ -20,8 +24,8 @@ export const usePlayingEpisode = () => {
   const getFileLength = (el: HTMLAudioElement) => {
     const target = el;
 
-    const durationInSeconds = target.duration;
-    const durationInMinutes = +(durationInSeconds / 60).toFixed(0);
+    const durationInSeconds = +target.duration.toFixed(0);
+    const durationInMinutes = Math.floor(durationInSeconds / 60);
 
     return {
       durationInSeconds,
@@ -32,8 +36,8 @@ export const usePlayingEpisode = () => {
     if (episodeDOM.value) {
       const target = episodeDOM.value;
 
-      const durationInSeconds = target.duration;
-      const durationInMinutes = +(durationInSeconds / 60).toFixed(0);
+      const durationInSeconds = +target.duration.toFixed(0);
+      const durationInMinutes = Math.floor(durationInSeconds / 60);
 
       return {
         durationInSeconds,
@@ -49,7 +53,7 @@ export const usePlayingEpisode = () => {
 
   const settings = useState("episode-settings", () => {
     return {
-      volume: 0.1,
+      volume: 0.4,
       currentTime: 0,
       playing: false,
     };
@@ -76,10 +80,81 @@ export const usePlayingEpisode = () => {
       if (episodeDOM.value) {
         if (obj.playing) {
           episodeDOM.value.play();
+          episodeDOM.value.addEventListener("timeupdate", updateCurrentTime);
+          episodeDOM.value.addEventListener("ended", () => {
+            settings.value.playing = false;
+            settings.value.currentTime = 0;
+          });
         } else {
           episodeDOM.value.pause();
+          episodeDOM.value.removeEventListener("timeupdate", updateCurrentTime);
         }
       }
+    }
+  };
+  const updateCurrentTime = () => {
+    settings.value.currentTime = episodeDOM.value?.currentTime || 0;
+  };
+  const handlePrevEpisode = () => {
+    const { item, index } = episodes.value.reduce(
+      (acc, e, i) => {
+        if (!acc.item && e.episode.slug === episode.value?.slug) {
+          acc.item = e;
+          acc.index = i;
+        }
+        return acc;
+      },
+      { item: null as EpisodeWithSettings | null, index: -1 }
+    );
+
+    if (index > 0 && item) {
+      setSettings({
+        playing: false,
+      });
+
+      const audio = new Audio(
+        bcmsMediaToUrl(episodes.value[index - 1].episode.file)
+      );
+      audio.preload = "metadata";
+      audio.onloadedmetadata = () => {
+        episodeDOM.value = audio;
+
+        setEpisode(episodes.value[index - 1].episode);
+        setSettings({
+          playing: true,
+        });
+      };
+    }
+  };
+  const handleNextEpisode = () => {
+    const { item, index } = episodes.value.reduce(
+      (acc, e, i) => {
+        if (!acc.item && e.episode.slug === episode.value?.slug) {
+          acc.item = e;
+          acc.index = i;
+        }
+        return acc;
+      },
+      { item: null as EpisodeWithSettings | null, index: -1 }
+    );
+
+    if (index < episodes.value.length - 1 && item) {
+      setSettings({
+        playing: false,
+      });
+
+      const audio = new Audio(
+        bcmsMediaToUrl(episodes.value[index + 1].episode.file)
+      );
+      audio.preload = "metadata";
+      audio.onloadedmetadata = () => {
+        episodeDOM.value = audio;
+
+        setEpisode(episodes.value[index + 1].episode);
+        setSettings({
+          playing: true,
+        });
+      };
     }
   };
 
@@ -106,5 +181,7 @@ export const usePlayingEpisode = () => {
     getPlayingEpisodeFileLength,
     settings,
     setSettings,
+    handlePrevEpisode,
+    handleNextEpisode,
   };
 };

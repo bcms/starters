@@ -45,7 +45,10 @@
                 left: episodeTime,
               }"
             />
-            <!-- TODO: Handle on Change -->
+            <div
+              class="absolute z-10 top-1/2 -translate-y-1/2 left-0 w-full h-5 cursor-pointer rounded-md"
+              @click="handleRewind"
+            />
             <input
               v-if="episodeDOM"
               :value="episodeTime"
@@ -60,17 +63,17 @@
             <div
               class="text-xs leading-none tracking-[-0.8px] text-appGray-400 lg:text-base lg:leading-none"
             >
-              00:00
+              {{ currentPlayTime }}
             </div>
             <div
               class="text-xs leading-none tracking-[-0.8px] text-appGray-400 lg:text-base lg:leading-none"
             >
-              00:00
+              {{ fileLength }}
             </div>
           </div>
         </div>
         <div class="flex items-center justify-center gap-8">
-          <button class="flex">
+          <button class="flex" @click="handlePrevEpisode">
             <BackwardIcon class="w-6 h-6" />
           </button>
           <button
@@ -87,7 +90,7 @@
             />
             <PlayIcon v-else class="text-appBody w-6 h-6 lg:w-8 lg:h-8" />
           </button>
-          <button class="flex">
+          <button class="flex" @click="handleNextEpisode">
             <ForwardIcon class="w-6 h-6" />
           </button>
         </div>
@@ -110,6 +113,8 @@ const {
   settings,
   setSettings,
   getPlayingEpisodeFileLength,
+  handlePrevEpisode,
+  handleNextEpisode,
 } = usePlayingEpisode();
 
 const { data } = useAsyncData(async (ctx) => {
@@ -120,6 +125,16 @@ const { data } = useAsyncData(async (ctx) => {
 
 const { setOgHead } = useHeadTags();
 
+const fileLength = ref("...");
+
+const currentPlayTime = computed(() => {
+  const currentTime = settings.value.currentTime;
+  const minutes = Math.floor(currentTime / 60);
+  const seconds = Math.floor(currentTime % 60);
+
+  return `${minutes}:${seconds < 10 ? "0" + seconds : seconds}`;
+});
+
 const episodeTime = computed(() => {
   return `${
     (settings.value.currentTime /
@@ -128,11 +143,43 @@ const episodeTime = computed(() => {
   }%`;
 });
 
+const handleRewind = (event: MouseEvent) => {
+  const target = event.currentTarget as HTMLElement;
+  const videoDuration = getPlayingEpisodeFileLength.value.durationInSeconds;
+  const bcr = target.getBoundingClientRect();
+  const clickedXPositionPercentage =
+    ((event.clientX - bcr.left) / bcr.width) * 100;
+
+  setSettings({
+    currentTime: (videoDuration / 100) * clickedXPositionPercentage,
+  });
+};
+
 onMounted(() => {
   if (!episode.value) {
     navigateTo("/");
   }
+  nextTick(() => {
+    setFileLength();
+  });
 });
+
+watch(episode, () => {
+  nextTick(() => {
+    setFileLength();
+  });
+});
+
+const setFileLength = () => {
+  const { durationInMinutes, durationInSeconds } =
+    getPlayingEpisodeFileLength.value;
+
+  fileLength.value = `${durationInMinutes.toString().padStart(2, "0")}:${(
+    durationInSeconds % 60
+  )
+    .toFixed(0)
+    .padStart(2, "0")}`;
+};
 
 useHead(() =>
   setOgHead({

@@ -447,7 +447,7 @@
   "6437d2a6e88842074b79ce34": {
     "_id": "6437d2a6e88842074b79ce34",
     "createdAt": 1681380006955,
-    "updatedAt": 1681380006955,
+    "updatedAt": 1681978216147,
     "cid": "5",
     "templateId": "6437c034e88842074b79ce25",
     "userId": "111111111111111111111111",
@@ -472,7 +472,7 @@
             "id": "1ed64dbb-f82e-40ca-b3e6-fdf252d74469",
             "data": [
               {
-                "_id": "6437d280e88842074b79ce33",
+                "_id": "6440f3575a0a1aba058e0c24",
                 "alt_text": "Building Strength for Beginners",
                 "caption": ""
               }
@@ -501,7 +501,7 @@
             "id": "23b5e06b-300d-426e-9eb8-ccca8b483508",
             "data": [
               {
-                "id": "32a15743-2f2a-43f7-a368-02044df2eda3",
+                "id": "2465b0ef-dc6b-496e-be9f-6d51f6e9f470",
                 "nodes": [
                   {
                     "type": "heading",
@@ -555,7 +555,7 @@
   "6437d2afe88842074b79ce35": {
     "_id": "6437d2afe88842074b79ce35",
     "createdAt": 1681380015024,
-    "updatedAt": 1681807396227,
+    "updatedAt": 1681978222439,
     "cid": "6",
     "templateId": "6437c034e88842074b79ce25",
     "userId": "111111111111111111111111",
@@ -580,7 +580,7 @@
             "id": "1ed64dbb-f82e-40ca-b3e6-fdf252d74469",
             "data": [
               {
-                "_id": "6437d280e88842074b79ce33",
+                "_id": "6440f3585a0a1aba058e0c25",
                 "alt_text": "Optimizing Your Nutrition for Practice",
                 "caption": ""
               }
@@ -609,7 +609,7 @@
             "id": "23b5e06b-300d-426e-9eb8-ccca8b483508",
             "data": [
               {
-                "id": "5470cad9-f22a-47f8-9111-675c5e956438",
+                "id": "2bd885b1-948a-4e66-a6a8-1854fda28143",
                 "nodes": [
                   {
                     "type": "heading",
@@ -708,7 +708,7 @@
   "6437d74ce88842074b79ce38": {
     "_id": "6437d74ce88842074b79ce38",
     "createdAt": 1681381196268,
-    "updatedAt": 1681807403563,
+    "updatedAt": 1681978228045,
     "cid": "9",
     "templateId": "6437c034e88842074b79ce25",
     "userId": "111111111111111111111111",
@@ -733,7 +733,7 @@
             "id": "1ed64dbb-f82e-40ca-b3e6-fdf252d74469",
             "data": [
               {
-                "_id": "6437d280e88842074b79ce33",
+                "_id": "6440f3585a0a1aba058e0c26",
                 "alt_text": "The Science of Running",
                 "caption": ""
               }
@@ -757,7 +757,7 @@
             "id": "23b5e06b-300d-426e-9eb8-ccca8b483508",
             "data": [
               {
-                "id": "918b3ba2-5e9b-404f-aa0e-812c7a066c03",
+                "id": "2fcafd01-df97-4429-a04d-79da5857103d",
                 "nodes": [
                   {
                     "type": "heading",
@@ -1081,7 +1081,7 @@
   "643e5e000a76d51c7228b693": {
     "_id": "643e5e000a76d51c7228b693",
     "createdAt": 1681808896434,
-    "updatedAt": 1681809318088,
+    "updatedAt": 1681978233299,
     "cid": "10",
     "templateId": "6437c034e88842074b79ce25",
     "userId": "111111111111111111111111",
@@ -1106,7 +1106,7 @@
             "id": "1ed64dbb-f82e-40ca-b3e6-fdf252d74469",
             "data": [
               {
-                "_id": "6437d280e88842074b79ce33",
+                "_id": "6440f3585a0a1aba058e0c27",
                 "alt_text": "The Mental Side of Fitness",
                 "caption": ""
               }
@@ -1135,7 +1135,7 @@
             "id": "23b5e06b-300d-426e-9eb8-ccca8b483508",
             "data": [
               {
-                "id": "789fb527-f5b0-4ef6-aa6b-c0340280798f",
+                "id": "0426c694-b84d-40f7-b317-e764c0985ea9",
                 "nodes": [
                   {
                     "type": "heading",
@@ -1189,7 +1189,7 @@
   "643e5e260a76d51c7228b694": {
     "_id": "643e5e260a76d51c7228b694",
     "createdAt": 1681808934936,
-    "updatedAt": 1681809326920,
+    "updatedAt": 1681978240137,
     "cid": "11",
     "templateId": "6437c034e88842074b79ce25",
     "userId": "111111111111111111111111",
@@ -1214,7 +1214,7 @@
             "id": "1ed64dbb-f82e-40ca-b3e6-fdf252d74469",
             "data": [
               {
-                "_id": "6437d280e88842074b79ce33",
+                "_id": "6440f3585a0a1aba058e0c28",
                 "alt_text": "Mastering Yoga for Better Health",
                 "caption": ""
               }
@@ -1243,7 +1243,7 @@
             "id": "23b5e06b-300d-426e-9eb8-ccca8b483508",
             "data": [
               {
-                "id": "c376a707-a9e9-41f3-b3d4-178eae614a30",
+                "id": "b581cecc-fb70-41ce-ab3f-617ff2f8938c",
                 "nodes": [
                   {
                     "type": "heading",
@@ -1297,7 +1297,7 @@
   "643e5e360a76d51c7228b695": {
     "_id": "643e5e360a76d51c7228b695",
     "createdAt": 1681808950518,
-    "updatedAt": 1681809341282,
+    "updatedAt": 1681978246360,
     "cid": "12",
     "templateId": "6437c034e88842074b79ce25",
     "userId": "111111111111111111111111",
@@ -1322,7 +1322,7 @@
             "id": "1ed64dbb-f82e-40ca-b3e6-fdf252d74469",
             "data": [
               {
-                "_id": "6437d280e88842074b79ce33",
+                "_id": "6440f3585a0a1aba058e0c29",
                 "alt_text": "HIIT: High-Intensity Interval Training",
                 "caption": ""
               }
@@ -1351,7 +1351,7 @@
             "id": "23b5e06b-300d-426e-9eb8-ccca8b483508",
             "data": [
               {
-                "id": "b27b4dae-926b-4659-9bef-fb12e785cbed",
+                "id": "cf81bff7-fdf5-4185-b1b1-3a2af688b6ea",
                 "nodes": [
                   {
                     "type": "heading",
@@ -1405,7 +1405,7 @@
   "643e5e470a76d51c7228b696": {
     "_id": "643e5e470a76d51c7228b696",
     "createdAt": 1681808967070,
-    "updatedAt": 1681809351471,
+    "updatedAt": 1681978252577,
     "cid": "13",
     "templateId": "6437c034e88842074b79ce25",
     "userId": "111111111111111111111111",
@@ -1430,7 +1430,7 @@
             "id": "1ed64dbb-f82e-40ca-b3e6-fdf252d74469",
             "data": [
               {
-                "_id": "6437d280e88842074b79ce33",
+                "_id": "6440f3585a0a1aba058e0c2a",
                 "alt_text": "The Importance of Recovery",
                 "caption": ""
               }
@@ -1459,7 +1459,7 @@
             "id": "23b5e06b-300d-426e-9eb8-ccca8b483508",
             "data": [
               {
-                "id": "b16c1a38-3aaa-421d-96f7-f1114139ae02",
+                "id": "47e262fa-fdc7-4c43-8949-84621ca2c7e9",
                 "nodes": [
                   {
                     "type": "heading",
@@ -1513,7 +1513,7 @@
   "643e5e590a76d51c7228b697": {
     "_id": "643e5e590a76d51c7228b697",
     "createdAt": 1681808985830,
-    "updatedAt": 1681809362276,
+    "updatedAt": 1681978257926,
     "cid": "14",
     "templateId": "6437c034e88842074b79ce25",
     "userId": "111111111111111111111111",
@@ -1538,7 +1538,7 @@
             "id": "1ed64dbb-f82e-40ca-b3e6-fdf252d74469",
             "data": [
               {
-                "_id": "6437d280e88842074b79ce33",
+                "_id": "6440f3585a0a1aba058e0c2b",
                 "alt_text": "Functional Training for Real-Life Movement",
                 "caption": ""
               }
@@ -1567,7 +1567,7 @@
             "id": "23b5e06b-300d-426e-9eb8-ccca8b483508",
             "data": [
               {
-                "id": "2e6773fe-ed48-4e93-b909-1eb83ea0327a",
+                "id": "06a7dab2-bbbb-433e-a60d-758f9e8baa3d",
                 "nodes": [
                   {
                     "type": "heading",
@@ -1621,7 +1621,7 @@
   "643e5e700a76d51c7228b698": {
     "_id": "643e5e700a76d51c7228b698",
     "createdAt": 1681809008817,
-    "updatedAt": 1681809372926,
+    "updatedAt": 1681978262574,
     "cid": "15",
     "templateId": "6437c034e88842074b79ce25",
     "userId": "111111111111111111111111",
@@ -1646,7 +1646,7 @@
             "id": "1ed64dbb-f82e-40ca-b3e6-fdf252d74469",
             "data": [
               {
-                "_id": "6437d280e88842074b79ce33",
+                "_id": "6440f3585a0a1aba058e0c2c",
                 "alt_text": "Bodyweight Workouts for All Levels",
                 "caption": ""
               }
@@ -1675,7 +1675,7 @@
             "id": "23b5e06b-300d-426e-9eb8-ccca8b483508",
             "data": [
               {
-                "id": "7fc1d6ab-740a-45bc-b9cb-3d93fdc919b1",
+                "id": "7621accd-7ba2-43e3-a37c-04f771ee0849",
                 "nodes": [
                   {
                     "type": "heading",

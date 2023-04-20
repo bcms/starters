@@ -14,9 +14,9 @@
           class="grid grid-cols-1 rounded-2xl bg-[#383838]/20 overflow-hidden space-y-px"
         >
           <EpisodesItem
-            v-for="(episode, index) in episodes"
+            v-for="(e, index) in episodes"
             :key="index"
-            :item="episode"
+            :item="e.episode"
             :index="index + 1"
             class="bg-appBody/80"
           />
@@ -37,7 +37,8 @@
 <script setup lang="ts">
 import { PropType } from "vue";
 import { BCMSImage } from "~~/bcms-components";
-import { EpisodeEntryMeta, HomeHeroGroup } from "~~/bcms/types";
+import { HomeHeroGroup } from "~~/bcms/types";
+import { EpisodeWithSettings } from "~~/types";
 
 defineProps({
   data: {
@@ -45,7 +46,7 @@ defineProps({
     required: true,
   },
   episodes: {
-    type: Array as PropType<EpisodeEntryMeta[]>,
+    type: Array as PropType<EpisodeWithSettings[]>,
     required: true,
   },
 });

@@ -1,10 +1,5 @@
 import { createBcmsMostServerRoutes } from "@becomes/cms-most";
-import {
-  HomePageEntry,
-  HomePageEntryMeta,
-  EpisodeEntry,
-  EpisodeEntryMeta,
-} from "~~/bcms/types";
+import { HomePageEntry, HomePageEntryMeta } from "~~/bcms/types";
 import { HomePageData } from "~~/types";
 import { apiRoute } from "./_api-route";
 
@@ -21,16 +16,8 @@ export const HomeApi = createBcmsMostServerRoutes({
         throw new Error("Home page entry does not exist.");
       }
 
-      const episodes = (await bcms.content.entry.find(
-        "episode",
-        async () => true
-      )) as unknown as EpisodeEntry[];
-
       return {
         meta: entry.meta.en as HomePageEntryMeta,
-        episodes: episodes
-          .map((e) => e.meta.en as EpisodeEntryMeta)
-          .sort((a, b) => b.date - a.date),
       };
     },
   }),
