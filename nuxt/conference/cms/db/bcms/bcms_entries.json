@@ -1,0 +1,37 @@
+{
+  "64425c62eb7380e95b95e764": {
+    "_id": "64425c62eb7380e95b95e764",
+    "createdAt": 1682070626557,
+    "updatedAt": 1682070626557,
+    "cid": "1",
+    "templateId": "64425c5beb7380e95b95e762",
+    "userId": "111111111111111111111111",
+    "status": "64425272680cc89b3a427eac",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "3bfd2ced-b4ce-4ba1-9587-f351aade4204",
+            "data": [
+              "Header"
+            ]
+          },
+          {
+            "id": "4838957e-dcb6-4e83-953c-75ee1284a8b6",
+            "data": [
+              "header"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  }
+}
