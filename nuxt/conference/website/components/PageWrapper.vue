@@ -4,16 +4,21 @@
     <main>
       <slot />
     </main>
+    <LayoutFooter :data="footer" />
   </div>
 </template>
 
 <script setup lang="ts">
 import { PropType } from "vue";
-import { HeaderEntryMeta } from "~~/bcms/types";
+import { FooterEntryMeta, HeaderEntryMeta } from "~~/bcms/types";
 
 defineProps({
   header: {
     type: Object as PropType<HeaderEntryMeta>,
+    required: true,
+  },
+  footer: {
+    type: Object as PropType<FooterEntryMeta>,
     required: true,
   },
 });

@@ -2,12 +2,20 @@
   "644252f4680cc89b3a427eb7": {
     "_id": "644252f4680cc89b3a427eb7",
     "createdAt": 1682068212755,
-    "updatedAt": 1682070622169,
+    "updatedAt": 1682072978919,
     "access": {
       "templates": [
         {
           "_id": "64425c5beb7380e95b95e762",
           "name": "header",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "64426170eb7380e95b95e766",
+          "name": "footer",
           "get": true,
           "post": false,
           "put": false,
