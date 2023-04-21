@@ -1,5 +1,5 @@
 <template>
-  <PageWrapper v-if="data"> </PageWrapper>
+  <PageWrapper v-if="data" :header="data.header"> </PageWrapper>
 </template>
 
 <script setup lang="ts">

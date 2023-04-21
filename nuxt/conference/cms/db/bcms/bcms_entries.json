@@ -2,7 +2,7 @@
   "64425c62eb7380e95b95e764": {
     "_id": "64425c62eb7380e95b95e764",
     "createdAt": 1682070626557,
-    "updatedAt": 1682070626557,
+    "updatedAt": 1682070938306,
     "cid": "1",
     "templateId": "64425c5beb7380e95b95e762",
     "userId": "111111111111111111111111",
@@ -21,6 +21,59 @@
             "id": "4838957e-dcb6-4e83-953c-75ee1284a8b6",
             "data": [
               "header"
+            ]
+          },
+          {
+            "id": "fa2d13e2-547d-4cc7-a504-fd48b204bfe9",
+            "data": [
+              {
+                "_id": "64425d3feb7380e95b95e765",
+                "alt_text": "Logo",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "4f7e0021-7894-47cb-beb4-ce99462fce1b",
+            "data": [
+              {
+                "id": "69a7a981-6ac1-4c25-ba01-a734ef85afa0",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Contact us"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "2677e7aa-3961-4ad7-bab4-53da3c1bf1e6",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "#ticket",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Ticket"
+                      }
+                    ]
+                  }
+                ]
+              }
             ]
           }
         ]

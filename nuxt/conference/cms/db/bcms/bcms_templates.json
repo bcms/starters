@@ -2,7 +2,7 @@
   "64425c5beb7380e95b95e762": {
     "_id": "64425c5beb7380e95b95e762",
     "createdAt": 1682070619309,
-    "updatedAt": 1682070619309,
+    "updatedAt": 1682070902974,
     "cid": "1",
     "desc": "",
     "label": "Header",
@@ -30,6 +30,28 @@
         "type": "STRING",
         "defaultData": [
           ""
+        ]
+      },
+      {
+        "id": "fa2d13e2-547d-4cc7-a504-fd48b204bfe9",
+        "name": "logo",
+        "label": "Logo",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "4f7e0021-7894-47cb-beb4-ce99462fce1b",
+        "name": "nav",
+        "label": "Nav",
+        "array": true,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
         ]
       }
     ]
