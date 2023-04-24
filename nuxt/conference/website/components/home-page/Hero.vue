@@ -30,19 +30,9 @@
           >
             Get your ticket now
           </span>
-          <svg
-            width="14"
-            height="13"
-            viewBox="0 0 14 13"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-[14px] h-[14px] lg:w-[18px] lg:h-[18px]"
-          >
-            <path
-              d="M7.20455 12.473L5.88778 11.169L9.83168 7.22514H0.25V5.32031H9.83168L5.88778 1.38281L7.20455 0.0724429L13.4048 6.27273L7.20455 12.473Z"
-              fill="white"
-            />
-          </svg>
+          <ArrowIcon
+            class="w-[14px] h-[14px] text-white lg:w-[18px] lg:h-[18px]"
+          />
         </button>
         <div
           class="text-2xl leading-none tracking-[-0.41px] text-appGray-500 font-medium text-center max-lg:hidden"
@@ -81,6 +71,7 @@ import { PropType } from "vue";
 import { HeroGroup } from "~~/bcms/types";
 import HeroSvg from "@/assets/media/hero-svg.svg";
 import { BCMSImage } from "~~/bcms-components";
+import ArrowIcon from "@/assets/icons/arrow.svg";
 
 defineProps({
   data: {

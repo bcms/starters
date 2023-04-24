@@ -1,6 +1,7 @@
 <template>
   <PageWrapper v-if="data" :header="data.header" :footer="data.footer">
     <HomePageHero :data="data.data.meta.hero" />
+    <HomePageAbout :data="data.data.meta.about" />
   </PageWrapper>
 </template>
 
