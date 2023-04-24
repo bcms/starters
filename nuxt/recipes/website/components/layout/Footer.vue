@@ -25,12 +25,15 @@
       <div
         class="text-[#898C8A] leading-none font-medium tracking-[-0.41px] md:flex md:items-center md:justify-between"
       >
-        <div
+        <a
+          href="https://thebcms.com/"
+          target="_blank"
+          rel="noopener noreferrer"
           class="flex items-center text-sm max-md:mb-3 lg:text-base lg:leading-none"
         >
           Powered by
           <BCMSLogo class="w-[55px] ml-2 lg:w-[83px] lg:h-6 lg:ml-3" />
-        </div>
+        </a>
         <div class="text-xs lg:text-base lg:leading-none">
           &copy; {{ new Date().getFullYear() }} BCMS. All rights reserved
         </div>

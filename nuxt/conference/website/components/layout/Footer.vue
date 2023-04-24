@@ -31,14 +31,19 @@
           >
             &copy; 2023 CONference. All rights reserved
           </div>
-          <div class="flex items-center justify-center lg:order-2">
+          <a
+            href="https://thebcms.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center justify-center lg:order-2"
+          >
             <span
               class="text-sm leading-none font-medium tracking-[-0.41px] mr-2 lg:text-base lg:leading-none lg:mr-1.5"
             >
               Powered by
             </span>
             <BCMSLogo class="w-[55px] lg:w-[83px]" />
-          </div>
+          </a>
         </div>
       </div>
     </div>

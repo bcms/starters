@@ -29,5 +29,524 @@
         ]
       }
     ]
+  },
+  "64428665eb7380e95b95e771": {
+    "_id": "64428665eb7380e95b95e771",
+    "createdAt": 1682081381020,
+    "updatedAt": 1682082186715,
+    "cid": "2",
+    "desc": "",
+    "label": "Hero",
+    "name": "hero",
+    "props": [
+      {
+        "id": "b767ef9e-f2f7-4b04-b2a7-c6321a012207",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "91359f97-00e2-4a81-b03c-8957c9c07a38",
+        "name": "gallery",
+        "label": "Gallery",
+        "array": true,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "19c322bc-c91e-4480-bf6f-19a3a1e831bb",
+        "name": "cover",
+        "label": "Cover",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      }
+    ]
+  },
+  "64428ee5eb7380e95b95e778": {
+    "_id": "64428ee5eb7380e95b95e778",
+    "createdAt": 1682083557891,
+    "updatedAt": 1682083580382,
+    "cid": "3",
+    "desc": "",
+    "label": "About",
+    "name": "about",
+    "props": [
+      {
+        "id": "723683c5-70bc-41d1-9ac8-5671221b4115",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "b508f3f4-eeae-41ea-bbf9-89aadcb46f2d",
+        "name": "cover",
+        "label": "Cover",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "e98c4685-4f47-46fb-994f-094e0541ab1a",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "e1429c63-a84f-455a-82db-d1b7dadc4c55",
+        "name": "topics",
+        "label": "Topics",
+        "array": true,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
+  },
+  "64429093eb7380e95b95e77a": {
+    "_id": "64429093eb7380e95b95e77a",
+    "createdAt": 1682083987170,
+    "updatedAt": 1682084583082,
+    "cid": "4",
+    "desc": "",
+    "label": "Speakers",
+    "name": "speakers",
+    "props": [
+      {
+        "id": "7ed99a67-12a3-4e50-ab5f-04d85c08a6b4",
+        "name": "cover",
+        "label": "Cover",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "20035b19-e796-4eea-9ac3-f024427198d2",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "44e4c4eb-3406-4932-a7eb-7eaa5bf3b54c",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "a2aba9ec-4c0d-4b8d-b847-b44e88542a9b",
+        "name": "speakers",
+        "label": "Speakers",
+        "array": true,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64429266eb7380e95b95e77b"
+        }
+      }
+    ]
+  },
+  "64429266eb7380e95b95e77b": {
+    "_id": "64429266eb7380e95b95e77b",
+    "createdAt": 1682084454999,
+    "updatedAt": 1682084552067,
+    "cid": "5",
+    "desc": "",
+    "label": "Speaker",
+    "name": "speaker",
+    "props": [
+      {
+        "id": "b73133d7-250e-4783-881a-5d9dfcbd8013",
+        "name": "name",
+        "label": "Name",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "47dbfda7-b87d-4a9d-a161-aa8bc701e7c3",
+        "name": "role",
+        "label": "Role",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "458dfde9-10d9-40c9-8821-bda3f0e81503",
+        "name": "avatar",
+        "label": "Avatar",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "91bee797-2a52-4036-8e08-2ac27250c1f2",
+        "name": "biography",
+        "label": "Biography",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "ae5297fb-6980-44d6-bafb-1f85bf71a0ae",
+        "name": "topic",
+        "label": "Topic",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
+  },
+  "644296f8eb7380e95b95e77f": {
+    "_id": "644296f8eb7380e95b95e77f",
+    "createdAt": 1682085624458,
+    "updatedAt": 1682085649645,
+    "cid": "6",
+    "desc": "",
+    "label": "Sponsors",
+    "name": "sponsors",
+    "props": [
+      {
+        "id": "68d63f36-9bca-48b7-aab6-4cf427d204db",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "bc26509d-cd1a-4b7c-81a2-57d3aad8ae5f",
+        "name": "sponsors",
+        "label": "Sponsors",
+        "array": true,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64429706eb7380e95b95e780"
+        }
+      }
+    ]
+  },
+  "64429706eb7380e95b95e780": {
+    "_id": "64429706eb7380e95b95e780",
+    "createdAt": 1682085638870,
+    "updatedAt": 1682085746432,
+    "cid": "7",
+    "desc": "",
+    "label": "Sponsor",
+    "name": "sponsor",
+    "props": [
+      {
+        "id": "8c7b901a-62d3-4673-9999-482bf911873a",
+        "name": "cover",
+        "label": "Cover",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "f69386d2-2e10-4ee5-bd50-15c3309b3777",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "c3f376ce-415a-4641-8fc4-f44f3e5c84e3",
+        "name": "tier",
+        "label": "Tier",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
+  },
+  "64429d61eb7380e95b95e782": {
+    "_id": "64429d61eb7380e95b95e782",
+    "createdAt": 1682087265884,
+    "updatedAt": 1682087321961,
+    "cid": "8",
+    "desc": "",
+    "label": "Tickets",
+    "name": "tickets",
+    "props": [
+      {
+        "id": "e35082ad-47ff-474f-be7d-3409543f9db4",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "cf2db6dc-0661-49ad-8e77-41b7f8e2635d",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "9c8b8cb2-0cba-45f4-85c3-3343672a691b",
+        "name": "tickets",
+        "label": "Tickets",
+        "array": true,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64429d90eb7380e95b95e783"
+        }
+      }
+    ]
+  },
+  "64429d90eb7380e95b95e783": {
+    "_id": "64429d90eb7380e95b95e783",
+    "createdAt": 1682087312728,
+    "updatedAt": 1682087370059,
+    "cid": "9",
+    "desc": "",
+    "label": "Ticket",
+    "name": "ticket",
+    "props": [
+      {
+        "id": "f4e0ddfa-3f1d-4286-ba79-98a2428acb73",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "2ee2e52f-7c02-449f-aeaf-adebd93b29cd",
+        "name": "price",
+        "label": "Price",
+        "array": false,
+        "required": true,
+        "type": "NUMBER",
+        "defaultData": [
+          0
+        ]
+      },
+      {
+        "id": "b5dc0f9a-c51b-4044-bca5-4d6bc09405b2",
+        "name": "discount_price",
+        "label": "Discount price",
+        "array": false,
+        "required": false,
+        "type": "NUMBER",
+        "defaultData": [
+          0
+        ]
+      },
+      {
+        "id": "8a5f92a0-f673-4dc6-bcd0-8d38ee232391",
+        "name": "background",
+        "label": "Background",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      }
+    ]
+  },
+  "6442a1bfeb7380e95b95e784": {
+    "_id": "6442a1bfeb7380e95b95e784",
+    "createdAt": 1682088383416,
+    "updatedAt": 1682088473142,
+    "cid": "a",
+    "desc": "",
+    "label": "Agenda",
+    "name": "agenda",
+    "props": [
+      {
+        "id": "7c9c029d-5897-4bff-9905-837b0c267b4d",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "5e8c17e0-b25b-408e-b1bb-561994a656fc",
+        "name": "days",
+        "label": "Days",
+        "array": true,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "6442a209eb7380e95b95e785"
+        }
+      }
+    ]
+  },
+  "6442a209eb7380e95b95e785": {
+    "_id": "6442a209eb7380e95b95e785",
+    "createdAt": 1682088457071,
+    "updatedAt": 1682320409048,
+    "cid": "b",
+    "desc": "",
+    "label": "Agenda day",
+    "name": "agenda_day",
+    "props": [
+      {
+        "id": "16ad7251-e98a-4ede-8e2e-bfa37680787a",
+        "name": "label",
+        "label": "Label",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "f1982f95-371e-4ae4-bd32-3d0d3de60716",
+        "name": "items",
+        "label": "Items",
+        "array": true,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64462aede8ed034f10accc78"
+        }
+      }
+    ]
+  },
+  "64462aede8ed034f10accc78": {
+    "_id": "64462aede8ed034f10accc78",
+    "createdAt": 1682320109944,
+    "updatedAt": 1682320173324,
+    "cid": "c",
+    "desc": "",
+    "label": "Agenda item",
+    "name": "agenda_item",
+    "props": [
+      {
+        "id": "c114125b-d6b9-4992-9b9b-827381846fb8",
+        "name": "hours",
+        "label": "Hours",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "169a3efe-3b5c-4ab8-8c24-fd1897a484b4",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "4288ba0d-aed5-4af5-9b00-8b9a6943c32d",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "9e630a8d-a8a8-48a8-bbaa-97a9b4bd9613",
+        "name": "location",
+        "label": "Location",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
   }
 }

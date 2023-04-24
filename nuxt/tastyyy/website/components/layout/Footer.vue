@@ -20,14 +20,19 @@
       <div
         class="flex flex-col items-center text-center md:flex-row md:justify-between"
       >
-        <div class="flex items-center max-md:mb-[14px]">
+        <a
+          href="https://thebcms.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center max-md:mb-[14px]"
+        >
           <span
             class="text-sm leading-none tracking-[-0.41px] text-appBody mr-2 md:text-base md:leading-none md:mr-3"
           >
             Powered by
           </span>
           <BCMSLogo class="w-[55px] md:w-[83px]" />
-        </div>
+        </a>
         <div
           class="text-xs leading-none text-appGray-500 md:text-base md:leading-none md:text-appBody"
         >

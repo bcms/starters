@@ -2,7 +2,7 @@
   <header>
     <div class="container">
       <nav
-        class="flex items-center justify-between pt-6 pb-8 lg:pt-12 lg:pb-[70px]"
+        class="flex items-center justify-between pt-6 pb-8 lg:pt-12 lg:pb-[72px]"
       >
         <NuxtLink to="/" class="flex">
           <BCMSImage :media="data.logo" svg class="w-[140px]" />

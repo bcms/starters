@@ -112,5 +112,106 @@
         ]
       }
     ]
+  },
+  "644277a6eb7380e95b95e76f": {
+    "_id": "644277a6eb7380e95b95e76f",
+    "createdAt": 1682077606455,
+    "updatedAt": 1682090682577,
+    "cid": "3",
+    "desc": "",
+    "label": "Home page",
+    "name": "home_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "4425822a-02e2-4aff-838d-f9a2a1930f7a",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "145f6f41-11c6-472e-ac23-7b3af3639bfc",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "06a0e0ba-b2e1-4d3e-a043-b4269a792540",
+        "name": "hero",
+        "label": "Hero",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64428665eb7380e95b95e771"
+        }
+      },
+      {
+        "id": "0dbba876-3e3c-4b1e-bc0d-b8415209091a",
+        "name": "about",
+        "label": "About",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64428ee5eb7380e95b95e778"
+        }
+      },
+      {
+        "id": "210f980c-723d-484f-8264-a0e957e889e6",
+        "name": "speakers",
+        "label": "Speakers",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64429093eb7380e95b95e77a"
+        }
+      },
+      {
+        "id": "11279d4b-fbeb-423f-9a6f-600090ab9077",
+        "name": "sponsors",
+        "label": "Sponsors",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "644296f8eb7380e95b95e77f"
+        }
+      },
+      {
+        "id": "4037b94a-3630-4c10-a09f-dcbfcb76a210",
+        "name": "tickets",
+        "label": "Tickets",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64429d61eb7380e95b95e782"
+        }
+      },
+      {
+        "id": "2bdcf8d6-1b4b-4d1a-b9d7-b24f6857d259",
+        "name": "agenda",
+        "label": "Agenda",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "6442a1bfeb7380e95b95e784"
+        }
+      }
+    ]
   }
 }

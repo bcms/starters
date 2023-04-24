@@ -56,14 +56,19 @@
             </li>
           </ul>
         </div>
-        <div class="flex items-center max-md:mb-4 lg:order-1">
+        <a
+          href="https://thebcms.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center max-md:mb-4 lg:order-1"
+        >
           <span
             class="text-sm leading-none tracking-[-0.41px] text-appGray-500 mr-2 lg:text-base lg:leading-none lg:mr-3"
           >
             Powered by
           </span>
           <BCMSLogo class="w-[55px] lg:w-[83px]" />
-        </div>
+        </a>
         <div
           class="text-sm leading-none tracking-[-0.41px] sm:text-right lg:order-3 lg:text-base lg:leading-none"
         >

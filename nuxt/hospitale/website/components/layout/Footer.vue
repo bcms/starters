@@ -26,7 +26,12 @@
             />
           </template>
         </nav>
-        <div class="flex items-center justify-center max-lg:mb-3 lg:order-1">
+        <a
+          href="https://thebcms.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center justify-center max-lg:mb-3 lg:order-1"
+        >
           <div
             class="text-sm leading-none font-medium tracking-[-0.41px] text-[#B2AFCC] mr-2 lg:text-base lg:leading-none lg:mr-3"
           >
@@ -62,7 +67,7 @@
               </clipPath>
             </defs>
           </svg>
-        </div>
+        </a>
         <div
           class="text-xs leading-none font-medium tracking-[-0.41px] text-center text-[#83808C] lg:order-3 lg:text-base lg:leading-none"
         >
