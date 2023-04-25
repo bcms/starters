@@ -3,6 +3,7 @@
     <HomePageHero :data="data.data.meta.hero" />
     <HomePageAbout :data="data.data.meta.about" />
     <HomePageSpeakers :data="data.data.meta.speakers" />
+    <HomePageSponsors :data="data.data.meta.sponsors" />
   </PageWrapper>
 </template>
 
