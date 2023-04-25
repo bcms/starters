@@ -376,7 +376,7 @@
   "64429d90eb7380e95b95e783": {
     "_id": "64429d90eb7380e95b95e783",
     "createdAt": 1682087312728,
-    "updatedAt": 1682087370059,
+    "updatedAt": 1682416265169,
     "cid": "9",
     "desc": "",
     "label": "Ticket",
@@ -423,6 +423,21 @@
         "required": true,
         "type": "MEDIA",
         "defaultData": []
+      },
+      {
+        "id": "8977da08-2701-4364-b8d5-52173b7c357d",
+        "name": "theme",
+        "label": "Theme",
+        "array": false,
+        "required": true,
+        "type": "ENUMERATION",
+        "defaultData": {
+          "items": [
+            "DARK",
+            "LIGHT"
+          ],
+          "selected": ""
+        }
       }
     ]
   },

@@ -4,6 +4,7 @@
     <HomePageAbout :data="data.data.meta.about" />
     <HomePageSpeakers :data="data.data.meta.speakers" />
     <HomePageSponsors :data="data.data.meta.sponsors" />
+    <HomePageTickets :data="data.data.meta.tickets" />
   </PageWrapper>
 </template>
 
