@@ -8,7 +8,12 @@
           <BCMSImage :media="data.logo" svg class="w-[140px]" />
         </NuxtLink>
         <ul class="flex items-center space-x-4 lg:space-x-10">
-          <li v-for="(item, index) in data.nav" :key="index">
+          <li
+            v-for="(item, index) in data.nav"
+            :key="index"
+            :class="index === 0 ? 'cursor-pointer' : ''"
+            @click="index === 0 ? (showContactForm = true) : ''"
+          >
             <ContentManager
               :item="item"
               class="text-sm leading-none font-medium tracking-[-0.41px] uppercase lg:text-xl lg:leading-none"
@@ -18,6 +23,11 @@
       </nav>
     </div>
   </header>
+  <Teleport to="body">
+    <Transition name="fade">
+      <ContactForm v-if="showContactForm" @close="showContactForm = false" />
+    </Transition>
+  </Teleport>
 </template>
 
 <script setup lang="ts">
@@ -31,4 +41,6 @@ defineProps({
     required: true,
   },
 });
+
+const showContactForm = ref(false);
 </script>

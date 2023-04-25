@@ -89,11 +89,17 @@
       </div>
       <button
         class="flex px-7 py-[13px] bg-black rounded-[72px] text-sm leading-none tracking-[-0.04em] font-semibold text-white mx-auto lg:px-16 lg:py-8 lg:text-[32px] lg:leading-none"
+        @click="showContactForm = true"
       >
         Contact us
       </button>
     </div>
   </section>
+  <Teleport to="body">
+    <Transition name="fade">
+      <ContactForm v-if="showContactForm" @close="showContactForm = false" />
+    </Transition>
+  </Teleport>
 </template>
 
 <script setup lang="ts">
@@ -108,6 +114,8 @@ const props = defineProps({
     required: true,
   },
 });
+
+const showContactForm = ref(false);
 
 const activeTier = ref<"general" | "platinum" | "gold" | "pr partners">(
   "platinum"

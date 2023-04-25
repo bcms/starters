@@ -1,5 +1,5 @@
 <template>
-  <section class="pb-16 lg:pb-[130px]">
+  <section id="tickets" class="pb-16 scroll-m-5 lg:pb-[130px]">
     <div class="container">
       <div
         class="leading-none tracking-[-0.02em] font-semibold text-center mb-3 lg:text-5xl lg:leading-none lg:mb-4"

@@ -22,7 +22,8 @@
           :item="data.description"
           class="homeHero--description text-sm leading-[1.4] tracking-[-0.8px] text-appGray-500 max-lg:mb-8 lg:col-start-1 lg:row-start-2 lg:text-[26px] lg:leading-[1.4]"
         />
-        <button
+        <NuxtLink
+          to="#tickets"
           class="flex items-center px-5 py-[13px] bg-black rounded-[48px] lg:col-start-2 lg:row-start-1 lg:px-[26px] lg:py-[19px]"
         >
           <span
@@ -33,7 +34,7 @@
           <ArrowIcon
             class="w-[14px] h-[14px] text-white lg:w-[18px] lg:h-[18px]"
           />
-        </button>
+        </NuxtLink>
         <div
           class="text-2xl leading-none tracking-[-0.41px] text-appGray-500 font-medium text-center max-lg:hidden"
         >
