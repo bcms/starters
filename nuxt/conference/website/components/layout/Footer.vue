@@ -6,7 +6,7 @@
           class="flex items-center justify-center space-x-8 mb-14 lg:space-x-[74px] lg:mb-[72px]"
         >
           <NuxtLink
-            v-for="(item, index) in data.social"
+            v-for="(item, index) in data.meta.social"
             :key="index"
             :to="item.url"
             target="_blank"
@@ -20,11 +20,11 @@
           <div
             class="flex items-center space-x-1.5 text-sm leading-none tracking-[-0.41px] max-lg:mb-4 lg:text-base lg:leading-none lg:order-3"
           >
-            <a :href="`mailto:${data.email}`" class="flex">
-              {{ data.email }}
+            <a :href="`mailto:${data.meta.email}`" class="flex">
+              {{ data.meta.email }}
             </a>
             <div class="w-[3px] h-[3px] rounded-full bg-appGray-100" />
-            <button>Legal page</button>
+            <button @click="showLegalModal = true">Legal page</button>
           </div>
           <div
             class="flex items-end text-xs leading-none tracking-[-0.41px] max-lg:mb-8 lg:text-base lg:leading-none lg:order-1"
@@ -48,18 +48,29 @@
       </div>
     </div>
   </footer>
+  <Teleport to="body">
+    <Transition name="fade">
+      <LegalModal
+        v-if="showLegalModal"
+        :data="data.legal"
+        @close="showLegalModal = false"
+      />
+    </Transition>
+  </Teleport>
 </template>
 
 <script setup lang="ts">
 import { PropType } from "vue";
 import { BCMSImage } from "~~/bcms-components";
-import { FooterEntryMeta } from "~~/bcms/types";
 import BCMSLogo from "@/assets/media/bcms-logo.svg";
+import { FooterPageData } from "~~/types/footer";
 
 defineProps({
   data: {
-    type: Object as PropType<FooterEntryMeta>,
+    type: Object as PropType<FooterPageData>,
     required: true,
   },
 });
+
+const showLegalModal = ref(false);
 </script>

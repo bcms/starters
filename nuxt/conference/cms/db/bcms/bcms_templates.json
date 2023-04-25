@@ -213,5 +213,40 @@
         }
       }
     ]
+  },
+  "6447cdb6ee35003287262fa9": {
+    "_id": "6447cdb6ee35003287262fa9",
+    "createdAt": 1682427318938,
+    "updatedAt": 1682427373933,
+    "cid": "4",
+    "desc": "",
+    "label": "Legal",
+    "name": "legal",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "8fee0042-038d-40df-b3e5-ee73cce4ff09",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "1dcbf0db-db6b-4f7a-b31e-a53cb36b80ef",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
   }
 }

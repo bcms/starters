@@ -10,7 +10,8 @@
 
 <script setup lang="ts">
 import { PropType } from "vue";
-import { FooterEntryMeta, HeaderEntryMeta } from "~~/bcms/types";
+import { HeaderEntryMeta } from "~~/bcms/types";
+import { FooterPageData } from "~~/types/footer";
 
 defineProps({
   header: {
@@ -18,7 +19,7 @@ defineProps({
     required: true,
   },
   footer: {
-    type: Object as PropType<FooterEntryMeta>,
+    type: Object as PropType<FooterPageData>,
     required: true,
   },
 });

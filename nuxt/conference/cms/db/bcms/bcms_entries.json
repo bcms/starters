@@ -2092,5 +2092,304 @@
         "plainText": ""
       }
     ]
+  },
+  "6447cdc7ee35003287262faa": {
+    "_id": "6447cdc7ee35003287262faa",
+    "createdAt": 1682427335673,
+    "updatedAt": 1682427382009,
+    "cid": "4",
+    "templateId": "6447cdb6ee35003287262fa9",
+    "userId": "111111111111111111111111",
+    "status": "64425272680cc89b3a427eac",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "8fee0042-038d-40df-b3e5-ee73cce4ff09",
+            "data": [
+              "Privacy Policy"
+            ]
+          },
+          {
+            "id": "1dcbf0db-db6b-4f7a-b31e-a53cb36b80ef",
+            "data": [
+              "privacy-policy"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This privacy policy applies to the website CONference, operated by [company name]. At CONference, we are committed to protecting your privacy and ensuring that your personal information is safe and secure. This policy outlines the types of information we collect, how we use and protect that information, and your rights and choices with respect to your personal information."
+              }
+            ]
+          }
+        ],
+        "plainText": "this privacy policy applies to the website conference, operated by [company name]. at conference, we are committed to protecting your privacy and ensuring that your personal information is safe and secure. this policy outlines the types of information we collect, how we use and protect that information, and your rights and choices with respect to your personal information.\n\n"
+      }
+    ]
+  },
+  "6447cdd0ee35003287262fab": {
+    "_id": "6447cdd0ee35003287262fab",
+    "createdAt": 1682427344259,
+    "updatedAt": 1682427386837,
+    "cid": "5",
+    "templateId": "6447cdb6ee35003287262fa9",
+    "userId": "111111111111111111111111",
+    "status": "64425272680cc89b3a427eac",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "8fee0042-038d-40df-b3e5-ee73cce4ff09",
+            "data": [
+              "Information we collect"
+            ]
+          },
+          {
+            "id": "1dcbf0db-db6b-4f7a-b31e-a53cb36b80ef",
+            "data": [
+              "information-we-collect"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "When you use CONference, we may collect certain personal information that you provide to us, such as your name, email address, phone number, and other contact information. We may also collect information about your education, employment history, skills, and experience, as well as any other information you choose to provide in your profile or job applications."
+              }
+            ]
+          }
+        ],
+        "plainText": "when you use conference, we may collect certain personal information that you provide to us, such as your name, email address, phone number, and other contact information. we may also collect information about your education, employment history, skills, and experience, as well as any other information you choose to provide in your profile or job applications.\n\n"
+      }
+    ]
+  },
+  "6447cde0ee35003287262fac": {
+    "_id": "6447cde0ee35003287262fac",
+    "createdAt": 1682427360491,
+    "updatedAt": 1682427360491,
+    "cid": "6",
+    "templateId": "6447cdb6ee35003287262fa9",
+    "userId": "111111111111111111111111",
+    "status": "64425272680cc89b3a427eac",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "8fee0042-038d-40df-b3e5-ee73cce4ff09",
+            "data": [
+              "How we use your information"
+            ]
+          },
+          {
+            "id": "1dcbf0db-db6b-4f7a-b31e-a53cb36b80ef",
+            "data": [
+              "how-we-use-your-information"
+            ]
+          },
+          {
+            "id": "ddf47807-905d-43ab-9894-0336f9cb1dde",
+            "data": [
+              {
+                "id": "9cf6b40c-2b37-40f1-aa0c-2fb995ab090c",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "asd"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We use the information we collect to provide our services, including matching job seekers with potential employers and facilitating the application process. We may also use your information to communicate with you, provide customer support, and improve our services."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "We may share your information with third-party service providers who assist us in providing our services, such as email and hosting providers. We may also share your information with employers who have job openings that match your skills and experience. However, we will never share your information with third parties for marketing purposes without your consent."
+              }
+            ]
+          }
+        ],
+        "plainText": "we use the information we collect to provide our services, including matching job seekers with potential employers and facilitating the application process. we may also use your information to communicate with you, provide customer support, and improve our services.we may share your information with third-party service providers who assist us in providing our services, such as email and hosting providers. we may also share your information with employers who have job openings that match your skills and experience. however, we will never share your information with third parties for marketing purposes without your consent.\n\n"
+      }
+    ]
+  },
+  "6447ce03ee35003287262fad": {
+    "_id": "6447ce03ee35003287262fad",
+    "createdAt": 1682427395236,
+    "updatedAt": 1682427395236,
+    "cid": "7",
+    "templateId": "6447cdb6ee35003287262fa9",
+    "userId": "111111111111111111111111",
+    "status": "64425272680cc89b3a427eac",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "8fee0042-038d-40df-b3e5-ee73cce4ff09",
+            "data": [
+              "How we protect your information"
+            ]
+          },
+          {
+            "id": "1dcbf0db-db6b-4f7a-b31e-a53cb36b80ef",
+            "data": [
+              "how-we-protect-your-information"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We take reasonable and appropriate measures to protect your personal information from unauthorized access, disclosure, and misuse. We use industry-standard security technologies and procedures to safeguard your information, and we regularly review and update our security practices to ensure that your information is safe and secure."
+              }
+            ]
+          }
+        ],
+        "plainText": "we take reasonable and appropriate measures to protect your personal information from unauthorized access, disclosure, and misuse. we use industry-standard security technologies and procedures to safeguard your information, and we regularly review and update our security practices to ensure that your information is safe and secure.\n\n"
+      }
+    ]
+  },
+  "6447ce0aee35003287262fae": {
+    "_id": "6447ce0aee35003287262fae",
+    "createdAt": 1682427402185,
+    "updatedAt": 1682427402185,
+    "cid": "8",
+    "templateId": "6447cdb6ee35003287262fa9",
+    "userId": "111111111111111111111111",
+    "status": "64425272680cc89b3a427eac",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "8fee0042-038d-40df-b3e5-ee73cce4ff09",
+            "data": [
+              "Your rights and choices"
+            ]
+          },
+          {
+            "id": "1dcbf0db-db6b-4f7a-b31e-a53cb36b80ef",
+            "data": [
+              "your-rights-and-choices"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "You have the right to access, update, and delete the personal information we hold about you. You may also object to the processing of your personal information or request that we restrict the use of your information. To exercise your rights or make a request, please contact us using the contact information below."
+              }
+            ]
+          }
+        ],
+        "plainText": "you have the right to access, update, and delete the personal information we hold about you. you may also object to the processing of your personal information or request that we restrict the use of your information. to exercise your rights or make a request, please contact us using the contact information below.\n\n"
+      }
+    ]
+  },
+  "6447ce11ee35003287262faf": {
+    "_id": "6447ce11ee35003287262faf",
+    "createdAt": 1682427409363,
+    "updatedAt": 1682427409363,
+    "cid": "9",
+    "templateId": "6447cdb6ee35003287262fa9",
+    "userId": "111111111111111111111111",
+    "status": "64425272680cc89b3a427eac",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "8fee0042-038d-40df-b3e5-ee73cce4ff09",
+            "data": [
+              "Contact Us"
+            ]
+          },
+          {
+            "id": "1dcbf0db-db6b-4f7a-b31e-a53cb36b80ef",
+            "data": [
+              "contact-us"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "If you have any questions or concerns about this privacy policy or our use of your personal information, please contact us at [contact email]. We will respond to your request as soon as possible."
+              }
+            ]
+          }
+        ],
+        "plainText": "if you have any questions or concerns about this privacy policy or our use of your personal information, please contact us at [contact email]. we will respond to your request as soon as possible.\n\n"
+      }
+    ]
   }
 }

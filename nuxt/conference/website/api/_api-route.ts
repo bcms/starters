@@ -4,6 +4,7 @@ import {
   FooterEntryMeta,
   HeaderEntry,
   HeaderEntryMeta,
+  LegalEntry,
 } from "~~/bcms/types";
 import { APIResponse, Languages } from "~~/types";
 
@@ -47,10 +48,17 @@ export function apiRoute<Result = unknown, Body = unknown>(
         async () => true
       )) as unknown as FooterEntry;
       const result = await route.handler(data);
+      const legal = (await data.bcms.content.entry.find(
+        "legal",
+        async () => true
+      )) as unknown as LegalEntry[];
       return {
         data: result,
         header: header.meta[lng] as HeaderEntryMeta,
-        footer: footer.meta[lng] as FooterEntryMeta,
+        footer: {
+          meta: footer.meta[lng] as FooterEntryMeta,
+          legal,
+        },
       };
     },
   };
