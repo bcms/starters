@@ -9,7 +9,7 @@
         <div
           v-for="(item, index) in data"
           :key="index"
-          class="border border-[#E6E6E6] rounded-[10px] px-4 py-6 lg:rounded-2xl lg:px-8 lg:py-10"
+          class="border border-[#E6E6E6] rounded-lg p-4 lg:p-6"
         >
           <h2
             class="leading-none font-medium tracking-[-0.41px] text-appGray-600 mb-3 lg:text-[32px] lg:leading-none lg:mb-5"
@@ -18,7 +18,7 @@
           </h2>
           <ContentManager
             :item="item.content.en || []"
-            class="text-sm leading-[1.4] font-medium tracking-[-0.02em] text-appGray-500 lg:text-lg lg:leading-normal"
+            class="text-sm leading-[1.4] font-medium tracking-[-0.02em] text-appGray-500 lg:text-lg lg:leading-normal lg:tracking-[-0.04em]"
           />
         </div>
       </div>
