@@ -85,7 +85,7 @@
             />
           </SwiperSlide>
         </Swiper>
-        <div class="homeSponsors--pagination" />
+        <div class="homeSponsors--pagination swiper--customPagination" />
       </div>
       <button
         class="flex px-7 py-[13px] bg-black rounded-[72px] text-sm leading-none tracking-[-0.04em] font-semibold text-white mx-auto lg:px-16 lg:py-8 lg:text-[32px] lg:leading-none"
@@ -119,17 +119,3 @@ const filteredSponsors = computed(() => {
   );
 });
 </script>
-
-<style lang="scss">
-.homeSponsors {
-  &--pagination {
-    @apply flex items-center justify-center gap-2 lg:max-w-[440px] lg:mx-auto;
-    .swiper-pagination-bullet {
-      @apply flex-1 h-1 rounded-lg bg-appGray-300 transition-all duration-300 opacity-100 m-0 #{!important};
-      &-active {
-        @apply flex-[2] bg-appText #{!important};
-      }
-    }
-  }
-}
-</style>

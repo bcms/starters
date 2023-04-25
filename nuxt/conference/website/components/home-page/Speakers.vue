@@ -63,7 +63,7 @@
             <ContentManager :item="speaker.topic" class="homeSpeakers--rt" />
           </SwiperSlide>
         </Swiper>
-        <div class="homeSpeakers--pagination" />
+        <div class="homeSpeakers--pagination swiper--customPagination" />
       </div>
     </div>
   </section>
@@ -93,15 +93,6 @@ defineProps({
       @apply text-sm leading-[1.4] tracking-[-0.8px] font-medium text-appGray-500 lg:text-[26px] lg:leading-[1.4];
       strong {
         @apply text-appText font-medium;
-      }
-    }
-  }
-  &--pagination {
-    @apply flex items-center justify-center gap-2 lg:max-w-[440px] lg:mx-auto;
-    .swiper-pagination-bullet {
-      @apply flex-1 h-1 rounded-lg bg-appGray-300 transition-all duration-300 opacity-100 m-0 #{!important};
-      &-active {
-        @apply flex-[2] bg-appText #{!important};
       }
     }
   }
