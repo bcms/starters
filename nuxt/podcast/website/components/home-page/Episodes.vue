@@ -18,7 +18,7 @@
         <EpisodesItem
           v-for="(e, index) in episodes"
           :key="index"
-          :item="e.episode"
+          :item="e"
           :index="index + 1"
           class="bg-appBody"
         />
@@ -30,7 +30,6 @@
 <script setup lang="ts">
 import { PropType } from "vue";
 import { EpisodeEntryMeta, HomeEpisodesGroup } from "~~/bcms/types";
-import { EpisodeWithSettings } from "~~/types";
 
 defineProps({
   data: {
@@ -38,7 +37,7 @@ defineProps({
     required: true,
   },
   episodes: {
-    type: Array as PropType<EpisodeWithSettings[]>,
+    type: Array as PropType<EpisodeEntryMeta[]>,
     required: true,
   },
 });

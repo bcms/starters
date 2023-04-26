@@ -11,17 +11,5 @@ export default defineNuxtPlugin(async (nuxtApp) => {
     url: "/episode",
   });
 
-  setEpisodes(
-    episodes
-      .map((e) => {
-        return {
-          episode: e,
-          settings: {
-            currentTime: 0,
-            isPlaying: false,
-          },
-        };
-      })
-      .sort((a, b) => b.episode.date - a.episode.date)
-  );
+  setEpisodes(episodes.sort((a, b) => b.date - a.date));
 });

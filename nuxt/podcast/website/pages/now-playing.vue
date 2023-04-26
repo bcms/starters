@@ -35,14 +35,14 @@
               <div
                 class="absolute top-0 left-0 h-full bg-white rounded-md"
                 :style="{
-                  width: episodeTime,
+                  width: getEpisodeProgressBarWidth,
                 }"
               />
             </div>
             <div
               class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-2.5 h-2.5 bg-white rounded-full lg:w-[15px] lg:h-[15px]"
               :style="{
-                left: episodeTime,
+                left: getEpisodeProgressBarWidth,
               }"
             />
             <div
@@ -51,7 +51,7 @@
             />
             <input
               v-if="episodeDOM"
-              :value="episodeTime"
+              :value="getEpisodeProgressBarWidth"
               type="range"
               step="1"
               min="0"
@@ -63,7 +63,7 @@
             <div
               class="text-xs leading-none tracking-[-0.8px] text-appGray-400 lg:text-base lg:leading-none"
             >
-              {{ currentPlayTime }}
+              {{ getCurrentPlayTime }}
             </div>
             <div
               class="text-xs leading-none tracking-[-0.8px] text-appGray-400 lg:text-base lg:leading-none"
@@ -113,8 +113,11 @@ const {
   settings,
   setSettings,
   getPlayingEpisodeFileLength,
+  getCurrentPlayTime,
+  getEpisodeProgressBarWidth,
   handlePrevEpisode,
   handleNextEpisode,
+  handleRewind,
 } = usePlayingEpisode();
 
 const { data } = useAsyncData(async (ctx) => {
@@ -126,34 +129,6 @@ const { data } = useAsyncData(async (ctx) => {
 const { setOgHead } = useHeadTags();
 
 const fileLength = ref("...");
-
-const currentPlayTime = computed(() => {
-  const currentTime = settings.value.currentTime;
-  const minutes = Math.floor(currentTime / 60);
-  const seconds = Math.floor(currentTime % 60);
-
-  return `${minutes}:${seconds < 10 ? "0" + seconds : seconds}`;
-});
-
-const episodeTime = computed(() => {
-  return `${
-    (settings.value.currentTime /
-      getPlayingEpisodeFileLength.value.durationInSeconds) *
-    100
-  }%`;
-});
-
-const handleRewind = (event: MouseEvent) => {
-  const target = event.currentTarget as HTMLElement;
-  const videoDuration = getPlayingEpisodeFileLength.value.durationInSeconds;
-  const bcr = target.getBoundingClientRect();
-  const clickedXPositionPercentage =
-    ((event.clientX - bcr.left) / bcr.width) * 100;
-
-  setSettings({
-    currentTime: (videoDuration / 100) * clickedXPositionPercentage,
-  });
-};
 
 onMounted(() => {
   if (!episode.value) {

@@ -74,7 +74,7 @@
             </div>
             <div class="flex items-center space-x-2.5 xl:w-full">
               <div class="leading-none tracking-[-0.8px] text-appGray-400">
-                {{ currentPlayTime }}
+                {{ getCurrentPlayTime }}
               </div>
               <div class="relative flex-1">
                 <div
@@ -83,7 +83,7 @@
                   <div
                     class="absolute top-0 left-0 h-full bg-white rounded"
                     :style="{
-                      width: episodeTime,
+                      width: getEpisodeProgressBarWidth,
                     }"
                   />
                 </div>
@@ -153,8 +153,11 @@ const {
   settings,
   setSettings,
   getPlayingEpisodeFileLength,
+  getCurrentPlayTime,
+  getEpisodeProgressBarWidth,
   handlePrevEpisode,
   handleNextEpisode,
+  handleRewind,
 } = usePlayingEpisode();
 
 const fileLength = ref("...");
@@ -163,39 +166,11 @@ const volumeWidth = computed(() => {
   return `${settings.value.volume * 100}%`;
 });
 
-const currentPlayTime = computed(() => {
-  const currentTime = settings.value.currentTime;
-  const minutes = Math.floor(currentTime / 60);
-  const seconds = Math.floor(currentTime % 60);
-
-  return `${minutes}:${seconds < 10 ? "0" + seconds : seconds}`;
-});
-
-const episodeTime = computed(() => {
-  return `${
-    (settings.value.currentTime /
-      getPlayingEpisodeFileLength.value.durationInSeconds) *
-    100
-  }%`;
-});
-
 const handleVolumeChange = (event: Event) => {
   const target = event.target as HTMLInputElement;
 
   setSettings({
     volume: +target.value,
-  });
-};
-
-const handleRewind = (event: MouseEvent) => {
-  const target = event.currentTarget as HTMLElement;
-  const videoDuration = getPlayingEpisodeFileLength.value.durationInSeconds;
-  const bcr = target.getBoundingClientRect();
-  const clickedXPositionPercentage =
-    ((event.clientX - bcr.left) / bcr.width) * 100;
-
-  setSettings({
-    currentTime: (videoDuration / 100) * clickedXPositionPercentage,
   });
 };
 

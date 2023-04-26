@@ -1,6 +1,5 @@
 import { bcmsMediaToUrl } from "@becomes/cms-most/frontend";
 import { EpisodeEntryMeta } from "~~/bcms/types";
-import { EpisodeWithSettings } from "~~/types";
 
 export const usePlayingEpisode = () => {
   const { episodes } = useEpisodes();
@@ -50,6 +49,20 @@ export const usePlayingEpisode = () => {
       };
     }
   });
+  const getCurrentPlayTime = computed(() => {
+    const currentTime = settings.value.currentTime;
+    const minutes = Math.floor(currentTime / 60);
+    const seconds = Math.floor(currentTime % 60);
+
+    return `${minutes}:${seconds < 10 ? "0" + seconds : seconds}`;
+  });
+  const getEpisodeProgressBarWidth = computed(() => {
+    return `${
+      (settings.value.currentTime /
+        getPlayingEpisodeFileLength.value.durationInSeconds) *
+      100
+    }%`;
+  });
 
   const settings = useState("episode-settings", () => {
     return {
@@ -98,13 +111,13 @@ export const usePlayingEpisode = () => {
   const handlePrevEpisode = () => {
     const { item, index } = episodes.value.reduce(
       (acc, e, i) => {
-        if (!acc.item && e.episode.slug === episode.value?.slug) {
+        if (!acc.item && e.slug === episode.value?.slug) {
           acc.item = e;
           acc.index = i;
         }
         return acc;
       },
-      { item: null as EpisodeWithSettings | null, index: -1 }
+      { item: null as EpisodeEntryMeta | null, index: -1 }
     );
 
     if (index > 0 && item) {
@@ -112,14 +125,12 @@ export const usePlayingEpisode = () => {
         playing: false,
       });
 
-      const audio = new Audio(
-        bcmsMediaToUrl(episodes.value[index - 1].episode.file)
-      );
+      const audio = new Audio(bcmsMediaToUrl(episodes.value[index - 1].file));
       audio.preload = "metadata";
       audio.onloadedmetadata = () => {
         episodeDOM.value = audio;
 
-        setEpisode(episodes.value[index - 1].episode);
+        setEpisode(episodes.value[index - 1]);
         setSettings({
           playing: true,
         });
@@ -129,13 +140,13 @@ export const usePlayingEpisode = () => {
   const handleNextEpisode = () => {
     const { item, index } = episodes.value.reduce(
       (acc, e, i) => {
-        if (!acc.item && e.episode.slug === episode.value?.slug) {
+        if (!acc.item && e.slug === episode.value?.slug) {
           acc.item = e;
           acc.index = i;
         }
         return acc;
       },
-      { item: null as EpisodeWithSettings | null, index: -1 }
+      { item: null as EpisodeEntryMeta | null, index: -1 }
     );
 
     if (index < episodes.value.length - 1 && item) {
@@ -143,19 +154,28 @@ export const usePlayingEpisode = () => {
         playing: false,
       });
 
-      const audio = new Audio(
-        bcmsMediaToUrl(episodes.value[index + 1].episode.file)
-      );
+      const audio = new Audio(bcmsMediaToUrl(episodes.value[index + 1].file));
       audio.preload = "metadata";
       audio.onloadedmetadata = () => {
         episodeDOM.value = audio;
 
-        setEpisode(episodes.value[index + 1].episode);
+        setEpisode(episodes.value[index + 1]);
         setSettings({
           playing: true,
         });
       };
     }
+  };
+  const handleRewind = (event: MouseEvent) => {
+    const target = event.currentTarget as HTMLElement;
+    const videoDuration = getPlayingEpisodeFileLength.value.durationInSeconds;
+    const bcr = target.getBoundingClientRect();
+    const clickedXPositionPercentage =
+      ((event.clientX - bcr.left) / bcr.width) * 100;
+
+    setSettings({
+      currentTime: (videoDuration / 100) * clickedXPositionPercentage,
+    });
   };
 
   watch(settings.value, (newVal) => {
@@ -179,9 +199,12 @@ export const usePlayingEpisode = () => {
     setEpisodeDOM,
     getFileLength,
     getPlayingEpisodeFileLength,
+    getCurrentPlayTime,
+    getEpisodeProgressBarWidth,
     settings,
     setSettings,
     handlePrevEpisode,
     handleNextEpisode,
+    handleRewind,
   };
 };

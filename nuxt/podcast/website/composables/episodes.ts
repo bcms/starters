@@ -1,9 +1,9 @@
-import { EpisodeWithSettings } from "~~/types";
+import { EpisodeEntryMeta } from "~~/bcms/types";
 
 export const useEpisodes = () => {
-  const episodes = useState<EpisodeWithSettings[]>("episodes", () => []);
+  const episodes = useState<EpisodeEntryMeta[]>("episodes", () => []);
 
-  const setEpisodes = (val: EpisodeWithSettings[]) => {
+  const setEpisodes = (val: EpisodeEntryMeta[]) => {
     episodes.value = val;
   };
 

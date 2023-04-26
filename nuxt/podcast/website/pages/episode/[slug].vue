@@ -165,11 +165,11 @@ const handlePlayPause = () => {
   }
 };
 
-onMounted(() => {
-  // TODO: data.value is undefined when coming first time to this page from the home page
-  setTimeout(() => {
-    if (data.value) {
-      const audio = new Audio(bcmsMediaToUrl(data.value.data.meta.file));
+watch(
+  () => data.value?.data,
+  (newVal) => {
+    if (newVal) {
+      const audio = new Audio(bcmsMediaToUrl(newVal.meta.file));
       audio.preload = "metadata";
 
       audio.onloadedmetadata = () => {
@@ -183,8 +183,8 @@ onMounted(() => {
           .padStart(2, "0")}`;
       };
     }
-  }, 100);
-});
+  }
+);
 
 const { setOgHead } = useHeadTags();
 useHead(() =>
