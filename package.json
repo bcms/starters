@@ -1,0 +1,31 @@
+{
+  "name": "@thebcms/starters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "update:cms": "npm-tool --update-cms",
+    "update:nuxt:packages": "npm-tool --update-nuxt-packages",
+    "build-and-deploy": "npm-tool --build-and-deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcms/starters.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bcms/starters/issues"
+  },
+  "homepage": "https://github.com/bcms/starters#readme",
+  "devDependencies": {
+    "@banez/child_process": "^1.0.3",
+    "@banez/fs": "^1.0.3",
+    "@banez/npm-tool": "^1.1.1",
+    "@becomes/cms-cli": "^3.1.1",
+    "@types/adm-zip": "^0.5.0",
+    "adm-zip": "^0.5.10"
+  }
+}

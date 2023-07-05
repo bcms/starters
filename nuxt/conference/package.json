@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@becomes/cms-cli": "^3.1.1",
+    "@becomes/cms-client": "^3.3.5",
+    "@becomes/cms-most": "^2.7.2",
+    "@types/uuid": "^9.0.1",
+    "autoprefixer": "^10.4.14",
+    "nuxt": "^3.6.1",
+    "nuxt-plugin-bcms": "^3.1.1",
+    "nuxt-svgo": "^1.1.0",
+    "postcss": "^8.4.21",
+    "sass": "^1.56.2",
+    "tailwindcss": "^3.2.7",
+    "typescript": "^4.9.4",
+    "uuid": "^9.0.0",
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "nuxt-swiper": "^1.1.0"
+  }
+}
