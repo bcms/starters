@@ -46,7 +46,11 @@
               target="_blank"
               class="flex items-center justify-center w-[135px] rounded-full bg-appText aspect-square md:w-[54px]"
             >
-              <BCMSImage :media="link.icon" class="w-10 h-10 md:w-6 md:h-6" :svg="true"/>
+              <BCMSImage
+                :media="link.icon"
+                class="w-10 h-10 cover md:w-6 md:h-6"
+                :svg="true"
+              />
             </NuxtLink>
           </div>
         </div>
