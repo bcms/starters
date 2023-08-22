@@ -1,6 +1,6 @@
 import {TextWithImageWidget} from "~/bcms/types";
 import {ContentManager} from "~/components/ContentManager";
-import {BCMSImage} from "~/bcms-components";
+import {BCMSImage} from "next-plugin-bcms/components";
 import {useMemo} from "react";
 import {BCMSEntryContentParsedItem} from "@becomes/cms-client/types";
 
