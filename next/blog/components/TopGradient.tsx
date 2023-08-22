@@ -1,6 +1,7 @@
 import classNames from "classnames";
+import React from "react";
 
-export function TopGradient (props: {className?: string}): JSX.Element {
+export const TopGradient: React.FC<{className?: string}> = (props) => {
     return (
         <div
             className={classNames(

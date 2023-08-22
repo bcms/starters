@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import {FormFieldsI} from "~/components/content-page/Form";
+import React from "react";
 
 type TextInputType = "text" | "email" | "textarea"
 
@@ -17,7 +18,7 @@ export interface TextI {
     onChange: (value: string, field: keyof FormFieldsI) => void
 }
 
-export function FormText(props: TextI): JSX.Element {
+export const FormText: React.FC<TextI> = (props) => {
 
     const handleInputChange = (e: any): void => {
         const element = e?.target as HTMLInputElement

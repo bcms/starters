@@ -1,14 +1,14 @@
 import {TopGradient} from "~/components/TopGradient";
 import {ContentManager} from "~/components/ContentManager";
-import {BCMSImage} from "~/bcms-components";
+import {BCMSImage} from "next-plugin-bcms/components";
 import {PageWrapper} from "~/components/PageWrapper";
-import {GetServerSideProps} from "next";
+import { GetStaticProps} from "next";
 import {AboutPageData, APIResponse} from "~/types";
 import {AboutApi} from "~/api";
 import {useHeadTags} from "~/composables/og-head";
-import {useEffect} from "react";
+import React, {useEffect} from "react";
 
-export default function AboutMe ({data, footer, header}: APIResponse<AboutPageData>): JSX.Element {
+const AboutMe: React.FC<APIResponse<AboutPageData>> = ({data, footer, header}) => {
     const {setOgHead} = useHeadTags()
     useEffect(() => {
         setOgHead({
@@ -44,7 +44,7 @@ export default function AboutMe ({data, footer, header}: APIResponse<AboutPageDa
 }
 
 
-export const getServerSideProps: GetServerSideProps<APIResponse<AboutPageData>> = async () => {
+export const getStaticProps: GetStaticProps<APIResponse<AboutPageData>> = async () => {
     const aboutApi = new AboutApi()
     const data = await aboutApi.getAboutPageData()
     return {
@@ -53,3 +53,5 @@ export const getServerSideProps: GetServerSideProps<APIResponse<AboutPageData>> 
         }
     }
 }
+
+export default AboutMe

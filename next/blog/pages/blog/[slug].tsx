@@ -10,9 +10,9 @@ import {GetServerSideProps, GetServerSidePropsContext} from "next";
 import {BlogsApi} from "~/api";
 import {dateUtil} from "~/utils/date";
 import {useHeadTags} from "~/composables/og-head";
-import {useEffect} from "react";
+import React, {useEffect} from "react";
 
-export default function SingleBlogPage({header, footer, data}: APIResponse<BlogPageData>): JSX.Element {
+const SingleBlogPage: React.FC<APIResponse<BlogPageData>> = ({header, footer, data}) => {
     const {setOgHead} = useHeadTags()
     useEffect(() => {
         setOgHead({
@@ -98,3 +98,5 @@ export const getServerSideProps: GetServerSideProps<APIResponse<BlogPageData>> =
     }
 }
 
+
+export default SingleBlogPage

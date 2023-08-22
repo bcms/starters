@@ -1,5 +1,6 @@
 import {SearchIcon} from '@/assets/icons/search';
 import classNames from "classnames";
+import React from "react";
 
 interface SearchProps {
     value: string;
@@ -9,7 +10,7 @@ interface SearchProps {
     className?: string
 }
 
-export function Search ({ value, onEnter, onChange, className }:SearchProps): JSX.Element {
+export const Search: React.FC<SearchProps> = ({ value, onEnter, onChange, className }) => {
     const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
         onChange(e.target.value);
     };

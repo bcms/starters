@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { BlogEntryMeta, HomeHeroGroup } from '~~/bcms/types';
-import { BCMSImage } from '~~/bcms-components';
+import { BCMSImage } from 'next-plugin-bcms/components';
 import Link from 'next/link';
 import {TopGradient} from "~/components/TopGradient";
 import {Search} from "~/components/Search";
@@ -11,7 +11,7 @@ interface HomeHeroProps {
     data: HomeHeroGroup;
 }
 
-export function HomepageHero ({ data }: HomeHeroProps): JSX.Element {
+export const HomepageHero: React.FC<HomeHeroProps>  =  ({ data }) => {
     const [searchValue, setSearchValue] = useState('');
     const router = useRouter()
     const handleSearchEnter = () => router.push(`/blog?s=${searchValue}`);

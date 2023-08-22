@@ -1,14 +1,14 @@
-import {useEffect, useMemo, useState} from 'react';
+import React, {useEffect, useMemo, useState} from 'react';
 import { useRouter } from 'next/router';
 import {BlogsCard} from '~/components/blogs/Card';
 import {PageWrapper} from '~/components/PageWrapper';
 import {TopGradient} from '~/components/TopGradient';
 import {BlogsApi} from "~/api";
 import {APIResponse, BlogsPageData} from "~/types";
-import {GetServerSideProps} from "next";
+import {GetStaticProps} from "next";
 import {useHeadTags} from '~/composables/og-head'
 import {Search} from "~/components/Search";
-export default function BlogsPage ({data, footer, header}: APIResponse<BlogsPageData>): JSX.Element {
+const BlogsPage: React.FC< APIResponse<BlogsPageData>> = ({data, footer, header}) => {
     const [searchVal, setSearchVal] = useState('');
     const [selectedCategory, setSelectedCategory] = useState('');
 
@@ -134,7 +134,7 @@ export default function BlogsPage ({data, footer, header}: APIResponse<BlogsPage
     );
 }
 
-export const getServerSideProps: GetServerSideProps<APIResponse<BlogsPageData>> = async () => {
+export const getStaticProps: GetStaticProps<APIResponse<BlogsPageData>> = async () => {
     const blogsApi = new BlogsApi()
     const data = await blogsApi.getBlogs()
     return {
@@ -143,3 +143,5 @@ export const getServerSideProps: GetServerSideProps<APIResponse<BlogsPageData>> 
         }
     }
 }
+
+export default BlogsPage

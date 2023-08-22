@@ -1,12 +1,12 @@
 import {TopGradient} from "~/components/TopGradient";
 import {PageWrapper} from "~/components/PageWrapper";
 import { APIResponse, ContactPageData} from "~/types";
-import {GetServerSideProps} from "next";
+import { GetStaticProps} from "next";
 import { ContactApi} from "~/api";
 import {ContactPageForm} from "~/components/content-page/Form";
-import {useEffect} from "react";
+import React, {useEffect} from "react";
 import {useHeadTags} from '~/composables/og-head'
-export default function ContactPage({data, header, footer}: APIResponse<ContactPageData>): JSX.Element {
+const ContactPage: React.FC<APIResponse<ContactPageData>> = ({data, header, footer}) =>{
     const {setOgHead} = useHeadTags()
     useEffect(() => {
         setOgHead({
@@ -45,7 +45,7 @@ export default function ContactPage({data, header, footer}: APIResponse<ContactP
 }
 
 
-export const getServerSideProps: GetServerSideProps<APIResponse<ContactPageData>> = async () => {
+export const getStaticProps: GetStaticProps<APIResponse<ContactPageData>> = async () => {
     const contactApi = new ContactApi()
     const data = await contactApi.getContactPage()
     return {
@@ -54,3 +54,5 @@ export const getServerSideProps: GetServerSideProps<APIResponse<ContactPageData>
         }
     }
 }
+
+export default ContactPage

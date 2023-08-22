@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import {GetServerSideProps} from 'next';
+import React, { useEffect } from 'react';
+import {GetStaticProps} from 'next';
 import { APIResponse, HomePageData } from '~~/types';
 import { useHeadTags } from '~/composables/og-head';
 import {PageWrapper} from "~/components/PageWrapper";
@@ -7,7 +7,7 @@ import { HomeApi} from "~/api";
 import {HomepageHero} from "~/components/home-page/Hero";
 import {HomePageBlogsList} from "~/components/home-page/BlogList";
 
-export default function HomePage (props: APIResponse<HomePageData>): JSX.Element {
+const HomePage: React.FC<APIResponse<HomePageData>> =  (props) =>  {
   const { setOgHead } = useHeadTags();
   useEffect(() => {
     setOgHead({
@@ -27,7 +27,7 @@ export default function HomePage (props: APIResponse<HomePageData>): JSX.Element
   );
 }
 
-export const getServerSideProps: GetServerSideProps<APIResponse<HomePageData>> = async () => {
+export const getStaticProps: GetStaticProps<APIResponse<HomePageData>> = async () => {
   const homeAPiClient = new HomeApi()
   const data = await homeAPiClient.getHomePageData()
   return {
@@ -36,3 +36,5 @@ export const getServerSideProps: GetServerSideProps<APIResponse<HomePageData>> =
     }
   }
 }
+
+export default  HomePage

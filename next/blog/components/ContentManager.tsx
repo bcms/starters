@@ -1,8 +1,11 @@
 import React, { useRef, useEffect } from 'react';
-import {BCMSContentManager, BCMSWidgetComponents} from "~/bcms-components";
+import {BCMSContentManager} from "next-plugin-bcms/components";
+import {BCMSWidgetComponents} from "next-plugin-bcms/components/content-manager";
 import {useRouter} from "next/router";
 
-export function ContentManager ({ item, widgetComponents, className}: {item: any, widgetComponents?: BCMSWidgetComponents, className?: string}) : JSX.Element {
+
+
+export const ContentManager: React.FC<{item: any, widgetComponents?: BCMSWidgetComponents, className?: string}> = ({ item, widgetComponents, className}) => {
     const router = useRouter()
     const managerDOM = useRef<HTMLAnchorElement>(null);
     function parseInternalLinks (): void {
@@ -30,9 +33,8 @@ export function ContentManager ({ item, widgetComponents, className}: {item: any
     return (
         <BCMSContentManager
             className={className}
-            ref={managerDOM}
             items={item}
-            widgetComponents={widgetComponents as BCMSWidgetComponents}
+            widgetComponents={widgetComponents  as BCMSWidgetComponents}
         />
     );
 }

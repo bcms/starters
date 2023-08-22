@@ -1,4 +1,4 @@
-import {useState} from "react";
+import React, {useState} from "react";
 import {EmailIcon} from "@/assets/icons/email";
 import {FormText} from "~/components/form/Text";
 import NextImage from 'next/image'
@@ -14,7 +14,7 @@ export interface FormFieldsI {
     question: string
 }
 
-export function ContactPageForm(props: ContactFormI): JSX.Element {
+export const ContactPageForm: React.FC<ContactFormI> = (props) => {
     const [form, setForm] = useState<FormFieldsI>({
         name: '',
         email: '',

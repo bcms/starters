@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import NextLink from 'next/link';
 import {MailGunIcon} from '@/assets/icons/mailgun';
 import {PaperPlaneIcon} from '@/assets/icons/paper-plane';
-import { BCMSImage } from '~~/bcms-components';
+import { BCMSImage } from 'next-plugin-bcms/components';
 import {ContentManager} from "~/components/ContentManager";
 import {FooterEntryMeta} from "~/bcms/types";
 
@@ -10,7 +10,7 @@ interface FooterI {
     data: FooterEntryMeta;
 }
 
-export function Footer ({ data }: FooterI): JSX.Element {
+export const Footer: React.FC<FooterI> = ({ data }) => {
     const [email, setEmail] = useState('');
 
     const handleSubmit = (event: React.FormEvent) => {

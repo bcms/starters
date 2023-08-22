@@ -1,10 +1,10 @@
 import type { AppProps } from 'next/app';
 import { BCMSImageConfig } from '@becomes/cms-most/frontend';
-// import 'tailwindcss/tailwind.css'
 import '~/assets/css/main.css'
 import '~/assets/css/reset.css'
 import '~/assets/css/transition.css'
 import '~/assets/css/prose.css'
+import React from "react";
 
 BCMSImageConfig.cmsOrigin =
     process.env.NEXT_PUBLIC_BCMS_API_ORIGIN ||
@@ -14,7 +14,7 @@ BCMSImageConfig.publicApiKeyId =
 
 BCMSImageConfig.localeImageProcessing = true
 
-function MyApp({ Component, pageProps }: AppProps): JSX.Element {
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return <Component {...pageProps} />;
 }
 

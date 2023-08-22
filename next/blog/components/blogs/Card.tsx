@@ -1,14 +1,16 @@
 import { BlogLight } from '~~/types';
-import {BCMSImage} from '~~/bcms-components';
+import {BCMSImage} from 'next-plugin-bcms/components';
 import {OpenIcon} from '@/assets/icons/open';
 import {ContentManager} from "~/components/ContentManager";
 import {dateUtil} from '~/utils/date'
 import NextLink from "next/link";
+import React from "react";
+
 interface BlogsCardProps {
     blog: BlogLight;
 }
 
-export function  BlogsCard ({ blog }: BlogsCardProps): JSX.Element {
+export const BlogsCard: React.FC<BlogsCardProps> = ({ blog }) => {
     return (
         <article>
             <NextLink href={`/blog/${blog.slug}`} passHref={true}>

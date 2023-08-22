@@ -1,14 +1,13 @@
 import NextLink from 'next/link'
-import { BCMSImage } from "~~/bcms-components";
+import { BCMSImage } from "next-plugin-bcms/components";
 import classNames from "classnames";
 import {ContentManager} from "~/components/ContentManager";
 import { HeaderEntryMeta } from "~~/bcms/types";
-import { useState} from "react";
+import React, { useState} from "react";
 import {MenuIcon} from "@/assets/icons/menu";
 import {XIcon} from "@/assets/icons/x";
 import {TopGradient} from "~/components/TopGradient";
-
-export function Header ({data}: {data:HeaderEntryMeta }): JSX.Element {
+export const Header: React.FC<{data: HeaderEntryMeta }> = ({data}) => {
     const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false)
     return (
         <header className="relative z-50">

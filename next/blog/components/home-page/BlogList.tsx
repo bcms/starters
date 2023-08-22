@@ -1,3 +1,4 @@
+import React from "react";
 import { BlogLight } from '~~/types';
 import {ArrowIcon} from '@/assets/icons/arrow';
 import NextLink from 'next/link';
@@ -7,7 +8,7 @@ interface HomePageBlogsListI {
     blogs: BlogLight[];
 }
 
-export function HomePageBlogsList ({ blogs }:HomePageBlogsListI): JSX.Element {
+export const HomePageBlogsList: React.FC<HomePageBlogsListI> =  ({ blogs }) => {
     return (
         <section className="pb-8 md:pb-20 lg:pb-[104px]">
             <div className="container">
