@@ -1,16 +1,21 @@
 import {APIResponse, BlogPageData} from "~/types";
 import {PageWrapper} from "~/components/PageWrapper";
-import {BCMSImage} from "~/bcms-components";
+import {BCMSImage} from "next-plugin-bcms/components";
 import {ContentManager} from "~/components/ContentManager";
 import NextLink from "next/link";
 import {ArrowIcon} from "~/assets/icons/arrow";
 import {BlogsCard} from "~/components/blogs/Card";
 import {TopGradient} from "~/components/TopGradient";
-import {GetServerSideProps, GetServerSidePropsContext} from "next";
+import {
+    GetStaticPaths,
+    GetStaticProps,
+    GetStaticPropsContext
+} from "next";
 import {BlogsApi} from "~/api";
 import {dateUtil} from "~/utils/date";
 import {useHeadTags} from "~/composables/og-head";
 import React, {useEffect} from "react";
+import {NextParsedUrlQuery} from "next/dist/server/request-meta";
 
 const SingleBlogPage: React.FC<APIResponse<BlogPageData>> = ({header, footer, data}) => {
     const {setOgHead} = useHeadTags()
@@ -86,11 +91,24 @@ const SingleBlogPage: React.FC<APIResponse<BlogPageData>> = ({header, footer, da
         </PageWrapper>)
 }
 
+interface ParamsI extends NextParsedUrlQuery {
+    slug: string
+}
+export const getStaticPaths: GetStaticPaths<ParamsI> = async () => {
+    const blogApi = new BlogsApi()
+    const blogPosts = await blogApi.getBlogs()
 
-export const getServerSideProps: GetServerSideProps<APIResponse<BlogPageData>> = async (context: GetServerSidePropsContext) => {
-    const params = context?.params
+    const paths = blogPosts.data.blogs.map(({slug}) => ({params: {slug}}))
+    return {
+        paths,
+        fallback: false
+    };
+}
+
+export const getStaticProps: GetStaticProps<APIResponse<BlogPageData> | {data: null}> = async (context: GetStaticPropsContext) => {
+    const slug = context?.params
     const blogsApi = new BlogsApi()
-    const data = await blogsApi.getSingleBlog(params as any)
+    const data = await blogsApi.getSingleBlog(slug as any)
     return {
         props: {
             ...data
