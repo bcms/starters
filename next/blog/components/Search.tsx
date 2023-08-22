@@ -1,6 +1,7 @@
-import {SearchIcon} from '@/assets/icons/search';
+import SearchIcon from '@/assets/icons/search.svg';
 import classNames from "classnames";
 import React from "react";
+import NextImage from "next/image";
 
 interface SearchProps {
     value: string;
@@ -25,7 +26,8 @@ export const Search: React.FC<SearchProps> = ({ value, onEnter, onChange, classN
             onSubmit={handleSubmit}
             className={classNames('flex items-center border border-appGray-100 rounded-[48px] px-4 max-w-[848px] mx-auto md:px-6 lg:px-8', className)}
         >
-            <SearchIcon
+            <NextImage
+                src={SearchIcon}
                 className="w-[14px] h-[14px] mr-1.5 md:w-6 md:h-6 md:mr-2.5 lg:w-8 lg:h-6 lg:mr-[14px]"
             />
             <label className="w-full">

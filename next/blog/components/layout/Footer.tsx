@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import NextLink from 'next/link';
-import {MailGunIcon} from '@/assets/icons/mailgun';
-import {PaperPlaneIcon} from '@/assets/icons/paper-plane';
+import MailGunIcon from '@/assets/icons/mailgun.svg';
+import PaperPlaneIcon from '@/assets/icons/paper-plane.svg';
 import { BCMSImage } from 'next-plugin-bcms/components';
 import {ContentManager} from "~/components/ContentManager";
 import {FooterEntryMeta} from "~/bcms/types";
+import NextImage from "next/image";
 
 interface FooterI {
     data: FooterEntryMeta;
@@ -36,7 +37,7 @@ export const Footer: React.FC<FooterI> = ({ data }) => {
                             onSubmit={handleSubmit}
                             className="flex items-center bg-white pl-[14px] pr-2 rounded-[48px] max-md:mb-6 md:pl-[18px] lg:w-full lg:max-w-[600px]"
                         >
-                            <MailGunIcon className="w-4 h-4 flex-shrink-0 md:w-5 md:h-5" />
+                            <NextImage src={MailGunIcon} className="w-4 h-4 flex-shrink-0 md:w-5 md:h-5" />
                             <label className="w-full flex-1">
                                 <input
                                     value={email}
@@ -50,7 +51,7 @@ export const Footer: React.FC<FooterI> = ({ data }) => {
                                 type="submit"
                                 className="flex items-center justify-center w-6 h-6 bg-appText rounded-full flex-shrink-0 md:w-10 md:h-10"
                             >
-                                <PaperPlaneIcon className="w-2.5 h-2.5 md:w-4 md:h-4" />
+                                <NextImage src={PaperPlaneIcon} className="w-2.5 h-2.5 md:w-4 md:h-4" />
                             </button>
                         </form>
                         <div className="grid grid-cols-2 justify-items-center gap-4 md:flex md:items-center lg:gap-6">

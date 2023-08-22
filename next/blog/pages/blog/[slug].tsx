@@ -3,7 +3,7 @@ import {PageWrapper} from "~/components/PageWrapper";
 import {BCMSImage} from "next-plugin-bcms/components";
 import {ContentManager} from "~/components/ContentManager";
 import NextLink from "next/link";
-import {ArrowIcon} from "~/assets/icons/arrow";
+import ArrowIcon from "~/assets/icons/arrow.svg";
 import {BlogsCard} from "~/components/blogs/Card";
 import {TopGradient} from "~/components/TopGradient";
 import {
@@ -16,6 +16,7 @@ import {dateUtil} from "~/utils/date";
 import {useHeadTags} from "~/composables/og-head";
 import React, {useEffect} from "react";
 import {NextParsedUrlQuery} from "next/dist/server/request-meta";
+import NextImage from "next/image";
 
 const SingleBlogPage: React.FC<APIResponse<BlogPageData>> = ({header, footer, data}) => {
     const {setOgHead} = useHeadTags()
@@ -68,7 +69,8 @@ const SingleBlogPage: React.FC<APIResponse<BlogPageData>> = ({header, footer, da
                                     >
                 See all posts
               </span>
-                                <ArrowIcon
+                                <NextImage
+                                    src={ArrowIcon}
                                     className="w-[14px] h-[14px] md:w-4 md:h-4 lg:w-5 lg:h-5"
                                 />
                             </a>

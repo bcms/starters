@@ -4,16 +4,17 @@ import classNames from "classnames";
 import {ContentManager} from "~/components/ContentManager";
 import { HeaderEntryMeta } from "~~/bcms/types";
 import React, { useState} from "react";
-import {MenuIcon} from "@/assets/icons/menu";
-import {XIcon} from "@/assets/icons/x";
+import MenuIcon from "@/assets/icons/menu.svg";
+import XIcon from "@/assets/icons/x.svg";
 import {TopGradient} from "~/components/TopGradient";
+import NextImage from "next/image";
 export const Header: React.FC<{data: HeaderEntryMeta }> = ({data}) => {
     const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false)
     return (
         <header className="relative z-50">
             <div className="relative z-10 container">
                 <nav className="relative flex items-center justify-between pt-6">
-                    <NextLink href="/" className="flex" passHref={true}>
+                    <NextLink href="/" className="flex">
                        <a>
                            <BCMSImage
                                media={data.logo}
@@ -39,7 +40,8 @@ export const Header: React.FC<{data: HeaderEntryMeta }> = ({data}) => {
                         onClick={() => setShowMobileMenu(!showMobileMenu)}
                     >
                         {showMobileMenu ? (
-                            <XIcon
+                            <NextImage
+                                src={XIcon}
                                 className={`w-6 h-6 ${
                                     showMobileMenu
                                         ? 'max-md:grayscale max-md:brightness-0 max-md:invert'
@@ -47,7 +49,7 @@ export const Header: React.FC<{data: HeaderEntryMeta }> = ({data}) => {
                                 }`}
                             />
                         ) : (
-                            <MenuIcon className="w-6 h-6" />
+                            <NextImage src={MenuIcon} className="w-6 h-6" />
                         )}
                     </button>
 </nav>

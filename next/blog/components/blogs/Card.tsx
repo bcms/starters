@@ -1,10 +1,11 @@
 import { BlogLight } from '~~/types';
 import {BCMSImage} from 'next-plugin-bcms/components';
-import {OpenIcon} from '@/assets/icons/open';
+import OpenIcon from '@/assets/icons/open.svg';
 import {ContentManager} from "~/components/ContentManager";
 import {dateUtil} from '~/utils/date'
 import NextLink from "next/link";
 import React from "react";
+import NextImage from "next/image";
 
 interface BlogsCardProps {
     blog: BlogLight;
@@ -37,7 +38,7 @@ export const BlogsCard: React.FC<BlogsCardProps> = ({ blog }) => {
                           {blog.title}
                       </div>
                       <div className="flex items-center justify-center p-0.5 rounded bg-[#F2F2F2] xl:p-1">
-                          <OpenIcon className="w-3 h-3 xl:w-4 xl:h-4" />
+                          <NextImage src={OpenIcon} className="w-3 h-3 xl:w-4 xl:h-4" />
                       </div>
                   </div>
                   <ContentManager

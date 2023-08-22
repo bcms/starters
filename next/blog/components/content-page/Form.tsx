@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {EmailIcon} from "@/assets/icons/email";
+import EmailIcon from "@/assets/icons/email.svg";
 import {FormText} from "~/components/form/Text";
 import NextImage from 'next/image'
 import EmailImage from '@/assets/media/email-bg.png'
@@ -77,7 +77,7 @@ export const ContactPageForm: React.FC<ContactFormI> = (props) => {
                             className="relative flex items-center justify-center w-[227px] aspect-square rounded-full lg:w-[400px]"
                         >
                             <div className="relative z-10 flex flex-col items-center">
-                                <EmailIcon className="w-8 h-8 mb-2 lg:w-12 lg:h-12 lg:mb-6"/>
+                                <NextImage src={EmailIcon} className="w-8 h-8 mb-2 lg:w-12 lg:h-12 lg:mb-6"/>
                                 <div
                                     className="leading-none font-medium tracking-[-0.41px] text-white lg:text-xl lg:leading-none"
                                 >
