@@ -13,8 +13,8 @@ module.exports = createBcmsMostConfig({
     },
   },
   media: {
-    output: 'public',
-    download: false,
+    output: 'public/api',
+    download: true,
   },
   enableClientCache: true,
 });
