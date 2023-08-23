@@ -17,6 +17,7 @@ import {useHeadTags} from "~/composables/og-head";
 import React, {useEffect} from "react";
 import {NextParsedUrlQuery} from "next/dist/server/request-meta";
 import NextImage from "next/image";
+import {Widgets} from "~/components/widgets/Widgets";
 
 const SingleBlogPage: React.FC<APIResponse<BlogPageData>> = ({header, footer, data}) => {
     const {setOgHead} = useHeadTags()
@@ -49,7 +50,7 @@ const SingleBlogPage: React.FC<APIResponse<BlogPageData>> = ({header, footer, da
                             className="aspect-[2.07] rounded-lg overflow-hidden w-full cover mb-6 md:mb-8 lg:aspect-[2.43]
                         lg:rounded-2xl lg:mb-12"
                         />
-                        <ContentManager item={data.content} className="prose"/>
+                        <ContentManager item={data.content} widgetComponents={Widgets as any} className="prose"/>
                     </div>
                     <div className="max-md:hidden">
                         <div className="flex items-center justify-between mb-8 lg:mb-12">
