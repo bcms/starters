@@ -7,6 +7,7 @@ import {AboutPageData, APIResponse} from "~/types";
 import {AboutApi} from "~/api";
 import {useHeadTags} from "~/composables/og-head";
 import React, {useEffect} from "react";
+import {Widgets} from "~/components/widgets/Widgets";
 
 const AboutMe: React.FC<APIResponse<AboutPageData>> = ({data, footer, header}) => {
     const {setOgHead} = useHeadTags()
@@ -35,7 +36,7 @@ const AboutMe: React.FC<APIResponse<AboutPageData>> = ({data, footer, header}) =
                         <BCMSImage media={data.meta.cover} className="w-full h-full cover" />
                         <div className="absolute top-0 left-0 w-full h-full bg-black/50" />
                     </div>
-                    <ContentManager item={data.content} className="prose" />
+                    <ContentManager item={data.content} widgetComponents={Widgets as any} className="prose" />
                 </div>
                 <TopGradient />
             </div>
