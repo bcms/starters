@@ -21,11 +21,11 @@
                 class="w-8 h-8 rounded-full cover mr-3 lg:w-12 lg:h-12 lg:mr-[14px]"
               />
               <div>
-                <div
+                <h1
                   class="text-sm leading-none font-medium font-PlayfairDisplay tracking-[-0.41px] mb-1.5 lg:text-base lg:leading-none lg:mb-2.5"
                 >
                   {{ meta.title }}
-                </div>
+                </h1>
                 <div class="flex items-center">
                   <LocationIcon
                     class="w-3 h-3 flex-shrink-0 text-appGray-600 mr-1 lg:w-[14px] lg:h-[14px]"

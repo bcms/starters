@@ -3,6 +3,7 @@
     <div class="pt-6 pb-14 md:pt-10 md:pb-20 lg:pt-16 lg:pb-[120px]">
       <div class="container">
         <div class="grid grid-cols-1 gap-4 max-w-[850px] mx-auto lg:gap-6">
+          <h1 class="sr-only">Legal page content</h1>
           <div
             v-for="(item, index) in data.data.entries"
             :key="index"

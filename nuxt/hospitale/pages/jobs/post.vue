@@ -6,6 +6,7 @@
           <div
             class="grid grid-cols-1 gap-6 bg-[#E3E1DC] border border-[#B0AEAB] rounded-[14px] p-6 mb-6 lg:mb-10"
           >
+            <h1 class="sr-only">Post your job</h1>
             <template v-if="activeStep === 1">
               <FormText
                 v-model="stepOne.jobTitle.value"

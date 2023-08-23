@@ -1,5 +1,6 @@
 <template>
   <PageWrapper v-if="data" :header="data.header" :footer="data.footer">
+    <h1 class="sr-only">Conference website</h1>
     <HomePageHero :data="data.data.meta.hero" />
     <HomePageAbout :data="data.data.meta.about" />
     <HomePageSpeakers :data="data.data.meta.speakers" />
