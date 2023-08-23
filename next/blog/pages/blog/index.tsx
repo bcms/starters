@@ -55,6 +55,8 @@ const BlogsPage: React.FC< APIResponse<BlogsPageData>> = ({data, footer, header}
         );
     }, [data.blogs, searchVal, selectedCategory]);
 
+    const searchHandler = (): void => { return }
+
     return (
         <PageWrapper header={header} footer={footer}>
             <div className="relative pt-10 pb-8 md:py-[72px] lg:pb-[100px] xl:pb-[128px]">
@@ -75,7 +77,7 @@ const BlogsPage: React.FC< APIResponse<BlogsPageData>> = ({data, footer, header}
                             </h2>
                         </div>
                         <div className="max-w-[848px] mx-auto">
-                            <Search onChange={() => {}} onEnter={() => {}} value="searchVal" className="mb-3 lg:mb-6" />
+                            <Search onChange={searchHandler} onEnter={searchHandler} value="searchVal" className="mb-3 lg:mb-6" />
                             <div className="grid grid-cols-2 gap-2.5 md:grid-cols-3 lg:grid-cols-5 lg:gap-[18px]">
                                 {categories.map((category, index) => (
                                     <button
