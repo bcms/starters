@@ -9,7 +9,7 @@ import {GetStaticProps} from "next";
 import {useHeadTags} from '~/composables/og-head'
 import {Search} from "~/components/Search";
 const BlogsPage: React.FC< APIResponse<BlogsPageData>> = ({data, footer, header}) => {
-    const [searchVal, setSearchVal] = useState('');
+    const [searchVal, setSearchVal] = useState('searchVal');
     const [selectedCategory, setSelectedCategory] = useState('');
 
     const route = useRouter();
@@ -55,7 +55,7 @@ const BlogsPage: React.FC< APIResponse<BlogsPageData>> = ({data, footer, header}
         );
     }, [data.blogs, searchVal, selectedCategory]);
 
-    const searchHandler = (): void => { return }
+    const inputFocusHandler = (): void => { return }
 
     return (
         <PageWrapper header={header} footer={footer}>
@@ -77,7 +77,7 @@ const BlogsPage: React.FC< APIResponse<BlogsPageData>> = ({data, footer, header}
                             </h2>
                         </div>
                         <div className="max-w-[848px] mx-auto">
-                            <Search onChange={searchHandler} onEnter={searchHandler} value="searchVal" className="mb-3 lg:mb-6" />
+                            <Search onChange={(value) => setSearchVal(value)} onEnter={inputFocusHandler} value={searchVal} className="mb-3 lg:mb-6" />
                             <div className="grid grid-cols-2 gap-2.5 md:grid-cols-3 lg:grid-cols-5 lg:gap-[18px]">
                                 {categories.map((category, index) => (
                                     <button

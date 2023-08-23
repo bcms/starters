@@ -56,21 +56,22 @@ export const Footer: React.FC<FooterI> = ({ data }) => {
                         </form>
                         <div className="grid grid-cols-2 justify-items-center gap-4 md:flex md:items-center lg:gap-6">
                             {data.social.map((link, index) => (
-                                <NextLink
-                                    passHref={true}
-                                    key={index}
-                                    href={link.url}
-                                    target="_blank"
-                                    className="flex items-center justify-center w-[135px] rounded-full bg-appText aspect-square md:w-[54px]"
-                                >
-                                   <a>
-                                       <BCMSImage
-                                           media={link.icon}
-                                           className="w-10 h-10 cover md:w-6 md:h-6"
-                                           svg
-                                       />
-                                   </a>
-                                </NextLink>
+                                <div className="bg-appText flex items-center justify-center w-[135px] rounded-full aspect-square md:w-[54px]">
+                                    <NextLink
+                                        passHref={true}
+                                        key={index}
+                                        href={link.url}
+                                        target="_blank"
+                                    >
+                                        <a>
+                                            <BCMSImage
+                                                media={link.icon}
+                                                className="w-10 h-10 cover md:w-6 md:h-6"
+                                                svg
+                                            />
+                                        </a>
+                                    </NextLink>
+                                </div>
                             ))}
                         </div>
                     </div>
