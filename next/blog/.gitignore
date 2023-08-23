@@ -43,3 +43,4 @@ yarn-error.log*
 /public/bcms-media
 /public/api/bcms-images
 /bcms-components
+/public/api/bcms-media
