@@ -81,6 +81,9 @@ export const useHeadTags = () => {
           href: `${domain}${routePath.value}`,
         },
       ],
+      htmlAttrs: {
+        lang: 'en'
+      },
     };
   };
 
