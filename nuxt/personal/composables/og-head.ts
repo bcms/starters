@@ -17,7 +17,7 @@ export const useHeadTags = () => {
     if (!description) description = "";
     if (!image) image = "/thumbnail.jpg";
 
-    const domain = "http://localhost:3000";
+    const domain = "https://personal-nuxt.thebcms.com";
 
     return {
       title: title,
