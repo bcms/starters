@@ -15,44 +15,13 @@
     "jsx": "preserve",
     "incremental": true,
     "baseUrl": "./",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "paths": {
-      "~~": [
-        "."
-      ],
-      "~~/*": [
-        "./*"
-      ],
-      "@@": [
-        "."
-      ],
-      "@@/*": [
-        "./*"
-      ],
-      "~": [
-        "."
-      ],
-      "~/*": [
-        "./*"
-      ],
-      "@": [
-        "."
-      ],
-      "@/*": [
-        "./*"
-      ],
-      "assets": [
-        "assets"
-      ],
-      "public": [
-        "public"
-      ]
+      "@": ["./"],
+      "@/*": ["./*"]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "../../nuxt/blog/.nuxt/types/imports.d.ts"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
