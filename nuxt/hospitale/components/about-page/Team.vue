@@ -52,9 +52,9 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
-import { AboutTeamGroup, TeamMemberEntryMeta } from "~~/bcms/types";
+import { PropType } from 'vue';
+import { BCMSImage } from '@/bcms-components';
+import { AboutTeamGroup, TeamMemberEntryMeta } from '@/bcms/types';
 
 defineProps({
   data: {

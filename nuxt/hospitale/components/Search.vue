@@ -1,5 +1,7 @@
 <template>
-  <label class="relative flex items-center border-b border-appGray-400 w-full overflow-hidden">
+  <label
+    class="relative flex items-center border-b border-appGray-400 w-full overflow-hidden"
+  >
     <component :is="icon" class="w-[14px] h-[14px] flex-shrink-0" />
     <input
       :value="searchValue.toLowerCase()"
@@ -24,13 +26,14 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import SearchIcon from "@/assets/icons/search.svg";
+import { PropType } from 'vue';
+import SearchIcon from '@/assets/icons/search.svg';
 
 const props = defineProps({
   value: {
     type: String,
     required: false,
+    default: '',
   },
   options: {
     type: Array as PropType<
@@ -43,7 +46,7 @@ const props = defineProps({
   placeholder: {
     type: String,
     required: false,
-    default: "Search",
+    default: 'Search',
   },
   icon: {
     type: Object as PropType<any>,
@@ -52,9 +55,9 @@ const props = defineProps({
   },
 });
 
-const emits = defineEmits(["input"]);
+const emits = defineEmits(['input']);
 
-const searchValue = ref("");
+const searchValue = ref('');
 
 const filteredOptions = computed(() => {
   return (
@@ -70,11 +73,11 @@ const placeholderSuggestion = computed(() => {
   for (let i = 0; i < filteredOptions.value.length; i++) {
     const recipe = filteredOptions.value[i];
 
-    const words = recipe.title.split(" ");
+    const words = recipe.title.split(' ');
 
     if (
       words.some((e) =>
-        e.toLowerCase().startsWith(searchValue.value.toLowerCase())
+        e.toLowerCase().startsWith(searchValue.value.toLowerCase()),
       )
     ) {
       suggestions.push(recipe.title.toLowerCase());
@@ -83,7 +86,7 @@ const placeholderSuggestion = computed(() => {
 
   if (suggestions[0]) {
     return suggestions[0].slice(
-      suggestions[0].indexOf(searchValue.value.toLowerCase())
+      suggestions[0].indexOf(searchValue.value.toLowerCase()),
     );
   }
 });
@@ -93,14 +96,14 @@ const handleInput = (event: Event) => {
 
   searchValue.value = target.value;
 
-  emits("input", target.value);
+  emits('input', target.value);
 };
 
 const handleTabPress = (event: KeyboardEvent) => {
   const placeholderValue = placeholderSuggestion.value?.slice(
-    searchValue.value.length
+    searchValue.value.length,
   );
-  if (event.key === "Tab" && placeholderValue && placeholderValue.length > 0) {
+  if (event.key === 'Tab' && placeholderValue && placeholderValue.length > 0) {
     searchValue.value = `${searchValue.value}${placeholderValue}`;
   }
 };

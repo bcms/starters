@@ -180,13 +180,14 @@
             </template>
             <Btn class="justify-center w-full lg:mt-4" @click="handleNextStep">
               <span>
-                {{ activeStep === 4 ? "Post your job" : "Next" }}
+                {{ activeStep === 4 ? 'Post your job' : 'Next' }}
               </span>
             </Btn>
           </div>
           <div class="flex items-center gap-2.5 lg:gap-[22px]">
             <div
               v-for="index in 4"
+              :key="index"
               class="flex flex-1 w-full h-1 rounded-[3px] transition-colors duration-300"
               :class="[index <= activeStep ? 'bg-appAccent' : 'bg-[#BDBBB7]']"
             />
@@ -198,13 +199,37 @@
 </template>
 
 <script setup lang="ts">
-import { APIResponse, JobPageData } from "~~/types";
+import { NuxtApp } from 'nuxt/app';
+import { PostJobPageEntry, PostJobPageEntryMeta } from '@/bcms/types';
+import { JobPostPageData, PageProps } from '@/types';
 
-const { data } = useAsyncData(async (ctx) => {
-  return await ctx?.$bcms.request<APIResponse<JobPageData>>({
-    url: `/post-job.json`,
+const { data, error } = useAsyncData<PageProps<JobPostPageData>>(
+  async (ctx) => {
+    const { header, footer } = await getHeaderAndFooter(ctx as NuxtApp);
+    const postJobPage = (await ctx?.$bcms.entry.get({
+      template: 'post_job_page',
+      entry: 'post-your-job',
+    })) as PostJobPageEntry;
+    if (!postJobPage) {
+      throw new Error('Job post page entry does not exist.');
+    }
+    return {
+      footer,
+      header,
+      page: {
+        meta: postJobPage.meta.en as PostJobPageEntryMeta,
+      },
+    };
+  },
+);
+if (error.value) {
+  throw createError({
+    statusCode: 500,
+    statusMessage: error.value.message,
+    stack: error.value.stack,
+    fatal: true,
   });
-});
+}
 
 const { setOgHead } = useHeadTags();
 const { checkForInputErrors } = useError();
@@ -213,119 +238,119 @@ const activeStep = ref(1);
 
 const stepOne = ref({
   jobTitle: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   jobDescription: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   responsibility: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   jobDetails: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
 });
 
 const stepTwo = ref({
   companyName: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   companyLogo: {
     value: undefined,
-    error: "",
+    error: '',
   },
   companyWebsite: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   contactPerson: {
     fullName: {
-      value: "",
-      error: "",
+      value: '',
+      error: '',
     },
     email: {
-      value: "",
-      error: "",
+      value: '',
+      error: '',
     },
     phoneNumber: {
-      value: "",
-      error: "",
+      value: '',
+      error: '',
     },
     address: {
-      value: "",
-      error: "",
+      value: '',
+      error: '',
     },
   },
   companyAddress: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
 });
 
 const stepThree = ref({
   jobType: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   salaryRange: {
     min: {
-      value: "",
-      error: "",
+      value: '',
+      error: '',
     },
     max: {
-      value: "",
-      error: "",
+      value: '',
+      error: '',
     },
   },
   experienceLevel: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   education: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   requiredSkill: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   workSchedule: {
     days: {
-      value: "",
-      error: "",
+      value: '',
+      error: '',
     },
     hours: {
-      value: "",
-      error: "",
+      value: '',
+      error: '',
     },
   },
 });
 
 const stepFour = ref({
   howToApply: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   whatToSubmit: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   howToSubmit: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   deadline: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   companyBenefit: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
 });
 
@@ -388,7 +413,7 @@ const handleNextStep = () => {
 
 useHead(() =>
   setOgHead({
-    title: data.value?.data.meta.title,
-  })
+    title: data.value?.page.meta.title,
+  }),
 );
 </script>

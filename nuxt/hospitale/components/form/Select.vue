@@ -53,8 +53,8 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import ChevronIcon from "@/assets/icons/chevron-down.svg";
+import { PropType } from 'vue';
+import ChevronIcon from '@/assets/icons/chevron-down.svg';
 
 defineProps({
   modelValue: {
@@ -64,10 +64,12 @@ defineProps({
   label: {
     type: String,
     required: false,
+    default: '',
   },
   placeholder: {
     type: String,
     required: false,
+    default: '',
   },
   options: {
     type: Array as PropType<string[]>,
@@ -76,14 +78,15 @@ defineProps({
   error: {
     type: String,
     required: false,
+    default: '',
   },
 });
 
-const emits = defineEmits(["update:modelValue"]);
+const emits = defineEmits(['update:modelValue']);
 
 const showOptions = ref(false);
 
 const handleOptionSelect = (option: string) => {
-  emits("update:modelValue", option);
+  emits('update:modelValue', option);
 };
 </script>

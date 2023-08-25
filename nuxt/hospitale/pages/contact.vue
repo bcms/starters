@@ -52,35 +52,59 @@
 </template>
 
 <script setup lang="ts">
-import { APIResponse, ContactPageData } from "~~/types";
+import { NuxtApp } from 'nuxt/app';
+import { ContactPageData, PageProps } from '@/types';
+import { ContactPageEntry, ContactPageEntryMeta } from '@/bcms/types';
 
-const { data } = useAsyncData(async (ctx) => {
-  return await ctx?.$bcms.request<APIResponse<ContactPageData>>({
-    url: "/contact.json",
+const { data, error } = useAsyncData<PageProps<ContactPageData>>(
+  async (ctx) => {
+    const { header, footer } = await getHeaderAndFooter(ctx as NuxtApp);
+    const contactPage = (await ctx?.$bcms.entry.get({
+      template: 'contact_page',
+      entry: 'contact',
+    })) as ContactPageEntry;
+    if (!contactPage) {
+      throw new Error('Contact page entry does not exist.');
+    }
+    return {
+      header,
+      footer,
+      page: {
+        meta: contactPage.meta.en as ContactPageEntryMeta,
+      },
+    };
+  },
+);
+if (error.value) {
+  throw createError({
+    statusCode: 500,
+    statusMessage: error.value.message,
+    stack: error.value.stack,
+    fatal: true,
   });
-});
+}
 
 const { setOgHead } = useHeadTags();
 const { checkForInputErrors } = useError();
 
-const meta = computed(() => data.value?.data.meta);
+const meta = computed(() => data.value?.page.meta);
 
 const form = ref({
   name: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   email: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   phone: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   message: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
 });
 
@@ -99,7 +123,7 @@ const handleSubmit = () => {
 
 useHead(() =>
   setOgHead({
-    title: data.value?.data.meta.title,
-  })
+    title: data.value?.page.meta.title,
+  }),
 );
 </script>

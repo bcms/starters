@@ -79,8 +79,8 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { FooterEntryMeta } from "~~/bcms/types";
+import { PropType } from 'vue';
+import { FooterEntryMeta } from '@/bcms/types';
 
 defineProps({
   data: {

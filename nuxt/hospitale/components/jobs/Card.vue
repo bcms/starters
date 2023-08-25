@@ -36,12 +36,12 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { JobLight } from "~~/types";
+import { PropType } from 'vue';
+import { JobLite } from '@/types';
 
 defineProps({
   card: {
-    type: Object as PropType<JobLight>,
+    type: Object as PropType<JobLite>,
     required: true,
   },
 });

@@ -1,5 +1,9 @@
-import { LegalPageEntry } from "~~/bcms/types/entry/legal_page";
+import { BCMSEntryContentParsedItem } from '@becomes/cms-client/types';
+import { LegalPageEntryMeta } from '@/bcms/types/entry/legal_page';
 
 export interface LegalPageData {
-  entries: LegalPageEntry[];
+  entries: Array<{
+    meta: LegalPageEntryMeta;
+    content: BCMSEntryContentParsedItem[];
+  }>;
 }

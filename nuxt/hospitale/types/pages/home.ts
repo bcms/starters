@@ -1,8 +1,8 @@
-import { HomePageEntryMeta, TestimonialEntryMeta } from "~~/bcms/types";
-import { JobLight } from "./job";
+import { JobLite } from './job';
+import { HomePageEntryMeta, TestimonialEntryMeta } from '@/bcms/types';
 
 export interface HomePageData {
   meta: HomePageEntryMeta;
-  jobs: JobLight[];
+  jobs: JobLite[];
   testimonials: TestimonialEntryMeta[];
 }
