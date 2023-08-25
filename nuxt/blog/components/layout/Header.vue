@@ -50,11 +50,11 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
-import { HeaderEntryMeta } from "~~/bcms/types";
-import MenuIcon from "@/assets/icons/menu.svg";
-import XIcon from "@/assets/icons/x.svg";
+import { PropType } from 'vue';
+import { BCMSImage } from '~~/bcms-components';
+import { HeaderEntryMeta } from '~~/bcms/types';
+import MenuIcon from '@/assets/icons/menu.svg';
+import XIcon from '@/assets/icons/x.svg';
 
 defineProps({
   data: {

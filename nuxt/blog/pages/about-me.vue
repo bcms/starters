@@ -8,15 +8,15 @@
           <div
             class="text-sm leading-none tracking-[-0.41px] text-appGray-600 mb-2.5 md:text-base md:leading-none lg:text-xl lg:leading-none lg:mb-5"
           >
-            {{ data.data.meta.subtitle }}
+            {{ data.page.meta.subtitle }}
           </div>
           <h1
             class="leading-none font-medium tracking-[-0.41px] mb-3 md:text-2xl md:leading-none md:mb-4 lg:text-[56px] lg:leading-none lg:mb-6"
           >
-            {{ data.data.meta.title }}
+            {{ data.page.meta.title }}
           </h1>
           <ContentManager
-            :item="data.data.meta.description"
+            :item="data.page.meta.description"
             class="text-sm leading-[1.3] tracking-[-0.41px] text-appGray-500 font-medium max-w-[633px] mx-auto md:text-lg md:leading-none lg:text-[22px] lg:leading-[1.3]"
           />
         </div>
@@ -24,12 +24,12 @@
           class="relative aspect-[2.07] rounded-lg overflow-hidden mb-6 lg:aspect-[2.43] lg:rounded-2xl lg:mb-8"
         >
           <BCMSImage
-            :media="data.data.meta.cover"
+            :media="data.page.meta.cover"
             class="w-full h-full cover"
           />
           <div class="absolute top-0 left-0 w-full h-full bg-black/50" />
         </div>
-        <ContentManager :item="data.data.content" class="prose" />
+        <ContentManager :item="data.page.content" class="prose" />
       </div>
       <TopGradient />
     </div>
@@ -37,20 +37,47 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from "~~/bcms-components";
-import { APIResponse, AboutPageData } from "~~/types";
+import { BCMSEntryContentParsedItem } from '@becomes/cms-client/types';
+import { NuxtApp } from 'nuxt/app';
+import { BCMSImage } from '~~/bcms-components';
+import { AboutPageEntry, AboutPageEntryMeta } from '~~/bcms/types';
+import { AboutPageData, PageProps } from '~~/types';
 
-const { data } = useAsyncData(async (ctx) => {
-  return await ctx?.$bcms.request<APIResponse<AboutPageData>>({
-    url: "/about.json",
-  });
+const { data, error } = useAsyncData<PageProps<AboutPageData>>(async (ctx) => {
+  const { header, footer } = await getHeaderAndFooter(ctx as NuxtApp);
+  // Get About Page entry
+  const aboutPage = (await ctx?.$bcms.entry.get({
+    // Template name of ID
+    template: 'about_page',
+    // Entry slug or ID
+    entry: 'about',
+  })) as AboutPageEntry;
+  if (!aboutPage) {
+    throw new Error('About page entry does not exist.');
+  }
+  return {
+    header,
+    footer,
+    page: {
+      meta: aboutPage.meta.en as AboutPageEntryMeta,
+      content: aboutPage.content.en as BCMSEntryContentParsedItem[],
+    },
+  };
 });
+if (error.value) {
+  throw createError({
+    statusCode: 500,
+    statusMessage: error.value.message,
+    stack: error.value.stack,
+    fatal: true,
+  });
+}
 
 const { setOgHead } = useHeadTags();
 
 useHead(() =>
   setOgHead({
-    title: data.value?.data.meta.title,
-  })
+    title: data.value?.page.meta.title,
+  }),
 );
 </script>

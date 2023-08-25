@@ -41,14 +41,14 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
-import { BlogLight } from "~~/types";
-import OpenIcon from "@/assets/icons/open.svg";
+import { PropType } from 'vue';
+import { BCMSImage } from '~~/bcms-components';
+import OpenIcon from '@/assets/icons/open.svg';
+import { BlogLite } from '~~/types';
 
 defineProps({
   blog: {
-    type: Object as PropType<BlogLight>,
+    type: Object as PropType<BlogLite>,
     required: true,
   },
 });

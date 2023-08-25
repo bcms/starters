@@ -5,8 +5,8 @@
         class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center lg:gap-20"
       >
         <form
-          @submit.prevent="handleSubmit"
           class="grid grid-cols-1 gap-4 lg:gap-8"
+          @submit.prevent="handleSubmit"
         >
           <FormText
             v-model="form.name.value"
@@ -61,7 +61,7 @@
 </template>
 
 <script setup lang="ts">
-import EmailIcon from "@/assets/icons/email.svg";
+import EmailIcon from '@/assets/icons/email.svg';
 
 defineProps({
   email: {
@@ -74,16 +74,16 @@ const { checkForInputErrors } = useError();
 
 const form = ref({
   name: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   email: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   question: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
 });
 

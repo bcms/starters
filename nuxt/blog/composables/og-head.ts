@@ -13,76 +13,76 @@ export const useHeadTags = () => {
     description?: string;
     image?: string;
   }) => {
-    if (!title) title = "";
-    if (!description) description = "";
-    if (!image) image = "/thumbnail.jpg";
+    if (!title) title = '';
+    if (!description) description = '';
+    if (!image) image = '/thumbnail.jpg';
 
-    const domain = "https://blog-nuxt.thebcms.com";
+    const domain = 'https://blog-nuxt.thebcms.com';
 
     return {
-      title: title,
+      title,
       meta: [
         {
-          hid: "description",
-          name: "description",
+          hid: 'description',
+          name: 'description',
           content: `${description}`,
         },
         {
-          property: "og:site_name",
+          property: 'og:site_name',
           content: `${title} - Insightful Ink`,
         },
-        { property: "og:type", content: "website" },
-        { property: "twitter:card", content: "summary_large_image" },
+        { property: 'og:type', content: 'website' },
+        { property: 'twitter:card', content: 'summary_large_image' },
         {
-          hid: "ogUrl",
-          property: "og:url",
+          hid: 'ogUrl',
+          property: 'og:url',
           content: `${domain}${routePath.value}`,
         },
         {
-          hid: "ogTitle",
-          property: "og:title",
+          hid: 'ogTitle',
+          property: 'og:title',
           content: `${title} - Insightful Ink`,
         },
         {
-          hid: "ogDescription",
-          property: "og:description",
+          hid: 'ogDescription',
+          property: 'og:description',
           content: `${description}`,
         },
         {
-          hid: "ogImage",
-          property: "og:image",
+          hid: 'ogImage',
+          property: 'og:image',
           content: `${image}`,
         },
         {
-          hid: "twitterUrl",
-          property: "twitter:url",
+          hid: 'twitterUrl',
+          property: 'twitter:url',
           content: `${domain}${routePath.value}`,
         },
         {
-          hid: "twitterTitle",
-          property: "twitter:title",
+          hid: 'twitterTitle',
+          property: 'twitter:title',
           content: `${title} - Insightful Ink`,
         },
         {
-          hid: "twitterDescription",
-          property: "twitter:description",
+          hid: 'twitterDescription',
+          property: 'twitter:description',
           content: `${description}`,
         },
         {
-          hid: "twitterImage",
-          property: "twitter:image",
+          hid: 'twitterImage',
+          property: 'twitter:image',
           content: `${image}`,
         },
       ],
       link: [
         {
-          hid: "canonical",
-          rel: "canonical",
+          hid: 'canonical',
+          rel: 'canonical',
           href: `${domain}${routePath.value}`,
         },
       ],
       htmlAttrs: {
-        lang: 'en'
+        lang: 'en',
       },
     };
   };

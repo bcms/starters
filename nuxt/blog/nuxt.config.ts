@@ -1,31 +1,32 @@
 import { createBcmsNuxtConfig } from 'nuxt-plugin-bcms/config';
-import bcmsRoutes from './bcms.routes';
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const _ = require('lodash');
 const svgPrefix = {};
 svgPrefix.toString = () => `${_.uniqueId()}_`;
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  
   vite: {
     optimizeDeps: {
       include: ['axios', '@becomes/cms-client'],
     },
   },
   runtimeConfig: {
-    pubBcmsApiOrigin: '',
-    pubBcmsApiKeyId: '',
-    pubBcmsApiKeySecret: '',
-    bcmsEnableClientCache: '',
-    bcmsClientDebug: '',
-    bcmsEntryStatuses: '',
-    bcmsMostServerPort: '',
-    bcmsMostServerDomain: '',
+    public: {
+      bcmsApiOrigin: '',
+      bcmsApiKeyId: '',
+      bcmsApiKeySecret: '',
+      bcmsEnableClientCache: '',
+      bcmsClientDebug: '',
+      bcmsEntryStatuses: '',
+      bcmsMostServerPort: '',
+      bcmsMostServerDomain: '',
+    },
   },
   app: {
     head: {
-      titleTemplate: `%s - Insightful Ink`,
+      titleTemplate: '%s - Insightful Ink',
       link: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         {
@@ -93,11 +94,6 @@ export default defineNuxtConfig({
             process: true,
           },
         },
-        server: {
-          routes: bcmsRoutes,
-          // domain: process.env.VITE_BCMS_MOST_SERVER_DOMAIN || 'localhost',
-          // port: parseInt(process.env.VITE_BCMS_MOST_SERVER_PORT || '3001', 10)
-        },
       }),
     ],
   ],
@@ -106,11 +102,11 @@ export default defineNuxtConfig({
       plugins: [
         {
           name: 'preset-default',
-          params: {
-            overrides: {
-              cleanupIDs: { prefix: svgPrefix },
-            },
-          },
+          // params: {
+          //   overrides: {
+          //     cleanupIDs: { prefix: svgPrefix },
+          //   },
+          // },
         },
       ],
     },

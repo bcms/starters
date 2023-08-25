@@ -1,7 +1,7 @@
 <template>
   <form
-    @submit.prevent
     class="flex items-center border border-appGray-100 rounded-[48px] px-4 max-w-[848px] mx-auto md:px-6 lg:px-8"
+    @submit.prevent
   >
     <SearchIcon
       class="w-[14px] h-[14px] mr-1.5 md:w-6 md:h-6 md:mr-2.5 lg:w-8 lg:h-6 lg:mr-[14px]"
@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import SearchIcon from "@/assets/icons/search.svg";
+import SearchIcon from '@/assets/icons/search.svg';
 
 defineProps({
   modelValue: {
@@ -29,13 +29,13 @@ defineProps({
   },
 });
 
-const emits = defineEmits(["enter", "update:modelValue"]);
+const emits = defineEmits(['enter', 'update:modelValue']);
 
 const handleInput = (e: Event) => {
   const target = e.target;
 
   if (target instanceof HTMLInputElement) {
-    emits("update:modelValue", target.value);
+    emits('update:modelValue', target.value);
   }
 };
 </script>
