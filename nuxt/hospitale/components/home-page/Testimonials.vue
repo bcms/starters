@@ -57,10 +57,10 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { TestimonialEntryMeta } from "~~/bcms/types";
-import { A11y, Pagination } from "swiper";
-import { BCMSImage } from "~~/bcms-components";
+import { PropType } from 'vue';
+import { A11y, Pagination } from 'swiper/modules';
+import { TestimonialEntryMeta } from '@/bcms/types';
+import { BCMSImage } from '@/bcms-components';
 
 defineProps({
   data: {

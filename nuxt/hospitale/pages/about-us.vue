@@ -30,31 +30,64 @@
           </template>
         </div>
       </div>
-      <AboutPageTeam :data="meta.team" :members="data.data.team" />
+      <AboutPageTeam :data="meta.team" :members="data.page.team" />
     </div>
   </PageWrapper>
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from "~~/bcms-components";
-import { APIResponse, AboutPageData } from "~~/types";
+import { NuxtApp } from 'nuxt/app';
+import { BCMSImage } from '@/bcms-components';
+import { AboutPageData, PageProps } from '@/types';
+import {
+  AboutPageEntry,
+  AboutPageEntryMeta,
+  TeamMemberEntry,
+  TeamMemberEntryMeta,
+} from '@/bcms/types';
 
-const { data } = useAsyncData(async (ctx) => {
-  return await ctx?.$bcms.request<APIResponse<AboutPageData>>({
-    url: "/about.json",
-  });
+const { data, error } = useAsyncData<PageProps<AboutPageData>>(async (ctx) => {
+  const { header, footer } = await getHeaderAndFooter(ctx as NuxtApp);
+  const aboutPage = (await ctx?.$bcms.entry.get({
+    template: 'about_page',
+    entry: 'about-us',
+  })) as AboutPageEntry;
+  if (!aboutPage) {
+    throw new Error('About page entry does not exist.');
+  }
+  const teamMembers = (await ctx?.$bcms.entry.getAll({
+    template: 'team_member',
+  })) as TeamMemberEntry[];
+  return {
+    header,
+    footer,
+    page: {
+      meta: aboutPage.meta.en as AboutPageEntryMeta,
+      team: teamMembers.map(
+        (teamMember) => teamMember.meta.en as TeamMemberEntryMeta,
+      ),
+    },
+  };
 });
+if (error.value) {
+  throw createError({
+    statusCode: 500,
+    statusMessage: error.value.message,
+    stack: error.value.stack,
+    fatal: true,
+  });
+}
 
 const { setOgHead } = useHeadTags();
 
 const meta = computed(() => {
-  return data.value?.data.meta;
+  return data.value?.page.meta;
 });
 
 useHead(() =>
   setOgHead({
-    title: data.value?.data.meta.title,
-  })
+    title: data.value?.page.meta.title,
+  }),
 );
 </script>
 

@@ -7,10 +7,6 @@
       {{ label }}
     </div>
     <label
-      @drop.prevent="handleDrop"
-      @dragenter.prevent
-      @dragleave.prevent="isDropzoneActive = false"
-      @dragover.prevent="isDropzoneActive = true"
       class="flex flex-col items-center justify-center text-center p-5 rounded-[10px] border border-dashed w-full cursor-pointer min-h-[100px] transition-colors duration-300 lg:py-[45px] lg:min-h-[154px]"
       :class="[
         error
@@ -19,6 +15,10 @@
           ? 'border-appAccent text-appAccent'
           : 'text-[#56565F] border-[#C2C0BC] hover:border-[#56565F]',
       ]"
+      @drop.prevent="handleDrop"
+      @dragenter.prevent
+      @dragleave.prevent="isDropzoneActive = false"
+      @dragover.prevent="isDropzoneActive = true"
     >
       <input
         type="file"
@@ -45,18 +45,21 @@ defineProps({
   modelValue: {
     type: File,
     required: false,
+    default: () => undefined,
   },
   label: {
     type: String,
     required: false,
+    default: '',
   },
   error: {
     type: String,
     required: false,
+    default: '',
   },
 });
 
-const emits = defineEmits(["update:modelValue"]);
+const emits = defineEmits(['update:modelValue']);
 
 const isDropzoneActive = ref(false);
 
@@ -66,8 +69,8 @@ const handleDrop = (event: DragEvent) => {
   for (let i = 0; i < files.length; i++) {
     const file = files[i];
 
-    if (["docx", "pdf", "txt"].some((type) => file.type.includes(type))) {
-      emits("update:modelValue", file);
+    if (['docx', 'pdf', 'txt'].some((type) => file.type.includes(type))) {
+      emits('update:modelValue', file);
     }
   }
 };
@@ -77,6 +80,6 @@ const handleChange = (event: Event) => {
 
   const files = target.files || [];
 
-  emits("update:modelValue", files[0]);
+  emits('update:modelValue', files[0]);
 };
 </script>

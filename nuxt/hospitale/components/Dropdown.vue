@@ -42,8 +42,8 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import ChevronIcon from "@/assets/icons/chevron-down.svg";
+import { PropType } from 'vue';
+import ChevronIcon from '@/assets/icons/chevron-down.svg';
 
 const props = defineProps({
   modelValue: {
@@ -64,15 +64,15 @@ const props = defineProps({
   },
 });
 
-const emits = defineEmits(["update:modelValue"]);
+const emits = defineEmits(['update:modelValue']);
 
 const showOptions = ref(false);
 
 const handleOptionSelect = (option: string) => {
   if (props.modelValue === option) {
-    emits("update:modelValue", "");
+    emits('update:modelValue', '');
   } else {
-    emits("update:modelValue", option);
+    emits('update:modelValue', option);
   }
 
   showOptions.value = false;

@@ -40,9 +40,9 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
-import { HomeHeroGroup } from "~~/bcms/types";
+import { PropType } from 'vue';
+import { BCMSImage } from '@/bcms-components';
+import { HomeHeroGroup } from '@/bcms/types';
 
 defineProps({
   data: {
@@ -52,10 +52,10 @@ defineProps({
 });
 
 const scrollToJobs = () => {
-  const jobs = document.getElementById("homeJobs");
+  const jobs = document.getElementById('homeJobs');
 
   if (jobs) {
-    jobs.scrollIntoView({ behavior: "smooth" });
+    jobs.scrollIntoView({ behavior: 'smooth' });
   }
 };
 </script>

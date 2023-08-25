@@ -162,7 +162,7 @@
             class="flex flex-col justify-center items-center mt-2 md:col-span-2 md:mt-6 lg:col-span-3"
           >
             <Btn
-              v-if="filteredJobs.length < data.data.jobs.length"
+              v-if="filteredJobs.length < data.page.jobs.length"
               theme="accent-outline"
               size="sm"
               class="justify-center w-full max-md:mb-4 md:max-w-max"
@@ -187,7 +187,7 @@
       <Transition name="fade">
         <JobsApplyModal
           v-if="showApplyModal"
-          :job="data.data.meta"
+          :job="data.page.meta"
           @close="showApplyModal = false"
         />
       </Transition>
@@ -196,18 +196,44 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from "~~/bcms-components";
-import { APIResponse, JobPageData } from "~~/types";
-import LocationIcon from "@/assets/icons/location.svg";
+import { NuxtApp } from 'nuxt/app';
+import { BCMSImage } from '@/bcms-components';
+import { JobPageData, PageProps } from '@/types';
+import LocationIcon from '@/assets/icons/location.svg';
+import { JobEntry, JobEntryMeta } from '@/bcms/types';
 
 const { setOgHead } = useHeadTags();
 const route = useRoute();
 
-const { data } = useAsyncData(async (ctx) => {
-  return await ctx?.$bcms.request<APIResponse<JobPageData>>({
-    url: `/jobs/${route.params.slug}/data.json`,
-  });
+const { data, error } = useAsyncData<PageProps<JobPageData>>(async (ctx) => {
+  const { header, footer } = await getHeaderAndFooter(ctx as NuxtApp);
+  const jobPage = (await ctx?.$bcms.entry.get({
+    template: 'job',
+    entry: route.params.slug,
+  })) as JobEntry;
+  if (!jobPage) {
+    throw new Error('Job page entry does not exist.');
+  }
+  const jobs = (await ctx?.$bcms.entry.getAll({
+    template: 'job',
+  })) as JobEntry[];
+  return {
+    header,
+    footer,
+    page: {
+      jobs: jobs.map((job) => toJobLite(job)),
+      meta: jobPage.meta.en as JobEntryMeta,
+    },
+  };
 });
+if (error.value) {
+  throw createError({
+    statusCode: 500,
+    statusMessage: error.value.message,
+    stack: error.value.stack,
+    fatal: true,
+  });
+}
 
 const sectionDOM = ref<HTMLElement>();
 
@@ -215,7 +241,7 @@ const paginationPage = ref(1);
 const jobsPerPage = ref(9);
 
 const meta = computed(() => {
-  return data.value?.data.meta;
+  return data.value?.page.meta;
 });
 
 const company = computed(() => {
@@ -224,7 +250,7 @@ const company = computed(() => {
 
 const filteredJobs = computed(() => {
   return (
-    data.value?.data.jobs.slice(0, paginationPage.value * jobsPerPage.value) ||
+    data.value?.page.jobs.slice(0, paginationPage.value * jobsPerPage.value) ||
     []
   );
 });
@@ -237,7 +263,7 @@ const scrollToTop = () => {
   if (sectionDOM.value) {
     window.scrollTo({
       top: sectionDOM.value.offsetTop,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   }
 };
@@ -246,8 +272,8 @@ const showApplyModal = ref(false);
 
 useHead(() =>
   setOgHead({
-    title: data.value?.data.meta.title,
-  })
+    title: data.value?.page.meta.title,
+  }),
 );
 </script>
 

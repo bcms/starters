@@ -3,7 +3,7 @@
     <div
       class="relative z-10 bg-[#E3E1DC] border border-[#B0AEAB] p-6 rounded-[14px] max-w-[632px] mx-auto max-h-[80vh] overflow-auto overscroll-contain lg:p-8"
     >
-      <form @submit.prevent="handleSubmit" class="grid grid-cols-1 gap-6">
+      <form class="grid grid-cols-1 gap-6" @submit.prevent="handleSubmit">
         <fieldset class="grid grid-cols-2 items-end gap-2 lg:gap-3">
           <FormText
             v-model="form.firstName.value"
@@ -62,8 +62,8 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { JobEntryMeta } from "~~/bcms/types";
+import { PropType } from 'vue';
+import { JobEntryMeta } from '@/bcms/types';
 
 defineProps({
   job: {
@@ -72,38 +72,38 @@ defineProps({
   },
 });
 
-defineEmits(["close"]);
+defineEmits(['close']);
 
 const { checkForInputErrors } = useError();
 
 const form = ref({
   firstName: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   lastName: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   address: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   email: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   birthDate: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   description: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   document: {
     value: undefined as File | undefined,
-    error: "",
+    error: '',
   },
 });
 

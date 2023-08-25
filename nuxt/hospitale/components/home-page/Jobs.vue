@@ -1,5 +1,5 @@
 <template>
-  <section ref="sectionDOM" id="homeJobs" class="py-12 md:py-20 lg:py-[120px]">
+  <section id="homeJobs" ref="sectionDOM" class="py-12 md:py-20 lg:py-[120px]">
     <div class="container">
       <h2
         class="text-2xl leading-[1.2] font-medium text-center font-PlayfairDisplay tracking-[-0.41px] max-w-[258px] mx-auto mb-4 md:text-3xl md:max-w-[300px] lg:text-5xl lg:leading-[1.2] lg:max-w-[525px] lg:mb-5"
@@ -76,11 +76,11 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { HomeJobsGroup } from "~~/bcms/types/group/home_jobs";
-import { JobLight } from "~~/types";
-import JobTypeIcon from "@/assets/icons/briefcase.svg";
-import LocationIcon from "@/assets/icons/location.svg";
+import { PropType } from 'vue';
+import { HomeJobsGroup } from '@/bcms/types';
+import { JobLite } from '@/types';
+import JobTypeIcon from '@/assets/icons/briefcase.svg';
+import LocationIcon from '@/assets/icons/location.svg';
 
 const props = defineProps({
   data: {
@@ -88,7 +88,7 @@ const props = defineProps({
     required: true,
   },
   jobs: {
-    type: Array as PropType<JobLight[]>,
+    type: Array as PropType<JobLite[]>,
     required: true,
   },
 });
@@ -98,9 +98,9 @@ const sectionDOM = ref<HTMLElement>();
 const paginationPage = ref(1);
 const jobsPerPage = ref(9);
 
-const searchValue = ref("");
-const jobTypeValue = ref("");
-const locationValue = ref("");
+const searchValue = ref('');
+const jobTypeValue = ref('');
+const locationValue = ref('');
 
 const filteredJobs = computed(() => {
   return props.jobs.filter((e) => {
@@ -139,7 +139,7 @@ const scrollToTop = () => {
   if (sectionDOM.value) {
     window.scrollTo({
       top: sectionDOM.value.offsetTop,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   }
 };

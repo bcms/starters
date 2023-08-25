@@ -34,7 +34,7 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
+import { PropType } from 'vue';
 
 defineProps({
   modelValue: {
@@ -44,27 +44,30 @@ defineProps({
   label: {
     type: String,
     required: false,
+    default: '',
   },
   placeholder: {
     type: String,
     required: false,
+    default: '',
   },
   type: {
-    type: String as PropType<"text" | "email" | "date" | "textarea">,
+    type: String as PropType<'text' | 'email' | 'date' | 'textarea'>,
     required: false,
-    default: "text",
+    default: 'text',
   },
   error: {
     type: String,
     required: false,
+    default: '',
   },
 });
 
-const emits = defineEmits(["update:modelValue"]);
+const emits = defineEmits(['update:modelValue']);
 
 const handleInput = (event: Event) => {
   const target = event.target as HTMLInputElement;
 
-  emits("update:modelValue", target.value);
+  emits('update:modelValue', target.value);
 };
 </script>

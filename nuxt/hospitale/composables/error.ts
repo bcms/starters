@@ -1,28 +1,27 @@
 export interface InputObject {
-  value?: any;
+  value?: unknown;
   error: string;
 }
 
-export const useError = () => {
-  const checkForInputErrors = (obj: Array<InputObject>) => {
-    let hasError = false;
+export interface InputErrorHandler {
+  checkForInputErrors(inputs: Array<InputObject>): boolean;
+}
 
-    obj.forEach((e) => {
-      if (!e.value) {
-        e.error = "This field is required";
-      } else {
-        e.error = "";
-      }
-    });
-
-    if (obj.find((e) => e.error)) {
-      hasError = true;
-    }
-
-    return hasError;
-  };
-
+export function useError(): InputErrorHandler {
   return {
-    checkForInputErrors,
+    checkForInputErrors(inputs) {
+      let hasError = false;
+      inputs.forEach((e) => {
+        if (!e.value) {
+          e.error = 'This field is required';
+        } else {
+          e.error = '';
+        }
+      });
+      if (inputs.find((e) => e.error)) {
+        hasError = true;
+      }
+      return hasError;
+    },
   };
-};
+}

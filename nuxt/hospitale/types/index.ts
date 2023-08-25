@@ -1,3 +1,4 @@
-export * from "./api-response";
-export * from "./language";
-export * from "./pages/index";
+export * from './pages';
+
+export * from './language';
+export * from './page-props';

@@ -1,7 +1,7 @@
-import { BCMSPropRichTextDataParsed } from "@becomes/cms-client/types";
-import { JobEntryMeta, PostJobPageEntryMeta } from "~~/bcms/types";
+import { BCMSPropRichTextDataParsed } from '@becomes/cms-client/types';
+import { JobEntryMeta, PostJobPageEntryMeta } from '@/bcms/types';
 
-export interface JobLight {
+export interface JobLite {
   title: string;
   slug: string;
   location: string;
@@ -12,7 +12,7 @@ export interface JobLight {
 
 export interface JobPageData {
   meta: JobEntryMeta;
-  jobs: JobLight[];
+  jobs: JobLite[];
 }
 
 export interface JobPostPageData {
