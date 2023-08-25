@@ -903,7 +903,7 @@
   "6433e686049fc6eba4f8e49a": {
     "_id": "6433e686049fc6eba4f8e49a",
     "createdAt": 1681122950307,
-    "updatedAt": 1681196652211,
+    "updatedAt": 1692952454242,
     "cid": "7",
     "templateId": "6433e34b049fc6eba4f8e48e",
     "userId": "111111111111111111111111",
@@ -921,7 +921,7 @@
           {
             "id": "38ed6bf0-797a-4758-b45a-638d35ebbbac",
             "data": [
-              "a-fashionable-journey-around-the-world"
+              "home"
             ]
           },
           {
@@ -1026,7 +1026,7 @@
   "64351a8a85d8365f26e2cc94": {
     "_id": "64351a8a85d8365f26e2cc94",
     "createdAt": 1681201802067,
-    "updatedAt": 1681201812877,
+    "updatedAt": 1692956237759,
     "cid": "9",
     "templateId": "64351a6e85d8365f26e2cc93",
     "userId": "111111111111111111111111",
@@ -1044,7 +1044,7 @@
           {
             "id": "5ca6e04f-b10f-44db-9f75-66bb0eafbeec",
             "data": [
-              "happy-reading-for-my-amazing-journey"
+              "blogs"
             ]
           },
           {
@@ -1067,7 +1067,7 @@
   "64356ea985d8365f26e2cc9a": {
     "_id": "64356ea985d8365f26e2cc9a",
     "createdAt": 1681223337078,
-    "updatedAt": 1681283688768,
+    "updatedAt": 1692955787209,
     "cid": "a",
     "templateId": "6435675585d8365f26e2cc99",
     "userId": "111111111111111111111111",
@@ -1085,7 +1085,7 @@
           {
             "id": "d72a9494-94d2-42ab-9fa6-1ba7f6141249",
             "data": [
-              "me-myself-and-my-world"
+              "about"
             ]
           },
           {
@@ -1098,7 +1098,7 @@
             "id": "7c7c06bb-d31f-4aa9-8a18-6741b6cf05b1",
             "data": [
               {
-                "id": "7648173e-acd3-47dc-892f-c5b57f6649c8",
+                "id": "c69d718f-97c4-4917-b926-772cd166e4e2",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -1201,7 +1201,7 @@
                   "id": "fa9cd15e-8027-4776-b2f5-91f44ad6bcb8",
                   "data": [
                     {
-                      "id": "3da4a0bd-7280-43eb-bf7b-7d81e2e2dc25",
+                      "id": "e1f5583e-1389-437d-af3c-75e543fe2925",
                       "nodes": [
                         {
                           "type": "heading",
@@ -1288,7 +1288,7 @@
             }
           }
         ],
-        "plainText": "how i start my journey\nsed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. “nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.” et harum quidem rerum facilis est et expedita distinctio. nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.\n\n__widget{\"_id\":\"64353f5985d8365f26e2cc96\",\"props\":[{\"id\":\"fa9cd15e-8027-4776-b2f5-91f44ad6bcb8\",\"data\":[{\"id\":\"3da4a0bd-7280-43eb-bf7b-7d81e2e2dc25\",\"nodes\":[{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"conquering the world\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"“nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.”\"},{\"type\":\"text\",\"text\":\" et harum quidem rerum facilis est et expedita distinctio. nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.\"}]}]}]},{\"id\":\"9faf95bb-f10b-4464-b44e-328bb0f87618\",\"data\":[{\"_id\":\"6435408085d8365f26e2cc98\",\"alt_text\":\"image\",\"caption\":\"\"}]},{\"id\":\"29c6eae0-015f-428c-8b74-d2a4a19c9256\",\"data\":[\"left\"]}]}\n"
+        "plainText": "how i start my journey\nsed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. “nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.” et harum quidem rerum facilis est et expedita distinctio. nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.\n\n__widget{\"_id\":\"64353f5985d8365f26e2cc96\",\"props\":[{\"id\":\"fa9cd15e-8027-4776-b2f5-91f44ad6bcb8\",\"data\":[{\"id\":\"e1f5583e-1389-437d-af3c-75e543fe2925\",\"nodes\":[{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"conquering the world\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"“nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.”\"},{\"type\":\"text\",\"text\":\" et harum quidem rerum facilis est et expedita distinctio. nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.\"}]}]}]},{\"id\":\"9faf95bb-f10b-4464-b44e-328bb0f87618\",\"data\":[{\"_id\":\"6435408085d8365f26e2cc98\",\"alt_text\":\"image\",\"caption\":\"\"}]},{\"id\":\"29c6eae0-015f-428c-8b74-d2a4a19c9256\",\"data\":[\"left\"]}]}\n"
       }
     ]
   }
