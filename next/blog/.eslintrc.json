@@ -11,6 +11,10 @@
   "rules": {
     "no-debugger": "warn",
     "no-shadow": "error",
+    "no-console": "warn",
+    "semi": "error",
+    "quotes": ["error", "single"],
+    "indent": ["error", 2],
     "@typescript-eslint/no-unused-vars": [
       2,
       { "args": "all", "argsIgnorePattern": "^_" }
