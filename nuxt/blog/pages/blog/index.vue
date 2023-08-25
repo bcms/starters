@@ -9,12 +9,12 @@
             <h1
               class="leading-none font-medium tracking-[-0.41px] md:text-2xl md:leading-none lg:text-[56px] lg:leading-none"
             >
-              {{ data.data.meta.title }}
+              {{ data.page.meta.title }}
             </h1>
             <h2
               class="text-sm leading-none tracking-[-0.41px] text-appGray-600 mb-2.5 md:text-base md:leading-none lg:text-xl lg:leading-none lg:mb-5"
             >
-              {{ data.data.meta.subtitle }}
+              {{ data.page.meta.subtitle }}
             </h2>
           </div>
           <div class="max-w-[848px] mx-auto">
@@ -36,13 +36,12 @@
                 {{ category.toLowerCase() }}
               </button>
               <button
-                @click="selectedCategory = ''"
-                class="col-span-2 flex items-center justify-center w-full px-6 py-2.5 rounded-[32px] border transition-colors duration-300 text-xs leading-none tracking-[-0.41px] md:col-span-1 md:col-start-1 md:row-start-1 md:text-lg md:leading-none md:py-3 lg:text-2xl lg:leading-none lg:px-6 lg:py-[14px]"
-                :class="
+                :class="`col-span-2 flex items-center justify-center w-full px-6 py-2.5 rounded-[32px] border transition-colors duration-300 text-xs leading-none tracking-[-0.41px] md:col-span-1 md:col-start-1 md:row-start-1 md:text-lg md:leading-none md:py-3 lg:text-2xl lg:leading-none lg:px-6 lg:py-[14px], ${
                   selectedCategory === ''
                     ? 'border-appText bg-appText text-white'
                     : 'border-[#E0E0E0]'
-                "
+                }`"
+                @click="selectedCategory = ''"
               >
                 All
               </button>
@@ -81,7 +80,7 @@
           class="grid grid-cols-1 auto-rows-fr gap-6 p-4 border border-appGray-300 rounded-2xl md:grid-cols-2 lg:grid-cols-3 xl:gap-10 xl:p-8"
         >
           <BlogsCard
-            v-for="(blog, index) in data.data.blogs"
+            v-for="(blog, index) in data.page.blogs"
             :key="index"
             :blog="blog"
           />
@@ -92,22 +91,55 @@
 </template>
 
 <script setup lang="ts">
-import { APIResponse, BlogsPageData } from "~~/types";
+import { NuxtApp } from 'nuxt/app';
+import { BlogEntry, BlogsPageEntry, BlogsPageEntryMeta } from '~~/bcms/types';
+import { BlogsPageData, PageProps } from '~~/types';
 
-const { data } = useAsyncData(async (ctx) => {
-  return await ctx?.$bcms.request<APIResponse<BlogsPageData>>({
-    url: "/blogs.json",
-  });
+const { data, error } = useAsyncData<PageProps<BlogsPageData>>(async (ctx) => {
+  const { header, footer } = await getHeaderAndFooter(ctx as NuxtApp);
+  // Get Blogs Page entry
+  const blogsPage = (await ctx?.$bcms.entry.get({
+    // Template name or ID
+    template: 'blogs_page',
+    // Entry slug or ID
+    entry: 'blogs',
+  })) as BlogsPageEntry;
+  if (!blogsPage) {
+    throw new Error('Blogs page entry does not exist.');
+  }
+  // Get all Blog entries
+  const blogs = (await ctx?.$bcms.entry.getAll({
+    // Template name or ID
+    template: 'blog',
+  })) as BlogEntry[];
+  return {
+    header,
+    footer,
+    page: {
+      meta: blogsPage.meta.en as BlogsPageEntryMeta,
+      blogs: blogs
+        .map((blog) => blogToLite(blog))
+        .sort((a, b) => b.date - a.date),
+    },
+  };
 });
+if (error.value) {
+  throw createError({
+    statusCode: 500,
+    statusMessage: error.value.message,
+    stack: error.value.stack,
+    fatal: true,
+  });
+}
 
 const route = useRoute();
 const { setOgHead } = useHeadTags();
 
-const searchVal = ref("");
-const selectedCategory = ref("");
+const searchVal = ref('');
+const selectedCategory = ref('');
 
 const categories = computed(() => {
-  return data.value?.data.blogs.reduce((acc, e) => {
+  return data.value?.page.blogs.reduce((acc, e) => {
     if (e.category.selected && !acc.includes(e.category.selected)) {
       acc.push(e.category.selected);
     }
@@ -118,15 +150,16 @@ const categories = computed(() => {
 
 const filteredBlogs = computed(() => {
   return (
-    data.value?.data.blogs.filter((e) => {
+    data.value?.page.blogs.filter((blog) => {
       let show = true;
 
       if (searchVal.value) {
         show =
-          show && e.title.toLowerCase().includes(searchVal.value.toLowerCase());
+          show &&
+          blog.title.toLowerCase().includes(searchVal.value.toLowerCase());
       }
       if (selectedCategory.value) {
-        show = show && e.category.selected === selectedCategory.value;
+        show = show && blog.category.selected === selectedCategory.value;
       }
 
       return show;
@@ -142,7 +175,7 @@ onMounted(() => {
 
 useHead(() =>
   setOgHead({
-    title: data.value?.data.meta.title,
-  })
+    title: data.value?.page.meta.title,
+  }),
 );
 </script>

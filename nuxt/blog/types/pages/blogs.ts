@@ -2,10 +2,10 @@ import {
   BCMSPropEnumData,
   BCMSPropMediaDataParsed,
   BCMSPropRichTextDataParsed,
-} from "@becomes/cms-client/types";
-import { BlogEntryMeta, BlogsPageEntryMeta } from "~~/bcms/types";
+} from '@becomes/cms-client/types';
+import { BlogEntryMeta, BlogsPageEntryMeta } from '~~/bcms/types';
 
-export interface BlogLight {
+export interface BlogLite {
   title: string;
   slug: string;
   cover: BCMSPropMediaDataParsed;
@@ -16,11 +16,11 @@ export interface BlogLight {
 
 export interface BlogsPageData {
   meta: BlogsPageEntryMeta;
-  blogs: BlogLight[];
+  blogs: BlogLite[];
 }
 
 export interface BlogPageData {
   meta: BlogEntryMeta;
   content: BCMSPropRichTextDataParsed;
-  otherBlogs: BlogLight[];
+  otherBlogs: BlogLite[];
 }

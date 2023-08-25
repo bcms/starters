@@ -64,10 +64,10 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BlogEntryMeta, HomeHeroGroup } from "~~/bcms/types";
-import { BlogLight } from "~~/types";
-import { BCMSImage } from "~~/bcms-components";
+import { PropType } from 'vue';
+import { BlogEntryMeta, HomeHeroGroup } from '~~/bcms/types';
+import { BCMSImage } from '~~/bcms-components';
+import { BlogLite } from '~~/types';
 
 const props = defineProps({
   data: {
@@ -76,23 +76,23 @@ const props = defineProps({
   },
 });
 
-const searchValue = ref("");
+const searchValue = ref('');
 
 const handleSearchEnter = () => {
   navigateTo(`/blog?s=${searchValue.value}`);
 };
 
-const lightBlogs = computed<BlogLight[]>(() =>
-  props.data.featured_blogs.map((e) => {
-    const meta = e.meta.en as BlogEntryMeta;
-
+const lightBlogs = computed<BlogLite[]>(() =>
+  props.data.featured_blogs.map((blog) => {
+    const meta = blog.meta.en as BlogEntryMeta;
     return {
       title: meta.title,
       slug: meta.slug,
       description: meta.description,
       cover: meta.cover,
       date: meta.date,
+      category: meta.category,
     };
-  })
+  }),
 );
 </script>

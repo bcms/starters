@@ -25,10 +25,10 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSEntryContentParsedItem } from "@becomes/cms-client/types";
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
-import { TextWithImageWidget } from "~~/bcms/types";
+import { BCMSEntryContentParsedItem } from '@becomes/cms-client/types';
+import { PropType } from 'vue';
+import { BCMSImage } from '~~/bcms-components';
+import { TextWithImageWidget } from '~~/bcms/types';
 
 const props = defineProps({
   data: {

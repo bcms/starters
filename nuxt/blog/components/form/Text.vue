@@ -28,37 +28,28 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
+import { PropType } from 'vue';
 
 defineProps({
   modelValue: {
     type: String,
     required: true,
   },
-  label: {
-    type: String,
-    required: false,
-  },
-  placeholder: {
-    type: String,
-    required: false,
-  },
+  label: { type: String, default: '' },
+  placeholder: { type: String, default: '' },
   type: {
-    type: String as PropType<"text" | "email" | "textarea">,
+    type: String as PropType<'text' | 'email' | 'textarea'>,
     required: false,
-    default: "text",
+    default: 'text',
   },
-  error: {
-    type: String,
-    required: false,
-  },
+  error: { type: String, default: '' },
 });
 
-const emits = defineEmits(["update:modelValue"]);
+const emits = defineEmits(['update:modelValue']);
 
 const handleInput = (event: Event) => {
   const target = event.target as HTMLInputElement;
 
-  emits("update:modelValue", target.value);
+  emits('update:modelValue', target.value);
 };
 </script>

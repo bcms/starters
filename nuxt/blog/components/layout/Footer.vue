@@ -17,8 +17,8 @@
         </div>
         <div class="md:flex md:items-center md:justify-between md:gap-20">
           <form
-            @submit.prevent="handleSubmit"
             class="flex items-center bg-white pl-[14px] pr-2 rounded-[48px] max-md:mb-6 md:pl-[18px] lg:w-full lg:max-w-[600px]"
+            @submit.prevent="handleSubmit"
           >
             <MailgunIcon class="w-4 h-4 flex-shrink-0 md:w-5 md:h-5" />
             <label class="w-full flex-1">
@@ -60,11 +60,11 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { FooterEntryMeta } from "~~/bcms/types";
-import MailgunIcon from "@/assets/icons/mailgun.svg";
-import PaperPlaneIcon from "@/assets/icons/paper-plane.svg";
-import { BCMSImage } from "~~/bcms-components";
+import { PropType } from 'vue';
+import { FooterEntryMeta } from '~~/bcms/types';
+import MailgunIcon from '@/assets/icons/mailgun.svg';
+import PaperPlaneIcon from '@/assets/icons/paper-plane.svg';
+import { BCMSImage } from '~~/bcms-components';
 
 defineProps({
   data: {
@@ -73,7 +73,7 @@ defineProps({
   },
 });
 
-const email = ref("");
+const email = ref('');
 
 const handleSubmit = () => {
   // TODO: Send email

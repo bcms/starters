@@ -29,13 +29,13 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BlogLight } from "~~/types";
-import ArrowIcon from "@/assets/icons/arrow.svg";
+import { PropType } from 'vue';
+import ArrowIcon from '@/assets/icons/arrow.svg';
+import { BlogLite } from '~~/types';
 
 defineProps({
   blogs: {
-    type: Array as PropType<BlogLight[]>,
+    type: Array as PropType<BlogLite[]>,
     required: true,
   },
 });
