@@ -1,7 +1,6 @@
-import { createBcmsNuxtConfig } from "nuxt-plugin-bcms/config";
-import bcmsRoutes from "./bcms.routes";
+import { createBcmsNuxtConfig } from 'nuxt-plugin-bcms/config';
 
-const _ = require("lodash");
+const _ = require('lodash');
 const svgPrefix = {};
 svgPrefix.toString = () => `${_.uniqueId()}_`;
 
@@ -9,58 +8,70 @@ svgPrefix.toString = () => `${_.uniqueId()}_`;
 export default defineNuxtConfig({
   vite: {
     optimizeDeps: {
-      include: ["axios", "@becomes/cms-client"],
+      include: ['axios', '@becomes/cms-client'],
+    },
+  },
+  runtimeConfig: {
+    public: {
+      bcmsApiOrigin: '',
+      bcmsApiKeyId: '',
+      bcmsApiKeySecret: '',
+      bcmsEnableClientCache: '',
+      bcmsClientDebug: '',
+      bcmsEntryStatuses: '',
+      bcmsMostServerPort: '',
+      bcmsMostServerDomain: '',
     },
   },
   app: {
     head: {
       titleTemplate: `%s - CONference`,
       link: [
-        { rel: "preconnect", href: "https://fonts.googleapis.com" },
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         {
-          rel: "preconnect",
-          href: "https://fonts.gstatic.com",
-          crossorigin: "anonymous",
+          rel: 'preconnect',
+          href: 'https://fonts.gstatic.com',
+          crossorigin: 'anonymous',
         },
         {
-          href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
-          rel: "stylesheet",
+          href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap',
+          rel: 'stylesheet',
         },
       ],
       meta: [
-        { property: "og:type", content: "website" },
-        { property: "twitter:card", content: "summary_large_image" },
+        { property: 'og:type', content: 'website' },
+        { property: 'twitter:card', content: 'summary_large_image' },
       ],
     },
   },
   css: [
-    "~/assets/css/main.css",
-    "~/assets/css/reset.css",
-    "~/assets/css/transition.css",
-    "~/assets/css/swiper.scss",
+    '~/assets/css/main.css',
+    '~/assets/css/reset.css',
+    '~/assets/css/transition.css',
+    '~/assets/css/swiper.scss',
   ],
   modules: [
-    "nuxt-svgo",
-    "nuxt-swiper",
+    'nuxt-svgo',
+    'nuxt-swiper',
     [
-      "nuxt-plugin-bcms",
+      'nuxt-plugin-bcms',
       createBcmsNuxtConfig({
         cms: {
-          origin: process.env.BCMS_API_ORIGIN || "http://localhost:8080",
+          origin: process.env.BCMS_API_ORIGIN || 'http://localhost:8080',
           key: {
-            id: process.env.BCMS_API_KEY || "644252f4680cc89b3a427eb7",
-            secret: process.env.BCMS_API_SECRET || "4c2dc28d1f63c66a0e77d66b663e76eac0268835e14d5baf03c5edd3e3385dd0",
+            id: process.env.BCMS_API_KEY || '644252f4680cc89b3a427eb7',
+            secret:
+              process.env.BCMS_API_SECRET ||
+              '4c2dc28d1f63c66a0e77d66b663e76eac0268835e14d5baf03c5edd3e3385dd0',
           },
         },
-        websiteDomain: "http://localhost:3000",
+        websiteDomain: 'http://localhost:3000',
         postProcessImages: true,
         media: {
           download: true,
-        },
-        server: {
-          routes: bcmsRoutes,
-          // domain: process.env.VITE_BCMS_MOST_SERVER_DOMAIN || 'localhost',
-          // port: parseInt(process.env.VITE_BCMS_MOST_SERVER_PORT || '3001', 10)
+          images: {
+            process: true,
+          },
         },
       }),
     ],
@@ -69,7 +80,7 @@ export default defineNuxtConfig({
     svgoConfig: {
       plugins: [
         {
-          name: "preset-default",
+          name: 'preset-default',
           params: {
             overrides: {
               cleanupIDs: { prefix: svgPrefix },
