@@ -3,13 +3,13 @@
     <div class="pt-8 pb-10 overflow-hidden md:pb-20 lg:pt-[72px] lg:pb-[120px]">
       <div class="container">
         <AnimatedTitle
-          :title="data.data.meta.title"
+          :title="data.page.meta.title"
           class="mb-10 md:mb-20 lg:mb-[192px]"
           title-class="text-[114px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[190px] md:text-[220px] lg:text-[300px] lg:tracking-[5.59px] xl:text-[464px]"
         />
         <div class="grid grid-cols-1 gap-10 lg:gap-[72px]">
           <div
-            v-for="(service, index) in data.data.services"
+            v-for="(service, index) in data.page.services"
             :key="index"
             class="lg:grid lg:grid-cols-[1fr,378px,minmax(auto,1fr)] lg:items-start lg:gap-10"
           >
@@ -53,19 +53,51 @@
 </template>
 
 <script setup lang="ts">
-import { APIResponse, ServicesPageData } from "~~/types";
+import { NuxtApp } from 'nuxt/app';
+import { ServiceItemEntry, ServicesPageEntry } from '@/bcms/types';
+import { PageProps, ServicesPageData } from '~~/types';
+import { getHeaderAndFooter } from '@/utils/page-props';
 
-const { data } = useAsyncData(async (ctx) => {
-  return await ctx?.$bcms.request<APIResponse<ServicesPageData>>({
-    url: "/services.json",
+const { data, error } = useAsyncData<PageProps<ServicesPageData>>(
+  async (ctx) => {
+    const { header, footer } = await getHeaderAndFooter(ctx as NuxtApp);
+    const servicesPage = (await ctx?.$bcms.entry.get({
+      // Template name or ID
+      template: 'services_page',
+      // Entry slug or ID
+      entry: 'services',
+    })) as ServicesPageEntry;
+    if (!servicesPage) {
+      throw new Error('Services page entry does not exist.');
+    }
+    const serviceItems = (await ctx?.$bcms.entry.getAll({
+      // Template name or ID
+      template: 'service_item',
+    })) as ServiceItemEntry[];
+    return {
+      header,
+      footer,
+      page: {
+        meta: servicesPage.meta.en,
+        services: serviceItems.map((item) => item.meta.en),
+      },
+    };
+  },
+);
+if (error.value) {
+  throw createError({
+    statusCode: 500,
+    statusMessage: error.value.message,
+    stack: error.value.stack,
+    fatal: true,
   });
-});
+}
 
 const { setOgHead } = useHeadTags();
 
 useHead(() =>
   setOgHead({
-    title: data.value?.data.meta.title,
-  })
+    title: data.value?.page.meta.title,
+  }),
 );
 </script>

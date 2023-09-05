@@ -3,14 +3,14 @@
     <div class="pt-8 pb-10 overflow-hidden md:pb-20 lg:pt-[72px] lg:pb-[120px]">
       <div class="container">
         <AnimatedTitle
-          :title="data.data.meta.title"
+          :title="data.page.meta.title"
           class="mb-10 md:mb-20 lg:mb-[192px]"
           title-class="text-[114px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[190px] md:text-[220px] lg:text-[300px] lg:tracking-[5.59px] xl:text-[464px]"
         />
         <div class="grid grid-cols-1 gap-[33px] lg:gap-20">
           <NuxtLink
             :to="`/portfolio/${item.slug}`"
-            v-for="(item, index) in data.data.items"
+            v-for="(item, index) in data.page.items"
             :key="index"
           >
             <BCMSImage
@@ -49,20 +49,52 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from "~~/bcms-components";
-import { APIResponse, PortfolioPageData } from "~~/types";
+import { BCMSImage } from '~~/bcms-components';
+import { NuxtApp } from 'nuxt/app';
+import { PortfolioItemEntry, PortfolioPageEntry } from '@/bcms/types';
+import { PageProps, PortfolioPageData } from '~~/types';
+import { getHeaderAndFooter } from '@/utils/page-props';
 
-const { data } = useAsyncData(async (ctx) => {
-  return await ctx?.$bcms.request<APIResponse<PortfolioPageData>>({
-    url: "/portfolio.json",
+const { data, error } = useAsyncData<PageProps<PortfolioPageData>>(
+  async (ctx) => {
+    const { header, footer } = await getHeaderAndFooter(ctx as NuxtApp);
+    const portfolioPage = (await ctx?.$bcms.entry.get({
+      // Template name or ID
+      template: 'portfolio_page',
+      // Entry slug or ID
+      entry: 'portfolio',
+    })) as PortfolioPageEntry;
+    if (!portfolioPage) {
+      throw new Error('Portfolio page entry does not exist.');
+    }
+    const portfolioItems = (await ctx?.$bcms.entry.getAll({
+      // Template name or ID
+      template: 'portfolio_item',
+    })) as PortfolioItemEntry[];
+    return {
+      header,
+      footer,
+      page: {
+        meta: portfolioPage.meta.en,
+        items: portfolioItems.map((item) => item.meta.en),
+      },
+    };
+  },
+);
+if (error.value) {
+  throw createError({
+    statusCode: 500,
+    statusMessage: error.value.message,
+    stack: error.value.stack,
+    fatal: true,
   });
-});
+}
 
 const { setOgHead } = useHeadTags();
 
 useHead(() =>
   setOgHead({
-    title: data.value?.data.meta.title,
-  })
+    title: data.value?.page.meta.title,
+  }),
 );
 </script>
