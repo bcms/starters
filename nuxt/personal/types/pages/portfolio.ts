@@ -1,4 +1,4 @@
-import { PortfolioItemEntryMeta, PortfolioPageEntryMeta } from "~~/bcms/types";
+import { PortfolioItemEntryMeta, PortfolioPageEntryMeta } from '~~/bcms/types';
 
 export interface PortfolioPageData {
   meta: PortfolioPageEntryMeta;

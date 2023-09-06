@@ -23,8 +23,8 @@
           el: '.homeAgenda--pagination',
           clickable: true,
         }"
-        @active-index-change="handleActiveIndexChange"
         class="mb-8 lg:mb-20"
+        @active-index-change="handleActiveIndexChange"
       >
         <SwiperSlide v-for="(day, index) in data.days" :key="index">
           <div class="grid grid-cols-1 gap-6 lg:gap-12">
@@ -64,10 +64,10 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { AgendaGroup } from "~~/bcms/types";
-import { A11y, Pagination } from "swiper";
-import type Swiper from "swiper";
+import { PropType } from 'vue';
+import type { Swiper } from 'swiper';
+import { A11y, Pagination } from 'swiper';
+import { AgendaGroup } from '~~/bcms/types';
 
 defineProps({
   data: {

@@ -103,10 +103,10 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { SponsorsGroup } from "~~/bcms/types";
-import { BCMSImage } from "~~/bcms-components";
-import { A11y, Pagination } from "swiper";
+import { PropType } from 'vue';
+import { A11y, Pagination } from 'swiper';
+import { SponsorsGroup } from '~~/bcms/types';
+import { BCMSImage } from '~~/bcms-components';
 
 const props = defineProps({
   data: {
@@ -117,13 +117,13 @@ const props = defineProps({
 
 const showContactForm = ref(false);
 
-const activeTier = ref<"general" | "platinum" | "gold" | "pr partners">(
-  "platinum"
+const activeTier = ref<'general' | 'platinum' | 'gold' | 'pr partners'>(
+  'platinum',
 );
 
 const filteredSponsors = computed(() => {
   return props.data.sponsors.filter(
-    (sponsor) => sponsor.tier.toLowerCase() === activeTier.value.toLowerCase()
+    (sponsor) => sponsor.tier.toLowerCase() === activeTier.value.toLowerCase(),
   );
 });
 </script>

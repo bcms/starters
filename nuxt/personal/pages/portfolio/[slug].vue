@@ -8,7 +8,7 @@
               <h1
                 class="text-xl leading-none tracking-[-0.41px] font-Helvetica text-white lg:text-[72px] lg:leading-none"
               >
-                {{ data.data.meta.title }}
+                {{ data.page.meta.title }}
               </h1>
               <div class="flex items-end justify-between gap-5 h-full">
                 <div class="flex flex-col">
@@ -20,7 +20,7 @@
                   <div
                     class="text-sm leading-none tracking-[-0.41px] font-Helvetica text-white lg:text-[26px] lg:leading-none"
                   >
-                    {{ data.data.meta.project_no.padStart(2, "0") }}
+                    {{ data.page.meta.project_no.padStart(2, '0') }}
                   </div>
                 </div>
                 <div class="flex flex-col">
@@ -32,7 +32,7 @@
                   <div
                     class="text-sm leading-none tracking-[-0.41px] font-Helvetica text-white lg:text-[26px] lg:leading-none"
                   >
-                    {{ data.data.meta.brand_name }}
+                    {{ data.page.meta.brand_name }}
                   </div>
                 </div>
                 <div class="flex flex-col">
@@ -44,7 +44,7 @@
                   <div
                     class="text-sm leading-none tracking-[-0.41px] font-Helvetica text-white lg:text-[26px] lg:leading-none"
                   >
-                    {{ data.data.meta.role }}
+                    {{ data.page.meta.role }}
                   </div>
                 </div>
                 <div class="flex flex-col">
@@ -56,7 +56,7 @@
                   <div
                     class="text-sm leading-none tracking-[-0.41px] font-Helvetica text-white lg:text-[26px] lg:leading-none"
                   >
-                    {{ new Date(data.data.meta.year).getFullYear() }}
+                    {{ new Date(data.page.meta.year).getFullYear() }}
                   </div>
                 </div>
               </div>
@@ -64,7 +64,7 @@
           </div>
         </div>
         <BCMSImage
-          :media="data.data.meta.gallery[0]"
+          :media="data.page.meta.gallery[0]"
           :options="{
             sizes: {
               exec: [
@@ -81,12 +81,12 @@
       </div>
       <div class="container">
         <ContentManager
-          :item="data.data.meta.description"
+          :item="data.page.meta.description"
           class="text-sm leading-[1.2] tracking-[-0.41px] max-w-[1138px] mb-8 lg:text-[40px] lg:leading-[1.2] lg:mb-[72px]"
         />
         <div class="grid grid-cols-3 gap-3 mb-4 lg:gap-8 lg:mb-6">
           <BCMSImage
-            v-for="(image, index) in data.data.meta.gallery.slice(1)"
+            v-for="(image, index) in data.page.meta.gallery.slice(1)"
             :key="index"
             :media="image"
             class="portfolioItemPage--galleryImage w-full cover h-full"
@@ -98,25 +98,49 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from "~~/bcms-components";
-import { APIResponse, PortfolioItemPageData } from "~~/types";
-
-const route = useRoute();
-
-const pageSlug = route.params.slug as string;
-
-const { data } = useAsyncData(async (ctx) => {
-  return await ctx?.$bcms.request<APIResponse<PortfolioItemPageData>>({
-    url: `/portfolio/${pageSlug}/data.json`,
-  });
-});
+import { BCMSImage } from '~~/bcms-components';
+import { NuxtApp } from 'nuxt/app';
+import { PortfolioItemEntry } from '@/bcms/types';
+import { PageProps, PortfolioItemPageData } from '~~/types';
+import { getHeaderAndFooter } from '@/utils/page-props';
 
 const { setOgHead } = useHeadTags();
+const route = useRoute();
+
+const { data, error } = useAsyncData<PageProps<PortfolioItemPageData>>(
+  async (ctx) => {
+    const { header, footer } = await getHeaderAndFooter(ctx as NuxtApp);
+    const portfolioItem = (await ctx?.$bcms.entry.get({
+      // Template name or ID
+      template: 'portfolio_item',
+      // Entry slug or ID
+      entry: route.params.slug,
+    })) as PortfolioItemEntry;
+    if (!portfolioItem) {
+      throw new Error('Portfolio item entry does not exist.');
+    }
+    return {
+      header,
+      footer,
+      page: {
+        meta: portfolioItem.meta.en,
+      },
+    };
+  },
+);
+if (error.value) {
+  throw createError({
+    statusCode: 500,
+    statusMessage: error.value.message,
+    stack: error.value.stack,
+    fatal: true,
+  });
+}
 
 useHead(() =>
   setOgHead({
-    title: data.value?.data.meta.title,
-  })
+    title: data.value?.page.meta.title,
+  }),
 );
 </script>
 

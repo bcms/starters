@@ -6,8 +6,8 @@
       class="relative z-10 bg-white rounded-2xl border border-[#D4D4D4] p-6 w-[736px] max-w-[95vw] max-h-[90vh] overflow-y-auto overscroll-contain lg:p-10"
     >
       <form
-        @submit.prevent="handleSubmit"
         class="grid grid-cols-1 gap-4 lg:gap-10"
+        @submit.prevent="handleSubmit"
       >
         <FormText
           v-model="form.name.value"
@@ -52,26 +52,26 @@
 </template>
 
 <script setup lang="ts">
-defineEmits(["close"]);
+defineEmits(['close']);
 
 const { checkForInputErrors } = useError();
 
 const form = ref({
   name: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   email: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   message: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   query: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
 });
 
