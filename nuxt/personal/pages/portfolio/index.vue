@@ -9,9 +9,9 @@
         />
         <div class="grid grid-cols-1 gap-[33px] lg:gap-20">
           <NuxtLink
-            :to="`/portfolio/${item.slug}`"
             v-for="(item, index) in data.page.items"
             :key="index"
+            :to="`/portfolio/${item.slug}`"
           >
             <BCMSImage
               :media="item.gallery[0]"
@@ -49,9 +49,14 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from '~~/bcms-components';
 import { NuxtApp } from 'nuxt/app';
-import { PortfolioItemEntry, PortfolioPageEntry } from '@/bcms/types';
+import { BCMSImage } from '~~/bcms-components';
+import {
+  PortfolioItemEntry,
+  PortfolioItemEntryMeta,
+  PortfolioPageEntry,
+  PortfolioPageEntryMeta,
+} from '@/bcms/types';
 import { PageProps, PortfolioPageData } from '~~/types';
 import { getHeaderAndFooter } from '@/utils/page-props';
 
@@ -75,8 +80,10 @@ const { data, error } = useAsyncData<PageProps<PortfolioPageData>>(
       header,
       footer,
       page: {
-        meta: portfolioPage.meta.en,
-        items: portfolioItems.map((item) => item.meta.en),
+        meta: portfolioPage.meta.en as PortfolioPageEntryMeta,
+        items: portfolioItems.map(
+          (item) => item.meta.en as PortfolioItemEntryMeta,
+        ),
       },
     };
   },

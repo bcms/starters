@@ -1,1 +1,1 @@
-export type Languages = "en";
+export type Languages = 'en';

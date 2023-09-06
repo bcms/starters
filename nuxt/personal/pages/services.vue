@@ -54,7 +54,12 @@
 
 <script setup lang="ts">
 import { NuxtApp } from 'nuxt/app';
-import { ServiceItemEntry, ServicesPageEntry } from '@/bcms/types';
+import {
+  ServiceItemEntry,
+  ServiceItemEntryMeta,
+  ServicesPageEntry,
+  ServicesPageEntryMeta,
+} from '@/bcms/types';
 import { PageProps, ServicesPageData } from '~~/types';
 import { getHeaderAndFooter } from '@/utils/page-props';
 
@@ -78,8 +83,10 @@ const { data, error } = useAsyncData<PageProps<ServicesPageData>>(
       header,
       footer,
       page: {
-        meta: servicesPage.meta.en,
-        services: serviceItems.map((item) => item.meta.en),
+        meta: servicesPage.meta.en as ServicesPageEntryMeta,
+        services: serviceItems.map(
+          (item) => item.meta.en as ServiceItemEntryMeta,
+        ),
       },
     };
   },

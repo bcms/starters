@@ -109,7 +109,7 @@
 
 <script setup lang="ts">
 import { NuxtApp } from 'nuxt/app';
-import { AboutPageEntry } from '@/bcms/types';
+import { AboutPageEntry, AboutPageEntryMeta } from '@/bcms/types';
 import { PageProps, AboutPageData } from '~~/types';
 import { getHeaderAndFooter } from '@/utils/page-props';
 import { BCMSImage } from '~~/bcms-components';
@@ -129,7 +129,7 @@ const { data, error } = useAsyncData<PageProps<AboutPageData>>(async (ctx) => {
     header,
     footer,
     page: {
-      meta: aboutPage.meta.en,
+      meta: aboutPage.meta.en as AboutPageEntryMeta,
     },
   };
 });

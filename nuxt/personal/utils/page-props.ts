@@ -1,10 +1,10 @@
-import { NuxtApp } from "nuxt/app";
+import { NuxtApp } from 'nuxt/app';
 import {
   FooterEntry,
   FooterEntryMeta,
   HeaderEntry,
   HeaderEntryMeta,
-} from "@/bcms/types";
+} from '@/bcms/types';
 
 export interface HeaderAndFooter {
   header: HeaderEntryMeta;
@@ -12,19 +12,19 @@ export interface HeaderAndFooter {
 }
 
 export async function getHeaderAndFooter(
-  ctx: NuxtApp
+  ctx: NuxtApp,
 ): Promise<HeaderAndFooter> {
   const header = (await ctx.$bcms.entry.get({
     // Template name or ID
-    template: "header",
+    template: 'header',
     // Entry slug or ID
-    entry: "header",
+    entry: 'header',
   })) as HeaderEntry;
   const footer = (await ctx.$bcms.entry.get({
     // Template name or ID
-    template: "footer",
+    template: 'footer',
     // Entry slug or ID
-    entry: "footer",
+    entry: 'footer',
   })) as FooterEntry;
   return {
     header: header.meta.en as HeaderEntryMeta,

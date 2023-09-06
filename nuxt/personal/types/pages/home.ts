@@ -1,12 +1,12 @@
-import { BCMSPropRichTextDataParsed } from "@becomes/cms-client/types";
+import { BCMSPropRichTextDataParsed } from '@becomes/cms-client/types';
 import {
   AboutEducationGroup,
   AboutWorkHistoryGroup,
   PortfolioItemEntryMeta,
   ServiceItemEntryMeta,
   TestimonialItemEntryMeta,
-} from "~~/bcms/types";
-import { HomePageEntryMeta } from "~~/bcms/types/entry/home_page";
+} from '~~/bcms/types';
+import { HomePageEntryMeta } from '~~/bcms/types/entry/home_page';
 
 export interface HomeServices {
   title: string;
