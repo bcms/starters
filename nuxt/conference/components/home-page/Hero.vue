@@ -12,8 +12,8 @@
         >
           <BCMSImage
             v-for="(image, index) in data.gallery"
-            :media="image"
             :key="index"
+            :media="image"
             class="w-10 h-10 cover lg:w-[128px] lg:h-[128px]"
             :class="[index % 2 !== 0 ? '-rotate-[9deg]' : '']"
           />
@@ -68,11 +68,11 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { HeroGroup } from "~~/bcms/types";
-import HeroSvg from "@/assets/media/hero-svg.svg";
-import { BCMSImage } from "~~/bcms-components";
-import ArrowIcon from "@/assets/icons/arrow.svg";
+import { PropType } from 'vue';
+import { HeroGroup } from '~~/bcms/types';
+import HeroSvg from '@/assets/media/hero-svg.svg';
+import { BCMSImage } from '~~/bcms-components';
+import ArrowIcon from '@/assets/icons/arrow.svg';
 
 defineProps({
   data: {
@@ -81,7 +81,7 @@ defineProps({
   },
 });
 
-const timerOutput = ref("Loading");
+const timerOutput = ref('Loading');
 
 onMounted(() => {
   const untilEvent = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
@@ -91,21 +91,21 @@ onMounted(() => {
     const distance = untilEvent.getTime() - now;
 
     const hours = (
-      Math.floor((distance & (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + ""
-    ).padStart(2, "0");
+      Math.floor((distance & (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + ''
+    ).padStart(2, '0');
     const minutes = (
-      Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)) + ""
-    ).padStart(2, "0");
-    const seconds = (Math.floor((distance % (1000 * 60)) / 1000) + "").padStart(
+      Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)) + ''
+    ).padStart(2, '0');
+    const seconds = (Math.floor((distance % (1000 * 60)) / 1000) + '').padStart(
       2,
-      "0"
+      '0',
     );
 
     timerOutput.value = `${hours}:${minutes}:${seconds}`;
 
     if (distance < 0) {
       clearInterval(timer);
-      timerOutput.value = "EXPIRED";
+      timerOutput.value = 'EXPIRED';
     }
   }, 1000);
 });

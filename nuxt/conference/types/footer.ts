@@ -1,4 +1,4 @@
-import { FooterEntryMeta, LegalEntry } from "~~/bcms/types";
+import { FooterEntryMeta, LegalEntry } from '~~/bcms/types';
 
 export interface FooterPageData {
   meta: FooterEntryMeta;

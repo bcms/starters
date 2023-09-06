@@ -11,7 +11,11 @@
             :to="item.url"
             target="_blank"
           >
-            <BCMSImage :media="item.icon" class="w-6 h-6 lg:w-8 lg:h-8" :svg="true" />
+            <BCMSImage
+              :media="item.icon"
+              class="w-6 h-6 lg:w-8 lg:h-8"
+              :svg="true"
+            />
           </NuxtLink>
         </div>
         <div
@@ -60,10 +64,10 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
-import BCMSLogo from "@/assets/media/bcms-logo.svg";
-import { FooterPageData } from "~~/types/footer";
+import { PropType } from 'vue';
+import { BCMSImage } from '~~/bcms-components';
+import BCMSLogo from '@/assets/media/bcms-logo.svg';
+import { FooterPageData } from '~~/types/footer';
 
 defineProps({
   data: {

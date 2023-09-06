@@ -67,7 +67,7 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
+import { PropType } from 'vue';
 
 defineProps({
   modelValue: {
@@ -77,10 +77,12 @@ defineProps({
   label: {
     type: String,
     required: false,
+    default: '',
   },
   placeholder: {
     type: String,
     required: false,
+    default: '',
   },
   options: {
     type: Array as PropType<string[]>,
@@ -89,10 +91,11 @@ defineProps({
   error: {
     type: String,
     required: false,
+    default: '',
   },
 });
 
-const emits = defineEmits(["update:modelValue"]);
+defineEmits(['update:modelValue']);
 
 const showOptions = ref(false);
 </script>

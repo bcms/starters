@@ -83,9 +83,9 @@
 
 <script setup lang="ts">
 import { PropType } from 'vue';
+import { A11y, Pagination } from 'swiper';
 import { SpeakersGroup } from '~~/bcms/types';
 import { BCMSImage } from '~~/bcms-components';
-import { A11y, Pagination } from 'swiper';
 
 defineProps({
   data: {
