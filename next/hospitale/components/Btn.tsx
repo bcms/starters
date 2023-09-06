@@ -2,7 +2,7 @@ import { FC } from 'react';
 import Link from 'next/link';
 import classnames from 'classnames';
 
-import ArrowIcon from '@/../../blog/assets/icons/arrow.svg';
+import ArrowIcon from '@/assets/icons/arrow.svg';
 
 interface ButtonProps {
   className?: string;
