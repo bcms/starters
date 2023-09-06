@@ -98,9 +98,9 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from '~~/bcms-components';
 import { NuxtApp } from 'nuxt/app';
-import { PortfolioItemEntry } from '@/bcms/types';
+import { BCMSImage } from '~~/bcms-components';
+import { PortfolioItemEntry, PortfolioItemEntryMeta } from '@/bcms/types';
 import { PageProps, PortfolioItemPageData } from '~~/types';
 import { getHeaderAndFooter } from '@/utils/page-props';
 
@@ -123,7 +123,7 @@ const { data, error } = useAsyncData<PageProps<PortfolioItemPageData>>(
       header,
       footer,
       page: {
-        meta: portfolioItem.meta.en,
+        meta: portfolioItem.meta.en as PortfolioItemEntryMeta,
       },
     };
   },

@@ -1,6 +1,6 @@
 import { createBcmsNuxtConfig } from 'nuxt-plugin-bcms/config';
+import _ from 'lodash';
 
-const _ = require('lodash');
 const svgPrefix = {};
 svgPrefix.toString = () => `${_.uniqueId()}_`;
 
@@ -25,7 +25,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      titleTemplate: `%s - CONference`,
+      titleTemplate: '%s - CONference',
       link: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         {

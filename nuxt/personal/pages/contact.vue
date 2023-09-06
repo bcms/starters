@@ -8,8 +8,8 @@
           title-class="text-[114px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[190px] md:text-[220px] lg:text-[300px] lg:tracking-[5.59px] xl:text-[464px]"
         />
         <form
-          @submit.prevent="handleSubmit"
           class="md:grid md:grid-cols-2 md:gap-x-[72px]"
+          @submit.prevent="handleSubmit"
         >
           <FormText
             v-model="me.phone"
@@ -67,7 +67,7 @@
 
 <script setup lang="ts">
 import { NuxtApp } from 'nuxt/app';
-import { ContactPageEntry } from '@/bcms/types';
+import { ContactPageEntry, ContactPageEntryMeta } from '@/bcms/types';
 import { PageProps, ContactPageData } from '~~/types';
 import { getHeaderAndFooter } from '@/utils/page-props';
 
@@ -87,7 +87,7 @@ const { data, error } = useAsyncData<PageProps<ContactPageData>>(
       header,
       footer,
       page: {
-        meta: contactPage.meta.en,
+        meta: contactPage.meta.en as ContactPageEntryMeta,
       },
     };
   },

@@ -10,15 +10,21 @@
 
 <script setup lang="ts">
 import { NuxtApp } from 'nuxt/app';
+import { BCMSPropRichTextDataParsed } from '@becomes/cms-client/types';
 import {
+  AboutEducationGroup,
   AboutPageEntry,
+  AboutWorkHistoryGroup,
   HomePageEntry,
   HomePageEntryMeta,
   PortfolioItemEntry,
+  PortfolioItemEntryMeta,
   PortfolioPageEntry,
   ServiceItemEntry,
+  ServiceItemEntryMeta,
   ServicesPageEntry,
   TestimonialItemEntry,
+  TestimonialItemEntryMeta,
   TestimonialsPageEntry,
 } from '@/bcms/types';
 import { PageProps, HomePageData } from '~~/types';
@@ -89,25 +95,31 @@ const { data, error } = useAsyncData<PageProps<HomePageData>>(async (ctx) => {
     page: {
       meta: homePage.meta.en as HomePageEntryMeta,
       services: {
-        title: servicesPage.meta.en?.title,
-        description: servicesPage.meta.en?.description,
-        items: serviceItems.map((item) => item.meta.en),
+        title: servicesPage.meta.en?.title as string,
+        description: servicesPage.meta.en
+          ?.description as BCMSPropRichTextDataParsed,
+        items: serviceItems.map((item) => item.meta.en as ServiceItemEntryMeta),
       },
       about: {
-        title: aboutPage.meta.en?.title,
-        description: aboutPage.meta.en?.description,
-        education: aboutPage.meta.en?.education,
-        workHistory: aboutPage.meta.en?.work_history,
+        title: aboutPage.meta.en?.title as string,
+        description: aboutPage.meta.en
+          ?.description as BCMSPropRichTextDataParsed,
+        education: aboutPage.meta.en?.education as AboutEducationGroup,
+        workHistory: aboutPage.meta.en?.work_history as AboutWorkHistoryGroup,
       },
       portfolio: {
-        title: portfolioPage.meta.en?.title,
-        description: portfolioPage.meta.en?.description,
-        items: portfolioItems.map((e) => e.meta.en),
+        title: portfolioPage.meta.en?.title as string,
+        description: portfolioPage.meta.en
+          ?.description as BCMSPropRichTextDataParsed,
+        items: portfolioItems.map((e) => e.meta.en as PortfolioItemEntryMeta),
       },
       testimonials: {
-        title: testimonialsPage.meta.en?.title,
-        description: testimonialsPage.meta.en?.description,
-        items: testimonialItems.map((e) => e.meta.en),
+        title: testimonialsPage.meta.en?.title as string,
+        description: testimonialsPage.meta.en
+          ?.description as BCMSPropRichTextDataParsed,
+        items: testimonialItems.map(
+          (e) => e.meta.en as TestimonialItemEntryMeta,
+        ),
       },
     },
   };

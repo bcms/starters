@@ -65,9 +65,9 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { HomeTestimonials } from "~~/types";
-import { BCMSImage } from "~~/bcms-components";
+import { PropType } from 'vue';
+import { HomeTestimonials } from '~~/types';
+import { BCMSImage } from '~~/bcms-components';
 
 defineProps({
   data: {

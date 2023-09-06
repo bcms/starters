@@ -35,8 +35,8 @@
               </div>
               <button
                 v-if="visibleDegrees.length < data.education.degrees.length"
-                @click="workHistoryItemsToShow = 999"
                 class="flex px-4 py-3 text-sm leading-none tracking-[-0.41px] text-white bg-appGray-600 font-medium rounded-[32px] lg:text-base lg:leading-none"
+                @click="workHistoryItemsToShow = 999"
               >
                 See all
               </button>
@@ -64,8 +64,8 @@
                 v-if="
                   visibleWorkHistoryItems.length < data.workHistory.items.length
                 "
-                @click="workHistoryItemsToShow = 999"
                 class="flex px-4 py-3 text-sm leading-none tracking-[-0.41px] text-white bg-appGray-600 font-medium rounded-[32px] lg:text-base lg:leading-none"
+                @click="workHistoryItemsToShow = 999"
               >
                 See all
               </button>
@@ -84,8 +84,8 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { HomeAbout } from "~~/types";
+import { PropType } from 'vue';
+import { HomeAbout } from '~~/types';
 
 const props = defineProps({
   data: {

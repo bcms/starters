@@ -81,10 +81,10 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
-import { FooterEntryMeta } from "~~/bcms/types";
-import BCMSLogo from "@/assets/media/bcms-logo.svg";
+import { PropType } from 'vue';
+import { BCMSImage } from '~~/bcms-components';
+import { FooterEntryMeta } from '~~/bcms/types';
+import BCMSLogo from '@/assets/media/bcms-logo.svg';
 
 defineProps({
   data: {

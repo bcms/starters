@@ -33,10 +33,10 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { AboutGroup } from "~~/bcms/types";
-import ArrowIcon from "@/assets/icons/arrow.svg";
-import { BCMSImage } from "~~/bcms-components";
+import { PropType } from 'vue';
+import { AboutGroup } from '~~/bcms/types';
+import ArrowIcon from '@/assets/icons/arrow.svg';
+import { BCMSImage } from '~~/bcms-components';
 
 defineProps({
   data: {

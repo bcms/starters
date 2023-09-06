@@ -51,8 +51,8 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { HomeServices } from "~~/types";
+import { PropType } from 'vue';
+import { HomeServices } from '~~/types';
 
 defineProps({
   data: {

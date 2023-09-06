@@ -1,7 +1,7 @@
 import {
   TestimonialItemEntryMeta,
   TestimonialsPageEntryMeta,
-} from "~~/bcms/types";
+} from '~~/bcms/types';
 
 export interface TestimonialsPageData {
   meta: TestimonialsPageEntryMeta;

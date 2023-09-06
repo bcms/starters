@@ -65,9 +65,14 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from '~~/bcms-components';
 import { NuxtApp } from 'nuxt/app';
-import { TestimonialItemEntry, TestimonialsPageEntry } from '@/bcms/types';
+import { BCMSImage } from '~~/bcms-components';
+import {
+  TestimonialItemEntry,
+  TestimonialItemEntryMeta,
+  TestimonialsPageEntry,
+  TestimonialsPageEntryMeta,
+} from '@/bcms/types';
 import { PageProps, TestimonialsPageData } from '~~/types';
 import { getHeaderAndFooter } from '@/utils/page-props';
 
@@ -91,8 +96,10 @@ const { data, error } = useAsyncData<PageProps<TestimonialsPageData>>(
       header,
       footer,
       page: {
-        meta: testimonialsPage.meta.en,
-        items: testimonialItems.map((item) => item.meta.en),
+        meta: testimonialsPage.meta.en as TestimonialsPageEntryMeta,
+        items: testimonialItems.map(
+          (item) => item.meta.en as TestimonialItemEntryMeta,
+        ),
       },
     };
   },

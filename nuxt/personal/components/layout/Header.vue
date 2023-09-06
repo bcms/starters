@@ -54,12 +54,12 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
-import { HeaderEntryMeta } from "~~/bcms/types";
-import MenuIcon from "@/assets/icons/menu.svg";
-import XIcon from "@/assets/icons/x.svg";
-import PinIcon from "@/assets/icons/pin.svg";
+import { PropType } from 'vue';
+import { BCMSImage } from '~~/bcms-components';
+import { HeaderEntryMeta } from '~~/bcms/types';
+import MenuIcon from '@/assets/icons/menu.svg';
+import XIcon from '@/assets/icons/x.svg';
+import PinIcon from '@/assets/icons/pin.svg';
 
 defineProps({
   data: {
@@ -71,10 +71,10 @@ defineProps({
 const showMobileMenu = ref(false);
 
 const timeNow = computed(() => {
-  return new Date().toLocaleTimeString("en-US", {
-    timeZone: "Australia/Sydney",
-    hour: "numeric",
-    minute: "numeric",
+  return new Date().toLocaleTimeString('en-US', {
+    timeZone: 'Australia/Sydney',
+    hour: 'numeric',
+    minute: 'numeric',
     hour12: true,
   });
 });

@@ -25,8 +25,8 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import ArrowIcon from "@/assets/icons/arrow.svg";
+import { PropType } from 'vue';
+import ArrowIcon from '@/assets/icons/arrow.svg';
 
 defineProps({
   modelValue: {
@@ -36,15 +36,17 @@ defineProps({
   label: {
     type: String,
     required: false,
+    default: () => '',
   },
   placeholder: {
     type: String,
     required: false,
+    default: () => '',
   },
   type: {
-    type: String as PropType<"text" | "email">,
+    type: String as PropType<'text' | 'email'>,
     required: false,
-    default: "text",
+    default: 'text',
   },
   isReadOnly: {
     type: Boolean,
@@ -54,14 +56,15 @@ defineProps({
   error: {
     type: String,
     required: false,
+    default: () => '',
   },
 });
 
-const emits = defineEmits(["update:modelValue"]);
+const emits = defineEmits(['update:modelValue']);
 
 const handleInput = (event: Event) => {
   const target = event.target as HTMLInputElement;
 
-  emits("update:modelValue", target.value);
+  emits('update:modelValue', target.value);
 };
 </script>

@@ -77,9 +77,9 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
-import { HomeHeroGroup } from "~~/bcms/types/group/home_hero";
+import { PropType } from 'vue';
+import { BCMSImage } from '~~/bcms-components';
+import { HomeHeroGroup } from '~~/bcms/types/group/home_hero';
 
 defineProps({
   data: {

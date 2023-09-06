@@ -31,8 +31,8 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "nuxt/dist/app/compat/capi";
-import { LegalEntry } from "~~/bcms/types";
+import { PropType } from 'nuxt/dist/app/compat/capi';
+import { LegalEntry } from '~~/bcms/types';
 
 defineProps({
   data: {
@@ -41,5 +41,5 @@ defineProps({
   },
 });
 
-defineEmits(["close"]);
+defineEmits(['close']);
 </script>
