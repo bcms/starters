@@ -9,9 +9,9 @@ export const useError = () => {
 
     obj.forEach((e) => {
       if (!e.value) {
-        e.error = "This field is required";
+        e.error = 'This field is required';
       } else {
-        e.error = "";
+        e.error = '';
       }
     });
 

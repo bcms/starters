@@ -1,5 +1,5 @@
 export const stringUtil = {
   removeHTMLTags: (val: string) => {
-    return val.replace(/(<([^>]+)>)/gi, "");
+    return val.replace(/(<([^>]+)>)/gi, '');
   },
 };

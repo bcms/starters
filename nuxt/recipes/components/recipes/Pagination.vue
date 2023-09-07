@@ -8,9 +8,9 @@
     next-link-class="hidden"
     page-link-class="pagination--item"
     active-class="pagination--item-active"
-    @update:modelValue="($event: any) => $emit('page-change', $event)"
+    @update:model-value="($event: any) => $emit('page-change', $event)"
   >
-    <template v-slot:breakViewContent>
+    <template #break-view-content>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -26,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-import Pagination from "vuejs-paginate-next";
+import Pagination from 'vuejs-paginate-next';
 
 defineProps({
   atPage: {
@@ -44,7 +44,7 @@ defineProps({
   },
 });
 
-defineEmits(["page-change"]);
+defineEmits(['page-change']);
 </script>
 
 <style lang="scss">

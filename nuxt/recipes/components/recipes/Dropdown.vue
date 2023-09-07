@@ -51,9 +51,9 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import ChevronIcon from "@/assets/icons/chevron-down.svg";
-import ArrowIcon from "@/assets/icons/arrow-right.svg";
+import { PropType } from 'vue';
+import ChevronIcon from '@/assets/icons/chevron-down.svg';
+import ArrowIcon from '@/assets/icons/arrow-right.svg';
 
 const props = defineProps({
   modelValue: {
@@ -69,21 +69,21 @@ const props = defineProps({
     required: true,
   },
   dropdownPosition: {
-    type: String as PropType<"left" | "right">,
+    type: String as PropType<'left' | 'right'>,
     required: false,
-    default: "right",
+    default: 'right',
   },
 });
 
-const emits = defineEmits(["update:modelValue"]);
+const emits = defineEmits(['update:modelValue']);
 
 const showOptions = ref(false);
 
 const handleOptionSelect = (option: string) => {
   if (props.modelValue === option) {
-    emits("update:modelValue", "");
+    emits('update:modelValue', '');
   } else {
-    emits("update:modelValue", option);
+    emits('update:modelValue', option);
   }
   showOptions.value = false;
 };

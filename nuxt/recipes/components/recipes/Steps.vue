@@ -58,8 +58,8 @@
       <Btn
         theme="gray"
         :disabled="activeStep === 0"
-        @click="activeStep--"
         class="justify-center"
+        @click="activeStep--"
       >
         <ArrowIcon class="w-[14px] h-[14px] mr-2 rotate-180 lg:w-5 lg:h-5" />
         <span>Previous</span>
@@ -67,8 +67,8 @@
       <Btn
         theme="gray"
         :disabled="activeStep === steps.length - 1"
-        @click="activeStep++"
         class="justify-center"
+        @click="activeStep++"
       >
         <span class="mr-2">Next</span>
         <ArrowIcon class="w-[14px] h-[14px] lg:w-5 lg:h-5" />
@@ -78,10 +78,10 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { RecipeStepGroup } from "~~/bcms/types";
-import { BCMSImage } from "~~/bcms-components";
-import ArrowIcon from "@/assets/icons/arrow-right.svg";
+import { PropType } from 'vue';
+import { RecipeStepGroup } from '~~/bcms/types';
+import { BCMSImage } from '~~/bcms-components';
+import ArrowIcon from '@/assets/icons/arrow-right.svg';
 
 defineProps({
   steps: {

@@ -23,9 +23,9 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { QaItemGroup } from "~~/bcms/types";
-import ChevronIcon from "@/assets/icons/chevron-down.svg";
+import { PropType } from 'vue';
+import { QaItemGroup } from '~~/bcms/types';
+import ChevronIcon from '@/assets/icons/chevron-down.svg';
 
 defineProps({
   item: {

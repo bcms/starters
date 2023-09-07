@@ -19,23 +19,24 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
+import { PropType } from 'vue';
 
 defineProps({
   to: {
     type: String,
     required: false,
+    default: '',
   },
   theme: {
-    type: String as PropType<"light" | "dark" | "gray">,
+    type: String as PropType<'light' | 'dark' | 'gray'>,
     required: false,
-    default: "light",
+    default: 'light',
   },
   size: {
-    type: String as PropType<"sm" | "regular">,
-    default: "regular",
+    type: String as PropType<'sm' | 'regular'>,
+    default: 'regular',
   },
 });
 
-const NuxtLink = resolveComponent("NuxtLink");
+const NuxtLink = resolveComponent('NuxtLink');
 </script>

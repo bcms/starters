@@ -1,0 +1,9 @@
+/.nuxt
+/.output
+/assets
+/bcms
+/bcms-components
+/dist
+/logs
+/node_modules
+/public

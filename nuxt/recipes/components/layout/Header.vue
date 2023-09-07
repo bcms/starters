@@ -29,8 +29,8 @@
           </div>
           <button
             class="flex items-center justify-center w-8 h-8 bg-white/70 rounded-full max-md:absolute max-md:right-0 max-md:-bottom-[54px] md:hidden"
-            @click="showMobileNav = !showMobileNav"
             aria-label="Toggle mobile nav"
+            @click="showMobileNav = !showMobileNav"
           >
             <XIcon
               v-if="showMobileNav"
@@ -61,11 +61,11 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
-import { HeaderEntryMeta } from "~~/bcms/types";
-import MenuIcon from "@/assets/icons/nav/menu.svg";
-import XIcon from "@/assets/icons/nav/x.svg";
+import { PropType } from 'vue';
+import { BCMSImage } from '~~/bcms-components';
+import { HeaderEntryMeta } from '~~/bcms/types';
+import MenuIcon from '@/assets/icons/nav/menu.svg';
+import XIcon from '@/assets/icons/nav/x.svg';
 
 defineProps({
   data: {
@@ -91,10 +91,10 @@ watch(showMobileNav, (isOpen) => {
   if (navItemsEl) {
     if (isOpen) {
       setTimeout(() => {
-        document.addEventListener("click", handleMobileNavClickOutside);
+        document.addEventListener('click', handleMobileNavClickOutside);
       }, 0);
     } else {
-      document.removeEventListener("click", handleMobileNavClickOutside);
+      document.removeEventListener('click', handleMobileNavClickOutside);
     }
   }
 });

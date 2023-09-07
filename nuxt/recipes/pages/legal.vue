@@ -4,7 +4,7 @@
       <div class="container">
         <div class="grid grid-cols-1 gap-6 lg:gap-12">
           <div
-            v-for="(item, index) in data.data.entries"
+            v-for="(item, index) in data.page.entries"
             :key="index"
             class="border border-[#E6E6E6] rounded-[10px] px-4 py-6 lg:rounded-2xl lg:px-8 lg:py-10"
           >
@@ -30,13 +30,33 @@
 </template>
 
 <script setup lang="ts">
-import { APIResponse, LegalPageData } from "~~/types";
+import { NuxtApp } from 'nuxt/app';
+import { LegalPageEntry } from '@/bcms/types';
+import { PageProps, LegalPageData } from '~~/types';
 
-const { data } = useAsyncData(async (ctx) => {
-  return await ctx?.$bcms.request<APIResponse<LegalPageData>>({
-    url: "/legal.json",
-  });
+const { data, error } = useAsyncData<PageProps<LegalPageData>>(async (ctx) => {
+  const { header, footer } = await getHeaderAndFooter(ctx as NuxtApp);
+
+  const legalPage = (await ctx?.$bcms.entry.getAll({
+    // Template name or ID
+    template: 'legal_page',
+  })) as LegalPageEntry[];
+  return {
+    header,
+    footer,
+    page: {
+      entries: legalPage,
+    },
+  };
 });
+if (error.value) {
+  throw createError({
+    statusCode: 500,
+    statusMessage: error.value.message,
+    stack: error.value.stack,
+    fatal: true,
+  });
+}
 
 const { setOgHead } = useHeadTags();
 
@@ -44,8 +64,8 @@ const updatedDate = (val: number) => {
   const date = new Date(val);
 
   const day = date.getDate();
-  const month = date.toLocaleString("default", {
-    month: "long",
+  const month = date.toLocaleString('default', {
+    month: 'long',
   });
   const year = date.getFullYear();
 
@@ -54,7 +74,7 @@ const updatedDate = (val: number) => {
 
 useHead(() =>
   setOgHead({
-    title: "Legal",
-  })
+    title: 'Legal',
+  }),
 );
 </script>

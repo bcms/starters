@@ -51,10 +51,10 @@
         <template v-if="filteredRecipes.length > 0">
           <NuxtLink
             v-for="(recipe, index) in filteredRecipes"
-            :to="`/recipes/${recipe.slug}`"
             :key="index"
-            class="flex bg-white px-4 py-3 text-sm leading-none font-medium tracking-[-0.41px] text-appGray-500 transition-colors duration-300 hover:text-appAccent"
             v-click-outside="() => (searchValue = '')"
+            :to="`/recipes/${recipe.slug}`"
+            class="flex bg-white px-4 py-3 text-sm leading-none font-medium tracking-[-0.41px] text-appGray-500 transition-colors duration-300 hover:text-appAccent"
           >
             {{ recipe.title }}
           </NuxtLink>
@@ -71,27 +71,29 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import SearchIcon from "@/assets/icons/search.svg";
-import { RecipeLight } from "~~/types";
+import { PropType } from 'vue';
+import SearchIcon from '@/assets/icons/search.svg';
+import { RecipeLight } from '~~/types';
 
 const props = defineProps({
   value: {
     type: String,
     required: false,
+    default: '',
   },
   recipes: {
     type: Array as PropType<RecipeLight[]>,
     required: false,
+    default: () => [],
   },
   static: {
     type: Boolean,
     required: false,
   },
   size: {
-    type: String as PropType<"regular" | "lg">,
+    type: String as PropType<'regular' | 'lg'>,
     required: false,
-    default: "regular",
+    default: 'regular',
   },
   showResults: {
     type: Boolean,
@@ -100,9 +102,9 @@ const props = defineProps({
   },
 });
 
-const emits = defineEmits(["input", "enter"]);
+const emits = defineEmits(['input', 'enter']);
 
-const searchValue = ref("");
+const searchValue = ref('');
 
 const filteredRecipes = computed(() => {
   return (
@@ -120,11 +122,11 @@ const placeholderSuggestion = computed(() => {
   for (let i = 0; i < filteredRecipes.value.length; i++) {
     const recipe = filteredRecipes.value[i];
 
-    const words = recipe.title.split(" ");
+    const words = recipe.title.split(' ');
 
     if (
       words.some((e) =>
-        e.toLowerCase().startsWith(searchValue.value.toLowerCase())
+        e.toLowerCase().startsWith(searchValue.value.toLowerCase()),
       )
     ) {
       suggestions.push(recipe.title.toLowerCase());
@@ -133,7 +135,7 @@ const placeholderSuggestion = computed(() => {
 
   if (suggestions[0]) {
     return suggestions[0].slice(
-      suggestions[0].indexOf(searchValue.value.toLowerCase())
+      suggestions[0].indexOf(searchValue.value.toLowerCase()),
     );
   }
 });
@@ -143,19 +145,19 @@ const handleInput = (event: Event) => {
 
   searchValue.value = target.value;
 
-  emits("input", target.value);
+  emits('input', target.value);
 };
 
 const handleEnter = (event: Event) => {
   const target = event.target as HTMLInputElement;
 
-  emits("enter", target.value);
+  emits('enter', target.value);
 };
 const handleTabPress = (event: KeyboardEvent) => {
   const placeholderValue = placeholderSuggestion.value?.slice(
-    searchValue.value.length
+    searchValue.value.length,
   );
-  if (event.key === "Tab" && placeholderValue && placeholderValue.length > 0) {
+  if (event.key === 'Tab' && placeholderValue && placeholderValue.length > 0) {
     searchValue.value = `${searchValue.value}${placeholderValue}`;
   }
 };

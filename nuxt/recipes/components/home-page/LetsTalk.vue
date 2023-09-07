@@ -41,8 +41,8 @@
           </div>
         </div>
         <form
-          @submit.prevent="handleSubmit"
           class="border border-[#E0E0E0] rounded-lg p-4 lg:p-8"
+          @submit.prevent="handleSubmit"
         >
           <label
             class="relative flex border rounded-lg overflow-hidden w-full mb-3 transition-colors duration-300 lg:mb-6"
@@ -101,9 +101,9 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
-import { HomeLetsTalkGroup } from "~~/bcms/types";
+import { PropType } from 'vue';
+import { BCMSImage } from '~~/bcms-components';
+import { HomeLetsTalkGroup } from '~~/bcms/types';
 
 defineProps({
   data: {
@@ -116,16 +116,16 @@ const { checkForInputErrors } = useError();
 
 const form = ref({
   name: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   email: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   question: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
 });
 

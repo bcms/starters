@@ -21,13 +21,13 @@
             />
             <RecipesDropdown
               v-model="popularValue"
-              :options="data.data.popular"
+              :options="data.page.popular"
               placeholder="Popular"
               dropdown-position="left"
             />
             <RecipesDropdown
               v-model="categoriesValue"
-              :options="data.data.categories"
+              :options="data.page.categories"
               placeholder="Categories"
               dropdown-position="left"
             />
@@ -110,7 +110,7 @@
               v-for="(card, index) in similarRecipes"
               :key="index"
               :card="card"
-              showTitleLayer
+              show-title-layer
             />
           </div>
         </div>
@@ -120,32 +120,90 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from "~~/bcms-components";
-import { APIResponse, RecipePageData } from "~~/types";
+import { NuxtApp } from 'nuxt/app';
+import { BCMSImage } from '~~/bcms-components';
+import { RecipeEntry, RecipeEntryMeta } from '~~/bcms/types';
+import { PageProps, RecipePageData } from '~~/types';
 
 const { setOgHead } = useHeadTags();
 const route = useRoute();
 
-const recipeSlug = route.params.slug as string;
+const { data, error } = useAsyncData<PageProps<RecipePageData>>(async (ctx) => {
+  const { header, footer } = await getHeaderAndFooter(ctx as NuxtApp);
+  const recipeItem = (await ctx?.$bcms.entry.get({
+    // Template name or ID
+    template: 'recipe',
+    // Entry slug or ID
+    entry: route.params.slug,
+  })) as RecipeEntry;
+  if (!recipeItem) {
+    throw new Error('Recipe entry does not exist.');
+  }
+  const recipes = (await ctx?.$bcms.entry.getAll({
+    // Template name or ID
+    template: 'recipe',
+  })) as RecipeEntry[];
 
-const { data } = useAsyncData(`recipe.${route.params.slug}`, async (ctx) => {
-  return await ctx?.$bcms.request<APIResponse<RecipePageData>>({
-    url: `/recipes/${recipeSlug}/data.json`,
+  const similarRecipes = recipes.filter((e) => {
+    const entryCategories =
+      recipeItem.meta.en?.categories.map((i) => i.meta.en?.title) || [];
+    const categories = e.meta.en?.categories.map((i) => i.meta.en?.title) || [];
+
+    for (let i = 0; i < categories.length; i++) {
+      if (
+        entryCategories.includes(categories[i]) &&
+        recipeItem.meta.en?.slug !== e.meta.en?.slug
+      ) {
+        return true;
+      }
+    }
+    return false;
   });
-});
+  return {
+    header,
+    footer,
+    page: {
+      meta: recipeItem.meta.en as RecipeEntryMeta,
+      similarRecipes: recipeToLight(similarRecipes).slice(0, 6),
+      popular:
+        recipes
+          .filter((e) => e.meta.en?.popular)
+          .map((e) => e.meta.en?.title || '') || [],
+      categories:
+        recipes.reduce((acc, e) => {
+          e.meta.en?.categories.forEach((category) => {
+            const categoryTitle = category.meta.en?.title || '';
 
-const searchValue = ref("");
-const popularValue = ref("");
-const categoriesValue = ref("");
+            if (!acc.includes(categoryTitle)) {
+              acc.push(categoryTitle);
+            }
+          });
+          return acc;
+        }, [] as string[]) || [],
+    },
+  };
+});
+if (error.value) {
+  throw createError({
+    statusCode: 500,
+    statusMessage: error.value.message,
+    stack: error.value.stack,
+    fatal: true,
+  });
+}
+
+const searchValue = ref('');
+const popularValue = ref('');
+const categoriesValue = ref('');
 
 // const expandDescription = ref(false);
 
 const recipeMeta = computed(() => {
-  return data.value?.data.meta;
+  return data.value?.page.meta;
 });
 
 const similarRecipes = computed(() => {
-  return data.value?.data.similarRecipes || [];
+  return data.value?.page.similarRecipes || [];
 });
 
 // const truncatedDescription = (description: BCMSPropRichTextDataParsed) => {
@@ -160,7 +218,7 @@ const similarRecipes = computed(() => {
 const filterRedirect = (key: string, val: string) => {
   if (val) {
     navigateTo({
-      name: "recipes",
+      name: 'recipes',
       query: {
         [key]: val,
       },
@@ -169,20 +227,20 @@ const filterRedirect = (key: string, val: string) => {
 };
 
 watch(searchValue, (newVal) => {
-  filterRedirect("s", newVal);
+  filterRedirect('s', newVal);
 });
 watch(popularValue, (newVal) => {
-  filterRedirect("p", newVal);
+  filterRedirect('p', newVal);
 });
 watch(categoriesValue, (newVal) => {
-  filterRedirect("c", newVal);
+  filterRedirect('c', newVal);
 });
 
 useHead(() =>
   setOgHead({
-    title: data.value?.data.meta.seo?.title || data.value?.data.meta.title,
-    description: data.value?.data.meta.seo?.description,
-  })
+    title: data.value?.page.meta.seo?.title || data.value?.page.meta.title,
+    description: data.value?.page.meta.seo?.description,
+  }),
 );
 </script>
 
