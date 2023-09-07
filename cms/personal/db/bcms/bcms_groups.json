@@ -341,5 +341,38 @@
         "defaultData": []
       }
     ]
+  },
+  "64f89039f2d55bcdf1ca35ae": {
+    "_id": "64f89039f2d55bcdf1ca35ae",
+    "createdAt": 1694011449700,
+    "updatedAt": 1694011467772,
+    "cid": "f",
+    "desc": "",
+    "label": "SEO",
+    "name": "seo",
+    "props": [
+      {
+        "id": "4d7eeaac-fae0-4dce-8fcc-c7e5809c422d",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": false,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "22fd287e-9c1d-4b1f-859f-d3e4b981fec7",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": false,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
   }
 }

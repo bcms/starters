@@ -120,7 +120,7 @@
   "64243f75c4d0f7aa085d5e8f": {
     "_id": "64243f75c4d0f7aa085d5e8f",
     "createdAt": 1680097141932,
-    "updatedAt": 1680182904993,
+    "updatedAt": 1694008816626,
     "cid": "3",
     "desc": "",
     "label": "Home page",
@@ -149,6 +149,17 @@
         "defaultData": [
           ""
         ]
+      },
+      {
+        "id": "c60fdb51-299b-478c-8756-906f7ee6d6a3",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f884e1d6991cdf7cfe23eb"
+        }
       },
       {
         "id": "21370914-a0a5-453a-8241-51d2b3e26fbd",
@@ -475,7 +486,7 @@
   "6425855108334637f5466f73": {
     "_id": "6425855108334637f5466f73",
     "createdAt": 1680180561590,
-    "updatedAt": 1680180579671,
+    "updatedAt": 1694008797753,
     "cid": "7",
     "desc": "",
     "label": "Event",
@@ -602,7 +613,7 @@
   "642596df08334637f5466f81": {
     "_id": "642596df08334637f5466f81",
     "createdAt": 1680185055145,
-    "updatedAt": 1680187997877,
+    "updatedAt": 1694008747682,
     "cid": "9",
     "desc": "",
     "label": "About page",
@@ -633,6 +644,17 @@
         ]
       },
       {
+        "id": "61aff450-e900-4073-b8b8-067bda93fbc8",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f884e1d6991cdf7cfe23eb"
+        }
+      },
+      {
         "id": "96c9b333-eb4f-4d33-923d-d5615d4a5ce6",
         "name": "hero",
         "label": "Hero",
@@ -659,7 +681,7 @@
   "64269d945650bcf839e49fda": {
     "_id": "64269d945650bcf839e49fda",
     "createdAt": 1680252308803,
-    "updatedAt": 1680252308803,
+    "updatedAt": 1694008831396,
     "cid": "a",
     "desc": "",
     "label": "Menu page",
@@ -688,13 +710,24 @@
         "defaultData": [
           ""
         ]
+      },
+      {
+        "id": "e03f1d70-6ddc-4a8b-bb69-46ff75fbe341",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f884e1d6991cdf7cfe23eb"
+        }
       }
     ]
   },
   "6426aedb5650bcf839e49fe6": {
     "_id": "6426aedb5650bcf839e49fe6",
     "createdAt": 1680256731667,
-    "updatedAt": 1680257448733,
+    "updatedAt": 1694008784536,
     "cid": "b",
     "desc": "",
     "label": "Events page",
@@ -725,6 +758,17 @@
         ]
       },
       {
+        "id": "7732a571-1ba1-45a3-94bb-e9435cdb4380",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f884e1d6991cdf7cfe23eb"
+        }
+      },
+      {
         "id": "bedcdc27-1606-41e6-8380-73cc2606e2f0",
         "name": "description",
         "label": "Description",
@@ -742,7 +786,7 @@
   "6426b5825650bcf839e49fe8": {
     "_id": "6426b5825650bcf839e49fe8",
     "createdAt": 1680258434308,
-    "updatedAt": 1680258434308,
+    "updatedAt": 1694008844407,
     "cid": "c",
     "desc": "",
     "label": "Reservation page",
@@ -771,13 +815,24 @@
         "defaultData": [
           ""
         ]
+      },
+      {
+        "id": "c273ce61-e427-4412-bbc1-2c1c28953234",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f884e1d6991cdf7cfe23eb"
+        }
       }
     ]
   },
   "6426c2fc5650bcf839e49fea": {
     "_id": "6426c2fc5650bcf839e49fea",
     "createdAt": 1680261884406,
-    "updatedAt": 1680261908599,
+    "updatedAt": 1694008762212,
     "cid": "d",
     "desc": "",
     "label": "Contact page",
@@ -808,6 +863,17 @@
         ]
       },
       {
+        "id": "e353183e-b865-4e2e-994a-9805a4aca07f",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f884e1d6991cdf7cfe23eb"
+        }
+      },
+      {
         "id": "4af9c16f-d00c-410e-8b0c-f75ce20715d8",
         "name": "description",
         "label": "Description",
@@ -834,7 +900,7 @@
   "6426c9885650bcf839e49ff0": {
     "_id": "6426c9885650bcf839e49ff0",
     "createdAt": 1680263560366,
-    "updatedAt": 1680263560366,
+    "updatedAt": 1694009406203,
     "cid": "e",
     "desc": "",
     "label": "Legal page",
