@@ -21,8 +21,8 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BCMSPropRichTextDataParsed } from "@becomes/cms-client/types";
+import { PropType } from 'vue';
+import { BCMSPropRichTextDataParsed } from '@becomes/cms-client/types';
 
 defineProps({
   ingredients: {

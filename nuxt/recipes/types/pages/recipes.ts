@@ -1,8 +1,8 @@
 import {
   BCMSPropMediaDataParsed,
   BCMSPropRichTextDataParsed,
-} from "@becomes/cms-client/types";
-import { RecipeEntryMeta, RecipesPageEntryMeta } from "~~/bcms/types";
+} from '@becomes/cms-client/types';
+import { RecipeEntryMeta, RecipesPageEntryMeta } from '~~/bcms/types';
 
 export interface RecipeLight {
   title: string;

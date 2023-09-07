@@ -2,7 +2,7 @@
   <PageWrapper v-if="data" :header="data.header" :footer="data.footer">
     <div class="container pt-24 pb-8 md:pb-16 lg:pt-[104px] lg:pb-[120px]">
       <ContentManager
-        :item="data.data.meta.headline"
+        :item="data.page.meta.headline"
         class="recipesPage--title text-xl leading-[1.2] font-medium text-center text-appGray-700 mb-8 md:text-3xl lg:text-[56px] lg:leading-[1.2] lg:mb-10"
       />
       <div
@@ -35,7 +35,7 @@
         <RecipesCard
           v-for="(recipe, index) in filteredRecipes.slice(
             (paginationPage - 1) * recipesPerPage,
-            (paginationPage - 1) * recipesPerPage + recipesPerPage
+            (paginationPage - 1) * recipesPerPage + recipesPerPage,
           )"
           :key="recipe.slug + index"
           :card="recipe"
@@ -50,34 +50,70 @@
       <RecipesPagination
         :at-page="paginationPage"
         :page-count="totalPaginationPages"
-        @page-change="($event) => (paginationPage = $event)"
         class="flex items-center justify-center gap-x-2 mt-6 lg:mt-10 lg:gap-x-4 xl:mt-[72px]"
+        @page-change="($event) => (paginationPage = $event)"
       />
     </div>
   </PageWrapper>
 </template>
 
 <script setup lang="ts">
-import { APIResponse, RecipesPageData } from "~~/types";
+import { NuxtApp } from 'nuxt/app';
+import {
+  RecipeEntry,
+  RecipesPageEntry,
+  RecipesPageEntryMeta,
+} from '~~/bcms/types';
+import { PageProps, RecipesPageData } from '~~/types';
 
 const { setOgHead } = useHeadTags();
 const route = useRoute();
 
-const { data } = useAsyncData(async (ctx) => {
-  return await ctx?.$bcms.request<APIResponse<RecipesPageData>>({
-    url: "/recipes.json",
+const { data, error } = useAsyncData<PageProps<RecipesPageData>>(
+  async (ctx) => {
+    const { header, footer } = await getHeaderAndFooter(ctx as NuxtApp);
+    const recipesPage = (await ctx?.$bcms.entry.get({
+      // Template name or ID
+      template: 'recipes_page',
+      // Entry slug or ID
+      entry: 'recipes',
+    })) as RecipesPageEntry;
+    if (!recipesPage) {
+      throw new Error('Recipes page entry does not exist.');
+    }
+    const recipes = (await ctx?.$bcms.entry.getAll({
+      // Template name or ID
+      template: 'recipe',
+    })) as RecipeEntry[];
+
+    return {
+      header,
+      footer,
+      page: {
+        meta: recipesPage.meta.en as RecipesPageEntryMeta,
+        recipes: recipeToLight(recipes),
+      },
+    };
+  },
+);
+if (error.value) {
+  throw createError({
+    statusCode: 500,
+    statusMessage: error.value.message,
+    stack: error.value.stack,
+    fatal: true,
   });
-});
+}
 
 const recipesListDOM = ref<HTMLElement>();
 
-const searchValue = ref("");
-const popularValue = ref("");
-const categoriesValue = ref("");
+const searchValue = ref('');
+const popularValue = ref('');
+const categoriesValue = ref('');
 
 const popularOptions = computed(() => {
   return (
-    data.value?.data.recipes
+    data.value?.page.recipes
       .filter((e) => e.popular)
       .reduce((acc, e) => {
         if (!acc.includes(e.title)) {
@@ -90,7 +126,7 @@ const popularOptions = computed(() => {
 
 const categoriesOptions = computed(() => {
   return (
-    data.value?.data.recipes.reduce((acc, e) => {
+    data.value?.page.recipes.reduce((acc, e) => {
       e.categories.forEach((category) => {
         if (!acc.includes(category)) {
           acc.push(category);
@@ -103,7 +139,7 @@ const categoriesOptions = computed(() => {
 
 const filteredRecipes = computed(() => {
   return (
-    data.value?.data.recipes.filter((e) => {
+    data.value?.page.recipes.filter((e) => {
       let show = true;
 
       if (searchValue.value) {
@@ -146,7 +182,7 @@ watch(paginationPage, () => {
   if (recipesListDOM.value) {
     window.scrollTo({
       top: recipesListDOM.value.offsetTop - 50,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   }
 });
@@ -168,8 +204,8 @@ onMounted(() => {
 
 useHead(() =>
   setOgHead({
-    title: data.value?.data.meta.title,
-  })
+    title: data.value?.page.meta.title,
+  }),
 );
 </script>
 

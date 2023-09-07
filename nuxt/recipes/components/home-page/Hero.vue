@@ -55,11 +55,11 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
-import { HomeHeroGroup } from "~~/bcms/types";
-import ArrowIcon from "@/assets/icons/arrow-right.svg";
-import { RecipeLight } from "~~/types";
+import { PropType } from 'vue';
+import { BCMSImage } from '~~/bcms-components';
+import { HomeHeroGroup } from '~~/bcms/types';
+import ArrowIcon from '@/assets/icons/arrow-right.svg';
+import { RecipeLight } from '~~/types';
 
 defineProps({
   data: {

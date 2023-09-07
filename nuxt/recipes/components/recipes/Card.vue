@@ -1,7 +1,7 @@
 <template>
   <article>
     <NuxtLink :to="`/recipes/${card.slug}`" class="flex flex-col">
-      <dir class="relative" :class="[showTitleLayer ? 'lg:mb-[34px]' : '']">
+      <div class="relative" :class="[showTitleLayer ? 'lg:mb-[34px]' : '']">
         <BCMSImage
           :media="card.cover"
           :alt="card.title"
@@ -37,7 +37,7 @@
             {{ card.title }}
           </div>
         </div>
-      </dir>
+      </div>
       <div class="mb-4 lg:flex lg:flex-row-reverse lg:justify-between lg:mb-3">
         <div class="flex flex-wrap gap-2 mb-2.5 lg:mb-0">
           <div
@@ -80,11 +80,11 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
-import ArrowIcon from "@/assets/icons/arrow-right.svg";
-import DownloadIcon from "@/assets/icons/download.svg";
-import { RecipeLight } from "~~/types";
+import { PropType } from 'vue';
+import { BCMSImage } from '~~/bcms-components';
+import ArrowIcon from '@/assets/icons/arrow-right.svg';
+import DownloadIcon from '@/assets/icons/download.svg';
+import { RecipeLight } from '~~/types';
 
 defineProps({
   card: {

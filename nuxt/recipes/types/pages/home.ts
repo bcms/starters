@@ -1,5 +1,5 @@
-import { HomePageEntryMeta, RecipeEntryMeta } from "~~/bcms/types";
-import { RecipeLight } from "./recipes";
+import { RecipeLight } from './recipes';
+import { HomePageEntryMeta } from '~~/bcms/types';
 
 export interface HomePageData {
   meta: HomePageEntryMeta;

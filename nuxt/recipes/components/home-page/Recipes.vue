@@ -31,9 +31,9 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { HomeRecipesGroup, RecipeEntryMeta } from "~~/bcms/types";
-import ArrowIcon from "@/assets/icons/arrow-right.svg";
+import { PropType } from 'vue';
+import { HomeRecipesGroup, RecipeEntryMeta } from '~~/bcms/types';
+import ArrowIcon from '@/assets/icons/arrow-right.svg';
 
 const props = defineProps({
   data: {
@@ -50,7 +50,7 @@ const recipes = computed(() => {
       title: meta.title,
       slug: meta.slug,
       cover: meta.cover_image,
-      categories: meta.categories.map((i) => i.meta.en?.title || ""),
+      categories: meta.categories.map((i) => i.meta.en?.title || ''),
       description: meta.description,
     };
   });
