@@ -129,7 +129,7 @@
   "64182b23f7d73b81da796da5": {
     "_id": "64182b23f7d73b81da796da5",
     "createdAt": 1679305507176,
-    "updatedAt": 1679390471024,
+    "updatedAt": 1694010353557,
     "cid": "17",
     "desc": "",
     "label": "Home page",
@@ -158,6 +158,17 @@
         "defaultData": [
           ""
         ]
+      },
+      {
+        "id": "4714f76f-32df-49b7-9e65-7ebbf09e1d4f",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f88bd8cb4b37574f5961fb"
+        }
       },
       {
         "id": "023072a5-3c19-4704-8f0d-9e72cb4e525e",
@@ -208,7 +219,7 @@
   "64182bc0f7d73b81da796da7": {
     "_id": "64182bc0f7d73b81da796da7",
     "createdAt": 1679305664236,
-    "updatedAt": 1679481388649,
+    "updatedAt": 1694010420575,
     "cid": "18",
     "desc": "",
     "label": "Recipe",
@@ -237,6 +248,17 @@
         "defaultData": [
           ""
         ]
+      },
+      {
+        "id": "75970e04-fb4f-4fd8-bf61-c97d238b40c9",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f88bd8cb4b37574f5961fb"
+        }
       },
       {
         "id": "d2e4ed3a-5400-40b1-a847-8374efa3eceb",
@@ -385,7 +407,7 @@
   "64199dbb9eeca76eacf3faca": {
     "_id": "64199dbb9eeca76eacf3faca",
     "createdAt": 1679400379350,
-    "updatedAt": 1679400392872,
+    "updatedAt": 1694010394052,
     "cid": "1a",
     "desc": "",
     "label": "Recipes page",
@@ -414,6 +436,17 @@
         "defaultData": [
           ""
         ]
+      },
+      {
+        "id": "811984bd-039e-4caa-9baa-78b3f0e3149b",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f88bd8cb4b37574f5961fb"
+        }
       },
       {
         "id": "44bc0026-b30d-4155-a3fe-4577c4cb0a04",

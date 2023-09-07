@@ -2,10 +2,10 @@
   "111111111111111111111111": {
     "_id": "111111111111111111111111",
     "createdAt": 1680078193481,
-    "updatedAt": 1688556463872,
+    "updatedAt": 1694008540467,
     "email": "dev@thebcms.com",
     "username": "Dev User",
-    "password": "949hV033+53NmPhl6ls2WQ2eqQ0avaV4nvdZW1OmJWW+EOqziT6Ehwxn+/9FStVc1tguY09F7zwC248iapMh3Q==",
+    "password": "MYfoaI+pbgAUxDJowciMhnCGIams+W3C+L3j+JhHcMGm1OpMWaSz1K2yAx0IbFlp0Dw/5zgvuD7irO0YExN6Aw==",
     "customPool": {
       "address": {
         "city": "",
@@ -56,10 +56,10 @@
   "211111111111111111111111": {
     "_id": "211111111111111111111111",
     "createdAt": 1680078193481,
-    "updatedAt": 1688556463872,
+    "updatedAt": 1694008540467,
     "email": "dev2@thebcms.com",
     "username": "Normal User",
-    "password": "l3nDBDzJ9yUcNgcLMhZ28HoPQgo2hY4eIUh6ThHEn9GbVDPsc20jHvqnX+IA0vfOOa9tS211Z8FNbKdAc/kFMw==",
+    "password": "htS+H0h3r6Wmwl57ikxw5bIZ2xs4LsmXPn8ogXA0ZpKb/uV2v7g/G7nZ1IJLnxMroC2OuWdbQTO3drAgnWwyIg==",
     "customPool": {
       "address": {
         "city": "",

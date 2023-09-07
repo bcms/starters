@@ -13,8 +13,10 @@ export const useHeadTags = () => {
     description?: string;
     image?: string;
   }) => {
-    if (!title) title = "";
-    if (!description) description = "";
+    if (!title) title = "Flavour Fushion";
+    if (!description)
+      description =
+        "Jumpstart your Nuxt project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!";
     if (!image) image = "/thumbnail.jpg";
 
     const domain = "https://recipes-nuxt.thebcms.com";
@@ -82,7 +84,7 @@ export const useHeadTags = () => {
         },
       ],
       htmlAttrs: {
-        lang: 'en'
+        lang: "en",
       },
     };
   };

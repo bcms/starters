@@ -77,5 +77,38 @@
         ]
       }
     ]
+  },
+  "64f9805564ef5f63c1881f49": {
+    "_id": "64f9805564ef5f63c1881f49",
+    "createdAt": 1694072917046,
+    "updatedAt": 1694072930071,
+    "cid": "3",
+    "desc": "",
+    "label": "SEO",
+    "name": "seo",
+    "props": [
+      {
+        "id": "5742a7f7-d8d9-4047-87af-baee0835b5c4",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": false,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "a5b2f0aa-33de-4ab3-a7fb-17bea73e4a8f",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": false,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
   }
 }

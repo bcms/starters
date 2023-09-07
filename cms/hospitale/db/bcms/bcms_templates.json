@@ -131,7 +131,7 @@
   "641d9aca54a58202232a5c0d": {
     "_id": "641d9aca54a58202232a5c0d",
     "createdAt": 1679661770421,
-    "updatedAt": 1679910828571,
+    "updatedAt": 1694012073159,
     "cid": "3",
     "desc": "",
     "label": "Home page",
@@ -160,6 +160,17 @@
         "defaultData": [
           ""
         ]
+      },
+      {
+        "id": "69f186cd-7221-4bb3-bf00-8d5cfb2e1957",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f8927c29c1afbe4d6783b1"
+        }
       },
       {
         "id": "6de65dd2-e151-4fd3-861c-ad8905b9d393",
@@ -199,7 +210,7 @@
   "641db95454a58202232a5c14": {
     "_id": "641db95454a58202232a5c14",
     "createdAt": 1679669588594,
-    "updatedAt": 1679927175849,
+    "updatedAt": 1694012255929,
     "cid": "4",
     "desc": "",
     "label": "Job",
@@ -228,6 +239,17 @@
         "defaultData": [
           ""
         ]
+      },
+      {
+        "id": "a9082df2-4ffe-47b8-86f5-e5b28c2050bb",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f8927c29c1afbe4d6783b1"
+        }
       },
       {
         "id": "b300d30f-2881-4964-99f1-50d4d23a51d5",
@@ -546,7 +568,7 @@
   "6422bf5aaa005084af191196": {
     "_id": "6422bf5aaa005084af191196",
     "createdAt": 1679998810031,
-    "updatedAt": 1679999354886,
+    "updatedAt": 1694012214769,
     "cid": "9",
     "desc": "",
     "label": "Post job page",
@@ -575,13 +597,24 @@
         "defaultData": [
           ""
         ]
+      },
+      {
+        "id": "dbf71546-fa62-4551-8549-3866fa64d47e",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f8927c29c1afbe4d6783b1"
+        }
       }
     ]
   },
   "6422ddc7aa005084af191198": {
     "_id": "6422ddc7aa005084af191198",
     "createdAt": 1680006599094,
-    "updatedAt": 1680006614918,
+    "updatedAt": 1694012061494,
     "cid": "a",
     "desc": "",
     "label": "Contact page",
@@ -612,6 +645,17 @@
         ]
       },
       {
+        "id": "67fdff6f-bc8e-4806-8e80-7600364354ba",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f8927c29c1afbe4d6783b1"
+        }
+      },
+      {
         "id": "a844ca97-d491-42fa-b894-66d1bbf31d1a",
         "name": "description",
         "label": "Description",
@@ -629,7 +673,7 @@
   "6422e496aa005084af19119a": {
     "_id": "6422e496aa005084af19119a",
     "createdAt": 1680008342871,
-    "updatedAt": 1680009651267,
+    "updatedAt": 1694012053316,
     "cid": "b",
     "desc": "",
     "label": "About page",
@@ -658,6 +702,17 @@
         "defaultData": [
           ""
         ]
+      },
+      {
+        "id": "d35b02d7-d1aa-4591-a26b-c64eeea81f4e",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f8927c29c1afbe4d6783b1"
+        }
       },
       {
         "id": "3640d6b7-772a-4fec-8c2a-0bc63c6ce9dc",

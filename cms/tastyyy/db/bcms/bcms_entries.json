@@ -519,7 +519,7 @@
   "6424420cc4d0f7aa085d5e90": {
     "_id": "6424420cc4d0f7aa085d5e90",
     "createdAt": 1680097804319,
-    "updatedAt": 1680182928116,
+    "updatedAt": 1694009210235,
     "cid": "3",
     "templateId": "64243f75c4d0f7aa085d5e8f",
     "userId": "111111111111111111111111",
@@ -539,6 +539,40 @@
             "data": [
               "home"
             ]
+          },
+          {
+            "id": "c60fdb51-299b-478c-8756-906f7ee6d6a3",
+            "data": {
+              "_id": "64f884e1d6991cdf7cfe23eb",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "4143c5f9-dbfb-41e8-9f07-4a30498173dd",
+                      "data": [
+                        ""
+                      ]
+                    },
+                    {
+                      "id": "9ea48e0c-9501-4c46-a7d0-f7f1a0c1a697",
+                      "data": [
+                        ""
+                      ]
+                    },
+                    {
+                      "id": "bc6ee880-6e1f-483f-92bb-2e80f2b03589",
+                      "data": [
+                        {
+                          "_id": "",
+                          "alt_text": "",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
           },
           {
             "id": "21370914-a0a5-453a-8241-51d2b3e26fbd",
@@ -583,7 +617,7 @@
                       "id": "9f2447d5-b95d-4744-8e2c-7b1fdc6213c5",
                       "data": [
                         {
-                          "id": "2aa0af57-d3ff-4909-88f7-37bd189c81d4",
+                          "id": "5f08e017-3cb2-4c1d-9f90-3f5bda8bf0ac",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -621,7 +655,7 @@
                                 "id": "f5819cc2-4514-43ec-b6f1-56a020a587d3",
                                 "data": [
                                   {
-                                    "id": "57d6475c-af9c-4be9-a07a-d8f68c78d331",
+                                    "id": "0f0bf41e-28f8-4ffe-9a57-07a8b115151f",
                                     "nodes": [
                                       {
                                         "type": "paragraph",
@@ -654,7 +688,7 @@
                                 "id": "f5819cc2-4514-43ec-b6f1-56a020a587d3",
                                 "data": [
                                   {
-                                    "id": "b54905f5-a487-45df-bac5-82ca85e61540",
+                                    "id": "9e000112-aa5e-47bc-bc51-8c6d5fb47137",
                                     "nodes": [
                                       {
                                         "type": "paragraph",
@@ -687,7 +721,7 @@
                                 "id": "f5819cc2-4514-43ec-b6f1-56a020a587d3",
                                 "data": [
                                   {
-                                    "id": "97457cef-c72f-4c18-97e2-c369265131f1",
+                                    "id": "6f7570cd-7cc3-4811-babc-3f3800a8f6fc",
                                     "nodes": [
                                       {
                                         "type": "paragraph",
@@ -739,7 +773,7 @@
                       "id": "a73d46da-e1dc-4451-a0b7-f8b1c92cc329",
                       "data": [
                         {
-                          "id": "bc48893e-438d-49d8-a7f6-231bf742a254",
+                          "id": "622c314c-dbec-4657-a515-77dd0fb89de3",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -793,7 +827,7 @@
                       "id": "a898652f-c574-45a5-b176-960c286e8569",
                       "data": [
                         {
-                          "id": "b7c435f1-0c94-4367-ad8c-e1cd95df6de6",
+                          "id": "aceddf1c-e91c-44e7-8007-34b2f2d12746",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -851,7 +885,7 @@
                       "id": "f6f6ebf0-b81e-4ae2-b771-b7379ab42275",
                       "data": [
                         {
-                          "id": "57fbf7c8-adc8-4145-b88e-c292ca8effe9",
+                          "id": "f6452e96-09bd-4f29-a4b3-758ed7783d0c",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -996,7 +1030,7 @@
                       "id": "46190ae5-413a-4ec3-a267-89f2dc8ef770",
                       "data": [
                         {
-                          "id": "c8e23168-4a30-4f29-9927-049e03e819be",
+                          "id": "4f77b944-ad31-44d2-897c-ab1c808608b9",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1033,7 +1067,7 @@
                       "id": "f6f77dc8-1814-4846-9c07-2d6f594a8ccf",
                       "data": [
                         {
-                          "id": "63a121cd-9788-4394-84f5-e6627080458f",
+                          "id": "11c942f9-e6db-4026-aba7-376cf61a9fe5",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1070,7 +1104,7 @@
                       "id": "088f411b-f725-4178-8308-466ab42da312",
                       "data": [
                         {
-                          "id": "06c8ec1b-dd45-43f6-8c63-34a1f384dce0",
+                          "id": "b89997c0-c0d5-4616-8af1-923841b62705",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -2358,7 +2392,7 @@
   "6425979a08334637f5466f85": {
     "_id": "6425979a08334637f5466f85",
     "createdAt": 1680185242560,
-    "updatedAt": 1680188126910,
+    "updatedAt": 1694009775351,
     "cid": "14",
     "templateId": "642596df08334637f5466f81",
     "userId": "111111111111111111111111",
@@ -2380,6 +2414,13 @@
             ]
           },
           {
+            "id": "61aff450-e900-4073-b8b8-067bda93fbc8",
+            "data": {
+              "_id": "64f884e1d6991cdf7cfe23eb",
+              "items": []
+            }
+          },
+          {
             "id": "96c9b333-eb4f-4d33-923d-d5615d4a5ce6",
             "data": {
               "_id": "6425970608334637f5466f82",
@@ -2390,7 +2431,7 @@
                       "id": "93f60df9-53ea-4014-be04-e3592bee8e3f",
                       "data": [
                         {
-                          "id": "d3e42389-d014-415e-8a51-64052c632329",
+                          "id": "807a7ebb-0079-4688-9a9b-cb8e54a751f1",
                           "nodes": [
                             {
                               "type": "heading",
@@ -2429,7 +2470,7 @@
                       "id": "1b5ae596-83fa-41e3-8139-2dadda91b16f",
                       "data": [
                         {
-                          "id": "d56cf411-8243-4bbd-90da-d204d93042c5",
+                          "id": "628c4f68-b744-4dc9-b6af-9ae4d3a5ac6f",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -2465,7 +2506,7 @@
                       "id": "eef1b742-be81-4d4b-b764-b6794c6334b5",
                       "data": [
                         {
-                          "id": "b4314e9d-0f92-48e3-ae77-4cb2494e88a8",
+                          "id": "6d0ebf46-fea6-497f-a1fa-d24f1f0fa2a9",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -2496,7 +2537,7 @@
                       "id": "bec3c949-de6b-4dd4-9308-f1f3940f2fda",
                       "data": [
                         {
-                          "id": "0db40ab8-e04d-43d2-884b-bc7ccc953712",
+                          "id": "b4d3c6a4-4c1c-45c2-965a-2b907e1ff624",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -2529,7 +2570,7 @@
                       "id": "bec3c949-de6b-4dd4-9308-f1f3940f2fda",
                       "data": [
                         {
-                          "id": "e056391b-3ecb-4a87-b3cb-f636b574fedf",
+                          "id": "99e001f5-26d7-4508-acd4-3e43d63e6c98",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -2562,7 +2603,7 @@
                       "id": "bec3c949-de6b-4dd4-9308-f1f3940f2fda",
                       "data": [
                         {
-                          "id": "a065d0a5-707f-4524-b392-fa1bfbc574a2",
+                          "id": "cc7b1dac-0816-4c08-929e-12546e3e3c69",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -2606,7 +2647,7 @@
   "64269da65650bcf839e49fdb": {
     "_id": "64269da65650bcf839e49fdb",
     "createdAt": 1680252326624,
-    "updatedAt": 1680252326624,
+    "updatedAt": 1694007323579,
     "cid": "15",
     "templateId": "64269d945650bcf839e49fda",
     "userId": "111111111111111111111111",
@@ -2618,7 +2659,7 @@
           {
             "id": "0fd9a892-dcaa-4e9c-9a81-0628c6bd209f",
             "data": [
-              "Menu"
+              "Full restaurant menu"
             ]
           },
           {

@@ -2,8 +2,8 @@
   "6426e3fa109812372e9c9587": {
     "_id": "6426e3fa109812372e9c9587",
     "createdAt": 1680270330250,
-    "updatedAt": 1680786259807,
-    "count": 14,
+    "updatedAt": 1694011604097,
+    "count": 15,
     "name": "Templates",
     "forId": "templates"
   },
@@ -18,8 +18,8 @@
   "642a880c3effc7142eea9d8f": {
     "_id": "642a880c3effc7142eea9d8f",
     "createdAt": 1680508940882,
-    "updatedAt": 1680790168989,
-    "count": 15,
+    "updatedAt": 1694011449698,
+    "count": 16,
     "name": "Groups",
     "forId": "groups"
   }

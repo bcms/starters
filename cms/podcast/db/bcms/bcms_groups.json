@@ -112,5 +112,38 @@
         ]
       }
     ]
+  },
+  "64f88de35b05a4cf971302a2": {
+    "_id": "64f88de35b05a4cf971302a2",
+    "createdAt": 1694010851637,
+    "updatedAt": 1694010864744,
+    "cid": "6",
+    "desc": "",
+    "label": "SEO",
+    "name": "seo",
+    "props": [
+      {
+        "id": "ea032013-6cac-4cf0-818d-5c4381c56177",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": false,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "6916eaeb-c898-461e-ba68-22a01dc495e5",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": false,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
   }
 }
