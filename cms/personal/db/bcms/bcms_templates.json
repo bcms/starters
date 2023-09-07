@@ -118,7 +118,7 @@
   "642aa3ae3effc7142eea9d96": {
     "_id": "642aa3ae3effc7142eea9d96",
     "createdAt": 1680516014394,
-    "updatedAt": 1680687997625,
+    "updatedAt": 1694011508674,
     "cid": "3",
     "desc": "",
     "label": "Home page",
@@ -147,6 +147,17 @@
         "defaultData": [
           ""
         ]
+      },
+      {
+        "id": "f2f2a81d-a058-4415-9141-6442bc8fbe8c",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f89039f2d55bcdf1ca35ae"
+        }
       },
       {
         "id": "47e5009f-cce5-415d-ae8e-c8fada5a6e7f",
@@ -245,7 +256,7 @@
   "642bd7621599a48b5156b9e3": {
     "_id": "642bd7621599a48b5156b9e3",
     "createdAt": 1680594786098,
-    "updatedAt": 1680597558345,
+    "updatedAt": 1694011487392,
     "cid": "5",
     "desc": "",
     "label": "About page",
@@ -274,6 +285,17 @@
         "defaultData": [
           ""
         ]
+      },
+      {
+        "id": "6257d695-92d0-481c-af66-cae3516c8abc",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f89039f2d55bcdf1ca35ae"
+        }
       },
       {
         "id": "a1c74561-7fc8-4ef1-a4a1-4ea7dfeec033",
@@ -335,7 +357,7 @@
   "642bf4351599a48b5156b9ee": {
     "_id": "642bf4351599a48b5156b9ee",
     "createdAt": 1680602165125,
-    "updatedAt": 1680602431511,
+    "updatedAt": 1694011549356,
     "cid": "7",
     "desc": "",
     "label": "Portfolio page",
@@ -366,6 +388,17 @@
         ]
       },
       {
+        "id": "fee6a9f9-4164-4b69-8fd5-8d73eb685109",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f89039f2d55bcdf1ca35ae"
+        }
+      },
+      {
         "id": "0861af4a-9b2c-4bef-8e5d-55f54e3ba86d",
         "name": "description",
         "label": "Description",
@@ -383,7 +416,7 @@
   "642bf54b1599a48b5156b9f2": {
     "_id": "642bf54b1599a48b5156b9f2",
     "createdAt": 1680602443082,
-    "updatedAt": 1680790478569,
+    "updatedAt": 1694011541189,
     "cid": "8",
     "desc": "",
     "label": "Portfolio item",
@@ -412,6 +445,17 @@
         "defaultData": [
           ""
         ]
+      },
+      {
+        "id": "8c11775f-a8e1-4c0a-88ff-0ca3f7875d6a",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f89039f2d55bcdf1ca35ae"
+        }
       },
       {
         "id": "2a421563-73bd-4476-920e-2631c796f475",
@@ -495,7 +539,7 @@
   "642c2cdd1599a48b5156b9fe": {
     "_id": "642c2cdd1599a48b5156b9fe",
     "createdAt": 1680616669891,
-    "updatedAt": 1680616674466,
+    "updatedAt": 1694011711565,
     "cid": "9",
     "desc": "",
     "label": "Testimonials page",
@@ -524,6 +568,17 @@
         "defaultData": [
           ""
         ]
+      },
+      {
+        "id": "2f52a4b0-6cc4-4205-9ee0-d6177beb1e2d",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f89039f2d55bcdf1ca35ae"
+        }
       },
       {
         "id": "55a9547b-b495-46ec-8942-0e761d572967",
@@ -602,7 +657,7 @@
   "642d3af894b4bb4f437826b1": {
     "_id": "642d3af894b4bb4f437826b1",
     "createdAt": 1680685816937,
-    "updatedAt": 1680685833048,
+    "updatedAt": 1694011700326,
     "cid": "b",
     "desc": "",
     "label": "Services page",
@@ -631,6 +686,17 @@
         "defaultData": [
           ""
         ]
+      },
+      {
+        "id": "adc612f0-35d2-476d-9cbd-caecd80e5742",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f89039f2d55bcdf1ca35ae"
+        }
       },
       {
         "id": "5fd9029e-0ba5-4018-a74c-50bfcac0aca6",
@@ -685,7 +751,7 @@
   "642ec35326d420f1dbe66ffc": {
     "_id": "642ec35326d420f1dbe66ffc",
     "createdAt": 1680786259807,
-    "updatedAt": 1680786259807,
+    "updatedAt": 1694011494690,
     "cid": "d",
     "desc": "",
     "label": "Contact page",
@@ -714,6 +780,17 @@
         "defaultData": [
           ""
         ]
+      },
+      {
+        "id": "4639bf2a-c9fc-4fcc-910c-39a874acefc1",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f89039f2d55bcdf1ca35ae"
+        }
       }
     ]
   }

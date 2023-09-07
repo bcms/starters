@@ -116,7 +116,7 @@
   "6437bffde88842074b79ce24": {
     "_id": "6437bffde88842074b79ce24",
     "createdAt": 1681375229959,
-    "updatedAt": 1681810439557,
+    "updatedAt": 1694010930026,
     "cid": "3",
     "desc": "",
     "label": "Home page",
@@ -147,6 +147,17 @@
         ]
       },
       {
+        "id": "bd5ecafa-0f8e-4900-8fbf-5a24ab975b58",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f88de35b05a4cf971302a2"
+        }
+      },
+      {
         "id": "189bdd9a-cb88-426c-98ff-c94260623505",
         "name": "hero",
         "label": "Hero",
@@ -173,7 +184,7 @@
   "6437c034e88842074b79ce25": {
     "_id": "6437c034e88842074b79ce25",
     "createdAt": 1681375284049,
-    "updatedAt": 1681375873521,
+    "updatedAt": 1694010969674,
     "cid": "4",
     "desc": "",
     "label": "Episode",
@@ -202,6 +213,17 @@
         "defaultData": [
           ""
         ]
+      },
+      {
+        "id": "3e5b32c0-465d-4adb-af2b-cd15c6199050",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f88de35b05a4cf971302a2"
+        }
       },
       {
         "id": "1ed64dbb-f82e-40ca-b3e6-fdf252d74469",
@@ -320,7 +342,7 @@
   "643e68f90a76d51c7228b6a0": {
     "_id": "643e68f90a76d51c7228b6a0",
     "createdAt": 1681811705600,
-    "updatedAt": 1681813787397,
+    "updatedAt": 1694010889205,
     "cid": "6",
     "desc": "",
     "label": "About page",
@@ -349,6 +371,17 @@
         "defaultData": [
           ""
         ]
+      },
+      {
+        "id": "bc2ea97a-8559-4fa2-9763-add5a07953f3",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f88de35b05a4cf971302a2"
+        }
       },
       {
         "id": "affce152-74f4-4763-94ba-41be257197f6",

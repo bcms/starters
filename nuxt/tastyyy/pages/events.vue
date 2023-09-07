@@ -54,7 +54,8 @@ const { setOgHead } = useHeadTags();
 
 useHead(() =>
   setOgHead({
-    title: data.value?.data.meta.title,
+    title: data.value?.data.meta.seo?.title || data.value?.data.meta.title,
+    description: data.value?.data.meta.seo?.description,
   })
 );
 </script>

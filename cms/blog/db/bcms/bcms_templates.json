@@ -118,7 +118,7 @@
   "6433e34b049fc6eba4f8e48e": {
     "_id": "6433e34b049fc6eba4f8e48e",
     "createdAt": 1681122123499,
-    "updatedAt": 1681122926098,
+    "updatedAt": 1694072983199,
     "cid": "3",
     "desc": "",
     "label": "Home page",
@@ -149,6 +149,17 @@
         ]
       },
       {
+        "id": "4db85455-6db6-4d2a-845c-77ec3c31ab97",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f9805564ef5f63c1881f49"
+        }
+      },
+      {
         "id": "3619bcf6-a785-433b-9c2c-4251a222f261",
         "name": "hero",
         "label": "Hero",
@@ -164,7 +175,7 @@
   "6433e36f049fc6eba4f8e48f": {
     "_id": "6433e36f049fc6eba4f8e48f",
     "createdAt": 1681122159516,
-    "updatedAt": 1681204371909,
+    "updatedAt": 1694073054288,
     "cid": "4",
     "desc": "",
     "label": "Blog",
@@ -193,6 +204,17 @@
         "defaultData": [
           ""
         ]
+      },
+      {
+        "id": "50c19d5b-fa97-41d4-ab4c-6f002970042e",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f9805564ef5f63c1881f49"
+        }
       },
       {
         "id": "49d57bd5-c4fe-464b-8d83-4480aaf8c27c",
@@ -249,7 +271,7 @@
   "64342185049fc6eba4f8e49b": {
     "_id": "64342185049fc6eba4f8e49b",
     "createdAt": 1681138053037,
-    "updatedAt": 1681197462111,
+    "updatedAt": 1694072973455,
     "cid": "5",
     "desc": "",
     "label": "Contact page",
@@ -280,6 +302,17 @@
         ]
       },
       {
+        "id": "0eba9a52-8975-47b3-bb95-cee7fbb30eeb",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f9805564ef5f63c1881f49"
+        }
+      },
+      {
         "id": "9de77a07-cfd3-423a-a644-5e3b3978c451",
         "name": "subtitle",
         "label": "Subtitle",
@@ -306,7 +339,7 @@
   "64351a6e85d8365f26e2cc93": {
     "_id": "64351a6e85d8365f26e2cc93",
     "createdAt": 1681201774705,
-    "updatedAt": 1681201807818,
+    "updatedAt": 1694073015914,
     "cid": "6",
     "desc": "",
     "label": "Blogs page",
@@ -337,6 +370,17 @@
         ]
       },
       {
+        "id": "5990c151-c4fc-4355-81ca-323165b6bee0",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f9805564ef5f63c1881f49"
+        }
+      },
+      {
         "id": "24edfe87-e297-4be3-ba3b-74a31d881bd5",
         "name": "subtitle",
         "label": "Subtitle",
@@ -352,7 +396,7 @@
   "6435675585d8365f26e2cc99": {
     "_id": "6435675585d8365f26e2cc99",
     "createdAt": 1681221461908,
-    "updatedAt": 1681223316139,
+    "updatedAt": 1694072957597,
     "cid": "7",
     "desc": "",
     "label": "About page",
@@ -381,6 +425,17 @@
         "defaultData": [
           ""
         ]
+      },
+      {
+        "id": "3a60ada0-1beb-4f04-99dc-b54c54ecb2c7",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f9805564ef5f63c1881f49"
+        }
       },
       {
         "id": "159b39ae-eb9e-4f9d-8755-0bb3fe491e5c",

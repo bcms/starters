@@ -420,7 +420,7 @@
   "642aa3b23effc7142eea9d97": {
     "_id": "642aa3b23effc7142eea9d97",
     "createdAt": 1680516018227,
-    "updatedAt": 1680531691073,
+    "updatedAt": 1694011846130,
     "cid": "3",
     "templateId": "642aa3ae3effc7142eea9d96",
     "userId": "111111111111111111111111",
@@ -442,6 +442,13 @@
             ]
           },
           {
+            "id": "f2f2a81d-a058-4415-9141-6442bc8fbe8c",
+            "data": {
+              "_id": "64f89039f2d55bcdf1ca35ae",
+              "items": []
+            }
+          },
+          {
             "id": "47e5009f-cce5-415d-ae8e-c8fada5a6e7f",
             "data": {
               "_id": "642aaafb3effc7142eea9d98",
@@ -458,7 +465,7 @@
                       "id": "470c35ed-da21-475d-a49e-557cc1e24505",
                       "data": [
                         {
-                          "id": "cfc0e8b5-9fc0-45de-8114-bc65e10a193f",
+                          "id": "a5790b51-bee4-46fd-bb37-1118e299d506",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -566,69 +573,6 @@
                           "_id": "642aac3c3effc7142eea9d9a",
                           "alt_text": "Raloca",
                           "caption": ""
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          },
-          {
-            "id": "7553ea9e-2140-4ee7-bfab-e370f0d846f1",
-            "data": {
-              "_id": "642adf503effc7142eea9d9b",
-              "items": [
-                {
-                  "props": [
-                    {
-                      "id": "cb24ca1d-b07e-4a7b-9bea-32b1dd0974b7",
-                      "data": [
-                        "Services"
-                      ]
-                    },
-                    {
-                      "id": "2970d510-14de-429b-a0f2-68a8b0c8e0b7",
-                      "data": [
-                        {
-                          "id": "0082216f-37bc-4385-b150-474db9c1d8f7",
-                          "nodes": [
-                            {
-                              "type": "paragraph",
-                              "content": [
-                                {
-                                  "type": "text",
-                                  "text": "Sed ut perspiciatis unde omnis iste "
-                                },
-                                {
-                                  "type": "text",
-                                  "marks": [
-                                    {
-                                      "type": "bold"
-                                    }
-                                  ],
-                                  "text": "natus error sit voluptatem accusantium"
-                                },
-                                {
-                                  "type": "text",
-                                  "text": " doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam "
-                                },
-                                {
-                                  "type": "text",
-                                  "marks": [
-                                    {
-                                      "type": "bold"
-                                    }
-                                  ],
-                                  "text": "voluptatem quia voluptas"
-                                },
-                                {
-                                  "type": "text",
-                                  "text": " sit aspernatur aut odit aut fugit."
-                                }
-                              ]
-                            }
-                          ]
                         }
                       ]
                     }

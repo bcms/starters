@@ -116,7 +116,7 @@
   "644277a6eb7380e95b95e76f": {
     "_id": "644277a6eb7380e95b95e76f",
     "createdAt": 1682077606455,
-    "updatedAt": 1682090682577,
+    "updatedAt": 1694072705424,
     "cid": "3",
     "desc": "",
     "label": "Home page",
@@ -145,6 +145,17 @@
         "defaultData": [
           ""
         ]
+      },
+      {
+        "id": "a7a8c6f4-5cb2-4c9d-9ffa-398e8c99c9f7",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f97f0f9371ee408d69115f"
+        }
       },
       {
         "id": "06a0e0ba-b2e1-4d3e-a043-b4269a792540",

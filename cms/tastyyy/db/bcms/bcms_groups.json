@@ -511,5 +511,38 @@
         "defaultData": []
       }
     ]
+  },
+  "64f884e1d6991cdf7cfe23eb": {
+    "_id": "64f884e1d6991cdf7cfe23eb",
+    "createdAt": 1694008545635,
+    "updatedAt": 1694009235623,
+    "cid": "d",
+    "desc": "",
+    "label": "SEO",
+    "name": "seo",
+    "props": [
+      {
+        "id": "4143c5f9-dbfb-41e8-9f07-4a30498173dd",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": false,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "9ea48e0c-9501-4c46-a7d0-f7f1a0c1a697",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": false,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
   }
 }

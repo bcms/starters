@@ -16,9 +16,9 @@
   "641d60552a29ceb11f9ce265": {
     "_id": "641d60552a29ceb11f9ce265",
     "createdAt": 1679646805705,
-    "updatedAt": 1680009660882,
+    "updatedAt": 1694012037253,
     "name": "group",
-    "count": 32
+    "count": 35
   },
   "641d60552a29ceb11f9ce266": {
     "_id": "641d60552a29ceb11f9ce266",
@@ -51,9 +51,9 @@
   "641d60552a29ceb11f9ce26a": {
     "_id": "641d60552a29ceb11f9ce26a",
     "createdAt": 1679646805705,
-    "updatedAt": 1680013654207,
+    "updatedAt": 1694012255930,
     "name": "templates",
-    "count": 67
+    "count": 89
   },
   "641d60552a29ceb11f9ce26b": {
     "_id": "641d60552a29ceb11f9ce26b",

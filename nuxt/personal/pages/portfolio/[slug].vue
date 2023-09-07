@@ -139,7 +139,8 @@ if (error.value) {
 
 useHead(() =>
   setOgHead({
-    title: data.value?.page.meta.title,
+    title: data.value?.page.meta.seo?.title || data.value?.page.meta.title,
+    description: data.value?.page.meta.seo?.description,
   }),
 );
 </script>
