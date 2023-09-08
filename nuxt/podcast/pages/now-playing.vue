@@ -25,7 +25,7 @@
         <div
           class="text-sm leading-none tracking-[-0.8px] text-appGray-400 mb-[35px] lg:text-2xl lg:leading-none lg:text-appGray-300 lg:mb-10"
         >
-          {{ episode.guest?.meta?.en?.title || "N / A" }}
+          {{ episode.guest?.meta?.en?.title || 'N / A' }}
         </div>
         <div class="mb-6 w-full lg:mb-8">
           <label class="block relative mb-2 lg:mb-5">
@@ -100,12 +100,13 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from "~~/bcms-components";
-import { APIResponse, NowPlayingPageData } from "~~/types";
-import PlayIcon from "@/assets/icons/play.svg";
-import PauseIcon from "@/assets/icons/pause.svg";
-import ForwardIcon from "@/assets/icons/forward.svg";
-import BackwardIcon from "@/assets/icons/backward.svg";
+import { NuxtApp } from 'nuxt/app';
+import { BCMSImage } from '~~/bcms-components';
+import { NowPlayingPageData, PageProps } from '~~/types';
+import PlayIcon from '@/assets/icons/play.svg';
+import PauseIcon from '@/assets/icons/pause.svg';
+import ForwardIcon from '@/assets/icons/forward.svg';
+import BackwardIcon from '@/assets/icons/backward.svg';
 
 const {
   episode,
@@ -120,19 +121,32 @@ const {
   handleRewind,
 } = usePlayingEpisode();
 
-const { data } = useAsyncData(async (ctx) => {
-  return await ctx?.$bcms.request<APIResponse<NowPlayingPageData>>({
-    url: "/now-playing.json",
+const { data, error } = useAsyncData<PageProps<NowPlayingPageData>>(
+  async (ctx) => {
+    const { header, footer } = await getHeaderAndFooter(ctx as NuxtApp);
+    return {
+      header,
+      footer,
+      page: {},
+    };
+  },
+);
+if (error.value) {
+  throw createError({
+    statusCode: 500,
+    statusMessage: error.value.message,
+    stack: error.value.stack,
+    fatal: true,
   });
-});
+}
 
 const { setOgHead } = useHeadTags();
 
-const fileLength = ref("...");
+const fileLength = ref('...');
 
 onMounted(() => {
   if (!episode.value) {
-    navigateTo("/");
+    navigateTo('/');
   }
   nextTick(() => {
     setFileLength();
@@ -149,16 +163,16 @@ const setFileLength = () => {
   const { durationInMinutes, durationInSeconds } =
     getPlayingEpisodeFileLength.value;
 
-  fileLength.value = `${durationInMinutes.toString().padStart(2, "0")}:${(
+  fileLength.value = `${durationInMinutes.toString().padStart(2, '0')}:${(
     durationInSeconds % 60
   )
     .toFixed(0)
-    .padStart(2, "0")}`;
+    .padStart(2, '0')}`;
 };
 
 useHead(() =>
   setOgHead({
-    title: "Now Playing",
-  })
+    title: 'Now Playing',
+  }),
 );
 </script>

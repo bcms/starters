@@ -11,6 +11,7 @@
         <div class="flex items-center space-x-5 lg:space-x-8">
           <NuxtLink
             v-for="(item, index) in data.social"
+            :key="index"
             :href="item.url"
             :item="index"
             target="_blank"
@@ -119,9 +120,9 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
-import { FooterEntryMeta } from "~~/bcms/types";
+import { PropType } from 'vue';
+import { BCMSImage } from '~~/bcms-components';
+import { FooterEntryMeta } from '~~/bcms/types';
 
 defineProps({
   data: {

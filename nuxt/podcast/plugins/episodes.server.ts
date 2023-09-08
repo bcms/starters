@@ -1,15 +1,21 @@
-import { BCMSNuxtPlugin } from "nuxt-plugin-bcms/types";
-import { EpisodeEntryMeta } from "~~/bcms/types";
-import { APIResponse } from "~~/types";
+import { EpisodeEntry, EpisodeEntryMeta } from '~~/bcms/types';
 
-export default defineNuxtPlugin(async (nuxtApp) => {
+export default defineNuxtPlugin(async () => {
   const { setEpisodes } = useEpisodes();
 
-  const { data: episodes } = await (nuxtApp.$bcms as BCMSNuxtPlugin).request<
-    APIResponse<EpisodeEntryMeta[]>
-  >({
-    url: "/episode",
-  });
+  const { data: episodes } = await useAsyncData<EpisodeEntryMeta[]>(
+    async (ctx) => {
+      const episodeItems = (await ctx?.$bcms.entry.getAll({
+        template: 'episode',
+      })) as EpisodeEntry[];
 
-  setEpisodes(episodes.sort((a, b) => b.date - a.date));
+      return episodeItems
+        ? episodeItems.map((e) => e.meta.en as EpisodeEntryMeta)
+        : [];
+    },
+  );
+
+  setEpisodes(
+    episodes.value ? episodes.value.sort((a, b) => b.date - a.date) : [],
+  );
 });

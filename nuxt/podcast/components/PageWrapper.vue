@@ -10,8 +10,8 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { FooterEntryMeta, HeaderEntryMeta } from "~~/bcms/types";
+import { PropType } from 'vue';
+import { FooterEntryMeta, HeaderEntryMeta } from '~~/bcms/types';
 
 defineProps({
   header: {

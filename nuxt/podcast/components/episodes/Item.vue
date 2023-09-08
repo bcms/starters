@@ -51,7 +51,7 @@
       <div
         class="text-xs leading-none tracking-[-0.8px] text-appGray-400 lg:text-xl lg:leading-none"
       >
-        {{ item.guest?.meta?.en?.title || "N / A" }}
+        {{ item.guest?.meta?.en?.title || 'N / A' }}
       </div>
     </div>
     <div class="text-right">
@@ -72,12 +72,12 @@
 </template>
 
 <script setup lang="ts">
-import { bcmsMediaToUrl } from "@becomes/cms-most/frontend";
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
-import { EpisodeEntryMeta } from "~~/bcms/types";
-import PlayIcon from "@/assets/icons/play.svg";
-import PauseIcon from "@/assets/icons/pause.svg";
+import { bcmsMediaToUrl } from '@becomes/cms-most/frontend';
+import { PropType } from 'vue';
+import { BCMSImage } from '~~/bcms-components';
+import { EpisodeEntryMeta } from '~~/bcms/types';
+import PlayIcon from '@/assets/icons/play.svg';
+import PauseIcon from '@/assets/icons/pause.svg';
 
 const props = defineProps({
   item: {
@@ -100,7 +100,7 @@ const {
   getFileLength,
 } = usePlayingEpisode();
 
-const fileLength = ref("...");
+const fileLength = ref('...');
 
 const handlePlayPause = () => {
   if (!episode.value) {
@@ -112,6 +112,7 @@ const handlePlayPause = () => {
       playing: true,
     });
   } else {
+    // eslint-disable-next-line no-lonely-if
     if (episode.value.slug === props.item.slug) {
       setSettings({
         playing: !settings.value.playing,
@@ -134,17 +135,17 @@ const handlePlayPause = () => {
 onMounted(() => {
   nextTick(() => {
     const audio = new Audio(bcmsMediaToUrl(props.item.file));
-    audio.preload = "metadata";
+    audio.preload = 'metadata';
 
     audio.onloadedmetadata = () => {
       audioDOM.value = audio;
       const { durationInMinutes, durationInSeconds } = getFileLength(audio);
 
-      fileLength.value = `${durationInMinutes.toString().padStart(2, "0")}:${(
+      fileLength.value = `${durationInMinutes.toString().padStart(2, '0')}:${(
         durationInSeconds % 60
       )
         .toFixed(0)
-        .padStart(2, "0")}`;
+        .padStart(2, '0')}`;
     };
   });
 });
