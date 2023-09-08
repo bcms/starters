@@ -8,8 +8,8 @@
         <div class="flex items-center justify-between xl:gap-10">
           <NuxtLink to="/now-playing" class="flex items-center lg:flex-1">
             <BCMSImage
-              :media="episode.cover"
               :key="episode.cover.src"
+              :media="episode.cover"
               :options="{
                 sizes: {
                   exec: [
@@ -31,7 +31,7 @@
               <div
                 class="text-xs leading-none tracking-[-0.8px] text-appGray-400 lg:text-base lg:leading-none"
               >
-                {{ episode.guest?.meta?.en?.title || "N / A" }}
+                {{ episode.guest?.meta?.en?.title || 'N / A' }}
               </div>
             </div>
           </NuxtLink>
@@ -114,8 +114,8 @@
                 step="0.01"
                 min="0"
                 max="1"
-                @change="handleVolumeChange"
                 class="absolute top-1/2 -translate-y-1/2 left-0 w-full h-5 opacity-0 cursor-pointer"
+                @change="handleVolumeChange"
               />
             </label>
           </div>
@@ -141,12 +141,12 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from "~~/bcms-components";
-import PlayIcon from "@/assets/icons/play.svg";
-import PauseIcon from "@/assets/icons/pause.svg";
-import VolumeIcon from "@/assets/icons/volume.svg";
-import ForwardIcon from "@/assets/icons/forward.svg";
-import BackwardIcon from "@/assets/icons/backward.svg";
+import { BCMSImage } from '~~/bcms-components';
+import PlayIcon from '@/assets/icons/play.svg';
+import PauseIcon from '@/assets/icons/pause.svg';
+import VolumeIcon from '@/assets/icons/volume.svg';
+import ForwardIcon from '@/assets/icons/forward.svg';
+import BackwardIcon from '@/assets/icons/backward.svg';
 
 const {
   episode,
@@ -160,7 +160,7 @@ const {
   handleRewind,
 } = usePlayingEpisode();
 
-const fileLength = ref("...");
+const fileLength = ref('...');
 
 const volumeWidth = computed(() => {
   return `${settings.value.volume * 100}%`;
@@ -189,10 +189,10 @@ const setFileLength = () => {
   const { durationInMinutes, durationInSeconds } =
     getPlayingEpisodeFileLength.value;
 
-  fileLength.value = `${String(durationInMinutes).padStart(2, "0")}:${(
+  fileLength.value = `${String(durationInMinutes).padStart(2, '0')}:${(
     durationInSeconds % 60
   )
     .toFixed(0)
-    .padStart(2, "0")}`;
+    .padStart(2, '0')}`;
 };
 </script>

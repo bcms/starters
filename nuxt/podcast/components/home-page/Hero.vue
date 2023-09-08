@@ -35,9 +35,9 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
-import { EpisodeEntryMeta, HomeHeroGroup } from "~~/bcms/types";
+import { PropType } from 'vue';
+import { BCMSImage } from '~~/bcms-components';
+import { EpisodeEntryMeta, HomeHeroGroup } from '~~/bcms/types';
 
 defineProps({
   data: {

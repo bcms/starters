@@ -28,8 +28,8 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { EpisodeEntryMeta, HomeEpisodesGroup } from "~~/bcms/types";
+import { PropType } from 'vue';
+import { EpisodeEntryMeta, HomeEpisodesGroup } from '~~/bcms/types';
 
 defineProps({
   data: {
