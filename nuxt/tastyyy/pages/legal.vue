@@ -15,7 +15,7 @@
           </h1>
           <div class="grid grid-cols-1 gap-4 max-w-[850px] mx-auto lg:gap-6">
             <div
-              v-for="(item, index) in data.data.entries"
+              v-for="(item, index) in data.page.entries"
               :key="index"
               class="border border-[#DBD9D5] rounded-[7px] p-6"
             >
@@ -37,19 +37,40 @@
 </template>
 
 <script setup lang="ts">
-import { APIResponse, LegalPageData } from "~~/types";
+import { NuxtApp } from 'nuxt/app';
+import { LegalPageEntry } from '~~/bcms/types';
+import { LegalPageData } from '~~/types';
+import { PageProps } from '~~/types/page-props';
 
-const { data } = useAsyncData(async (ctx) => {
-  return await ctx?.$bcms.request<APIResponse<LegalPageData>>({
-    url: "/legal.json",
-  });
+const { data, error } = useAsyncData<PageProps<LegalPageData>>(async (ctx) => {
+  const { header, footer } = await getHeaderAndFooter(ctx as NuxtApp);
+
+  const legalPage = (await ctx?.$bcms.entry.getAll({
+    // Template name or ID
+    template: 'legal_page',
+  })) as LegalPageEntry[];
+  return {
+    header,
+    footer,
+    page: {
+      entries: legalPage,
+    },
+  };
 });
+if (error.value) {
+  throw createError({
+    statusCode: 500,
+    statusMessage: error.value.message,
+    stack: error.value.stack,
+    fatal: true,
+  });
+}
 
 const { setOgHead } = useHeadTags();
 
 useHead(() =>
   setOgHead({
-    title: "Legal",
-  })
+    title: 'Legal',
+  }),
 );
 </script>

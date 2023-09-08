@@ -11,75 +11,30 @@
     "noEmit": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "types": [
-      "node"
-    ],
+    "types": ["node"],
     "baseUrl": "./",
     "paths": {
-      "~~": [
-        "."
-      ],
-      "~~/*": [
-        "./*"
-      ],
-      "@@": [
-        "."
-      ],
-      "@@/*": [
-        "./*"
-      ],
-      "~": [
-        "."
-      ],
-      "~/*": [
-        "./*"
-      ],
-      "@": [
-        "."
-      ],
-      "@/*": [
-        "./*"
-      ],
-      "assets": [
-        "assets"
-      ],
-      "public": [
-        "public"
-      ],
-      "#app": [
-        "node_modules/nuxt/dist/app"
-      ],
-      "#app/*": [
-        "node_modules/nuxt/dist/app/*"
-      ],
-      "vue-demi": [
-        "node_modules/nuxt/dist/app/compat/vue-demi"
-      ],
-      "#head": [
-        "node_modules/nuxt/dist/head/runtime"
-      ],
-      "#head/*": [
-        "node_modules/nuxt/dist/head/runtime/*"
-      ],
-      "#imports": [
-        ".nuxt/imports"
-      ],
-      "#build": [
-        ".nuxt"
-      ],
-      "#build/*": [
-        ".nuxt/*"
-      ],
-      "#components": [
-        ".nuxt/components"
-      ]
+      "~~": ["."],
+      "~~/*": ["./*"],
+      "@@": ["."],
+      "@@/*": ["./*"],
+      "~": ["."],
+      "~/*": ["./*"],
+      "@": ["."],
+      "@/*": ["./*"],
+      "assets": ["assets"],
+      "public": ["public"],
+      "#app": ["node_modules/nuxt/dist/app"],
+      "#app/*": ["node_modules/nuxt/dist/app/*"],
+      "vue-demi": ["node_modules/nuxt/dist/app/compat/vue-demi"],
+      "#head": ["node_modules/nuxt/dist/head/runtime"],
+      "#head/*": ["node_modules/nuxt/dist/head/runtime/*"],
+      "#imports": [".nuxt/imports"],
+      "#build": [".nuxt"],
+      "#build/*": [".nuxt/*"],
+      "#components": [".nuxt/components"]
     }
   },
-  "include": [
-    "./.nuxt/nuxt.d.ts",
-    "./**/*"
-  ],
-  "exclude": [
-    "./dist"
-  ]
+  "include": ["./.nuxt/nuxt.d.ts", "./**/*"],
+  "exclude": ["./dist"]
 }

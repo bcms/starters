@@ -93,10 +93,10 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
-import { A11y } from "swiper";
-import { HomeSpecialsGroup, FoodItemEntryMeta } from "~~/bcms/types";
+import { PropType } from 'vue';
+import { A11y } from 'swiper/modules';
+import { BCMSImage } from '~~/bcms-components';
+import { HomeSpecialsGroup, FoodItemEntryMeta } from '~~/bcms/types';
 
 const props = defineProps({
   data: {
@@ -109,9 +109,9 @@ const props = defineProps({
   },
 });
 
-const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+const days = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
 
-const activeDay = ref("SUN");
+const activeDay = ref('SUN');
 
 const filteredItems = computed(() => {
   return props.items.filter((item) => {

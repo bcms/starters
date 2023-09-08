@@ -39,10 +39,9 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
-import { EventEntryMeta } from "~~/bcms/types";
-import { HomeEventsGroup } from "~~/bcms/types/group/home_events";
+import { PropType } from 'vue';
+import { EventEntryMeta } from '~~/bcms/types';
+import { HomeEventsGroup } from '~~/bcms/types/group/home_events';
 
 defineProps({
   data: {

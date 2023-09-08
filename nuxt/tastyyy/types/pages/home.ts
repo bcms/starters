@@ -2,8 +2,8 @@ import {
   FoodItemEntryMeta,
   HomePageEntryMeta,
   TestimonialEntryMeta,
-} from "~~/bcms/types";
-import { EventEntryMeta } from "~~/bcms/types/entry/event";
+} from '~~/bcms/types';
+import { EventEntryMeta } from '~~/bcms/types/entry/event';
 
 export interface HomePageData {
   meta: HomePageEntryMeta;

@@ -11,11 +11,11 @@
           <h1
             class="text-xl leading-none font-Gloock uppercase text-center mb-10 lg:text-5xl lg:leading-none lg:mb-14"
           >
-            {{ data.data.meta.title }}
+            {{ data.page.meta.title }}
           </h1>
           <form
-            @submit.prevent="handleSubmit"
             class="grid grid-cols-2 gap-x-[14px] gap-y-[22px] lg:gap-x-4 lg:gap-y-[30px]"
+            @submit.prevent="handleSubmit"
           >
             <FormText
               v-model="form.name.value"
@@ -113,45 +113,72 @@
 </template>
 
 <script setup lang="ts">
-import { APIResponse, ReservationPageData } from "~~/types";
+import { NuxtApp } from 'nuxt/app';
+import { ReservationPageEntry, ReservationPageEntryMeta } from '~~/bcms/types';
+import { ReservationPageData } from '~~/types';
+import { PageProps } from '~~/types/page-props';
 
-const { data } = useAsyncData(async (ctx) => {
-  return await ctx?.$bcms.request<APIResponse<ReservationPageData>>({
-    url: "/reservation.json",
+const { data, error } = useAsyncData<PageProps<ReservationPageData>>(
+  async (ctx) => {
+    const { header, footer } = await getHeaderAndFooter(ctx as NuxtApp);
+    const reservationPage = (await ctx?.$bcms.entry.get({
+      // Template name or ID
+      template: 'reservation_page',
+      // Entry slug or ID
+      entry: 'reservation',
+    })) as ReservationPageEntry;
+    if (!reservationPage) {
+      throw new Error('Reservation page entry does not exist.');
+    }
+    return {
+      header,
+      footer,
+      page: {
+        meta: reservationPage.meta.en as ReservationPageEntryMeta,
+      },
+    };
+  },
+);
+if (error.value) {
+  throw createError({
+    statusCode: 500,
+    statusMessage: error.value.message,
+    stack: error.value.stack,
+    fatal: true,
   });
-});
+}
 
 const { checkForInputErrors } = useError();
 const { setOgHead } = useHeadTags();
 
 const form = ref({
   name: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   date: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   time: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   guestsCount: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   email: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   notes: {
-    value: "",
-    error: "",
+    value: '',
+    error: '',
   },
   acceptTerms: {
     value: false,
-    error: "",
+    error: '',
   },
 });
 
@@ -173,8 +200,8 @@ const handleSubmit = () => {
 
 useHead(() =>
   setOgHead({
-    title: data.value?.data.meta.seo?.title || data.value?.data.meta.title,
-    description: data.value?.data.meta.seo?.description,
-  })
+    title: data.value?.page.meta.seo?.title || data.value?.page.meta.title,
+    description: data.value?.page.meta.seo?.description,
+  }),
 );
 </script>

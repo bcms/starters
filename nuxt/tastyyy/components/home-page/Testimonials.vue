@@ -16,7 +16,7 @@
           :item="data.description"
           class="text-sm leading-[1.3] tracking-[-0.41px] text-appGray-700 uppercase max-w-[745px] mx-auto mb-10 lg:text-base lg:leading-[1.3] lg:mb-[45px]"
         />
-        <div class="flex items-start space-x-5 w-full lg:space-x-24">
+        <div class="grid grid-cols-[auto,1fr,auto] gap-5 w-full lg:gap-24">
           <button class="homeTestimonials--swiperPrev flex translate-y-[60px]">
             <ArrowIcon
               class="w-4 h-4 rotate-180 flex-shrink-0 lg:w-12 lg:h-12"
@@ -32,6 +32,7 @@
             watch-overflow
             grab-cursor
             :space-between="12"
+            class="max-w-full"
           >
             <SwiperSlide
               v-for="(testimonial, index) in items"
@@ -63,11 +64,11 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
-import { A11y, Navigation } from "swiper";
-import { TestimonialEntryMeta, HomeTestimonialsGroup } from "~~/bcms/types";
-import ArrowIcon from "@/assets/icons/arrow.svg";
+import { PropType } from 'vue';
+import { A11y, Navigation } from 'swiper/modules';
+import { BCMSImage } from '~~/bcms-components';
+import { TestimonialEntryMeta, HomeTestimonialsGroup } from '~~/bcms/types';
+import ArrowIcon from '@/assets/icons/arrow.svg';
 
 defineProps({
   data: {

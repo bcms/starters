@@ -31,10 +31,10 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { AboutHeroGroup } from "~~/bcms/types";
-import { BCMSImage } from "~~/bcms-components";
-import AboutUsOutline from "@/assets/media/about-us-outline.svg";
+import { PropType } from 'vue';
+import { AboutHeroGroup } from '~~/bcms/types';
+import { BCMSImage } from '~~/bcms-components';
+import AboutUsOutline from '@/assets/media/about-us-outline.svg';
 
 defineProps({
   data: {
