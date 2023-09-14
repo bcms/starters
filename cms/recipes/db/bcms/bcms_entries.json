@@ -599,7 +599,7 @@
   "64182d67f7d73b81da796db0": {
     "_id": "64182d67f7d73b81da796db0",
     "createdAt": 1679306087216,
-    "updatedAt": 1679649707270,
+    "updatedAt": 1694694481329,
     "cid": "9",
     "templateId": "64182bc0f7d73b81da796da7",
     "userId": "111111111111111111111111",
@@ -621,6 +621,13 @@
             ]
           },
           {
+            "id": "75970e04-fb4f-4fd8-bf61-c97d238b40c9",
+            "data": {
+              "_id": "64f88bd8cb4b37574f5961fb",
+              "items": []
+            }
+          },
+          {
             "id": "d2e4ed3a-5400-40b1-a847-8374efa3eceb",
             "data": [
               {
@@ -634,7 +641,7 @@
             "id": "aece2589-9fa1-46c4-9c61-5d5eb09834d7",
             "data": [
               {
-                "id": "30b3ce96-e644-4571-b6ff-fdcde7d38cd4",
+                "id": "69e4e9b5-d3de-4db2-9aee-be6dc63af532",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -660,14 +667,14 @@
             "id": "2c15cc2e-e154-4870-ad96-bfded1029fb1",
             "data": [
               {
-                "id": "ee6597f5-5822-4999-a3bc-432c8c461733",
+                "id": "45db8510-7f79-4912-b93f-a5c6dff5fb7a",
                 "nodes": [
                   {
                     "type": "paragraph",
                     "content": [
                       {
                         "type": "text",
-                        "text": " "
+                        "text": "Fried Rice is a popular and delicious Asian dish made by stir-frying cooked rice with a combination of vegetables, proteins (such as eggs, chicken, shrimp, or tofu), and savory seasonings. It's a versatile and quick meal that's perfect for using up leftover rice and creating a flavorful, one-pan dish."
                       }
                     ]
                   }
@@ -678,7 +685,7 @@
           {
             "id": "2380d149-10e5-40ee-a0c5-a43cd2542de7",
             "data": [
-              " "
+              " 25 mins"
             ]
           },
           {
@@ -700,21 +707,292 @@
             "id": "c545369a-d813-4a7f-a874-0f901a4efff6",
             "data": {
               "_id": "641ad9167ea0642549cf765b",
-              "items": []
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "What type of rice should I use for Fried Rice?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "6c3d10b0-b2bd-4375-ae87-d74d06353e47",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Long-grain rice like jasmine or basmati works well, but day-old rice that has been chilled is ideal as it's less sticky."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "Can I use frozen vegetables in Fried Rice?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "73d130fc-d722-465d-a337-a13dc10a9692",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Yes, frozen mixed vegetables are convenient and work perfectly in Fried Rice."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "How do I prevent my Fried Rice from becoming too soggy?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "451bd51e-dfea-4072-8f9b-9caf2ef0240d",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Use cold, leftover rice, and avoid adding too much sauce. Stir-fry quickly over high heat to prevent excess moisture from accumulating."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "What sauces are typically used in Fried Rice?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "b46f2815-4d86-4be2-a4e3-1406fd8086fa",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Soy sauce, oyster sauce, and sesame oil are common sauces used to season Fried Rice."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           },
           {
             "id": "3d51a123-2aa7-4b9e-912b-3bbd2fec3065",
             "data": [
               {
-                "id": "8e6efeca-0f74-4404-90ef-d53c15b46e32",
+                "id": "816a9c93-a6b5-4fdc-8124-1ae37d562d8c",
                 "nodes": [
                   {
                     "type": "paragraph",
                     "content": [
                       {
                         "type": "text",
-                        "text": " "
+                        "text": "2 cups cooked and cooled rice (preferably day-old)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "06135d0a-ebb7-4ea9-bd55-b9f82478f418",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "2 tablespoons vegetable oil"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "9b4dd2c5-a3f5-41d4-9c36-02d531e823a4",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "2 cloves garlic, minced"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "a734805b-8f5a-41e6-a665-e7b531806d98",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1/2 cup diced onion"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "15513c0b-61eb-4a60-8326-3a59b11177d3",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1/2 cup diced carrots"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "a4c28e1a-47f0-4f83-a725-064141f0d1b4",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1/2 cup frozen peas"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "0afbcea6-9f73-46b3-bb77-858f13890942",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "2 eggs, beaten"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "aff57489-65b5-43e3-8572-4c15623049a7",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "2 tablespoons soy sauce"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "37be9f68-0b97-4434-a8cb-75617523a5c1",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1 tablespoon oyster sauce (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "7c6c250b-f71d-4d90-bb47-c26d12de4379",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1/2 teaspoon sesame oil"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "47490ba6-5b8f-43b2-8cee-9e3929a24e49",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Salt and pepper to taste"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "917259b8-60de-4912-b378-9afb169229e8",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Chopped green onions for garnish"
                       }
                     ]
                   }
@@ -726,7 +1004,281 @@
             "id": "ca2ec2a6-7248-4d2a-9c37-9046395bc9e8",
             "data": {
               "_id": "641ada087ea0642549cf765c",
-              "items": []
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "First Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "075c9ab4-8d35-4c8e-81d3-b41c623ad7df",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Cook the rice ahead of time and allow it to cool. Cold rice works best for fried rice as it's less sticky. Dice the onions and carrots. Beat the eggs in a small bowl. Have all the ingredients ready before you start cooking."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "64182d53f7d73b81da796daf",
+                          "alt_text": "First Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Second Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "611e1958-3436-48de-9f1e-b79ff18276bc",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Heat a large skillet or wok over medium-high heat. Add 2 tablespoons of vegetable oil and allow it to get hot."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "64182d53f7d73b81da796daf",
+                          "alt_text": "Second Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Third Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "c76b29c2-7f05-4a97-8ad1-80a033acc7df",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Add minced garlic and diced onions to the hot oil. Sauté for about 2 minutes until the onions become translucent."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "64182d53f7d73b81da796daf",
+                          "alt_text": "Third Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Fourth Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "e38e1271-0af9-4172-b251-5234bb5ed275",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Stir in the diced carrots and frozen peas. Cook for 2-3 minutes, or until the vegetables start to soften."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "64182d53f7d73b81da796daf",
+                          "alt_text": "Fourth Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Fifth Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "7af78dac-853b-4bc4-b153-9e56ae4a8fed",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Push the vegetables to one side of the pan and pour the beaten eggs into the other side. Scramble the eggs until they are fully cooked."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "64182d53f7d73b81da796daf",
+                          "alt_text": "Fifth Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Sixth Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "6e4ea72a-3421-4439-a466-a326fe4468a0",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Add the cold, cooked rice to the pan and stir-fry it with the vegetables and eggs."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "64182d53f7d73b81da796daf",
+                          "alt_text": "Sixth Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Seventh Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "822dfd7b-e76b-4b91-a410-c35d8682902e",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Drizzle soy sauce, oyster sauce (if using), and sesame oil over the rice mixture. Stir to combine and evenly distribute the sauces. Garnish and serve."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "64182d53f7d73b81da796daf",
+                          "alt_text": "Seventh Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           }
         ]
@@ -743,7 +1295,7 @@
   "64182d7af7d73b81da796db1": {
     "_id": "64182d7af7d73b81da796db1",
     "createdAt": 1679306106819,
-    "updatedAt": 1679649696094,
+    "updatedAt": 1694694257572,
     "cid": "a",
     "templateId": "64182bc0f7d73b81da796da7",
     "userId": "111111111111111111111111",
@@ -765,6 +1317,13 @@
             ]
           },
           {
+            "id": "75970e04-fb4f-4fd8-bf61-c97d238b40c9",
+            "data": {
+              "_id": "64f88bd8cb4b37574f5961fb",
+              "items": []
+            }
+          },
+          {
             "id": "d2e4ed3a-5400-40b1-a847-8374efa3eceb",
             "data": [
               {
@@ -778,7 +1337,7 @@
             "id": "aece2589-9fa1-46c4-9c61-5d5eb09834d7",
             "data": [
               {
-                "id": "cf2ea811-9b12-46a0-9ae0-4aa2cc4a6756",
+                "id": "40c55dbd-a42d-41df-8836-96e745858992",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -804,14 +1363,14 @@
             "id": "2c15cc2e-e154-4870-ad96-bfded1029fb1",
             "data": [
               {
-                "id": "c736b2e1-8164-4a97-8e5c-f4f8f1d70956",
+                "id": "14ebe3f8-dea9-4c2c-99a8-c06931de8c16",
                 "nodes": [
                   {
                     "type": "paragraph",
                     "content": [
                       {
                         "type": "text",
-                        "text": " "
+                        "text": "An omelette is a quick and versatile breakfast dish made from beaten eggs cooked in a hot skillet. It's a blank canvas for creativity, allowing you to customize it with various fillings, such as cheese, vegetables, and herbs, to suit your taste."
                       }
                     ]
                   }
@@ -822,7 +1381,7 @@
           {
             "id": "2380d149-10e5-40ee-a0c5-a43cd2542de7",
             "data": [
-              " "
+              " 10 mins"
             ]
           },
           {
@@ -844,21 +1403,180 @@
             "id": "c545369a-d813-4a7f-a874-0f901a4efff6",
             "data": {
               "_id": "641ad9167ea0642549cf765b",
-              "items": []
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "How do I prevent my omelette from sticking to the pan?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "e59e71f0-b9f4-4a9b-abb1-cf7dab142c39",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Use a non-stick skillet and add a small amount of butter or oil before pouring in the beaten eggs."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "What's the ideal pan size for making an omelette?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "5d17a9de-3bc7-466f-9a9e-9a63e8d0b3b0",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "An 8-inch or 10-inch non-stick skillet works well for a single-serving omelette."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "How do I know when it's time to flip the omelette?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "d8b0459c-2dae-43eb-a5df-f9c67ed38259",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "When the edges are set but the center is still slightly runny, it's time to add your fillings and fold the omelette."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "Can I use milk or cream in my omelette?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "8dccb691-e8ab-4972-a8e6-71d0d9dd5d79",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Yes, a splash of milk or cream can make your omelette fluffier. Use about 1-2 tablespoons for every 2-3 eggs."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           },
           {
             "id": "3d51a123-2aa7-4b9e-912b-3bbd2fec3065",
             "data": [
               {
-                "id": "800d4cc8-144e-410a-9e1f-354562fccfee",
+                "id": "c99994b8-eb9f-487b-859f-ed10b1eca0f0",
                 "nodes": [
                   {
                     "type": "paragraph",
                     "content": [
                       {
                         "type": "text",
-                        "text": " "
+                        "text": "2-3 large eggs"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "01e97196-c1d3-4787-9ae1-a54ae06fc76b",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Salt and pepper to taste"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "8aaf7887-f191-4afc-85aa-e9a6c30979e9",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1-2 tablespoons butter or cooking oil"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "950cf37c-26cf-4927-ac15-37745c1fc856",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Fillings of your choice (e.g., grated cheese, diced vegetables, diced ham, herbs)"
                       }
                     ]
                   }
@@ -870,7 +1588,164 @@
             "id": "ca2ec2a6-7248-4d2a-9c37-9046395bc9e8",
             "data": {
               "_id": "641ada087ea0642549cf765c",
-              "items": []
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "First Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "e026bb52-1742-4c1d-8d0e-a9efd850a964",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Crack the eggs into a bowl and beat them until the yolks and whites are well combined. Season with a pinch of salt and a dash of pepper. Prepare your fillings by chopping or grating them, if necessary."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "64182d53f7d73b81da796dad",
+                          "alt_text": "First Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Second Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "7cf11e5d-83a0-4406-933f-ed1240d6a57c",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Place an 8-inch or 10-inch non-stick skillet over medium-low heat. Add the butter or oil and let it melt, swirling to coat the pan evenly."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "64182d53f7d73b81da796dad",
+                          "alt_text": "Second Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Third Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "95ace57c-3a9a-4bf9-8f16-3e55e4966f2a",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Pour the beaten eggs into the heated skillet. Let them cook undisturbed for a minute or two until the edges start to set."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "64182d53f7d73b81da796dad",
+                          "alt_text": "Third Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Fourth Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "a2eccf26-04ed-49d7-9a8a-e058855fd9f0",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Sprinkle your chosen fillings evenly over one-half of the omelette. Serve."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "64182d53f7d73b81da796dad",
+                          "alt_text": "Fourth Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           }
         ]
@@ -887,7 +1762,7 @@
   "64182d8ef7d73b81da796db2": {
     "_id": "64182d8ef7d73b81da796db2",
     "createdAt": 1679306126181,
-    "updatedAt": 1694010705973,
+    "updatedAt": 1694693949918,
     "cid": "b",
     "templateId": "64182bc0f7d73b81da796da7",
     "userId": "111111111111111111111111",
@@ -929,7 +1804,7 @@
             "id": "aece2589-9fa1-46c4-9c61-5d5eb09834d7",
             "data": [
               {
-                "id": "a8baf39d-0349-45d3-99bf-0fed27ad39ba",
+                "id": "52a01ef5-5851-42ac-a6e2-0763e197f9b7",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -955,14 +1830,14 @@
             "id": "2c15cc2e-e154-4870-ad96-bfded1029fb1",
             "data": [
               {
-                "id": "b6c9fa1e-f040-4502-9c8a-37b51a554482",
+                "id": "4a24f58a-3fe8-4c3b-974b-0314851ce6ff",
                 "nodes": [
                   {
                     "type": "paragraph",
                     "content": [
                       {
                         "type": "text",
-                        "text": " "
+                        "text": "Lobster, the undisputed star of the seafood world, takes center stage in our exquisite lobster recipe collection. From succulent lobster bisque to buttery lobster tails and mouthwatering lobster rolls, this luxurious crustacean offers a world of culinary possibilities. Its delicate, sweet flavor and tender texture make it the ultimate canvas for indulgent dishes that will delight your taste buds and elevate any dining experience. Dive into a world of culinary excellence with our lobster recipes, where each bite is a taste of oceanic perfection."
                       }
                     ]
                   }
@@ -973,7 +1848,7 @@
           {
             "id": "2380d149-10e5-40ee-a0c5-a43cd2542de7",
             "data": [
-              " "
+              "1 hour"
             ]
           },
           {
@@ -995,21 +1870,447 @@
             "id": "c545369a-d813-4a7f-a874-0f901a4efff6",
             "data": {
               "_id": "641ad9167ea0642549cf765b",
-              "items": []
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "How do I select a fresh lobster?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "fedf25bc-162f-418c-bf63-f6a9ad02721b",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Look for lively lobsters with intact shells. They should be heavy for their size and have no ammonia-like odor."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "Do I need to remove the lobster's digestive tract?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "55d2774e-68f2-480c-a507-4f1fe1ada306",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Yes, it's recommended to remove the dark intestinal vein that runs along the tail meat."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "How do I crack lobster claws and legs?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "bfc7929d-dc29-4406-a78d-54a86df97bd5",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Use a nutcracker or lobster cracker to gently crack open the shells to access the meat."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "How can I prevent overcooking lobster?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "7e06ebf0-192c-428d-a763-1ef1c6e23ed9",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Watch for the lobster to turn opaque and slightly firm. Overcooked lobster can become tough."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "Can I freeze leftover lobster meat?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "bbc70fa4-77db-49f6-b34a-1a7e4453dd38",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Yes, you can freeze cooked lobster meat for up to 3 months in an airtight container."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           },
           {
             "id": "3d51a123-2aa7-4b9e-912b-3bbd2fec3065",
             "data": [
               {
-                "id": "6b060800-65c6-413d-ac87-1bb78e747df9",
+                "id": "923836ee-bd9a-4ad5-8937-27cf61e1de01",
                 "nodes": [
                   {
                     "type": "paragraph",
                     "content": [
                       {
                         "type": "text",
-                        "text": " "
+                        "text": "2 lobster tails, shells removed"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "8cc1597e-b5fd-402b-9dab-ed0ea468b5cc",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "4 tbsp. unsalted butter"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "2f02d70f-cc64-4c19-a53e-35eed6440642",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "2 cloves garlic, minced"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "70407289-6416-4a0f-8604-8efd5a5877e9",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Juice of 1 lemon"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "e1b48ca0-36c0-4c0a-a966-16a3a1fc9314",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Salt and pepper to taste"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "1ca22e4e-6c08-4fb5-9524-5ec701e799d1",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Chopped fresh parsley for garnish"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "04eb21e0-3620-487e-8b57-3db63b8b80ba",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1/4 c. white wine"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "c2acf5c6-75a7-4da3-afb8-65920956a716",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1/2 c. mayonnaise"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "0edf7ab4-5d98-452e-b61a-834ccc45c444",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "2 stalks celery, finely chopped"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "99ace549-32f3-4fde-8cd0-4eeb7b232567",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1 small onion, finely chopped"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "fe0ad7c3-ab60-402c-b0b2-6d9317e9d2f7",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "4 hot dog buns"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "3e871c50-2b9c-4bbc-b2c8-79a65f66c8de",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "2 tbsp. olive oil"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "e76657c1-2955-4b33-84f6-82b4aa496665",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1 carrot, chopped"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "97e6a137-d1a0-4704-8162-8f9bc10ce687",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1/2 c. heavy cream"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f7fa457b-c4d8-4f0d-b5ce-1e1031fe27f3",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "2 tbsp. tomato paste"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "2f2d2bc5-6cf6-4921-8b55-0ba60f17aed7",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1/4 c. cognac"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "05e5daeb-ee15-41d5-8065-7fbfb6ea7764",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "4 c. seafood stock"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "e936f598-27c0-4946-bb8c-be57619806c1",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1 tsp. paprika"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "7975dd12-5daa-4527-b065-4f2a4efb3228",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Pinch of cayenne pepper"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "a5d152e0-2208-4487-93bb-e85b7345d5cf",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1/4 c. sherry (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "d564f3f0-ce38-45cb-a7f4-feed02a206c2",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1/2 tsp. Old Bay seasoning"
                       }
                     ]
                   }
@@ -1021,7 +2322,344 @@
             "id": "ca2ec2a6-7248-4d2a-9c37-9046395bc9e8",
             "data": {
               "_id": "641ada087ea0642549cf765c",
-              "items": []
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "First Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "43161f5a-189d-4f42-9509-1b0d53304eee",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "Sauté Aromatics"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": ": In a large pot, melt 2 tablespoons of butter over medium heat. Add chopped onions, carrots, and celery. Sauté until the vegetables soften, about 5 minutes."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "64182d53f7d73b81da796dae",
+                          "alt_text": "First Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Second Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "f32765bd-d601-4e64-bd33-0ecd7551fbdb",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "Add Lobster Shells"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": ": Stir in the lobster shells and continue to cook, allowing them to release their flavors, for an additional 5 minutes."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "64182d53f7d73b81da796dae",
+                          "alt_text": "Second Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Third Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "31ac97e0-bd8e-471a-9df2-2914846b24f5",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "Deglaze with Wine"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": ": Pour in 1/4 cup of white wine and cook until it reduces by half, scraping up any browned bits from the bottom of the pot."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "64182d53f7d73b81da796dae",
+                          "alt_text": "Third Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Fourth Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "1a89ee2d-1ccf-44a8-a321-58c3cee8f8d0",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "Add Broth"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": ": Pour in 4 cups of seafood stock. Bring the mixture to a boil, then reduce the heat to low, cover, and simmer for 30 minutes."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "64182d53f7d73b81da796dae",
+                          "alt_text": "Fourth Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Fifth Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "7812b944-7eda-4b6e-8afb-0f0851ec687a",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "Strain"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": ": Strain the stock through a fine-mesh sieve or cheesecloth into a clean pot, discarding the solids."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "64182d53f7d73b81da796dae",
+                          "alt_text": "Fifth Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Sixth Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "28a4767e-59b5-4db8-86ae-bb33026d264f",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "Add Cream and Tomato Paste"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": ": Return the strained liquid to the pot. Stir in 1/2 cup of heavy cream and 2 tablespoons of tomato paste. Simmer over low heat for 10 minutes, stirring occasionally."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "64182d53f7d73b81da796dae",
+                          "alt_text": "Sixth Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Seventh Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "9b48eb90-b33d-48ec-bebd-31a666df957b",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "Season and Finish"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": ": Season the bisque with salt, pepper, paprika, cayenne pepper, and optional sherry. Simmer for an additional 5 minutes, allowing the flavors to meld."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "64182d53f7d73b81da796dae",
+                          "alt_text": "Seventh Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           }
         ]
