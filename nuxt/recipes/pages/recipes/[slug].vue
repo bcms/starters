@@ -128,61 +128,65 @@ import { PageProps, RecipePageData } from '~~/types';
 const { setOgHead } = useHeadTags();
 const route = useRoute();
 
-const { data, error } = useAsyncData<PageProps<RecipePageData>>(async (ctx) => {
-  const { header, footer } = await getHeaderAndFooter(ctx as NuxtApp);
-  const recipeItem = (await ctx?.$bcms.entry.get({
-    // Template name or ID
-    template: 'recipe',
-    // Entry slug or ID
-    entry: route.params.slug,
-  })) as RecipeEntry;
-  if (!recipeItem) {
-    throw new Error('Recipe entry does not exist.');
-  }
-  const recipes = (await ctx?.$bcms.entry.getAll({
-    // Template name or ID
-    template: 'recipe',
-  })) as RecipeEntry[];
-
-  const similarRecipes = recipes.filter((e) => {
-    const entryCategories =
-      recipeItem.meta.en?.categories.map((i) => i.meta.en?.title) || [];
-    const categories = e.meta.en?.categories.map((i) => i.meta.en?.title) || [];
-
-    for (let i = 0; i < categories.length; i++) {
-      if (
-        entryCategories.includes(categories[i]) &&
-        recipeItem.meta.en?.slug !== e.meta.en?.slug
-      ) {
-        return true;
-      }
+const { data, error } = useAsyncData<PageProps<RecipePageData>>(
+  `recipe.${route.params.slug}`,
+  async (ctx) => {
+    const { header, footer } = await getHeaderAndFooter(ctx as NuxtApp);
+    const recipeItem = (await ctx?.$bcms.entry.get({
+      // Template name or ID
+      template: 'recipe',
+      // Entry slug or ID
+      entry: route.params.slug,
+    })) as RecipeEntry;
+    if (!recipeItem) {
+      throw new Error('Recipe entry does not exist.');
     }
-    return false;
-  });
-  return {
-    header,
-    footer,
-    page: {
-      meta: recipeItem.meta.en as RecipeEntryMeta,
-      similarRecipes: recipeToLight(similarRecipes).slice(0, 6),
-      popular:
-        recipes
-          .filter((e) => e.meta.en?.popular)
-          .map((e) => e.meta.en?.title || '') || [],
-      categories:
-        recipes.reduce((acc, e) => {
-          e.meta.en?.categories.forEach((category) => {
-            const categoryTitle = category.meta.en?.title || '';
+    const recipes = (await ctx?.$bcms.entry.getAll({
+      // Template name or ID
+      template: 'recipe',
+    })) as RecipeEntry[];
 
-            if (!acc.includes(categoryTitle)) {
-              acc.push(categoryTitle);
-            }
-          });
-          return acc;
-        }, [] as string[]) || [],
-    },
-  };
-});
+    const similarRecipes = recipes.filter((e) => {
+      const entryCategories =
+        recipeItem.meta.en?.categories.map((i) => i.meta.en?.title) || [];
+      const categories =
+        e.meta.en?.categories.map((i) => i.meta.en?.title) || [];
+
+      for (let i = 0; i < categories.length; i++) {
+        if (
+          entryCategories.includes(categories[i]) &&
+          recipeItem.meta.en?.slug !== e.meta.en?.slug
+        ) {
+          return true;
+        }
+      }
+      return false;
+    });
+    return {
+      header,
+      footer,
+      page: {
+        meta: recipeItem.meta.en as RecipeEntryMeta,
+        similarRecipes: recipeToLight(similarRecipes).slice(0, 6),
+        popular:
+          recipes
+            .filter((e) => e.meta.en?.popular)
+            .map((e) => e.meta.en?.title || '') || [],
+        categories:
+          recipes.reduce((acc, e) => {
+            e.meta.en?.categories.forEach((category) => {
+              const categoryTitle = category.meta.en?.title || '';
+
+              if (!acc.includes(categoryTitle)) {
+                acc.push(categoryTitle);
+              }
+            });
+            return acc;
+          }, [] as string[]) || [],
+      },
+    };
+  },
+);
 if (error.value) {
   throw createError({
     statusCode: 500,
