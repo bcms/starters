@@ -1,6 +1,7 @@
 import { createBcmsNuxtConfig } from 'nuxt-plugin-bcms/config';
-import _ from 'lodash';
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const _ = require('lodash');
 const svgPrefix = {};
 svgPrefix.toString = () => `${_.uniqueId()}_`;
 

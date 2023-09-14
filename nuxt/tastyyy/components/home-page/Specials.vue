@@ -17,7 +17,7 @@
           class="text-sm leading-[1.3] tracking-[-0.41px] text-appGray-700 uppercase max-w-[745px] mx-auto mb-8 lg:text-base lg:leading-[1.3] lg:mb-[45px]"
         />
         <Swiper
-          :modules="[A11y]"
+          :modules="[SwiperA11y]"
           slides-per-view="auto"
           watch-overflow
           grab-cursor
@@ -94,7 +94,6 @@
 
 <script setup lang="ts">
 import { PropType } from 'vue';
-import { A11y } from 'swiper/modules';
 import { BCMSImage } from '~~/bcms-components';
 import { HomeSpecialsGroup, FoodItemEntryMeta } from '~~/bcms/types';
 

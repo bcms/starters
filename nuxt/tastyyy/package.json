@@ -34,7 +34,6 @@
   "dependencies": {
     "@types/lodash": "^4.14.198",
     "lodash": "^4.17.21",
-    "nuxt-swiper": "^1.0.1",
-    "swiper": "^10.2.0"
+    "nuxt-swiper": "^1.2.2"
   }
 }

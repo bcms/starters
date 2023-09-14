@@ -23,7 +23,7 @@
             />
           </button>
           <Swiper
-            :modules="[A11y, Navigation]"
+            :modules="[SwiperA11y, SwiperNavigation]"
             :navigation="{
               prevEl: '.homeTestimonials--swiperPrev',
               nextEl: '.homeTestimonials--swiperNext',
@@ -32,13 +32,8 @@
             watch-overflow
             grab-cursor
             :space-between="12"
-            class="max-w-full"
           >
-            <SwiperSlide
-              v-for="(testimonial, index) in items"
-              :key="index"
-              class="flex flex-col items-center text-center"
-            >
+            <SwiperSlide v-for="(testimonial, index) in items" :key="index">
               <ContentManager
                 :item="testimonial.quote"
                 class="text-sm leading-[1.4] font-Gloock text-appGray-700 mb-4 lg:text-[32px] lg:leading-[1.4] lg:mb-12"
@@ -65,7 +60,6 @@
 
 <script setup lang="ts">
 import { PropType } from 'vue';
-import { A11y, Navigation } from 'swiper/modules';
 import { BCMSImage } from '~~/bcms-components';
 import { TestimonialEntryMeta, HomeTestimonialsGroup } from '~~/bcms/types';
 import ArrowIcon from '@/assets/icons/arrow.svg';
