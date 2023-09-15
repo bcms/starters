@@ -1,7 +1,6 @@
 import { createBcmsNuxtConfig } from 'nuxt-plugin-bcms/config';
+import _ from 'lodash';
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const _ = require('lodash');
 const svgPrefix = {};
 svgPrefix.toString = () => `${_.uniqueId()}_`;
 
@@ -103,11 +102,11 @@ export default defineNuxtConfig({
       plugins: [
         {
           name: 'preset-default',
-          // params: {
-          //   overrides: {
-          //     cleanupIDs: { prefix: svgPrefix },
-          //   },
-          // },
+          params: {
+            overrides: {
+              cleanupIDs: { prefix: svgPrefix },
+            },
+          },
         },
       ],
     },

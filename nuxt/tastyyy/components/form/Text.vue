@@ -22,8 +22,7 @@
       class="border bg-transparent rounded-[32px] px-[14px] py-[17px] text-sm leading-none tracking-[-0.41px] placeholder:text-[#665E5E] resize-none h-[140px] transition-colors duration-300 focus:outline-none lg:px-7 lg:py-6 lg:text-base lg:leading-none lg:h-[224px]"
       :class="[error ? 'border-red-500' : 'border-[#A8A7A0]']"
       @input="handleInput"
-    >
-    </textarea>
+    />
   </label>
 </template>
 
