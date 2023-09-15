@@ -10,8 +10,8 @@
     <Transition name="fade">
       <div
         v-if="showMap"
-        class="absolute z-50 bottom-0 w-[calc(100vw-48px)] pointer-events-none"
         v-click-outside="() => (showMap = false)"
+        class="absolute z-50 bottom-0 w-[calc(100vw-48px)] pointer-events-none"
       >
         <div
           class="relative z-10 top-4 translate-y-full bg-[#E5E4DA] rounded-2xl p-4 pb-6 xl:p-2 xl:w-[440px]"
@@ -60,9 +60,9 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSPropMediaDataParsed } from "@becomes/cms-client/types";
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
+import { BCMSPropMediaDataParsed } from '@becomes/cms-client/types';
+import { PropType } from 'vue';
+import { BCMSImage } from '~~/bcms-components';
 
 defineProps({
   map: {

@@ -1,4 +1,4 @@
-import { FooterEntryMeta, HeaderEntryMeta } from "~~/bcms/types";
+import { FooterEntryMeta, HeaderEntryMeta } from '~~/bcms/types';
 
 export interface APIResponse<Data = unknown> {
   data: Data;

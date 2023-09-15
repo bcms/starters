@@ -17,7 +17,7 @@
           class="text-sm leading-[1.3] tracking-[-0.41px] text-appGray-700 uppercase max-w-[745px] mx-auto mb-8 lg:text-base lg:leading-[1.3] lg:mb-[45px]"
         />
         <Swiper
-          :modules="[A11y]"
+          :modules="[SwiperA11y]"
           slides-per-view="auto"
           watch-overflow
           grab-cursor
@@ -93,10 +93,9 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
-import { A11y } from "swiper";
-import { HomeSpecialsGroup, FoodItemEntryMeta } from "~~/bcms/types";
+import { PropType } from 'vue';
+import { BCMSImage } from '~~/bcms-components';
+import { HomeSpecialsGroup, FoodItemEntryMeta } from '~~/bcms/types';
 
 const props = defineProps({
   data: {
@@ -109,9 +108,9 @@ const props = defineProps({
   },
 });
 
-const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+const days = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
 
-const activeDay = ref("SUN");
+const activeDay = ref('SUN');
 
 const filteredItems = computed(() => {
   return props.items.filter((item) => {

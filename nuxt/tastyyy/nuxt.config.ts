@@ -1,7 +1,6 @@
 import { createBcmsNuxtConfig } from 'nuxt-plugin-bcms/config';
-import bcmsRoutes from './bcms.routes';
+import _ from 'lodash';
 
-const _ = require('lodash');
 const svgPrefix = {};
 svgPrefix.toString = () => `${_.uniqueId()}_`;
 
@@ -12,9 +11,21 @@ export default defineNuxtConfig({
       include: ['axios', '@becomes/cms-client'],
     },
   },
+  runtimeConfig: {
+    public: {
+      bcmsApiOrigin: '',
+      bcmsApiKeyId: '',
+      bcmsApiKeySecret: '',
+      bcmsEnableClientCache: '',
+      bcmsClientDebug: '',
+      bcmsEntryStatuses: '',
+      bcmsMostServerPort: '',
+      bcmsMostServerDomain: '',
+    },
+  },
   app: {
     head: {
-      titleTemplate: `%s - Tastyyy`,
+      titleTemplate: '%s - Tastyyy',
       link: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         {
@@ -70,7 +81,9 @@ export default defineNuxtConfig({
           origin: process.env.BCMS_API_ORIGIN || 'http://localhost:8080',
           key: {
             id: process.env.BCMS_API_KEY || '6423fe69c4d0f7aa085d5e86',
-            secret: process.env.BCMS_API_SECRET || 'd0128c9f142a7f609c9f787d782feef791ba0bb5c823494f70199a16d88035ac',
+            secret:
+              process.env.BCMS_API_SECRET ||
+              'd0128c9f142a7f609c9f787d782feef791ba0bb5c823494f70199a16d88035ac',
           },
         },
         websiteDomain: 'http://localhost:3000',
@@ -80,11 +93,6 @@ export default defineNuxtConfig({
           images: {
             process: true,
           },
-        },
-        server: {
-          routes: bcmsRoutes,
-          // domain: process.env.VITE_BCMS_MOST_SERVER_DOMAIN || 'localhost',
-          // port: parseInt(process.env.VITE_BCMS_MOST_SERVER_PORT || '3001', 10)
         },
       }),
     ],

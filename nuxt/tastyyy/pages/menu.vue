@@ -11,14 +11,14 @@
           <h1
             class="text-xl leading-none font-Gloock uppercase text-center mb-8 lg:text-5xl lg:leading-none"
           >
-            {{ data.data.meta.title }}
+            {{ data.page.meta.title }}
           </h1>
           <div class="mb-10 lg:mb-20">
             <div
               class="grid grid-cols-2 gap-x-3 gap-y-4 mb-8 md:flex md:items-center md:justify-center lg:gap-4 lg:mb-10"
             >
               <button
-                v-for="(mealType, index) in data.data.mealTypes"
+                v-for="(mealType, index) in data.page.mealTypes"
                 :key="index"
                 class="flex justify-center w-full px-[18px] py-3 border rounded-[32px] transition-colors duration-300 lg:max-w-max"
                 :class="[
@@ -84,33 +84,75 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from "~~/bcms-components";
-import { APIResponse, MenuPageData } from "~~/types";
+import { NuxtApp } from 'nuxt/app';
+import { BCMSImage } from '~~/bcms-components';
+import {
+  FoodItemEntry,
+  FoodItemEntryMeta,
+  MealTypeEntry,
+  MealTypeEntryMeta,
+  MenuPageEntry,
+  MenuPageEntryMeta,
+} from '~~/bcms/types';
+import { MenuPageData } from '~~/types';
+import { PageProps } from '~~/types/page-props';
 
-const { data } = useAsyncData(async (ctx) => {
-  return await ctx?.$bcms.request<APIResponse<MenuPageData>>({
-    url: "/menu.json",
-  });
+const { data, error } = useAsyncData<PageProps<MenuPageData>>(async (ctx) => {
+  const { header, footer } = await getHeaderAndFooter(ctx as NuxtApp);
+  const menuPage = (await ctx?.$bcms.entry.get({
+    // Template name or ID
+    template: 'menu_page',
+    // Entry slug or ID
+    entry: 'menu',
+  })) as MenuPageEntry;
+  if (!menuPage) {
+    throw new Error('Menu page entry does not exist.');
+  }
+  const mealTypes = (await ctx?.$bcms.entry.getAll({
+    // Meal type name or ID
+    template: 'meal_type',
+  })) as MealTypeEntry[];
+  const foodItems = (await ctx?.$bcms.entry.getAll({
+    // Food item name or ID
+    template: 'food_item',
+  })) as FoodItemEntry[];
+  return {
+    header,
+    footer,
+    page: {
+      meta: menuPage.meta.en as MenuPageEntryMeta,
+      mealTypes: mealTypes.map((e) => e.meta.en) as MealTypeEntryMeta[],
+      foodItems: foodItems.map((e) => e.meta.en) as FoodItemEntryMeta[],
+    },
+  };
 });
+if (error.value) {
+  throw createError({
+    statusCode: 500,
+    statusMessage: error.value.message,
+    stack: error.value.stack,
+    fatal: true,
+  });
+}
 
 const route = useRoute();
 const { setOgHead } = useHeadTags();
 
-const activeMealType = ref("breakfast");
+const activeMealType = ref('breakfast');
 
 const activeMealTypeDescription = computed(() => {
   return (
-    data.value?.data.mealTypes.find(
-      (mealType) => mealType.title.toLowerCase() === activeMealType.value
+    data.value?.page.mealTypes.find(
+      (mealType) => mealType.title.toLowerCase() === activeMealType.value,
     )?.description || []
   );
 });
 
 const filteredFoodItems = computed(() => {
   return (
-    data.value?.data.foodItems.filter((item) => {
+    data.value?.page.foodItems.filter((item) => {
       return item.type.find(
-        (e) => e.meta.en?.title.toLowerCase() === activeMealType.value
+        (e) => e.meta.en?.title.toLowerCase() === activeMealType.value,
       );
     }) || []
   );
@@ -124,8 +166,8 @@ onMounted(() => {
 
 useHead(() =>
   setOgHead({
-    title: data.value?.data.meta.seo?.title || data.value?.data.meta.title,
-    description: data.value?.data.meta.seo?.description,
-  })
+    title: data.value?.page.meta.seo?.title || data.value?.page.meta.title,
+    description: data.value?.page.meta.seo?.description,
+  }),
 );
 </script>

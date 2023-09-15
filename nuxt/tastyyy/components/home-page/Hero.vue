@@ -109,9 +109,9 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { HomeHeroGroup } from "~~/bcms/types";
-import StarIcon from "@/assets/icons/star.svg";
+import { PropType } from 'vue';
+import { HomeHeroGroup } from '~~/bcms/types';
+import StarIcon from '@/assets/icons/star.svg';
 
 defineProps({
   data: {

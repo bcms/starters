@@ -44,9 +44,9 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { FooterEntryMeta } from "~~/bcms/types";
-import BCMSLogo from "@/assets/media/bcms-logo.svg";
+import { PropType } from 'vue';
+import { FooterEntryMeta } from '~~/bcms/types';
+import BCMSLogo from '@/assets/media/bcms-logo.svg';
 
 defineProps({
   data: {
