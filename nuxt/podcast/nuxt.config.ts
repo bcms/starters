@@ -1,7 +1,6 @@
 import { createBcmsNuxtConfig } from 'nuxt-plugin-bcms/config';
-import bcmsRoutes from './bcms.routes';
+import _ from 'lodash';
 
-const _ = require('lodash');
 const svgPrefix = {};
 svgPrefix.toString = () => `${_.uniqueId()}_`;
 
@@ -12,9 +11,21 @@ export default defineNuxtConfig({
       include: ['axios', '@becomes/cms-client'],
     },
   },
+  runtimeConfig: {
+    public: {
+      bcmsApiOrigin: '',
+      bcmsApiKeyId: '',
+      bcmsApiKeySecret: '',
+      bcmsEnableClientCache: '',
+      bcmsClientDebug: '',
+      bcmsEntryStatuses: '',
+      bcmsMostServerPort: '',
+      bcmsMostServerDomain: '',
+    },
+  },
   app: {
     head: {
-      titleTemplate: `%s - The Podium`,
+      titleTemplate: '%s - The Podium',
       link: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         {
@@ -58,12 +69,7 @@ export default defineNuxtConfig({
           download: true,
           images: {
             process: true,
-          }
-        },
-        server: {
-          routes: bcmsRoutes,
-          // domain: process.env.VITE_BCMS_MOST_SERVER_DOMAIN || 'localhost',
-          // port: parseInt(process.env.VITE_BCMS_MOST_SERVER_PORT || '3001', 10)
+          },
         },
       }),
     ],

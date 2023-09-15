@@ -9,10 +9,10 @@
         <h1
           class="absolute z-10 bottom-6 left-6 text-lg leading-none font-medium tracking-[-0.41px] lg:bottom-10 lg:left-10 lg:text-[56px] lg:leading-none lg:tracking-[-2.41px]"
         >
-          {{ data.data.meta.title }}
+          {{ data.page.meta.title }}
         </h1>
         <BCMSImage
-          :media="data.data.meta.cover"
+          :media="data.page.meta.cover"
           class="absolute top-0 left-0 w-full h-full cover rounded overflow-hidden lg:rounded-2xl"
         />
         <div
@@ -21,7 +21,7 @@
       </div>
       <div class="grid grid-cols-1 gap-4">
         <div
-          v-for="(item, index) in data.data.meta.content"
+          v-for="(item, index) in data.page.meta.content"
           :key="index"
           class="p-4 border border-appGray-600 rounded-2xl bg-appBody lg:p-8"
         >
@@ -33,22 +33,46 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from "~~/bcms-components";
-import { APIResponse, AboutPageData } from "~~/types";
+import { NuxtApp } from 'nuxt/app';
+import { BCMSImage } from '~~/bcms-components';
+import { AboutPageEntry, AboutPageEntryMeta } from '~~/bcms/types';
+import { AboutPageData, PageProps } from '~~/types';
 
-const { data } = useAsyncData(async (ctx) => {
-  return await ctx?.$bcms.request<APIResponse<AboutPageData>>({
-    url: "/about.json",
-  });
+const { data, error } = useAsyncData<PageProps<AboutPageData>>(async (ctx) => {
+  const { header, footer } = await getHeaderAndFooter(ctx as NuxtApp);
+  const aboutPage = (await ctx?.$bcms.entry.get({
+    // Template name or ID
+    template: 'about_page',
+    // Entry slug or ID
+    entry: 'about-us',
+  })) as AboutPageEntry;
+  if (!aboutPage) {
+    throw new Error('About page entry does not exist.');
+  }
+  return {
+    header,
+    footer,
+    page: {
+      meta: aboutPage.meta.en as AboutPageEntryMeta,
+    },
+  };
 });
+if (error.value) {
+  throw createError({
+    statusCode: 500,
+    statusMessage: error.value.message,
+    stack: error.value.stack,
+    fatal: true,
+  });
+}
 
 const { setOgHead } = useHeadTags();
 
 useHead(() =>
   setOgHead({
-    title: data.value?.data.meta.seo?.title || data.value?.data.meta.title,
-    description: data.value?.data.meta.seo?.description,
-  })
+    title: data.value?.page.meta.seo?.title || data.value?.page.meta.title,
+    description: data.value?.page.meta.seo?.description,
+  }),
 );
 </script>
 

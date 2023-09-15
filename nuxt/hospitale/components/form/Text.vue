@@ -28,8 +28,7 @@
         boxShadow: '0px 0px 4px rgba(196, 202, 217, 0.3)',
       }"
       @input="handleInput"
-    >
-    </textarea>
+    />
   </label>
 </template>
 
