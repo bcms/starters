@@ -52,7 +52,7 @@ const HomePageSponsors: React.FC<HomePageSponsorsProps> = ({data}) => {
           {tiers.map((tier) => (
             <button
               className={classNames(
-                'flex justify-center px-1 py-[7px] rounded-[38px] text-xs leading-none tracking-[-0.04em] transition-colors duration-300 lg:py-[18px] lg:text-2xl lg:leading-none',
+                'flex justify-center capitalize px-1 py-[7px] rounded-[38px] text-xs leading-none tracking-[-0.04em] transition-colors duration-300 lg:py-[18px] lg:text-2xl lg:leading-none',
                 {
                   'text-white bg-appAccent font-semibold': activeTier === tier,
                   'text-appGray-600 font-medium': activeTier !== tier,
