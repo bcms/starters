@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {AgendaGroup} from '@/bcms/types';
 import SwiperCore from 'swiper';
 import { A11y, Pagination } from 'swiper/modules';
-import {SwiperSlide, Swiper} from 'swiper/react';
+import {SwiperSlide, Swiper, SwiperClass} from 'swiper/react';
 import ContentManager from '@/components/ContentManager';
 
 SwiperCore.use([A11y, Pagination]);
@@ -25,8 +25,8 @@ interface HomePageAgendaProps {
 const HomePageAgenda: React.FC<HomePageAgendaProps> = ({data}) => {
   const [activeSlide, setActiveSlide] = useState<number>(0);
 
-  const handleIndexChange = (event: any): void => {
-    setActiveSlide(event.activeIndex);
+  const handleIndexChange = (swiper: SwiperClass): void => {
+    setActiveSlide(swiper.activeIndex);
   };
 
   return (
