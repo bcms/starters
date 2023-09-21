@@ -9,8 +9,6 @@ import '@/assets/css/reset.css';
 import '@/assets/css/transition.css';
 import '@/assets/css/swiper.css';
 
-
-
 BCMSImageConfig.cmsOrigin =
   process.env.NEXT_PUBLIC_BCMS_API_ORIGIN ?? 'http://localhost:8080';
 BCMSImageConfig.publicApiKeyId =

@@ -37,7 +37,9 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
           </ul>
         </nav>
       </div>
-      {showContactForm && <ContactForm onClose={() => setShowContactForm(false)} />}
+      {showContactForm && (
+        <ContactForm onClose={() => setShowContactForm(false)} />
+      )}
     </header>
   );
 };

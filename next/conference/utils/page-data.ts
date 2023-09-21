@@ -5,7 +5,7 @@ import {
   HeaderEntryMeta,
   LegalEntry,
 } from '@/bcms/types';
-import {BCMSClient} from '@becomes/cms-client/types';
+import { BCMSClient } from '@becomes/cms-client/types';
 
 export interface HeaderAndFooter {
   header: HeaderEntryMeta;

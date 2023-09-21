@@ -1,7 +1,7 @@
 import Header from './layout/Header';
 import Footer from './layout/Footer';
 import React, { FC, PropsWithChildren, useMemo } from 'react';
-import {HomePageData, PageProps} from '@/types';
+import { HomePageData, PageProps } from '@/types';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
@@ -10,7 +10,7 @@ export const PageWrapper: FC<PropsWithChildren<PageProps<HomePageData>>> = ({
   header,
   children,
   footer,
-  legal
+  legal,
 }) => {
   const router = useRouter();
   const routePath = useMemo(() => router.asPath, [router.asPath]);
@@ -40,17 +40,18 @@ export const PageWrapper: FC<PropsWithChildren<PageProps<HomePageData>>> = ({
         <meta property="twitter:image" content={image} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com"  />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
-          rel="stylesheet" />
+          rel="stylesheet"
+        />
       </Head>
       <Header data={header} />
       <main>{children}</main>
       <Footer
         data={{
           legal,
-          meta: footer
+          meta: footer,
         }}
       />
     </div>

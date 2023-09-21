@@ -5,10 +5,7 @@ import { PageWrapper } from '@/components/PageWrapper';
 import { getHeaderAndFooter } from '@/utils/page-data';
 import { getBcmsClient } from 'next-plugin-bcms';
 
-import {
-  HomePageEntry,
-  HomePageEntryMeta,
-} from '@/bcms/types';
+import { HomePageEntry, HomePageEntryMeta } from '@/bcms/types';
 
 import HomePageHero from '@/components/home-page/Hero';
 import HomepageAbout from '@/components/home-page/About';
@@ -17,7 +14,12 @@ import HomePageSponsors from '@/components/home-page/Sponsors';
 import HomePageTickets from '@/components/home-page/Tickets';
 import HomePageAgenda from '@/components/home-page/Agenda';
 
-const HomePage: FC<PageProps<HomePageData>> = ({ header, footer, page, legal }) => {
+const HomePage: FC<PageProps<HomePageData>> = ({
+  header,
+  footer,
+  page,
+  legal,
+}) => {
   return (
     <PageWrapper legal={legal} header={header} footer={footer} page={page}>
       {
@@ -38,7 +40,7 @@ export const getStaticProps: GetStaticProps<
   PageProps<HomePageData>
 > = async () => {
   const client = getBcmsClient();
-  const { header, footer , legal} = await getHeaderAndFooter(client);
+  const { header, footer, legal } = await getHeaderAndFooter(client);
 
   // Get Home Page entry
   const homePage = (await client.entry.get({
@@ -49,7 +51,6 @@ export const getStaticProps: GetStaticProps<
   if (!homePage) {
     throw new Error('Home page entry does not exist.');
   }
-
 
   return {
     props: {

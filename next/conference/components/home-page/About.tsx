@@ -1,23 +1,24 @@
-import {AboutGroup} from '@/bcms/types';
+import { AboutGroup } from '@/bcms/types';
 import ContentManager from '@/components/ContentManager';
-import {BCMSImage} from 'next-plugin-bcms/components';
+import { BCMSImage } from 'next-plugin-bcms/components';
 import NextImage from 'next/image';
 import ArrowIcon from '@/assets/icons/arrow.svg';
 interface HomepageAboutProps {
-    data: AboutGroup;
+  data: AboutGroup;
 }
 
-const HomepageAbout: React.FC<HomepageAboutProps> = ({data}) => {
+const HomepageAbout: React.FC<HomepageAboutProps> = ({ data }) => {
   return (
     <section className="pt-8 pb-16 lg:pt-[120px] lg:pb-[240px]">
       <div className="container">
         <div className="flex items-center justify-between mb-4 lg:mb-[72px]">
-          <h2
-            className="leading-none tracking-[-0.05em] font-semibold lg:text-[104px] lg:leading-none"
-          >
+          <h2 className="leading-none tracking-[-0.05em] font-semibold lg:text-[104px] lg:leading-none">
             {data.title}
           </h2>
-          <NextImage src={ArrowIcon} className="w-4 h-4 lg:w-[100px] lg:h-[104px]" />
+          <NextImage
+            src={ArrowIcon}
+            className="w-4 h-4 lg:w-[100px] lg:h-[104px]"
+          />
         </div>
         <BCMSImage
           media={data.cover}
@@ -27,9 +28,7 @@ const HomepageAbout: React.FC<HomepageAboutProps> = ({data}) => {
           item={data.description}
           className="text-sm leading-[1.4] tracking-[-0.8px] text-appGray-500 font-medium mb-6 lg:text-[26px] lg:leading-[1.4] lg:mb-[112px]"
         />
-        <div
-          className="flex flex-wrap justify-around gap-x-14 gap-y-8 lg:justify-center lg:gap-x-[96px]"
-        >
+        <div className="flex flex-wrap justify-around gap-x-14 gap-y-8 lg:justify-center lg:gap-x-[96px]">
           {data.topics.map((topic, index) => (
             <div
               key={index}
@@ -44,4 +43,4 @@ const HomepageAbout: React.FC<HomepageAboutProps> = ({data}) => {
   );
 };
 
-export default  HomepageAbout;
+export default HomepageAbout;

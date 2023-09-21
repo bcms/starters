@@ -2,12 +2,12 @@ import React from 'react';
 import classNames from 'classnames';
 
 interface TextInputProps {
-    value: string;
-    label?: string;
-    placeholder?: string;
-    type?: 'text' | 'email' | 'textarea';
-    error?: string;
-    onChange: (value: string) => void;
+  value: string;
+  label?: string;
+  placeholder?: string;
+  type?: 'text' | 'email' | 'textarea';
+  error?: string;
+  onChange: (value: string) => void;
 }
 
 const TextInput: React.FC<TextInputProps> = ({
@@ -18,14 +18,16 @@ const TextInput: React.FC<TextInputProps> = ({
   error,
   onChange,
 }) => {
-  const handleInput = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInput = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     onChange(e.target.value);
   };
 
   return (
     <label className="relative flex flex-col">
       {label && (
-        <div className="text-xs leading-none tracking-[-0.04em] text-appGray-500 mb-3 lg:text-xl lg:leading-none lg:mb-6" >
+        <div className="text-xs leading-none tracking-[-0.04em] text-appGray-500 mb-3 lg:text-xl lg:leading-none lg:mb-6">
           {label}
         </div>
       )}

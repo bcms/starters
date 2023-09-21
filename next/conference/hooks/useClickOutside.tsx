@@ -1,11 +1,14 @@
-import { useEffect, RefObject} from 'react';
+import { useEffect, RefObject } from 'react';
 
 interface ClickOutsideOptions {
-    ref: RefObject<HTMLElement>
-    callback: () => void;
+  ref: RefObject<HTMLElement>;
+  callback: () => void;
 }
 
-export const useClickOutside = ({callback, ref}:ClickOutsideOptions): void => {
+export const useClickOutside = ({
+  callback,
+  ref,
+}: ClickOutsideOptions): void => {
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (ref.current && !ref.current.contains(event.target as Node)) {
