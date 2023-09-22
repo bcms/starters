@@ -1,0 +1,658 @@
+{
+  "650c08e993cfd8229365ed1a": {
+    "_id": "650c08e993cfd8229365ed1a",
+    "createdAt": 1695287529173,
+    "updatedAt": 1695288370207,
+    "cid": "1",
+    "desc": "",
+    "label": "Home page",
+    "name": "home_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "afd2a464-7323-4f68-a4fd-aa39841ba5b5",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "c393e3b6-6f55-47e9-bd83-a0c6829a393c",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "1f16750c-cdcd-452f-bb1c-cf490fcce1f6",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "650c092e93cfd8229365ed1c"
+        }
+      },
+      {
+        "id": "551b5fbe-d2c6-4b55-a648-19ac94e6ab8b",
+        "name": "hero",
+        "label": "Hero",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "650c09ef93cfd8229365ed1d"
+        }
+      },
+      {
+        "id": "21edd53a-2416-4e70-9805-0f0e2e1d0b56",
+        "name": "cta",
+        "label": "CTA",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "650c0aff93cfd8229365ed1e"
+        }
+      }
+    ]
+  },
+  "650c0cbf93cfd8229365ed1f": {
+    "_id": "650c0cbf93cfd8229365ed1f",
+    "createdAt": 1695288511063,
+    "updatedAt": 1695288521273,
+    "cid": "2",
+    "desc": "",
+    "label": "Product category",
+    "name": "product_category",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "0aa48dec-fb2e-41f2-8feb-2a696f2b05db",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "8fd5a26b-fe00-4aa6-8de3-0636bb3160a3",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "2fcf4e9b-fc1c-4a3e-827d-fd65be2c15fc",
+        "name": "gallery",
+        "label": "Gallery",
+        "array": true,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      }
+    ]
+  },
+  "650c0d1993cfd8229365ed20": {
+    "_id": "650c0d1993cfd8229365ed20",
+    "createdAt": 1695288601815,
+    "updatedAt": 1695289099989,
+    "cid": "3",
+    "desc": "",
+    "label": "Blog",
+    "name": "blog",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "655cbdb6-7a19-4021-88c7-672b019af50d",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "235f35f9-b22b-42fa-8ac3-7c8408aa95d1",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "2398114a-7fcf-42d0-a939-1ed15181d233",
+        "name": "date",
+        "label": "Date",
+        "array": false,
+        "required": true,
+        "type": "DATE",
+        "defaultData": [
+          0
+        ]
+      },
+      {
+        "id": "4b3b44e1-cc75-4973-987f-b32078b3868c",
+        "name": "author",
+        "label": "Author",
+        "array": false,
+        "required": true,
+        "type": "ENTRY_POINTER",
+        "defaultData": [
+          {
+            "displayProp": "title",
+            "templateId": "650c0dc193cfd8229365ed21",
+            "entryIds": []
+          }
+        ]
+      },
+      {
+        "id": "b8e06333-881e-4a0f-b66a-abf7bfdffa05",
+        "name": "cover",
+        "label": "Cover",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      }
+    ]
+  },
+  "650c0dc193cfd8229365ed21": {
+    "_id": "650c0dc193cfd8229365ed21",
+    "createdAt": 1695288769729,
+    "updatedAt": 1695288769729,
+    "cid": "4",
+    "desc": "",
+    "label": "Blog author",
+    "name": "blog_author",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "547a90a9-d2f7-4aff-96b2-07a6a8847a7c",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "43d81f62-7ea2-4dd3-a69e-cb02cedbf5e0",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
+  },
+  "650c132a93cfd8229365ed2f": {
+    "_id": "650c132a93cfd8229365ed2f",
+    "createdAt": 1695290154690,
+    "updatedAt": 1695384414579,
+    "cid": "5",
+    "desc": "",
+    "label": "Product",
+    "name": "product",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "47e0c813-9a71-4417-bd7e-7710b89dc841",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "3676f43d-b9cc-4e50-8f32-f2e5c883ef18",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "4f25fdfa-7ab0-40ff-aa8e-35adf4a3104f",
+        "name": "gallery",
+        "label": "Gallery",
+        "array": true,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "650c1f0a93cfd8229365ed65"
+        }
+      },
+      {
+        "id": "b7caa517-7134-4dc1-abdd-b4bf0406af5f",
+        "name": "price",
+        "label": "Price",
+        "array": false,
+        "required": true,
+        "type": "NUMBER",
+        "defaultData": [
+          0
+        ]
+      },
+      {
+        "id": "ecc3c7a8-d79a-4000-b4f1-763657089b94",
+        "name": "discounted_price",
+        "label": "Discounted price",
+        "array": false,
+        "required": false,
+        "type": "NUMBER",
+        "defaultData": [
+          0
+        ]
+      },
+      {
+        "id": "6d28fe23-be02-48f4-adb0-16f63c105f59",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "c809f2a1-5f60-40e8-b80d-a5d17153d025",
+        "name": "sizes",
+        "label": "Sizes",
+        "array": true,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "650c155693cfd8229365ed3b"
+        }
+      },
+      {
+        "id": "048f2c75-5908-43e4-a45d-48b89698ab0d",
+        "name": "gender",
+        "label": "Gender",
+        "array": false,
+        "required": true,
+        "type": "ENTRY_POINTER",
+        "defaultData": [
+          {
+            "displayProp": "title",
+            "templateId": "650c181693cfd8229365ed47",
+            "entryIds": []
+          }
+        ]
+      },
+      {
+        "id": "76da90c5-edf8-491f-a95c-07676caa4332",
+        "name": "categories",
+        "label": "Categories",
+        "array": true,
+        "required": true,
+        "type": "ENTRY_POINTER",
+        "defaultData": [
+          {
+            "displayProp": "title",
+            "templateId": "650c0cbf93cfd8229365ed1f",
+            "entryIds": []
+          }
+        ]
+      },
+      {
+        "id": "56595ee2-6d3b-4b1e-9232-db832e2fd627",
+        "name": "brand",
+        "label": "Brand",
+        "array": false,
+        "required": true,
+        "type": "ENTRY_POINTER",
+        "defaultData": [
+          {
+            "displayProp": "title",
+            "templateId": "650c1a8a93cfd8229365ed58",
+            "entryIds": []
+          }
+        ]
+      },
+      {
+        "id": "6bf8385a-ae0d-4816-ac0e-4dd1241d5f9f",
+        "name": "units_sold",
+        "label": "Units sold",
+        "array": false,
+        "required": false,
+        "type": "NUMBER",
+        "defaultData": [
+          0
+        ]
+      }
+    ]
+  },
+  "650c14cb93cfd8229365ed30": {
+    "_id": "650c14cb93cfd8229365ed30",
+    "createdAt": 1695290571664,
+    "updatedAt": 1695290571664,
+    "cid": "6",
+    "desc": "",
+    "label": "Product size",
+    "name": "product_size",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "4e7a9d62-bf3c-4ca8-a6db-5698d72ecc25",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "f1c0e9ea-5872-40c6-8c58-2d1ccbf0e3f0",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
+  },
+  "650c14de93cfd8229365ed31": {
+    "_id": "650c14de93cfd8229365ed31",
+    "createdAt": 1695290590421,
+    "updatedAt": 1695292654803,
+    "cid": "7",
+    "desc": "",
+    "label": "Product color",
+    "name": "product_color",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "b68aaa76-75e6-415b-89d0-914bf402ef43",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "1c89d0cd-23f4-4cbd-a827-23b1d29dd61c",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "17ae7aff-2566-46ef-8f77-68ea2d4c80e8",
+        "name": "hex",
+        "label": "Hex",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
+  },
+  "650c164793cfd8229365ed3c": {
+    "_id": "650c164793cfd8229365ed3c",
+    "createdAt": 1695290951920,
+    "updatedAt": 1695290951920,
+    "cid": "8",
+    "desc": "",
+    "label": "Legal",
+    "name": "legal",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "b3ceafe8-bfc5-4550-88de-d24e6af408de",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "50e11f84-2085-4615-bd67-1216101e7529",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
+  },
+  "650c16e293cfd8229365ed43": {
+    "_id": "650c16e293cfd8229365ed43",
+    "createdAt": 1695291106761,
+    "updatedAt": 1695291122378,
+    "cid": "9",
+    "desc": "",
+    "label": "Header",
+    "name": "header",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "24713985-ae7e-4fe6-a32d-7a7f46aa0a6f",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "1bf177c0-3526-4a7a-859e-aa243c574929",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "3cb7b4aa-388d-4a0b-9d5f-d0a3979f8ef3",
+        "name": "logo",
+        "label": "Logo",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "ffd05028-257c-46f9-898f-414d52841a8f",
+        "name": "nav",
+        "label": "Nav",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
+  },
+  "650c16f793cfd8229365ed44": {
+    "_id": "650c16f793cfd8229365ed44",
+    "createdAt": 1695291127346,
+    "updatedAt": 1695291162583,
+    "cid": "a",
+    "desc": "",
+    "label": "Footer",
+    "name": "footer",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "4342671d-a630-470f-a38c-24ae26d67507",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "338056af-bc27-4735-bc93-7c31155d66d9",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "33f4bc2b-dc35-48db-98ca-19619725f12a",
+        "name": "nav_columns",
+        "label": "Nav columns",
+        "array": true,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
+  },
+  "650c181693cfd8229365ed47": {
+    "_id": "650c181693cfd8229365ed47",
+    "createdAt": 1695291414819,
+    "updatedAt": 1695291414819,
+    "cid": "b",
+    "desc": "",
+    "label": "Product gender",
+    "name": "product_gender",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "3fa04394-35e1-4d45-ad56-af0728586c5c",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "f7a52f91-7d77-4d41-942c-ac631d6a1b32",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
+  },
+  "650c1a8a93cfd8229365ed58": {
+    "_id": "650c1a8a93cfd8229365ed58",
+    "createdAt": 1695292042644,
+    "updatedAt": 1695292042644,
+    "cid": "c",
+    "desc": "",
+    "label": "Product brand",
+    "name": "product_brand",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "efdeb066-6655-48f4-a68a-df82ed43893c",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "62bb0bf5-ca37-4f70-921c-240c5bb7544d",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
+  }
+}
