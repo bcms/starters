@@ -31,11 +31,11 @@ export const PageWrapper: FC<PropsWithChildren<PageProps<HomePageData>>> = ({
           property="og:url"
           content={`${domain}${routePath}`}
         />
-        <meta property="og:title" content={`${title} - Insightful Ink`} />
+        <meta property="og:title" content={`${title} - CONference`} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
         <meta property="twitter:url" content={`${domain}${routePath}`} />
-        <meta property="twitter:title" content={`${title} - Insightful Ink`} />
+        <meta property="twitter:title" content={`${title} - CONference`} />
         <meta property="twitter:description" content={description} />
         <meta property="twitter:image" content={image} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
