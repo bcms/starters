@@ -23,7 +23,7 @@ export const PageWrapper: FC<PropsWithChildren<PageProps<HomePageData>>> = ({
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
-        <meta property="og:site_name" content={`${title} - Insightful Ink`} />
+        <meta property="og:site_name" content={`${title} - CONference`} />
         <meta property="og:type" content="website" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta
