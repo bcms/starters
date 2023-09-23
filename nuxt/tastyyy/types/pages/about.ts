@@ -1,4 +1,4 @@
-import { AboutPageEntryMeta } from "~~/bcms/types";
+import { AboutPageEntryMeta } from '~~/bcms/types';
 
 export interface AboutPageData {
   meta: AboutPageEntryMeta;

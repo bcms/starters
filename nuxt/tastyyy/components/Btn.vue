@@ -29,32 +29,34 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import ArrowIcon from "@/assets/icons/arrow.svg";
+import { PropType } from 'vue';
+import ArrowIcon from '@/assets/icons/arrow.svg';
 
 defineProps({
   to: {
     type: String,
     required: false,
+    default: '',
   },
   theme: {
-    type: String as PropType<"fill" | "outline" | "accent">,
+    type: String as PropType<'fill' | 'outline' | 'accent'>,
     required: false,
-    default: "outline",
+    default: 'outline',
   },
   hideArrow: Boolean,
   tag: {
     type: String,
     required: false,
+    default: '',
   },
   size: {
-    type: String as PropType<"sm" | "regular" | "lg">,
+    type: String as PropType<'sm' | 'regular' | 'lg'>,
     required: false,
-    default: "regular",
+    default: 'regular',
   },
 });
 
-const NuxtLink = resolveComponent("NuxtLink");
+const NuxtLink = resolveComponent('NuxtLink');
 
 const isArrowVisible = ref(false);
 </script>

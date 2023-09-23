@@ -58,7 +58,7 @@
 
 <script setup lang="ts">
 import { PropType } from 'vue';
-import { A11y, Pagination } from 'swiper/modules';
+import { A11y, Pagination } from 'swiper';
 import { TestimonialEntryMeta } from '@/bcms/types';
 import { BCMSImage } from '@/bcms-components';
 

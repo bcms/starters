@@ -36,7 +36,7 @@
 </template>
 
 <script setup lang="ts">
-import StarIcon from "@/assets/icons/star.svg";
+import StarIcon from '@/assets/icons/star.svg';
 
 defineProps({
   arc: {

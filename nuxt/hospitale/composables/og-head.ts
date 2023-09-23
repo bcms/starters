@@ -15,7 +15,9 @@ export function useHeadTags(): HeadTags {
   return {
     setOgHead({ title, description, image }) {
       if (!title) title = 'Hospitale';
-      if (!description) description = 'Jumpstart your Nuxt project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
+      if (!description)
+        description =
+          'Jumpstart your Nuxt project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
       if (!image) image = '/thumbnail.jpg';
       const domain = 'https://hospitale-nuxt.thebcms.com';
       return {

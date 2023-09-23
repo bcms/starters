@@ -1,4 +1,4 @@
-import { ReservationPageEntryMeta } from "~~/bcms/types";
+import { ReservationPageEntryMeta } from '~~/bcms/types';
 
 export interface ReservationPageData {
   meta: ReservationPageEntryMeta;

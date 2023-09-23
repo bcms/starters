@@ -22,9 +22,9 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
-import { EventEntryMeta } from "~~/bcms/types";
+import { PropType } from 'vue';
+import { BCMSImage } from '~~/bcms-components';
+import { EventEntryMeta } from '~~/bcms/types';
 
 defineProps({
   card: {

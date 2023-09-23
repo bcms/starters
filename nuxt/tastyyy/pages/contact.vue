@@ -11,15 +11,15 @@
           <h1
             class="text-xl leading-none font-Gloock uppercase text-center mb-8 lg:text-5xl lg:leading-none lg:mb-20"
           >
-            {{ data.data.meta.title }}
+            {{ data.page.meta.title }}
           </h1>
           <ContentManager
-            :item="data.data.meta.description"
+            :item="data.page.meta.description"
             class="contactPage--description text-sm leading-[1.3] tracking-[-0.41px] uppercase text-center text-appGray-700 mb-8 lg:text-base lg:leading-[1.3] lg:mb-12"
           />
           <div class="bg-[#E5E4DA] rounded-2xl p-4 mb-8 lg:mb-10">
             <BCMSImage
-              :media="data.data.meta.map"
+              :media="data.page.meta.map"
               :options="{
                 sizes: {
                   exec: [
@@ -47,22 +47,49 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from "~~/bcms-components";
-import { APIResponse, ContactPageData } from "~~/types";
+import { NuxtApp } from 'nuxt/app';
+import { BCMSImage } from '~~/bcms-components';
+import { ContactPageEntry, ContactPageEntryMeta } from '~~/bcms/types';
+import { ContactPageData } from '~~/types';
+import { PageProps } from '~~/types/page-props';
 
-const { data } = useAsyncData(async (ctx) => {
-  return await ctx?.$bcms.request<APIResponse<ContactPageData>>({
-    url: "/contact.json",
+const { data, error } = useAsyncData<PageProps<ContactPageData>>(
+  async (ctx) => {
+    const { header, footer } = await getHeaderAndFooter(ctx as NuxtApp);
+    const contactPage = (await ctx?.$bcms.entry.get({
+      // Template name or ID
+      template: 'contact_page',
+      // Entry slug or ID
+      entry: 'contact-us',
+    })) as ContactPageEntry;
+    if (!contactPage) {
+      throw new Error('Contact page entry does not exist.');
+    }
+    return {
+      header,
+      footer,
+      page: {
+        meta: contactPage.meta.en as ContactPageEntryMeta,
+      },
+    };
+  },
+);
+if (error.value) {
+  throw createError({
+    statusCode: 500,
+    statusMessage: error.value.message,
+    stack: error.value.stack,
+    fatal: true,
   });
-});
+}
 
 const { setOgHead } = useHeadTags();
 
 useHead(() =>
   setOgHead({
-    title: data.value?.data.meta.seo?.title || data.value?.data.meta.title,
-    description: data.value?.data.meta.seo?.description,
-  })
+    title: data.value?.page.meta.seo?.title || data.value?.page.meta.title,
+    description: data.value?.page.meta.seo?.description,
+  }),
 );
 </script>
 

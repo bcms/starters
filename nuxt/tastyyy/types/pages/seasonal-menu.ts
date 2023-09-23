@@ -2,7 +2,7 @@ import {
   FoodItemEntryMeta,
   MenuPageEntryMeta,
   SeasonEntryMeta,
-} from "~~/bcms/types";
+} from '~~/bcms/types';
 
 export interface SeasonalMenuPageData {
   meta: MenuPageEntryMeta;

@@ -22,13 +22,12 @@
       class="border bg-transparent rounded-[32px] px-[14px] py-[17px] text-sm leading-none tracking-[-0.41px] placeholder:text-[#665E5E] resize-none h-[140px] transition-colors duration-300 focus:outline-none lg:px-7 lg:py-6 lg:text-base lg:leading-none lg:h-[224px]"
       :class="[error ? 'border-red-500' : 'border-[#A8A7A0]']"
       @input="handleInput"
-    >
-    </textarea>
+    />
   </label>
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
+import { PropType } from 'vue';
 
 defineProps({
   modelValue: {
@@ -38,27 +37,30 @@ defineProps({
   label: {
     type: String,
     required: false,
+    default: '',
   },
   placeholder: {
     type: String,
     required: false,
+    default: '',
   },
   type: {
-    type: String as PropType<"text" | "email" | "date" | "time" | "textarea">,
+    type: String as PropType<'text' | 'email' | 'date' | 'time' | 'textarea'>,
     required: false,
-    default: "text",
+    default: 'text',
   },
   error: {
     type: String,
     required: false,
+    default: '',
   },
 });
 
-const emits = defineEmits(["update:modelValue"]);
+const emits = defineEmits(['update:modelValue']);
 
 const handleInput = (event: Event) => {
   const target = event.target as HTMLInputElement;
 
-  emits("update:modelValue", target.value);
+  emits('update:modelValue', target.value);
 };
 </script>

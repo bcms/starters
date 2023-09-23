@@ -16,14 +16,34 @@
           :item="data.description"
           class="text-sm leading-[1.3] tracking-[-0.41px] text-appGray-700 uppercase max-w-[745px] mx-auto mb-10 lg:text-base lg:leading-[1.3] lg:mb-[45px]"
         />
-        <div class="flex items-start space-x-5 w-full lg:space-x-24">
+        <div class="grid grid-cols-[auto,1fr,auto] gap-5 w-full lg:gap-24">
           <button class="homeTestimonials--swiperPrev flex translate-y-[60px]">
-            <ArrowIcon
-              class="w-4 h-4 rotate-180 flex-shrink-0 lg:w-12 lg:h-12"
-            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              class="w-4 h-4 flex-shrink-0 lg:w-12 lg:h-12"
+            >
+              <mask
+                id="aaa"
+                width="48"
+                height="48"
+                x="0"
+                y="0"
+                maskUnits="userSpaceOnUse"
+                style="mask-type: alpha"
+              >
+                <path fill="#D9D9D9" d="M48 0H0v48h48z" />
+              </mask>
+              <g mask="url(#aaa)">
+                <path
+                  fill="currentColor"
+                  d="m24 40 2.85-2.8L15.65 26H40v-4H15.65l11.2-11.2L24 8 8 24l16 16Z"
+                />
+              </g>
+            </svg>
           </button>
           <Swiper
-            :modules="[A11y, Navigation]"
+            :modules="[SwiperA11y, SwiperNavigation]"
             :navigation="{
               prevEl: '.homeTestimonials--swiperPrev',
               nextEl: '.homeTestimonials--swiperNext',
@@ -32,11 +52,12 @@
             watch-overflow
             grab-cursor
             :space-between="12"
+            class="w-full"
           >
             <SwiperSlide
               v-for="(testimonial, index) in items"
               :key="index"
-              class="flex flex-col items-center text-center"
+              class="flex flex-col items-center justify-center text-center"
             >
               <ContentManager
                 :item="testimonial.quote"
@@ -54,7 +75,29 @@
             </SwiperSlide>
           </Swiper>
           <button class="homeTestimonials--swiperNext flex translate-y-[60px]">
-            <ArrowIcon class="w-4 h-4 flex-shrink-0 lg:w-12 lg:h-12" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              class="w-4 h-4 flex-shrink-0 lg:w-12 lg:h-12"
+            >
+              <mask
+                id="add"
+                width="48"
+                height="48"
+                x="0"
+                y="0"
+                maskUnits="userSpaceOnUse"
+                style="mask-type: alpha"
+              >
+                <path fill="#D9D9D9" d="M0 0h48v48H0z" />
+              </mask>
+              <g mask="url(#add)">
+                <path
+                  fill="currentColor"
+                  d="m24 40-2.85-2.8L32.35 26H8v-4h24.35l-11.2-11.2L24 8l16 16-16 16Z"
+                />
+              </g>
+            </svg>
           </button>
         </div>
       </div>
@@ -63,11 +106,9 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
-import { A11y, Navigation } from "swiper";
-import { TestimonialEntryMeta, HomeTestimonialsGroup } from "~~/bcms/types";
-import ArrowIcon from "@/assets/icons/arrow.svg";
+import { PropType } from 'vue';
+import { BCMSImage } from '~~/bcms-components';
+import { TestimonialEntryMeta, HomeTestimonialsGroup } from '~~/bcms/types';
 
 defineProps({
   data: {

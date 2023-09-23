@@ -50,9 +50,9 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { BCMSImage } from "~~/bcms-components";
-import { HomeMenuGroup } from "~~/bcms/types/group/home_menu";
+import { PropType } from 'vue';
+import { BCMSImage } from '~~/bcms-components';
+import { HomeMenuGroup } from '~~/bcms/types/group/home_menu';
 
 defineProps({
   data: {
