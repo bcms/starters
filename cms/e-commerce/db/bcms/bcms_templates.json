@@ -114,7 +114,7 @@
   "650c0d1993cfd8229365ed20": {
     "_id": "650c0d1993cfd8229365ed20",
     "createdAt": 1695288601815,
-    "updatedAt": 1695289099989,
+    "updatedAt": 1695632118641,
     "cid": "3",
     "desc": "",
     "label": "Blog",
@@ -143,6 +143,17 @@
         "defaultData": [
           ""
         ]
+      },
+      {
+        "id": "a78664eb-0034-481f-9acf-1e4bc15a23ff",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "650c092e93cfd8229365ed1c"
+        }
       },
       {
         "id": "2398114a-7fcf-42d0-a939-1ed15181d233",

@@ -263,7 +263,7 @@
   "650c0e4593cfd8229365ed25": {
     "_id": "650c0e4593cfd8229365ed25",
     "createdAt": 1695288901952,
-    "updatedAt": 1695289418024,
+    "updatedAt": 1695643540025,
     "cid": "3",
     "templateId": "650c0d1993cfd8229365ed20",
     "userId": "111111111111111111111111",
@@ -275,14 +275,21 @@
           {
             "id": "655cbdb6-7a19-4021-88c7-672b019af50d",
             "data": [
-              "Bar dhuhur ae Shirt"
+              "Seasonal Style: Unveiling the Hottest Fashion Trends for Fall/Winter 2023"
             ]
           },
           {
             "id": "235f35f9-b22b-42fa-8ac3-7c8408aa95d1",
             "data": [
-              "bar-dhuhur-ae-shirt"
+              "seasonal-style-unveiling-the-hottest-fashion-trends-for-fallwinter-2023"
             ]
+          },
+          {
+            "id": "a78664eb-0034-481f-9acf-1e4bc15a23ff",
+            "data": {
+              "_id": "650c092e93cfd8229365ed1c",
+              "items": []
+            }
           },
           {
             "id": "2398114a-7fcf-42d0-a939-1ed15181d233",
@@ -324,7 +331,7 @@
             "content": [
               {
                 "type": "text",
-                "text": "Intro"
+                "text": "Introduction"
               }
             ]
           },
@@ -333,27 +340,7 @@
             "content": [
               {
                 "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-              },
-              {
-                "type": "hardBreak"
-              },
-              {
-                "type": "hardBreak"
-              },
-              {
-                "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-              },
-              {
-                "type": "hardBreak"
-              },
-              {
-                "type": "hardBreak"
-              },
-              {
-                "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "text": "In the ever-evolving world of fashion, trends come and go like the seasons. It's a dynamic industry where what's 'in' today may be 'out' tomorrow. In this blog post, we'll delve into the concept of trends, explore what makes something a trend, and ultimately, why it matters to your e-commerce wardrobe."
               }
             ]
           },
@@ -374,7 +361,7 @@
             "content": [
               {
                 "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "text": "Fashion trends are like the heartbeat of the industry, constantly pulsating with new styles, colors, and designs. They're the sartorial expressions that define a particular era, reflecting society's ever-changing tastes and sensibilities. From the flapper dresses of the 1920s to the athleisure craze of the 2010s, trends encapsulate the spirit of their time."
               },
               {
                 "type": "hardBreak"
@@ -384,17 +371,7 @@
               },
               {
                 "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-              },
-              {
-                "type": "hardBreak"
-              },
-              {
-                "type": "hardBreak"
-              },
-              {
-                "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "text": "A trend is not just a random garment that catches the eye; it's a culmination of cultural, social, and economic factors. It's born when designers, influencers, and consumers collectively embrace a particular style. This embrace creates a ripple effect, as the trend permeates runways, streets, and eventually, e-commerce stores."
               }
             ]
           },
@@ -415,27 +392,68 @@
             "content": [
               {
                 "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "text": "A trend emerges when it possesses certain key characteristics. It's not merely about a unique design or color; it's a phenomenon that captivates the masses. Here are some elements that contribute to something becoming a trend:"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Ubiquity: Trends are everywhere you look, from high-end fashion houses to your favorite local boutiques. When a style appears across a wide spectrum of brands and retailers, it's a telltale sign of a trend."
+                      }
+                    ]
+                  }
+                ]
               },
               {
-                "type": "hardBreak"
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Cultural Relevance: Trends often mirror societal shifts and cultural movements. For instance, the surge in sustainability awareness has given rise to eco-friendly fashion trends. They align with consumers' values and beliefs."
+                      }
+                    ]
+                  }
+                ]
               },
               {
-                "type": "hardBreak"
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Influencer Impact: Influencers and celebrities play a significant role in popularizing trends. When they don a particular style, it can quickly become a sensation."
+                      }
+                    ]
+                  }
+                ]
               },
               {
-                "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-              },
-              {
-                "type": "hardBreak"
-              },
-              {
-                "type": "hardBreak"
-              },
-              {
-                "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Consumer Demand: Ultimately, trends are driven by consumer demand. Shoppers gravitate toward styles that resonate with them, fueling the trend's momentum."
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -456,7 +474,7 @@
             "content": [
               {
                 "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "text": "In the world of e-commerce fashion, staying on top of trends is essential. Understanding what trends are and what makes them tick can help you curate a wardrobe that's not only stylish but also relevant. Whether you're an early adopter or prefer to embrace classics, trends offer an exciting glimpse into the ever-evolving world of fashion."
               },
               {
                 "type": "hardBreak"
@@ -466,19 +484,19 @@
               },
               {
                 "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "text": "So, as you browse through your favorite online stores, keep an eye out for those trends that speak to you. After all, fashion is not just about what you wear; it's a reflection of your ever-changing self in the ever-changing world."
               }
             ]
           }
         ],
-        "plainText": "intro\nlorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nwhat is trend?\nlorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nwhat makes it as a trend?\nlorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nconclusion\nlorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n"
+        "plainText": "introduction\nin the ever-evolving world of fashion, trends come and go like the seasons. it's a dynamic industry where what's 'in' today may be 'out' tomorrow. in this blog post, we'll delve into the concept of trends, explore what makes something a trend, and ultimately, why it matters to your e-commerce wardrobe.\n\nwhat is trend?\nfashion trends are like the heartbeat of the industry, constantly pulsating with new styles, colors, and designs. they're the sartorial expressions that define a particular era, reflecting society's ever-changing tastes and sensibilities. from the flapper dresses of the 1920s to the athleisure craze of the 2010s, trends encapsulate the spirit of their time.a trend is not just a random garment that catches the eye; it's a culmination of cultural, social, and economic factors. it's born when designers, influencers, and consumers collectively embrace a particular style. this embrace creates a ripple effect, as the trend permeates runways, streets, and eventually, e-commerce stores.\n\nwhat makes it as a trend?\na trend emerges when it possesses certain key characteristics. it's not merely about a unique design or color; it's a phenomenon that captivates the masses. here are some elements that contribute to something becoming a trend:\n\nubiquity: trends are everywhere you look, from high-end fashion houses to your favorite local boutiques. when a style appears across a wide spectrum of brands and retailers, it's a telltale sign of a trend.\ncultural relevance: trends often mirror societal shifts and cultural movements. for instance, the surge in sustainability awareness has given rise to eco-friendly fashion trends. they align with consumers' values and beliefs.\ninfluencer impact: influencers and celebrities play a significant role in popularizing trends. when they don a particular style, it can quickly become a sensation.\nconsumer demand: ultimately, trends are driven by consumer demand. shoppers gravitate toward styles that resonate with them, fueling the trend's momentum.\n\nconclusion\nin the world of e-commerce fashion, staying on top of trends is essential. understanding what trends are and what makes them tick can help you curate a wardrobe that's not only stylish but also relevant. whether you're an early adopter or prefer to embrace classics, trends offer an exciting glimpse into the ever-evolving world of fashion.so, as you browse through your favorite online stores, keep an eye out for those trends that speak to you. after all, fashion is not just about what you wear; it's a reflection of your ever-changing self in the ever-changing world.\n\n"
       }
     ]
   },
   "650c0eed93cfd8229365ed26": {
     "_id": "650c0eed93cfd8229365ed26",
     "createdAt": 1695289069192,
-    "updatedAt": 1695289426953,
+    "updatedAt": 1695643526650,
     "cid": "4",
     "templateId": "650c0d1993cfd8229365ed20",
     "userId": "111111111111111111111111",
@@ -490,14 +508,21 @@
           {
             "id": "655cbdb6-7a19-4021-88c7-672b019af50d",
             "data": [
-              "Lorem ipsum dolorsit on Fashion"
+              "The Power of Color: How Your Wardrobe Choices Can Impact Your Mood"
             ]
           },
           {
             "id": "235f35f9-b22b-42fa-8ac3-7c8408aa95d1",
             "data": [
-              "lorem-ipsum-dolorsit-on-fashion"
+              "the-power-of-color-how-your-wardrobe-choices-can-impact-your-mood"
             ]
+          },
+          {
+            "id": "a78664eb-0034-481f-9acf-1e4bc15a23ff",
+            "data": {
+              "_id": "650c092e93cfd8229365ed1c",
+              "items": []
+            }
           },
           {
             "id": "2398114a-7fcf-42d0-a939-1ed15181d233",
@@ -539,7 +564,7 @@
             "content": [
               {
                 "type": "text",
-                "text": "Intro"
+                "text": "Introduction"
               }
             ]
           },
@@ -548,27 +573,7 @@
             "content": [
               {
                 "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-              },
-              {
-                "type": "hardBreak"
-              },
-              {
-                "type": "hardBreak"
-              },
-              {
-                "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-              },
-              {
-                "type": "hardBreak"
-              },
-              {
-                "type": "hardBreak"
-              },
-              {
-                "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "text": "In the ever-evolving world of fashion, trends come and go like the seasons. It's a dynamic industry where what's 'in' today may be 'out' tomorrow. In this blog post, we'll delve into the concept of trends, explore what makes something a trend, and ultimately, why it matters to your e-commerce wardrobe."
               }
             ]
           },
@@ -589,7 +594,7 @@
             "content": [
               {
                 "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "text": "Fashion trends are like the heartbeat of the industry, constantly pulsating with new styles, colors, and designs. They're the sartorial expressions that define a particular era, reflecting society's ever-changing tastes and sensibilities. From the flapper dresses of the 1920s to the athleisure craze of the 2010s, trends encapsulate the spirit of their time."
               },
               {
                 "type": "hardBreak"
@@ -599,17 +604,7 @@
               },
               {
                 "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-              },
-              {
-                "type": "hardBreak"
-              },
-              {
-                "type": "hardBreak"
-              },
-              {
-                "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "text": "A trend is not just a random garment that catches the eye; it's a culmination of cultural, social, and economic factors. It's born when designers, influencers, and consumers collectively embrace a particular style. This embrace creates a ripple effect, as the trend permeates runways, streets, and eventually, e-commerce stores."
               }
             ]
           },
@@ -630,27 +625,68 @@
             "content": [
               {
                 "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "text": "A trend emerges when it possesses certain key characteristics. It's not merely about a unique design or color; it's a phenomenon that captivates the masses. Here are some elements that contribute to something becoming a trend:"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Ubiquity: Trends are everywhere you look, from high-end fashion houses to your favorite local boutiques. When a style appears across a wide spectrum of brands and retailers, it's a telltale sign of a trend."
+                      }
+                    ]
+                  }
+                ]
               },
               {
-                "type": "hardBreak"
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Cultural Relevance: Trends often mirror societal shifts and cultural movements. For instance, the surge in sustainability awareness has given rise to eco-friendly fashion trends. They align with consumers' values and beliefs."
+                      }
+                    ]
+                  }
+                ]
               },
               {
-                "type": "hardBreak"
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Influencer Impact: Influencers and celebrities play a significant role in popularizing trends. When they don a particular style, it can quickly become a sensation."
+                      }
+                    ]
+                  }
+                ]
               },
               {
-                "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-              },
-              {
-                "type": "hardBreak"
-              },
-              {
-                "type": "hardBreak"
-              },
-              {
-                "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Consumer Demand: Ultimately, trends are driven by consumer demand. Shoppers gravitate toward styles that resonate with them, fueling the trend's momentum."
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -671,7 +707,7 @@
             "content": [
               {
                 "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "text": "In the world of e-commerce fashion, staying on top of trends is essential. Understanding what trends are and what makes them tick can help you curate a wardrobe that's not only stylish but also relevant. Whether you're an early adopter or prefer to embrace classics, trends offer an exciting glimpse into the ever-evolving world of fashion."
               },
               {
                 "type": "hardBreak"
@@ -681,12 +717,12 @@
               },
               {
                 "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "text": "So, as you browse through your favorite online stores, keep an eye out for those trends that speak to you. After all, fashion is not just about what you wear; it's a reflection of your ever-changing self in the ever-changing world."
               }
             ]
           }
         ],
-        "plainText": "intro\nlorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nwhat is trend?\nlorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nwhat makes it as a trend?\nlorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nconclusion\nlorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n"
+        "plainText": "introduction\nin the ever-evolving world of fashion, trends come and go like the seasons. it's a dynamic industry where what's 'in' today may be 'out' tomorrow. in this blog post, we'll delve into the concept of trends, explore what makes something a trend, and ultimately, why it matters to your e-commerce wardrobe.\n\nwhat is trend?\nfashion trends are like the heartbeat of the industry, constantly pulsating with new styles, colors, and designs. they're the sartorial expressions that define a particular era, reflecting society's ever-changing tastes and sensibilities. from the flapper dresses of the 1920s to the athleisure craze of the 2010s, trends encapsulate the spirit of their time.a trend is not just a random garment that catches the eye; it's a culmination of cultural, social, and economic factors. it's born when designers, influencers, and consumers collectively embrace a particular style. this embrace creates a ripple effect, as the trend permeates runways, streets, and eventually, e-commerce stores.\n\nwhat makes it as a trend?\na trend emerges when it possesses certain key characteristics. it's not merely about a unique design or color; it's a phenomenon that captivates the masses. here are some elements that contribute to something becoming a trend:\n\nubiquity: trends are everywhere you look, from high-end fashion houses to your favorite local boutiques. when a style appears across a wide spectrum of brands and retailers, it's a telltale sign of a trend.\ncultural relevance: trends often mirror societal shifts and cultural movements. for instance, the surge in sustainability awareness has given rise to eco-friendly fashion trends. they align with consumers' values and beliefs.\ninfluencer impact: influencers and celebrities play a significant role in popularizing trends. when they don a particular style, it can quickly become a sensation.\nconsumer demand: ultimately, trends are driven by consumer demand. shoppers gravitate toward styles that resonate with them, fueling the trend's momentum.\n\nconclusion\nin the world of e-commerce fashion, staying on top of trends is essential. understanding what trends are and what makes them tick can help you curate a wardrobe that's not only stylish but also relevant. whether you're an early adopter or prefer to embrace classics, trends offer an exciting glimpse into the ever-evolving world of fashion.so, as you browse through your favorite online stores, keep an eye out for those trends that speak to you. after all, fashion is not just about what you wear; it's a reflection of your ever-changing self in the ever-changing world.\n\n"
       }
     ]
   },
