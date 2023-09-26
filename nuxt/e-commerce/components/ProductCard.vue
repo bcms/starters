@@ -33,7 +33,7 @@
         :class="[
           size.available
             ? selectedSize === size.size.meta.en?.title
-              ? 'text-appAccent-orange bg-appGray-200 hover:bg-appGray-200'
+              ? 'text-appGray-800 bg-appGray-200 border border-appText hover:bg-appGray-200'
               : 'text-appGray-800 hover:bg-appGray-200'
             : 'text-appGray-400 cursor-default',
         ]"

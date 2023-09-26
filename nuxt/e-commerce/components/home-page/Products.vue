@@ -6,14 +6,14 @@
       >
         <div class="flex flex-wrap gap-8">
           <FormCheck
-            v-for="(filter, index) in activeFilters"
+            v-for="(filter, index) in productFilters"
             :key="index"
             v-model="filter.active"
             :label="filter.label"
           />
         </div>
         <button
-          class="flex items-center gap-2 transition-colors duration-300 hover:text-red-500"
+          class="flex items-center gap-2 transition-colors duration-300 hover:text-appError"
           @click="clearFilters"
         >
           <TrashIcon class="w-6 h-6" :font-controlled="false" />
@@ -63,10 +63,14 @@ const props = defineProps({
   },
 });
 
-const activeFilters = ref<ProductFilter[]>([]);
+const productFilters = ref<ProductFilter[]>([]);
+
+const activeFilters = computed(() => {
+  return productFilters.value.filter((e) => e.active);
+});
 
 const clearFilters = () => {
-  activeFilters.value.forEach((filter) => {
+  productFilters.value.forEach((filter) => {
     filter.active = false;
   });
 };
@@ -76,10 +80,10 @@ const filteredProducts = computed(() => {
     let show = true;
 
     activeFilters.value.forEach((filter) => {
-      if (filter.type === 'gender') {
+      if (filter.type === 'gender' && filter.active) {
         show = show && e.gender.slug === filter.value;
       }
-      if (filter.type === 'category') {
+      if (filter.type === 'category' && filter.active) {
         show = show && !!e.categories.find((c) => c.slug === filter.value);
       }
     });
@@ -90,7 +94,7 @@ const filteredProducts = computed(() => {
 
 onMounted(() => {
   props.filters.genders.forEach((gender) => {
-    activeFilters.value.push({
+    productFilters.value.push({
       active: false,
       label: gender.title,
       value: gender.slug,
@@ -98,7 +102,7 @@ onMounted(() => {
     });
   });
   props.filters.categories.forEach((category) => {
-    activeFilters.value.push({
+    productFilters.value.push({
       active: false,
       label: category.title,
       value: category.slug,

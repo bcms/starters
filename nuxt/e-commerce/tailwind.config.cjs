@@ -29,6 +29,7 @@ module.exports = {
           lightGreen: '#BBEA01',
           orange: '#EAA401',
         },
+        appError: '#CE3434',
       },
       container: {
         center: true,

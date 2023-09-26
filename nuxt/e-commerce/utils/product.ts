@@ -1,4 +1,5 @@
 import {
+  ProductBrandEntryMeta,
   ProductCategoryEntryMeta,
   ProductEntry,
   ProductEntryMeta,
@@ -20,5 +21,8 @@ export const productToLite = (product: ProductEntry): ProductLite => {
     categories: meta.categories.map(
       (e) => e.meta.en as ProductCategoryEntryMeta,
     ),
+    brand: meta.brand.meta.en as ProductBrandEntryMeta,
+    units_sold: meta.units_sold || 0,
+    date: product.createdAt,
   };
 };

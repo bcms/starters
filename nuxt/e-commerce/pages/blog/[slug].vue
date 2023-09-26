@@ -1,10 +1,5 @@
 <template>
-  <PageWrapper
-    v-if="data"
-    :header="data.header"
-    :footer="data.footer"
-    class="pt-2"
-  >
+  <PageWrapper v-if="data" :header="data.header" :footer="data.footer">
     <div class="container pb-14 md:pb-20 lg:pb-[136px]">
       <div
         class="relative flex items-end p-4 min-h-[300px] max-w-full aspect-[2.47] mb-10 lg:p-12"

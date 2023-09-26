@@ -3025,5 +3025,304 @@
         "plainText": ""
       }
     ]
+  },
+  "651292d397b0882ca3e4d8ab": {
+    "_id": "651292d397b0882ca3e4d8ab",
+    "createdAt": 1695716051718,
+    "updatedAt": 1695722757542,
+    "cid": "2a",
+    "templateId": "650c132a93cfd8229365ed2f",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "47e0c813-9a71-4417-bd7e-7710b89dc841",
+            "data": [
+              "SunSplash Swimwear"
+            ]
+          },
+          {
+            "id": "3676f43d-b9cc-4e50-8f32-f2e5c883ef18",
+            "data": [
+              "sunsplash-swimwear"
+            ]
+          },
+          {
+            "id": "e6d42259-d391-424b-bda5-076c3e6e622c",
+            "data": {
+              "_id": "650c092e93cfd8229365ed1c",
+              "items": []
+            }
+          },
+          {
+            "id": "4f25fdfa-7ab0-40ff-aa8e-35adf4a3104f",
+            "data": {
+              "_id": "650c1f0a93cfd8229365ed65",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "090f0555-3761-4d1b-ab94-cb94b8eebf86",
+                      "data": [
+                        {
+                          "_id": "6512948e97b0882ca3e4d8ad",
+                          "alt_text": "SunSplash Swimwear",
+                          "caption": ""
+                        }
+                      ]
+                    },
+                    {
+                      "id": "521ad000-4ab8-4c09-acd0-038b83f17038",
+                      "data": [
+                        {
+                          "tid": "650c14de93cfd8229365ed31",
+                          "eid": "650c14ff93cfd8229365ed37"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "090f0555-3761-4d1b-ab94-cb94b8eebf86",
+                      "data": [
+                        {
+                          "_id": "6512948e97b0882ca3e4d8af",
+                          "alt_text": "SunSplash Swimwear",
+                          "caption": ""
+                        }
+                      ]
+                    },
+                    {
+                      "id": "521ad000-4ab8-4c09-acd0-038b83f17038",
+                      "data": [
+                        {
+                          "tid": "650c14de93cfd8229365ed31",
+                          "eid": "650c152193cfd8229365ed39"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "090f0555-3761-4d1b-ab94-cb94b8eebf86",
+                      "data": [
+                        {
+                          "_id": "6512948e97b0882ca3e4d8ae",
+                          "alt_text": "SunSplash Swimwear",
+                          "caption": ""
+                        }
+                      ]
+                    },
+                    {
+                      "id": "521ad000-4ab8-4c09-acd0-038b83f17038",
+                      "data": [
+                        {
+                          "tid": "650c14de93cfd8229365ed31",
+                          "eid": "650c152193cfd8229365ed39"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "090f0555-3761-4d1b-ab94-cb94b8eebf86",
+                      "data": [
+                        {
+                          "_id": "6512948f97b0882ca3e4d8b0",
+                          "alt_text": "SunSplash Swimwear",
+                          "caption": ""
+                        }
+                      ]
+                    },
+                    {
+                      "id": "521ad000-4ab8-4c09-acd0-038b83f17038",
+                      "data": [
+                        {
+                          "tid": "650c14de93cfd8229365ed31",
+                          "eid": "650c152193cfd8229365ed39"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "b7caa517-7134-4dc1-abdd-b4bf0406af5f",
+            "data": [
+              39.99
+            ]
+          },
+          {
+            "id": "ecc3c7a8-d79a-4000-b4f1-763657089b94",
+            "data": [
+              0
+            ]
+          },
+          {
+            "id": "6d28fe23-be02-48f4-adb0-16f63c105f59",
+            "data": [
+              {
+                "id": "27b813b6-ce97-475f-927a-4e7af13f3f70",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Indulge in the allure of \"SunSplash Swimwear\" – a statement of elegance and vitality that complements your summer escapades like no other. Designed with a focus on both aesthetics and functionality, this swimwear piece offers a balance between comfort and style that is unparalleled. The premium materials used in its construction ensure durability and color retention, allowing you to enjoy countless beach adventures without compromising on quality."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "The SunSplash Swimwear collection caters to a range of tastes, from classic solids to eye-catching prints, making it easy to find your perfect beachwear match. With its exceptional fit, this swimwear hugs your curves in all the right places, enhancing your natural beauty and making you feel like a beach goddess. Elevate your summer wardrobe with \"SunSplash Swimwear\" and embrace the sun-kissed days ahead with confidence and panache."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "c809f2a1-5f60-40e8-b80d-a5d17153d025",
+            "data": {
+              "_id": "650c155693cfd8229365ed3b",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "7dd4f70b-0cae-4dd8-9137-c0f2a17a542d",
+                      "data": [
+                        {
+                          "tid": "650c14cb93cfd8229365ed30",
+                          "eid": "650c14e993cfd8229365ed33"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "c8dc3f02-105d-43ad-ae21-c44bf49a6343",
+                      "data": [
+                        true
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "7dd4f70b-0cae-4dd8-9137-c0f2a17a542d",
+                      "data": [
+                        {
+                          "tid": "650c14cb93cfd8229365ed30",
+                          "eid": "650c14ee93cfd8229365ed34"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "c8dc3f02-105d-43ad-ae21-c44bf49a6343",
+                      "data": [
+                        true
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "7dd4f70b-0cae-4dd8-9137-c0f2a17a542d",
+                      "data": [
+                        {
+                          "tid": "650c14cb93cfd8229365ed30",
+                          "eid": "650c14f393cfd8229365ed35"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "c8dc3f02-105d-43ad-ae21-c44bf49a6343",
+                      "data": [
+                        true
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "7dd4f70b-0cae-4dd8-9137-c0f2a17a542d",
+                      "data": [
+                        {
+                          "tid": "650c14cb93cfd8229365ed30",
+                          "eid": "650c14f893cfd8229365ed36"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "c8dc3f02-105d-43ad-ae21-c44bf49a6343",
+                      "data": [
+                        false
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "048f2c75-5908-43e4-a45d-48b89698ab0d",
+            "data": [
+              {
+                "tid": "650c181693cfd8229365ed47",
+                "eid": "650c181e93cfd8229365ed48"
+              }
+            ]
+          },
+          {
+            "id": "76da90c5-edf8-491f-a95c-07676caa4332",
+            "data": [
+              {
+                "tid": "650c0cbf93cfd8229365ed1f",
+                "eid": "650d68ed62a81466faf7185f"
+              }
+            ]
+          },
+          {
+            "id": "56595ee2-6d3b-4b1e-9232-db832e2fd627",
+            "data": [
+              {
+                "tid": "650c1a8a93cfd8229365ed58",
+                "eid": "650c1aba93cfd8229365ed5c"
+              }
+            ]
+          },
+          {
+            "id": "6bf8385a-ae0d-4816-ac0e-4dd1241d5f9f",
+            "data": [
+              324
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
   }
 }

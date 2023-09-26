@@ -1,12 +1,7 @@
 <template>
-  <PageWrapper
-    v-if="data"
-    :header="data.header"
-    :footer="data.footer"
-    class="pt-2"
-  >
+  <PageWrapper v-if="data" :header="data.header" :footer="data.footer">
     <div class="container pb-14 md:pb-20 lg:pb-[136px]">
-      <div class="grid grid-cols-3 gap-8 mb-12">
+      <div class="grid grid-cols-1 gap-8 mb-12 sm:grid-cols-2 lg:grid-cols-3">
         <BlogCard
           v-for="(blog, index) in data.page.blogs"
           :key="index"
@@ -58,7 +53,7 @@ if (error.value) {
   });
 }
 
-const loadedBlogs = ref(2);
+const loadedBlogs = ref(9);
 
 const loadMore = () => {
   loadedBlogs.value += 9;

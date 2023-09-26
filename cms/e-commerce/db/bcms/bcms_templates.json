@@ -230,7 +230,7 @@
   "650c132a93cfd8229365ed2f": {
     "_id": "650c132a93cfd8229365ed2f",
     "createdAt": 1695290154690,
-    "updatedAt": 1695384414579,
+    "updatedAt": 1695719181736,
     "cid": "5",
     "desc": "",
     "label": "Product",
@@ -259,6 +259,17 @@
         "defaultData": [
           ""
         ]
+      },
+      {
+        "id": "e6d42259-d391-424b-bda5-076c3e6e622c",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "650c092e93cfd8229365ed1c"
+        }
       },
       {
         "id": "4f25fdfa-7ab0-40ff-aa8e-35adf4a3104f",
