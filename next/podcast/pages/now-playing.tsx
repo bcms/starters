@@ -5,36 +5,12 @@ import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import ForwardIcon from '@/assets/icons/forward.svg';
 import BackwardIcon from '@/assets/icons/backward.svg';
+import PauseIcon from '@/assets/icons/pause.svg';
+import PlayIcon from '@/assets/icons/play.svg';
 import { GetStaticProps } from 'next';
 import { getBcmsClient } from 'next-plugin-bcms';
 import { getHeaderAndFooter } from '@/utils/page-props';
 import { usePlayer } from '@/context/PlayerContext';
-
-interface IconProps {
-  className: string;
-}
-const PlayIcon: React.FC<IconProps> = ({ className }) => (
-  <svg
-    className={className}
-    viewBox="0 0 32 38"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path d="M25 19L7 29.3923L7 8.60767L25 19Z" fill="currentColor" />
-  </svg>
-);
-
-const PauseIcon: React.FC<IconProps> = ({ className }) => (
-  <svg
-    className={className}
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <rect x="6" y="6" width="4" height="12" fill="currentColor" />
-    <rect x="14" y="6" width="4" height="12" fill="currentColor" />
-  </svg>
-);
 
 const NowPlaying: React.FC<PageProps<NowPlayingPageData>> = ({
   header,

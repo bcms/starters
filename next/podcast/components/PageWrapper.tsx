@@ -19,7 +19,10 @@ export const PageWrapper: FC<ExtendedProps> = ({
   const router = useRouter();
   const routePath = useMemo(() => router.asPath, [router.asPath]);
 
-  const title = defaultTitle ?? page?.meta?.title ?? '';
+  const title =
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    defaultTitle ?? page?.meta?.title ?? page?.meta.seo?.title ?? '';
   const description = '';
   const image = '/thumbnail.jpg';
   const domain = 'http://localhost:3000';
