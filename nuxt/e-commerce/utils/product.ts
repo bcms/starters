@@ -1,6 +1,7 @@
 import {
   ProductBrandEntryMeta,
   ProductCategoryEntryMeta,
+  ProductColorEntryMeta,
   ProductEntry,
   ProductEntryMeta,
   ProductGenderEntryMeta,
@@ -24,5 +25,6 @@ export const productToLite = (product: ProductEntry): ProductLite => {
     brand: meta.brand.meta.en as ProductBrandEntryMeta,
     units_sold: meta.units_sold || 0,
     date: product.createdAt,
+    color: meta.gallery[0].color.meta.en as ProductColorEntryMeta,
   };
 };

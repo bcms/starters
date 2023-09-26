@@ -2,6 +2,7 @@ import { BCMSPropMediaDataParsed } from '@becomes/cms-client/types';
 import {
   ProductBrandEntryMeta,
   ProductCategoryEntryMeta,
+  ProductColorEntryMeta,
   ProductEntryMeta,
   ProductGenderEntryMeta,
   ProductSizeGroup,
@@ -19,6 +20,7 @@ export interface ProductLite {
   brand: ProductBrandEntryMeta;
   units_sold: number;
   date: number;
+  color: ProductColorEntryMeta;
 }
 
 export interface ProductFilter {

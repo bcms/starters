@@ -19,7 +19,8 @@
             class="header--nav gap-6 text-xl max-md:text-white max-md:absolute max-md:left-0 max-md:-bottom-6 max-md:translate-y-full max-md:w-full md:text-appGray-700 md:text-base"
             :class="[showMobileMenu ? '' : 'max-md:hidden']"
           />
-          <button
+          <NuxtLink
+            to="/shop/cart"
             class="flex items-center gap-2 leading-none px-3 py-2 bg-appGray-100 rounded-[5px] transition-colors duration-300 hover:bg-appGray-300"
           >
             <CartIcon
@@ -28,8 +29,8 @@
               :font-controlled="false"
             />
             <span class="text-gray-700">My cart</span>
-            <span class="font-bold font-sans text-sm">(0)</span>
-          </button>
+            <span class="font-bold font-sans text-sm">({{ cartLength }})</span>
+          </NuxtLink>
           <button
             class="flex md:hidden"
             @click="showMobileMenu = !showMobileMenu"
@@ -69,6 +70,8 @@ defineProps({
     required: true,
   },
 });
+
+const { cartLength } = useCart();
 
 const showMobileMenu = ref(false);
 </script>

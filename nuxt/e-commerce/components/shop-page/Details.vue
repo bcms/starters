@@ -18,13 +18,13 @@
         <div
           class="text-[20px] leading-none tracking-[-0.48px] mb-1 lg:text-[24px]"
         >
-          ${{ meta.price }}
+          ${{ meta.price.toFixed(2) }}
         </div>
         <div
           v-if="meta.discounted_price"
           class="leading-none tracking-[-0.32px] text-appGray-500 line-through"
         >
-          ${{ meta.discounted_price }}
+          ${{ meta.discounted_price.toFixed(2) }}
         </div>
       </div>
     </div>
@@ -37,7 +37,7 @@
       </button>
       <button
         class="flex justify-center w-full leading-none tracking-[-0.3px] px-14 pt-3.5 pb-[18px] bg-white border border-appText transition-colors duration-300 hover:bg-appText hover:text-white"
-        @click="addToCart"
+        @click="addToCart()"
       >
         Add to cart
       </button>
@@ -54,12 +54,13 @@
           class="w-8 h-8 flex items-center justify-center bg-appGray-100 leading-none tracking-[-0.3px] transition-colors duration-300"
           :class="[
             size.available
-              ? selectedSize === size.size.meta.en?.title
+              ? selectedSize?.title === size.size.meta.en?.title
                 ? 'text-appGray-800 bg-appGray-200 border border-appText hover:bg-appGray-200'
                 : 'text-appGray-800 hover:bg-appGray-200'
               : 'text-appGray-400 cursor-default',
           ]"
-          @click="selectedSize = size.size.meta.en?.title"
+          :title="`${size.size.meta.en?.title} Size`"
+          @click="selectedSize = size.size.meta.en"
         >
           {{ size.size.meta.en?.title }}
         </button>
@@ -79,6 +80,7 @@
               ? 'text-appGray-800 bg-appGray-200 border border-appText hover:bg-appGray-200'
               : 'text-appGray-800 hover:bg-appGray-200',
           ]"
+          :title="`${color.meta.en?.title} Color`"
           @click="$emit('colorChange', color)"
         >
           <div
@@ -103,7 +105,12 @@
 </template>
 
 <script setup lang="ts">
-import { ProductColorEntry, ProductEntryMeta } from '~~/bcms/types';
+import {
+  ProductColorEntry,
+  ProductColorEntryMeta,
+  ProductEntryMeta,
+  ProductSizeEntryMeta,
+} from '~~/bcms/types';
 
 const props = defineProps({
   meta: {
@@ -118,10 +125,32 @@ const props = defineProps({
 
 defineEmits(['colorChange']);
 
-const buy = () => {};
-const addToCart = () => {};
+const { addCartItem } = useCart();
+const router = useRouter();
 
-const selectedSize = ref();
+const buy = () => {
+  addToCart(true);
+};
+
+const addToCart = (redirect?: boolean) => {
+  if (selectedSize.value) {
+    addCartItem({
+      slug: props.meta.slug,
+      title: props.meta.title,
+      size: selectedSize.value || props.meta.sizes[0].size.meta.en,
+      cover: props.meta.gallery[0].image,
+      price: props.meta.discounted_price || props.meta.price,
+      color: props.activeColor.meta.en as ProductColorEntryMeta,
+    });
+    if (redirect) {
+      router.push('/shop/cart');
+    }
+  }
+};
+
+const selectedSize = ref<ProductSizeEntryMeta | undefined>(
+  props.meta.sizes[0].size.meta.en,
+);
 
 const colors = computed(() => {
   return props.meta.gallery
