@@ -7,7 +7,6 @@ import ContentManager from '@/components/ContentManager';
 import PinIcon from '@/assets/icons/pin.svg';
 import MenuIcon from '@/assets/icons/menu.svg';
 import XIcon from '@/assets/icons/x.svg';
-import NextImage from 'next/image';
 
 interface HeaderProps {
   data: HeaderEntryMeta;
@@ -73,16 +72,16 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
             ))}
           </ul>
           <div className="flex items-center justify-end flex-1 leading-none font-medium tracking-[-0.41px] max-lg:hidden">
-            <NextImage src={PinIcon} className="w-4 h-4 mr-1" />
+            <PinIcon className="w-4 h-4 mr-1" />
             <span>Sydney</span>
             <div className="w-4 h-4 bg-appAccent rounded-full mx-2" />
             <span>{timeNow}</span>
           </div>
           <button className="flex md:hidden" onClick={toggleMobileMenu}>
             {showMobileMenu ? (
-              <NextImage src={XIcon} className="w-6 h-6 text-white" />
+              <XIcon className="w-6 h-6 text-white" />
             ) : (
-              <NextImage src={MenuIcon} className="w-6 h-6" />
+              <MenuIcon className="w-6 h-6" />
             )}
           </button>
         </nav>

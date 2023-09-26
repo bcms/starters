@@ -28,9 +28,6 @@ import HomePageServices from '@/components/home-page/Services';
 import HomePageAbout from '@/components/home-page/About';
 import HomePagePortfolio from '@/components/home-page/Portfolio';
 import HomePageTestimonials from '@/components/home-page/Testimonials';
-// import HomePageTestimonials from '@/components/HomePagePortfolio';
-// import HomePageTestimonials from '@/components/HomePageTestimonials';
-
 const Home: React.FC<PageProps<HomePageData>> = ({ header, footer, page }) => {
   return (
     <PageWrapper header={header} footer={footer} page={page}>

@@ -3,7 +3,6 @@ import ContentManager from '@/components/ContentManager';
 import { BCMSImage } from 'next-plugin-bcms/components';
 import { FooterEntryMeta } from '@/bcms/types';
 import BCMSLogo from '@/assets/media/bcms-logo.svg';
-import NextImage from 'next/image';
 interface FooterProps {
   data: FooterEntryMeta;
 }
@@ -70,7 +69,7 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
             <span className="text-sm leading-none tracking-[-0.41px] text-appGray-500 mr-2 lg:text-base lg:leading-none lg:mr-3">
               Powered by
             </span>
-            <NextImage src={BCMSLogo} className="w-[55px] lg:w-[83px]" />
+            <BCMSLogo className="w-[55px] lg:w-[83px]" />
           </a>
           <div className="text-sm leading-none tracking-[-0.41px] sm:text-right lg:order-3 lg:text-base lg:leading-none">
             &copy; {currentYear} Personal website. All rights reserved

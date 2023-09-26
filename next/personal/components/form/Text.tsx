@@ -1,6 +1,5 @@
 import ArrowIcon from '@/assets/icons/arrow.svg';
 
-import NextImage from 'next/image';
 import { ChangeEvent } from 'react';
 import classNames from 'classnames';
 interface FormTextProps {
@@ -40,10 +39,7 @@ const FormText: React.FC<FormTextProps> = ({
       )}
       <div className="flex items-center">
         {!isReadOnly && (
-          <NextImage
-            src={ArrowIcon}
-            className="w-[14px] h-[14px] mr-2 lg:w-4 lg:h-4 lg:mr-2.5"
-          />
+          <ArrowIcon className="w-[14px] h-[14px] mr-2 lg:w-4 lg:h-4 lg:mr-2.5" />
         )}
         <input
           value={value}

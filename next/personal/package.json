@@ -20,6 +20,7 @@
     "@becomes/cms-cli": "^3.1.11",
     "@becomes/cms-client": "^3.3.5",
     "@becomes/cms-most": "^2.7.2",
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "17.0.12",
     "@types/react": "17.0.38",
     "@typescript-eslint/eslint-plugin": "^6.6.0",

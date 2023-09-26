@@ -107,10 +107,9 @@ export const getStaticPaths: GetStaticPaths<ParamsI> = async () => {
     template: 'portfolio_item',
   })) as PortfolioItemEntry[];
   const paths = portfolioItems.map((portfolio) => {
-    const meta = portfolio.meta as PortfolioItemEntryMeta;
     return {
       params: {
-        slug: meta.en.slug,
+        slug: portfolio?.meta?.en?.slug ?? '',
       },
     };
   });

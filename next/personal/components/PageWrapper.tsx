@@ -15,6 +15,8 @@ export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
   const router = useRouter();
   const routePath = useMemo(() => router.asPath, [router.asPath]);
 
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const title = defaultTitle ?? page?.meta?.title;
   const description = '';
   const image = '/thumbnail.jpg';
