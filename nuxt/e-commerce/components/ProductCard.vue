@@ -13,7 +13,7 @@
         </h3>
         <div class="flex items-center gap-1">
           <span class="text-2xl leading-none tracking-[-0.5px] font-bold">
-            ${{ card.discounted_price?.toFixed(2) || card.price.toFixed(2) }}
+            ${{ (card.discounted_price || card.price).toFixed(2) }}
           </span>
           <span
             v-if="card.discounted_price"
@@ -56,9 +56,15 @@
     </div>
     <button
       class="flex justify-center w-full leading-none tracking-[-0.3px] px-14 pt-3.5 pb-[18px] bg-appText text-white transition-colors duration-300 hover:bg-appText/80"
+      :disabled="isLoading"
       @click="addToCart"
     >
-      Add to cart
+      <span> Add to cart </span>
+      <LoadingIcon
+        v-if="isLoading"
+        class="w-3.5 h-3.5 ml-3 mt-0.5 animate-spin"
+        :font-controlled="false"
+      />
     </button>
   </div>
 </template>
@@ -67,6 +73,7 @@
 import { BCMSImage } from '~~/bcms-components';
 import { ProductSizeEntryMeta } from '~~/bcms/types';
 import { ProductLite } from '~~/types';
+import LoadingIcon from '@/assets/icons/loader.svg';
 
 const props = defineProps({
   card: {
@@ -77,19 +84,25 @@ const props = defineProps({
 
 const { addCartItem } = useCart();
 
+const isLoading = ref(false);
+
 const emptySizeError = ref('');
 const selectedSize = ref<ProductSizeEntryMeta>();
 
 const addToCart = () => {
   if (selectedSize.value) {
-    addCartItem({
-      slug: props.card.slug,
-      title: props.card.title,
-      size: selectedSize.value,
-      cover: props.card.cover,
-      price: props.card.discounted_price || props.card.price,
-      color: props.card.color,
-    });
+    isLoading.value = true;
+    setTimeout(() => {
+      addCartItem({
+        slug: props.card.slug,
+        title: props.card.title,
+        size: selectedSize.value as ProductSizeEntryMeta,
+        cover: props.card.cover,
+        price: props.card.discounted_price || props.card.price,
+        color: props.card.color,
+      });
+      isLoading.value = false;
+    }, 750);
   } else {
     emptySizeError.value = 'Please select a size';
   }

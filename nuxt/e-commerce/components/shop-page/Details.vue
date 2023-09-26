@@ -37,9 +37,15 @@
       </button>
       <button
         class="flex justify-center w-full leading-none tracking-[-0.3px] px-14 pt-3.5 pb-[18px] bg-white border border-appText transition-colors duration-300 hover:bg-appText hover:text-white"
+        :disabled="isLoading"
         @click="addToCart()"
       >
-        Add to cart
+        <span> Add to cart </span>
+        <LoadingIcon
+          v-if="isLoading"
+          class="w-3.5 h-3.5 ml-3 mt-0.5 animate-spin"
+          :font-controlled="false"
+        />
       </button>
     </div>
     <div class="mb-8">
@@ -111,6 +117,7 @@ import {
   ProductEntryMeta,
   ProductSizeEntryMeta,
 } from '~~/bcms/types';
+import LoadingIcon from '@/assets/icons/loader.svg';
 
 const props = defineProps({
   meta: {
@@ -128,20 +135,27 @@ defineEmits(['colorChange']);
 const { addCartItem } = useCart();
 const router = useRouter();
 
+const isLoading = ref(false);
+
 const buy = () => {
   addToCart(true);
 };
 
 const addToCart = (redirect?: boolean) => {
   if (selectedSize.value) {
-    addCartItem({
-      slug: props.meta.slug,
-      title: props.meta.title,
-      size: selectedSize.value || props.meta.sizes[0].size.meta.en,
-      cover: props.meta.gallery[0].image,
-      price: props.meta.discounted_price || props.meta.price,
-      color: props.activeColor.meta.en as ProductColorEntryMeta,
-    });
+    isLoading.value = true;
+    setTimeout(() => {
+      addCartItem({
+        slug: props.meta.slug,
+        title: props.meta.title,
+        size: (selectedSize.value ||
+          props.meta.sizes[0].size.meta.en) as ProductSizeEntryMeta,
+        cover: props.meta.gallery[0].image,
+        price: props.meta.discounted_price || props.meta.price,
+        color: props.activeColor.meta.en as ProductColorEntryMeta,
+      });
+      isLoading.value = false;
+    }, 750);
     if (redirect) {
       router.push('/shop/cart');
     }
