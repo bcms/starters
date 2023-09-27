@@ -68,7 +68,9 @@ const EpisodePage: React.FC<PageProps<EpisodePageData>> = ({
       const { durationInMinutes, durationInSeconds } = getFileLength(audio);
 
       setFileLength(
-        `${durationInMinutes.toString().padStart(2, '0')}:${durationInSeconds
+        `${durationInMinutes.toString().padStart(2, '0')}:${(
+          durationInSeconds % 60
+        )
           .toFixed(0)
           .padStart(2, '0')}`,
       );

@@ -70,9 +70,11 @@ const EpisodeItem: React.FC<EpisodeItemProps> = ({
     audio.addEventListener('loadedmetadata', () => {
       audioDOM.current = audio;
       const { durationInMinutes, durationInSeconds } = getFileLength(audio);
-
+      console.log({ durationInMinutes, durationInSeconds });
       setFileLength(
-        `${durationInMinutes.toString().padStart(2, '0')}:${durationInSeconds
+        `${durationInMinutes.toString().padStart(2, '0')}:${(
+          durationInSeconds % 60
+        )
           .toFixed(0)
           .padStart(2, '0')}`,
       );
