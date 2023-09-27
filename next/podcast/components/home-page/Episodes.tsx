@@ -1,5 +1,5 @@
 import { EpisodeEntryMeta, HomeEpisodesGroup } from '@/bcms/types';
-import React from 'react';
+import React, { useMemo } from 'react';
 import ContentManager from '@/components/ContentManager';
 import EpisodesItem from '@/components/episodes/Item';
 interface HomepageEpisodesProps {
@@ -11,6 +11,10 @@ const HomepageEpisodes: React.FC<HomepageEpisodesProps> = ({
   data,
   episodes,
 }) => {
+  const sortedEpisodes = useMemo(() => {
+    return episodes.sort((a, b) => b.date - a.date);
+  }, [episodes]);
+
   return (
     <section
       id="episodes"
@@ -28,7 +32,7 @@ const HomepageEpisodes: React.FC<HomepageEpisodesProps> = ({
                 lg:text-xl lg:leading-none lg:max-w-none lg:mb-16"
         />
         <div className="grid grid-cols-1 rounded-2xl bg-[#383838]/80 overflow-hidden space-y-px">
-          {episodes.map((episode, index) => (
+          {sortedEpisodes.map((episode, index) => (
             <EpisodesItem
               key={index}
               item={episode}
