@@ -13,7 +13,7 @@ const LegalPage: React.FC<PageProps<LegalPageData>> = ({
 }) => {
   return (
     <PageWrapper
-      defaultTitle="legal"
+      defaultTitle="Legal"
       page={page}
       header={header}
       footer={footer}
