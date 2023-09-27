@@ -31,7 +31,7 @@ const Homepage: React.FC<ExtendedProps> = ({
   return (
     <PageWrapper footer={footer} page={page} header={header}>
       <HomePageHero data={page.meta.hero} episodes={episodes?.slice(0, 3)} />
-      <HomePageEpisodes data={page.meta.hero} episodes={episodes} />
+      <HomePageEpisodes data={page.meta.episodes} episodes={episodes} />
     </PageWrapper>
   );
 };
