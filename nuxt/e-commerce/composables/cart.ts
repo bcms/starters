@@ -22,8 +22,8 @@ export function useCart() {
     const index = cartItems.value.findIndex(
       (cartItem) =>
         cartItem.item.slug === item.slug &&
-        cartItem.item.size === item.size &&
-        cartItem.item.color === item.color,
+        cartItem.item.size.title === item.size.title &&
+        cartItem.item.color.title === item.color.title,
     );
     if (index > -1) {
       cartItems.value[index].amount++;

@@ -559,5 +559,39 @@
     "caption": "",
     "height": 3456,
     "width": 5184
+  },
+  "6513e2ca93ea55231bd20d7e": {
+    "_id": "6513e2ca93ea55231bd20d7e",
+    "createdAt": 1695802058783,
+    "updatedAt": 1695802058783,
+    "hasChildren": true,
+    "isInRoot": false,
+    "mimetype": "dir",
+    "name": "fusion-frames",
+    "parentId": "650c1a1593cfd8229365ed4a",
+    "size": 0,
+    "type": "DIR",
+    "userId": "111111111111111111111111",
+    "altText": "",
+    "caption": "",
+    "height": -1,
+    "width": -1
+  },
+  "6513e2d493ea55231bd20d7f": {
+    "_id": "6513e2d493ea55231bd20d7f",
+    "createdAt": 1695802069283,
+    "updatedAt": 1695802069283,
+    "hasChildren": false,
+    "isInRoot": false,
+    "mimetype": "image/jpeg",
+    "name": "image-1.jpg",
+    "parentId": "6513e2ca93ea55231bd20d7e",
+    "size": 130851,
+    "type": "IMG",
+    "userId": "111111111111111111111111",
+    "altText": "",
+    "caption": "",
+    "height": 3558,
+    "width": 3558
   }
 }

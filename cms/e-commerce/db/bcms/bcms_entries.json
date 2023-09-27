@@ -3324,5 +3324,257 @@
         "plainText": ""
       }
     ]
+  },
+  "6513e0ce93ea55231bd20d7d": {
+    "_id": "6513e0ce93ea55231bd20d7d",
+    "createdAt": 1695801550834,
+    "updatedAt": 1695802158368,
+    "cid": "2b",
+    "templateId": "650c132a93cfd8229365ed2f",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "47e0c813-9a71-4417-bd7e-7710b89dc841",
+            "data": [
+              "Fusion Frames"
+            ]
+          },
+          {
+            "id": "3676f43d-b9cc-4e50-8f32-f2e5c883ef18",
+            "data": [
+              "fusion-frames"
+            ]
+          },
+          {
+            "id": "e6d42259-d391-424b-bda5-076c3e6e622c",
+            "data": {
+              "_id": "650c092e93cfd8229365ed1c",
+              "items": []
+            }
+          },
+          {
+            "id": "4f25fdfa-7ab0-40ff-aa8e-35adf4a3104f",
+            "data": {
+              "_id": "650c1f0a93cfd8229365ed65",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "090f0555-3761-4d1b-ab94-cb94b8eebf86",
+                      "data": [
+                        {
+                          "_id": "6513e2d493ea55231bd20d7f",
+                          "alt_text": "Fusion Frames",
+                          "caption": ""
+                        }
+                      ]
+                    },
+                    {
+                      "id": "521ad000-4ab8-4c09-acd0-038b83f17038",
+                      "data": [
+                        {
+                          "tid": "650c14de93cfd8229365ed31",
+                          "eid": "6513e31493ea55231bd20d80"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "b7caa517-7134-4dc1-abdd-b4bf0406af5f",
+            "data": [
+              229.99
+            ]
+          },
+          {
+            "id": "ecc3c7a8-d79a-4000-b4f1-763657089b94",
+            "data": [
+              199.99
+            ]
+          },
+          {
+            "id": "6d28fe23-be02-48f4-adb0-16f63c105f59",
+            "data": [
+              {
+                "id": "6dba977a-3a6d-40a7-8db8-4c5907ad98d5",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Fusion Frames glasses redefine eyewear with a perfect blend of style and comfort. These innovative frames are designed to cater to individuals who appreciate both fashion-forward aesthetics and practicality. Crafted with meticulous attention to detail, Fusion Frames seamlessly marry form and function, making them a standout choice in the world of eyewear."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Each pair of Fusion Frames boasts a sleek and modern design that effortlessly complements various face shapes and personal styles. With a wide range of frame widths, lens shapes, and temple lengths to choose from, finding your perfect fit is a breeze. The Fusion Frames collection includes options for both prescription and non-prescription lenses, catering to individuals seeking both vision correction and stylish accessories. These glasses are constructed from high-quality materials, ensuring durability and long-lasting wear, while their lightweight design ensures comfort throughout the day. Whether you're looking to make a fashion statement or simply need reliable eyewear for daily use, Fusion Frames glasses offer a harmonious fusion of elegance and functionality. Elevate your eyewear game with Fusion Frames and experience the ultimate blend of style and comfort."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "c809f2a1-5f60-40e8-b80d-a5d17153d025",
+            "data": {
+              "_id": "650c155693cfd8229365ed3b",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "7dd4f70b-0cae-4dd8-9137-c0f2a17a542d",
+                      "data": [
+                        {
+                          "tid": "650c14cb93cfd8229365ed30",
+                          "eid": "650c14e993cfd8229365ed33"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "c8dc3f02-105d-43ad-ae21-c44bf49a6343",
+                      "data": [
+                        true
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "7dd4f70b-0cae-4dd8-9137-c0f2a17a542d",
+                      "data": [
+                        {
+                          "tid": "650c14cb93cfd8229365ed30",
+                          "eid": "650c14ee93cfd8229365ed34"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "c8dc3f02-105d-43ad-ae21-c44bf49a6343",
+                      "data": [
+                        true
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "7dd4f70b-0cae-4dd8-9137-c0f2a17a542d",
+                      "data": [
+                        {
+                          "tid": "650c14cb93cfd8229365ed30",
+                          "eid": "650c14f393cfd8229365ed35"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "c8dc3f02-105d-43ad-ae21-c44bf49a6343",
+                      "data": [
+                        true
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "048f2c75-5908-43e4-a45d-48b89698ab0d",
+            "data": [
+              {
+                "tid": "650c181693cfd8229365ed47",
+                "eid": "650c181e93cfd8229365ed48"
+              }
+            ]
+          },
+          {
+            "id": "76da90c5-edf8-491f-a95c-07676caa4332",
+            "data": [
+              {
+                "tid": "650c0cbf93cfd8229365ed1f",
+                "eid": "650c1a5e93cfd8229365ed56"
+              }
+            ]
+          },
+          {
+            "id": "56595ee2-6d3b-4b1e-9232-db832e2fd627",
+            "data": [
+              {
+                "tid": "650c1a8a93cfd8229365ed58",
+                "eid": "650c1aae93cfd8229365ed5a"
+              }
+            ]
+          },
+          {
+            "id": "6bf8385a-ae0d-4816-ac0e-4dd1241d5f9f",
+            "data": [
+              31
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "6513e31493ea55231bd20d80": {
+    "_id": "6513e31493ea55231bd20d80",
+    "createdAt": 1695802132326,
+    "updatedAt": 1695802132326,
+    "cid": "2c",
+    "templateId": "650c14de93cfd8229365ed31",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "b68aaa76-75e6-415b-89d0-914bf402ef43",
+            "data": [
+              "Rose"
+            ]
+          },
+          {
+            "id": "1c89d0cd-23f4-4cbd-a827-23b1d29dd61c",
+            "data": [
+              "rose"
+            ]
+          },
+          {
+            "id": "17ae7aff-2566-46ef-8f77-68ea2d4c80e8",
+            "data": [
+              "#e6c2a4"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
   }
 }
