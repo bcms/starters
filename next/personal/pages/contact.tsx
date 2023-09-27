@@ -26,17 +26,48 @@ const ContactPage: React.FC<PageProps<ContactPageData>> = ({
     message: '',
   });
 
+  const [formErrors, setFormErrors] = useState<
+    Record<keyof Omit<ContactForm, 'phone'>, boolean>
+  >({
+    fullName: false,
+    email: false,
+    message: false,
+  });
+
   const me = useRef({
     phone: '(+1) 734 8123 8162',
     email: 'qwerty@mail.com',
   });
 
-  // const handleSubmit = (e: any) => {
-  //   //
-  // };
-
   const handleUpdateForm = (field: keyof ContactForm, value: string): void => {
     setForm((prev) => ({ ...prev, [field]: value }));
+  };
+
+  const handleFormSubmit = () => {
+    // Reset form errors
+    setFormErrors({
+      fullName: false,
+      email: false,
+      message: false,
+    });
+
+    // Validate form fields
+    const errors: Record<string, boolean> = {};
+    if (!form.fullName) {
+      errors.fullName = true;
+    }
+    if (!form.email) {
+      errors.email = true;
+    }
+    if (!form.message) {
+      errors.message = true;
+    }
+
+    if (Object.keys(errors).length > 0) {
+      setFormErrors(errors);
+    } else {
+      // Submit the form if there are no errors
+    }
   };
   return (
     <PageWrapper page={page} header={header} footer={footer}>
@@ -47,10 +78,7 @@ const ContactPage: React.FC<PageProps<ContactPageData>> = ({
             className="mb-10 md:mb-20 lg:mb-[192px]"
             titleClassName="text-[114px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[190px] md:text-[220px] lg:text-[300px] lg:tracking-[5.59px] xl:text-[464px]"
           />
-          <form
-            className="md:grid md:grid-cols-2 md:gap-x-[72px]"
-            // onSubmit={handleSubmit}
-          >
+          <form className="md:grid md:grid-cols-2 md:gap-x-[72px]">
             <FormText
               value={me.current.phone}
               label="Phone number"
@@ -70,6 +98,7 @@ const ContactPage: React.FC<PageProps<ContactPageData>> = ({
               please fill in the form below.
             </div>
             <FormText
+              error={formErrors.fullName}
               value={form.fullName}
               label="Fill your name"
               placeholder="Full name"
@@ -77,6 +106,7 @@ const ContactPage: React.FC<PageProps<ContactPageData>> = ({
               onChange={(value) => handleUpdateForm('fullName', value)}
             />
             <FormText
+              error={formErrors.email}
               value={form.email}
               onChange={(value) => handleUpdateForm('email', value)}
               type="email"
@@ -85,6 +115,7 @@ const ContactPage: React.FC<PageProps<ContactPageData>> = ({
               className="mb-5 lg:mb-4"
             />
             <FormText
+              error={formErrors.message}
               value={form.message}
               onChange={(value) => handleUpdateForm('message', value)}
               label="Write me a message"
@@ -94,7 +125,7 @@ const ContactPage: React.FC<PageProps<ContactPageData>> = ({
             <button
               type="button"
               className="flex items-center justify-center px-4 py-[9px] border rounded-[32px] text-white border-appText bg-appText max-w-max lg:px-7 lg:py-3"
-              // onClick={handleSubmit}
+              onClick={() => handleFormSubmit()}
             >
               <span>Submit</span>
             </button>

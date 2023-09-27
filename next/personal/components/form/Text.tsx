@@ -12,6 +12,8 @@ interface FormTextProps {
   onChange?: (value: string) => void;
 
   className?: string;
+
+  error?: boolean;
 }
 const FormText: React.FC<FormTextProps> = ({
   onChange,
@@ -21,6 +23,7 @@ const FormText: React.FC<FormTextProps> = ({
   isReadOnly,
   placeholder,
   className,
+  error = false,
 }) => {
   const handleInput = (
     event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -33,7 +36,12 @@ const FormText: React.FC<FormTextProps> = ({
   return (
     <label className={classNames('flex flex-col', className)}>
       {label && (
-        <div className="text-sm leading-none tracking-[-0.41px] pb-3 border-b border-[#D9D9D9] transition-colors duration-300 lg:text-base lg:leading-none lg:pb-4">
+        <div
+          className={classNames(
+            'text-sm leading-none tracking-[-0.41px] pb-3 border-b border-[#D9D9D9] transition-colors duration-300 lg:text-base lg:leading-none lg:pb-4',
+            { 'text-red-500': error },
+          )}
+        >
           {label}
         </div>
       )}
