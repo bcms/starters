@@ -17,10 +17,15 @@ export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
 
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
-  const title = defaultTitle ?? page?.meta?.title;
-  const description = '';
+  const title = defaultTitle ?? page?.meta?.title ?? 'Personal Website';
+  const description =
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    page?.meta.seo?.description ??
+    'Jumpstart your Nuxt project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
+
   const image = '/thumbnail.jpg';
-  const domain = 'http://localhost:3000';
+  const domain = 'https://personal-nuxt.thebcms.com';
   return (
     <div className="overflow-hidden">
       <Head>
@@ -49,6 +54,18 @@ export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
           rel="stylesheet"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
         />
       </Head>
       <Header data={header} />
