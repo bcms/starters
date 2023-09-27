@@ -191,6 +191,8 @@ const props = defineProps({
   },
 });
 
+const route = useRoute();
+
 const loadedProducts = ref(12);
 
 const loadMore = () => {
@@ -320,5 +322,12 @@ onMounted(() => {
       type: 'brand',
     });
   });
+  const queryCategory = route.query.category;
+  const category = filters.value.find(
+    (e) => e.type === 'category' && e.value === queryCategory,
+  );
+  if (queryCategory && category) {
+    category.active = true;
+  }
 });
 </script>

@@ -24,7 +24,9 @@
           </h2>
         </div>
         <NuxtLink
-          :to="`/shop?category=${category.meta.slug}`"
+          :to="`/shop${
+            category.productsCount > 0 ? '?category=' + category.meta.slug : ''
+          }`"
           class="absolute z-10 inset-0 bg-black/60 flex flex-col items-center justify-center text-center transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100"
         >
           <div class="text-white text-[28px] leading-none mb-6 md:text-[32px]">
