@@ -1,6 +1,6 @@
 <template>
   <div
-    class="grid grid-cols-1 gap-x-8 gap-y-10 items-start lg:grid-cols-[198px,1fr] lg:grid-rows-[repeat(2,auto)]"
+    class="grid grid-cols-1 gap-x-8 gap-y-10 items-start lg:grid-cols-[198px,1fr] lg:grid-rows-[auto,1fr]"
   >
     <div class="lg:row-span-2 sticky top-0">
       <div class="grid grid-cols-1 gap-8 border border-appGray-300 p-8">
@@ -105,48 +105,41 @@
         </button>
       </div>
       <div v-if="activeFilters.length > 0" class="flex flex-wrap gap-4 mt-6">
-        <TransitionGroup name="fade">
-          <button
-            v-for="(filter, index) in activeFilters"
-            :key="index"
-            class="flex items-center gap-2 px-3 py-2 border border-appGray-300 leading-none tracking-[-0.3px] text-appGray-500 transition-colors duration-300 hover:text-appGray-800"
-            @click="filter.active = false"
+        <button
+          v-for="(filter, index) in activeFilters"
+          :key="index"
+          class="flex items-center gap-2 px-3 py-2 border border-appGray-300 leading-none tracking-[-0.3px] text-appGray-500 transition-colors duration-300 hover:text-appGray-800"
+          @click="filter.active = false"
+        >
+          <span class="mb-1">{{ filter.label }}</span>
+          <svg
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-4 h-4"
           >
-            <span class="mb-1">{{ filter.label }}</span>
-            <svg
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-4 h-4"
-            >
-              <g id="cancel">
-                <mask
-                  id="mask0_1616_67979"
-                  style="mask-type: alpha"
-                  maskUnits="userSpaceOnUse"
-                  x="0"
-                  y="0"
-                  width="16"
-                  height="16"
-                >
-                  <rect
-                    id="Bounding box"
-                    width="16"
-                    height="16"
-                    fill="#D9D9D9"
-                  />
-                </mask>
-                <g mask="url(#mask0_1616_67979)">
-                  <path
-                    id="cancel_2"
-                    d="M5.59967 11.332L7.99967 8.93203L10.3997 11.332L11.333 10.3987L8.93301 7.9987L11.333 5.5987L10.3997 4.66536L7.99967 7.06536L5.59967 4.66536L4.66634 5.5987L7.06634 7.9987L4.66634 10.3987L5.59967 11.332ZM7.99967 14.6654C7.07745 14.6654 6.21079 14.4904 5.39967 14.1404C4.58856 13.7904 3.88301 13.3154 3.28301 12.7154C2.68301 12.1154 2.20801 11.4098 1.85801 10.5987C1.50801 9.78759 1.33301 8.92092 1.33301 7.9987C1.33301 7.07648 1.50801 6.20981 1.85801 5.3987C2.20801 4.58759 2.68301 3.88203 3.28301 3.28203C3.88301 2.68203 4.58856 2.20703 5.39967 1.85703C6.21079 1.50703 7.07745 1.33203 7.99967 1.33203C8.9219 1.33203 9.78856 1.50703 10.5997 1.85703C11.4108 2.20703 12.1163 2.68203 12.7163 3.28203C13.3163 3.88203 13.7913 4.58759 14.1413 5.3987C14.4913 6.20981 14.6663 7.07648 14.6663 7.9987C14.6663 8.92092 14.4913 9.78759 14.1413 10.5987C13.7913 11.4098 13.3163 12.1154 12.7163 12.7154C12.1163 13.3154 11.4108 13.7904 10.5997 14.1404C9.78856 14.4904 8.9219 14.6654 7.99967 14.6654Z"
-                    fill="#1C1B1F"
-                  />
-                </g>
+            <g id="cancel">
+              <mask
+                id="mask0_1616_67979"
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="16"
+                height="16"
+              >
+                <rect id="Bounding box" width="16" height="16" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_1616_67979)">
+                <path
+                  id="cancel_2"
+                  d="M5.59967 11.332L7.99967 8.93203L10.3997 11.332L11.333 10.3987L8.93301 7.9987L11.333 5.5987L10.3997 4.66536L7.99967 7.06536L5.59967 4.66536L4.66634 5.5987L7.06634 7.9987L4.66634 10.3987L5.59967 11.332ZM7.99967 14.6654C7.07745 14.6654 6.21079 14.4904 5.39967 14.1404C4.58856 13.7904 3.88301 13.3154 3.28301 12.7154C2.68301 12.1154 2.20801 11.4098 1.85801 10.5987C1.50801 9.78759 1.33301 8.92092 1.33301 7.9987C1.33301 7.07648 1.50801 6.20981 1.85801 5.3987C2.20801 4.58759 2.68301 3.88203 3.28301 3.28203C3.88301 2.68203 4.58856 2.20703 5.39967 1.85703C6.21079 1.50703 7.07745 1.33203 7.99967 1.33203C8.9219 1.33203 9.78856 1.50703 10.5997 1.85703C11.4108 2.20703 12.1163 2.68203 12.7163 3.28203C13.3163 3.88203 13.7913 4.58759 14.1413 5.3987C14.4913 6.20981 14.6663 7.07648 14.6663 7.9987C14.6663 8.92092 14.4913 9.78759 14.1413 10.5987C13.7913 11.4098 13.3163 12.1154 12.7163 12.7154C12.1163 13.3154 11.4108 13.7904 10.5997 14.1404C9.78856 14.4904 8.9219 14.6654 7.99967 14.6654Z"
+                  fill="#1C1B1F"
+                />
               </g>
-            </svg>
-          </button>
-        </TransitionGroup>
+            </g>
+          </svg>
+        </button>
       </div>
     </div>
     <div class="lg:col-start-2">
