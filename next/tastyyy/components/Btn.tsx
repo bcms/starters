@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Transition } from 'react-transition-group';
+import { CSSTransition } from 'react-transition-group';
 import Link from 'next/link';
 import ArrowIcon from '@/assets/icons/arrow.svg';
 import classnames from 'classnames';
@@ -56,13 +56,17 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({
           <a className={linkClasses}>
             {children}
             {isArrowVisible && (
-              <Transition in={isArrowVisible && !hideArrow} timeout={1000}>
+              <CSSTransition
+                classNames="scaleBtnArrow"
+                in={isArrowVisible && !hideArrow}
+                timeout={1000}
+              >
                 <ArrowIcon
                   className={classnames(
                     'w-[14px] h-[14px] opacity-0 ml-2 transition-all duration-300 group-hover:opacity-100',
                   )}
                 />
-              </Transition>
+              </CSSTransition>
             )}
           </a>
         </Link>
@@ -72,13 +76,17 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({
           onClick={onClick}
         >
           {children}
-          <Transition in={isArrowVisible && !hideArrow} timeout={1000}>
+          <CSSTransition
+            classNames="scaleBtnArrow"
+            in={isArrowVisible && !hideArrow}
+            timeout={1000}
+          >
             <ArrowIcon
               className={classnames(
                 'w-[14px] h-[14px] opacity-0 ml-2 transition-all duration-300 group-hover:opacity-100',
               )}
             />
-          </Transition>
+          </CSSTransition>
         </button>
       )}
     </div>

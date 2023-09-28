@@ -21,12 +21,12 @@ export const PageWrapper: FC<ExtendedProps> = ({
   const title =
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
-    defaultTitle ?? page?.meta?.title ?? page?.meta.seo?.title ?? '';
+    defaultTitle ?? page?.meta?.title ?? page?.meta?.seo?.title ?? '';
 
   const description =
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
-    page?.meta.seo?.description ??
+    page?.meta?.seo?.description ??
     'Jumpstart your Nuxt project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
   const image = '/thumbnail.jpg';
   const domain = 'https://tastyyy-next.thebcms.com';

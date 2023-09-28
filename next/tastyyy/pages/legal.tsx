@@ -13,7 +13,12 @@ const LegalPage: React.FC<PageProps<LegalPageData>> = ({
   page,
 }) => {
   return (
-    <PageWrapper page={page} header={header} footer={footer}>
+    <PageWrapper
+      defaultTitle="Legal"
+      page={page}
+      header={header}
+      footer={footer}
+    >
       <section className="pt-[108px] pb-10 overflow-hidden md:pb-20 lg:pt-[218px] lg:pb-[120px]">
         <div className="container max-w-[1198px]">
           <ArchWithStar />
