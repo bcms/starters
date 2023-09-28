@@ -1,5 +1,5 @@
 <template>
-  <header class="relative z-50">
+  <header class="fixed top-0 left-0 w-full bg-white z-50">
     <div class="relative z-10 container">
       <nav class="relative flex items-center justify-between py-6 md:py-8">
         <NuxtLink to="/" class="flex">
