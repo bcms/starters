@@ -1,0 +1,18 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.scaleBtnArrow-enter-active,
+.scaleBtnArrow-leave-active {
+  transition: opacity 0.2s ease, width 0.2s ease;
+}
+.scaleBtnArrow-enter-from,
+.scaleBtnArrow-leave-to {
+  opacity: 0;
+  width: 0;
+}
