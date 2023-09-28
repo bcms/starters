@@ -170,15 +170,22 @@ body {
   display: flex !important;
 }
 
-
 .aboutHero--title h1 {
-  @apply flex flex-col gap-1.5 lg:gap-3;
-
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.375rem !important;
 }
+
+@media (min-width: 1024px) {
+  .aboutHero--title h1 {
+    gap: 0.75rem !important;
+  }
+}
+
 .aboutHero--title u {
   @apply no-underline;
 }
 
-.aboutHero--title u br ~ u {
-  @apply text-right;
+.aboutHero--title u + br + u {
+  text-align: right !important;
 }
