@@ -24,7 +24,7 @@ const AboutPageTextImage: React.FC<AboutPageTextImageProps> = ({ data }) => {
                 />
                 <ContentManager
                   item={col.text}
-                  className="text-xs leading-[1.3] tracking-[-0.41px] uppercase text-appGray-700 md:flex-1 lg:text-[22px] lg:leading-[1.3]"
+                  parentClassName="text-xs leading-[1.3] tracking-[-0.41px] uppercase text-appGray-700 md:flex-1 lg:text-[22px] lg:leading-[1.3]"
                 />
               </div>
             ))}

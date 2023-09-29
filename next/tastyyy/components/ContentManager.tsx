@@ -9,12 +9,15 @@ interface Props {
   widgetComponents?: BCMSWidgetComponents;
 
   className?: string;
+
+  parentClassName?: string;
 }
 
 const ContentManager: React.FC<Props> = ({
   item,
   widgetComponents,
-  className = {},
+  className = '',
+  parentClassName = '',
 }) => {
   const managerDOM = useRef<HTMLDivElement>(null);
   const router = useRouter();
@@ -44,7 +47,7 @@ const ContentManager: React.FC<Props> = ({
   }, []);
 
   return (
-    <div ref={managerDOM}>
+    <div ref={managerDOM} className={parentClassName}>
       <BCMSContentManager
         className={className as string}
         items={item}

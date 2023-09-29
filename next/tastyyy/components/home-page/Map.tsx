@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { CSSTransition } from 'react-transition-group';
+import { Transition } from 'react-transition-group';
 import Btn from '@/components/Btn';
 import classnames from 'classnames';
 import { BCMSPropMediaDataParsed } from '@becomes/cms-client/types';
@@ -12,6 +12,8 @@ const HomepageMap: React.FC<HomepageMapProps> = ({ map }) => {
   const [showMap, setShowMap] = useState<boolean>(false);
 
   const mapRef = useRef<HTMLDivElement | null>(null);
+
+  const transitionRef = useRef(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -41,15 +43,20 @@ const HomepageMap: React.FC<HomepageMapProps> = ({ map }) => {
       >
         Open maps
       </button>
-      {showMap && (
-        <CSSTransition
-          classNames="fade"
-          appear={true}
-          in={showMap}
-          timeout={300}
-          unmountOnExit={true}
-        >
-          <div className="absolute z-50 bottom-0 w-[calc(100vw-48px)] pointer-events-none">
+      <Transition
+        appear={true}
+        in={showMap}
+        timeout={400}
+        unmountOnExit={true}
+        nodeRef={transitionRef}
+      >
+        {(state) => (
+          <div
+            className={classnames(
+              'absolute z-50 bottom-0 w-[calc(100vw-48px)] pointer-events-none',
+              `fade-${state}`,
+            )}
+          >
             <div className="relative z-10 top-4 translate-y-full bg-[#E5E4DA] rounded-2xl p-4 pb-6 xl:p-2 xl:w-[440px]">
               <BCMSImage
                 media={map}
@@ -88,8 +95,8 @@ const HomepageMap: React.FC<HomepageMapProps> = ({ map }) => {
               onClick={() => setShowMap(false)}
             />
           </div>
-        </CSSTransition>
-      )}
+        )}
+      </Transition>
     </div>
   );
 };

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { CSSTransition } from 'react-transition-group';
+import React, { useRef, useState } from 'react';
+import { Transition } from 'react-transition-group';
 import Link from 'next/link';
 import ArrowIcon from '@/assets/icons/arrow.svg';
 import classnames from 'classnames';
@@ -25,7 +25,7 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({
   onClick,
 }) => {
   const [isArrowVisible, setIsArrowVisible] = useState(false);
-
+  const transitionRef = useRef(null);
   const handleMouseOver = () => {
     setIsArrowVisible(true);
   };
@@ -56,17 +56,22 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({
           <a className={linkClasses}>
             {children}
             {isArrowVisible && (
-              <CSSTransition
-                classNames="scaleBtnArrow"
+              <Transition
+                nodeRef={transitionRef}
                 in={isArrowVisible && !hideArrow}
                 timeout={1000}
+                appear={true}
               >
-                <ArrowIcon
-                  className={classnames(
-                    'w-[14px] h-[14px] opacity-0 ml-2 transition-all duration-300 group-hover:opacity-100',
-                  )}
-                />
-              </CSSTransition>
+                {(state) => (
+                  <ArrowIcon
+                    ref={transitionRef}
+                    className={classnames(
+                      'w-[14px] h-[14px] opacity-0 ml-2 transition-all duration-300 group-hover:opacity-100',
+                      `scaleBtnArrow-${state}`,
+                    )}
+                  />
+                )}
+              </Transition>
             )}
           </a>
         </Link>
@@ -76,17 +81,22 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({
           onClick={onClick}
         >
           {children}
-          <CSSTransition
-            classNames="scaleBtnArrow"
+          <Transition
+            nodeRef={transitionRef}
             in={isArrowVisible && !hideArrow}
             timeout={1000}
+            appear={true}
           >
-            <ArrowIcon
-              className={classnames(
-                'w-[14px] h-[14px] opacity-0 ml-2 transition-all duration-300 group-hover:opacity-100',
-              )}
-            />
-          </CSSTransition>
+            {(state) => (
+              <ArrowIcon
+                ref={transitionRef}
+                className={classnames(
+                  'w-[14px] h-[14px] opacity-0 ml-2 transition-all duration-300 group-hover:opacity-100',
+                  `scaleBtnArrow-${state}`,
+                )}
+              />
+            )}
+          </Transition>
         </button>
       )}
     </div>
