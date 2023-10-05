@@ -10,6 +10,7 @@ const fs = createFS({
 const projects = [
   'blog',
   'conference',
+  'e-commerce',
   'hospitale',
   'personal',
   'podcast',

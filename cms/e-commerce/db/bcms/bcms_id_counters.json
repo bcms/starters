@@ -1,0 +1,26 @@
+{
+  "650c08e993cfd8229365ed19": {
+    "_id": "650c08e993cfd8229365ed19",
+    "createdAt": 1695287529173,
+    "updatedAt": 1695292042643,
+    "count": 13,
+    "name": "Templates",
+    "forId": "templates"
+  },
+  "650c092e93cfd8229365ed1b": {
+    "_id": "650c092e93cfd8229365ed1b",
+    "createdAt": 1695287598027,
+    "updatedAt": 1695293194293,
+    "count": 6,
+    "name": "Groups",
+    "forId": "groups"
+  },
+  "650c0de693cfd8229365ed22": {
+    "_id": "650c0de693cfd8229365ed22",
+    "createdAt": 1695288806462,
+    "updatedAt": 1695802132326,
+    "count": 45,
+    "name": "Entries",
+    "forId": "entries"
+  }
+}

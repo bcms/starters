@@ -1,0 +1,113 @@
+{
+  "650c066e93cfd8229365ed18": {
+    "_id": "650c066e93cfd8229365ed18",
+    "createdAt": 1695286894748,
+    "updatedAt": 1695292072957,
+    "access": {
+      "templates": [
+        {
+          "_id": "650c0d1993cfd8229365ed20",
+          "name": "blog",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "650c0dc193cfd8229365ed21",
+          "name": "blog_author",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "650c16f793cfd8229365ed44",
+          "name": "footer",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "650c16e293cfd8229365ed43",
+          "name": "header",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "650c08e993cfd8229365ed1a",
+          "name": "home_page",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "650c164793cfd8229365ed3c",
+          "name": "legal",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "650c132a93cfd8229365ed2f",
+          "name": "product",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "650c0cbf93cfd8229365ed1f",
+          "name": "product_category",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "650c14de93cfd8229365ed31",
+          "name": "product_color",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "650c14cb93cfd8229365ed30",
+          "name": "product_size",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "650c181693cfd8229365ed47",
+          "name": "product_gender",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "650c1a8a93cfd8229365ed58",
+          "name": "product_brand",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        }
+      ],
+      "functions": []
+    },
+    "blocked": false,
+    "desc": "This is an API key created automatically by the BCMS CLI.",
+    "name": "Development key",
+    "secret": "12be61baeeea604f11e4e8185ae2f1774d10018e72a0c4060aae560f794308e8",
+    "userId": "111111111111111111111111"
+  }
+}
