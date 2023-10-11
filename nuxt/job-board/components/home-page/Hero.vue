@@ -10,13 +10,25 @@
               :item="item.text"
               class="text-2xl leading-[1.4] font-medium font-PlayfairDisplay tracking-[-0.41px] md:text-4xl lg:text-[80px] lg:leading-[1.1]"
             />
-            <span
+            <BCMSImage
               v-if="item.image"
               :key="index"
-              :style="{
-                backgroundImage: `url(/bcms-media${item.image.src})`,
+              :options="{
+                sizes: {
+                  exec: [
+                    {
+                      width: 176,
+                      height: 80,
+                    },
+                    {
+                      width: 352,
+                      height: 160,
+                    },
+                  ],
+                },
               }"
-              class="image w-[53px] h-6 flex-shrink-0 mx-1 translate-y-1 bg-center bg-cover lg:w-[176px] lg:h-20 lg:mx-3 lg:translate-y-3"
+              :media="item.image"
+              class="image cover w-[53px] h-6 flex-shrink-0 translate-y-1 mx-1 bg-center bg-cover lg:w-[176px] lg:h-20 lg:mx-3 lg:translate-y-3"
             />
           </template>
         </h1>
@@ -67,6 +79,9 @@ const scrollToJobs = () => {
   }
   .image {
     @apply inline-block;
+    picture {
+      @apply flex;
+    }
   }
 }
 </style>

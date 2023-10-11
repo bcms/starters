@@ -19,13 +19,25 @@
               :item="item.text"
               class="leading-normal font-medium tracking-[-0.41px] text-appGray-600 lg:text-[32px] lg:leading-normal"
             />
-            <span
+            <BCMSImage
               v-if="item.image"
               :key="index"
-              :style="{
-                backgroundImage: `url(/bcms-media${item.image.src})`,
+              :options="{
+                sizes: {
+                  exec: [
+                    {
+                      width: 112,
+                      height: 48,
+                    },
+                    {
+                      width: 224,
+                      height: 96,
+                    },
+                  ],
+                },
               }"
-              class="image w-[37px] h-4 flex-shrink-0 mx-1 translate-y-0.5 bg-center bg-cover lg:w-[112px] lg:h-12 lg:mx-3 lg:translate-y-3"
+              :media="item.image"
+              class="image cover w-[37px] h-4 flex-shrink-0 mx-1 translate-y-0.5 bg-center bg-cover lg:w-[112px] lg:h-12 lg:mx-3 lg:translate-y-3"
             />
           </template>
         </div>
@@ -99,6 +111,9 @@ useHead(() =>
   }
   .image {
     @apply inline-block;
+    picture {
+      @apply flex;
+    }
   }
   strong {
     @apply text-[#48465F];
