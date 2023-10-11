@@ -20,15 +20,15 @@ git clone https://github.com/bcms/starters.git
 ```
 
 <br/>
-<h3 align="center">Step 2: Start the CMS (Backend)</h3>
-<p align="center">This step will make sure that you are running CMS locally and in the background, which is required before starting the Nuxt.js development server.</p>
+<h3 align="center">Step 2: Start BCMS (Backend)</h3>
+<p align="center">This step will make sure that you are running BCMS locally and in the background, which is required before starting the Nuxt.js development server.</p>
 
 ```bash
 cd starters/cms/job-board
 ```
 
 <p>Run <code>docker-compose build</code> command, followed with <code>docker-compose up</code>.</p>
-<p>Your CMS instance is now up and running, and can be inspected by visiting <code>http://localhost:8080</code>.</p>
+<p>Your BCMS instance is now up and running, and can be inspected by visiting <code>http://localhost:8080</code>.</p>
 
 <br/>
 <h3 align="center">Step 3: Start Nuxt.js (Frontend)</h3>
@@ -39,7 +39,7 @@ cd starters/nuxt/job-board
 ```
 
 <p>Before anything, make sure to install node packages ( <code>npm install</code> ).</p>
-<p>Run <code>npm run dev</code> command to start the local frontend development server. This will pull the data from the CMS which is running in the background.</p>
+<p>Run <code>npm run dev</code> command to start the local frontend development server. This will pull the data from the BCMS which is running in the background.</p>
 <p>Your Nuxt app is now up and running and can be inspected by visiting <code>http://localhost:3000</code>.</p>
 
 ---
