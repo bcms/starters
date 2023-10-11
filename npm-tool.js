@@ -11,7 +11,7 @@ const projects = [
   'blog',
   'conference',
   'e-commerce',
-  'hospitale',
+  'job-board',
   'personal',
   'podcast',
   'recipes',

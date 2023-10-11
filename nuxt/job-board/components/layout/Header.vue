@@ -14,7 +14,7 @@
       <div class="pt-6 lg:py-4 lg:border-b lg:border-appGray-200">
         <div class="container">
           <div class="flex items-center justify-between">
-            <NuxtLink to="/" class="flex lg:flex-1">
+            <NuxtLink to="/" aria-label="Home page" class="flex lg:flex-1">
               <BCMSImage :media="data.logo" svg class="w-[90px] lg:w-[115px]" />
             </NuxtLink>
             <div class="flex justify-center flex-1 max-lg:hidden">
