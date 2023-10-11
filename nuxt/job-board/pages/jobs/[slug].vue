@@ -3,6 +3,24 @@
     <div class="relative mt-6 mb-10 lg:mt-0 lg:mb-[72px]">
       <BCMSImage
         :media="meta.cover"
+        :options="{
+          sizes: {
+            exec: [
+              {
+                width: 640,
+                height: 232,
+              },
+              {
+                width: 1280,
+                height: 464,
+              },
+              {
+                width: 1920,
+                height: 696,
+              },
+            ],
+          },
+        }"
         class="w-full aspect-[2.76] cover lg:aspect-[3.71]"
       />
       <div class="absolute top-0 left-0 w-full h-full bg-black/20" />
@@ -18,6 +36,16 @@
             <div class="flex items-center">
               <BCMSImage
                 :media="meta.avatar"
+                :options="{
+                  sizes: {
+                    exec: [
+                      {
+                        width: 96,
+                        height: 96,
+                      },
+                    ],
+                  },
+                }"
                 class="w-8 h-8 rounded-full cover mr-3 lg:w-12 lg:h-12 lg:mr-[14px]"
               />
               <div>

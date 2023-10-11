@@ -44,6 +44,7 @@
                 </span>
                 <BCMSImage
                   :media="btn.icon"
+                  svg
                   class="w-3 h-3 lg:w-[14px] lg:h-[14px]"
                 />
               </NuxtLink>

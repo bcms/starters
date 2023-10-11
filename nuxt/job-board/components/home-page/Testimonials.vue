@@ -35,6 +35,16 @@
           <div class="flex items-center mb-[18px]">
             <BCMSImage
               :media="slide.author.avatar"
+              :options="{
+                sizes: {
+                  exec: [
+                    {
+                      width: 80,
+                      height: 80,
+                    },
+                  ],
+                },
+              }"
               class="w-8 h-8 cover rounded-full mr-[14px] xl:w-10 xl:h-10"
             />
             <span
