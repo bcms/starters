@@ -1,7 +1,7 @@
-# BCMS Starters
-Beautiful, customizable, responsive, high-performance starters, integrated with BCMS. <br>
-Built with Tailwind. Ready-to-use. <br> <br>
+<br><br><br><h1 align="center">BCMS Starters</h1>
 
+<p align="center">Beautiful, customizable, responsive, high-performance starters, integrated with BCMS.</p>
+<p align="center">Built with Tailwind. Ready-to-use. <br> <br></p>
 
 
 <table align="center" layout="fixed" style="table-layout: fixed">
@@ -89,7 +89,7 @@ Built with Tailwind. Ready-to-use. <br> <br>
         />
         <div>
           <h4>Restaurant starter</h4>
-          <a href="https://restaurant-nuxt.thebcms.com/">Live preview ⤴️</a><br>
+          <a href="https://tastyyy-nuxt.thebcms.com/">Live preview ⤴️</a><br>
           <hr>
           Available in:<br>
           <a href="/nuxt/restaurant">Nuxt.js</a> | Gatsby.js | <a href="/next/restaurant">Next.js</a><br><br>
@@ -107,10 +107,11 @@ Built with Tailwind. Ready-to-use. <br> <br>
           <a href="/nuxt/podcast">Nuxt.js</a> | Gatsby.js | <a href="/next/podcast">Next.js</a><br><br>
         </div>
       </td>
+      <td></td>
     </tr>
   </tbody>
 </table>
-
+<br><br>
 <h2 align="center">Support ❤️</h2>
 <p align="center">
   If you like the project, hit that ⭐ button !!1
