@@ -19,8 +19,8 @@ export const Header: FC<Props> = ({ data }) => {
     <header className="relative z-50">
       <div className="relative z-10 container">
         <nav className="relative flex items-center justify-between pt-6">
-          <NextLink href="/" className="flex">
-            <a>
+          <NextLink href="/">
+            <a className="flex" aria-label="Home page">
               <BCMSImage
                 media={data.logo}
                 svg
@@ -49,6 +49,7 @@ export const Header: FC<Props> = ({ data }) => {
           </ul>
           <button
             className="flex md:hidden"
+            aria-label="Toggle mobile menu"
             onClick={() => setShowMobileMenu(!showMobileMenu)}
           >
             {showMobileMenu ? (

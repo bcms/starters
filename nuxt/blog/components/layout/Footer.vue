@@ -31,6 +31,7 @@
             </label>
             <button
               type="submit"
+              aria-label="Submit"
               class="flex items-center justify-center w-6 h-6 bg-appText rounded-full flex-shrink-0 md:w-10 md:h-10"
             >
               <PaperPlaneIcon class="w-2.5 h-2.5 md:w-4 md:h-4" />
@@ -44,12 +45,14 @@
               :key="index"
               :to="link.url"
               target="_blank"
+              rel="noopener noreferrer"
+              :aria-label="link.icon.alt_text"
               class="flex items-center justify-center w-[135px] rounded-full bg-appText aspect-square md:w-[54px]"
             >
               <BCMSImage
                 :media="link.icon"
+                svg
                 class="w-10 h-10 cover md:w-6 md:h-6"
-                :svg="true"
               />
             </NuxtLink>
           </div>

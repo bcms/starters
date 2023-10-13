@@ -30,6 +30,7 @@ export const Search: FC<Props> = ({ value, onEnter, onChange, className }) => {
     >
       <NextImage
         src={SearchIcon}
+        alt="Search"
         className="w-[14px] h-[14px] mr-1.5 md:w-6 md:h-6 md:mr-2.5 lg:w-8 lg:h-6 lg:mr-[14px]"
       />
       <label className="w-full">

@@ -40,6 +40,24 @@ const AboutMe: FC<PageProps<AboutPageData>> = (props) => {
           <div className="relative aspect-[2.07] rounded-lg overflow-hidden mb-6 lg:aspect-[2.43] lg:rounded-2xl lg:mb-8">
             <BCMSImage
               media={props.page.meta.cover}
+              options={{
+                sizes: {
+                  exec: [
+                    {
+                      width: 660,
+                      height: 320,
+                    },
+                    {
+                      width: 960,
+                      height: 400,
+                    },
+                    {
+                      width: 1344,
+                      height: 554,
+                    },
+                  ],
+                },
+              }}
               className="w-full h-full cover"
             />
             <div className="absolute top-0 left-0 w-full h-full bg-black/50" />

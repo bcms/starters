@@ -43,6 +43,24 @@ const SingleBlogPage: FC<PageProps<BlogPageData>> = (props) => {
             </div>
             <BCMSImage
               media={props.page.meta.cover}
+              options={{
+                sizes: {
+                  exec: [
+                    {
+                      width: 660,
+                      height: 320,
+                    },
+                    {
+                      width: 960,
+                      height: 400,
+                    },
+                    {
+                      width: 1344,
+                      height: 554,
+                    },
+                  ],
+                },
+              }}
               className="aspect-[2.07] rounded-lg overflow-hidden w-full cover mb-6 md:mb-8 lg:aspect-[2.43]
                         lg:rounded-2xl lg:mb-12"
             />
@@ -68,6 +86,7 @@ const SingleBlogPage: FC<PageProps<BlogPageData>> = (props) => {
                   </span>
                   <NextImage
                     src={ArrowIcon}
+                    alt="Arrow"
                     className="w-[14px] h-[14px] md:w-4 md:h-4 lg:w-5 lg:h-5"
                   />
                 </a>
