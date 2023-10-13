@@ -15,15 +15,35 @@ export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
   const routePath = useMemo(() => router.asPath, [router.asPath]);
 
   const title = page?.meta?.title ?? '';
-  const description = '';
+  const description =
+    'Jumpstart your Next project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
   const image = '/thumbnail.jpg';
-  const domain = 'http://localhost:3000';
+  const domain = 'https://job-board-starter.thebcms.com/';
   return (
     <div className="overflow-hidden">
       <Head>
         <title>{title}</title>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="description" content={description} />
-        <meta property="og:site_name" content={`${title} - Insightful Ink`} />
+        <meta property="og:site_name" content={`${title} - Hospitale`} />
         <meta property="og:type" content="website" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta
@@ -31,11 +51,13 @@ export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
           property="og:url"
           content={`${domain}${routePath}`}
         />
-        <meta property="og:title" content={`${title} - Insightful Ink`} />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta property="og:title" content={`${title} - Hospitale`} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
         <meta property="twitter:url" content={`${domain}${routePath}`} />
-        <meta property="twitter:title" content={`${title} - Insightful Ink`} />
+        <meta property="twitter:title" content={`${title} - Hospitale`} />
         <meta property="twitter:description" content={description} />
         <meta property="twitter:image" content={image} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

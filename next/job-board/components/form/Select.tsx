@@ -57,6 +57,7 @@ const Dropdown: FC<DropdownProps> = ({
           </span>
           <NextImage
             src={ChevronIcon}
+            alt="Icon"
             className={classNames(
               'w-[14px] h-[14px] transition-transform duration-300',
               {

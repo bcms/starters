@@ -88,7 +88,11 @@ const SearchInput: FC<SearchInputProps> = ({
         className,
       )}
     >
-      <NextImage src={icon} className="w-[14px] h-[14px] flex-shrink-0" />
+      <NextImage
+        src={icon}
+        alt="Search"
+        className="w-[14px] h-[14px] flex-shrink-0"
+      />
       <input
         value={searchValue.toLowerCase()}
         type="text"

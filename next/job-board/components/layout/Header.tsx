@@ -26,7 +26,7 @@ const Header: FC<HeaderProps> = ({ data }) => {
           <div className="container">
             <div className="flex items-center justify-between">
               <Link href="/">
-                <a className="flex lg:flex-1">
+                <a className="flex lg:flex-1" aria-label="Home page">
                   <BCMSImage
                     media={data.logo}
                     svg
@@ -55,6 +55,7 @@ const Header: FC<HeaderProps> = ({ data }) => {
                       </span>
                       <BCMSImage
                         media={btn.icon}
+                        svg
                         className="w-3 h-3 lg:w-[14px] lg:h-[14px]"
                       />
                     </a>

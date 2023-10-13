@@ -40,7 +40,11 @@ const Select: React.FC<SelectProps> = ({
         onClick={() => setShowOptions(!showOptions)}
       >
         <div className="flex items-center">
-          <NextImage src={icon} className="w-[14px] h-[14px] mr-1.5" />
+          <NextImage
+            src={icon}
+            alt="Icon"
+            className="w-[14px] h-[14px] mr-1.5"
+          />
           <span
             className={classnames(
               'text-sm leading-none font-medium tracking-[-0.41px] transition-colors duration-300',
@@ -54,6 +58,7 @@ const Select: React.FC<SelectProps> = ({
         </div>
         <NextImage
           src={ChevronIcon}
+          alt="Icon"
           className={classnames(
             'w-[14px] h-[14px] transition-transform duration-300',
             {

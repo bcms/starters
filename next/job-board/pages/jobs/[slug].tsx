@@ -49,6 +49,24 @@ const JobPage: React.FC<PageProps<JobPageData>> = ({
       <div className="relative mt-6 mb-10 lg:mt-0 lg:mb-[72px]">
         <BCMSImage
           media={meta.cover}
+          options={{
+            sizes: {
+              exec: [
+                {
+                  width: 640,
+                  height: 232,
+                },
+                {
+                  width: 1280,
+                  height: 464,
+                },
+                {
+                  width: 1920,
+                  height: 696,
+                },
+              ],
+            },
+          }}
           className="w-full aspect-[2.76] cover lg:aspect-[3.71]"
         />
         <div className="absolute top-0 left-0 w-full h-full bg-black/20" />
@@ -60,6 +78,16 @@ const JobPage: React.FC<PageProps<JobPageData>> = ({
               <div className="flex items-center">
                 <BCMSImage
                   media={meta.avatar}
+                  options={{
+                    sizes: {
+                      exec: [
+                        {
+                          width: 96,
+                          height: 96,
+                        },
+                      ],
+                    },
+                  }}
                   className="w-8 h-8 rounded-full cover mr-3 lg:w-12 lg:h-12 lg:mr-[14px]"
                 />
                 <div>
@@ -69,6 +97,7 @@ const JobPage: React.FC<PageProps<JobPageData>> = ({
                   <div className="flex items-center">
                     <NextImage
                       src={LocationIcon}
+                      alt="Icon"
                       className="w-3 h-3 flex-shrink-0 text-appGray-600 mr-1 lg:w-[14px] lg:h-[14px]"
                     />
                     <span className="text-xs leading-none font-medium tracking-[-0.41px] text-appGray-600 lg:text-sm lg:leading-none">
@@ -90,8 +119,8 @@ const JobPage: React.FC<PageProps<JobPageData>> = ({
                   </span>
                 </div>
                 <ContentManager
-                    item={meta.description_extended}
-                    className="job--rt text-xs leading-normal font-medium tracking-[-0.41px] text-appGray-500 lg:text-base lg:leading-normal"
+                  item={meta.description_extended}
+                  className="job--rt text-xs leading-normal font-medium tracking-[-0.41px] text-appGray-500 lg:text-base lg:leading-normal"
                 />
               </div>
               <div className="px-4 py-6 border-b border-[#CFCDC8] lg:p-8">
@@ -122,37 +151,37 @@ const JobPage: React.FC<PageProps<JobPageData>> = ({
           </div>
           <div className="mt-6 mb-12 lg:hidden">
             <Btn
-                size="sm"
-                className="justify-center w-full"
-                onClick={() => setShowApplyModal(true)}
+              size="sm"
+              className="justify-center w-full"
+              onClick={() => setShowApplyModal(true)}
             >
               <span>Apply for this job</span>
             </Btn>
           </div>
           {company && (
-              <div className="border border-[#B0AEAB] bg-appGray-100 rounded-lg p-4 pb-6 mb-12 lg:p-8 lg:rounded-[14px]">
-                <div className="flex items-center mb-4 lg:mb-[18px]">
-                  <div className="flex items-center justify-center w-8 h-8 border border-[#CFCCC7] rounded-full p-1 mr-3 lg:w-12 lg:h-12 lg:p-0 lg:mr-4">
-                    <BCMSImage media={company.logo} svg />
-                  </div>
-                  <div className="text-sm leading-none font-medium tracking-[-0.41px] font-PlayfairDisplay lg:text-base lg:leading-none">
-                    {company.title}
-                  </div>
+            <div className="border border-[#B0AEAB] bg-appGray-100 rounded-lg p-4 pb-6 mb-12 lg:p-8 lg:rounded-[14px]">
+              <div className="flex items-center mb-4 lg:mb-[18px]">
+                <div className="flex items-center justify-center w-8 h-8 border border-[#CFCCC7] rounded-full p-1 mr-3 lg:w-12 lg:h-12 lg:p-0 lg:mr-4">
+                  <BCMSImage media={company.logo} svg />
                 </div>
-                <ContentManager
-                    item={company.description}
-                    className="text-xs leading-normal font-medium tracking-[-0.41px] text-appGray-500 lg:text-sm lg:leading-normal"
-                />
-                <div className="mt-8 max-lg:hidden">
-                  <Btn
-                      size="sm"
-                      className="justify-center w-full"
-                      onClick={() => setShowApplyModal(true)}
-                  >
-                    <span>Apply for this job</span>
-                  </Btn>
+                <div className="text-sm leading-none font-medium tracking-[-0.41px] font-PlayfairDisplay lg:text-base lg:leading-none">
+                  {company.title}
                 </div>
               </div>
+              <ContentManager
+                item={company.description}
+                className="text-xs leading-normal font-medium tracking-[-0.41px] text-appGray-500 lg:text-sm lg:leading-normal"
+              />
+              <div className="mt-8 max-lg:hidden">
+                <Btn
+                  size="sm"
+                  className="justify-center w-full"
+                  onClick={() => setShowApplyModal(true)}
+                >
+                  <span>Apply for this job</span>
+                </Btn>
+              </div>
+            </div>
           )}
         </div>
         {filteredJobs.length && (

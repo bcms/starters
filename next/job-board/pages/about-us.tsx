@@ -54,13 +54,25 @@ const AboutUsPage: React.FC<PageProps<AboutPageData>> = ({
                   />
                 )}
                 {item.image && (
-                  <span
+                  <BCMSImage
                     key={index}
-                    style={{
-                      backgroundImage: `url(/api/bcms-media${item.image.src})`,
+                    media={item.image}
+                    options={{
+                      sizes: {
+                        exec: [
+                          {
+                            width: 112,
+                            height: 48,
+                          },
+                          {
+                            width: 224,
+                            height: 96,
+                          },
+                        ],
+                      },
                     }}
                     className={classnames(
-                      'image w-[37px] h-4 flex-shrink-0 mx-1 translate-y-0.5 bg-center bg-cover',
+                      'image cover w-[37px] h-4 flex-shrink-0 mx-1 translate-y-0.5 bg-center bg-cover',
                       'lg:w-[112px] lg:h-12 lg:mx-3 lg:translate-y-3',
                     )}
                   />

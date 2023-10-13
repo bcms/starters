@@ -35,7 +35,7 @@ export function useHeadTags(): HeadTags {
       if (!title) title = '';
       if (!description) description = '';
       if (!image) image = '/thumbnail.jpg';
-      const domain = 'http://localhost:3000';
+      const domain = 'https://job-board-starter.thebcms.com/';
       return {
         title: title,
         meta: [
@@ -46,7 +46,7 @@ export function useHeadTags(): HeadTags {
           },
           {
             property: 'og:site_name',
-            content: `${title} - Insightful Ink`,
+            content: `${title} - Hospitale`,
           },
           { property: 'og:type', content: 'website' },
           { property: 'twitter:card', content: 'summary_large_image' },
@@ -58,7 +58,7 @@ export function useHeadTags(): HeadTags {
           {
             hid: 'ogTitle',
             property: 'og:title',
-            content: `${title} - Insightful Ink`,
+            content: `${title} - Hospitale`,
           },
           {
             hid: 'ogDescription',
@@ -78,7 +78,7 @@ export function useHeadTags(): HeadTags {
           {
             hid: 'twitterTitle',
             property: 'twitter:title',
-            content: `${title} - Insightful Ink`,
+            content: `${title} - Hospitale`,
           },
           {
             hid: 'twitterDescription',

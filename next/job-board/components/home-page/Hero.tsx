@@ -31,12 +31,24 @@ const HomeHero: FC<HomeHeroProps> = ({ data }) => {
                   />
                 )}
                 {item.image && (
-                  <span
+                  <BCMSImage
                     key={index}
-                    style={{
-                      backgroundImage: `url(/api/bcms-media${item.image.src})`,
+                    media={item.image}
+                    options={{
+                      sizes: {
+                        exec: [
+                          {
+                            width: 176,
+                            height: 80,
+                          },
+                          {
+                            width: 352,
+                            height: 160,
+                          },
+                        ],
+                      },
                     }}
-                    className="image w-[53px] h-6 flex-shrink-0 mx-1 translate-y-1 bg-center bg-cover lg:w-[176px] lg:h-20 lg:mx-3 lg:translate-y-3"
+                    className="image cover w-[53px] h-6 flex-shrink-0 translate-y-1 mx-1 bg-center bg-cover lg:w-[176px] lg:h-20 lg:mx-3 lg:translate-y-3"
                   />
                 )}
               </React.Fragment>
@@ -54,6 +66,24 @@ const HomeHero: FC<HomeHeroProps> = ({ data }) => {
       <div className="relative">
         <BCMSImage
           media={data.cover}
+          options={{
+            sizes: {
+              exec: [
+                {
+                  width: 640,
+                  height: 232,
+                },
+                {
+                  width: 1280,
+                  height: 464,
+                },
+                {
+                  width: 1920,
+                  height: 696,
+                },
+              ],
+            },
+          }}
           className="w-full aspect-[2.76] cover lg:aspect-[3.1]"
         />
         <div className="absolute top-0 left-0 w-full h-full bg-black/60" />
