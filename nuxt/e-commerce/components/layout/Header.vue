@@ -2,10 +2,11 @@
   <header class="fixed top-0 left-0 w-full bg-white z-50">
     <div class="relative z-10 container">
       <nav class="relative flex items-center justify-between py-6 md:py-8">
-        <NuxtLink to="/" class="flex">
+        <NuxtLink to="/" class="flex" aria-label="Home page">
           <BCMSImage
             :media="data.logo"
             class="w-[92px]"
+            svg
             :class="[
               showMobileMenu
                 ? 'max-md:grayscale max-md:brightness-0 max-md:invert'
@@ -21,6 +22,7 @@
           />
           <NuxtLink
             to="/shop/cart"
+            aria-label="My cart"
             class="flex items-center gap-2 leading-none px-3 py-2 bg-appGray-100 rounded-[5px] transition-colors duration-300 hover:bg-appGray-300"
           >
             <CartIcon
@@ -33,6 +35,7 @@
           </NuxtLink>
           <button
             class="flex md:hidden"
+            aria-label="Toggle mobile menu"
             @click="showMobileMenu = !showMobileMenu"
           >
             <XIcon

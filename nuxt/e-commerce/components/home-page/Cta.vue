@@ -17,7 +17,24 @@
         <Btn theme="light-green" :to="data.cta_link" :label="data.cta_label" />
       </div>
     </div>
-    <BCMSImage :media="data.cover" class="absolute inset-0 cover" />
+    <BCMSImage
+      :media="data.cover"
+      :options="{
+        sizes: {
+          exec: [
+            {
+              width: 750,
+              height: 800,
+            },
+            {
+              width: 1024,
+              height: 800,
+            },
+          ],
+        },
+      }"
+      class="absolute inset-0 cover"
+    />
   </section>
 </template>
 
