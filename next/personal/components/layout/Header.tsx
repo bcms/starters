@@ -42,7 +42,7 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
       >
         <nav className="relative flex items-center justify-between pt-6">
           <Link href="/">
-            <a className="flex md:flex-1">
+            <a className="flex md:flex-1" aria-label="Home page">
               <BCMSImage
                 media={data.logo}
                 svg
@@ -77,7 +77,11 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
             <div className="w-4 h-4 bg-appAccent rounded-full mx-2" />
             <span>{timeNow}</span>
           </div>
-          <button className="flex md:hidden" onClick={toggleMobileMenu}>
+          <button
+            className="flex md:hidden"
+            aria-label="Toggle mobile menu"
+            onClick={toggleMobileMenu}
+          >
             {showMobileMenu ? (
               <XIcon className="w-6 h-6 text-white" />
             ) : (

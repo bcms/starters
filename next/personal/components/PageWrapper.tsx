@@ -22,10 +22,10 @@ export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     page?.meta?.seo?.description ??
-    'Jumpstart your Nuxt project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
+    'Jumpstart your Next project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
 
   const image = '/thumbnail.jpg';
-  const domain = 'https://personal-next.thebcms.com';
+  const domain = 'https://personal-starter.thebcms.com';
   return (
     <div className="overflow-hidden">
       <Head>
@@ -47,6 +47,8 @@ export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
           property="twitter:title"
           content={`${title} - Personal Website`}
         />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
         <meta property="twitter:description" content={description} />
         <meta property="twitter:image" content={image} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -67,6 +69,8 @@ export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
           sizes="16x16"
           href="/favicon-16x16.png"
         />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
       </Head>
       <Header data={header} />
       <main>{children}</main>
