@@ -14,6 +14,16 @@
             v-for="(image, index) in data.gallery"
             :key="index"
             :media="image"
+            :options="{
+              sizes: {
+                exec: [
+                  {
+                    width: 256,
+                    height: 256,
+                  },
+                ],
+              },
+            }"
             class="w-10 h-10 cover lg:w-[128px] lg:h-[128px]"
             :class="[index % 2 !== 0 ? '-rotate-[9deg]' : '']"
           />
@@ -60,6 +70,24 @@
         </div>
         <BCMSImage
           :media="data.cover"
+          :options="{
+            sizes: {
+              exec: [
+                {
+                  width: 750,
+                  height: 430,
+                },
+                {
+                  width: 1024,
+                  height: 570,
+                },
+                {
+                  width: 1920,
+                  height: 1070,
+                },
+              ],
+            },
+          }"
           class="absolute top-0 left-0 w-full h-full cover"
         />
       </div>

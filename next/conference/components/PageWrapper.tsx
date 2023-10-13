@@ -14,10 +14,11 @@ export const PageWrapper: FC<PropsWithChildren<PageProps<HomePageData>>> = ({
 }) => {
   const router = useRouter();
   const routePath = useMemo(() => router.asPath, [router.asPath]);
-  const title = page?.meta?.title ?? '';
-  const description = '';
+  const title = page?.meta?.title ?? 'CONference';
+  const description =
+    'Jumpstart your Next project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
   const image = '/thumbnail.jpg';
-  const domain = 'http://localhost:3000';
+  const domain = 'https://blog-starter.thebcms.com';
   return (
     <div className="overflow-hidden">
       <Head>

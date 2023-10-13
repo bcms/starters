@@ -32,10 +32,12 @@ export function useHeadTags(): HeadTags {
 
   return {
     setOgHead({ title, description, image }) {
-      if (!title) title = '';
-      if (!description) description = '';
+      if (!title) title = 'CONference';
+      if (!description)
+        description =
+          'Jumpstart your Next project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
       if (!image) image = '/thumbnail.jpg';
-      const domain = 'http://localhost:3000';
+      const domain = 'https://blog-starter.thebcms.com';
       return {
         title: title,
         meta: [
@@ -46,7 +48,7 @@ export function useHeadTags(): HeadTags {
           },
           {
             property: 'og:site_name',
-            content: `${title} - Insightful Ink`,
+            content: `${title} - CONference`,
           },
           { property: 'og:type', content: 'website' },
           { property: 'twitter:card', content: 'summary_large_image' },
@@ -58,7 +60,7 @@ export function useHeadTags(): HeadTags {
           {
             hid: 'ogTitle',
             property: 'og:title',
-            content: `${title} - Insightful Ink`,
+            content: `${title} - CONference`,
           },
           {
             hid: 'ogDescription',
@@ -78,7 +80,7 @@ export function useHeadTags(): HeadTags {
           {
             hid: 'twitterTitle',
             property: 'twitter:title',
-            content: `${title} - Insightful Ink`,
+            content: `${title} - CONference`,
           },
           {
             hid: 'twitterDescription',

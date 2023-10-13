@@ -10,12 +10,10 @@
             :key="index"
             :to="item.url"
             target="_blank"
+            rel="noopener noreferrer"
+            :aria-label="item.icon.alt_text"
           >
-            <BCMSImage
-              :media="item.icon"
-              class="w-6 h-6 lg:w-8 lg:h-8"
-              :svg="true"
-            />
+            <BCMSImage :media="item.icon" svg class="w-6 h-6 lg:w-8 lg:h-8" />
           </NuxtLink>
         </div>
         <div

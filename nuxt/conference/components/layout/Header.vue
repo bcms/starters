@@ -4,7 +4,7 @@
       <nav
         class="flex items-center justify-between pt-6 pb-8 lg:pt-12 lg:pb-[72px]"
       >
-        <NuxtLink to="/" class="flex">
+        <NuxtLink to="/" class="flex" aria-label="Home page">
           <BCMSImage :media="data.logo" svg class="w-[140px]" />
         </NuxtLink>
         <ul class="flex items-center space-x-4 lg:space-x-10">

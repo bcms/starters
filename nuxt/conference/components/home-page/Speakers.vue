@@ -5,6 +5,24 @@
         <div class="relative aspect-[1.6] lg:aspect-[1.67]">
           <BCMSImage
             :media="data.cover"
+            :options="{
+              sizes: {
+                exec: [
+                  {
+                    width: 490,
+                    height: 370,
+                  },
+                  {
+                    width: 1360,
+                    height: 860,
+                  },
+                  {
+                    width: 1660,
+                    height: 1000,
+                  },
+                ],
+              },
+            }"
             class="absolute z-10 top-0 left-0 w-full h-full cover"
           />
           <div

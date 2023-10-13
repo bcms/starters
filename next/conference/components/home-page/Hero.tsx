@@ -53,6 +53,16 @@ const HomeHero: React.FC<HomeHeroProps> = ({ data }) => {
               <BCMSImage
                 key={index}
                 media={image}
+                options={{
+                  sizes: {
+                    exec: [
+                      {
+                        width: 256,
+                        height: 256,
+                      },
+                    ],
+                  },
+                }}
                 className={`w-10 h-10 cover lg:w-[128px] lg:h-[128px] ${
                   index % 2 !== 0 ? '-rotate-[9deg]' : ''
                 }`}
@@ -98,6 +108,24 @@ const HomeHero: React.FC<HomeHeroProps> = ({ data }) => {
           </div>
           <BCMSImage
             media={data.cover}
+            options={{
+              sizes: {
+                exec: [
+                  {
+                    width: 750,
+                    height: 430,
+                  },
+                  {
+                    width: 1024,
+                    height: 570,
+                  },
+                  {
+                    width: 1920,
+                    height: 1070,
+                  },
+                ],
+              },
+            }}
             className="absolute top-0 left-0 w-full h-full cover"
           />
         </div>
