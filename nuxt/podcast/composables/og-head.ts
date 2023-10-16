@@ -19,7 +19,7 @@ export const useHeadTags = () => {
         'Jumpstart your Nuxt project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
     if (!image) image = '/thumbnail.jpg';
 
-    const domain = 'https://podcast-nuxt.thebcms.com';
+    const domain = 'https://podcast-starter.thebcms.com';
 
     return {
       title,

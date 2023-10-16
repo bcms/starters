@@ -2,7 +2,7 @@
   <header class="absolute top-0 left-0 w-full z-50">
     <div class="relative z-10 container">
       <nav class="relative flex items-center justify-between pt-6 lg:pt-8">
-        <NuxtLink to="/" class="flex">
+        <NuxtLink to="/" class="flex" aria-label="Home page">
           <BCMSImage :media="data.logo" svg class="w-[101px] md:w-[135px]" />
         </NuxtLink>
         <ul
@@ -23,6 +23,7 @@
         </ul>
         <button
           class="flex md:hidden"
+          aria-label="Toggle mobile menu"
           @click="showMobileMenu = !showMobileMenu"
         >
           <XIcon v-if="showMobileMenu" class="w-6 h-6" />

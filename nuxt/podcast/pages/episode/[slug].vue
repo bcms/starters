@@ -25,6 +25,24 @@
         <BCMSImage
           :key="data.page.meta.slug"
           :media="data.page.meta.cover"
+          :options="{
+            sizes: {
+              exec: [
+                {
+                  width: 654,
+                  height: 654,
+                },
+                {
+                  width: 768,
+                  height: 291,
+                },
+                {
+                  width: 1344,
+                  height: 544,
+                },
+              ],
+            },
+          }"
           class="absolute top-0 left-0 w-full h-full cover rounded overflow-hidden lg:rounded-2xl"
         />
         <div
@@ -95,6 +113,16 @@
             <BCMSImage
               v-if="data.page.meta.guest?.meta?.en"
               :media="data.page.meta.guest.meta.en.avatar"
+              :options="{
+                sizes: {
+                  exec: [
+                    {
+                      width: 128,
+                      height: 128,
+                    },
+                  ],
+                },
+              }"
               class="w-10 h-10 cover rounded-full overflow-hidden mr-[14px] lg:w-16 lg:h-16 lg:mr-4"
             />
             <div
