@@ -29,7 +29,7 @@ const HomepageHero: React.FC<HomepageHeroProps> = ({ data, recipes }) => {
             />
             <Btn to="/recipes">
               <span className="mr-2">{data.cta_label}</span>
-              <ArrowIcon class="w-[14px] h-[14px] lg:w-5 lg:h-5" />
+              <ArrowIcon className="w-[14px] h-[14px] lg:w-5 lg:h-5" />
             </Btn>
           </div>
           <RecipesSearch

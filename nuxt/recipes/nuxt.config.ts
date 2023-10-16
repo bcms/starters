@@ -27,16 +27,6 @@ export default defineNuxtConfig({
     head: {
       titleTemplate: '%s - Flavour Fushion',
       link: [
-        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-        {
-          rel: 'preconnect',
-          href: 'https://fonts.gstatic.com',
-          crossorigin: 'anonymous',
-        },
-        {
-          href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500&display=swap',
-          rel: 'stylesheet',
-        },
         {
           rel: 'apple-touch-icon',
           sizes: '180x180',
@@ -66,6 +56,7 @@ export default defineNuxtConfig({
     },
   },
   css: [
+    '~/assets/css/fonts.css',
     '~/assets/css/main.css',
     '~/assets/css/reset.css',
     '~/assets/css/transition.css',

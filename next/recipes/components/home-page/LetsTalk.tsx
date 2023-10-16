@@ -79,6 +79,7 @@ const HomepageLetsTalk: React.FC<HomepageLetsTalkProps> = ({ data }) => {
                   <div className="flex items-center mb-2 lg:mb-4">
                     <BCMSImage
                       media={link.icon}
+                      svg
                       className="w-3 h-3 mr-1.5 lg:w-[18px] lg:h-[18px]"
                     />
                     <div className="text-xs leading-none font-medium tracking-[-0.41px] text-appGray-500 lg:text-lg lg:leading-none">

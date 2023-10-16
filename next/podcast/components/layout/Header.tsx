@@ -77,8 +77,10 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
             aria-label="Toggle mobile menu"
             onClick={() => setShowMobileMenu((prevState) => !prevState)}
           >
-            {showMobileMenu && <NextImage src={XIcon} className="w-6 h-6" />}
-            <NextImage src={MenuIcon} className="w-6 h-6" />
+            {showMobileMenu && (
+              <NextImage src={XIcon} alt="X" className="w-6 h-6" />
+            )}
+            <NextImage alt="Menu" src={MenuIcon} className="w-6 h-6" />
           </button>
         </nav>
       </div>
