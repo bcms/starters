@@ -32,7 +32,7 @@ const HomePage: React.FC<PageProps<HomePageData>> = ({
       />
       <HomepageCta data={page.meta.cta} />
       <HomepageCategories
-        data={page.categories.slice(0, 6)}
+        data={page.categories.slice(6, 12)}
         ctaTheme="orange"
       />
       <HomepageProducts products={page.products} filters={page.filters} />
