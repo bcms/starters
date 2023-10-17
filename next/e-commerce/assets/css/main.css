@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  @apply box-border m-0 p-0;
+}
+
+body {
+  @apply font-Helvetica overflow-x-hidden bg-appBody text-appText pt-[84px] md:pt-[100px];
+}
+
+.header--nav ul{
+  @apply flex flex-col gap-x-4 md:flex-row;
+}
+
+.header--nav ul li{
+    @apply flex items-center gap-4;
+}
+
+.header--nav ul li:not(:first-of-type){
+    @apply md:before:w-1 md:before:h-1 md:before:mt-1 md:before:rounded-full md:before:bg-appGray-700;
+}
+
+.header--nav ul li a{
+    @apply flex leading-none py-2 transition-colors duration-300 md:hover:text-appText;
+}
+
+.footer--col p{
+    @apply text-lg leading-none mb-4 md:text-xl md:mb-8;
+
+}
+
+.footer--col ul{
+    @apply grid grid-cols-1 gap-6;
+}
+
+.footer--col ul li p {
+    @apply text-xl leading-none mb-0 md:text-2xl;
+}
+
+.footer--col ul li p a {
+    @apply hover:underline;
+}
+
+
+.productDetails--description  {
+    @apply grid grid-cols-1 gap-2.5;
+
+}
+
+.productDetails--description  p {
+    @apply leading-[1.3] text-appGray-600;
+
+}
+
+.blog--content h2 {
+    @apply text-2xl leading-none tracking-[-2%] mt-10 mb-4;
+
+}
+
+.blog--content p {
+    @apply leading-[1.3] text-appGray-600 mb-2.5;
+}
+
+svg path {
+    fill: currentColor !important;
+}
