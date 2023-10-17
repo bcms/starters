@@ -31,7 +31,7 @@ export const Btn: React.FC<BtnProps> = (props) => {
             </span>
             <ArrowIcon
               className="w-6 h-6 ml-2 fill-current md:w-8 md:h-8"
-              fontcontrolled={false}
+              fontcontrolled="false"
             />
           </a>
         </Link>
@@ -42,7 +42,7 @@ export const Btn: React.FC<BtnProps> = (props) => {
           </span>
           <ArrowIcon
             className="w-6 h-6 ml-2 fill-current md:w-8 md:h-8"
-            fontcontrolled={false}
+            fontcontrolled="false"
           />
         </button>
       )}

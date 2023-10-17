@@ -15,8 +15,8 @@ export const HomePageHome: React.FC<HomepageHomeProps> = ({ data }) => {
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center">
           <h1 className="sr-only">{data.title}</h1>
           <Logo
-            class="w-[250px] text-white mb-8 md:w-[378px]"
-            fontcontrolled={false}
+            className="w-[250px] text-white mb-8 md:w-[378px]"
+            fontcontrolled="false"
           />
           <p className="text-xl leading-none text-white">{data.description}</p>
         </div>

@@ -99,7 +99,7 @@ export const HomepageProducts: React.FC<HomepageProductsProps> = ({
             className="flex items-center gap-2 transition-colors duration-300 hover:text-appError"
             onClick={clearFilters}
           >
-            <TrashIcon className="w-6 h-6" fontControlled={false} />
+            <TrashIcon className="w-6 h-6" fontcontrolled="false" />
             <span className="text-lg leading-none tracking-[-2%] mb-1 md:text-[24px]">
               Clear filters
             </span>

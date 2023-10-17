@@ -27,7 +27,7 @@ export const Footer: React.FC<FooterProps> = ({ data }) => {
             <span className="leading-none tracking-[-0.41px] text-gray-700">
               Powered by
             </span>
-            <BCMSLogo className="w-[60px] lg:w-[83px]" fontControlled={false} />
+            <BCMSLogo className="w-[60px] lg:w-[83px]" fontcontrolled="false" />
           </a>
         </div>
       </div>

@@ -21,9 +21,10 @@ export const Header: React.FC<HeaderProps> = ({ data }) => {
       <div className="relative z-10 container">
         <nav className="relative flex items-center justify-between py-6 md:py-8">
           <Link href="/">
-            <a className="flex">
+            <a className="flex" aria-label="Home page">
               <BCMSImage
                 media={data.logo}
+                svg
                 className={classNames('w-[92px]', {
                   'max-md:grayscale max-md:brightness-0 max-md:invert':
                     showMobileMenu,
@@ -45,8 +46,8 @@ export const Header: React.FC<HeaderProps> = ({ data }) => {
               <a className="flex items-center gap-2 leading-none px-3 py-2 bg-appGray-100 rounded-[5px] transition-colors duration-300 hover:bg-appGray-300">
                 <CartIcon
                   className="translate-y-0.5 w-4 h-4"
-                  filled={'true'}
-                  fontcontrolled={false}
+                  filled="false"
+                  fontcontrolled="false"
                 />
                 <span className="text-gray-700">My cart</span>
                 <span className="font-bold font-sans text-sm">
@@ -56,6 +57,7 @@ export const Header: React.FC<HeaderProps> = ({ data }) => {
             </Link>
             <button
               className="flex md:hidden"
+              aria-label="Toggle mobile menu"
               onClick={() => setShowMobileMenu((prevState) => !prevState)}
             >
               {showMobileMenu ? (
