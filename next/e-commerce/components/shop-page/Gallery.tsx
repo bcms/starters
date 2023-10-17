@@ -15,6 +15,7 @@ export const ShopGallery: React.FC<ShopGalleryProps> = ({
   const [activeImage, setActiveImage] = useState<number>(0);
 
   const galleryByColor = useMemo(() => {
+    setActiveImage(0);
     return gallery.filter(
       (e) => e.color.meta.en?.slug === activeColor.meta.en?.slug,
     );

@@ -9,7 +9,7 @@ import {
 import { getHeaderAndFooter } from '@/utils/page-data';
 import { PageProps, ProductPageData } from '@/types';
 import { productToLite } from '@/utils/product';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { PageWrapper } from '@/components/PageWrapper';
 import { ShopGallery } from '@/components/shop-page/Gallery';
 import { ShopDetails } from '@/components/shop-page/Details';
@@ -17,13 +17,10 @@ import Link from 'next/link';
 import { ProductCard } from '@/components/ProductCard';
 
 const ShopPage: React.FC<PageProps<ProductPageData>> = (props) => {
-  const [activeColor, setActiveColor] = useState<ProductColorEntry | null>(
-    null,
+  const [activeColor, setActiveColor] = useState<ProductColorEntry>(
+    props.page.meta.gallery[0].color,
   );
 
-  useEffect(() => {
-    setActiveColor(props.page.meta.gallery[0].color);
-  }, []);
   return (
     <PageWrapper page={props.page} header={props.header} footer={props.footer}>
       <div className="container pb-14 md:pb-20 lg:pb-[136px]">

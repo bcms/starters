@@ -61,6 +61,10 @@ body {
 
 }
 
-.blog--content h2 {
+.blog--content p {
     @apply leading-[1.3] text-appGray-600 mb-2.5;
+}
+
+svg path {
+    fill: currentColor !important;
 }
