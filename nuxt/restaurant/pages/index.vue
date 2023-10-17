@@ -17,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-import { NuxtApp } from 'nuxt/app';
+import type { NuxtApp } from 'nuxt/app';
 import {
   EventEntry,
   EventEntryMeta,

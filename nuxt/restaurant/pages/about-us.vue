@@ -6,7 +6,7 @@
 </template>
 
 <script setup lang="ts">
-import { NuxtApp } from 'nuxt/app';
+import type { NuxtApp } from 'nuxt/app';
 import { AboutPageEntry, AboutPageEntryMeta } from '~~/bcms/types';
 import { AboutPageData } from '~~/types';
 import { PageProps } from '~~/types/page-props';

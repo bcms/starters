@@ -37,7 +37,7 @@
 </template>
 
 <script setup lang="ts">
-import { NuxtApp } from 'nuxt/app';
+import type { NuxtApp } from 'nuxt/app';
 import { LegalPageEntry } from '~~/bcms/types';
 import { LegalPageData } from '~~/types';
 import { PageProps } from '~~/types/page-props';

@@ -113,7 +113,7 @@
 </template>
 
 <script setup lang="ts">
-import { NuxtApp } from 'nuxt/app';
+import type { NuxtApp } from 'nuxt/app';
 import { ReservationPageEntry, ReservationPageEntryMeta } from '~~/bcms/types';
 import { ReservationPageData } from '~~/types';
 import { PageProps } from '~~/types/page-props';

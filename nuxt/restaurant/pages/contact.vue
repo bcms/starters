@@ -47,7 +47,7 @@
 </template>
 
 <script setup lang="ts">
-import { NuxtApp } from 'nuxt/app';
+import type { NuxtApp } from 'nuxt/app';
 import { BCMSImage } from '~~/bcms-components';
 import { ContactPageEntry, ContactPageEntryMeta } from '~~/bcms/types';
 import { ContactPageData } from '~~/types';

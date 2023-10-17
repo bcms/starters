@@ -1,4 +1,4 @@
-import { NuxtApp } from 'nuxt/app';
+import type { NuxtApp } from 'nuxt/app';
 import {
   FooterEntry,
   FooterEntryMeta,
