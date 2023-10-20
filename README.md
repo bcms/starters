@@ -13,7 +13,6 @@
         <div>
           <h4>Conference starter</h4>
           <a href="https://conference-starter.thebcms.com/">Live preview ⤴️</a><br>
-          <hr>
           Available in:<br>
           <a href="/nuxt/conference">Nuxt.js</a> | Gatsby.js | <a href="/next/conference">Next.js</a><br><br>
         </div>
@@ -25,7 +24,6 @@
         <div>
           <h4>Job board starter</h4>
           <a href="https://job-board-starter.thebcms.com">Live preview ⤴️</a><br>
-          <hr>
           Available in:<br>
           <a href="/nuxt/job-board">Nuxt.js</a> | Gatsby.js | <a href="/next/job-board">Next.js</a><br><br>
         </div>
@@ -37,7 +35,6 @@
         <div>
           <h4>Blog starter</h4>
           <a href="https://blog-starter.thebcms.com/">Live preview ⤴️</a><br>
-          <hr>
           Available in:<br>
           <a href="/nuxt/blog">Nuxt.js</a> | Gatsby.js | <a href="/next/blog">Next.js</a><br><br>
         </div>
@@ -51,7 +48,6 @@
         <div>
           <h4>Recipes starter</h4>
           <a href="https://recipes-starter.thebcms.com/">Live preview ⤴️</a><br>
-          <hr>
           Available in:<br>
           <a href="/nuxt/recipes">Nuxt.js</a> | Gatsby.js | <a href="/next/recipes">Next.js</a><br><br>
         </div>
@@ -63,7 +59,6 @@
         <div>
           <h4>E-commerce starter</h4>
           <a href="https://e-commerce-starter.thebcms.com/">Live preview ⤴️</a><br>
-          <hr>
           Available in:<br>
           <a href="/nuxt/e-commerce">Nuxt.js</a> | Gatsby.js | <a href="/next/e-commerce">Next.js</a><br><br>
         </div>
@@ -75,7 +70,6 @@
         <div>
           <h4>Personal website starter</h4>
           <a href="https://personal-starter.thebcms.com/">Live preview ⤴️</a><br>
-          <hr>
           Available in:<br>
           <a href="/nuxt/personal">Nuxt.js</a> | Gatsby.js | <a href="/next/personal">Next.js</a><br><br>
         </div>
@@ -89,7 +83,6 @@
         <div>
           <h4>Restaurant starter</h4>
           <a href="https://restaurant-starter.thebcms.com/">Live preview ⤴️</a><br>
-          <hr>
           Available in:<br>
           <a href="/nuxt/restaurant">Nuxt.js</a> | Gatsby.js | <a href="/next/restaurant">Next.js</a><br><br>
         </div>
@@ -101,7 +94,6 @@
         <div>
           <h4>Podcast starter</h4>
           <a href="https://podcast-starter.thebcms.com/">Live preview ⤴️</a><br>
-          <hr>
           Available in:<br>
           <a href="/nuxt/podcast">Nuxt.js</a> | Gatsby.js | <a href="/next/podcast">Next.js</a><br><br>
         </div>
