@@ -1,4 +1,4 @@
-https://github.com/bcms/starters/assets/15079459/87b9145c-084f-47b0-b3b9-9f4a30ab21d9
+https://github.com/bcms/starters/assets/15079459/06f1fe9c-31b1-4a0d-8e49-d489efc19a4e
 
 <h1 align="center">E-commerce with Nuxt.js and BCMS</h1>
 <p align="center"><a href="https://e-commerce-starter.thebcms.com/">See this e-commerce in action ⤴</a></p>
