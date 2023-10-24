@@ -1,4 +1,4 @@
-https://github.com/bcms/starters/assets/15079459/87b9145c-084f-47b0-b3b9-9f4a30ab21d9
+https://github.com/bcms/starters/assets/15079459/342a6353-627d-4089-bb62-f08a9c4d94e9
 
 <h1 align="center">Podcast with Nuxt.js and BCMS</h1>
 <p align="center"><a href="https://podcast-starter.thebcms.com/">See this podcast in action ⤴</a></p>
