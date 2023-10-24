@@ -51,23 +51,6 @@ cd starters/nuxt/blog
 
 ---
 
-<br/>
-<br/>
-
-<h2>Some features</h2>
-
-<h3>Responsive grid layout</h2>
-<p>A clean and organized grid layout displaying various recipes with an image, title, and brief description.</p>
-<h3>Detailed recipe page</h2>
-<p>Individual pages for each recipe detailing ingredients, preparation steps, images, and related recipes.
-</p>
-<h3>Search functionality</h3>  
-<p>Users can search for their desired recipes from a vast collection.</p>
-<h3>Filtering functionality</h3>  
-<p>Users can search for their desired recipes from a vast collection.</p>
-
----
-
 <br>
 <br>
 
