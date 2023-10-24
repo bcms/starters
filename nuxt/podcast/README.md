@@ -56,15 +56,12 @@ cd starters/nuxt/podcast
 
 <h2>Some features</h2>
 
-<h3>Responsive grid layout</h2>
-<p>A clean and organized grid layout displaying various recipes with an image, title, and brief description.</p>
-<h3>Detailed recipe page</h2>
-<p>Individual pages for each recipe detailing ingredients, preparation steps, images, and related recipes.
-</p>
-<h3>Search functionality</h3>  
-<p>Users can search for their desired recipes from a vast collection.</p>
-<h3>Filtering functionality</h3>  
-<p>Users can search for their desired recipes from a vast collection.</p>
+<h3>Responsive layout</h2>
+<p>A clean, organized layout that looks good on all devices.</p>
+<h3>Fully functional audio player</h2>
+<p>Visitors can listen to episodes while exploring the website content</p>
+<h3>Editable through BCMS</h3>  
+<p>Add and update podcast episodes through BCMS, content management system</p>
 
 ---
 
@@ -92,8 +89,8 @@ cd starters/nuxt/podcast
 
 <h3>How customizable is the design? Can I change the theme or colors?</h3>
 <p>
-  The design is highly customizable. We used Tailwind for that very reason Just
-  go to [tailwind.config.js](/tailwind.config.js). There, you can easily change
+  The design is highly customizable. We used Tailwind for that very reason. Just
+  go to [tailwind.config.js](/tailwind.config.js). You can easily change
   the theme, colors, fonts, and other design elements to match your brand.
 </p>
 
