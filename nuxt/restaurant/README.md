@@ -1,4 +1,4 @@
-https://github.com/bcms/starters/assets/15079459/87b9145c-084f-47b0-b3b9-9f4a30ab21d9
+https://github.com/bcms/starters/assets/15079459/16ecff96-47ab-4b78-8fd6-1a143affd572
 
 <h1 align="center">Restaurant with Nuxt.js and BCMS</h1>
 <p align="center"><a href="https://restaurant-starter.thebcms.com/">See this restaurant in action ⤴</a></p>
