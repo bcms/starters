@@ -1,4 +1,4 @@
-https://github.com/bcms/starters/assets/15079459/87b9145c-084f-47b0-b3b9-9f4a30ab21d9
+https://github.com/bcms/starters/assets/15079459/48f8d716-ee47-4a37-9408-ccd204f2838a
 
 <h1 align="center">Personal with Next.js and BCMS</h1>
 <p align="center"><a href="https://personal-starter.thebcms.com/">See this personal in action ⤴</a></p>
