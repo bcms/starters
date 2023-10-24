@@ -17,7 +17,7 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
       <div className="container">
         <nav className="flex items-center justify-between pt-6 pb-8 lg:pt-12 lg:pb-[72px]">
           <Link href="/">
-            <a className="flex">
+            <a className="flex" aria-label="Home page">
               <BCMSImage media={data.logo} svg className="w-[140px]" />
             </a>
           </Link>

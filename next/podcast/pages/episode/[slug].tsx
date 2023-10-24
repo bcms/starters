@@ -102,6 +102,24 @@ const EpisodePage: React.FC<PageProps<EpisodePageData>> = ({
           <BCMSImage
             key={page.meta.slug}
             media={page.meta.cover}
+            options={{
+              sizes: {
+                exec: [
+                  {
+                    width: 654,
+                    height: 654,
+                  },
+                  {
+                    width: 768,
+                    height: 291,
+                  },
+                  {
+                    width: 1344,
+                    height: 544,
+                  },
+                ],
+              },
+            }}
             className="absolute top-0 left-0 w-full h-full cover rounded overflow-hidden lg:rounded-2xl"
           />
           <div className="absolute top-0 left-0 w-full h-full bg-black/40 lg:bg-black/60" />
@@ -155,6 +173,16 @@ const EpisodePage: React.FC<PageProps<EpisodePageData>> = ({
               {page.meta.guest?.meta?.en && (
                 <BCMSImage
                   media={page.meta.guest.meta.en.avatar}
+                  options={{
+                    sizes: {
+                      exec: [
+                        {
+                          width: 128,
+                          height: 128,
+                        },
+                      ],
+                    },
+                  }}
                   className="w-10 h-10 cover rounded-full overflow-hidden mr-[14px] lg:w-16 lg:h-16 lg:mr-4"
                 />
               )}

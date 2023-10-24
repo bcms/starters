@@ -39,7 +39,7 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
       <div className="relative z-10 container">
         <nav className="relative flex items-center justify-between pt-6 lg:pt-8">
           <Link href="/">
-            <a className="flex">
+            <a className="flex" aria-label="Home page">
               <BCMSImage
                 media={data.logo}
                 svg
@@ -74,10 +74,13 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
           </ul>
           <button
             className="flex md:hidden"
+            aria-label="Toggle mobile menu"
             onClick={() => setShowMobileMenu((prevState) => !prevState)}
           >
-            {showMobileMenu && <NextImage src={XIcon} className="w-6 h-6" />}
-            <NextImage src={MenuIcon} className="w-6 h-6" />
+            {showMobileMenu && (
+              <NextImage src={XIcon} alt="X" className="w-6 h-6" />
+            )}
+            <NextImage alt="Menu" src={MenuIcon} className="w-6 h-6" />
           </button>
         </nav>
       </div>

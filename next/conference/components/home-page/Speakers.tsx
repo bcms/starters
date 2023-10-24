@@ -29,6 +29,24 @@ const HomePageSpeakers: React.FC<HomePageSpeakersProps> = ({ data }) => {
           <div className="relative aspect-[1.6] lg:aspect-[1.67]">
             <BCMSImage
               media={data.cover}
+              options={{
+                sizes: {
+                  exec: [
+                    {
+                      width: 490,
+                      height: 370,
+                    },
+                    {
+                      width: 1360,
+                      height: 860,
+                    },
+                    {
+                      width: 1660,
+                      height: 1000,
+                    },
+                  ],
+                },
+              }}
               className="absolute z-10 top-0 left-0 w-full h-full cover"
             />
             <div className="absolute -top-4 -left-4 w-[163px] aspect-square bg-[#7EE984] lg:w-[672px] lg:-top-16 lg:-left-16" />

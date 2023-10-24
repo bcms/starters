@@ -53,6 +53,16 @@
           </div>
           <BCMSImage
             :media="blog.cover"
+            :options="{
+              sizes: {
+                exec: [
+                  {
+                    width: 800,
+                    height: 800,
+                  },
+                ],
+              },
+            }"
             class="absolute top-0 left-0 w-full h-full cover"
           />
           <div class="absolute top-0 left-0 w-full h-full bg-black/40" />

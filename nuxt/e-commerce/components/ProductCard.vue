@@ -4,6 +4,16 @@
       <div class="flex overflow-hidden mb-6">
         <BCMSImage
           :media="card.cover"
+          :options="{
+            sizes: {
+              exec: [
+                {
+                  width: 655,
+                  height: 640,
+                },
+              ],
+            },
+          }"
           class="w-full h-[320px] cover transition-transform duration-500 group-hover:scale-105"
         />
       </div>

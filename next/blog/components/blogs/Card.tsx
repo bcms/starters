@@ -38,7 +38,11 @@ export const BlogsCard: FC<BlogsCardProps> = ({ blog }) => {
               {blog.title}
             </div>
             <div className="flex items-center justify-center p-0.5 rounded bg-[#F2F2F2] xl:p-1">
-              <NextImage src={OpenIcon} className="w-3 h-3 xl:w-4 xl:h-4" />
+              <NextImage
+                src={OpenIcon}
+                alt="Icon"
+                className="w-3 h-3 xl:w-4 xl:h-4"
+              />
             </div>
           </div>
           <ContentManager

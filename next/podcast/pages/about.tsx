@@ -21,6 +21,24 @@ const AboutPage: React.FC<PageProps<AboutPageData>> = ({
           </h1>
           <BCMSImage
             media={page.meta.cover}
+            options={{
+              sizes: {
+                exec: [
+                  {
+                    width: 654,
+                    height: 654,
+                  },
+                  {
+                    width: 768,
+                    height: 291,
+                  },
+                  {
+                    width: 1344,
+                    height: 544,
+                  },
+                ],
+              },
+            }}
             className="absolute top-0 left-0 w-full h-full cover rounded overflow-hidden lg:rounded-2xl"
           />
           <div className="absolute top-0 left-0 w-full h-full bg-black/50 lg:bg-black/60" />

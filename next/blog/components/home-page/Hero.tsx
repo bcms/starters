@@ -68,6 +68,16 @@ export const HomepageHero: React.FC<Props> = ({ data }) => {
                 </div>
                 <BCMSImage
                   media={blog.cover}
+                  options={{
+                    sizes: {
+                      exec: [
+                        {
+                          width: 800,
+                          height: 800,
+                        },
+                      ],
+                    },
+                  }}
                   className="absolute top-0 left-0 w-full h-full cover"
                 />
                 <div className="absolute top-0 left-0 w-full h-full bg-black/40" />

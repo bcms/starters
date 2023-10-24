@@ -39,6 +39,7 @@ export const Footer: FC<Props> = ({ data }) => {
             >
               <NextImage
                 src={MailGunIcon}
+                alt="Mailgun"
                 className="w-4 h-4 flex-shrink-0 md:w-5 md:h-5"
               />
               <label className="w-full flex-1">
@@ -52,28 +53,32 @@ export const Footer: FC<Props> = ({ data }) => {
               </label>
               <button
                 type="submit"
+                aria-label="Submit"
                 className="flex items-center justify-center w-6 h-6 bg-appText rounded-full flex-shrink-0 md:w-10 md:h-10"
               >
                 <NextImage
                   src={PaperPlaneIcon}
+                  alt="Icon"
                   className="w-2.5 h-2.5 md:w-4 md:h-4"
                 />
               </button>
             </form>
             <div className="grid grid-cols-2 justify-items-center gap-4 md:flex md:items-center lg:gap-6">
               {data.social.map((link, index) => (
-                <div className="bg-appText flex items-center justify-center w-[135px] rounded-full aspect-square md:w-[54px]">
-                  <NextLink
-                    passHref={true}
-                    key={index}
-                    href={link.url}
-                    target="_blank"
-                  >
-                    <a>
+                <div
+                  key={index}
+                  className="bg-appText flex items-center justify-center w-[135px] rounded-full aspect-square md:w-[54px]"
+                >
+                  <NextLink passHref={true} key={index} href={link.url}>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={link.icon.alt_text}
+                    >
                       <BCMSImage
                         media={link.icon}
-                        className="w-10 h-10 cover md:w-6 md:h-6"
                         svg
+                        className="w-10 h-10 cover md:w-6 md:h-6"
                       />
                     </a>
                   </NextLink>

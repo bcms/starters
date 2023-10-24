@@ -17,11 +17,30 @@ const HomepageAbout: React.FC<HomepageAboutProps> = ({ data }) => {
           </h2>
           <NextImage
             src={ArrowIcon}
+            alt="Arrow"
             className="w-4 h-4 lg:w-[100px] lg:h-[104px]"
           />
         </div>
         <BCMSImage
           media={data.cover}
+          options={{
+            sizes: {
+              exec: [
+                {
+                  width: 660,
+                  height: 360,
+                },
+                {
+                  width: 960,
+                  height: 450,
+                },
+                {
+                  width: 1344,
+                  height: 625,
+                },
+              ],
+            },
+          }}
           className="w-full aspect-[1.78] cover mb-5 lg:aspect-[2.15] lg:mb-12"
         />
         <ContentManager

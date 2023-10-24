@@ -62,6 +62,20 @@
           </div>
           <BCMSImage
             :media="ticket.background"
+            :options="{
+              sizes: {
+                exec: [
+                  {
+                    width: 660,
+                    height: 250,
+                  },
+                  {
+                    width: 1344,
+                    height: 448,
+                  },
+                ],
+              },
+            }"
             class="absolute top-0 left-0 w-full h-full cover"
           />
         </button>

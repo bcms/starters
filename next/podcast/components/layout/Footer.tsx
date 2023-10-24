@@ -21,9 +21,15 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
             {data.social &&
               data.social.map((item, index) => (
                 <Link key={index} href={item.url}>
-                  <a target="_blank" className="flex">
+                  <a
+                    target="_blank"
+                    className="flex"
+                    rel="noopener noreferrer"
+                    aria-label={item.icon.alt_text}
+                  >
                     <BCMSImage
                       media={item.icon}
+                      svg
                       className="w-5 h-5 lg:w-10 lg:h-10"
                     />
                   </a>

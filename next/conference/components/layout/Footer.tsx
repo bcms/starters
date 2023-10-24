@@ -23,11 +23,12 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
                 href={item.url}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={item.icon.alt_text}
               >
                 <BCMSImage
                   media={item.icon}
+                  svg
                   className="w-6 h-6 lg:w-8 lg:h-8"
-                  svg={true}
                 />
               </a>
             ))}
@@ -54,7 +55,11 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
               <span className="text-sm leading-none font-medium tracking-[-0.41px] mr-2 lg:text-base lg:leading-none lg:mr-1.5">
                 Powered by
               </span>
-              <NextImage src={BCMSLogo} className="w-[55px] lg:w-[83px]" />
+              <NextImage
+                src={BCMSLogo}
+                alt="Logo"
+                className="w-[55px] lg:w-[83px]"
+              />
             </a>
           </div>
         </div>

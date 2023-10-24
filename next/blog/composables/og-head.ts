@@ -32,10 +32,12 @@ export function useHeadTags(): HeadTags {
 
   return {
     setOgHead({ title, description, image }) {
-      if (!title) title = '';
-      if (!description) description = '';
+      if (!title) title = 'Insightful Ink';
+      if (!description)
+        description =
+          'Jumpstart your Next project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
       if (!image) image = '/thumbnail.jpg';
-      const domain = 'http://localhost:3000';
+      const domain = 'https://blog-starter.thebcms.com';
       return {
         title: title,
         meta: [

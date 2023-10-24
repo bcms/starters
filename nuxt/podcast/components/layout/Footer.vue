@@ -15,9 +15,11 @@
             :href="item.url"
             :item="index"
             target="_blank"
+            rel="noopener noreferrer"
+            :aria-label="item.icon.alt_text"
             class="flex"
           >
-            <BCMSImage :media="item.icon" class="w-5 h-5 lg:w-10 lg:h-10" />
+            <BCMSImage :media="item.icon" svg class="w-5 h-5 lg:w-10 lg:h-10" />
           </NuxtLink>
         </div>
       </div>

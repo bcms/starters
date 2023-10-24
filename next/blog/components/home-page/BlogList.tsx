@@ -27,6 +27,7 @@ export const HomePageBlogsList: FC<Props> = ({ blogs }) => {
               </span>
               <NextImage
                 src={ArrowIcon}
+                alt="Arrow"
                 className="w-[14px] h-[14px] md:w-4 md:h-4 lg:w-5 lg:h-5"
               />
             </>

@@ -29,9 +29,9 @@ export const PageWrapper: FC<ExtendedProps> = ({
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     page?.meta?.seo?.description ??
-    'Jumpstart your Nuxt project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
+    'Jumpstart your Next project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
   const image = '/thumbnail.jpg';
-  const domain = 'https://ecommerce-next.thebcms.com';
+  const domain = 'https://ecommerce-starter.thebcms.com';
   return (
     <div className="overflow-hidden">
       <Head>

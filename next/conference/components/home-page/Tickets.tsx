@@ -88,6 +88,20 @@ const HomePageTickets: React.FC<HomePageTicketsProp> = ({ data }) => {
                 </div>
                 <BCMSImage
                   media={ticket.background}
+                  options={{
+                    sizes: {
+                      exec: [
+                        {
+                          width: 660,
+                          height: 250,
+                        },
+                        {
+                          width: 1344,
+                          height: 448,
+                        },
+                      ],
+                    },
+                  }}
                   className="absolute top-0 left-0 w-full h-full cover"
                 />
               </button>

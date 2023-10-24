@@ -49,6 +49,16 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           <div className="flex overflow-hidden mb-6">
             <BCMSImage
               media={card.cover}
+              options={{
+                sizes: {
+                  exec: [
+                    {
+                      width: 655,
+                      height: 640,
+                    },
+                  ],
+                },
+              }}
               className="w-full h-[320px] cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
@@ -110,7 +120,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         {isLoading && (
           <LoadingIcon
             className="w-3.5 h-3.5 ml-3 mt-0.5 animate-spin"
-            fontControlled={false}
+            fontcontrolled="false"
           />
         )}
       </button>

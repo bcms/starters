@@ -76,6 +76,20 @@
             >
               <BCMSImage
                 :media="sponsor.cover"
+                :options="{
+                  sizes: {
+                    exec: [
+                      {
+                        width: 590,
+                        height: 270,
+                      },
+                      {
+                        width: 924,
+                        height: 540,
+                      },
+                    ],
+                  },
+                }"
                 class="w-auto h-6 cover lg:h-12"
               />
             </div>

@@ -25,6 +25,7 @@
               <div class="flex items-center mb-2 lg:mb-4">
                 <BCMSImage
                   :media="link.icon"
+                  svg
                   class="w-3 h-3 mr-1.5 lg:w-[18px] lg:h-[18px]"
                 />
                 <div

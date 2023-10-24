@@ -38,6 +38,24 @@ const HomepageHero: React.FC<HomepageHeroProps> = ({ data, episodes }) => {
       </div>
       <BCMSImage
         media={data.cover}
+        options={{
+          sizes: {
+            exec: [
+              {
+                width: 750,
+                height: 710,
+              },
+              {
+                width: 1024,
+                height: 826,
+              },
+              {
+                width: 1640,
+                height: 826,
+              },
+            ],
+          },
+        }}
         className="absolute top-0 left-0 w-full h-full cover"
       />
       <div className="absolute top-0 left-0 w-full h-full bg-black/40" />

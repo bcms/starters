@@ -25,6 +25,24 @@
         >
           <BCMSImage
             :media="data.page.meta.cover"
+            :options="{
+              sizes: {
+                exec: [
+                  {
+                    width: 660,
+                    height: 320,
+                  },
+                  {
+                    width: 960,
+                    height: 400,
+                  },
+                  {
+                    width: 1344,
+                    height: 554,
+                  },
+                ],
+              },
+            }"
             class="w-full h-full cover"
           />
           <div class="absolute top-0 left-0 w-full h-full bg-black/50" />

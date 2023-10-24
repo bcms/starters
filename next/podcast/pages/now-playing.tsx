@@ -72,6 +72,24 @@ const NowPlaying: React.FC<PageProps<NowPlayingPageData>> = ({
         <div className="relative aspect-square rounded overflow-hidden mb-8 md:aspect-[2.47] lg:rounded-2xl lg:mb-16">
           <BCMSImage
             media={episode?.cover}
+            options={{
+              sizes: {
+                exec: [
+                  {
+                    width: 654,
+                    height: 654,
+                  },
+                  {
+                    width: 768,
+                    height: 291,
+                  },
+                  {
+                    width: 1344,
+                    height: 544,
+                  },
+                ],
+              },
+            }}
             className="absolute top-0 left-0 w-full h-full cover rounded overflow-hidden lg:rounded-2xl"
           />
           <div className="absolute top-0 left-0 w-full h-full bg-black/50 lg:bg-black/60" />

@@ -69,6 +69,20 @@ const HomePageSponsors: React.FC<HomePageSponsorsProps> = ({ data }) => {
                   <div className="flex items-center justify-center w-[295px] aspect-[2.17] rounded-lg bg-white mx-auto mb-6 lg:w-[462px] lg:aspect-[1.7] lg:rounded-2xl lg:mb-12">
                     <BCMSImage
                       media={sponsor.cover}
+                      options={{
+                        sizes: {
+                          exec: [
+                            {
+                              width: 590,
+                              height: 270,
+                            },
+                            {
+                              width: 924,
+                              height: 540,
+                            },
+                          ],
+                        },
+                      }}
                       className="w-auto h-6 cover lg:h-12"
                     />
                   </div>

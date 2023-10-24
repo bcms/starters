@@ -17,6 +17,24 @@
           </div>
           <BCMSImage
             :media="data.page.meta.cover"
+            :options="{
+              sizes: {
+                exec: [
+                  {
+                    width: 660,
+                    height: 320,
+                  },
+                  {
+                    width: 960,
+                    height: 400,
+                  },
+                  {
+                    width: 1344,
+                    height: 554,
+                  },
+                ],
+              },
+            }"
             class="aspect-[2.07] rounded-lg overflow-hidden w-full cover mb-6 md:mb-8 lg:aspect-[2.43] lg:rounded-2xl lg:mb-12"
           />
           <ContentManager :item="data.page.content" class="prose" />
