@@ -51,23 +51,6 @@ cd starters/nuxt/restaurant
 
 ---
 
-<br/>
-<br/>
-
-<h2>Some features</h2>
-
-<h3>Responsive grid layout</h2>
-<p>A clean and organized grid layout displaying various restaurant with an image, title, and brief description.</p>
-<h3>Detailed restaurant page</h2>
-<p>Individual pages for each restaurant detailing ingredients, preparation steps, images, and related restaurant.
-</p>
-<h3>Search functionality</h3>  
-<p>Users can search for their desired restaurant from a vast collection.</p>
-<h3>Filtering functionality</h3>  
-<p>Users can search for their desired restaurant from a vast collection.</p>
-
----
-
 <br>
 <br>
 
