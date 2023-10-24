@@ -1,4 +1,4 @@
-https://github.com/bcms/starters/assets/15079459/87b9145c-084f-47b0-b3b9-9f4a30ab21d9
+https://github.com/bcms/starters/assets/15079459/ceed3ea4-c6c6-40f7-9e18-746874015120
 
 <h1 align="center">Conference with Nuxt.js and BCMS</h1>
 <p align="center"><a href="https://conference-starter.thebcms.com/">See this conference in action ⤴</a></p>
