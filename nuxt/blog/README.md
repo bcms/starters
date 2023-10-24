@@ -1,4 +1,4 @@
-https://github.com/bcms/starters/assets/15079459/87b9145c-084f-47b0-b3b9-9f4a30ab21d9
+https://github.com/bcms/starters/assets/15079459/84dcf8dd-4cf9-48b8-919f-07f359ea9541
 
 <h1 align="center">Blog with Nuxt.js and BCMS</h1>
 <p align="center"><a href="https://blog-starter.thebcms.com/">See this blog in action ⤴</a></p>
