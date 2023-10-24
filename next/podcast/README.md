@@ -56,15 +56,12 @@ cd starters/next/podcast
 
 <h2>Some features</h2>
 
-<h3>Responsive grid layout</h2>
-<p>A clean and organized grid layout displaying various recipes with an image, title, and brief description.</p>
-<h3>Detailed recipe page</h2>
-<p>Individual pages for each recipe detailing ingredients, preparation steps, images, and related recipes.
-</p>
-<h3>Search functionality</h3>  
-<p>Users can search for their desired recipes from a vast collection.</p>
-<h3>Filtering functionality</h3>  
-<p>Users can search for their desired recipes from a vast collection.</p>
+<h3>Responsive layout</h2>
+<p>A clean, organized layout that looks good on all devices.</p>
+<h3>Fully functional audio player</h2>
+<p>Visitors can listen to episodes while exploring the website content</p>
+<h3>Editable through BCMS</h3>  
+<p>Add and update podcast episodes through BCMS, content management system</p>
 
 ---
 
