@@ -1,4 +1,4 @@
-https://github.com/bcms/starters/assets/15079459/87b9145c-084f-47b0-b3b9-9f4a30ab21d9
+https://github.com/bcms/starters/assets/15079459/05d4a313-d7b6-4b0f-95d9-e041eca3ce9e
 
 <h1 align="center">Recipes with Nuxt.js and BCMS</h1>
 <p align="center"><a href="https://recipes-starter.thebcms.com/">See this recipes in action ⤴</a></p>
