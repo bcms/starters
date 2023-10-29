@@ -2,7 +2,7 @@
 <h1 align="center">BCMS Starters</h1>
 
 <p align="center">Beautiful, customizable, responsive, high-performance starters, integrated with BCMS.</p>
-<p align="center">Built with Tailwind. Ready-to-use. <br> <br></p>
+<p align="center">Built with Tailwind. Free. Ready-to-use. <br> <br></p>
 
 <table align="center" layout="fixed" style="table-layout: fixed">
   <tbody>
