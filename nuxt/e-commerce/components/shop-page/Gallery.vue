@@ -1,9 +1,13 @@
 <template>
   <div class="flex flex-col">
     <BCMSImage
-      v-if="galleryByColor[activeImage]"
-      :media="galleryByColor[activeImage].image"
-      :options="{
+      v-for="(image, index) in galleryByColor"
+      :key="index"
+      :media="image.image"
+      class="aspect-square w-full cover mb-6 flex-1"
+      :class="[activeImage === index ? 'flex' : 'hidden']"
+    />
+    <!-- :options="{
         sizes: {
           exec: [
             {
@@ -11,9 +15,7 @@
             },
           ],
         },
-      }"
-      class="flex aspect-square w-full cover mb-6 flex-1"
-    />
+      }" -->
     <div class="flex gap-4 overflow-x-auto">
       <button
         v-for="(image, index) in galleryByColor"
@@ -27,16 +29,6 @@
         <div class="overflow-hidden">
           <BCMSImage
             :media="image.image"
-            :options="{
-              sizes: {
-                exec: [
-                  {
-                    width: 360,
-                    height: 360,
-                  },
-                ],
-              },
-            }"
             class="w-full h-full cover transition-transform duration-300 group-hover:scale-105"
           />
         </div>
