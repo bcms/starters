@@ -55,6 +55,7 @@ export const query = graphql`
                 height
                 name
                 src
+                svg
                 width
               }
               date

@@ -7,10 +7,12 @@ export default async function handler(
 ) {
   if ((req as any)._parsedOriginalUrl.path.startsWith('/api/bcms-media/')) {
     const apiRes = await fetch(
-      `http://localhost:3001${(req as any)._parsedOriginalUrl.path.replace('bcms-media', 'bcms-images')}`,
+      `http://localhost:3001${(req as any)._parsedOriginalUrl.path.replace(
+        'bcms-media',
+        'bcms-images',
+      )}`,
     );
     const fileInfo = await apiRes.json();
-    console.log(fileInfo);
     res.status(200);
     res.setHeader('Content-Type', fileInfo.mimetype as string);
     fs.createReadStream(fileInfo.path).pipe(res, {

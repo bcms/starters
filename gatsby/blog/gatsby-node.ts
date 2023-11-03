@@ -26,6 +26,7 @@ exports.createPages = async ({ graphql, actions, reporter }: any) => {
                 height
                 name
                 src
+                svg
                 width
               }
             }
@@ -61,6 +62,7 @@ exports.createPages = async ({ graphql, actions, reporter }: any) => {
                   height
                   name
                   src
+                  svg
                   width
                 }
               }
@@ -110,6 +112,7 @@ exports.createPages = async ({ graphql, actions, reporter }: any) => {
                   height
                   name
                   src
+                  svg
                   width
                 }
                 date
