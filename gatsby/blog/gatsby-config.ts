@@ -40,11 +40,14 @@ const config: GatsbyConfig = {
         },
         media: {
           download: true,
-          output: 'public',
+          output: 'static/api',
           images: {
             process: true,
           },
         },
+        server: {
+          port: 3001
+        }
       }) as any,
     },
   ],

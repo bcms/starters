@@ -16,6 +16,7 @@ export const query = graphql`
               name
               src
               width
+              svg
             }
           }
           description {

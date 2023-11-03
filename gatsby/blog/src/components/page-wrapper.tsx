@@ -5,6 +5,13 @@ import { Header } from '../layout/header';
 import { Footer } from '../layout/footer';
 import { Helmet } from 'react-helmet';
 
+BCMSImageConfig.cmsOrigin =
+  process.env.GATSBY_BCMS_API_ORIGIN || 'http://localhost:8080';
+BCMSImageConfig.publicApiKeyId =
+  process.env.GATSBY_BCMS_API_PUBLIC_KEY || '6433b6994c02e25452a8a947';
+
+BCMSImageConfig.localeImageProcessing = true;
+
 export const PageWrapper: FC<PropsWithChildren<PageData>> = ({
   page,
   children,
@@ -19,13 +26,6 @@ export const PageWrapper: FC<PropsWithChildren<PageData>> = ({
     'Jumpstart your Gatsby project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
   const image = '/thumbnail.jpg';
   const domain = 'https://blog-starter.thebcms.com/';
-
-  BCMSImageConfig.cmsOrigin =
-    process.env.GATSBY_BCMS_API_ORIGIN || 'http://localhost:8080';
-  BCMSImageConfig.publicApiKeyId =
-    process.env.GATSBY_BCMS_API_PUBLIC_KEY || '6433b6994c02e25452a8a947';
-
-  BCMSImageConfig.localeImageProcessing = false;
 
   return (
     <div className="overflow-hidden">
