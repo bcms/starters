@@ -93,7 +93,7 @@
                 :error="stepThree.jobType.error"
                 label="Job type"
                 placeholder="Job type"
-                :options="[]"
+                :options="['Full-time', 'Part-time', 'Freelance']"
               />
               <fieldset class="grid grid-cols-2 gap-2 items-end lg:gap-3">
                 <FormText
@@ -113,21 +113,25 @@
                 :error="stepThree.experienceLevel.error"
                 label="Experience level"
                 placeholder="Level"
-                :options="[]"
+                :options="['Entry', 'Mid', 'Senior']"
               />
               <FormSelect
                 v-model="stepThree.education.value"
                 :error="stepThree.education.error"
                 label="Education"
                 placeholder="Education"
-                :options="[]"
+                :options="['High School', 'Bachelor\'s', 'Master\'s']"
               />
               <FormSelect
                 v-model="stepThree.requiredSkill.value"
                 :error="stepThree.requiredSkill.error"
                 label="Required skill"
                 placeholder="Skill"
-                :options="[]"
+                :options="[
+                  'Programming',
+                  'Data Analysis',
+                  'Project Management',
+                ]"
               />
               <fieldset class="grid grid-cols-2 gap-2 items-end lg:gap-3">
                 <FormText

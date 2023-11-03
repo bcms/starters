@@ -32,7 +32,7 @@
         <div
           v-if="showOptions"
           v-click-outside="() => (showOptions = false)"
-          class="absolute -bottom-1 left-0 w-full translate-y-full grid grid-cols-1 gap-px border border-[#DBD9D5] bg-[#DBD9D5] rounded-lg max-h-[204px] overflow-y-auto"
+          class="absolute z-10 -bottom-1 left-0 w-full translate-y-full grid grid-cols-1 gap-px border border-[#DBD9D5] bg-[#DBD9D5] rounded-lg max-h-[204px] overflow-y-auto"
           :style="{
             boxShadow: '4px 4px 40px rgba(0, 0, 0, 0.07)',
           }"
@@ -88,5 +88,6 @@ const showOptions = ref(false);
 
 const handleOptionSelect = (option: string) => {
   emits('update:modelValue', option);
+  showOptions.value = false;
 };
 </script>
