@@ -16,7 +16,6 @@ export const ContentManager: FC<ContentManagerProps> = ({
   widgetComponents,
   className,
 }) => {
-  const path = React.useState(window.location.pathname)[0];
   const managerDOM = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -42,7 +41,7 @@ export const ContentManager: FC<ContentManagerProps> = ({
     };
 
     parseInternalLinks();
-  }, [path]);
+  });
 
   return (
     <div ref={managerDOM} className={className}>

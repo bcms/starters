@@ -28,7 +28,7 @@ const BlogsPage: FC<{
     if (sParam) {
       setSearchVal(sParam);
     }
-  }, [location.search]);
+  });
 
   const categories = useMemo(() => {
     return (
@@ -69,7 +69,7 @@ const BlogsPage: FC<{
   };
 
   return (
-    <PageWrapper {...data}>
+    <PageWrapper {...data} location='/blog'>
       <div className="relative pt-10 pb-8 md:py-[72px] lg:pb-[100px] xl:pb-[128px]">
         <div className="container">
           <div>

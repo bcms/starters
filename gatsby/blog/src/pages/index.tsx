@@ -24,7 +24,7 @@ const HomePage: FC<{
 
   return (
     <main>
-      <PageWrapper {...data}>
+      <PageWrapper {...data} location="/">
         <HomePageHero data={data.page.bcms.meta.en.hero} />
         <HomePageBlogsList blogs={liteBlogs} />
       </PageWrapper>

@@ -6,3 +6,4 @@ src/gatsby-types.d.ts
 /static/bcms-media
 /static/api/bcms-media
 .env
+/bcms.config.js

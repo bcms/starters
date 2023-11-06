@@ -7,7 +7,7 @@ const Contact: FC<{
   data: PageData<ContactPageData>;
 }> = ({ data }) => {
   return (
-    <PageWrapper {...data}>
+    <PageWrapper {...data} location='/contact/'>
       <div className="relative pt-10 pb-8 md:py-[72px] lg:pb-[100px] xl:pb-[128px]">
         <div className="container">
           <div className="flex flex-col-reverse items-center text-center gap-2.5 mb-8 md:gap-4 md:mb-10 lg:gap-5 lg:mb-12">

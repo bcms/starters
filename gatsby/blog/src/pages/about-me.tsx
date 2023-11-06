@@ -8,7 +8,7 @@ const AboutMe: FC<{
   data: PageData<AboutPageData>;
 }> = ({ data }) => {
   return (
-    <PageWrapper {...data}>
+    <PageWrapper {...data} location='/about'>
       <div className="relative pt-10 pb-8 md:py-[72px] lg:pb-[104px]">
         <div className="container">
           <div className="flex flex-col items-center text-center mb-8 md:mb-20 lg:mb-[134px]">

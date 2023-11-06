@@ -26,12 +26,12 @@ const config: GatsbyConfig = {
         cms: {
           origin:
             process.env.BCMS_API_ORIGIN ||
-            'https://becomes-starter-projects.yourbcms.com',
+            'http://localhost:8080',
           key: {
-            id: process.env.BCMS_API_KEY || '629dcd4dbcf5017354af6fe8',
+            id: process.env.BCMS_API_KEY || '6433b6994c02e25452a8a947',
             secret:
               process.env.BCMS_API_SECRET ||
-              '7a3c5899f211c2d988770f7561330ed8b0a4b2b5481acc2855bb720729367896',
+              '4107ecd203ff708a1789439376934e315781d66134d6c0da058bc87583f6e0c9',
           },
         },
         media: {
