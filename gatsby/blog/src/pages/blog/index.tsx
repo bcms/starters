@@ -4,7 +4,6 @@ import { PageWrapper, Search, TopGradient } from '../../components';
 import { BlogsCard } from '../../components/blogs/card';
 import { graphql } from 'gatsby';
 import { BlogEntryMeta } from '../../../bcms/types';
-import { useLocation } from '@reach/router';
 
 const BlogsPage: FC<{
   data: PageData<BlogsPageData> & {
@@ -19,7 +18,6 @@ const BlogsPage: FC<{
     };
   };
 }> = ({ data }) => {
-  const location = useLocation();
   const [searchVal, setSearchVal] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
 

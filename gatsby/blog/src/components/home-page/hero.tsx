@@ -19,7 +19,7 @@ export const HomePageHero: FC<Props> = (props) => {
 
   const handleSearchEnter = () => navigate(`/blog?s=${searchVal}`);
 
-  const lightBlogs: BlogLite[] = props.data.featured_blogs.map((blog) =>
+  const liteBlogs: BlogLite[] = props.data.featured_blogs.map((blog) =>
     blogToLite(
       (
         blog as unknown as {
@@ -47,7 +47,7 @@ export const HomePageHero: FC<Props> = (props) => {
           onEnter={handleSearchEnter}
         />
         <div className="grid grid-cols-2 gap-4 auto-rows-fr md:gap-8 lg:gap-12">
-          {lightBlogs.map((blog, index) => (
+          {liteBlogs.map((blog, index) => (
             <Link
               key={index}
               to={`/blog/${blog.slug}`}

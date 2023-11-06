@@ -18,7 +18,7 @@ const HomePage: FC<{
     };
   };
 }> = ({ data }) => {
-  const lightBlogs: BlogLite[] = data.blogs.nodes.map((blog) =>
+  const liteBlogs: BlogLite[] = data.blogs.nodes.map((blog) =>
     blogToLite(blog.bcms as unknown as BlogEntry),
   );
 
@@ -26,7 +26,7 @@ const HomePage: FC<{
     <main>
       <PageWrapper {...data}>
         <HomePageHero data={data.page.bcms.meta.en.hero} />
-        <HomePageBlogsList blogs={lightBlogs} />
+        <HomePageBlogsList blogs={liteBlogs} />
       </PageWrapper>
     </main>
   );
