@@ -1,10 +1,11 @@
-import { BlogEntry, BlogEntryMeta } from './bcms/types';
+import { BlogEntry } from './bcms/types';
 import { getBcmsMost } from 'gatsby-source-bcms';
 
 const path = require('path');
 
-exports.createPages = async ({ graphql, actions, reporter }: any) => {
+exports.createPages = async ({ actions }: any) => {
   const { createPage } = actions;
+
   // SINGLE BLOG PAGES
   const blogTemplate = path.resolve('./src/templates/blog.tsx');
 

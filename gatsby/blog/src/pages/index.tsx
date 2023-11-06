@@ -9,17 +9,13 @@ const HomePage: FC<{
   data: PageData<HomePageData> & {
     blogs: {
       nodes: Array<{
-        bcms: {
-          meta: {
-            en: BlogEntry;
-          };
-        };
+        bcms: BlogEntry;
       }>;
     };
   };
 }> = ({ data }) => {
   const liteBlogs: BlogLite[] = data.blogs.nodes.map((blog) =>
-    blogToLite(blog.bcms as unknown as BlogEntry),
+    blogToLite(blog.bcms),
   );
 
   return (
