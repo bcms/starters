@@ -41,7 +41,7 @@ export const ContentManager: FC<ContentManagerProps> = ({
     };
 
     parseInternalLinks();
-  });
+  }, []);
 
   return (
     <div ref={managerDOM} className={className}>
