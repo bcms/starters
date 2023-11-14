@@ -1,0 +1,19 @@
+.fade-entered,
+.fade-exited {
+  transition: opacity 0.3s;
+}
+
+.fade-entering,
+.fade-exiting {
+  opacity: 0;
+}
+
+.scaleBtnArrow-entering,
+.scaleBtnArrow-exiting {
+  transition: opacity 0.2s ease, width 0.2s ease;
+}
+.scaleBtnArrow-entering,
+.scaleBtnArrow-exiting{
+  opacity: 0;
+  width: 0;
+}
