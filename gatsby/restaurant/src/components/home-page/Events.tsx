@@ -1,14 +1,17 @@
 import { HomeEventsGroup, EventEntryMeta } from '@/bcms/types';
 import React from 'react';
-import {HomePageDivider} from '@/src/components/home-page/Divider';
-import {ContentManager} from '@/src/components/ContentManager';
-import {EventsPageEventCard} from '@/src/components/events-page/EventCard';
+import { HomePageDivider } from '@/src/components/home-page/Divider';
+import { ContentManager } from '@/src/components/ContentManager';
+import { EventsPageEventCard } from '@/src/components/events-page/EventCard';
 interface HomepageEventsProps {
   data: HomeEventsGroup;
   items: EventEntryMeta[];
 }
 
-export const HomePageEvents: React.FC<HomepageEventsProps> = ({ data, items }) => {
+export const HomePageEvents: React.FC<HomepageEventsProps> = ({
+  data,
+  items,
+}) => {
   return (
     <section className="overflow-hidden">
       <div className="container">

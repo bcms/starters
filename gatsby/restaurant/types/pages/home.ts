@@ -7,16 +7,16 @@ import { EventEntryMeta } from '@/bcms/types/entry/event';
 
 export interface HomePageData {
   meta: {
-    en: HomePageEntryMeta
+    en: HomePageEntryMeta;
   };
-  specials:{
-      nodes: Array<{
-        bcms: {
-          meta: {
-           en: FoodItemEntryMeta
-}
+  specials: {
+    nodes: Array<{
+      bcms: {
+        meta: {
+          en: FoodItemEntryMeta;
         };
-      }>;
+      };
+    }>;
   };
   events: EventEntryMeta[];
   testimonials: TestimonialEntryMeta[];

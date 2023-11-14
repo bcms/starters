@@ -1,5 +1,5 @@
 import React from 'react';
-import StarIcon from '@/assets/icons/star.svg';
+import StarIcon from '@/src/assets/icons/star.svg';
 
 const ArchWithStar: React.FC = () => {
   return (
@@ -60,7 +60,10 @@ const ArchWithStar: React.FC = () => {
           </linearGradient>
         </defs>
       </svg>
-      <img src={StarIcon} className="absolute z-10 top-1 right-24 w-4 h-4 lg:w-8 lg:h-8 lg:top-7 lg:right-[400px]" />
+      <img
+        src={StarIcon}
+        className="absolute z-10 top-1 right-24 w-4 h-4 lg:w-8 lg:h-8 lg:top-7 lg:right-[400px]"
+      />
     </div>
   );
 };

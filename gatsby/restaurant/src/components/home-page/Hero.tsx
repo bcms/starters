@@ -1,7 +1,7 @@
 import { HomeHeroGroup } from '@/bcms/types';
 import React from 'react';
-import {ContentManager} from '@/src/components/ContentManager';
-import {HomePageDivider} from '@/src/components/home-page/Divider';
+import { ContentManager } from '@/src/components/ContentManager';
+import { HomePageDivider } from '@/src/components/home-page/Divider';
 import StarIcon from '@/src/assets/icons/star.svg';
 import Btn from '@/src/components/Btn';
 import HomePageMap from '@/src/components/home-page/Map';

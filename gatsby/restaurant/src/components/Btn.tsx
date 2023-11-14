@@ -1,4 +1,4 @@
-import React, {PropsWithChildren, useRef, useState} from 'react';
+import React, { PropsWithChildren, useRef, useState } from 'react';
 import { Transition } from 'react-transition-group';
 import { Link } from 'gatsby';
 
@@ -66,7 +66,7 @@ const ButtonLink: React.FC<PropsWithChildren<ButtonLinkProps>> = ({
               >
                 {(state: any) => (
                   <img
-                      src={ArrowIcon}
+                    src={ArrowIcon}
                     ref={transitionRef}
                     className={classnames(
                       'w-[14px] h-[14px] opacity-0 ml-2 transition-all duration-300 group-hover:opacity-100',
@@ -92,7 +92,7 @@ const ButtonLink: React.FC<PropsWithChildren<ButtonLinkProps>> = ({
           >
             {(state: any) => (
               <img
-                  src={ArrowIcon}
+                src={ArrowIcon}
                 ref={transitionRef}
                 className={classnames(
                   'w-[14px] h-[14px] opacity-0 ml-2 transition-all duration-300 group-hover:opacity-100',

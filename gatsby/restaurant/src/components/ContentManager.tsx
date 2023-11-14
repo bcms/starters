@@ -9,12 +9,14 @@ interface ContentManagerProps {
   items: BCMSPropRichTextDataParsed;
   widgetComponents?: BCMSWidgetComponents;
   className?: string;
+  parentClassName?: string;
 }
 
 export const ContentManager: FC<ContentManagerProps> = ({
   items,
   widgetComponents,
   className,
+  parentClassName,
 }) => {
   const managerDOM = useRef<HTMLDivElement>(null);
 
@@ -44,8 +46,9 @@ export const ContentManager: FC<ContentManagerProps> = ({
   }, []);
 
   return (
-    <div ref={managerDOM} className={className}>
+    <div ref={managerDOM} className={parentClassName}>
       <BCMSContentManager
+        className={className}
         items={items}
         widgetComponents={
           widgetComponents || {

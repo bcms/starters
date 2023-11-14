@@ -1,6 +1,6 @@
 import { HomeTestimonialsGroup, TestimonialEntryMeta } from '@/bcms/types';
 import React from 'react';
-import {ContentManager} from '@/src/components/ContentManager';
+import { ContentManager } from '@/src/components/ContentManager';
 import SwiperCore from 'swiper';
 import { A11y, Navigation } from 'swiper/modules';
 import { SwiperSlide, Swiper } from 'swiper/react';

@@ -1,7 +1,7 @@
 import { HomeAmbienceGroup } from '@/bcms/types';
 import React from 'react';
-import {HomePageDivider} from '@/src/components/home-page/Divider';
-import {ContentManager} from '@/src/components/ContentManager';
+import { HomePageDivider } from '@/src/components/home-page/Divider';
+import { ContentManager } from '@/src/components/ContentManager';
 import { BCMSImage } from 'gatsby-source-bcms/components';
 interface HomepageAmbienceProps {
   data: HomeAmbienceGroup;
@@ -47,4 +47,3 @@ export const HomePageAmbience: React.FC<HomepageAmbienceProps> = ({ data }) => {
     </section>
   );
 };
-

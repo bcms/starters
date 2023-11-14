@@ -1,7 +1,7 @@
 import { HomeSpecialsGroup, FoodItemEntryMeta } from '@/bcms/types';
-import {HomePageDivider} from '@/src/components/home-page/Divider';
+import { HomePageDivider } from '@/src/components/home-page/Divider';
 import React, { useState, useMemo } from 'react';
-import {ContentManager} from '@/src/components/ContentManager';
+import { ContentManager } from '@/src/components/ContentManager';
 
 import { A11y } from 'swiper/modules';
 import SwiperCore from 'swiper';
@@ -17,7 +17,10 @@ interface HomepageSpecialsProps {
 }
 const days = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
 
-export const HomePageSpecials: React.FC<HomepageSpecialsProps> = ({ data, items }) => {
+export const HomePageSpecials: React.FC<HomepageSpecialsProps> = ({
+  data,
+  items,
+}) => {
   const [activeDay, setActiveDay] = useState<string>('SUN');
 
   const sliderOptions = {

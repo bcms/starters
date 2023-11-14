@@ -123,50 +123,49 @@ export const query = graphql`
           ambience {
             title
             description {
-                value
-                name
-                type
+              value
+              name
+              type
             }
             items {
-                title
-                cover {
-                  _id
-                  alt_text
-                  caption
-                  height
-                  name
-                  src
-                  svg
-                  width                
-                
-                }
+              title
+              cover {
+                _id
+                alt_text
+                caption
+                height
+                name
+                src
+                svg
+                width
+              }
             }
           }
-          
+
           specials {
             title
             description {
-                value
-                name
-                type
+              value
+              name
+              type
             }
           }
-          
+
           events {
             title
             description {
-                value
-                name
-                type
+              value
+              name
+              type
             }
           }
-          
+
           testimonials {
             title
             description {
-                type
-                name
-                value
+              type
+              name
+              value
             }
           }
         }

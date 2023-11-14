@@ -1,12 +1,14 @@
 import React from 'react';
 import { BCMSImage } from 'gatsby-source-bcms/components';
-import {ContentManager} from '@/src/components/ContentManager';
+import { ContentManager } from '@/src/components/ContentManager';
 import { EventEntryMeta } from '@/bcms/types';
 
 interface EventsPageEventCardProps {
   card: EventEntryMeta;
 }
-export const EventsPageEventCard: React.FC<EventsPageEventCardProps> = ({ card }) => {
+export const EventsPageEventCard: React.FC<EventsPageEventCardProps> = ({
+  card,
+}) => {
   return (
     <article className="px-6 py-8 rounded-2xl bg-[#EDEBE1]">
       <BCMSImage
@@ -36,5 +38,3 @@ export const EventsPageEventCard: React.FC<EventsPageEventCardProps> = ({ card }
     </article>
   );
 };
-
-
