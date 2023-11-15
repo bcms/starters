@@ -4,4 +4,12 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { setOgHead } = useHeadTags();
+
+useHead(() =>
+  setOgHead({
+    title: 'Error page',
+  }),
+);
+</script>
