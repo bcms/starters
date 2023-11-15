@@ -187,6 +187,7 @@ const { data, error } = useAsyncData<PageProps<RecipePageData>>(
     };
   },
 );
+console.log(data.value)
 if (error.value) {
   throw createError({
     statusCode: 500,

@@ -599,7 +599,7 @@
   "64182d67f7d73b81da796db0": {
     "_id": "64182d67f7d73b81da796db0",
     "createdAt": 1679306087216,
-    "updatedAt": 1694694481329,
+    "updatedAt": 1700083029346,
     "cid": "9",
     "templateId": "64182bc0f7d73b81da796da7",
     "userId": "111111111111111111111111",
@@ -641,7 +641,7 @@
             "id": "aece2589-9fa1-46c4-9c61-5d5eb09834d7",
             "data": [
               {
-                "id": "69e4e9b5-d3de-4db2-9aee-be6dc63af532",
+                "id": "def8f042-aaf6-4119-ab68-2cff39734351",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -667,7 +667,7 @@
             "id": "2c15cc2e-e154-4870-ad96-bfded1029fb1",
             "data": [
               {
-                "id": "45db8510-7f79-4912-b93f-a5c6dff5fb7a",
+                "id": "d8b1a0ba-6e20-458e-a3bc-d6d36e304f41",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -720,7 +720,7 @@
                       "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
                       "data": [
                         {
-                          "id": "6c3d10b0-b2bd-4375-ae87-d74d06353e47",
+                          "id": "2938016b-e075-4488-8c65-f701374fb29f",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -749,7 +749,7 @@
                       "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
                       "data": [
                         {
-                          "id": "73d130fc-d722-465d-a337-a13dc10a9692",
+                          "id": "c1e7e0c0-2084-4041-9da0-aa47888e93b5",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -778,7 +778,7 @@
                       "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
                       "data": [
                         {
-                          "id": "451bd51e-dfea-4072-8f9b-9caf2ef0240d",
+                          "id": "8216edef-655e-4844-8bb7-45ff90acfecf",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -807,7 +807,7 @@
                       "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
                       "data": [
                         {
-                          "id": "b46f2815-4d86-4be2-a4e3-1406fd8086fa",
+                          "id": "bfd5e7f0-792a-4556-b6ca-fcc5173f3f0e",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -831,7 +831,7 @@
             "id": "3d51a123-2aa7-4b9e-912b-3bbd2fec3065",
             "data": [
               {
-                "id": "816a9c93-a6b5-4fdc-8124-1ae37d562d8c",
+                "id": "a028270b-3494-44d6-84ae-03f51720c839",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -845,7 +845,7 @@
                 ]
               },
               {
-                "id": "06135d0a-ebb7-4ea9-bd55-b9f82478f418",
+                "id": "fdbaf4b5-5ecc-4437-ace7-7a81925c9e38",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -859,7 +859,7 @@
                 ]
               },
               {
-                "id": "9b4dd2c5-a3f5-41d4-9c36-02d531e823a4",
+                "id": "d4fcaedd-ba35-49bd-b8dc-cdfee1ecf28a",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -873,7 +873,7 @@
                 ]
               },
               {
-                "id": "a734805b-8f5a-41e6-a665-e7b531806d98",
+                "id": "46b0c17c-6c50-4848-aaa0-55ce157a2a26",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -887,7 +887,7 @@
                 ]
               },
               {
-                "id": "15513c0b-61eb-4a60-8326-3a59b11177d3",
+                "id": "ce651d4d-5997-43dd-8f9d-71e64ac348e4",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -901,7 +901,7 @@
                 ]
               },
               {
-                "id": "a4c28e1a-47f0-4f83-a725-064141f0d1b4",
+                "id": "b261805a-f3b8-41e6-a81f-cfd3821a1b4d",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -915,7 +915,7 @@
                 ]
               },
               {
-                "id": "0afbcea6-9f73-46b3-bb77-858f13890942",
+                "id": "66bac8e1-e3d3-4308-adb7-672f779300d8",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -929,7 +929,7 @@
                 ]
               },
               {
-                "id": "aff57489-65b5-43e3-8572-4c15623049a7",
+                "id": "9edb652d-b42a-405c-9d73-1ab9438631d8",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -943,7 +943,7 @@
                 ]
               },
               {
-                "id": "37be9f68-0b97-4434-a8cb-75617523a5c1",
+                "id": "03f4bc82-42f9-4007-83b3-75ef97846882",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -957,7 +957,7 @@
                 ]
               },
               {
-                "id": "7c6c250b-f71d-4d90-bb47-c26d12de4379",
+                "id": "eab12dfc-223a-4052-b570-e263549c6f95",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -971,7 +971,7 @@
                 ]
               },
               {
-                "id": "47490ba6-5b8f-43b2-8cee-9e3929a24e49",
+                "id": "fd2c2e14-578c-4fe7-ad46-bc1ebe2cf1bb",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -985,7 +985,7 @@
                 ]
               },
               {
-                "id": "917259b8-60de-4912-b378-9afb169229e8",
+                "id": "b7117d5f-d66a-45c5-bafd-fd178c0eba91",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -1017,7 +1017,7 @@
                       "id": "0477aece-1e98-473a-b55b-e415c914714a",
                       "data": [
                         {
-                          "id": "075c9ab4-8d35-4c8e-81d3-b41c623ad7df",
+                          "id": "aa5873c1-b3bb-4ee7-90ca-0053a5ba1cfd",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1056,7 +1056,7 @@
                       "id": "0477aece-1e98-473a-b55b-e415c914714a",
                       "data": [
                         {
-                          "id": "611e1958-3436-48de-9f1e-b79ff18276bc",
+                          "id": "c0d7af27-fe26-4b4d-a612-a9ebd3a46884",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1075,7 +1075,7 @@
                       "id": "48d6656c-9fca-4899-9605-5425df03d51b",
                       "data": [
                         {
-                          "_id": "64182d53f7d73b81da796daf",
+                          "_id": "641ae0827ea0642549cf765f",
                           "alt_text": "Second Step",
                           "caption": ""
                         }
@@ -1095,7 +1095,7 @@
                       "id": "0477aece-1e98-473a-b55b-e415c914714a",
                       "data": [
                         {
-                          "id": "c76b29c2-7f05-4a97-8ad1-80a033acc7df",
+                          "id": "d5cd0271-b3e5-4349-be27-9fadf69b0759",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1114,7 +1114,7 @@
                       "id": "48d6656c-9fca-4899-9605-5425df03d51b",
                       "data": [
                         {
-                          "_id": "64182d53f7d73b81da796daf",
+                          "_id": "6555345ddeb3ef8f8e4a419f",
                           "alt_text": "Third Step",
                           "caption": ""
                         }
@@ -1134,7 +1134,7 @@
                       "id": "0477aece-1e98-473a-b55b-e415c914714a",
                       "data": [
                         {
-                          "id": "e38e1271-0af9-4172-b251-5234bb5ed275",
+                          "id": "e2df662a-df18-4cb8-a96c-3ec5e1f70798",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1153,7 +1153,7 @@
                       "id": "48d6656c-9fca-4899-9605-5425df03d51b",
                       "data": [
                         {
-                          "_id": "64182d53f7d73b81da796daf",
+                          "_id": "6555345ddeb3ef8f8e4a41a0",
                           "alt_text": "Fourth Step",
                           "caption": ""
                         }
@@ -1173,7 +1173,7 @@
                       "id": "0477aece-1e98-473a-b55b-e415c914714a",
                       "data": [
                         {
-                          "id": "7af78dac-853b-4bc4-b153-9e56ae4a8fed",
+                          "id": "e7191c88-2a8e-43b8-a4d8-b8cc1a01eddd",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1192,7 +1192,7 @@
                       "id": "48d6656c-9fca-4899-9605-5425df03d51b",
                       "data": [
                         {
-                          "_id": "64182d53f7d73b81da796daf",
+                          "_id": "6555345edeb3ef8f8e4a41a1",
                           "alt_text": "Fifth Step",
                           "caption": ""
                         }
@@ -1212,7 +1212,7 @@
                       "id": "0477aece-1e98-473a-b55b-e415c914714a",
                       "data": [
                         {
-                          "id": "6e4ea72a-3421-4439-a466-a326fe4468a0",
+                          "id": "0f62621a-9ab8-447e-a798-c8f997b8dc85",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1231,7 +1231,7 @@
                       "id": "48d6656c-9fca-4899-9605-5425df03d51b",
                       "data": [
                         {
-                          "_id": "64182d53f7d73b81da796daf",
+                          "_id": "6555345edeb3ef8f8e4a41a2",
                           "alt_text": "Sixth Step",
                           "caption": ""
                         }
@@ -1251,7 +1251,7 @@
                       "id": "0477aece-1e98-473a-b55b-e415c914714a",
                       "data": [
                         {
-                          "id": "822dfd7b-e76b-4b91-a410-c35d8682902e",
+                          "id": "c8ed96b9-19cf-438f-84a1-f113497346bd",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1270,7 +1270,7 @@
                       "id": "48d6656c-9fca-4899-9605-5425df03d51b",
                       "data": [
                         {
-                          "_id": "64182d53f7d73b81da796daf",
+                          "_id": "6555345fdeb3ef8f8e4a41a4",
                           "alt_text": "Seventh Step",
                           "caption": ""
                         }
@@ -1295,7 +1295,7 @@
   "64182d7af7d73b81da796db1": {
     "_id": "64182d7af7d73b81da796db1",
     "createdAt": 1679306106819,
-    "updatedAt": 1694694257572,
+    "updatedAt": 1700082945163,
     "cid": "a",
     "templateId": "64182bc0f7d73b81da796da7",
     "userId": "111111111111111111111111",
@@ -1337,7 +1337,7 @@
             "id": "aece2589-9fa1-46c4-9c61-5d5eb09834d7",
             "data": [
               {
-                "id": "40c55dbd-a42d-41df-8836-96e745858992",
+                "id": "b76dfedd-42f6-47c8-9641-8fa0eb15a995",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -1363,7 +1363,7 @@
             "id": "2c15cc2e-e154-4870-ad96-bfded1029fb1",
             "data": [
               {
-                "id": "14ebe3f8-dea9-4c2c-99a8-c06931de8c16",
+                "id": "2ef2f90c-81da-4aae-aad9-983d0a4e5290",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -1416,7 +1416,7 @@
                       "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
                       "data": [
                         {
-                          "id": "e59e71f0-b9f4-4a9b-abb1-cf7dab142c39",
+                          "id": "356e1f4b-8e3e-4c76-898b-975224d045e2",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1445,7 +1445,7 @@
                       "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
                       "data": [
                         {
-                          "id": "5d17a9de-3bc7-466f-9a9e-9a63e8d0b3b0",
+                          "id": "1a4702c4-08b5-4983-b143-dfb96d576f18",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1474,7 +1474,7 @@
                       "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
                       "data": [
                         {
-                          "id": "d8b0459c-2dae-43eb-a5df-f9c67ed38259",
+                          "id": "1a39cf99-4fee-4adb-9626-8ec617523482",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1503,7 +1503,7 @@
                       "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
                       "data": [
                         {
-                          "id": "8dccb691-e8ab-4972-a8e6-71d0d9dd5d79",
+                          "id": "04ca7a25-18c9-417c-8d5f-9dbf588ab2ef",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1527,7 +1527,7 @@
             "id": "3d51a123-2aa7-4b9e-912b-3bbd2fec3065",
             "data": [
               {
-                "id": "c99994b8-eb9f-487b-859f-ed10b1eca0f0",
+                "id": "cb05b0ee-a0fc-4c8d-81a5-95f8b054ed4b",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -1541,7 +1541,7 @@
                 ]
               },
               {
-                "id": "01e97196-c1d3-4787-9ae1-a54ae06fc76b",
+                "id": "ba2ec1b8-0644-4b6a-9d97-c72d0ac75cf8",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -1555,7 +1555,7 @@
                 ]
               },
               {
-                "id": "8aaf7887-f191-4afc-85aa-e9a6c30979e9",
+                "id": "50c35a95-0c63-47a8-8dfb-78976b7a9679",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -1569,7 +1569,7 @@
                 ]
               },
               {
-                "id": "950cf37c-26cf-4927-ac15-37745c1fc856",
+                "id": "6ec96673-20c6-40d5-8339-e9165486b78e",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -1601,7 +1601,7 @@
                       "id": "0477aece-1e98-473a-b55b-e415c914714a",
                       "data": [
                         {
-                          "id": "e026bb52-1742-4c1d-8d0e-a9efd850a964",
+                          "id": "229aeeb5-57da-44a9-85a9-d61fa02c6bc6",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1640,7 +1640,7 @@
                       "id": "0477aece-1e98-473a-b55b-e415c914714a",
                       "data": [
                         {
-                          "id": "7cf11e5d-83a0-4406-933f-ed1240d6a57c",
+                          "id": "6f11933b-3ddc-4671-b08a-905c60f3db54",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1659,7 +1659,7 @@
                       "id": "48d6656c-9fca-4899-9605-5425df03d51b",
                       "data": [
                         {
-                          "_id": "64182d53f7d73b81da796dad",
+                          "_id": "6555345fdeb3ef8f8e4a41a6",
                           "alt_text": "Second Step",
                           "caption": ""
                         }
@@ -1679,7 +1679,7 @@
                       "id": "0477aece-1e98-473a-b55b-e415c914714a",
                       "data": [
                         {
-                          "id": "95ace57c-3a9a-4bf9-8f16-3e55e4966f2a",
+                          "id": "7710adbd-23b0-4c5c-8107-2047da8caca0",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1698,7 +1698,7 @@
                       "id": "48d6656c-9fca-4899-9605-5425df03d51b",
                       "data": [
                         {
-                          "_id": "64182d53f7d73b81da796dad",
+                          "_id": "6555345fdeb3ef8f8e4a41a5",
                           "alt_text": "Third Step",
                           "caption": ""
                         }
@@ -1718,7 +1718,7 @@
                       "id": "0477aece-1e98-473a-b55b-e415c914714a",
                       "data": [
                         {
-                          "id": "a2eccf26-04ed-49d7-9a8a-e058855fd9f0",
+                          "id": "59a8d1e6-b291-4a03-9435-47d3c39adc22",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1737,7 +1737,7 @@
                       "id": "48d6656c-9fca-4899-9605-5425df03d51b",
                       "data": [
                         {
-                          "_id": "64182d53f7d73b81da796dad",
+                          "_id": "6555345fdeb3ef8f8e4a41a4",
                           "alt_text": "Fourth Step",
                           "caption": ""
                         }
@@ -1762,7 +1762,7 @@
   "64182d8ef7d73b81da796db2": {
     "_id": "64182d8ef7d73b81da796db2",
     "createdAt": 1679306126181,
-    "updatedAt": 1694693949918,
+    "updatedAt": 1700082911977,
     "cid": "b",
     "templateId": "64182bc0f7d73b81da796da7",
     "userId": "111111111111111111111111",
@@ -1804,7 +1804,7 @@
             "id": "aece2589-9fa1-46c4-9c61-5d5eb09834d7",
             "data": [
               {
-                "id": "52a01ef5-5851-42ac-a6e2-0763e197f9b7",
+                "id": "65558e29-ce03-431c-8788-04e7ba5a208f",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -1830,7 +1830,7 @@
             "id": "2c15cc2e-e154-4870-ad96-bfded1029fb1",
             "data": [
               {
-                "id": "4a24f58a-3fe8-4c3b-974b-0314851ce6ff",
+                "id": "91df109f-5bb6-45de-8333-ec3fc9846878",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -1883,7 +1883,7 @@
                       "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
                       "data": [
                         {
-                          "id": "fedf25bc-162f-418c-bf63-f6a9ad02721b",
+                          "id": "71a9de91-f3d3-42ba-854a-24179836b018",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1912,7 +1912,7 @@
                       "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
                       "data": [
                         {
-                          "id": "55d2774e-68f2-480c-a507-4f1fe1ada306",
+                          "id": "1c9125fe-8cd2-441c-895b-a02bab7fa113",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1941,7 +1941,7 @@
                       "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
                       "data": [
                         {
-                          "id": "bfc7929d-dc29-4406-a78d-54a86df97bd5",
+                          "id": "4811cc13-0538-49cd-b73a-f3550ebaae1f",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1970,7 +1970,7 @@
                       "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
                       "data": [
                         {
-                          "id": "7e06ebf0-192c-428d-a763-1ef1c6e23ed9",
+                          "id": "416d60b2-5c91-4225-9f35-dcaebef02ac3",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -1999,7 +1999,7 @@
                       "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
                       "data": [
                         {
-                          "id": "bbc70fa4-77db-49f6-b34a-1a7e4453dd38",
+                          "id": "318d20d0-3850-4a95-adfd-5d16cc72e54d",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -2023,7 +2023,7 @@
             "id": "3d51a123-2aa7-4b9e-912b-3bbd2fec3065",
             "data": [
               {
-                "id": "923836ee-bd9a-4ad5-8937-27cf61e1de01",
+                "id": "123200e5-89ae-49ad-aa5c-cb69c7e351a7",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -2037,7 +2037,7 @@
                 ]
               },
               {
-                "id": "8cc1597e-b5fd-402b-9dab-ed0ea468b5cc",
+                "id": "d1f2c87a-b322-4087-8bc0-231ff45e7b18",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -2051,7 +2051,7 @@
                 ]
               },
               {
-                "id": "2f02d70f-cc64-4c19-a53e-35eed6440642",
+                "id": "e3490880-38c8-4e85-bc64-ae1df76365a9",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -2065,7 +2065,7 @@
                 ]
               },
               {
-                "id": "70407289-6416-4a0f-8604-8efd5a5877e9",
+                "id": "4df1f4ca-f293-4346-880f-a83cf2d34334",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -2079,7 +2079,7 @@
                 ]
               },
               {
-                "id": "e1b48ca0-36c0-4c0a-a966-16a3a1fc9314",
+                "id": "336137ee-a11f-4ae9-b549-bc3b76be058f",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -2093,7 +2093,7 @@
                 ]
               },
               {
-                "id": "1ca22e4e-6c08-4fb5-9524-5ec701e799d1",
+                "id": "759c75bf-d9c2-4546-930e-6b596b4acd37",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -2107,7 +2107,7 @@
                 ]
               },
               {
-                "id": "04eb21e0-3620-487e-8b57-3db63b8b80ba",
+                "id": "7ee103e4-ae98-44d1-96ef-31d0ad0cc11c",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -2121,7 +2121,7 @@
                 ]
               },
               {
-                "id": "c2acf5c6-75a7-4da3-afb8-65920956a716",
+                "id": "277473be-3d5d-46a4-9fab-05d458e46a66",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -2135,7 +2135,7 @@
                 ]
               },
               {
-                "id": "0edf7ab4-5d98-452e-b61a-834ccc45c444",
+                "id": "441714e7-fea2-498b-a94c-8b7aba6bb6c4",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -2149,7 +2149,7 @@
                 ]
               },
               {
-                "id": "99ace549-32f3-4fde-8cd0-4eeb7b232567",
+                "id": "67eb88ab-1ca3-4c2e-adb1-130a8dfb6464",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -2163,7 +2163,7 @@
                 ]
               },
               {
-                "id": "fe0ad7c3-ab60-402c-b0b2-6d9317e9d2f7",
+                "id": "a42df907-8d5d-4be9-ad35-03b35f25e9b3",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -2177,7 +2177,7 @@
                 ]
               },
               {
-                "id": "3e871c50-2b9c-4bbc-b2c8-79a65f66c8de",
+                "id": "1ecce464-2c63-4425-90be-4db0c17fb82c",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -2191,7 +2191,7 @@
                 ]
               },
               {
-                "id": "e76657c1-2955-4b33-84f6-82b4aa496665",
+                "id": "00564caf-1e8e-43da-8f91-bee65b58783a",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -2205,7 +2205,7 @@
                 ]
               },
               {
-                "id": "97e6a137-d1a0-4704-8162-8f9bc10ce687",
+                "id": "ef17d622-d78d-44ba-b80e-ff8c918e7ed7",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -2219,7 +2219,7 @@
                 ]
               },
               {
-                "id": "f7fa457b-c4d8-4f0d-b5ce-1e1031fe27f3",
+                "id": "a03b3f05-9fb9-48f6-a1b3-e8e6f7469116",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -2233,7 +2233,7 @@
                 ]
               },
               {
-                "id": "2f2d2bc5-6cf6-4921-8b55-0ba60f17aed7",
+                "id": "910ee3b1-6070-410a-82df-5d623c460161",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -2247,7 +2247,7 @@
                 ]
               },
               {
-                "id": "05e5daeb-ee15-41d5-8065-7fbfb6ea7764",
+                "id": "be09a341-92ca-420a-9152-e9167b06c8da",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -2261,7 +2261,7 @@
                 ]
               },
               {
-                "id": "e936f598-27c0-4946-bb8c-be57619806c1",
+                "id": "36a082ab-5989-445e-8ea2-47ea71ac9eea",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -2275,7 +2275,7 @@
                 ]
               },
               {
-                "id": "7975dd12-5daa-4527-b065-4f2a4efb3228",
+                "id": "25833f14-ea7b-4e81-8f9b-0ecb77e872c3",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -2289,7 +2289,7 @@
                 ]
               },
               {
-                "id": "a5d152e0-2208-4487-93bb-e85b7345d5cf",
+                "id": "2b00ed83-a054-4446-a8c2-0db8fdbcec24",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -2303,7 +2303,7 @@
                 ]
               },
               {
-                "id": "d564f3f0-ce38-45cb-a7f4-feed02a206c2",
+                "id": "931ea374-6169-4238-82c3-f2ff7c99a5e1",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -2335,7 +2335,7 @@
                       "id": "0477aece-1e98-473a-b55b-e415c914714a",
                       "data": [
                         {
-                          "id": "43161f5a-189d-4f42-9509-1b0d53304eee",
+                          "id": "a6d7c9e8-c22c-4066-bf55-26f3a9d0d787",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -2383,7 +2383,7 @@
                       "id": "0477aece-1e98-473a-b55b-e415c914714a",
                       "data": [
                         {
-                          "id": "f32765bd-d601-4e64-bd33-0ecd7551fbdb",
+                          "id": "840ff457-8b6a-4dc3-96b7-7db3e459e53a",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -2411,7 +2411,7 @@
                       "id": "48d6656c-9fca-4899-9605-5425df03d51b",
                       "data": [
                         {
-                          "_id": "64182d53f7d73b81da796dae",
+                          "_id": "6555345fdeb3ef8f8e4a41a6",
                           "alt_text": "Second Step",
                           "caption": ""
                         }
@@ -2431,7 +2431,7 @@
                       "id": "0477aece-1e98-473a-b55b-e415c914714a",
                       "data": [
                         {
-                          "id": "31ac97e0-bd8e-471a-9df2-2914846b24f5",
+                          "id": "838cbef1-bc47-4525-b7d5-7050c341799e",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -2459,7 +2459,7 @@
                       "id": "48d6656c-9fca-4899-9605-5425df03d51b",
                       "data": [
                         {
-                          "_id": "64182d53f7d73b81da796dae",
+                          "_id": "6555345fdeb3ef8f8e4a41a4",
                           "alt_text": "Third Step",
                           "caption": ""
                         }
@@ -2479,7 +2479,7 @@
                       "id": "0477aece-1e98-473a-b55b-e415c914714a",
                       "data": [
                         {
-                          "id": "1a89ee2d-1ccf-44a8-a321-58c3cee8f8d0",
+                          "id": "9d0f0a73-9465-43a9-9985-17910b9c51df",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -2507,7 +2507,7 @@
                       "id": "48d6656c-9fca-4899-9605-5425df03d51b",
                       "data": [
                         {
-                          "_id": "64182d53f7d73b81da796dae",
+                          "_id": "6555345edeb3ef8f8e4a41a3",
                           "alt_text": "Fourth Step",
                           "caption": ""
                         }
@@ -2527,7 +2527,7 @@
                       "id": "0477aece-1e98-473a-b55b-e415c914714a",
                       "data": [
                         {
-                          "id": "7812b944-7eda-4b6e-8afb-0f0851ec687a",
+                          "id": "b23bc055-5500-4785-bae4-6391901dc8e5",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -2555,7 +2555,7 @@
                       "id": "48d6656c-9fca-4899-9605-5425df03d51b",
                       "data": [
                         {
-                          "_id": "64182d53f7d73b81da796dae",
+                          "_id": "6555345edeb3ef8f8e4a41a2",
                           "alt_text": "Fifth Step",
                           "caption": ""
                         }
@@ -2575,7 +2575,7 @@
                       "id": "0477aece-1e98-473a-b55b-e415c914714a",
                       "data": [
                         {
-                          "id": "28a4767e-59b5-4db8-86ae-bb33026d264f",
+                          "id": "70c0b4e3-7ead-4fb3-9b96-bb04753f4d7a",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -2603,7 +2603,7 @@
                       "id": "48d6656c-9fca-4899-9605-5425df03d51b",
                       "data": [
                         {
-                          "_id": "64182d53f7d73b81da796dae",
+                          "_id": "6555345edeb3ef8f8e4a41a1",
                           "alt_text": "Sixth Step",
                           "caption": ""
                         }
@@ -2623,7 +2623,7 @@
                       "id": "0477aece-1e98-473a-b55b-e415c914714a",
                       "data": [
                         {
-                          "id": "9b48eb90-b33d-48ec-bebd-31a666df957b",
+                          "id": "bde8da3e-2888-4eb4-8de0-f53ad065cd39",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -2651,7 +2651,7 @@
                       "id": "48d6656c-9fca-4899-9605-5425df03d51b",
                       "data": [
                         {
-                          "_id": "64182d53f7d73b81da796dae",
+                          "_id": "6555345ddeb3ef8f8e4a41a0",
                           "alt_text": "Seventh Step",
                           "caption": ""
                         }
@@ -3231,7 +3231,7 @@
   "641ae2097ea0642549cf7661": {
     "_id": "641ae2097ea0642549cf7661",
     "createdAt": 1679483401119,
-    "updatedAt": 1679485680164,
+    "updatedAt": 1700082814949,
     "cid": "f",
     "templateId": "64182bc0f7d73b81da796da7",
     "userId": "111111111111111111111111",
@@ -3253,6 +3253,13 @@
             ]
           },
           {
+            "id": "75970e04-fb4f-4fd8-bf61-c97d238b40c9",
+            "data": {
+              "_id": "64f88bd8cb4b37574f5961fb",
+              "items": []
+            }
+          },
+          {
             "id": "d2e4ed3a-5400-40b1-a847-8374efa3eceb",
             "data": [
               {
@@ -3266,7 +3273,7 @@
             "id": "aece2589-9fa1-46c4-9c61-5d5eb09834d7",
             "data": [
               {
-                "id": "cee46068-5ed7-418c-9f47-732f87b5f50a",
+                "id": "95d3bc47-0da8-4576-baf8-231f6221d48f",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -3292,7 +3299,7 @@
             "id": "2c15cc2e-e154-4870-ad96-bfded1029fb1",
             "data": [
               {
-                "id": "11545630-6990-4523-acac-625bfd4c7caa",
+                "id": "4fc2bc26-4baf-4965-ba8f-6ee74f53ddaf",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -3380,7 +3387,7 @@
                       "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
                       "data": [
                         {
-                          "id": "7bd3ac80-f56b-4267-8fa4-78fb2ca21262",
+                          "id": "624fe26d-abe6-4531-a43f-35f3df57e8bc",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -3409,7 +3416,7 @@
                       "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
                       "data": [
                         {
-                          "id": "1e5a561d-7eb9-4c9f-9019-06a932293c2c",
+                          "id": "058ef733-4d32-4235-9c08-703227573a67",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -3438,7 +3445,7 @@
                       "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
                       "data": [
                         {
-                          "id": "353dda2c-9be8-42a8-999f-d50bcf1b5f87",
+                          "id": "1c859fbc-9a27-4282-a0a6-af5d54d361e1",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -3467,7 +3474,7 @@
                       "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
                       "data": [
                         {
-                          "id": "967ba760-3d9f-48e2-a33c-05d838c99bf9",
+                          "id": "b82435ad-56ed-4ff7-bfbe-52b009e2c979",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -3501,7 +3508,7 @@
             "id": "3d51a123-2aa7-4b9e-912b-3bbd2fec3065",
             "data": [
               {
-                "id": "dfecaca2-49a6-4d9a-a9bf-9dafa9e78913",
+                "id": "adc61bba-412b-4309-8041-dc0e691050ff",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -3524,7 +3531,7 @@
                 ]
               },
               {
-                "id": "1b9620ea-2673-41d1-83e3-ae424af48bee",
+                "id": "38fe653d-ae95-468a-a467-dc4619c242b8",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -3547,7 +3554,7 @@
                 ]
               },
               {
-                "id": "d7d9e888-66b8-43f1-8765-30613180d790",
+                "id": "a4d41c3f-7103-441b-89ad-568a8e98d5f9",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -3570,7 +3577,7 @@
                 ]
               },
               {
-                "id": "03a7056e-3d8e-4428-9e0b-7544484c7072",
+                "id": "a1244dd5-cd09-41e3-80cc-e8d9e0ea7167",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -3593,7 +3600,7 @@
                 ]
               },
               {
-                "id": "0315a15b-ad36-48be-afc3-a1250e23a4bf",
+                "id": "a65565c1-49b5-4821-8071-9cee9f425c30",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -3616,7 +3623,7 @@
                 ]
               },
               {
-                "id": "4424bac3-0bde-42cf-ad9e-533c6aaecd55",
+                "id": "32aed041-9b1e-441e-9289-f63f765cf3e7",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -3639,7 +3646,7 @@
                 ]
               },
               {
-                "id": "684799cf-c971-4a6d-9cef-f1760fef076a",
+                "id": "9d95eb96-3aab-4930-8c26-1b22ea827b79",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -3662,7 +3669,7 @@
                 ]
               },
               {
-                "id": "d2077fb8-7580-4910-933f-a076c202a489",
+                "id": "637707d4-45c9-417d-9265-6cd15bb99771",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -3685,7 +3692,7 @@
                 ]
               },
               {
-                "id": "91b578d1-99fa-4f92-a376-8780aca1607a",
+                "id": "0c69883d-3636-4bc6-b6a2-e69b3e9e18dd",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -3708,7 +3715,7 @@
                 ]
               },
               {
-                "id": "66bd873e-de5d-432c-964d-5272fa35f82e",
+                "id": "c4a68da0-2c0d-4dac-9e54-26e7252d4954",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -3731,7 +3738,7 @@
                 ]
               },
               {
-                "id": "8ff8f8db-3ab0-43c2-831d-570c2f495642",
+                "id": "2ea830c4-7d18-40fd-977b-6e66afd352f1",
                 "nodes": [
                   {
                     "type": "paragraph",
@@ -3772,7 +3779,7 @@
                       "id": "0477aece-1e98-473a-b55b-e415c914714a",
                       "data": [
                         {
-                          "id": "e7d119b5-32f3-4964-b239-aec03f1afa8a",
+                          "id": "f5f6c844-836a-49b6-928a-778c97b80539",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -3811,7 +3818,7 @@
                       "id": "0477aece-1e98-473a-b55b-e415c914714a",
                       "data": [
                         {
-                          "id": "df6c6760-38b3-4eb2-80e7-88622b6b7f21",
+                          "id": "db972b2c-76b7-4ab8-8f3d-795f77d79244",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -3830,7 +3837,7 @@
                       "id": "48d6656c-9fca-4899-9605-5425df03d51b",
                       "data": [
                         {
-                          "_id": "641ae0827ea0642549cf765e",
+                          "_id": "6555345fdeb3ef8f8e4a41a6",
                           "alt_text": "2. Second Step",
                           "caption": ""
                         }
@@ -3850,7 +3857,7 @@
                       "id": "0477aece-1e98-473a-b55b-e415c914714a",
                       "data": [
                         {
-                          "id": "db24b78c-268e-4ee8-b485-966863b78bc9",
+                          "id": "7c1d3fdf-cf29-4f15-a05e-0ba766b4d84c",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -3869,7 +3876,7 @@
                       "id": "48d6656c-9fca-4899-9605-5425df03d51b",
                       "data": [
                         {
-                          "_id": "641ae0827ea0642549cf765e",
+                          "_id": "6555345fdeb3ef8f8e4a41a5",
                           "alt_text": "3. Third Step",
                           "caption": ""
                         }
@@ -3889,7 +3896,7 @@
                       "id": "0477aece-1e98-473a-b55b-e415c914714a",
                       "data": [
                         {
-                          "id": "67ac65fe-1896-4dc1-9603-396665cda7f8",
+                          "id": "63de059b-416b-4515-af9d-b6b98da9d17a",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -3908,7 +3915,7 @@
                       "id": "48d6656c-9fca-4899-9605-5425df03d51b",
                       "data": [
                         {
-                          "_id": "641ae0827ea0642549cf765e",
+                          "_id": "6555345fdeb3ef8f8e4a41a4",
                           "alt_text": "4. Fourth Step",
                           "caption": ""
                         }
@@ -3928,7 +3935,7 @@
                       "id": "0477aece-1e98-473a-b55b-e415c914714a",
                       "data": [
                         {
-                          "id": "3603185c-70c4-4e6c-aa5d-ebe472139ad6",
+                          "id": "e9a934c2-8eab-492e-977f-c13961ab3028",
                           "nodes": [
                             {
                               "type": "paragraph",
@@ -3947,7 +3954,7 @@
                       "id": "48d6656c-9fca-4899-9605-5425df03d51b",
                       "data": [
                         {
-                          "_id": "641ae0827ea0642549cf765e",
+                          "_id": "6555345edeb3ef8f8e4a41a3",
                           "alt_text": "5. Fifth Step",
                           "caption": ""
                         }
