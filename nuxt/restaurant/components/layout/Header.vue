@@ -21,7 +21,7 @@
           <li v-for="(item, index) in data.nav" :key="index">
             <ContentManager
               :item="item"
-              class="text-lg leading-none tracking-[-0.41px] uppercase md:text-sm"
+              class="text-lg leading-none tracking-[-0.41px] uppercase md:text-sm header--list"
             />
           </li>
           <li>

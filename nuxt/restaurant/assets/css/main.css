@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.header--list a {
+  display: flex;
+}
+
 *,
 *::before,
 *::after {
