@@ -15,22 +15,22 @@ const config: GatsbyConfig = {
     'gatsby-plugin-sass',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-tsconfig-paths',
-    // {
-    //   resolve: 'gatsby-plugin-manifest',
-    //   options: {
-    //     icon: 'src/images/icon.png',
-    //   },
-    // },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/images/icon.png',
+      },
+    },
     {
       resolve: 'gatsby-source-bcms',
       options: createBcmsMostConfig({
         cms: {
           origin: process.env.BCMS_API_ORIGIN || 'http://localhost:8080',
           key: {
-            id: process.env.BCMS_API_KEY || '644252f4680cc89b3a427eb7',
+            id: process.env.BCMS_API_KEY || '6433b6994c02e25452a8a947',
             secret:
               process.env.BCMS_API_SECRET ||
-              '4c2dc28d1f63c66a0e77d66b663e76eac0268835e14d5baf03c5edd3e3385dd0',
+              '4107ecd203ff708a1789439376934e315781d66134d6c0da058bc87583f6e0c9',
           },
         },
         media: {
