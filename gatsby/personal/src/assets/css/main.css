@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  @apply box-border m-0 p-0;
+}
+
+body {
+  @apply font-Inter overflow-x-hidden bg-appBody text-appText;
+}
+
+
+.homeServices--description strong {
+  @apply font-medium text-appGray-600;
+}
+
+
+.homeAbout--description strong {
+  @apply font-medium text-appGray-600;
+}
+
+
+.homePortfolio--description strong {
+  @apply font-medium text-appGray-600;
+}
+
+.homePortfolio--galleryPagination {
+  @apply flex items-center justify-center gap-1.5;
+}
+
+.homePortfolio--galleryPagination .swiper-pagination-bullet {
+  @apply w-6 h-[3px] rounded-[3px] mx-0 opacity-40 transition-all duration-300 lg:h-1;
+}
+
+.homePortfolio--galleryPagination .swiper-pagination-bullet-active {
+  @apply w-20 bg-white opacity-100;
+}
+
+
+.homeTestimonials--description strong {
+  @apply font-medium text-appGray-600;
+}
+
+.portfolioItemPage--galleryImage:nth-of-type(3n + 1) {
+  grid-column: span 2;
+}
+
+.portfolioItemPage--galleryImage:nth-of-type(3n + 3) {
+  grid-column: span 3;
+}
