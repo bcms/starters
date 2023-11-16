@@ -420,7 +420,7 @@
   "642aa3b23effc7142eea9d97": {
     "_id": "642aa3b23effc7142eea9d97",
     "createdAt": 1680516018227,
-    "updatedAt": 1700123898458,
+    "updatedAt": 1694011846130,
     "cid": "3",
     "templateId": "642aa3ae3effc7142eea9d96",
     "userId": "111111111111111111111111",
@@ -445,24 +445,7 @@
             "id": "f2f2a81d-a058-4415-9141-6442bc8fbe8c",
             "data": {
               "_id": "64f89039f2d55bcdf1ca35ae",
-              "items": [
-                {
-                  "props": [
-                    {
-                      "id": "4d7eeaac-fae0-4dce-8fcc-c7e5809c422d",
-                      "data": [
-                        "Home - Page"
-                      ]
-                    },
-                    {
-                      "id": "22fd287e-9c1d-4b1f-859f-d3e4b981fec7",
-                      "data": [
-                        "Just a simple home page"
-                      ]
-                    }
-                  ]
-                }
-              ]
+              "items": []
             }
           },
           {
@@ -482,7 +465,7 @@
                       "id": "470c35ed-da21-475d-a49e-557cc1e24505",
                       "data": [
                         {
-                          "id": "bbb3fb0d-654a-4712-b36c-3dee0cdc0f36",
+                          "id": "a5790b51-bee4-46fd-bb37-1118e299d506",
                           "nodes": [
                             {
                               "type": "paragraph",
