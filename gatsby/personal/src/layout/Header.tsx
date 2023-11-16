@@ -41,17 +41,15 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
         ref={containerRef}
       >
         <nav className="relative flex items-center justify-between pt-6">
-          <Link className="flex md:flex-1" to="/">
-            <a aria-label="Home page">
-              <BCMSImage
-                media={data.logo}
-                svg
-                className={classNames('w-[34px] md:w-[50px]', {
-                  'max-md:grayscale max-md:brightness-100 max-md:invert':
-                    showMobileMenu,
-                })}
-              />
-            </a>
+          <Link aria-label="Home page" className="flex md:flex-1" to="/">
+            <BCMSImage
+              media={data.logo}
+              svg
+              className={classNames('w-[34px] md:w-[50px]', {
+                'max-md:grayscale max-md:brightness-100 max-md:invert':
+                  showMobileMenu,
+              })}
+            />
           </Link>
           <ul
             className={classNames(
