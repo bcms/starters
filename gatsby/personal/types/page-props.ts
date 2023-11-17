@@ -1,21 +1,18 @@
-import { HeaderEntryMeta } from '../../bcms/types';
-import { FooterEntryMeta } from '../../bcms/types/entry/footer';
+import { HeaderEntryMeta, SeoGroup } from '../bcms/types';
+import { FooterEntryMeta } from '../bcms/types/entry/footer';
 
 export interface PageData<
   Page = {
     meta: {
       en: {
         title: string;
-        seo: {
-          title: string;
-          description: string;
-        };
+        seo?: SeoGroup;
       };
     };
   },
 > {
   location: string;
-  defaultTitle: string;
+  defaultTitle?: string;
   page: {
     bcms: Page;
   };

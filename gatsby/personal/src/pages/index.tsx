@@ -6,7 +6,7 @@ import {
   HomePortfolio,
   HomeServices,
   HomeTestimonials,
-} from '@/types';
+} from '../../types';
 import { BCMSPropRichTextDataParsed } from '@becomes/cms-client/types';
 import {
   HomePageEntryMeta,
@@ -108,32 +108,39 @@ const Home: React.FC<{
     };
   };
 }> = ({ data }) => {
-  const homeService = {
-    title: data.services.bcms.meta.en?.title as string,
-    description: data.services.bcms.meta.en
-      ?.description as BCMSPropRichTextDataParsed,
-    items: data.serviceItem?.nodes.map(
-      (item) => item.bcms.meta.en as ServiceItemEntryMeta,
-    ),
-  };
+  const homeService = React.useMemo(() => {
+    return {
+      title: data.services.bcms.meta.en?.title as string,
+      description: data.services.bcms.meta.en
+        ?.description as BCMSPropRichTextDataParsed,
+      items: data.serviceItem?.nodes.map(
+        (item) => item.bcms.meta.en as ServiceItemEntryMeta,
+      ),
+    };
+  }, [data.services.bcms.meta.en, data.serviceItem]);
 
-  const homePortfolio = {
-    title: data.portfolio.bcms.meta.en?.title as string,
-    description: data.portfolio.bcms.meta.en
-      ?.description as BCMSPropRichTextDataParsed,
-    items: data.portfolioItem?.nodes.map(
-      (item) => item.bcms.meta.en as PortfolioItemEntryMeta,
-    ),
-  };
+  const homePortfolio = React.useMemo(() => {
+    return {
+      title: data.portfolio.bcms.meta.en?.title as string,
+      description: data.portfolio.bcms.meta.en
+        ?.description as BCMSPropRichTextDataParsed,
+      items: data.portfolioItem?.nodes.map(
+        (item) => item.bcms.meta.en as PortfolioItemEntryMeta,
+      ),
+    };
+  }, [data.portfolio.bcms.meta.en, data.portfolioItem]);
 
-  const homeTestimonials = {
-    title: data.testimonials.bcms.meta.en?.title as string,
-    description: data.testimonials.bcms.meta.en
-      ?.description as BCMSPropRichTextDataParsed,
-    items: data.testimonialItem?.nodes.map(
-      (item) => item.bcms.meta.en as TestimonialItemEntryMeta,
-    ),
-  };
+  const homeTestimonials = React.useMemo(() => {
+    return {
+      title: data.testimonials.bcms.meta.en?.title as string,
+      description: data.testimonials.bcms.meta.en
+        ?.description as BCMSPropRichTextDataParsed,
+      items: data.testimonialItem?.nodes.map(
+        (item) => item.bcms.meta.en as TestimonialItemEntryMeta,
+      ),
+    };
+  }, [data.testimonials.bcms.meta.en, data.testimonialItem]);
+
   return (
     <PageWrapper
       header={data.header}
