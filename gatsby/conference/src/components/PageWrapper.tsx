@@ -1,6 +1,6 @@
 import { BCMSImageConfig } from '@becomes/cms-most/frontend';
 import React, { FC, PropsWithChildren } from 'react';
-import { PageData } from '@/types';
+import { PageData } from '../../types';
 import Header from './layout/Header';
 import Footer from './layout/Footer';
 import { Helmet } from 'react-helmet';
