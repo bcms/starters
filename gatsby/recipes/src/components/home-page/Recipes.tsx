@@ -7,6 +7,8 @@ import {
 import { RecipesSearch } from '@/src/components/recipes/Search';
 import { RecipeLight } from '@/types';
 import { Btn } from '@/src/components/Btn';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore//@ts-ignore
 import { ReactComponent as ArrowIcon } from '@/src/assets/icons/arrow-right.svg';
 import { RecipesCard } from '@/src/components/recipes/Card';
 import { toLite } from '@/utils/toLite';

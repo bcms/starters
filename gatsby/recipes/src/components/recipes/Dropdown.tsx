@@ -1,6 +1,10 @@
 import React, { useRef, useState } from 'react';
 import classnames from 'classnames';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore//@ts-ignore
 import { ReactComponent as ChevronIcon } from '@/src/assets/icons/chevron-down.svg';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore//@ts-ignore
 import { ReactComponent as ArrowIcon } from '@/src/assets/icons/arrow-right.svg';
 import { useClickOutside } from '@/src/hooks/useClickOutside';
 import { Transition } from 'react-transition-group';

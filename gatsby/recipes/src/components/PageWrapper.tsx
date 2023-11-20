@@ -23,11 +23,11 @@ export const PageWrapper: FC<PropsWithChildren<PageData>> = ({
   const title =
     defaultTitle ??
     page?.bcms.meta?.en.title ??
-    page?.bcms.meta?.seo?.title ??
+    page?.bcms.meta?.en.seo?.title ??
     '';
 
   const description =
-    page?.bcms.meta?.seo?.description ??
+    page?.bcms.meta?.en.seo?.description ??
     'Jumpstart your Gatsby project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
   const image = '/thumbnail.jpg';
   const domain = 'https://recipes-starter.thebcms.com';

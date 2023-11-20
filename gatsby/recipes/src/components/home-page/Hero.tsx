@@ -2,6 +2,8 @@ import { HomeHeroGroup } from '@/bcms/types';
 import React from 'react';
 import { ContentManager } from '@/src/components/ContentManager';
 import { Btn } from '@/src/components/Btn';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore//@ts-ignore
 import { ReactComponent as ArrowIcon } from '@/src/assets/icons/arrow-right.svg';
 import { BCMSImage } from 'gatsby-source-bcms/components';
 import { RecipesSearch } from '@/src/components/recipes/Search';

@@ -4,7 +4,11 @@ import classnames from 'classnames';
 import { BCMSImage } from 'gatsby-source-bcms/components';
 import { Btn } from '@/src/components/Btn';
 import { ContentManager } from '@/src/components/ContentManager';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore//@ts-ignore
 import { ReactComponent as ArrowIcon } from '@/src/assets/icons/arrow-right.svg';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore//@ts-ignore
 import { ReactComponent as DownloadIcon } from '@/src/assets/icons/download.svg';
 import { RecipeLight } from '@/types';
 

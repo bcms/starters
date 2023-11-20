@@ -1,9 +1,10 @@
 import { RecipeEntry } from '@/bcms/types';
+import { NodePluginArgs } from 'gatsby';
 import { getBcmsMost } from 'gatsby-source-bcms';
 
-const path = require('path');
+import path from 'path';
 
-exports.createPages = async ({ actions }: any) => {
+exports.createPages = async ({ actions }: NodePluginArgs) => {
   const { createPage } = actions;
 
   // SINGLE RECIPE PAGE

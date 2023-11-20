@@ -64,7 +64,7 @@ const ButtonLink: React.FC<PropsWithChildren<ButtonLinkProps>> = ({
                 timeout={1000}
                 appear={true}
               >
-                {(state: any) => (
+                {(state: string) => (
                   <ArrowIcon
                     ref={transitionRef}
                     className={classnames(
@@ -89,7 +89,7 @@ const ButtonLink: React.FC<PropsWithChildren<ButtonLinkProps>> = ({
             timeout={1000}
             appear={true}
           >
-            {(state: any) => (
+            {(state: string) => (
               <ArrowIcon
                 ref={transitionRef}
                 className={classnames(

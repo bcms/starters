@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { QaItemGroup } from '@/bcms/types';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore//@ts-ignore
 import { ReactComponent as ChevronIconChevronIcon } from '@/src/assets/icons/chevron-down.svg';
 import classnames from 'classnames';
 import { ContentManager } from '@/src/components/ContentManager';

@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore//@ts-ignore
 import { ReactComponent as ArrowIcon } from '@/src/assets/icons/arrow-right.svg';
 import { RecipeStepGroup } from '@/bcms/types';
 import React, { useState } from 'react';

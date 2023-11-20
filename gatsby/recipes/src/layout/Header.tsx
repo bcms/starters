@@ -1,6 +1,10 @@
 import { HeaderEntryMeta } from '@/bcms/types';
 import React, { useEffect, useRef, useState } from 'react';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore//@ts-ignore
 import { ReactComponent as MenuIcon } from '@/src/assets/icons/nav/menu.svg';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore//@ts-ignore
 import { ReactComponent as XIcon } from '@/src/assets/icons/nav/x.svg';
 import { Link } from 'gatsby';
 import classNames from 'classnames';
