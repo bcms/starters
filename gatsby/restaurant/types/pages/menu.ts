@@ -5,7 +5,9 @@ import {
 } from '@/bcms/types';
 
 export interface MenuPageData {
-  meta: MenuPageEntryMeta;
+  meta: {
+    en: MenuPageEntryMeta
+  };
   mealTypes: MealTypeEntryMeta[];
   foodItems: FoodItemEntryMeta[];
 }

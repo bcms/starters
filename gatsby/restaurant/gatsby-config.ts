@@ -14,6 +14,7 @@ const config: GatsbyConfig = {
   plugins: [
     'gatsby-plugin-sass',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-svgr',
     'gatsby-plugin-tsconfig-paths',
     {
       resolve: 'gatsby-plugin-manifest',

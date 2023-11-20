@@ -76,7 +76,7 @@ const MenuPage: React.FC<MenuPageProps> = ({ data }) => {
           <ArchWithStar />
           <div className="relative px-4 max-w-[400px] mx-auto lg:max-w-[745px] xl:px-0">
             <h1 className="text-xl leading-none font-Gloock uppercase text-center mb-8 lg:text-5xl lg:leading-none">
-              {data.page.bcms.meta.title}
+              {data.page.bcms.meta.en.title}
             </h1>
             <div className="mb-10 lg:mb-20">
               <div className="grid grid-cols-2 gap-x-3 gap-y-4 mb-8 md:flex md:items-center md:justify-center lg:gap-4 lg:mb-10">
