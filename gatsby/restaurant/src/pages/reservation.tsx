@@ -103,7 +103,7 @@ const ReservationPage: React.FC<ReservationPageProps> = ({ data }) => {
           <ArchWithStar />
           <div className="relative px-4 max-w-[400px] mx-auto lg:max-w-[808px] xl:px-0">
             <h1 className="text-xl leading-none font-Gloock uppercase text-center mb-10 lg:text-5xl lg:leading-none lg:mb-14">
-              {data.page.bcms.meta.title}
+              {data.page.bcms.meta.en.title}
             </h1>
             <form
               onSubmit={(e) => e.preventDefault()}
