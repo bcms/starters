@@ -92,7 +92,7 @@ body {
 
 .homeHero--openTime strong {
   display: inline-block;
-  font-size: 1.25rem;
+  font-size: 0.875rem;
   line-height: 1;
   font-weight: normal;
   color: #2d3748;
@@ -101,7 +101,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .homeHero--openTime strong {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     line-height: 1;
   }
 }
