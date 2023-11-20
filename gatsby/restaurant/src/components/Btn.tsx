@@ -2,7 +2,7 @@ import React, { PropsWithChildren, useRef, useState } from 'react';
 import { Transition } from 'react-transition-group';
 import { Link } from 'gatsby';
 
-import { ReactComponent as ArrowIcon } from '@/src/assets/icons/arrow.svg';
+import ArrowIcon from '@/src/assets/icons/arrow.svg';
 
 import classnames from 'classnames';
 

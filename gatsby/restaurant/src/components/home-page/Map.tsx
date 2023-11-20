@@ -50,7 +50,7 @@ const HomepageMap: React.FC<HomepageMapProps> = ({ map }) => {
         unmountOnExit={true}
         nodeRef={transitionRef}
       >
-        {(state) => (
+        {(state: string) => (
           <div
             className={classnames(
               'absolute z-50 bottom-0 w-[calc(100vw-48px)] pointer-events-none',

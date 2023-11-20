@@ -8,6 +8,7 @@ import SwiperCore from 'swiper';
 import { SwiperSlide, Swiper } from 'swiper/react';
 import classnames from 'classnames';
 import { BCMSImage } from 'gatsby-source-bcms/components';
+import { SwiperOptions } from 'swiper/types';
 
 SwiperCore.use([A11y]);
 
@@ -23,7 +24,7 @@ export const HomePageSpecials: React.FC<HomepageSpecialsProps> = ({
 }) => {
   const [activeDay, setActiveDay] = useState<string>('SUN');
 
-  const sliderOptions = {
+  const sliderOptions: SwiperOptions = {
     slidesPerView: 'auto',
     watchOverflow: true,
     grabCursor: true,

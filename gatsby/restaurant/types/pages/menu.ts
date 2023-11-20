@@ -6,7 +6,7 @@ import {
 
 export interface MenuPageData {
   meta: {
-    en: MenuPageEntryMeta
+    en: MenuPageEntryMeta;
   };
   mealTypes: MealTypeEntryMeta[];
   foodItems: FoodItemEntryMeta[];

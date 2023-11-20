@@ -5,6 +5,7 @@ import SwiperCore from 'swiper';
 import { A11y, Navigation } from 'swiper/modules';
 import { SwiperSlide, Swiper } from 'swiper/react';
 import { BCMSImage } from 'gatsby-source-bcms/components';
+import { SwiperOptions } from 'swiper/types';
 interface HomepageTestimonialsProps {
   data: HomeTestimonialsGroup;
   items: TestimonialEntryMeta[];
@@ -12,8 +13,8 @@ interface HomepageTestimonialsProps {
 
 SwiperCore.use([A11y, Navigation]);
 
-const sliderOptions = {
-  slidesPerView: '1',
+const sliderOptions: SwiperOptions = {
+  slidesPerView: 1,
   watchOverflow: true,
   grabCursor: true,
   spaceBetween: '12',

@@ -115,9 +115,9 @@ const MenuPage: React.FC<MenuPageProps> = ({ data }) => {
         </div>
         {filteredFoodItems.length > 0 ? (
           <div className="grid grid-cols-1">
-            {filteredFoodItems.map((item) => (
+            {filteredFoodItems.map((item, index) => (
               <div
-                key={item.slug}
+                key={index}
                 className="relative px-6 py-[42px] md:py-20 lg:py-[130px]"
               >
                 <div className="relative z-10 flex flex-col items-center justify-center text-center h-full">
