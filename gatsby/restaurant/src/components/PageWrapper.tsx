@@ -39,7 +39,7 @@ export const PageWrapper: FC<PropsWithChildren<PageData>> = ({
           lang: 'en',
         }}
       >
-        <title>{title}</title>
+        <title>{`${title} - Tastyyy`}</title>
         <meta name="description" content={description} />
         <meta property="og:site_name" content={`${title} - Tastyyy`} />
         <meta property="og:type" content="website" />
