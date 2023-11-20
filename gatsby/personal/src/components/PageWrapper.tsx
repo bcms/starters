@@ -4,13 +4,18 @@ import { PageData } from '../../types';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import { Helmet } from 'react-helmet';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+
 
 BCMSImageConfig.cmsOrigin =
   process.env.GATSBY_BCMS_API_ORIGIN || 'http://localhost:8080';
 BCMSImageConfig.publicApiKeyId =
-  process.env.GATSBY_BCMS_API_PUBLIC_KEY || '641322c4b5a472c14b545975';
+  process.env.GATSBY_BCMS_API_PUBLIC_KEY || '641322c4b5a472c14b545975'; 
 
 BCMSImageConfig.localeImageProcessing = true;
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const PageWrapper: FC<PropsWithChildren<PageData>> = ({
   location,
@@ -28,7 +33,7 @@ export const PageWrapper: FC<PropsWithChildren<PageData>> = ({
 
   const description =
     page?.bcms.meta?.en.seo?.description ??
-    'Jumpstart your Next project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
+    'Jumpstart your Gatsby project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
   const image = '/thumbnail.jpg';
   const domain = 'https://recipes-starter.thebcms.com';
 
@@ -60,10 +65,7 @@ export const PageWrapper: FC<PropsWithChildren<PageData>> = ({
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Poppins:ital,wght@0,700;1,600&display=swap"
-          rel="stylesheet"
-        />
+       
         <link
           rel="icon"
           type="image/png"
