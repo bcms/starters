@@ -7,7 +7,7 @@ import {
 import { RecipesSearch } from '@/src/components/recipes/Search';
 import { RecipeLight } from '@/types';
 import { Btn } from '@/src/components/Btn';
-import ArrowIcon from '@/src/assets/icons/arrow-right.svg';
+import { ReactComponent as ArrowIcon } from '@/src/assets/icons/arrow-right.svg';
 import { RecipesCard } from '@/src/components/recipes/Card';
 import { toLite } from '@/utils/toLite';
 
@@ -57,7 +57,7 @@ export const HomePageRecipes: React.FC<HomepageRecipesProps> = ({ data }) => {
         <div className="flex justify-center">
           <Btn to="/recipes" theme="dark">
             <span className="mr-2">{data.cta_label}</span>
-            <img src={ArrowIcon} className="w-[14px] h-[14px] lg:w-5 lg:h-5" />
+            <ArrowIcon className="w-[14px] h-[14px] lg:w-5 lg:h-5" />
           </Btn>
         </div>
       </div>

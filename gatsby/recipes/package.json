@@ -17,12 +17,14 @@
     "lint": "eslint . --ext .ts,.tsx"
   },
   "dependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@types/react-helmet": "^6.1.8",
     "classnames": "^2.3.2",
     "gatsby": "^5.12.9",
     "gatsby-plugin-manifest": "^5.12.3",
     "gatsby-plugin-sass": "^6.12.3",
     "gatsby-plugin-sitemap": "^6.12.3",
+    "gatsby-plugin-svgr": "^3.0.0-beta.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",

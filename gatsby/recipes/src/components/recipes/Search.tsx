@@ -9,7 +9,7 @@ import { Link } from 'gatsby';
 import classNames from 'classnames';
 import { RecipeLight } from '@/types';
 import { Transition } from 'react-transition-group';
-import SearchIcon from '@/src/assets/icons/search.svg';
+import { ReactComponent as SearchIcon } from '@/src/assets/icons/search.svg';
 
 interface SearchBarProps {
   value?: string;
@@ -42,7 +42,9 @@ export const RecipesSearch: React.FC<SearchBarProps> = ({
   };
 
   const handleEnter = (event: KeyboardEvent<HTMLInputElement>) => {
-    if (event.key === 'Enter' && onEnter) onEnter(searchValue);
+    if (event.key === 'Enter' && onEnter) {
+      onEnter(searchValue);
+    }
   };
 
   const filteredRecipes = useMemo(() => {
@@ -96,8 +98,7 @@ export const RecipesSearch: React.FC<SearchBarProps> = ({
             : '',
         }}
       >
-        <img
-          src={SearchIcon}
+        <SearchIcon
           className={classNames('w-5 h-5', { 'lg:w-6 lg:h-6': size === 'lg' })}
         />
         <div className="relative">
@@ -116,7 +117,7 @@ export const RecipesSearch: React.FC<SearchBarProps> = ({
             onKeyDown={(e) => {
               if (e.key === 'Tab' && placeholderSuggestion) {
                 e.preventDefault();
-                setSearchValue(`${searchValue}${placeholderSuggestion}`);
+                setSearchValue(`${placeholderSuggestion}`);
               }
             }}
           />

@@ -1,11 +1,10 @@
-import ArrowIcon from '@/src/assets/icons/arrow-right.svg';
+import { ReactComponent as ArrowIcon } from '@/src/assets/icons/arrow-right.svg';
 import { RecipeStepGroup } from '@/bcms/types';
 import React, { useState } from 'react';
 import { BCMSImage } from 'gatsby-source-bcms/components';
 import classnames from 'classnames';
 import { ContentManager } from '@/src/components/ContentManager';
 import { Btn } from '@/src/components/Btn';
-
 interface StepsProps {
   steps: RecipeStepGroup[];
 }
@@ -77,10 +76,7 @@ export const RecipesSteps: React.FC<StepsProps> = ({ steps }) => {
           className="justify-center"
           onClick={() => setActiveStep((prev) => prev - 1)}
         >
-          <img
-            src={ArrowIcon}
-            className="w-[14px] h-[14px] mr-2 rotate-180 lg:w-5 lg:h-5"
-          />
+          <ArrowIcon className="w-[14px] h-[14px] mr-2 rotate-180 lg:w-5 lg:h-5" />
           <span>Previous</span>
         </Btn>
         <Btn
@@ -90,7 +86,7 @@ export const RecipesSteps: React.FC<StepsProps> = ({ steps }) => {
           onClick={() => setActiveStep((prev) => prev + 1)}
         >
           <span className="mr-2">Next</span>
-          <img src={ArrowIcon} className="w-[14px] h-[14px] lg:w-5 lg:h-5" />
+          <ArrowIcon className="w-[14px] h-[14px] lg:w-5 lg:h-5" />
         </Btn>
       </div>
     </div>

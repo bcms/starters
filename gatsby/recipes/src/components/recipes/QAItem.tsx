@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { QaItemGroup } from '@/bcms/types';
-import ChevronIcon from '@/src/assets/icons/chevron-down.svg';
+import { ReactComponent as ChevronIconChevronIcon } from '@/src/assets/icons/chevron-down.svg';
 import classnames from 'classnames';
 import { ContentManager } from '@/src/components/ContentManager';
 
@@ -20,8 +20,7 @@ export const RecipesQAItem: React.FC<QAItemProps> = ({ item }) => {
         <span className="text-xs leading-none font-semibold text-appGray-700 tracking-[-0.41px] lg:text-base lg:leading-none">
           {item.question}
         </span>
-        <img
-          src={ChevronIcon}
+        <ChevronIconChevronIcon
           className={classnames('w-4 h-4 transition-transform duration-300', {
             'rotate-180': showAnswer,
           })}

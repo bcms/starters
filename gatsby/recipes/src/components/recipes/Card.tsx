@@ -4,8 +4,8 @@ import classnames from 'classnames';
 import { BCMSImage } from 'gatsby-source-bcms/components';
 import { Btn } from '@/src/components/Btn';
 import { ContentManager } from '@/src/components/ContentManager';
-import ArrowIcon from '@/src/assets/icons/arrow-right.svg';
-import DownloadIcon from '@/src/assets/icons/download.svg';
+import { ReactComponent as ArrowIcon } from '@/src/assets/icons/arrow-right.svg';
+import { ReactComponent as DownloadIcon } from '@/src/assets/icons/download.svg';
 import { RecipeLight } from '@/types';
 
 interface RecipesCardProps {
@@ -106,10 +106,7 @@ export const RecipesCard: React.FC<RecipesCardProps> = ({
           <span className="text-left mr-2 max-lg:hidden">
             Show ingredients and steps
           </span>
-          <img
-            src={ArrowIcon}
-            className="w-3 h-3 flex-shrink-0 lg:w-4 lg:h-4"
-          />
+          <ArrowIcon className="w-3 h-3 flex-shrink-0 lg:w-4 lg:h-4" />
         </Btn>
         <Btn
           size="sm"
@@ -117,7 +114,7 @@ export const RecipesCard: React.FC<RecipesCardProps> = ({
           className="justify-center bg-transparent border-[#E8E8E8]/100 mb-2 lg:hidden"
         >
           <span className="text-left mr-1">Download recipe</span>
-          <img src={DownloadIcon} className="w-3 h-3 flex-shrink-0" />
+          <DownloadIcon src={DownloadIcon} className="w-3 h-3 flex-shrink-0" />
         </Btn>
       </Link>
     </article>

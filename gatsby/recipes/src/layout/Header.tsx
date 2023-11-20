@@ -1,7 +1,7 @@
 import { HeaderEntryMeta } from '@/bcms/types';
 import React, { useEffect, useRef, useState } from 'react';
-import MenuIcon from '@/src/assets/icons/nav/menu.svg';
-import XIcon from '@/src/assets/icons/nav/x.svg';
+import { ReactComponent as MenuIcon } from '@/src/assets/icons/nav/menu.svg';
+import { ReactComponent as XIcon } from '@/src/assets/icons/nav/x.svg';
 import { Link } from 'gatsby';
 import classNames from 'classnames';
 import { BCMSImage } from 'gatsby-source-bcms/components';
@@ -69,12 +69,9 @@ export const Header: React.FC<HeaderProps> = ({ data }) => {
               onClick={() => setShowMobileNav((prev) => !prev)}
             >
               {showMobileNav ? (
-                <img
-                  src={XIcon}
-                  className="flex w-[18px] h-[18px] text-appAccent"
-                />
+                <XIcon className="flex w-[18px] h-[18px] text-appAccent" />
               ) : (
-                <img src={MenuIcon} className="flex w-[18px] h-[18px]" />
+                <MenuIcon className="flex w-[18px] h-[18px]" />
               )}
             </button>
             <div

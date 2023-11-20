@@ -2,7 +2,7 @@ import { HomeHeroGroup } from '@/bcms/types';
 import React from 'react';
 import { ContentManager } from '@/src/components/ContentManager';
 import { Btn } from '@/src/components/Btn';
-import ArrowIcon from '@/src/assets/icons/arrow-right.svg';
+import { ReactComponent as ArrowIcon } from '@/src/assets/icons/arrow-right.svg';
 import { BCMSImage } from 'gatsby-source-bcms/components';
 import { RecipesSearch } from '@/src/components/recipes/Search';
 import { RecipeLight } from '@/types';
@@ -32,10 +32,7 @@ export const HomePageHero: React.FC<HomepageHeroProps> = ({
             />
             <Btn to="/recipes">
               <span className="mr-2">{data.cta_label}</span>
-              <img
-                src={ArrowIcon}
-                className="w-[14px] h-[14px] lg:w-5 lg:h-5"
-              />
+              <ArrowIcon className="w-[14px] h-[14px] lg:w-5 lg:h-5" />
             </Btn>
           </div>
           <RecipesSearch
