@@ -37,11 +37,7 @@ export const PageWrapper: FC<PropsWithChildren<PageData>> = ({
         <meta property="og:site_name" content={`${title} - Insightful Ink`} />
         <meta property="og:type" content="website" />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          name="ogUrl"
-          property="og:url"
-          content={`${domain}${location}`}
-        />
+        <meta name="ogUrl" property="og:url" content={`${domain}${location}`} />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
         <meta property="og:title" content={`${title} - Insightful Ink`} />

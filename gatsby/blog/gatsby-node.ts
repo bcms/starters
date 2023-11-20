@@ -1,9 +1,10 @@
+import { NodePluginArgs } from 'gatsby';
 import { BlogEntry } from './bcms/types';
 import { getBcmsMost } from 'gatsby-source-bcms';
 
-const path = require('path');
+import path from 'path';
 
-exports.createPages = async ({ actions }: any) => {
+exports.createPages = async ({ actions }: NodePluginArgs) => {
   const { createPage } = actions;
 
   // SINGLE BLOG PAGES

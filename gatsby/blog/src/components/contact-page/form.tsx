@@ -1,5 +1,7 @@
 import React, { FC, useState, FormEvent } from 'react';
 import EmailIcon from '../../assets/icons/email.svg';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore
 import EmailBg from '../../assets/media/email-bg.png';
 import { FormText } from '../form';
 

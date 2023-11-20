@@ -13,7 +13,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --ext .ts,.tsx"
   },
   "dependencies": {
     "@types/react-helmet": "^6.1.8",
@@ -40,6 +41,9 @@
     "autoprefixer": "^10.4.16",
     "env-cmd": "^10.1.0",
     "eslint": "^8.53.0",
+    "eslint-config-next": "^14.0.2",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
     "gatsby-plugin-postcss": "^6.12.0",
     "gatsby-source-bcms": "3.0.3",
     "postcss": "^8.4.31",

@@ -8,8 +8,8 @@ dotenv.config({
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `cms-gatsby-starter`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: 'cms-gatsby-starter',
+    siteUrl: 'https://www.yourdomain.tld',
   },
   plugins: [
     'gatsby-plugin-sass',
@@ -24,9 +24,7 @@ const config: GatsbyConfig = {
       resolve: 'gatsby-source-bcms',
       options: createBcmsMostConfig({
         cms: {
-          origin:
-            process.env.BCMS_API_ORIGIN ||
-            'http://localhost:8080',
+          origin: process.env.BCMS_API_ORIGIN || 'http://localhost:8080',
           key: {
             id: process.env.BCMS_API_KEY || '6433b6994c02e25452a8a947',
             secret:
