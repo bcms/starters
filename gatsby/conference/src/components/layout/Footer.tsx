@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
+import { CSSTransition } from 'react-transition-group';
 import { BCMSImage } from 'gatsby-source-bcms/components';
-import BCMSLogo from '@/assets/media/bcms-logo.svg';
+import { ReactComponent as BCMSLogo } from '@/assets/media/bcms-logo.svg';
 import { FooterPageData } from '../../types/footer';
 import LegalModal from '../LegalModal';
 
@@ -55,17 +56,24 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
               <span className="text-sm leading-none font-medium tracking-[-0.41px] mr-2 lg:text-base lg:leading-none lg:mr-1.5">
                 Powered by
               </span>
-              <img src={BCMSLogo} alt="Logo" className="w-[55px] lg:w-[83px]" />
+              <BCMSLogo className="w-[55px] lg:w-[83px]" />
             </a>
           </div>
         </div>
       </div>
-      {showLegalModal && (
-        <LegalModal
+      <CSSTransition
+      in={showLegalModal}
+      timeout={300}
+      classNames="modal"
+      unmountOnExit
+      onClick={() => setShowLegalModal(false)}
+    >
+      <LegalModal
           data={data.legal}
+          show={showLegalModal}
           onClose={() => setShowLegalModal(false)}
         />
-      )}
+    </CSSTransition>
     </footer>
   );
 };

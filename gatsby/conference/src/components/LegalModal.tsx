@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import classNames from 'classnames';
 import ContentManager from './ContentManager';
 import { LegalEntry } from '../../bcms/types';
+import gsap from 'gsap';
 interface LegalEntriesProps {
   data: {
     nodes: Array<{
@@ -9,12 +10,22 @@ interface LegalEntriesProps {
     }>;
   };
   onClose: () => void;
+  show: boolean
 }
 
-const LegalEntries: React.FC<LegalEntriesProps> = ({ data, onClose }) => {
+const LegalEntries: React.FC<LegalEntriesProps> = ({ show, data, onClose }) => {
+  const modalRef = useRef(null);
+
+  useEffect(() => {
+    if (show) {
+      gsap.from(modalRef.current, { opacity: 0, duration: 0.3 });
+    } else {
+      gsap.from(modalRef.current, { opacity: 1, duration: 0.3 });
+    }
+  }, [show]);
   return (
     <div className="fixed z-50 top-0 left-0 w-full h-full flex items-center justify-center">
-      <div className="relative z-10 bg-white rounded-2xl border border-[#D4D4D4] p-6 w-[962px] max-w-[95vw] max-h-[90vh] overflow-y-auto overscroll-contain lg:p-14">
+      <div ref={modalRef} className="relative z-10 bg-white rounded-2xl border border-[#D4D4D4] p-6 w-[962px] max-w-[95vw] max-h-[90vh] overflow-y-auto overscroll-contain lg:p-14">
         <div className="grid grid-cols-1 gap-6">
           {data.nodes.map((item, index) => (
             <div

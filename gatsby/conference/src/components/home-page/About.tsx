@@ -2,7 +2,7 @@ import { AboutGroup } from '../../../bcms/types';
 import ContentManager from '@/components/ContentManager';
 import { BCMSImage } from 'gatsby-source-bcms/components';
 import { StaticImage } from 'gatsby-plugin-image';
-import ArrowIcon from '@/assets/icons/arrow.svg';
+import { ReactComponent as ArrowIcon } from '@/assets/icons/arrow.svg';
 import React from 'react';
 interface HomepageAboutProps {
   data: AboutGroup;
@@ -16,9 +16,7 @@ const HomepageAbout: React.FC<HomepageAboutProps> = ({ data }) => {
           <h2 className="leading-none tracking-[-0.05em] font-semibold lg:text-[104px] lg:leading-none">
             {data.title}
           </h2>
-          <StaticImage
-            src={ArrowIcon}
-            alt="Arrow"
+          <ArrowIcon
             className="w-4 h-4 lg:w-[100px] lg:h-[104px]"
           />
         </div>

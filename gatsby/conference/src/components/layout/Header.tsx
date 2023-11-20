@@ -4,6 +4,7 @@ import { BCMSImage } from 'gatsby-source-bcms/components';
 import ContentManager from '../ContentManager';
 import ContactForm from '../ContactForm';
 import { HeaderEntryMeta } from '../../../bcms/types';
+import { CSSTransition } from 'react-transition-group';
 
 interface HeaderProps {
   data: HeaderEntryMeta;
@@ -35,9 +36,16 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
           </ul>
         </nav>
       </div>
-      {showContactForm && (
-        <ContactForm onClose={() => setShowContactForm(false)} />
-      )}
+  
+         <CSSTransition
+      in={showContactForm}
+      timeout={300}
+      classNames="modal"
+      unmountOnExit
+      onClick={() => setShowContactForm(false)}
+    >
+      <ContactForm onClose={() => setShowContactForm(false)} />
+    </CSSTransition>
     </header>
   );
 };
