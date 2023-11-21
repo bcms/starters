@@ -29,7 +29,7 @@ export const PageWrapper: FC<PropsWithChildren<PageData>> = ({
 
   const description =
     page?.bcms.meta?.en.seo?.description ??
-    'Jumpstart your Next project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
+    'Jumpstart your Gatsby project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
   const image = '/thumbnail.jpg';
   const domain = 'https://recipes-starter.thebcms.com';
 
@@ -40,19 +40,19 @@ export const PageWrapper: FC<PropsWithChildren<PageData>> = ({
           lang: 'en',
         }}
       >
-        <title>{`${title} - Flavour Fushion`}</title>
+        <title>{`${title} - CONference`}</title>
         <meta name="description" content={description} />
-        <meta property="og:site_name" content={`${title} - Flavour Fushion`} />
+        <meta property="og:site_name" content={`${title} - CONference`} />
         <meta property="og:type" content="website" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta name="ogUrl" property="og:url" content={`${domain}${location}`} />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
-        <meta property="og:title" content={`${title} - Flavour Fushion`} />
+        <meta property="og:title" content={`${title} - CONference`} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
         <meta property="twitter:url" content={`${domain}${location}`} />
-        <meta property="twitter:title" content={`${title} - Flavour Fushion`} />
+        <meta property="twitter:title" content={`${title} - CONference`} />
         <meta property="twitter:description" content={description} />
         <meta property="twitter:image" content={image} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -64,18 +64,6 @@ export const PageWrapper: FC<PropsWithChildren<PageData>> = ({
         <link
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Poppins:ital,wght@0,700;1,600&display=swap"
           rel="stylesheet"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
         />
       </Helmet>
       <Header data={header.bcms.meta.en} />
