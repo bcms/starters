@@ -1,16 +1,16 @@
+import { NodePluginArgs } from 'gatsby';
 import { PortfolioItemEntry } from './bcms/types';
 import { getBcmsMost } from 'gatsby-source-bcms';
 import path from 'path';
 
-exports.createSchemaCustomization = ({ actions }: any) => {
+exports.createSchemaCustomization = ({ actions }: NodePluginArgs) => {
   const { createTypes } = actions;
 
   const typeDefs = `
-    scalar number
     scalar Number 
-  `
-  createTypes(typeDefs)
-}
+  `;
+  createTypes(typeDefs);
+};
 
 exports.createPages = async ({ actions }: any) => {
   const { createPage } = actions;

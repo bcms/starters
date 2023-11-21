@@ -1,6 +1,6 @@
 import React from 'react';
 import ContentManager from '@/components/ContentManager';
-import { HomeServices } from '../../types';
+import { HomeServices } from '../../../types';
 
 interface HomepageServicesProps {
   data: HomeServices;

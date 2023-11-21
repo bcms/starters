@@ -17,6 +17,7 @@
     "lint": "eslint . --ext .ts,.tsx --fix"
   },
   "dependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@types/react-helmet": "^6.1.8",
     "classnames": "^2.3.2",
     "dotenv": "^16.3.1",
@@ -24,6 +25,7 @@
     "gatsby-plugin-manifest": "^5.12.3",
     "gatsby-plugin-sass": "^6.12.3",
     "gatsby-plugin-sitemap": "^6.12.3",
+    "gatsby-plugin-svgr": "^3.0.0-beta.0",
     "gatsby-plugin-tsconfig-paths": "^1.0.6",
     "gsap": "^3.12.2",
     "react": "^18.2.0",

@@ -1,4 +1,6 @@
-import ArrowIcon from '@/assets/icons/arrow.svg';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore//@ts-ignore
+import { ReactComponent as ArrowIcon } from '@/assets/icons/arrow.svg';
 import React, { ChangeEvent } from 'react';
 import classNames from 'classnames';
 
@@ -47,10 +49,7 @@ const FormText: React.FC<FormTextProps> = ({
       )}
       <div className="flex items-center">
         {!isReadOnly && (
-          <img
-            src={ArrowIcon}
-            className="w-[14px] h-[14px] mr-2 lg:w-4 lg:h-4 lg:mr-2.5"
-          />
+          <ArrowIcon className="w-[14px] h-[14px] mr-2 lg:w-4 lg:h-4 lg:mr-2.5" />
         )}
         <input
           value={value}

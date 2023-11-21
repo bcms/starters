@@ -7,11 +7,10 @@ import { Helmet } from 'react-helmet';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 
-
 BCMSImageConfig.cmsOrigin =
   process.env.GATSBY_BCMS_API_ORIGIN || 'http://localhost:8080';
 BCMSImageConfig.publicApiKeyId =
-  process.env.GATSBY_BCMS_API_PUBLIC_KEY || '641322c4b5a472c14b545975'; 
+  process.env.GATSBY_BCMS_API_PUBLIC_KEY || '641322c4b5a472c14b545975';
 
 BCMSImageConfig.localeImageProcessing = true;
 
@@ -35,7 +34,7 @@ export const PageWrapper: FC<PropsWithChildren<PageData>> = ({
     page?.bcms.meta?.en.seo?.description ??
     'Jumpstart your Gatsby project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
   const image = '/thumbnail.jpg';
-  const domain = 'https://recipes-starter.thebcms.com';
+  const domain = 'https://personal-starter.thebcms.com';
 
   return (
     <div className="overflow-hidden">
@@ -44,19 +43,19 @@ export const PageWrapper: FC<PropsWithChildren<PageData>> = ({
           lang: 'en',
         }}
       >
-        <title>{`${title} - Flavour Fushion`}</title>
+        <title>{`${title} - Personal`}</title>
         <meta name="description" content={description} />
-        <meta property="og:site_name" content={`${title} - Flavour Fushion`} />
+        <meta property="og:site_name" content={`${title} - Personal`} />
         <meta property="og:type" content="website" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta name="ogUrl" property="og:url" content={`${domain}${location}`} />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
-        <meta property="og:title" content={`${title} - Flavour Fushion`} />
+        <meta property="og:title" content={`${title} - Personal`} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
         <meta property="twitter:url" content={`${domain}${location}`} />
-        <meta property="twitter:title" content={`${title} - Flavour Fushion`} />
+        <meta property="twitter:title" content={`${title} - Personal`} />
         <meta property="twitter:description" content={description} />
         <meta property="twitter:image" content={image} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -65,7 +64,7 @@ export const PageWrapper: FC<PropsWithChildren<PageData>> = ({
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-       
+
         <link
           rel="icon"
           type="image/png"

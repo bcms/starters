@@ -1,4 +1,4 @@
-import { LegalPageEntry } from '../../../bcms/types';
+import { LegalPageEntry } from '../../bcms/types';
 
 export interface LegalPageData {
   entries: LegalPageEntry[];

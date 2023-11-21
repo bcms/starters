@@ -1,4 +1,4 @@
-import { HomeAbout } from '../../types';
+import { HomeAbout } from '../../../types';
 import ContentManager from '@/components/ContentManager';
 import React, { useState, useMemo } from 'react';
 

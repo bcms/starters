@@ -4,9 +4,15 @@ import { BCMSImage } from 'gatsby-source-bcms/components';
 import { Link } from 'gatsby';
 import { HeaderEntryMeta } from '../../bcms/types';
 import ContentManager from '@/components/ContentManager';
-import PinIcon from '@/assets/icons/pin.svg';
-import MenuIcon from '@/assets/icons/menu.svg';
-import XIcon from '@/assets/icons/x.svg';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore//@ts-ignore
+import { ReactComponent as PinIcon } from '@/assets/icons/pin.svg';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore//@ts-ignore
+import { ReactComponent as MenuIcon } from '@/assets/icons/menu.svg';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore//@ts-ignore
+import { ReactComponent as XIcon } from '@/assets/icons/x.svg';
 
 interface HeaderProps {
   data: HeaderEntryMeta;
@@ -70,7 +76,7 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
             ))}
           </ul>
           <div className="flex items-center justify-end leading-none font-medium flex-1 tracking-[-0.41px] max-lg:hidden">
-            <img src={PinIcon} className="w-4 h-4 mr-1" />
+            <PinIcon className="w-4 h-4 mr-1" />
             <span>Sydney</span>
             <div className="w-4 h-4 bg-appAccent rounded-full mx-2" />
             <span>{timeNow}</span>
@@ -81,9 +87,9 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
             onClick={toggleMobileMenu}
           >
             {showMobileMenu ? (
-              <img src={XIcon} className="w-6 h-6 text-white" />
+              <XIcon className="w-6 h-6 text-white" />
             ) : (
-              <img src={MenuIcon} className="w-6 h-6" />
+              <MenuIcon className="w-6 h-6" />
             )}
           </button>
         </nav>
