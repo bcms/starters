@@ -746,5 +746,22 @@
     "caption": "",
     "height": 672,
     "width": 1056
+  },
+  "655c672032fb281b62609be3": {
+    "_id": "655c672032fb281b62609be3",
+    "createdAt": 1700554529365,
+    "updatedAt": 1700554529365,
+    "hasChildren": false,
+    "isInRoot": false,
+    "mimetype": "image/jpeg",
+    "name": "dessert.jpg",
+    "parentId": "6425547aa881adc726bbf40b",
+    "size": 378737,
+    "type": "IMG",
+    "userId": "111111111111111111111111",
+    "altText": "",
+    "caption": "",
+    "height": 4000,
+    "width": 3200
   }
 }

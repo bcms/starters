@@ -2,7 +2,9 @@ import { HomeHeroGroup } from '@/bcms/types';
 import React from 'react';
 import { ContentManager } from '@/src/components/ContentManager';
 import { HomePageDivider } from '@/src/components/home-page/Divider';
-import StarIcon from '@/src/assets/icons/star.svg';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore//@ts-ignore
+import { ReactComponent as StarIcon } from '@/src/assets/icons/star.svg';
 import Btn from '@/src/components/Btn';
 import HomePageMap from '@/src/components/home-page/Map';
 import { BCMSImage } from 'gatsby-source-bcms/components';
@@ -54,11 +56,11 @@ export const HomepageHero: React.FC<HomepageHeroProps> = ({ data }) => {
             <div className="h-px flex-1 bg-[#D9D9D9] mx-4 max-xl:hidden" />
             <div className="bg-white px-4 py-[14px] rounded-[128px] max-w-max lg:px-20 lg:py-14">
               <div className="flex items-center">
-                <img src={StarIcon} className="w-2 h-2 lg:w-12 lg:h-12" />
+                <StarIcon className="w-2 h-2 lg:w-12 lg:h-12" />
                 <h1 className="text-xl leading-none font-Gloock mx-2.5 lg:text-[80px] lg:leading-none lg:mx-12 2xl:text-[112px] 2xl:leading-none">
                   {data.title}
                 </h1>
-                <img src={StarIcon} className="w-2 h-2 lg:w-12 lg:h-12" />
+                <StarIcon className="w-2 h-2 lg:w-12 lg:h-12" />
               </div>
             </div>
             <div className="h-px flex-1 bg-[#D9D9D9] mx-4 max-xl:hidden" />

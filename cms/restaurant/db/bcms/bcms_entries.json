@@ -1303,7 +1303,7 @@
   "642552e1a881adc726bbf408": {
     "_id": "642552e1a881adc726bbf408",
     "createdAt": 1680167649088,
-    "updatedAt": 1680168148416,
+    "updatedAt": 1700554578366,
     "cid": "7",
     "templateId": "642552c0a881adc726bbf404",
     "userId": "111111111111111111111111",
@@ -1328,14 +1328,14 @@
             "id": "698f46a7-26ec-4e68-8636-049f976bb39a",
             "data": [
               {
-                "id": "92501b93-67f0-4643-a15f-97cc6c7ebe53",
+                "id": "7c23486b-f7d5-4363-ab7e-3696aa347984",
                 "nodes": [
                   {
                     "type": "paragraph",
                     "content": [
                       {
                         "type": "text",
-                        "text": "Dessert copy here"
+                        "text": "Welcome to a world where dessert becomes an unforgettable masterpiece, igniting your taste buds with joy and leaving you craving the sweet symphony of our extraordinary creations."
                       }
                     ]
                   }
@@ -1347,7 +1347,7 @@
             "id": "3b56c18e-11a6-4236-ab60-7ed69f15e5d3",
             "data": [
               {
-                "_id": "642554b2a881adc726bbf40d",
+                "_id": "655c672032fb281b62609be3",
                 "alt_text": "Dessert",
                 "caption": ""
               }
@@ -1431,7 +1431,7 @@
   "64255c88a881adc726bbf416": {
     "_id": "64255c88a881adc726bbf416",
     "createdAt": 1680170120077,
-    "updatedAt": 1680170120077,
+    "updatedAt": 1700554883779,
     "cid": "9",
     "templateId": "64255b56a881adc726bbf40f",
     "userId": "111111111111111111111111",
@@ -1456,14 +1456,14 @@
             "id": "ace57af1-6f93-4e35-885e-03eb51bf0de3",
             "data": [
               {
-                "id": "3a385d0b-3f99-47cc-9b81-d84dff16dde8",
+                "id": "22acaedc-a17c-4622-b700-84eec0305829",
                 "nodes": [
                   {
                     "type": "paragraph",
                     "content": [
                       {
                         "type": "text",
-                        "text": "Summer copy here"
+                        "text": "Bask in the radiant embrace of summer, where the sun reigns supreme and paints the world in hues of gold. Feel the warmth on your skin as nature reaches its zenith, and vibrant blooms dance in the gentle breeze. From lazy days under clear skies to the lively hum of cicadas, immerse yourself in the season of abundance and vitality."
                       }
                     ]
                   }
@@ -1495,7 +1495,7 @@
   "64255c9ba881adc726bbf417": {
     "_id": "64255c9ba881adc726bbf417",
     "createdAt": 1680170139544,
-    "updatedAt": 1680257283137,
+    "updatedAt": 1700554900408,
     "cid": "a",
     "templateId": "64255b56a881adc726bbf40f",
     "userId": "111111111111111111111111",
@@ -1520,14 +1520,14 @@
             "id": "ace57af1-6f93-4e35-885e-03eb51bf0de3",
             "data": [
               {
-                "id": "c3b7ce5a-6838-4d75-8fb0-73adb346e93a",
+                "id": "c2ecf3ab-3daa-4a78-bb29-5b50525e1dd0",
                 "nodes": [
                   {
                     "type": "paragraph",
                     "content": [
                       {
                         "type": "text",
-                        "text": "Fall copy here"
+                        "text": "As summer's vibrant energy mellows, autumn emerges in a blaze of rich colors and crisp air. Witness the transformation of foliage into a tapestry of reds, oranges, and golds, creating a breathtaking symphony of nature's farewell. Embrace the comforting rustle of fallen leaves underfoot and savor the nostalgic aroma of autumn spices lingering in the air."
                       }
                     ]
                   }
@@ -1559,7 +1559,7 @@
   "64255caaa881adc726bbf418": {
     "_id": "64255caaa881adc726bbf418",
     "createdAt": 1680170154004,
-    "updatedAt": 1680257279445,
+    "updatedAt": 1700554917886,
     "cid": "b",
     "templateId": "64255b56a881adc726bbf40f",
     "userId": "111111111111111111111111",
@@ -1584,14 +1584,14 @@
             "id": "ace57af1-6f93-4e35-885e-03eb51bf0de3",
             "data": [
               {
-                "id": "93b447e8-1261-43a8-930f-1448c9d15c4a",
+                "id": "dc72d722-f4eb-41bc-8513-16a1363b9735",
                 "nodes": [
                   {
                     "type": "paragraph",
                     "content": [
                       {
                         "type": "text",
-                        "text": "Winter copy here"
+                        "text": "Enter a serene landscape draped in glistening frost and a hushed stillness as winter takes its graceful bow. The world transforms into a pristine wonderland, adorned with delicate snowflakes and the quiet magic of the season. Embrace the cozy warmth of crackling fires and the joy of shared moments as winter invites you to appreciate the beauty in simplicity and the promise of renewal that lies beneath the snow-laden earth."
                       }
                     ]
                   }

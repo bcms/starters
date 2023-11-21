@@ -4,7 +4,9 @@ import ArchWithStar from '@/src/components/ArchWithStar';
 import { ContentManager } from '@/src/components/ContentManager';
 import { BCMSImage } from 'gatsby-source-bcms/components';
 import Btn from '@/src/components/Btn';
-import AboutUsOutline from '@/src/assets/media/about-us-outline.svg';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore//@ts-ignore
+import { ReactComponent as AboutUsOutline } from '@/src/assets/media/about-us-outline.svg';
 
 interface AboutPageHeroProps {
   data: AboutHeroGroup;
@@ -15,10 +17,7 @@ export const AboutPageHero: React.FC<AboutPageHeroProps> = ({ data }) => {
       <div className="container max-w-[1198px]">
         <ArchWithStar />
         <div className="relative px-4 max-w-[400px] mx-auto lg:max-w-[962px] xl:px-0">
-          <img
-            src={AboutUsOutline}
-            className="absolute w-[220px] right-[30px] lg:w-[822px] lg:-right-4 lg:-top-6"
-          />
+          <AboutUsOutline className="absolute w-[220px] right-[30px] lg:w-[822px] lg:-right-4 lg:-top-6" />
           <ContentManager
             items={data.title}
             className="aboutHero--title relative z-10 text-xl leading-none font-Gloock mb-2 lg:text-[56px]

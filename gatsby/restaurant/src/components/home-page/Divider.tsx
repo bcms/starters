@@ -1,5 +1,7 @@
 import React from 'react';
-import StarIcon from '@/src/assets/icons/star.svg';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore//@ts-ignore
+import { ReactComponent as StarIcon } from '@/src/assets/icons/star.svg';
 
 interface HomepageDividerProps {
   arc?: boolean;
@@ -9,7 +11,7 @@ export const HomePageDivider: React.FC<HomepageDividerProps> = ({ arc }) => {
   return (
     <div className="relative flex flex-col items-center justify-center max-w-max mx-auto my-6 lg:my-20">
       <div className="w-px h-[50px] bg-[#D9D9D9] lg:h-24" />
-      <img src={StarIcon} className="relative z-10 w-6 h-6 lg:w-8 lg:h-8" />
+      <StarIcon className="relative z-10 w-6 h-6 lg:w-8 lg:h-8" />
       <div className="w-px h-[50px] bg-[#D9D9D9] lg:h-24" />
       {arc && (
         <svg

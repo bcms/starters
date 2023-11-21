@@ -2,7 +2,9 @@ import React, { PropsWithChildren, useRef, useState } from 'react';
 import { Transition } from 'react-transition-group';
 import { Link } from 'gatsby';
 
-import ArrowIcon from '@/src/assets/icons/arrow.svg';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore//@ts-ignore
+import { ReactComponent as ArrowIcon } from '@/src/assets/icons/arrow.svg';
 
 import classnames from 'classnames';
 

@@ -2,8 +2,12 @@ import { Link } from 'gatsby';
 import React, { FC, useState } from 'react';
 import classNames from 'classnames';
 import { HeaderEntryMeta } from '@/bcms/types';
-import MenuIcon from '@/src/assets/icons/menu.svg';
-import XIcon from '@/src/assets/icons/x.svg';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore//@ts-ignore
+import { ReactComponent as MenuIcon } from '@/src/assets/icons/menu.svg';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore//@ts-ignore
+import { ReactComponent as XIcon } from '@/src/assets/icons/x.svg';
 import { ContentManager } from '@/src/components/ContentManager';
 import { BCMSImage } from 'gatsby-source-bcms/components';
 import Btn from '@/src/components/Btn';
@@ -64,9 +68,9 @@ export const Header: FC<Props> = ({ data }) => {
             onClick={() => setShowMobileMenu((prev) => !prev)}
           >
             {showMobileMenu ? (
-              <img src={XIcon} className="w-6 h-6" />
+              <XIcon className="w-6 h-6" />
             ) : (
-              <img src={MenuIcon} className="w-6 h-6" />
+              <MenuIcon className="w-6 h-6" />
             )}
           </button>
         </nav>

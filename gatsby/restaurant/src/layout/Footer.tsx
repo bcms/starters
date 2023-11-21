@@ -1,6 +1,8 @@
 import { ContentManager } from '@/src/components/ContentManager';
 import React from 'react';
-import BCMSLogo from '@/src/assets/media/bcms-logo.svg';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore//@ts-ignore
+import { ReactComponent as BCMSLogo } from '@/src/assets/media/bcms-logo.svg';
 import { FooterEntryMeta } from '@/bcms/types';
 
 interface FooterProps {
@@ -37,7 +39,7 @@ export const Footer: React.FC<FooterProps> = ({ data }) => {
             <span className="text-sm leading-none tracking-[-0.41px] text-appBody mr-2 md:text-base md:leading-none md:mr-3">
               Powered by
             </span>
-            <img src={BCMSLogo} className="w-[55px] md:w-[83px]" />
+            <BCMSLogo className="w-[55px] md:w-[83px]" />
           </a>
           <div className="text-xs leading-none text-appGray-500 md:text-base md:leading-none md:text-appBody">
             &copy; {new Date().getFullYear()} BCMS. All rights reserved
