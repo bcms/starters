@@ -10,6 +10,8 @@ import { ReactComponent as PlayIcon } from '@/src/assets/icons/play.svg';
 import { BCMSImage } from 'gatsby-source-bcms/components';
 import { BCMSPropMediaDataParsed } from '@becomes/cms-client/types';
 import { usePlayer } from '@/src/context/PlayerContext';
+import {toLite} from "@/utils/toLite";
+import {GuestEntryMeta} from "@/bcms/types";
 
 export const NowPlaying = () => {
   const {
@@ -44,6 +46,12 @@ export const NowPlaying = () => {
     );
   }, [episode]);
 
+  const guest = toLite<
+      GuestEntryMeta,
+      { guest: { meta: { en: GuestEntryMeta } } }
+  >(episode?.guest as any);
+
+
   if (!episode) {
     return <></>;
   }
@@ -73,7 +81,7 @@ export const NowPlaying = () => {
                 {episode?.title ?? ''}
               </div>
               <div className="text-xs leading-none tracking-[-0.8px] text-appGray-400 lg:text-base lg:leading-none">
-                {episode?.guest?.meta?.en?.title ?? 'N / A'}
+                {guest?.title ?? 'N / A'}
               </div>
             </div>
           </Link>

@@ -2,12 +2,13 @@ import React, { useEffect, useRef, MouseEvent, useState } from 'react';
 import { Link } from 'gatsby';
 import { BCMSImage } from 'gatsby-source-bcms/components';
 import { bcmsMediaToUrl } from '@becomes/cms-most/frontend';
-import { EpisodeEntryMeta } from '@/bcms/types';
+import { EpisodeEntryMeta, GuestEntryMeta } from '@/bcms/types';
 import classnames from 'classnames';
 import { dateUtil } from '@/utils/date';
 import { usePlayer } from '@/src/context/PlayerContext';
 import { ReactComponent as PauseIcon } from '@/src/assets/icons/pause.svg';
 import { ReactComponent as PlayIcon } from '@/src/assets/icons/play.svg';
+import { toLite } from '@/utils/toLite';
 
 interface EpisodeItemProps {
   item: EpisodeEntryMeta;
@@ -91,6 +92,12 @@ export const EpisodesItem: React.FC<EpisodeItemProps> = ({
     : false;
 
   const renderIndex: boolean = !episode || episode.slug !== item.slug;
+
+  const guest = toLite<
+    GuestEntryMeta,
+    { guest: { meta: { en: GuestEntryMeta } } }
+  >(item?.guest as any);
+
   return (
     <Link to={`/episode/${item.slug}`}>
       <a
@@ -146,7 +153,7 @@ export const EpisodesItem: React.FC<EpisodeItemProps> = ({
             {item.title}
           </div>
           <div className="text-xs leading-none tracking-[-0.8px] text-appGray-400 lg:text-xl lg:leading-none">
-            {item.guest?.meta?.en?.title || 'N / A'}
+            {guest?.title || 'N / A'}
           </div>
         </div>
         <div className="text-right">

@@ -8,6 +8,8 @@ import { ReactComponent as PauseIcon } from '@/src/assets/icons/pause.svg';
 import { ReactComponent as PlayIcon } from '@/src/assets/icons/play.svg';
 import { graphql, navigate } from 'gatsby';
 import { usePlayer } from '@/src/context/PlayerContext';
+import { toLite } from '@/utils/toLite';
+import { GuestEntryMeta } from '@/bcms/types';
 
 interface NowPlayingProps {
   data: PageData<NowPlayingPageData>;
@@ -54,6 +56,11 @@ const NowPlaying: React.FC<NowPlayingProps> = ({ data }) => {
     setFileLength(length);
   };
 
+  const guest = toLite<
+    GuestEntryMeta,
+    { guest: { meta: { en: GuestEntryMeta } } }
+  >(episode?.guest as any);
+
   if (!episode) {
     return <></>;
   }
@@ -95,7 +102,7 @@ const NowPlaying: React.FC<NowPlayingProps> = ({ data }) => {
             {episode?.title}
           </h1>
           <div className="text-sm leading-none tracking-[-0.8px] text-appGray-400 mb-[35px] lg:text-2xl lg:leading-none lg:text-appGray-300 lg:mb-10">
-            {episode?.guest?.meta?.en?.title || 'N / A'}
+            {guest?.title || 'N / A'}
           </div>
           <div className="mb-6 w-full lg:mb-8">
             <label className="block relative mb-2 lg:mb-5">

@@ -13,5 +13,5 @@ export function toLite<T, K extends ToLiteKType<T>>(
     return undefined;
   }
   const entityKey = Object.keys(payload)[0];
-  return (payload[entityKey] as { meta: { en: T } }).meta.en;
+  return (payload[entityKey] as { meta: { en: T } })?.meta?.en;
 }
