@@ -1,10 +1,15 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { NowPlayingPageData, PageData } from '@/types';
 import { PageWrapper } from '@/src/components/PageWrapper';
 import { BCMSImage } from 'gatsby-source-bcms/components';
 import React, { useEffect, useState } from 'react';
+// @ts-ignore
 import { ReactComponent as ForwardIcon } from '@/src/assets/icons/forward.svg';
+// @ts-ignore
 import { ReactComponent as BackwardIcon } from '@/src/assets/icons/backward.svg';
+// @ts-ignore
 import { ReactComponent as PauseIcon } from '@/src/assets/icons/pause.svg';
+// @ts-ignore
 import { ReactComponent as PlayIcon } from '@/src/assets/icons/play.svg';
 import { graphql, navigate } from 'gatsby';
 import { usePlayer } from '@/src/context/PlayerContext';

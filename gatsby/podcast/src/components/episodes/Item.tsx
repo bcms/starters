@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import React, { useEffect, useRef, MouseEvent, useState } from 'react';
 import { Link } from 'gatsby';
 import { BCMSImage } from 'gatsby-source-bcms/components';
@@ -6,7 +7,9 @@ import { EpisodeEntryMeta, GuestEntryMeta } from '@/bcms/types';
 import classnames from 'classnames';
 import { dateUtil } from '@/utils/date';
 import { usePlayer } from '@/src/context/PlayerContext';
+// @ts-ignore
 import { ReactComponent as PauseIcon } from '@/src/assets/icons/pause.svg';
+// @ts-ignore
 import { ReactComponent as PlayIcon } from '@/src/assets/icons/play.svg';
 import { toLite } from '@/utils/toLite';
 

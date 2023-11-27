@@ -1,7 +1,10 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import React, { MouseEvent, useEffect, useRef, useState } from 'react';
 import { PageWrapper } from '@/src/components/PageWrapper';
 import { EpisodePageData, PageData } from '@/types';
+// @ts-ignore
 import { ReactComponent as PlayIcon } from '@/src/assets/icons/play.svg';
+// @ts-ignore
 import { ReactComponent as PauseIcon } from '@/src/assets/icons/pause.svg';
 import { BCMSImage } from 'gatsby-source-bcms/components';
 import { ContentManager } from '@/src/components/ContentManager';

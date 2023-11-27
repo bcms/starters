@@ -1,17 +1,22 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import React, { useState, useEffect, ChangeEvent } from 'react';
 import { Link } from 'gatsby';
+// @ts-ignore
 import { ReactComponent as VolumeIcon } from '@/src/assets/icons/volume.svg';
+// @ts-ignore
 import { ReactComponent as ForwardIcon } from '@/src/assets/icons/forward.svg';
+// @ts-ignore
 import { ReactComponent as BackwardIcon } from '@/src/assets/icons/backward.svg';
+// @ts-ignore
 import { ReactComponent as PauseIcon } from '@/src/assets/icons/pause.svg';
-
+// @ts-ignore
 import { ReactComponent as PlayIcon } from '@/src/assets/icons/play.svg';
 
 import { BCMSImage } from 'gatsby-source-bcms/components';
 import { BCMSPropMediaDataParsed } from '@becomes/cms-client/types';
 import { usePlayer } from '@/src/context/PlayerContext';
-import {toLite} from "@/utils/toLite";
-import {GuestEntryMeta} from "@/bcms/types";
+import { toLite } from '@/utils/toLite';
+import { GuestEntryMeta } from '@/bcms/types';
 
 export const NowPlaying = () => {
   const {
@@ -47,10 +52,9 @@ export const NowPlaying = () => {
   }, [episode]);
 
   const guest = toLite<
-      GuestEntryMeta,
-      { guest: { meta: { en: GuestEntryMeta } } }
+    GuestEntryMeta,
+    { guest: { meta: { en: GuestEntryMeta } } }
   >(episode?.guest as any);
-
 
   if (!episode) {
     return <></>;

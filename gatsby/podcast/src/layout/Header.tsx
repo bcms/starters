@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import React, { useState } from 'react';
 import { HeaderEntryMeta } from '@/bcms/types';
 import {
@@ -8,7 +9,9 @@ import { Link } from 'gatsby';
 import { BCMSImage } from 'gatsby-source-bcms/components';
 import classNames from 'classnames';
 import { ContentManager } from '@/src/components/ContentManager';
+// @ts-ignore
 import { ReactComponent as MenuIcon } from '@/src/assets/icons/menu.svg';
+// @ts-ignore
 import { ReactComponent as XIcon } from '@/src/assets/icons/x.svg';
 
 interface HeaderProps {
