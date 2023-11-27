@@ -4,4 +4,3 @@ export interface AboutPageData {
   meta: AboutPageEntryMeta;
   team: TeamMemberEntryMeta[];
 }
- 

@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
-import { ContactPageEntryMeta, FooterEntryMeta, HeaderEntryMeta } from '../../bcms/types';
+import {
+  ContactPageEntryMeta,
+  FooterEntryMeta,
+  HeaderEntryMeta,
+} from '../../bcms/types';
 import { PageWrapper } from '@/components/PageWrapper';
 import ContentManager from '@/components/ContentManager';
 import FormText from '@/components/form/Text';
@@ -41,7 +45,6 @@ const ContactPage: React.FC<{
       };
     };
   };
-  
 }> = ({ data }) => {
   const [form, setForm] = useState<Form>({
     email: '',
@@ -120,9 +123,8 @@ const ContactPage: React.FC<{
   );
 };
 
-
 export const query = graphql`
-  query { 
+  query {
     header: bcmsHeader {
       ...Header
     }
@@ -133,6 +135,6 @@ export const query = graphql`
       ...ContactPage
     }
   }
-`
+`;
 
 export default ContactPage;

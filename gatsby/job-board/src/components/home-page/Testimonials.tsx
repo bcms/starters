@@ -1,7 +1,7 @@
 import React from 'react';
 import { A11y, Pagination } from 'swiper/modules';
 import SwiperCore from 'swiper';
-import { TestimonialEntryMeta, TestimonialEntry } from '../../../bcms/types';
+import { TestimonialEntry } from '../../../bcms/types';
 import { BCMSImage } from 'gatsby-source-bcms/components';
 import ContentManager from '@/components/ContentManager';
 import { SwiperSlide, Swiper } from 'swiper/react';

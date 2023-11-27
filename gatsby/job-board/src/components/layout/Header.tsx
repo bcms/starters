@@ -40,8 +40,8 @@ const Header: FC<HeaderProps> = ({ data }) => {
               </div>
               <div className="flex items-center gap-2.5 lg:flex-1 lg:justify-end lg:gap-4">
                 {data.buttons.map((btn, index) => (
-                  <Link 
-                    key={index} 
+                  <Link
+                    key={index}
                     to={btn.path ?? ''}
                     className={`flex items-center rounded-[32px] px-[14px] py-2.5 border transition-all duration-300 lg:px-6 lg:py-[13px] ${
                       index === 0
@@ -49,7 +49,6 @@ const Header: FC<HeaderProps> = ({ data }) => {
                         : 'bg-appText border-transparent text-white'
                     }`}
                   >
-                    
                     <span className="text-xs leading-none font-medium tracking-[-0.41px] mr-1.5 lg:text-sm lg:leading-none lg:mr-2">
                       {btn.label}
                     </span>

@@ -3,15 +3,31 @@ import { graphql } from 'gatsby';
 export const query = graphql`
   fragment AboutPage on BcmsAboutPage {
     bcms {
-        meta {
-          en {
-            seo {
-              title
-              description
-            }
+      meta {
+        en {
+          seo {
             title
-            slug
-            cover {
+            description
+          }
+          title
+          slug
+          cover {
+            _id
+            src
+            name
+            width
+            height
+            caption
+            alt_text
+            svg
+          }
+          content {
+            text {
+              type
+              name
+              value
+            }
+            image {
               _id
               src
               name
@@ -21,40 +37,24 @@ export const query = graphql`
               alt_text
               svg
             }
-            content {
-              text {
-                type
-                name
-                value
-              }
-              image {
-                _id
-                src
-                name
-                width
-                height
-                caption
-                alt_text
-                svg
-              }
-            }
-            team {
-              title 
-              description {
-                name
-                value
-                type
-              }
+          }
+          team {
+            title
+            description {
+              name
+              value
+              type
             }
           }
         }
-        content {
-            en {
-              name
-              type
-              value
-            }
-          }
       }
+      content {
+        en {
+          name
+          type
+          value
+        }
+      }
+    }
   }
 `;

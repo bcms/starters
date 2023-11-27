@@ -1,7 +1,6 @@
 import React, { useMemo, useRef, useState } from 'react';
 import { BCMSImage } from 'gatsby-source-bcms/components';
 import LocationIcon from '@/assets/icons/location.svg';
-import { JobPageData, PageData } from '../../types';
 import { PageWrapper } from '@/components/PageWrapper';
 import { StaticImage } from 'gatsby-plugin-image';
 import ContentManager from '@/components/ContentManager';
@@ -9,7 +8,12 @@ import Btn from '@/components/Btn';
 import JobsCard from '@/components/jobs/Card';
 import ApplyModal from '@/components/jobs/ApplyModal';
 import { BCMSPropRichTextDataParsed } from '@becomes/cms-client/types';
-import { HeaderEntryMeta, FooterEntryMeta, JobEntryMeta, JobEntry } from '../../bcms/types';
+import {
+  HeaderEntryMeta,
+  FooterEntryMeta,
+  JobEntryMeta,
+  JobEntry,
+} from '../../bcms/types';
 import { graphql } from 'gatsby';
 
 const JobPage: React.FC<{
@@ -46,7 +50,10 @@ const JobPage: React.FC<{
   };
 }> = ({ data }) => {
   const meta = useMemo(() => data.page.bcms.meta.en, []);
-  const company = useMemo(() => data.page.bcms.meta.en.company.jobCompany?.meta.en, []);
+  const company = useMemo(
+    () => data.page.bcms.meta.en.company.jobCompany?.meta.en,
+    [],
+  );
 
   const [jobsPerPage] = useState<number>(9);
   const [paginationPage, setPaginationPage] = useState<number>(1);
@@ -70,7 +77,12 @@ const JobPage: React.FC<{
   };
 
   return (
-    <PageWrapper page={data.page} header={data.header} footer={data.footer } location={`/jobs/${data.page.bcms.meta.en.slug}`}>
+    <PageWrapper
+      page={data.page}
+      header={data.header}
+      footer={data.footer}
+      location={`/jobs/${data.page.bcms.meta.en.slug}`}
+    >
       <div className="relative mt-6 mb-10 lg:mt-0 lg:mb-[72px]">
         <BCMSImage
           media={meta.cover}
@@ -241,7 +253,10 @@ const JobPage: React.FC<{
         )}
       </div>
       {showApplyModal && (
-        <ApplyModal job={data.page.bcms.meta.en} close={() => setShowApplyModal(false)} />
+        <ApplyModal
+          job={data.page.bcms.meta.en}
+          close={() => setShowApplyModal(false)}
+        />
       )}
     </PageWrapper>
   );
@@ -257,6 +272,11 @@ export const query = graphql`
     }
     page: bcmsJob(bcms: { _id: { eq: $id } }) {
       ...Job
+    }
+    jobs: allBcmsJob {
+      nodes {
+        ...Job
+      }
     }
   }
 `;

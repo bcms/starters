@@ -79,9 +79,7 @@ export const PageWrapper: FC<PropsWithChildren<PageData>> = ({
       </Helmet>
       <Header data={header.bcms.meta.en} />
       <main>{children}</main>
-      <Footer
-        data={footer.bcms.meta.en}
-      />
+      <Footer data={footer.bcms.meta.en} />
     </div>
   );
 };

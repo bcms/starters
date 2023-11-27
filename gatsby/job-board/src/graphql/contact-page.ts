@@ -3,21 +3,21 @@ import { graphql } from 'gatsby';
 export const query = graphql`
   fragment ContactPage on BcmsContactPage {
     bcms {
-        meta {
-          en {
-            seo {
-              title
-              description
-            }
+      meta {
+        en {
+          seo {
             title
-            description {
-              type
-              name
-              value
-            }
-            slug
+            description
           }
+          title
+          description {
+            type
+            name
+            value
+          }
+          slug
         }
       }
+    }
   }
 `;

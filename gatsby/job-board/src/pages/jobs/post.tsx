@@ -4,12 +4,9 @@ import FormText from '@/components/form/Text';
 import FormDropzone from '@/components/form/Dropzone';
 import FormSelect from '@/components/form/Select';
 import Btn from '@/components/Btn';
-import { getHeaderAndFooter } from '@/utils/page-data';
 import {
-  ContactPageEntryMeta,
   FooterEntryMeta,
   HeaderEntryMeta,
-  PostJobPageEntry,
   PostJobPageEntryMeta,
 } from '../../../bcms/types';
 import { JobPostPageData, PageData } from '../../../types';
@@ -37,13 +34,13 @@ interface PostJobPageProps extends PageData<JobPostPageData> {
       bcms: {
         meta: {
           en: PostJobPageEntryMeta;
-        }
+        };
         content: {
           en: BCMSPropRichTextDataParsed;
         };
-      }
+      };
     };
-  }
+  };
 }
 
 const PostJobPage: React.FC<PostJobPageProps> = ({ data }) => {
@@ -258,7 +255,12 @@ const PostJobPage: React.FC<PostJobPageProps> = ({ data }) => {
   };
 
   return (
-    <PageWrapper page={data.page} header={data.header} footer={data.footer } location={`/job/${data.page.bcms.meta.en.slug}`}>
+    <PageWrapper
+      page={data.page}
+      header={data.header}
+      footer={data.footer}
+      location={`/job/${data.page.bcms.meta.en.slug}`}
+    >
       <div className="pt-8 pb-14 md:pb-20 lg:pt-20 lg:pb-[120px]">
         <div className="container">
           <div className="max-w-[632px] mx-auto">
@@ -439,7 +441,7 @@ const PostJobPage: React.FC<PostJobPageProps> = ({ data }) => {
                     error={stepThree.education.error}
                     label="Education"
                     placeholder="Education"
-                    options={['High School', 'Bachelor\'s', 'Master\'s']}
+                    options={['High School', "Bachelor's", "Master's"]}
                     name="education"
                     onChange={(value) => handleInputChange('education', value)}
                   />

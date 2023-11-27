@@ -17,7 +17,9 @@
     "lint": "eslint . --ext .ts,.tsx --fix"
   },
   "dependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@types/react-helmet": "^6.1.8",
+    "@types/react-transition-group": "^4.4.9",
     "classnames": "^2.3.2",
     "dotenv": "^16.3.1",
     "gatsby": "^5.12.9",
@@ -25,11 +27,13 @@
     "gatsby-plugin-manifest": "^5.12.3",
     "gatsby-plugin-sass": "^6.12.3",
     "gatsby-plugin-sitemap": "^6.12.3",
+    "gatsby-plugin-svgr": "^3.0.0-beta.0",
     "gatsby-plugin-tsconfig-paths": "^1.0.6",
     "gsap": "^3.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-transition-group": "^4.4.5",
     "sass": "^1.69.5",
     "swiper": "^11.0.4"
   },
@@ -50,7 +54,7 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.1",
     "gatsby-plugin-postcss": "^6.12.0",
-    "gatsby-source-bcms": "3.0.3",
+    "gatsby-source-bcms": "^3.0.4",
     "postcss": "^8.4.31",
     "prettier": "^3.0.3",
     "tailwindcss": "^3.3.5",

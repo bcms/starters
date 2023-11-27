@@ -1,23 +1,18 @@
-import React, { FC } from 'react';
-import { HomePageData, PageData } from '../../types';
+import React from 'react';
 import { PageWrapper } from '@/components/PageWrapper';
-import { getHeaderAndFooter } from '@/utils/page-data';
 import {
   FooterEntryMeta,
   HeaderEntryMeta,
-  HomePageEntry,
   HomePageEntryMeta,
   JobEntry,
   TestimonialEntry,
-  TestimonialEntryMeta,
 } from '../../bcms/types';
-import { toJobLite } from '@/utils/job';
 import HomeHero from '@/components/home-page/Hero';
 import HomePageJobs from '@/components/home-page/Jobs';
 import HomePageAbout from '@/components/home-page/About';
 import HomePageTestimonials from '@/components/home-page/Testimonials';
 import { BCMSPropRichTextDataParsed } from '@becomes/cms-client/types';
-import { PageProps, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 
 const HomePage: React.FC<{
   data: {
@@ -56,26 +51,24 @@ const HomePage: React.FC<{
       }>;
     };
   };
-  
 }> = ({ data }) => {
-  console.log(data.page.bcms.meta.en)
   return (
     <PageWrapper
-    header={data.header}
-    footer={data.footer}
-    page={data.page}
-    location="/"
-  >
+      header={data.header}
+      footer={data.footer}
+      page={data.page}
+      location="/"
+    >
       {
         <>
           <HomeHero data={data.page.bcms.meta.en.hero} />
           <HomePageJobs data={data.page.bcms.meta.en.jobs} jobs={data.jobs} />
           <HomePageAbout data={data.page.bcms.meta.en.about} />
-          <HomePageTestimonials data={data.testimonials} /> 
+          <HomePageTestimonials data={data.testimonials} />
         </>
       }
     </PageWrapper>
-  );  
+  );
 };
 
 export const query = graphql`
@@ -91,7 +84,7 @@ export const query = graphql`
     }
     jobs: allBcmsJob {
       nodes {
-       ...Job
+        ...Job
       }
     }
     testimonials: allBcmsTestimonial {
@@ -100,6 +93,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
 export default HomePage;

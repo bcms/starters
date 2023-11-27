@@ -5,14 +5,12 @@ import JobsCard from '@/components/jobs/Card';
 import Search from '@/components/Search';
 import Dropdown from '@/components/Dropdown';
 import Btn from '@/components/Btn';
-import LocationIcon from '@/assets/icons/location.svg';
-import JobTypeIcon from '@/assets/icons/briefcase.svg';
 import { BCMSPropRichTextDataParsed } from '@becomes/cms-client/types';
 
 interface HomeJobsProps {
   data: {
     title: string;
-    description: BCMSPropRichTextDataParsed
+    description: BCMSPropRichTextDataParsed;
   };
   jobs: {
     nodes: Array<{
@@ -42,13 +40,16 @@ const HomeJobs: FC<HomeJobsProps> = ({ data, jobs }) => {
           .includes(searchValue.toLowerCase());
     }
     if (jobTypeValue.length) {
-      show = show && e.bcms.meta.en?.type.jobType.meta.en?.title === jobTypeValue;
+      show =
+        show && e.bcms.meta.en?.type.jobType.meta.en?.title === jobTypeValue;
     }
 
     if (locationValue.length) {
       show =
         show &&
-        e.bcms.meta.en?.location.jobLocation.meta.en?.title.toLowerCase().includes(locationValue.toLowerCase());
+        e.bcms.meta.en?.location.jobLocation.meta.en?.title
+          .toLowerCase()
+          .includes(locationValue.toLowerCase());
     }
 
     return show;
@@ -71,10 +72,6 @@ const HomeJobs: FC<HomeJobsProps> = ({ data, jobs }) => {
       });
     }
   };
-
-  const j = jobs.nodes.map((e) => ({ title: e.bcms.meta.en?.title }))
-
-  console.log(j)
 
   return (
     <section
@@ -99,15 +96,17 @@ const HomeJobs: FC<HomeJobsProps> = ({ data, jobs }) => {
           />
           <Dropdown
             value={jobTypeValue}
-            options={jobs.nodes.map((e) => e.bcms.meta.en?.title)}
+            options={jobs.nodes.map(
+              (e) => e.bcms.meta.en?.type.jobType.meta.en?.title,
+            )}
             placeholder="Job type..."
-            icon={JobTypeIcon}
+            icon={true}
             onChange={(value: string) => setJobTypeValue(value)}
           />
           <Search
             value={locationValue}
             options={jobs.nodes.map((e) => e.bcms.meta.en?.title)}
-            icon={LocationIcon}
+            icon={true}
             placeholder="Location"
             onInput={(value) => setLocationValue(value)}
           />

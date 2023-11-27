@@ -2,13 +2,16 @@ import React from 'react';
 import { AboutTeamGroup, TeamMemberEntry } from '../../../bcms/types';
 import { BCMSImage } from 'gatsby-source-bcms/components';
 import ContentManager from '@/components/ContentManager'; // Import ContentManager from the correct path
-import { BCMSPropMediaDataParsed, BCMSPropRichTextDataParsed } from '@becomes/cms-client/types';
+import {
+  BCMSPropMediaDataParsed,
+  BCMSPropRichTextDataParsed,
+} from '@becomes/cms-client/types';
 
 interface TeamSectionProps {
   data: AboutTeamGroup;
   members: Array<{
     bcms: TeamMemberEntry;
-  }>
+  }>;
 }
 
 const TeamSection: React.FC<TeamSectionProps> = ({ data, members }) => {
@@ -49,7 +52,9 @@ const TeamSection: React.FC<TeamSectionProps> = ({ data, members }) => {
                 {member.bcms.meta.en?.role}
               </div>
               <ContentManager
-                item={member.bcms.meta.en?.description as BCMSPropRichTextDataParsed}
+                item={
+                  member.bcms.meta.en?.description as BCMSPropRichTextDataParsed
+                }
                 className="text-xs leading-[1.4] font-medium tracking-[-0.41px] text-appGray-600 lg:text-lg lg:leading-normal"
               />
             </div>

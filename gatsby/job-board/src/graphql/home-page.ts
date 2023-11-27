@@ -45,7 +45,7 @@ export const query = graphql`
             }
             cta_label
           }
-         
+
           about {
             title
             description {

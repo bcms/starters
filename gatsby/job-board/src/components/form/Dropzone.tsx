@@ -51,8 +51,8 @@ const FileUpload: FC<FileUploadProps> = ({
           error
             ? 'border-red-500'
             : isDropzoneActive || value
-            ? 'border-appAccent text-appAccent'
-            : 'text-[#56565F] border-[#C2C0BC] hover:border-[#56565F]'
+              ? 'border-appAccent text-appAccent'
+              : 'text-[#56565F] border-[#C2C0BC] hover:border-[#56565F]'
         }`}
         onDrop={handleDrop}
         onDragEnter={(e) => {

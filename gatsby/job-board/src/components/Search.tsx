@@ -1,7 +1,13 @@
-import React, { FC, ChangeEvent, KeyboardEvent, useState, useEffect } from 'react';
-import SearchIcon from '@/assets/icons/search.svg';
+import React, {
+  FC,
+  ChangeEvent,
+  KeyboardEvent,
+  useState,
+  useEffect,
+} from 'react';
+import { ReactComponent as SearchIcon } from '@/assets/icons/search.svg';
+import { ReactComponent as LocationIcon } from '@/assets/icons/location.svg';
 import classNames from 'classnames';
-import { StaticImage } from 'gatsby-plugin-image';
 interface SearchInputProps {
   value?: string;
   options: Array<{ title: string }>;
@@ -13,11 +19,11 @@ interface SearchInputProps {
 }
 
 const SearchInput: FC<SearchInputProps> = ({
-  className, 
+  className,
   value = '',
   options,
   placeholder = 'Search',
-  icon: icon = SearchIcon,
+  icon,
   onInput,
 }) => {
   const [searchValue, setSearchValue] = useState<string>(value);
@@ -29,9 +35,8 @@ const SearchInput: FC<SearchInputProps> = ({
   useEffect(() => {
     // Filter options based on searchValue
     const lowerSearchValue = searchValue.toLowerCase();
-    const filtered = options.filter((option) =>
-      option.title?.toLowerCase().includes(lowerSearchValue),
-    
+    const filtered = options.filter(
+      (option) => option.title?.toLowerCase().includes(lowerSearchValue),
     );
     setFilteredOptions(filtered);
 
@@ -88,11 +93,11 @@ const SearchInput: FC<SearchInputProps> = ({
         className,
       )}
     >
-      <StaticImage
-        src={icon}
-        alt="Search"
-        className="w-[14px] h-[14px] flex-shrink-0"
-      />
+      {icon ? (
+        <LocationIcon className="w-[14px] h-[14px] flex-shrink-0" />
+      ) : (
+        <SearchIcon className="w-[14px] h-[14px] flex-shrink-0" />
+      )}
       <input
         value={searchValue.toLowerCase()}
         type="text"

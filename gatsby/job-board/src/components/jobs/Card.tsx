@@ -18,7 +18,8 @@ const JobsCard: FC<JobsCardProps> = ({ card }) => {
                 {card.bcms.meta.en.title}
               </h3>
               <div className="text-xs leading-none font-medium tracking-[-0.41px] text-appGray-600 lg:text-base lg:leading-none">
-                {card.bcms.meta.en.location.jobLocation && card.bcms.meta.en.location.jobLocation.meta.en?.title}
+                {card.bcms.meta.en.location.jobLocation &&
+                  card.bcms.meta.en.location.jobLocation.meta.en?.title}
               </div>
             </div>
             {card.bcms.meta.en.featured && (
@@ -31,7 +32,7 @@ const JobsCard: FC<JobsCardProps> = ({ card }) => {
             item={card.bcms.meta.en.description}
             className="text-xs leading-normal font-medium tracking-[-0.41px] text-appGray-500 mb-6 lg:text-base lg:leading-[1.4] lg:mb-8"
           />
-          <Btn tag="div" size="sm" className="justify-center mt-auto">
+          <Btn tag="div" size="sm" full className="justify-center mt-auto">
             <span>Apply</span>
           </Btn>
         </a>

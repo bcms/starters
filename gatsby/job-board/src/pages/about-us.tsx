@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  AboutPageEntry,
   AboutPageEntryMeta,
   AboutTeamGroup,
   FooterEntryMeta,
@@ -13,9 +12,11 @@ import AboutPageTeam from '@/components/about-page/Team';
 import { PageWrapper } from '@/components/PageWrapper';
 
 import classnames from 'classnames';
-import { BCMSPropMediaDataParsed, BCMSPropRichTextDataParsed } from '@becomes/cms-client/types';
+import {
+  BCMSPropMediaDataParsed,
+  BCMSPropRichTextDataParsed,
+} from '@becomes/cms-client/types';
 import { graphql } from 'gatsby';
-
 
 const AboutUsPage: React.FC<{
   data: {
@@ -49,7 +50,6 @@ const AboutUsPage: React.FC<{
       }>;
     };
   };
-  
 }> = ({ data }) => {
   const meta = data.page.bcms.meta;
   return (
@@ -115,7 +115,10 @@ const AboutUsPage: React.FC<{
             ))}
           </div>
         </div>
-        <AboutPageTeam data={meta.en?.team as AboutTeamGroup} members={data.team.nodes} />
+        <AboutPageTeam
+          data={meta.en?.team as AboutTeamGroup}
+          members={data.team.nodes}
+        />
       </div>
     </PageWrapper>
   );
@@ -138,6 +141,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
 export default AboutUsPage;

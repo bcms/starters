@@ -1,4 +1,9 @@
-import { FooterEntryMeta, HeaderEntryMeta, LegalPageEntry, LegalPageEntryMeta } from '../../bcms/types';
+import {
+  FooterEntryMeta,
+  HeaderEntryMeta,
+  LegalPageEntry,
+  LegalPageEntryMeta,
+} from '../../bcms/types';
 import { BCMSPropRichTextDataParsed } from '@becomes/cms-client/types';
 import React from 'react';
 import { PageWrapper } from '@/components/PageWrapper';
@@ -37,7 +42,6 @@ const LegalPage: React.FC<{
       }>;
     };
   };
-  
 }> = ({ data }) => {
   return (
     <PageWrapper
@@ -50,8 +54,7 @@ const LegalPage: React.FC<{
         <div className="container">
           <div className="grid grid-cols-1 gap-4 max-w-[850px] mx-auto lg:gap-6">
             <h1 className="sr-only">Legal page content</h1>
-            {data.allLegal.nodes
-            .map((item, index) => (
+            {data.allLegal.nodes.map((item, index) => (
               <div
                 key={index}
                 className="border border-[#DBD9D5] rounded-[7px] p-6"

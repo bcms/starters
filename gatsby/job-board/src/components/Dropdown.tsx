@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import classnames from 'classnames';
-import { StaticImage } from 'gatsby-plugin-image';
-import ChevronIcon from '@/assets/icons/chevron-down.svg';
+import { ReactComponent as JobTypeIcon } from '@/assets/icons/briefcase.svg';
+
 interface SelectProps {
   value: string;
   options: string[];
@@ -40,11 +40,7 @@ const Select: React.FC<SelectProps> = ({
         onClick={() => setShowOptions(!showOptions)}
       >
         <div className="flex items-center">
-          <StaticImage
-            src={icon}
-            alt="Icon"
-            className="w-[14px] h-[14px] mr-1.5"
-          />
+          {icon && <JobTypeIcon className="w-[14px] h-[14px] mr-1.5" />}
           <span
             className={classnames(
               'text-sm leading-none font-medium tracking-[-0.41px] transition-colors duration-300',
@@ -56,9 +52,7 @@ const Select: React.FC<SelectProps> = ({
             {value || placeholder}
           </span>
         </div>
-        <StaticImage
-          src={ChevronIcon}
-          alt="Icon"
+        <ChevronIcon
           className={classnames(
             'w-[14px] h-[14px] transition-transform duration-300',
             {

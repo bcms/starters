@@ -1,18 +1,15 @@
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s;
-}
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
+.button-wrapper {
+  position: relative;
 }
 
-.scaleBtnArrow-enter-active,
-.scaleBtnArrow-leave-active {
-  transition: opacity 0.2s ease, width 0.2s ease;
-}
-.scaleBtnArrow-enter-from,
-.scaleBtnArrow-leave-to {
+.arrow-wrapper {
   opacity: 0;
   width: 0;
+  overflow: hidden;
+  transition: opacity 0.2s ease, width 0.2s ease;
+}
+
+.arrow-wrapper.show {
+  opacity: 1;
+  width: 14px; /* or your default width value */
 }
