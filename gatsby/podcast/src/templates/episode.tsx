@@ -8,6 +8,8 @@ import { ContentManager } from '@/src/components/ContentManager';
 import { usePlayer } from '@/src/context/PlayerContext';
 import { bcmsMediaToUrl } from '@becomes/cms-most/frontend';
 import { graphql } from 'gatsby';
+import { toLite } from '@/utils/toLite';
+import { GuestEntryMeta } from '@/bcms/types';
 
 interface EpisodePageProps {
   data: PageData<EpisodePageData>;
@@ -27,6 +29,11 @@ const EpisodePage: React.FC<EpisodePageProps> = ({
 
   const audioDOM = useRef<HTMLAudioElement | null>(null);
   const [fileLength, setFileLength] = useState<string>('...');
+
+  const guest = toLite<
+    GuestEntryMeta,
+    { guest: { meta: { en: GuestEntryMeta } } }
+  >(page.bcms.meta.en.guest as any);
 
   const handlePlayPause = (e: MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
@@ -168,9 +175,9 @@ const EpisodePage: React.FC<EpisodePageProps> = ({
               Guest
             </div>
             <div className="flex items-center">
-              {page.bcms.meta.en.guest?.meta?.en && (
+              {guest && (
                 <BCMSImage
-                  media={page.bcms.meta.en.guest.meta.en.avatar}
+                  media={guest.avatar}
                   options={{
                     sizes: {
                       exec: [
@@ -186,7 +193,7 @@ const EpisodePage: React.FC<EpisodePageProps> = ({
               )}
 
               <div className="text-xs leading-none font-medium tracking-[-0.8px] text-appGray-200 lg:text-2xl lg:leading-none">
-                {page.bcms.meta.en.guest?.meta?.en?.title || 'N / A'}
+                {guest?.title || 'N / A'}
               </div>
             </div>
           </div>
