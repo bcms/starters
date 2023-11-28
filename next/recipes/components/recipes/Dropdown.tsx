@@ -16,7 +16,7 @@ interface DropdownProps {
 export const RecipesDropdown: React.FC<DropdownProps> = ({
   onSelect,
   dropdownPosition = 'right',
-  placeholder,
+  placeholder, 
   options,
   value,
 }) => {

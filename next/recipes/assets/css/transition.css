@@ -1,6 +1,6 @@
 .fade-entered,
 .fade-exited {
-  transition: opacity 0.3s;
+  transition: opacity 0.2s;
 }
 
 .fade-entering,
