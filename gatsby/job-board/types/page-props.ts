@@ -1,23 +1,14 @@
 import { BCMSPropRichTextDataParsed } from '@becomes/cms-client/types';
-import {
-  AboutPageEntryMeta,
-  ContactPageEntryMeta,
-  HeaderEntryMeta,
-  HomePageEntryMeta,
-  JobEntryMeta,
-  LegalPageEntryMeta,
-} from '../bcms/types';
+import { HeaderEntryMeta, SeoGroup } from '../bcms/types';
 import { FooterEntryMeta } from '../bcms/types/entry/footer';
 
 export interface PageData<
   Page = {
     meta: {
-      en:
-        | JobEntryMeta
-        | ContactPageEntryMeta
-        | HomePageEntryMeta
-        | AboutPageEntryMeta
-        | LegalPageEntryMeta;
+      en: {
+        title: string;
+        seo?: SeoGroup;
+      };
     };
     content: {
       en: BCMSPropRichTextDataParsed;

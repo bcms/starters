@@ -4,7 +4,9 @@ import {
   FooterEntryMeta,
   HeaderEntryMeta,
   HomePageEntryMeta,
-  JobEntry,
+  JobEntryMeta,
+  JobLocationEntry,
+  JobTypeEntry,
   TestimonialEntry,
 } from '../../bcms/types';
 import HomeHero from '@/components/home-page/Hero';
@@ -42,7 +44,18 @@ const HomePage: React.FC<{
     };
     jobs: {
       nodes: Array<{
-        bcms: JobEntry;
+        bcms: {
+          meta: {
+            en: Omit<JobEntryMeta, 'type' | 'location'> & {
+              type: {
+                jobType: JobTypeEntry;
+              };
+              location: {
+                jobLocation: JobLocationEntry;
+              };
+            };
+          };
+        };
       }>;
     };
     testimonials: {

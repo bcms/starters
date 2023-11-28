@@ -1,10 +1,10 @@
+import { BCMSClient } from '@becomes/cms-client/types';
 import {
   FooterEntry,
   FooterEntryMeta,
   HeaderEntry,
   HeaderEntryMeta,
-} from '@/bcms/types';
-import { BCMSClient } from '@becomes/cms-client/types';
+} from '../../bcms/types';
 
 export interface HeaderAndFooterResult {
   header: HeaderEntryMeta;

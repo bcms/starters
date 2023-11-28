@@ -52,7 +52,7 @@ const AboutUsPage: React.FC<{
   };
 }> = ({ data }) => {
   const meta = data.page.bcms.meta;
-  console.log("about", data.page.bcms?.content.en)
+
   return (
     <PageWrapper
       header={data.header}

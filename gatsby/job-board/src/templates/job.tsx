@@ -13,6 +13,7 @@ import {
   FooterEntryMeta,
   JobEntryMeta,
   JobEntry,
+  JobCompanyEntry,
 } from '../../bcms/types';
 import { graphql } from 'gatsby';
 
@@ -35,7 +36,11 @@ const JobPage: React.FC<{
     page: {
       bcms: {
         meta: {
-          en: JobEntryMeta;
+          en: Omit<JobEntryMeta, 'company'> & {
+            company: {
+              jobCompany: JobCompanyEntry;
+            };
+          };
         };
         content: {
           en: BCMSPropRichTextDataParsed;
@@ -252,12 +257,7 @@ const JobPage: React.FC<{
           </div>
         )}
       </div>
-      {showApplyModal && (
-        <ApplyModal
-          job={data.page.bcms.meta.en}
-          close={() => setShowApplyModal(false)}
-        />
-      )}
+      {showApplyModal && <ApplyModal close={() => setShowApplyModal(false)} />}
     </PageWrapper>
   );
 };

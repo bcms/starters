@@ -1,11 +1,9 @@
 import React, { FC, useRef, useState } from 'react';
-import { JobEntryMeta } from '../../../bcms/types';
 import FormText from '@/components/form/Text';
 import FormDropzone from '@/components/form/Dropzone';
 import Btn from '@/components/Btn';
 
 interface JobApplicationFormProps {
-  job: JobEntryMeta;
   close: () => void;
 }
 

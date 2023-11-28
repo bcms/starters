@@ -7,20 +7,19 @@ interface InputProps {
   label?: string;
   placeholder?: string;
   type?: 'text' | 'email' | 'date' | 'textarea';
-  error?: boolean;
+  error?: string;
   onChange: (value: string) => void;
-  className?: string
+  className?: string;
 }
 
 const Input: FC<InputProps> = ({
   name,
   value,
-  label = '',
-  placeholder = '',
+  label,
+  placeholder,
   type = 'text',
-  error = '',
+  error,
   onChange,
-  className
 }) => {
   const handleInput = (
     event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,

@@ -1,58 +1,118 @@
-# BCMS Gatsby Starter
+https://github.com/bcms/starters/assets/15079459/87b9145c-084f-47b0-b3b9-9f4a30ab21d9
 
-This is a basic starter project for BCMS and Gatsby. For more information see [plugin repository](https://github.com/becomesco/gatsby-source-bcms)
+<h1 align="center">Job board with Gatsby.js and BCMS</h1>
+<p align="center"><a href="https://job-board-starter.thebcms.com/">See this job board in action ⤴</a></p>
+<p align="center">Spin up a fully functional job board with Gatsby.js, Tailwind, and <a href="https://github.com/bcms/cms">BCMS</a> - in a few minutes.<br/>
+Everything from submitting jobs, over listing and searching them, to getting applications. All within the same codebase.</p>
+
+---
 
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
+  <span>If you like the project, hit that ⭐ button</span>
 </p>
-<h1 align="center">
-  Gatsby minimal TypeScript starter
-</h1>
 
-## 🚀 Quick start
+---
 
-1.  **Create a Gatsby site.**
+<p align="center">Whether you are looking to build a job board for your company or a stand-alone job board website - this starter will save you weeks. You can clone this folder, connect it with your own BCMS instance, and give it a go!</p>
+<br/>
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+<h2 align="center">How it works</h2>
+<br/>
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby
-    ```
+<h3 align="center">Step 1: Clone the repo</h3>
+<p align="center">This repository contains a lot of starters. Enter <code>job-board</code>, but make sure to check other starters too, later.</p>
 
-2.  **Start developing.**
+```bash
+git clone https://github.com/bcms/starters.git
+```
 
-    Navigate into your new site’s directory and start it up.
+<br/>
+<h3 align="center">Step 2: Start BCMS (Backend)</h3>
+<p align="center">This step will make sure that you are running BCMS locally and in the background, which is required before starting the Gatsby.js development server.</p>
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+```bash
+cd starters/cms/job-board
+```
 
-3.  **Open the code and start customizing!**
+<p>Run <code>docker-compose build</code> command, followed with <code>docker-compose up</code>.</p>
+<p>Your BCMS instance is now up and running, and can be inspected by visiting <code>http://localhost:8080</code>.</p>
 
-    Your site is now running at http://localhost:8000!
+<br/>
+<h3 align="center">Step 3: Start Gatsby.js (Frontend)</h3>
+<p align="center">After this step you will be able to edit the Frontend side of your starter, everything from styles, content, pages structure and much more.</p>
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+```bash
+cd starters/gatsby/job-board
+```
 
-4.  **Learn more**
+<p>Before anything, make sure to install node packages ( <code>npm install</code> ).</p>
+<p>Run <code>npm run dev</code> command to start the local frontend development server. This will pull the data from the BCMS which is running in the background.</p>
+<p>Your Gatsby app is now up and running and can be inspected by visiting <code>http://localhost:3000</code>.</p>
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+---
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+<br>
+<br>
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+<h2>FAQs</h2>
+<h3>
+  Is this Gatsby.js starter template compatible with the latest version of
+  Gatsby.js?
+</h3>
+<p>
+  Yes, the template is designed to be compatible with the latest version of
+  Gatsby.js. Make sure to regularly check for updates to ensure compatibility.
+</p>
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+<h3>
+  Can I integrate other headless CMS platforms besides BCMS with this starter?
+</h3>
+<p>
+  Absolutely! While it's optimized for BCMS, the structure allows for
+  integration with other headless CMS platforms. You might need to make some
+  adjustments based on your chosen CMS.
+</p>
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+<h3>How customizable is the design? Can I change the theme or colors?</h3>
+<p>
+  The design is highly customizable. We used Tailwind for that very reason Just
+  go to [tailwind.config.js](/tailwind.config.js). There, you can easily change
+  the theme, colors, fonts, and other design elements to match your brand.
+</p>
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+<h3>Is there any built-in SEO optimization with this starter?</h3>
+<p>Yes, the starter follows the SEO best practices.</p>
+<img width="631" alt="image" src="https://github.com/bcms/starters/assets/15079459/1011ce99-10a7-465f-9671-cdd2792d4a34">
 
-## 🚀 Quick start (Gatsby Cloud)
+<h3>
+  How is the performance of the website? Does it support lazy loading for
+  images?
+</h3>
+<p>
+  The website is optimized for performance. It supports lazy loading for images
+  to ensure faster page loads, especially with a large number of recipes.
+</p>
+<img width="743" alt="image" src="https://github.com/bcms/starters/assets/15079459/3d2a47a6-d47d-41e9-86f5-ec038c1bc1a6">
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+<h3>Are there any pre-configured analytics or tracking tools integrated?</h3>
+<p>
+  The starter doesn't come with pre-configured analytics tools, but it's
+  straightforward to integrate tools like Google Analytics or other tracking
+  solutions.
+</p>
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+<h3>
+  I'm new to Gatsby.js. Do you provide documentation or support for setting up the
+  starter?
+</h3>
+
+Yes, the starter comes with detailed documentation to help you get started. A few useful resources:
+
+- [BCMS documentation](https://docs.thebcms.com/integrations/gatsby-js)
+- [Official Gatsby.js documentation](https://www.gatsbyjs.com/docs/)
+- [Sign up to BCMS](https://cloud.thebcms.com/)
+
+<h2>Support ❤️</h2>
+<p>
+  If you like the project, hit that ⭐ button !!1
+</p>

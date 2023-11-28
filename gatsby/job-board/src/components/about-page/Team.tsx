@@ -1,11 +1,11 @@
 import React from 'react';
 import { AboutTeamGroup, TeamMemberEntry } from '../../../bcms/types';
 import { BCMSImage } from 'gatsby-source-bcms/components';
-import ContentManager from '@/components/ContentManager'; // Import ContentManager from the correct path
 import {
   BCMSPropMediaDataParsed,
   BCMSPropRichTextDataParsed,
 } from '@becomes/cms-client/types';
+import ContentManager from '../ContentManager';
 
 interface TeamSectionProps {
   data: AboutTeamGroup;

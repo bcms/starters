@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 import React, { useState } from 'react';
 import { PageWrapper } from '@/components/PageWrapper';
 import FormText from '@/components/form/Text';
@@ -10,7 +11,6 @@ import {
   PostJobPageEntryMeta,
 } from '../../../bcms/types';
 import { JobPostPageData, PageData } from '../../../types';
-import { InputObject } from '@/composables/error';
 import { BCMSPropRichTextDataParsed } from '@becomes/cms-client/types';
 import { graphql } from 'gatsby';
 
@@ -203,7 +203,10 @@ const PostJobPage: React.FC<PostJobPageProps> = ({ data }) => {
 
   const checkForInputErrors = (
     inputs: {
-      [key: string]: InputObject;
+      [key: string]: {
+        value?: string;
+        error: string;
+      };
     },
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     setter: React.Dispatch<React.SetStateAction<any>>,

@@ -1,5 +1,5 @@
-import { JobEntry, JobEntryMeta } from '@/bcms/types';
-import { JobLite } from '@/types';
+import { JobEntry, JobEntryMeta } from '../../bcms/types';
+import { JobLite } from '../../types';
 
 export function toJobLite(job: JobEntry): JobLite {
   const meta = job.meta.en as JobEntryMeta;

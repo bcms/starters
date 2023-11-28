@@ -1,6 +1,9 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import React, { useRef, useState } from 'react';
 import classnames from 'classnames';
+// @ts-ignore
 import { ReactComponent as JobTypeIcon } from '@/assets/icons/briefcase.svg';
+// @ts-ignore
 import { ReactComponent as ChevronIcon } from '@/assets/icons/chevron-down.svg';
 import { useClickOutside } from '@/hooks/useClickOutside';
 import { CSSTransition } from 'react-transition-group';

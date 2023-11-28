@@ -1,5 +1,9 @@
 import React, { FC, useRef, useState } from 'react';
-import { JobEntry } from '../../../bcms/types';
+import {
+  JobEntryMeta,
+  JobLocationEntry,
+  JobTypeEntry,
+} from '../../../bcms/types';
 import ContentManager from '@/components/ContentManager';
 import JobsCard from '@/components/jobs/Card';
 import Search from '@/components/Search';
@@ -14,7 +18,18 @@ interface HomeJobsProps {
   };
   jobs: {
     nodes: Array<{
-      bcms: JobEntry;
+      bcms: {
+        meta: {
+          en: Omit<JobEntryMeta, 'type' | 'location'> & {
+            type: {
+              jobType: JobTypeEntry;
+            };
+            location: {
+              jobLocation: JobLocationEntry;
+            };
+          };
+        };
+      };
     }>;
   };
 }
@@ -90,14 +105,16 @@ const HomeJobs: FC<HomeJobsProps> = ({ data, jobs }) => {
         <div className="grid grid-cols-2 gap-x-[14px] mb-8 lg:grid-cols-3 lg:gap-8 lg:mb-10">
           <Search
             value={searchValue}
-            options={jobs.nodes.map((e) => ({ title: e.bcms.meta.en?.title }))}
+            options={jobs.nodes.map((e) => ({
+              title: e.bcms.meta.en?.title || '',
+            }))}
             className="col-span-2 lg:col-span-1"
             onInput={(value) => setSearchValue(value)}
           />
           <Dropdown
             value={jobTypeValue}
             options={jobs.nodes.map(
-              (e) => e.bcms.meta.en?.type.jobType.meta.en?.title,
+              (e) => e.bcms.meta.en?.type.jobType.meta.en?.title || '',
             )}
             placeholder="Job type..."
             icon={true}
@@ -105,7 +122,10 @@ const HomeJobs: FC<HomeJobsProps> = ({ data, jobs }) => {
           />
           <Search
             value={locationValue}
-            options={jobs.nodes.map((e) => e.bcms.meta.en?.location.jobLocation.meta?.en)}
+            options={jobs.nodes.map((e) => ({
+              title:
+                e.bcms.meta.en?.location?.jobLocation?.meta?.en?.title || '',
+            }))}
             icon={true}
             placeholder="Location"
             onInput={(value) => setLocationValue(value)}

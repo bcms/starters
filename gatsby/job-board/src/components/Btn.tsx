@@ -3,6 +3,8 @@ import { Link } from 'gatsby';
 import classnames from 'classnames';
 import { CSSTransition } from 'react-transition-group';
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import { ReactComponent as ArrowIcon } from '@/assets/icons/arrow.svg';
 
 interface ButtonProps {

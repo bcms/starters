@@ -1,5 +1,14 @@
-import React, { FC, ChangeEvent, KeyboardEvent, useState, useEffect } from 'react';
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+import React, {
+  FC,
+  ChangeEvent,
+  KeyboardEvent,
+  useState,
+  useEffect,
+} from 'react';
+// @ts-ignore
 import { ReactComponent as SearchIcon } from '@/assets/icons/search.svg';
+// @ts-ignore
 import { ReactComponent as LocationIcon } from '@/assets/icons/location.svg';
 import classNames from 'classnames';
 
@@ -21,31 +30,34 @@ const SearchInput: FC<SearchInputProps> = ({
   onInput,
 }) => {
   const [searchValue, setSearchValue] = useState<string>(value);
-  const [filteredOptions, setFilteredOptions] = useState<Array<{ title: string }>>([]);
-  const [placeholderSuggestion, setPlaceholderSuggestion] = useState<string>('');
+  const [filteredOptions, setFilteredOptions] = useState<
+    Array<{ title: string }>
+  >([]);
+  const [placeholderSuggestion, setPlaceholderSuggestion] =
+    useState<string>('');
 
   useEffect(() => {
     const lowerSearchValue = searchValue.toLowerCase();
-  
+
     // Filter options based on searchValue
     const filtered = options.filter(
       (option) => option.title?.toLowerCase().includes(lowerSearchValue),
     );
     setFilteredOptions(filtered);
-  
+
     // Calculate placeholder suggestion
     const suggestions = filtered.map((suggest) => {
       const words = suggest.title.split(' ');
-      const matchingWords = words.slice(1).filter((word) =>
-        word.toLowerCase().startsWith(lowerSearchValue)
-      );
+      const matchingWords = words
+        .slice(1)
+        .filter((word) => word.toLowerCase().startsWith(lowerSearchValue));
       return matchingWords.join(' ');
     });
-  
+
     const suggestion = suggestions.length > 0 ? suggestions[0] : '';
     const remainingValue = suggestion.slice(searchValue.length);
     setPlaceholderSuggestion(remainingValue);
-  
+
     // Invoke onInput callback
     if (onInput) {
       onInput(searchValue);
@@ -59,7 +71,10 @@ const SearchInput: FC<SearchInputProps> = ({
   const handleTabPress = (event: KeyboardEvent<HTMLInputElement>) => {
     const placeholderValue = placeholderSuggestion;
 
-    if ((event.key === 'Tab' || event.key === 'ArrowRight') && placeholderValue) {
+    if (
+      (event.key === 'Tab' || event.key === 'ArrowRight') &&
+      placeholderValue
+    ) {
       event.preventDefault(); // Prevent default Tab/RightArrow behavior
 
       setSearchValue(`${searchValue}${placeholderValue}`);

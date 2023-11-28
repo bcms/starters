@@ -130,9 +130,8 @@ const ContactPage: React.FC<{
                 name="fullName"
                 placeholder="Enter your full name"
                 onChange={(value) => handleFormChange('fullName', value)}
-                error={formErrors.fullName ? true : false}
+                error={formErrors.fullName ? 'This field is required' : ''}
               />
-
               <FormText
                 value={form.email}
                 type="email"
@@ -140,18 +139,16 @@ const ContactPage: React.FC<{
                 name="email"
                 placeholder="Enter your email"
                 onChange={(value) => handleFormChange('email', value)}
-                error={formErrors.email ? true : false}
+                error={formErrors.email ? 'This field is required' : ''}
               />
-
               <FormText
                 value={form.phoneNumber}
                 name="phoneNumber"
                 label="Phone number"
                 placeholder="Enter your phone number"
                 onChange={(value) => handleFormChange('phoneNumber', value)}
-                error={formErrors.phoneNumber ? true : false}
+                error={formErrors.phoneNumber ? 'This field is required' : ''}
               />
-
               <FormText
                 value={form.details}
                 type="textarea"
@@ -159,10 +156,12 @@ const ContactPage: React.FC<{
                 name="details"
                 placeholder="Give us details on how we can help you..."
                 onChange={(value) => handleFormChange('details', value)}
-                error={formErrors.details ? true : false}
+                error={formErrors.details ? 'This field is required' : ''}
               />
-
-              <Btn className="justify-center w-full lg:mt-4" onClick={handleSubmit}>
+              <Btn
+                className="justify-center w-full lg:mt-4"
+                onClick={handleSubmit}
+              >
                 <span>Submit</span>
               </Btn>
             </div>
