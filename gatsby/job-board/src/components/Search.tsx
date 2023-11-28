@@ -34,12 +34,17 @@ const SearchInput: FC<SearchInputProps> = ({
     setFilteredOptions(filtered);
   
     // Calculate placeholder suggestion
-    const suggestions = filtered
-      .map((suggest) => suggest.title)
-      .filter((title) => title.toLowerCase().startsWith(lowerSearchValue));
+    const suggestions = filtered.map((suggest) => {
+      const words = suggest.title.split(' ');
+      const matchingWords = words.slice(1).filter((word) =>
+        word.toLowerCase().startsWith(lowerSearchValue)
+      );
+      return matchingWords.join(' ');
+    });
   
     const suggestion = suggestions.length > 0 ? suggestions[0] : '';
-    setPlaceholderSuggestion(suggestion.slice(searchValue.length).toLocaleLowerCase());
+    const remainingValue = suggestion.slice(searchValue.length);
+    setPlaceholderSuggestion(remainingValue);
   
     // Invoke onInput callback
     if (onInput) {
