@@ -7,8 +7,9 @@ interface InputProps {
   label?: string;
   placeholder?: string;
   type?: 'text' | 'email' | 'date' | 'textarea';
-  error?: string;
+  error?: boolean;
   onChange: (value: string) => void;
+  className?: string
 }
 
 const Input: FC<InputProps> = ({
@@ -19,6 +20,7 @@ const Input: FC<InputProps> = ({
   type = 'text',
   error = '',
   onChange,
+  className
 }) => {
   const handleInput = (
     event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,

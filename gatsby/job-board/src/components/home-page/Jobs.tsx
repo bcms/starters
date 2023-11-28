@@ -105,7 +105,7 @@ const HomeJobs: FC<HomeJobsProps> = ({ data, jobs }) => {
           />
           <Search
             value={locationValue}
-            options={jobs.nodes.map((e) => e.bcms.meta.en?.title)}
+            options={jobs.nodes.map((e) => e.bcms.meta.en?.location.jobLocation.meta?.en)}
             icon={true}
             placeholder="Location"
             onInput={(value) => setLocationValue(value)}

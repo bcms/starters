@@ -52,6 +52,7 @@ const AboutUsPage: React.FC<{
   };
 }> = ({ data }) => {
   const meta = data.page.bcms.meta;
+  console.log("about", data.page.bcms?.content.en)
   return (
     <PageWrapper
       header={data.header}
@@ -76,9 +77,9 @@ const AboutUsPage: React.FC<{
               'mb-12 md:mb-20 lg:mb-[120px]',
             )}
           >
-            {data.page.bcms?.content.en.map((item: any, index: number) => (
+            {meta.en?.content.map((item: any, index: number) => (
               <div key={index}>
-                {item.value && item.value.length > 0 && (
+                {item.text && item.text.length > 0 && (
                   <ContentManager
                     item={item.text}
                     className={classnames(

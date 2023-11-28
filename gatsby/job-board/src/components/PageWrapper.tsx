@@ -30,7 +30,7 @@ export const PageWrapper: FC<PropsWithChildren<PageData>> = ({
     page?.bcms.meta?.en.seo?.description ??
     'Jumpstart your Gatsby project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
   const image = '/thumbnail.jpg';
-  const domain = 'https://recipes-starter.thebcms.com';
+  const domain = 'https://job-board-starter.thebcms.com';
 
   return (
     <div className="overflow-hidden">

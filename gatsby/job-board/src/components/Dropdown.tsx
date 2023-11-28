@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import classnames from 'classnames';
 import { ReactComponent as JobTypeIcon } from '@/assets/icons/briefcase.svg';
+import { ReactComponent as ChevronIcon } from '@/assets/icons/chevron-down.svg';
+import { useClickOutside } from '@/hooks/useClickOutside';
+import { CSSTransition } from 'react-transition-group';
 
 interface SelectProps {
   value: string;
@@ -18,6 +21,12 @@ const Select: React.FC<SelectProps> = ({
   onChange,
 }) => {
   const [showOptions, setShowOptions] = useState(false);
+  const dropdownOptionRef = useRef<HTMLDivElement | null>(null);
+
+  useClickOutside({
+    callback: () => setShowOptions(false),
+    ref: dropdownOptionRef,
+  });
 
   const handleOptionSelect = (option: string) => {
     if (value === option) {
@@ -34,7 +43,7 @@ const Select: React.FC<SelectProps> = ({
   );
 
   return (
-    <div className="relative z-10">
+    <div className="relative" ref={dropdownOptionRef}>
       <button
         className={buttonClasses}
         onClick={() => setShowOptions(!showOptions)}
@@ -61,13 +70,13 @@ const Select: React.FC<SelectProps> = ({
           )}
         />
       </button>
-      {showOptions && (
-        <div
-          className="absolute -bottom-1 left-0 w-full translate-y-full grid grid-cols-1 gap-px border border-[#DBD9D5] bg-[#DBD9D5] rounded-md max-h-[204px] overflow-y-auto"
-          style={{
-            boxShadow: '4px 4px 40px rgba(0, 0, 0, 0.07)',
-          }}
-        >
+      <CSSTransition
+        in={showOptions}
+        timeout={300}
+        classNames="fade" // CSS class names for the transitions
+        unmountOnExit
+      >
+        <div className="absolute -bottom-1 left-0 w-full translate-y-full grid grid-cols-1 gap-px border border-[#DBD9D5] bg-[#DBD9D5] rounded-md max-h-[204px] overflow-y-auto">
           {options.map((option, index) => (
             <button
               key={index}
@@ -84,7 +93,7 @@ const Select: React.FC<SelectProps> = ({
             </button>
           ))}
         </div>
-      )}
+      </CSSTransition>
     </div>
   );
 };
