@@ -71,16 +71,16 @@ const placeholderSuggestion = computed(() => {
   const suggestions: string[] = [];
 
   for (let i = 0; i < filteredOptions.value.length; i++) {
-    const recipe = filteredOptions.value[i];
+    const job = filteredOptions.value[i];
 
-    const words = recipe.title.split(' ');
+    const words = job.title.split(' ');
 
     if (
       words.some((e) =>
         e.toLowerCase().startsWith(searchValue.value.toLowerCase()),
       )
     ) {
-      suggestions.push(recipe.title.toLowerCase());
+      suggestions.push(job.title.toLowerCase());
     }
   }
 

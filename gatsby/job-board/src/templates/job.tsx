@@ -1,8 +1,9 @@
 import React, { useMemo, useRef, useState } from 'react';
 import { BCMSImage } from 'gatsby-source-bcms/components';
-import LocationIcon from '@/assets/icons/location.svg';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import { ReactComponent as LocationIcon } from '@/assets/icons/location.svg';
 import { PageWrapper } from '@/components/PageWrapper';
-import { StaticImage } from 'gatsby-plugin-image';
 import ContentManager from '@/components/ContentManager';
 import Btn from '@/components/Btn';
 import JobsCard from '@/components/jobs/Card';
@@ -137,11 +138,7 @@ const JobPage: React.FC<{
                     {meta.title}
                   </h1>
                   <div className="flex items-center">
-                    <StaticImage
-                      src={LocationIcon}
-                      alt="Icon"
-                      className="w-3 h-3 flex-shrink-0 text-appGray-600 mr-1 lg:w-[14px] lg:h-[14px]"
-                    />
+                    <LocationIcon className="w-3 h-3 flex-shrink-0 text-appGray-600 mr-1 lg:w-[14px] lg:h-[14px]" />
                     <span className="text-xs leading-none font-medium tracking-[-0.41px] text-appGray-600 lg:text-sm lg:leading-none">
                       {meta.title}
                     </span>

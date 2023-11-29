@@ -37,26 +37,30 @@ const SearchInput: FC<SearchInputProps> = ({
     useState<string>('');
 
   useEffect(() => {
-    const lowerSearchValue = searchValue.toLowerCase();
-
     // Filter options based on searchValue
-    const filtered = options.filter(
-      (option) => option.title?.toLowerCase().includes(lowerSearchValue),
+    const lowerSearchValue = searchValue.toLowerCase();
+    const filtered = options.filter((option) =>
+      option.title.toLowerCase().includes(lowerSearchValue),
     );
     setFilteredOptions(filtered);
 
     // Calculate placeholder suggestion
-    const suggestions = filtered.map((suggest) => {
-      const words = suggest.title.split(' ');
-      const matchingWords = words
-        .slice(1)
-        .filter((word) => word.toLowerCase().startsWith(lowerSearchValue));
-      return matchingWords.join(' ');
-    });
+    const suggestions: string[] = [];
+    for (const job of filtered) {
+      const words = job.title.split(' ');
+      if (words.some((e) => e.toLowerCase().startsWith(lowerSearchValue))) {
+        suggestions.push(job.title.toLowerCase());
+      }
+    }
 
-    const suggestion = suggestions.length > 0 ? suggestions[0] : '';
-    const remainingValue = suggestion.slice(searchValue.length);
-    setPlaceholderSuggestion(remainingValue);
+    if (suggestions.length > 0) {
+      const suggestion = suggestions[0];
+      setPlaceholderSuggestion(
+        suggestion.slice(suggestion.indexOf(lowerSearchValue)),
+      );
+    } else {
+      setPlaceholderSuggestion('');
+    }
 
     // Invoke onInput callback
     if (onInput) {
@@ -69,14 +73,13 @@ const SearchInput: FC<SearchInputProps> = ({
   };
 
   const handleTabPress = (event: KeyboardEvent<HTMLInputElement>) => {
-    const placeholderValue = placeholderSuggestion;
+    const placeholderValue = placeholderSuggestion.slice(searchValue.length);
 
     if (
-      (event.key === 'Tab' || event.key === 'ArrowRight') &&
-      placeholderValue
+      event.key === 'Tab' &&
+      placeholderValue &&
+      placeholderValue.length > 0
     ) {
-      event.preventDefault(); // Prevent default Tab/RightArrow behavior
-
       setSearchValue(`${searchValue}${placeholderValue}`);
     }
   };
@@ -103,8 +106,12 @@ const SearchInput: FC<SearchInputProps> = ({
       />
       {filteredOptions.length > 0 && searchValue && (
         <span className="absolute top-1/2 left-[21px] -translate-y-1/2 truncate text-sm leading-none font-medium tracking-[-0.41px] pointer-events-none">
-          <span className="opacity-0">{searchValue}</span>
-          <span className="text-appGray-400">{placeholderSuggestion}</span>
+          <span className="opacity-0">
+            {placeholderSuggestion.slice(0, searchValue.length)}
+          </span>
+          <span className="text-appGray-400">
+            {placeholderSuggestion.slice(searchValue.length)}
+          </span>
         </span>
       )}
     </label>

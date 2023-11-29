@@ -37,21 +37,17 @@ const SearchInput: FC<SearchInputProps> = ({
 
     // Calculate placeholder suggestion
     const suggestions: string[] = [];
-    for (const recipe of filtered) {
-      const words = recipe.title.split(' ');
-      for (const word of words) {
-        if (word.toLowerCase().startsWith(lowerSearchValue)) {
-          suggestions.push(word.toLowerCase());
-          break;
-        }
+    for (const job of filtered) {
+      const words = job.title.split(' ');
+      if (words.some((e) => e.toLowerCase().startsWith(lowerSearchValue))) {
+        suggestions.push(job.title.toLowerCase());
       }
-      if (suggestions.length > 0) break;
     }
 
     if (suggestions.length > 0) {
       const suggestion = suggestions[0];
       setPlaceholderSuggestion(
-        suggestion.slice(lowerSearchValue.length, suggestion.length),
+        suggestion.slice(suggestion.indexOf(lowerSearchValue)),
       );
     } else {
       setPlaceholderSuggestion('');
@@ -68,10 +64,7 @@ const SearchInput: FC<SearchInputProps> = ({
   };
 
   const handleTabPress = (event: KeyboardEvent<HTMLInputElement>) => {
-    const placeholderValue = placeholderSuggestion.slice(
-      searchValue.length,
-      placeholderSuggestion.length,
-    );
+    const placeholderValue = placeholderSuggestion.slice(searchValue.length);
     if (
       event.key === 'Tab' &&
       placeholderValue &&
