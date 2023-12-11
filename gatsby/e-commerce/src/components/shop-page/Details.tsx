@@ -79,7 +79,7 @@ export const ShopDetails: React.FC<ShopDetailsProps> = ({
           <div className="text-[20px] leading-none tracking-[-0.48px] mb-1 lg:text-[24px]">
             ${meta.price.toFixed(2)}
           </div>
-          {meta.discounted_price && (
+          {meta.discounted_price !== undefined && meta.discounted_price > 0 && (
             <div className="leading-none tracking-[-0.32px] text-appGray-500 line-through">
               ${meta.discounted_price.toFixed(2)}
             </div>

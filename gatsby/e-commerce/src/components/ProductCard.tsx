@@ -89,7 +89,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               key={index}
               disabled={!size.available}
               className={classNames(
-                'w-8 h-8 flex items-center justify-center leading-none tracking-[-0.3px] transition-colors duration-300',
+                'w-8 h-8 flex items-center bg-appGray-100 justify-center leading-none tracking-[-0.3px] transition-colors duration-300',
                 {
                   'text-appGray-800 bg-appGray-200 border border-appText hover:bg-appGray-200':
                     size.available &&

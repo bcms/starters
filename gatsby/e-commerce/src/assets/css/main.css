@@ -73,3 +73,6 @@ body {
 svg path {
     fill: currentColor !important;
 }
+.filters-icon path {
+    fill: #1C1B1F !important;
+}

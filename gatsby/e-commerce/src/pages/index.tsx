@@ -41,15 +41,15 @@ const Homepage: React.FC<HomePageProps> = ({ data }) => {
       return data.categories.nodes.map((category) => {
         return {
           meta: category.bcms.meta as any,
-          productsCount: data.products.nodes.filter((p) => {
+          productsCount: data.products.nodes.flatMap((p) => {
             const _ = p.bcms.meta.en?.categories.map((c) =>
               toLite<
                 ProductCategoryEntry,
                 { productCategory: { meta: { en: ProductCategoryEntry } } }
               >(c as any),
-            );
+            ) as any;
 
-            return _?.find((c) => c._id === category.bcms._id);
+            return _?.filter((c: any) => c.slug === category.bcms.meta.en?.slug) || [];
           }).length,
         };
       });

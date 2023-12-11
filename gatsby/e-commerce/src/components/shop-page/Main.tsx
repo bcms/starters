@@ -322,7 +322,7 @@ export const ShopMainProducts: React.FC<HomepageProductsProps> = ({ page }) => {
                   viewBox="0 0 16 16"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-4 h-4"
+                  className="w-4 h-4 filters-icon"
                 >
                   <g id="cancel">
                     <mask
@@ -357,9 +357,9 @@ export const ShopMainProducts: React.FC<HomepageProductsProps> = ({ page }) => {
       </div>
       <div className="lg:col-start-2">
         <div className="text-2xl leading-none tracking-[-2%] mb-6">
-          {filteredProducts.length} Product
-          {filteredProducts.length === 1 ? '' : 's'}
-          found
+          {`${filteredProducts.length} Product${
+            filteredProducts.length === 1 ? '' : 's'
+          } found`}
         </div>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {filteredProducts.length > 0 &&
