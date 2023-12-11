@@ -44,51 +44,41 @@ export const ShopMainProducts: React.FC<HomepageProductsProps> = ({ page }) => {
   const urlParams = new URLSearchParams(queryString);
 
   useEffect(() => {
+    function createFilters(data: any, type: any) {
+      return data.map((item: any) => ({
+        active: false,
+        label: item.title,
+        value: item.slug,
+        type,
+      }));
+    }
+
+    const gendersFilters = createFilters(page.genders, 'gender');
+    const categoriesFilters = createFilters(page.categories, 'category');
+    const brandsFilters = createFilters(page.brands, 'brand');
+
     const queryCategory = urlParams.get('category');
+    let updatedCategoriesFilters = categoriesFilters;
+
     if (queryCategory) {
-      const category = filters.find(
-        (e) => e.type === 'category' && e.value === queryCategory,
+      const category = categoriesFilters.find(
+        (c: any) => c.value === queryCategory,
       );
       if (category) {
-        category.active = true;
+        updatedCategoriesFilters = categoriesFilters.map((p: any) =>
+          p.value === category.value ? { ...p, active: !p.active } : p,
+        );
       }
     }
-  }, [urlParams]);
-
-  useEffect(() => {
-    const gendersFilters = page.genders.map((gender) => {
-      return {
-        active: false,
-        label: gender.title,
-        value: gender.slug,
-        type: 'gender',
-      };
-    }) as ProductFilter[];
-
-    const categoriesFilters = page.categories.map((category) => {
-      return {
-        active: false,
-        label: category.title,
-        value: category.slug,
-        type: 'category',
-      };
-    }) as ProductFilter[];
-    const brandsFilters = page.brands.map((brand) => {
-      return {
-        active: false,
-        label: brand.title,
-        value: brand.slug,
-        type: 'brand',
-      };
-    }) as ProductFilter[];
 
     setFilters((prev) => [
       ...prev,
       ...brandsFilters,
-      ...categoriesFilters,
+      ...updatedCategoriesFilters,
       ...gendersFilters,
     ]);
   }, []);
+
   const activeFilters = useMemo(() => {
     return filters.filter((e) => e.active);
   }, [filters]);
@@ -123,18 +113,18 @@ export const ShopMainProducts: React.FC<HomepageProductsProps> = ({ page }) => {
 
         activeFilters.forEach((filter) => {
           switch (filter.type) {
-            case 'gender':
-              show = show && e.gender.slug === filter.value;
-              break;
-            case 'category':
-              show =
+          case 'gender':
+            show = show && e.gender.slug === filter.value;
+            break;
+          case 'category':
+            show =
                 show && !!e.categories.find((c) => c.slug === filter.value);
-              break;
-            case 'brand':
-              show = show && e.brand.slug === filter.value;
-              break;
-            default:
-              break;
+            break;
+          case 'brand':
+            show = show && e.brand.slug === filter.value;
+            break;
+          default:
+            break;
           }
         });
 
