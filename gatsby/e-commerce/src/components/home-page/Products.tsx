@@ -1,6 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { ProductFilter, ProductLite } from '@/types';
 import { ProductCategoryEntryMeta, ProductGenderEntryMeta } from '@/bcms/types';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import { ReactComponent as TrashIcon } from '@/src/assets/icons/trash.svg';
 import { FormCheck } from '@/src/components/form/Check';
 import { ProductCard } from '@/src/components/ProductCard';

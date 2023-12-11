@@ -2,7 +2,6 @@ import * as dotenv from 'dotenv';
 import { createBcmsMostConfig } from '@becomes/cms-most';
 import type { GatsbyConfig } from 'gatsby';
 
-console.log(process.env.NODE_ENV);
 dotenv.config({
   path: `.env.${process.env.NODE_ENV}`,
 });

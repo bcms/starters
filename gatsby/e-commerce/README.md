@@ -1,8 +1,8 @@
-https://github.com/bcms/starters/assets/15079459/16ecff96-47ab-4b78-8fd6-1a143affd572
+https://github.com/bcms/starters/assets/15079459/06f1fe9c-31b1-4a0d-8e49-d489efc19a4e
 
-<h1 align="center">Restaurant with Gatsby.js and BCMS</h1>
-<p align="center"><a href="https://restaurant-starter.thebcms.com/">See this restaurant in action ⤴</a></p>
-<p align="center">Spin up a fully functional restaurant with Gatsby.js, Tailwind, and <a href="https://github.com/bcms/cms">BCMS</a> - in a few minutes.<br/>
+<h1 align="center">E-commerce with Gatsby.js and BCMS</h1>
+<p align="center"><a href="https://e-commerce-starter.thebcms.com/">See this e-commerce in action ⤴</a></p>
+<p align="center">Spin up a fully functional e-commerce with Gatsby.js, Tailwind, and <a href="https://github.com/bcms/cms">BCMS</a> - in a few minutes.<br/>
 Everything from submitting jobs, over listing and searching them, to getting applications. All within the same codebase.</p>
 
 ---
@@ -13,14 +13,14 @@ Everything from submitting jobs, over listing and searching them, to getting app
 
 ---
 
-<p align="center">Whether you are looking to build a restaurant for your company or a stand-alone restaurant website - this starter will save you weeks. You can clone this folder, connect it with your own BCMS instance, and give it a go!</p>
+<p align="center">Whether you are looking to build an e-commerce for your company or a stand-alone e-commerce website - this starter will save you weeks. You can clone this folder, connect it with your own BCMS instance, and give it a go!</p>
 <br/>
 
 <h2 align="center">How it works</h2>
 <br/>
 
 <h3 align="center">Step 1: Clone the repo</h3>
-<p align="center">This repository contains a lot of starters. Enter <code>restaurant</code>, but make sure to check other starters too, later.</p>
+<p align="center">This repository contains a lot of starters. Enter <code>e-commerce</code>, but make sure to check other starters too, later.</p>
 
 ```bash
 git clone https://github.com/bcms/starters.git
@@ -31,7 +31,7 @@ git clone https://github.com/bcms/starters.git
 <p align="center">This step will make sure that you are running BCMS locally and in the background, which is required before starting the Gatsby.js development server.</p>
 
 ```bash
-cd starters/cms/restaurant
+cd starters/cms/e-commerce
 ```
 
 <p>Run <code>docker-compose build</code> command, followed with <code>docker-compose up</code>.</p>
@@ -42,7 +42,7 @@ cd starters/cms/restaurant
 <p align="center">After this step you will be able to edit the Frontend side of your starter, everything from styles, content, pages structure and much more.</p>
 
 ```bash
-cd starters/gatsby/restaurant
+cd starters/gatsby/e-commerce
 ```
 
 <p>Before anything, make sure to install node packages ( <code>npm install</code> ).</p>
@@ -90,7 +90,7 @@ cd starters/gatsby/restaurant
 </h3>
 <p>
   The website is optimized for performance. It supports lazy loading for images
-  to ensure faster page loads, especially with a large number of restaurant.
+  to ensure faster page loads, especially with a large number of recipes.
 </p>
 <img width="743" alt="image" src="https://github.com/bcms/starters/assets/15079459/3d2a47a6-d47d-41e9-86f5-ec038c1bc1a6">
 

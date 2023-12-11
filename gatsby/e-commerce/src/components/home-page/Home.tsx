@@ -1,6 +1,7 @@
 import { HomeHeroGroup } from '@/bcms/types';
 import React from 'react';
-
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import { ReactComponent as Logo } from '@/src/assets/media/logo-white.svg';
 import { BCMSImage } from 'gatsby-source-bcms/components';
 

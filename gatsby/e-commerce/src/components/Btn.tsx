@@ -1,6 +1,8 @@
 import { BtnTheme } from '@/types';
 import React, { ButtonHTMLAttributes } from 'react';
 import { Link } from 'gatsby';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import { ReactComponent as ArrowIcon } from '@/src/assets/icons/arrow.svg';
 import classNames from 'classnames';
 

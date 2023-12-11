@@ -9,6 +9,8 @@ import { navigate } from 'gatsby';
 import { useCart } from '@/src/context/CartContext';
 import classNames from 'classnames';
 import { ContentManager } from '@/src/components/ContentManager';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import { ReactComponent as LoadingIcon } from '@/src/assets/icons/loader.svg';
 
 interface ShopDetailsProps {

@@ -1,6 +1,9 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import React, { useEffect, useMemo, useState } from 'react';
 import { ProductFilter, ShopPageData } from '@/types';
+// @ts-ignore
 import { ReactComponent as TrashIcon } from '@/src/assets/icons/trash.svg';
+// @ts-ignore
 import { ReactComponent as SearchIcon } from '@/src/assets/icons/search.svg';
 import { ProductCard } from '@/src/components/ProductCard';
 import { FormCheck } from '@/src/components/form/Check';
@@ -113,18 +116,18 @@ export const ShopMainProducts: React.FC<HomepageProductsProps> = ({ page }) => {
 
         activeFilters.forEach((filter) => {
           switch (filter.type) {
-          case 'gender':
-            show = show && e.gender.slug === filter.value;
-            break;
-          case 'category':
-            show =
+            case 'gender':
+              show = show && e.gender.slug === filter.value;
+              break;
+            case 'category':
+              show =
                 show && !!e.categories.find((c) => c.slug === filter.value);
-            break;
-          case 'brand':
-            show = show && e.brand.slug === filter.value;
-            break;
-          default:
-            break;
+              break;
+            case 'brand':
+              show = show && e.brand.slug === filter.value;
+              break;
+            default:
+              break;
           }
         });
 

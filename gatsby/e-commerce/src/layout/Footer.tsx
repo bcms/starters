@@ -1,5 +1,7 @@
 import React from 'react';
 import { FooterEntryMeta } from '@/bcms/types';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import { ReactComponent as BCMSLogo } from '@/src/assets/media/bcms-logo.svg';
 import { ContentManager } from '@/src/components/ContentManager';
 

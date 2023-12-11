@@ -4,6 +4,8 @@ import { useCart } from '@/src/context/CartContext';
 import { ProductSizeEntryMeta } from '@/bcms/types';
 import { Link } from 'gatsby';
 import { BCMSImage } from 'gatsby-source-bcms/components';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import { ReactComponent as LoadingIcon } from '@/src/assets/icons/loader.svg';
 import classNames from 'classnames';
 interface ProductCardProps {

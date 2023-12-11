@@ -1,7 +1,11 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { HeaderEntryMeta } from '@/bcms/types';
 import React, { useState } from 'react';
+// @ts-ignore
 import { ReactComponent as MenuIcon } from '@/src/assets/icons/menu.svg';
+// @ts-ignore
 import { ReactComponent as XIcon } from '@/src/assets/icons/x.svg';
+// @ts-ignore
 import { ReactComponent as CartIcon } from '@/src/assets/icons/cart.svg';
 import { Link } from 'gatsby';
 import { BCMSImage } from 'gatsby-source-bcms/components';

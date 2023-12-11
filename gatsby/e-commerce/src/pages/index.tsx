@@ -49,7 +49,10 @@ const Homepage: React.FC<HomePageProps> = ({ data }) => {
               >(c as any),
             ) as any;
 
-            return _?.filter((c: any) => c.slug === category.bcms.meta.en?.slug) || [];
+            return (
+              _?.filter((c: any) => c.slug === category.bcms.meta.en?.slug) ||
+              []
+            );
           }).length,
         };
       });
