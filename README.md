@@ -47,14 +47,14 @@ If you like the project, hit that ⭐ button to show some 💛
 
 ---
 
-![Svelte](https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white)
+![Svelte](https://img.shields.io/badge/sveltekit-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white)
 
 ## SvelteKit starters
 (coming soon)
 
 ---
 
-![Astro](https://raw.githubusercontent.com/delucis/astro-badge/latest/public/v2/built-with-astro/small.svg)
+![Astro](https://img.shields.io/badge/astro-212227.svg?style=for-the-badge&logo=astro&logoColor=white)
 
 ## Astro.js starters
 (coming soon)
