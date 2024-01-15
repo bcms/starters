@@ -1,7 +1,7 @@
 https://github.com/bcms/starters/assets/15079459/342a6353-627d-4089-bb62-f08a9c4d94e9
 
 <h1 align="center">Podcast with Nuxt.js and BCMS</h1>
-<p align="center"><a href="https://podcast-starter.thebcms.com/">See this podcast in action ⤴</a></p>
+<p align="center"><a href="https://podcast-starter.thebcms.com/">See this podcast website in action ⤴</a></p>
 <p align="center">Spin up a fully functional podcast  with Nuxt.js, Tailwind, and <a href="https://github.com/bcms/cms">BCMS</a> - in a few minutes.<br/>
 Everything from submitting jobs, over listing and searching them, to getting applications. All within the same codebase.</p>
 
