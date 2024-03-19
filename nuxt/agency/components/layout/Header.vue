@@ -24,7 +24,7 @@
               class="relative font-Inter text-sm leading-none font-medium tracking-[-0.56px] max-md:text-appText-light transition-colors duration-300 md:hover:text-appText"
               :class="[
                 getHref(item) === $route.path
-                  ? 'text-appAccent after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-2 after:translate-y-full after:w-1.5 after:h-1.5 after:bg-appAccent after:rounded-full max-md:after:opacity-0'
+                  ? 'text-appAccent-300 after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-2 after:translate-y-full after:w-1.5 after:h-1.5 after:bg-appAccent-300 after:rounded-full max-md:after:opacity-0'
                   : 'text-appGray-300',
               ]"
             />

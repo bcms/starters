@@ -12,7 +12,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        appAccent: '#324EE0',
+        appAccent: {
+          300: '#5073EF',
+          DEFAULT: '#324EE0',
+        },
         appAccent2: '#2FA470',
         appBody: '#ffffff',
         appText: {

@@ -6,7 +6,7 @@
       Error page
     </h1>
     <button
-      class="flex items-center px-[15px] py-2.5 text-appText-light bg-appAccent rounded-[32px] transition-colors duration-300 hover:bg-appAccent/85"
+      class="flex items-center px-[15px] py-2.5 text-appText-light bg-appAccent-300 rounded-[32px] transition-colors duration-300 hover:bg-appAccent"
       @click="goBack"
     >
       <span
