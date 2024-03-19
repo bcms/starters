@@ -21,7 +21,12 @@
           <li v-for="(item, index) in data.nav" :key="index">
             <ContentManager
               :item="item"
-              class="font-Inter text-appGray-300 text-sm leading-none font-medium tracking-[-0.56px] max-md:text-appText-light transition-colors duration-300 md:hover:text-appText"
+              class="relative font-Inter text-sm leading-none font-medium tracking-[-0.56px] max-md:text-appText-light transition-colors duration-300 md:hover:text-appText"
+              :class="[
+                getHref(item) === $route.path
+                  ? 'text-appAccent after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-2 after:translate-y-full after:w-1.5 after:h-1.5 after:bg-appAccent after:rounded-full max-md:after:opacity-0'
+                  : 'text-appGray-300',
+              ]"
             />
           </li>
         </ul>
@@ -55,6 +60,10 @@
 
 <script setup lang="ts">
 import { PropType } from 'vue';
+import {
+  BCMSEntryContentParsedItem,
+  BCMSPropRichTextDataParsed,
+} from '@becomes/cms-client/types';
 import { HeaderEntryMeta } from '~~/bcms/types';
 import Logo from '@/assets/media/logo.svg?inline';
 
@@ -66,4 +75,18 @@ defineProps({
 });
 
 const showMobileMenu = ref(false);
+
+const getHref = (item: BCMSPropRichTextDataParsed) => {
+  let href = '';
+
+  for (let i = 0; i < item.length; i++) {
+    const e = item[i] as BCMSEntryContentParsedItem;
+    const match = (e.value as string).match(/href="([^"]*)"/);
+    if (match) {
+      href = match[1];
+      break;
+    }
+  }
+  return href;
+};
 </script>

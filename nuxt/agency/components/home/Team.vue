@@ -58,9 +58,10 @@
       </div>
       <div class="flex flex-col gap-2.5 lg:gap-6">
         <div class="grid grid-cols-3 gap-2 lg:gap-6">
-          <template v-for="(item, index) in data.members" :key="index">
+          <template v-for="(item, index) in data.members">
             <BCMSImage
               v-if="item.meta.en"
+              :key="index"
               :media="item.meta.en.image"
               :options="{
                 sizes: {
