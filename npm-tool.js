@@ -8,6 +8,7 @@ const fs = createFS({
 });
 
 const projects = [
+  "agency",
   "blog",
   "conference",
   "e-commerce",

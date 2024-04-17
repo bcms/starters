@@ -1,0 +1,2485 @@
+{
+  "65f043276d460478666f81f6": {
+    "_id": "65f043276d460478666f81f6",
+    "createdAt": 1710244647186,
+    "updatedAt": 1710776631559,
+    "cid": "1",
+    "templateId": "65f0431f6d460478666f81f4",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "ce9e7e73-afc9-4d8c-a712-270027e22a18",
+            "data": [
+              "Header"
+            ]
+          },
+          {
+            "id": "3975f64d-7007-4a6a-85f8-0c2624cad6bb",
+            "data": [
+              "header"
+            ]
+          },
+          {
+            "id": "85aeb9f1-356b-4cfa-bdc4-b5b3f8bf2166",
+            "data": [
+              {
+                "id": "814f6410-63cd-4bcb-8842-0e70dbd585ee",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/services",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer relative dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Services"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "5d6fe9dd-572a-4175-8502-71b7f3e45580",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/portfolio",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer relative dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Portfolio"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "484f66de-44e7-453a-a864-95dd2893e9a3",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/team",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer relative dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Team"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "2e4ed267-60bb-48a3-ab7f-12ece4049e81",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/legal",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer relative dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Legal"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "65f04f4f6d460478666f8210": {
+    "_id": "65f04f4f6d460478666f8210",
+    "createdAt": 1710247759078,
+    "updatedAt": 1710247759078,
+    "cid": "2",
+    "templateId": "65f04f4b6d460478666f820f",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "f4c245dc-701c-4d7f-aaa8-2bc9bdfaf1d2",
+            "data": [
+              "Footer"
+            ]
+          },
+          {
+            "id": "9d833b6f-4a41-40aa-8cd1-6cf2f8553b19",
+            "data": [
+              "footer"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "65f052886d460478666f821b": {
+    "_id": "65f052886d460478666f821b",
+    "createdAt": 1710248584586,
+    "updatedAt": 1710248667543,
+    "cid": "3",
+    "templateId": "65f050396d460478666f8219",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "00652ea5-b3db-4d81-ba48-af0f1a475894",
+            "data": [
+              "Contact"
+            ]
+          },
+          {
+            "id": "f661a9b8-4044-46d6-b864-53dfc81c4399",
+            "data": [
+              "contact"
+            ]
+          },
+          {
+            "id": "b032bedb-2162-42d1-b6d9-aa8cd50736a6",
+            "data": [
+              "lorem@mail.com"
+            ]
+          },
+          {
+            "id": "69099d5d-2efc-4e08-86c6-3d47f6ac28db",
+            "data": [
+              "(+1) 877 881 8283"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "65f053316d460478666f821e": {
+    "_id": "65f053316d460478666f821e",
+    "createdAt": 1710248753929,
+    "updatedAt": 1710248753929,
+    "cid": "4",
+    "templateId": "65f052426d460478666f821a",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "ceba1cf0-d7fa-4085-9755-bd055d730993",
+            "data": [
+              "Legal"
+            ]
+          },
+          {
+            "id": "74f39553-51e8-4af4-8b8e-5781c463b1bb",
+            "data": [
+              "legal"
+            ]
+          },
+          {
+            "id": "20653657-25a2-4eeb-a7f2-c9d636523f4c",
+            "data": {
+              "_id": "65f052f26d460478666f821d",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "000376a2-d864-434d-bf98-50d343042f84",
+                      "data": [
+                        "Privacy & Policy"
+                      ]
+                    },
+                    {
+                      "id": "18fe85e4-e9d1-4e35-87c6-e18b53bde5ff",
+                      "data": [
+                        {
+                          "id": "38f44d1d-01fb-4cfe-a8af-609f9905221b",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "This privacy policy applies to the website BrandCrafters, operated by [company name]. At BrandCrafters, we are committed to protecting your privacy and ensuring that your personal information is safe and secure. This policy outlines the types of information we collect, how we use and protect that information, and your rights and choices with respect to your personal information."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "000376a2-d864-434d-bf98-50d343042f84",
+                      "data": [
+                        "Information we collect"
+                      ]
+                    },
+                    {
+                      "id": "18fe85e4-e9d1-4e35-87c6-e18b53bde5ff",
+                      "data": [
+                        {
+                          "id": "8d36060b-1e81-4838-9d05-1dd932e0802d",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "When you use BrandCrafters, we may collect certain personal information that you provide to us, such as your name, email address, phone number, and other contact information. We may also collect information about your education, employment history, skills, and experience, as well as any other information you choose to provide in your profile or job applications."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "000376a2-d864-434d-bf98-50d343042f84",
+                      "data": [
+                        "How we use your information"
+                      ]
+                    },
+                    {
+                      "id": "18fe85e4-e9d1-4e35-87c6-e18b53bde5ff",
+                      "data": [
+                        {
+                          "id": "a4f3347f-17ff-4232-80c6-5cf1ebccb2dd",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "We use the information we collect to provide our services, including matching job seekers with potential employers and facilitating the application process. We may also use your information to communicate with you, provide customer support, and improve our services."
+                                },
+                                {
+                                  "type": "hardBreak"
+                                },
+                                {
+                                  "type": "hardBreak"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "We may share your information with third-party service providers who assist us in providing our services, such as email and hosting providers. We may also share your information with employers who have job openings that match your skills and experience. However, we will never share your information with third parties for marketing purposes without your consent."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "000376a2-d864-434d-bf98-50d343042f84",
+                      "data": [
+                        "How we protect your information"
+                      ]
+                    },
+                    {
+                      "id": "18fe85e4-e9d1-4e35-87c6-e18b53bde5ff",
+                      "data": [
+                        {
+                          "id": "148f1750-f8a0-483d-bce8-2a037c48d8b7",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "We take reasonable and appropriate measures to protect your personal information from unauthorized access, disclosure, and misuse. We use industry-standard security technologies and procedures to safeguard your information, and we regularly review and update our security practices to ensure that your information is safe and secure."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "000376a2-d864-434d-bf98-50d343042f84",
+                      "data": [
+                        "Your rights and choices"
+                      ]
+                    },
+                    {
+                      "id": "18fe85e4-e9d1-4e35-87c6-e18b53bde5ff",
+                      "data": [
+                        {
+                          "id": "f327d03c-ca27-44ed-a01a-ea9d82f6bd58",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "You have the right to access, update, and delete the personal information we hold about you. You may also object to the processing of your personal information or request that we restrict the use of your information. To exercise your rights or make a request, please contact us using the contact information below."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "65f0538f6d460478666f8222": {
+    "_id": "65f0538f6d460478666f8222",
+    "createdAt": 1710248847854,
+    "updatedAt": 1710840759158,
+    "cid": "5",
+    "templateId": "65f050306d460478666f8218",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "ee8e4b1f-ca62-4103-a8af-001c69d33f80",
+            "data": [
+              "Steve Jackson\n"
+            ]
+          },
+          {
+            "id": "2ff5d475-e4b0-4632-b0b3-d977ee1d3e25",
+            "data": [
+              "steve-jackson"
+            ]
+          },
+          {
+            "id": "e5fb1285-a0e1-4b56-ad6e-525f7dbfaa48",
+            "data": [
+              "Founder & CEO"
+            ]
+          },
+          {
+            "id": "29a08106-4a26-42c6-987e-d5cea561a184",
+            "data": [
+              {
+                "id": "3539593a-7951-4396-9c03-57936c2d4493",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Steve founded BrandCrafters with a vision to help businesses of all sizes achieve their marketing goals. With over 10 years of experience in the industry, Steve is a seasoned marketing professional who has a passion for delivering exceptional results to clients."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "e02afff8-f12d-4450-ac93-6f4e447d0aff",
+            "data": [
+              {
+                "_id": "65f04c706d460478666f820a",
+                "alt_text": "Steve Jackson",
+                "caption": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "65f053a06d460478666f8223": {
+    "_id": "65f053a06d460478666f8223",
+    "createdAt": 1710248864731,
+    "updatedAt": 1710248864731,
+    "cid": "6",
+    "templateId": "65f050306d460478666f8218",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "ee8e4b1f-ca62-4103-a8af-001c69d33f80",
+            "data": [
+              "Jessica Williams\n"
+            ]
+          },
+          {
+            "id": "2ff5d475-e4b0-4632-b0b3-d977ee1d3e25",
+            "data": [
+              "jessica-williams"
+            ]
+          },
+          {
+            "id": "e5fb1285-a0e1-4b56-ad6e-525f7dbfaa48",
+            "data": [
+              "Marketing Strategist"
+            ]
+          },
+          {
+            "id": "29a08106-4a26-42c6-987e-d5cea561a184",
+            "data": [
+              {
+                "id": "248eacfa-87cb-49bc-88d0-8624cf4fb968",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Jessica is a marketing strategist who specializes in developing custom marketing strategies that drive results. With a background in digital marketing, Jessica is skilled in creating and executing marketing campaigns that generate leads and drive sales."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "e02afff8-f12d-4450-ac93-6f4e447d0aff",
+            "data": [
+              {
+                "_id": "65f04c706d460478666f820c",
+                "alt_text": "Jessica Williams",
+                "caption": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "65f053b16d460478666f8224": {
+    "_id": "65f053b16d460478666f8224",
+    "createdAt": 1710248881998,
+    "updatedAt": 1710248881998,
+    "cid": "7",
+    "templateId": "65f050306d460478666f8218",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "ee8e4b1f-ca62-4103-a8af-001c69d33f80",
+            "data": [
+              "Peter Peterson\n"
+            ]
+          },
+          {
+            "id": "2ff5d475-e4b0-4632-b0b3-d977ee1d3e25",
+            "data": [
+              "peter-peterson"
+            ]
+          },
+          {
+            "id": "e5fb1285-a0e1-4b56-ad6e-525f7dbfaa48",
+            "data": [
+              "Social Media Manager"
+            ]
+          },
+          {
+            "id": "29a08106-4a26-42c6-987e-d5cea561a184",
+            "data": [
+              {
+                "id": "7545f7d3-3c4f-4b37-be72-fb4b44e86dd6",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Peter is a social media expert who specializes in managing and growing social media accounts. With a keen eye for creating engaging content and a knack for community management, Peter helps clients increase their social media presence and engagement."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "e02afff8-f12d-4450-ac93-6f4e447d0aff",
+            "data": [
+              {
+                "_id": "65f04c706d460478666f820b",
+                "alt_text": "Peter Peterson",
+                "caption": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "65f053c16d460478666f8225": {
+    "_id": "65f053c16d460478666f8225",
+    "createdAt": 1710248897799,
+    "updatedAt": 1710840787151,
+    "cid": "8",
+    "templateId": "65f050306d460478666f8218",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "ee8e4b1f-ca62-4103-a8af-001c69d33f80",
+            "data": [
+              "Tina Smith\n"
+            ]
+          },
+          {
+            "id": "2ff5d475-e4b0-4632-b0b3-d977ee1d3e25",
+            "data": [
+              "tina-smith"
+            ]
+          },
+          {
+            "id": "e5fb1285-a0e1-4b56-ad6e-525f7dbfaa48",
+            "data": [
+              "SEO Specialist"
+            ]
+          },
+          {
+            "id": "29a08106-4a26-42c6-987e-d5cea561a184",
+            "data": [
+              {
+                "id": "08175c54-b2dc-4384-ac31-a5ed3fb205e6",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Tina is an SEO specialist who helps clients improve their website's visibility on search engines. With a passion for keyword research and on-page optimization, Tina is skilled in optimizing websites for search engines and increasing organic traffic."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "e02afff8-f12d-4450-ac93-6f4e447d0aff",
+            "data": [
+              {
+                "_id": "65f04c706d460478666f820d",
+                "alt_text": "SEO Specialist",
+                "caption": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "65f053d06d460478666f8226": {
+    "_id": "65f053d06d460478666f8226",
+    "createdAt": 1710248912898,
+    "updatedAt": 1710248912898,
+    "cid": "9",
+    "templateId": "65f050306d460478666f8218",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "ee8e4b1f-ca62-4103-a8af-001c69d33f80",
+            "data": [
+              "Mark Malone\n"
+            ]
+          },
+          {
+            "id": "2ff5d475-e4b0-4632-b0b3-d977ee1d3e25",
+            "data": [
+              "mark-malone"
+            ]
+          },
+          {
+            "id": "e5fb1285-a0e1-4b56-ad6e-525f7dbfaa48",
+            "data": [
+              "Content Writer"
+            ]
+          },
+          {
+            "id": "29a08106-4a26-42c6-987e-d5cea561a184",
+            "data": [
+              {
+                "id": "2cec7bcb-a69c-4f10-9051-7c9d7a9a5134",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Mark is a skilled content writer who creates valuable content that engages with audiences and drives conversions. With a background in copywriting and content marketing, Mark helps clients create content that aligns with their brand and delivers results."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "e02afff8-f12d-4450-ac93-6f4e447d0aff",
+            "data": [
+              {
+                "_id": "65f04c706d460478666f820e",
+                "alt_text": "Mark Malone",
+                "caption": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "65f054496d460478666f8227": {
+    "_id": "65f054496d460478666f8227",
+    "createdAt": 1710249033196,
+    "updatedAt": 1710843494710,
+    "cid": "a",
+    "templateId": "65f0502b6d460478666f8217",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "67d0740e-69b6-4d10-8ae6-7db1238ff460",
+            "data": [
+              "Meet the team behind BrandCrafters"
+            ]
+          },
+          {
+            "id": "2cf5fa9e-3595-4652-b8ea-9e952581521c",
+            "data": [
+              "team"
+            ]
+          },
+          {
+            "id": "7a00d8d9-7d84-460f-b114-c2664626fd80",
+            "data": {
+              "_id": "65f17f13be4bcfba284afdbf",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "e0fefae4-b415-4ffb-9000-e510ffbb850f",
+                      "data": [
+                        "Team"
+                      ]
+                    },
+                    {
+                      "id": "4887b417-dc4b-4ef3-a574-1a4c08946487",
+                      "data": [
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "6ced8cfa-6324-47e5-86c3-ce3ce0aeeb0c",
+            "data": [
+              {
+                "id": "5dd1e905-2eab-40bf-a1a3-08b11ab0a75d",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Our team is made up of dedicated marketing professionals who are passionate about delivering results to our clients."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "3d43e27a-1ad5-4141-acaa-05991f035cc4",
+            "data": [
+              {
+                "tid": "65f050306d460478666f8218",
+                "eid": "65f0538f6d460478666f8222"
+              },
+              {
+                "tid": "65f050306d460478666f8218",
+                "eid": "65f053a06d460478666f8223"
+              },
+              {
+                "tid": "65f050306d460478666f8218",
+                "eid": "65f053b16d460478666f8224"
+              },
+              {
+                "tid": "65f050306d460478666f8218",
+                "eid": "65f053c16d460478666f8225"
+              },
+              {
+                "tid": "65f050306d460478666f8218",
+                "eid": "65f053d06d460478666f8226"
+              }
+            ]
+          },
+          {
+            "id": "cb7b835e-ad76-49ff-9cbb-e6007657124f",
+            "data": {
+              "_id": "65f061236d460478666f823e",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "3c03e4da-ef2c-4b11-9501-a3efa04c22ca",
+                      "data": [
+                        "At BrandCrafters, we believe in the power of collaboration."
+                      ]
+                    },
+                    {
+                      "id": "5bf52e5c-8af8-42e3-b30e-688531e9b026",
+                      "data": [
+                        {
+                          "id": "675ed500-116b-4804-81a9-2160e7123eac",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Our team works closely with clients to understand their unique challenges and goals, ensuring we develop strategies that align with their business objectives. Contact us today to learn more about how our team can help your business achieve its marketing goals."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "65f054636d460478666f8228": {
+    "_id": "65f054636d460478666f8228",
+    "createdAt": 1710249059887,
+    "updatedAt": 1710843488491,
+    "cid": "b",
+    "templateId": "65f0500f6d460478666f8214",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "a5dc64f0-ed8a-4076-a249-29716e40dff1",
+            "data": [
+              "Welcome to our Portfolio page"
+            ]
+          },
+          {
+            "id": "69dd424a-7cfb-4ccd-8af2-eaa11bec1fdd",
+            "data": [
+              "portfolio"
+            ]
+          },
+          {
+            "id": "22a8e750-0bb5-4a26-bd0e-1482d22b49a0",
+            "data": {
+              "_id": "65f17f13be4bcfba284afdbf",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "e0fefae4-b415-4ffb-9000-e510ffbb850f",
+                      "data": [
+                        "Portfolio"
+                      ]
+                    },
+                    {
+                      "id": "4887b417-dc4b-4ef3-a574-1a4c08946487",
+                      "data": [
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "cc1f75c5-0652-47a9-b594-e39535729ec4",
+            "data": [
+              {
+                "id": "538c114f-7fe1-4463-bfe4-c47f58aa91c2",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "At BrandCrafters, we take pride in delivering exceptional results to our clients."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "fdd6537a-ba4d-4729-84f0-80c0356b8c9f",
+            "data": [
+              {
+                "tid": "65f050146d460478666f8215",
+                "eid": "65f055246d460478666f8229"
+              },
+              {
+                "tid": "65f050146d460478666f8215",
+                "eid": "65f055336d460478666f822a"
+              },
+              {
+                "tid": "65f050146d460478666f8215",
+                "eid": "65f055416d460478666f822b"
+              },
+              {
+                "tid": "65f050146d460478666f8215",
+                "eid": "65f055506d460478666f822c"
+              },
+              {
+                "tid": "65f050146d460478666f8215",
+                "eid": "65f055636d460478666f822d"
+              }
+            ]
+          },
+          {
+            "id": "2b342f3c-9c6b-4ab2-b3ed-3f119068e603",
+            "data": {
+              "_id": "65f061236d460478666f823e",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "3c03e4da-ef2c-4b11-9501-a3efa04c22ca",
+                      "data": [
+                        "At BrandCrafters, we're dedicated to delivering results to our clients."
+                      ]
+                    },
+                    {
+                      "id": "5bf52e5c-8af8-42e3-b30e-688531e9b026",
+                      "data": [
+                        {
+                          "id": "785295fc-af12-44d2-bfb0-dcebe02137fa",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Contact us today to learn more about how we can help your business achieve its marketing goals."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "65f055246d460478666f8229": {
+    "_id": "65f055246d460478666f8229",
+    "createdAt": 1710249252619,
+    "updatedAt": 1710251930637,
+    "cid": "c",
+    "templateId": "65f050146d460478666f8215",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "fc697c11-3c90-4ec1-b25f-5357c1c4fb5d",
+            "data": [
+              "Social Media Management"
+            ]
+          },
+          {
+            "id": "8f81af38-e100-4f10-81fb-cbcf7a0a529b",
+            "data": [
+              "social-media-management"
+            ]
+          },
+          {
+            "id": "5c563767-f98f-441c-92ac-39cb78de5f55",
+            "data": [
+              "Flavour Fushion"
+            ]
+          },
+          {
+            "id": "d8d0dccc-008c-453c-9f1c-25061691a54f",
+            "data": [
+              {
+                "id": "c4850c1d-443b-47f0-a393-876a89b40044",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Our team helped FlavourFushion increase their social media presence and engagement. We developed a content strategy, created engaging posts, and monitored their accounts for performance. As a result, FlavourFushion saw a 30% increase in social media engagement and a 20% increase in website traffic."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "129ce095-a215-4bb2-98da-ad1742dcf758",
+            "data": [
+              {
+                "_id": "65f04c206d460478666f8204",
+                "alt_text": "Social Media Management",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "c4cda43d-e1fe-46df-9bb4-822455cd6bd3",
+            "data": [
+              {
+                "_id": "65f05f956d460478666f823d",
+                "alt_text": "Flavour Fushion",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "142a7466-db9a-47cc-9779-672009f71c4c",
+            "data": [
+              "https://recipes-starter.thebcms.com/"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "65f055336d460478666f822a": {
+    "_id": "65f055336d460478666f822a",
+    "createdAt": 1710249267148,
+    "updatedAt": 1710840720347,
+    "cid": "d",
+    "templateId": "65f050146d460478666f8215",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "fc697c11-3c90-4ec1-b25f-5357c1c4fb5d",
+            "data": [
+              "Search Engine Optimization"
+            ]
+          },
+          {
+            "id": "8f81af38-e100-4f10-81fb-cbcf7a0a529b",
+            "data": [
+              "search-engine-optimization"
+            ]
+          },
+          {
+            "id": "5c563767-f98f-441c-92ac-39cb78de5f55",
+            "data": [
+              "BCMS"
+            ]
+          },
+          {
+            "id": "d8d0dccc-008c-453c-9f1c-25061691a54f",
+            "data": [
+              {
+                "id": "446fb6ad-22ea-4a78-8039-71ce0874aa4e",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "We worked with BCMS to optimize their website for search engines. Our team conducted keyword research, optimized their website structure and content, and monitored their performance. As a result, BCMS saw a 40% increase in website traffic and a 25% increase in conversions."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "129ce095-a215-4bb2-98da-ad1742dcf758",
+            "data": [
+              {
+                "_id": "65f04c206d460478666f8206",
+                "alt_text": "Search Engine Optimization",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "c4cda43d-e1fe-46df-9bb4-822455cd6bd3",
+            "data": [
+              {
+                "_id": "65f05f3d6d460478666f823c",
+                "alt_text": "BCMS",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "142a7466-db9a-47cc-9779-672009f71c4c",
+            "data": [
+              "https://thebcms.com/"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "65f055416d460478666f822b": {
+    "_id": "65f055416d460478666f822b",
+    "createdAt": 1710249281145,
+    "updatedAt": 1710840703192,
+    "cid": "e",
+    "templateId": "65f050146d460478666f8215",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "fc697c11-3c90-4ec1-b25f-5357c1c4fb5d",
+            "data": [
+              "Website Design and Development"
+            ]
+          },
+          {
+            "id": "8f81af38-e100-4f10-81fb-cbcf7a0a529b",
+            "data": [
+              "website-design-and-development"
+            ]
+          },
+          {
+            "id": "5c563767-f98f-441c-92ac-39cb78de5f55",
+            "data": [
+              "Moda"
+            ]
+          },
+          {
+            "id": "d8d0dccc-008c-453c-9f1c-25061691a54f",
+            "data": [
+              {
+                "id": "5911ca2c-6d10-4cd6-9be8-0007d0258fa4",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Our team designed and developed a website for Moda that aligned with their brand and optimized for user experience. The new website resulted in a 50% increase in website traffic and a 15% increase in leads generated."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "129ce095-a215-4bb2-98da-ad1742dcf758",
+            "data": [
+              {
+                "_id": "65f04c206d460478666f8205",
+                "alt_text": "Website Design and Development",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "c4cda43d-e1fe-46df-9bb4-822455cd6bd3",
+            "data": [
+              {
+                "_id": "65f05e656d460478666f8239",
+                "alt_text": "Moda",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "142a7466-db9a-47cc-9779-672009f71c4c",
+            "data": [
+              "https://e-commerce-starter.thebcms.com/"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "65f055506d460478666f822c": {
+    "_id": "65f055506d460478666f822c",
+    "createdAt": 1710249296509,
+    "updatedAt": 1710840689578,
+    "cid": "f",
+    "templateId": "65f050146d460478666f8215",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "fc697c11-3c90-4ec1-b25f-5357c1c4fb5d",
+            "data": [
+              "Email Marketing"
+            ]
+          },
+          {
+            "id": "8f81af38-e100-4f10-81fb-cbcf7a0a529b",
+            "data": [
+              "email-marketing"
+            ]
+          },
+          {
+            "id": "5c563767-f98f-441c-92ac-39cb78de5f55",
+            "data": [
+              "Tastyyy"
+            ]
+          },
+          {
+            "id": "d8d0dccc-008c-453c-9f1c-25061691a54f",
+            "data": [
+              {
+                "id": "4422bcfd-4d71-4bd1-b819-bcc1528cbbf0",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "We helped Tastyyy build and maintain an email list that engages with their audience and drives conversions. Our team developed an email marketing strategy, created engaging content, and monitored their performance. As a result,Tasty saw a 25% increase in email open rates and a 30% increase in conversions."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "129ce095-a215-4bb2-98da-ad1742dcf758",
+            "data": [
+              {
+                "_id": "65f04c216d460478666f8207",
+                "alt_text": "Email Marketing",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "c4cda43d-e1fe-46df-9bb4-822455cd6bd3",
+            "data": [
+              {
+                "_id": "65f05e666d460478666f823b",
+                "alt_text": "Tastyyy",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "142a7466-db9a-47cc-9779-672009f71c4c",
+            "data": [
+              "https://restaurant-starter.thebcms.com/"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "65f055636d460478666f822d": {
+    "_id": "65f055636d460478666f822d",
+    "createdAt": 1710249315305,
+    "updatedAt": 1710251659973,
+    "cid": "10",
+    "templateId": "65f050146d460478666f8215",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "fc697c11-3c90-4ec1-b25f-5357c1c4fb5d",
+            "data": [
+              "Pay-Per-Click Advertising"
+            ]
+          },
+          {
+            "id": "8f81af38-e100-4f10-81fb-cbcf7a0a529b",
+            "data": [
+              "pay-per-click-advertising"
+            ]
+          },
+          {
+            "id": "5c563767-f98f-441c-92ac-39cb78de5f55",
+            "data": [
+              "Hospitale"
+            ]
+          },
+          {
+            "id": "d8d0dccc-008c-453c-9f1c-25061691a54f",
+            "data": [
+              {
+                "id": "431a7b5f-c62c-4263-b076-d99c874951f8",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Our team created and managed targeted pay-per-click advertising campaigns for Hospitale. We conducted keyword research, created ads, and monitored their performance to ensure they were getting the best ROI possible. As a result, Hospitale saw a 20% increase in website traffic and a 10% increase in leads generated."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "129ce095-a215-4bb2-98da-ad1742dcf758",
+            "data": [
+              {
+                "_id": "65f04c216d460478666f8208",
+                "alt_text": "Pay-Per-Click Advertising",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "c4cda43d-e1fe-46df-9bb4-822455cd6bd3",
+            "data": [
+              {
+                "_id": "65f05e656d460478666f823a",
+                "alt_text": "Hospitale",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "142a7466-db9a-47cc-9779-672009f71c4c",
+            "data": [
+              "https://job-board-starter.thebcms.com/"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "65f056256d460478666f822e": {
+    "_id": "65f056256d460478666f822e",
+    "createdAt": 1710249509103,
+    "updatedAt": 1710840143569,
+    "cid": "11",
+    "templateId": "65f050056d460478666f8213",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "12c82876-facb-458c-81c7-9dc011a054a6",
+            "data": [
+              "BrandCrafters"
+            ]
+          },
+          {
+            "id": "a5bd9c49-f7f9-4b14-bfa5-f5868aeec091",
+            "data": [
+              "services"
+            ]
+          },
+          {
+            "id": "899b99d1-75b4-408f-ad60-1a2de81296a3",
+            "data": {
+              "_id": "65f17f13be4bcfba284afdbf",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "e0fefae4-b415-4ffb-9000-e510ffbb850f",
+                      "data": [
+                        "Services"
+                      ]
+                    },
+                    {
+                      "id": "4887b417-dc4b-4ef3-a574-1a4c08946487",
+                      "data": [
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "43f9f714-6195-43f6-af5a-1c709a108c65",
+            "data": [
+              {
+                "id": "3ff600bd-9a85-42a4-a7c6-1af99360515c",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "We offer a range of services to help businesses of all sizes achieve their marketing goals. Our team of experts specializes in crafting custom marketing strategies tailored to your business needs."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "f0583ce0-300f-48a7-9320-316963d68d8b",
+            "data": [
+              {
+                "tid": "65f0501d6d460478666f8216",
+                "eid": "65f0567e6d460478666f822f"
+              },
+              {
+                "tid": "65f0501d6d460478666f8216",
+                "eid": "65f056906d460478666f8230"
+              },
+              {
+                "tid": "65f0501d6d460478666f8216",
+                "eid": "65f056bc6d460478666f8231"
+              },
+              {
+                "tid": "65f0501d6d460478666f8216",
+                "eid": "65f056ca6d460478666f8232"
+              },
+              {
+                "tid": "65f0501d6d460478666f8216",
+                "eid": "65f056de6d460478666f8233"
+              },
+              {
+                "tid": "65f0501d6d460478666f8216",
+                "eid": "65f056ed6d460478666f8234"
+              }
+            ]
+          },
+          {
+            "id": "3a8de1e7-bbce-4408-9c56-63fef86791d6",
+            "data": {
+              "_id": "65f061236d460478666f823e",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "3c03e4da-ef2c-4b11-9501-a3efa04c22ca",
+                      "data": [
+                        "At BrandCrafters, we're passionate about delivering results to our clients. Let us help you achieve your marketing goals."
+                      ]
+                    },
+                    {
+                      "id": "5bf52e5c-8af8-42e3-b30e-688531e9b026",
+                      "data": [
+                        {
+                          "id": "afd25192-e951-4ee8-938c-43c66818f6e7",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Contact us today to learn more about how we can help your business grow."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "65f0567e6d460478666f822f": {
+    "_id": "65f0567e6d460478666f822f",
+    "createdAt": 1710249598882,
+    "updatedAt": 1710840602790,
+    "cid": "12",
+    "templateId": "65f0501d6d460478666f8216",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "5b2ad487-3a8c-4daa-a8a5-8c790bb51f0c",
+            "data": [
+              "Social Media Management"
+            ]
+          },
+          {
+            "id": "da2917c2-abbb-4a7a-9605-f0c06fe61af3",
+            "data": [
+              "social-media-management"
+            ]
+          },
+          {
+            "id": "82511b5e-2eab-4328-a7ef-0ed2920a64b1",
+            "data": [
+              {
+                "id": "064d1de1-57af-42c6-af0a-b31c4d59d95f",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "We'll help you create and maintain a social media presence that connects with your audience and drives engagement. Our team will work with you to develop a content strategy, create engaging posts, and monitor your accounts for performance."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "62c093d0-0f26-4d87-ad55-33658abaccb2",
+            "data": [
+              {
+                "_id": "65f046326d460478666f81ff",
+                "alt_text": "Social Media Management",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "3ef84b9d-63a3-4da5-93c0-e49307a8e836",
+            "data": [
+              "#324EE0"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "65f056906d460478666f8230": {
+    "_id": "65f056906d460478666f8230",
+    "createdAt": 1710249616891,
+    "updatedAt": 1710840619479,
+    "cid": "13",
+    "templateId": "65f0501d6d460478666f8216",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "5b2ad487-3a8c-4daa-a8a5-8c790bb51f0c",
+            "data": [
+              "Search Engine Optimization"
+            ]
+          },
+          {
+            "id": "da2917c2-abbb-4a7a-9605-f0c06fe61af3",
+            "data": [
+              "search-engine-optimization"
+            ]
+          },
+          {
+            "id": "82511b5e-2eab-4328-a7ef-0ed2920a64b1",
+            "data": [
+              {
+                "id": "4801ea1b-1f81-4e39-83e7-80ac34583b07",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Our SEO experts will optimize your website to improve its ranking on search engine results pages. We'll conduct keyword research, optimize your website structure and content, and monitor your performance to ensure your website is always ranking high."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "62c093d0-0f26-4d87-ad55-33658abaccb2",
+            "data": [
+              {
+                "_id": "65f046326d460478666f8200",
+                "alt_text": "Search Engine Optimization",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "3ef84b9d-63a3-4da5-93c0-e49307a8e836",
+            "data": [
+              "#2FA470"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "65f056bc6d460478666f8231": {
+    "_id": "65f056bc6d460478666f8231",
+    "createdAt": 1710249660559,
+    "updatedAt": 1710840631289,
+    "cid": "14",
+    "templateId": "65f0501d6d460478666f8216",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "5b2ad487-3a8c-4daa-a8a5-8c790bb51f0c",
+            "data": [
+              "Website Design and Development"
+            ]
+          },
+          {
+            "id": "da2917c2-abbb-4a7a-9605-f0c06fe61af3",
+            "data": [
+              "website-design-and-development"
+            ]
+          },
+          {
+            "id": "82511b5e-2eab-4328-a7ef-0ed2920a64b1",
+            "data": [
+              {
+                "id": "e0a4c960-0389-4614-be7a-360b059f2616",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "We'll create a visually stunning and functional website that is optimized for user experience. Our team will work with you to develop a website that aligns with your brand, incorporates the latest design trends, and is optimized for search engines."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "62c093d0-0f26-4d87-ad55-33658abaccb2",
+            "data": [
+              {
+                "_id": "65f058a76d460478666f8235",
+                "alt_text": "Website Design and Development",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "3ef84b9d-63a3-4da5-93c0-e49307a8e836",
+            "data": [
+              "#E05C32"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "65f056ca6d460478666f8232": {
+    "_id": "65f056ca6d460478666f8232",
+    "createdAt": 1710249674752,
+    "updatedAt": 1710840642696,
+    "cid": "15",
+    "templateId": "65f0501d6d460478666f8216",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "5b2ad487-3a8c-4daa-a8a5-8c790bb51f0c",
+            "data": [
+              "Email Marketing"
+            ]
+          },
+          {
+            "id": "da2917c2-abbb-4a7a-9605-f0c06fe61af3",
+            "data": [
+              "email-marketing"
+            ]
+          },
+          {
+            "id": "82511b5e-2eab-4328-a7ef-0ed2920a64b1",
+            "data": [
+              {
+                "id": "e5154259-b639-4f78-a394-a22853504f7d",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "We'll help you build and maintain an email list that engages with your audience and drives conversions. Our team will develop an email marketing strategy, create engaging content, and monitor your performance to ensure your emails are delivering results."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "62c093d0-0f26-4d87-ad55-33658abaccb2",
+            "data": [
+              {
+                "_id": "65f058a76d460478666f8237",
+                "alt_text": "Email Marketing",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "3ef84b9d-63a3-4da5-93c0-e49307a8e836",
+            "data": [
+              "#6A2FA4"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "65f056de6d460478666f8233": {
+    "_id": "65f056de6d460478666f8233",
+    "createdAt": 1710249694256,
+    "updatedAt": 1710840659530,
+    "cid": "16",
+    "templateId": "65f0501d6d460478666f8216",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "5b2ad487-3a8c-4daa-a8a5-8c790bb51f0c",
+            "data": [
+              "Pay-Per-Click Advertising"
+            ]
+          },
+          {
+            "id": "da2917c2-abbb-4a7a-9605-f0c06fe61af3",
+            "data": [
+              "pay-per-click-advertising"
+            ]
+          },
+          {
+            "id": "82511b5e-2eab-4328-a7ef-0ed2920a64b1",
+            "data": [
+              {
+                "id": "af6912e9-7cfd-405d-ad7c-c12ccafd571d",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "We'll create and manage targeted pay-per-click advertising campaigns that drive traffic to your website and generate leads. Our team will conduct keyword research, create ads, and monitor your performance to ensure you're getting the best ROI possible."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "62c093d0-0f26-4d87-ad55-33658abaccb2",
+            "data": [
+              {
+                "_id": "65f058a76d460478666f8236",
+                "alt_text": "Pay-Per-Click Advertising",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "3ef84b9d-63a3-4da5-93c0-e49307a8e836",
+            "data": [
+              "#E03232"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "65f056ed6d460478666f8234": {
+    "_id": "65f056ed6d460478666f8234",
+    "createdAt": 1710249709771,
+    "updatedAt": 1710840667883,
+    "cid": "17",
+    "templateId": "65f0501d6d460478666f8216",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "5b2ad487-3a8c-4daa-a8a5-8c790bb51f0c",
+            "data": [
+              "Content Marketing"
+            ]
+          },
+          {
+            "id": "da2917c2-abbb-4a7a-9605-f0c06fe61af3",
+            "data": [
+              "content-marketing"
+            ]
+          },
+          {
+            "id": "82511b5e-2eab-4328-a7ef-0ed2920a64b1",
+            "data": [
+              {
+                "id": "2643b943-ac9d-4419-8bcf-14a314d05cde",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "We'll help you create and distribute valuable content that attracts and engages your audience. Our team will develop a content marketing strategy, create content that aligns with your brand, and monitor your performance to ensure your content is delivering results."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "62c093d0-0f26-4d87-ad55-33658abaccb2",
+            "data": [
+              {
+                "_id": "65f058a76d460478666f8238",
+                "alt_text": "Content Marketing",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "3ef84b9d-63a3-4da5-93c0-e49307a8e836",
+            "data": [
+              "#A42F59"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "65f063dd6d460478666f823f": {
+    "_id": "65f063dd6d460478666f823f",
+    "createdAt": 1710253021422,
+    "updatedAt": 1710860894520,
+    "cid": "18",
+    "templateId": "65f04ffa6d460478666f8212",
+    "userId": "111111111111111111111111",
+    "status": "",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "881d55dd-fbff-4368-99cf-72c29e0a93db",
+            "data": [
+              "Home"
+            ]
+          },
+          {
+            "id": "c0f9f745-7b95-4d16-91e1-d3d4ed4b4b52",
+            "data": [
+              "home"
+            ]
+          },
+          {
+            "id": "8e0af486-b59d-4977-9881-be5f411be469",
+            "data": {
+              "_id": "65f17f13be4bcfba284afdbf",
+              "items": []
+            }
+          },
+          {
+            "id": "8a9b75dd-1060-40d9-ad8b-553f2a7444c7",
+            "data": {
+              "_id": "65f064876d460478666f8240",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "cceacd31-bcd2-4235-a364-932dc92d9b31",
+                      "data": [
+                        {
+                          "id": "e8b75688-e597-4343-a9df-e99caed2892e",
+                          "nodes": [
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 1
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Welcome to "
+                                },
+                                {
+                                  "type": "hardBreak"
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "B"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "rand"
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "C"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "rafters,"
+                                },
+                                {
+                                  "type": "hardBreak"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "where we "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "italic"
+                                    }
+                                  ],
+                                  "text": "craft marketing strategies"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " that drive results for your business."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "2faa6159-e5c6-46a6-bc7a-c7010e7bc33c",
+                      "data": [
+                        {
+                          "_id": "65f2b0aeaa3e85c757d40862",
+                          "alt_text": "Gallery",
+                          "caption": ""
+                        },
+                        {
+                          "_id": "65f1c78936baac9dfd22d55f",
+                          "alt_text": "Gallery",
+                          "caption": ""
+                        },
+                        {
+                          "_id": "65f1c78a36baac9dfd22d560",
+                          "alt_text": "Gallery",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "e402baaf-8522-4685-846c-60057fdee342",
+            "data": {
+              "_id": "65f067296d460478666f8242",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "2e9e8622-3982-462d-9be5-07b89f1c2d0d",
+                      "data": [
+                        "At BrandCrafters, we believe in the power of collaboration."
+                      ]
+                    },
+                    {
+                      "id": "e836008c-41f3-4699-9d02-db92c115bb0d",
+                      "data": [
+                        "About us"
+                      ]
+                    },
+                    {
+                      "id": "516220dd-5ca5-4b45-9264-088e9176cc8e",
+                      "data": [
+                        {
+                          "id": "5bcfe1a0-422a-434d-b6f5-e8240053951e",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "We work closely withour clients to understand their unique challenges and goals, ensuring we developstrategies that align with their business objectives."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "a54379dd-ce21-4fe5-ae99-85e9044cc790",
+                      "data": [
+                        {
+                          "_id": "65f0454e6d460478666f81fa",
+                          "alt_text": "About us",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "83c66887-7f55-4782-aace-91627ac34ece",
+            "data": {
+              "_id": "65f067496d460478666f8243",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "45d1d9fa-8450-465a-8a00-207836ba9f73",
+                      "data": [
+                        "We offer a range of services that include social media management, search engine optimization, website design, email marketing, and more."
+                      ]
+                    },
+                    {
+                      "id": "598635c9-77ea-44ce-a60f-8720c7a12474",
+                      "data": [
+                        "Our sevices"
+                      ]
+                    },
+                    {
+                      "id": "a1aa1bd9-2f65-46d0-9ce6-137db7b92a8e",
+                      "data": [
+                        {
+                          "id": "dd5358a5-d355-402d-9c28-e28a64f8e2bc",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Whether you're looking to increase brand awareness, generate leads, or drive sales, our team has the expertise to help you achieve your goals."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "2fc5a585-790b-411d-8aae-04892516a600",
+                      "data": [
+                        {
+                          "_id": "65f046326d460478666f81ff",
+                          "alt_text": "Our sevices",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "d1ac415c-0488-4ab3-af1c-aad0300b6290",
+            "data": {
+              "_id": "65f067816d460478666f8244",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "3ab53c01-985b-4618-8284-c106c40595d2",
+                      "data": [
+                        "We take pride in delivering exceptional results to our clients."
+                      ]
+                    },
+                    {
+                      "id": "abbada74-21c6-4dbd-ad88-060484f9bd6e",
+                      "data": [
+                        "Capabilities"
+                      ]
+                    },
+                    {
+                      "id": "e406f5bb-5a55-44b3-9e4b-9aa91ccc914e",
+                      "data": [
+                        {
+                          "id": "0a748954-b010-4d9a-abb7-6e0f9739ebea",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Our team of expertis dedicated to staying up-to-date with the latest marketing trends and technologies, ensuring we always deliver cutting-edge strategies that drive results."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "8d0366c8-1091-40ba-ba9e-8d7822ca99d2",
+                      "data": [
+                        {
+                          "tid": "65f050146d460478666f8215",
+                          "eid": "65f055506d460478666f822c"
+                        },
+                        {
+                          "tid": "65f050146d460478666f8215",
+                          "eid": "65f055416d460478666f822b"
+                        },
+                        {
+                          "tid": "65f050146d460478666f8215",
+                          "eid": "65f055636d460478666f822d"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "836507d8-af84-48e7-a0d1-3fe608ddf35f",
+            "data": {
+              "_id": "65f06f8e6d460478666f8245",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "afb19580-e7fc-441d-b834-41db52e589ba",
+                      "data": [
+                        "At BrandCrafters, we don't just deliver marketing strategies, we build lasting relationships."
+                      ]
+                    },
+                    {
+                      "id": "7d25d9eb-cac1-4e3b-84c2-cb39b19e7f19",
+                      "data": [
+                        "Team"
+                      ]
+                    },
+                    {
+                      "id": "886f0f09-8514-441b-84bf-44bb7289207d",
+                      "data": [
+                        {
+                          "id": "9e008612-37bb-4f9d-902c-f3a4b110280c",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "We take the time to get to know our clients, understand their business, and work together to achieve their marketing objectives."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "c2edf402-52c7-4be2-9965-5c61423942e7",
+                      "data": [
+                        {
+                          "_id": "65f046326d460478666f8200",
+                          "alt_text": "Team",
+                          "caption": ""
+                        }
+                      ]
+                    },
+                    {
+                      "id": "626ffc70-f9bb-4401-9e1e-82a785857983",
+                      "data": [
+                        "Meet the team behind BrandCrafters."
+                      ]
+                    },
+                    {
+                      "id": "67c7f75a-03b9-488e-be87-6686354c6fd4",
+                      "data": [
+                        {
+                          "id": "7ffd78d9-7594-45e0-ae13-c74afdc57c94",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Our team is made up of dedicated marketing professionals who are passionate about delivering results to ourclients."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "665dcb5a-5419-404e-80fe-e16c2454dc01",
+                      "data": [
+                        {
+                          "tid": "65f050306d460478666f8218",
+                          "eid": "65f0538f6d460478666f8222"
+                        },
+                        {
+                          "tid": "65f050306d460478666f8218",
+                          "eid": "65f053a06d460478666f8223"
+                        },
+                        {
+                          "tid": "65f050306d460478666f8218",
+                          "eid": "65f053b16d460478666f8224"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "3a729093-ea64-4107-a05d-0736aaf43533",
+            "data": {
+              "_id": "65f061236d460478666f823e",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "3c03e4da-ef2c-4b11-9501-a3efa04c22ca",
+                      "data": [
+                        "Get in touch with us today to see how we can help take your marketing to the next level"
+                      ]
+                    },
+                    {
+                      "id": "5bf52e5c-8af8-42e3-b30e-688531e9b026",
+                      "data": [
+                        {
+                          "id": "76a7943f-8d14-42c7-b93b-1d8e2b67dde0",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Let us be your partner in success."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  }
+}
