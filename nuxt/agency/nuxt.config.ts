@@ -52,6 +52,7 @@ export default defineNuxtConfig({
           },
         },
         websiteDomain: 'http://localhost:3000',
+        postProcessImages: true,
         media: {
           download: true,
           images: {
