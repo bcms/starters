@@ -54,7 +54,6 @@ lerna-debug.log*
 /log
 /workspace
 /bngine-workspace
-/uploads
 .env
 /public/custom
 /public/build
@@ -67,5 +66,3 @@ lerna-debug.log*
 
 tsconfig.src.tsbuildinfo
 tsconfig.backend.tsbuildinfo
-
-/db
