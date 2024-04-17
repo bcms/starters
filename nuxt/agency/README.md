@@ -1,9 +1,9 @@
 https://github.com/bcms/starters/assets/15079459/84dcf8dd-4cf9-48b8-919f-07f359ea9541
 
-<h1 align="center">Blog with Nuxt.js and BCMS</h1>
-<p align="center"><a href="https://agency-starter.thebcms.com/">See this blog in action ⤴</a></p>
-<p align="center">Spin up a fully functional blog with Nuxt.js, Tailwind, and <a href="https://github.com/bcms/cms">BCMS</a> - in a few minutes.<br/>
-Everything from submitting blogs, over listing and searching them, to getting applications. All within the same codebase.</p>
+<h1 align="center">Agency website with Nuxt.js and BCMS</h1>
+<p align="center"><a href="https://agency-starter.thebcms.com/">See this website in action ⤴</a></p>
+<p align="center">Spin up a fully functional agency website with Nuxt.js, Tailwind, and <a href="https://github.com/bcms/cms">BCMS</a> - in a few minutes.<br/>
+Everything from managing services page, portfolio posts, team page, to contact us page. All within the same codebase.</p>
 
 ---
 
@@ -13,14 +13,14 @@ Everything from submitting blogs, over listing and searching them, to getting ap
 
 ---
 
-<p align="center">Whether you are looking to build a blog for your company or a stand-alone blog website - this starter will save you weeks. You can clone this folder, connect it with your own BCMS instance, and give it a go!</p>
+<p align="center">Whether you are looking to build an agency website for your company or for a client - this starter will save you weeks. You can clone this folder, connect it with your own BCMS instance, and give it a go!</p>
 <br/>
 
 <h2 align="center">How it works</h2>
 <br/>
 
 <h3 align="center">Step 1: Clone the repo</h3>
-<p align="center">This repository contains a lot of starters. Enter <code>blog</code>, but make sure to check other starters too, later.</p>
+<p align="center">This repository contains a lot of starters. Enter <code>agency</code>, but make sure to check other starters too, later.</p>
 
 ```bash
 git clone https://github.com/bcms/starters.git
@@ -114,5 +114,5 @@ Yes, the starter comes with detailed documentation to help you get started. A fe
 
 <h2>Support ❤️</h2>
 <p>
-  If you like the project, hit that ⭐ button !!1
+  If you like the project, hit that ⭐ button!
 </p>
