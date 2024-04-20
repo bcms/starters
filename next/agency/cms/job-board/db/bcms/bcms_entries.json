@@ -1,0 +1,3002 @@
+{
+  "641d757154a58202232a5bfe": {
+    "_id": "641d757154a58202232a5bfe",
+    "createdAt": 1679652209667,
+    "updatedAt": 1680010481694,
+    "cid": "1",
+    "templateId": "641d756854a58202232a5bfc",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "13539965-99c5-4aa4-b077-9dce15464b27",
+            "data": [
+              "Header"
+            ]
+          },
+          {
+            "id": "32bb6cda-6e0e-4061-97de-efad41211015",
+            "data": [
+              "header"
+            ]
+          },
+          {
+            "id": "d8f98f75-3092-430f-abdf-f2af43d14f2d",
+            "data": [
+              {
+                "_id": "641d778854a58202232a5c07",
+                "alt_text": "Logo",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "1b60ef70-0a61-4897-80a9-acb071006020",
+            "data": {
+              "_id": "641d770254a58202232a5c00",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "ae3493ed-f3c0-406a-ba6e-034aa0dac618",
+                      "data": [
+                        "Contact us"
+                      ]
+                    },
+                    {
+                      "id": "cab728be-c010-43f3-ab7b-705e9402ab36",
+                      "data": [
+                        {
+                          "_id": "641d778854a58202232a5c06",
+                          "alt_text": "Telephone",
+                          "caption": ""
+                        }
+                      ]
+                    },
+                    {
+                      "id": "f8865b30-8700-47c0-8013-d062aab10492",
+                      "data": [
+                        "/contact"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "ae3493ed-f3c0-406a-ba6e-034aa0dac618",
+                      "data": [
+                        "About us"
+                      ]
+                    },
+                    {
+                      "id": "cab728be-c010-43f3-ab7b-705e9402ab36",
+                      "data": [
+                        {
+                          "_id": "641d778854a58202232a5c05",
+                          "alt_text": "Waving hand",
+                          "caption": ""
+                        }
+                      ]
+                    },
+                    {
+                      "id": "f8865b30-8700-47c0-8013-d062aab10492",
+                      "data": [
+                        "/about-us"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "29a0e47c-ee01-432b-9a1f-c9189e28c8c3",
+            "data": [
+              {
+                "id": "dd38e948-10b3-4798-9d7a-ed351f0299b8",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Need to hire?"
+                      },
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/jobs/post",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": " Post your job "
+                      },
+                      {
+                        "type": "text",
+                        "text": "now"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "641d8c1954a58202232a5c09": {
+    "_id": "641d8c1954a58202232a5c09",
+    "createdAt": 1679658009193,
+    "updatedAt": 1680014417579,
+    "cid": "2",
+    "templateId": "641d8b9754a58202232a5c08",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "a8c047e9-10b3-44b5-9b29-ee7b0711d576",
+            "data": [
+              "Footer"
+            ]
+          },
+          {
+            "id": "364a8a1d-48ca-4a63-9d67-5c5e5d05900e",
+            "data": [
+              "footer"
+            ]
+          },
+          {
+            "id": "7e0dc03e-92d3-410f-aeb1-9f39a8021794",
+            "data": [
+              {
+                "id": "d58bd198-38bb-4174-bba5-156905bd90f6",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://www.instagram.com/",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Instagram"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "7c8aa630-95f1-42b1-af71-db9b274d6683",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://www.facebook.com/",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Facebook"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "33aac3ad-176b-4670-ab12-919e94346dfa",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://www.linkedin.com/",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "LinkedIn"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "3ff2856d-67d0-454b-b2a4-a244075e7acf",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://twitter.com/",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Twitter"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "a049a09d-f154-42be-baf0-276e91dbc2e3",
+            "data": [
+              {
+                "id": "f7169c21-a311-4eec-9006-2ed1058a7292",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/legal",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Privacy and policy"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "c20f507a-f7e6-4557-bb20-571bb25cc89f",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/legal",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Terms and Conditions"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "aff8637a-89de-44c9-ba76-250c755f6cec",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/contact",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Contact us"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "641d9bde54a58202232a5c13": {
+    "_id": "641d9bde54a58202232a5c13",
+    "createdAt": 1679662046858,
+    "updatedAt": 1679910858491,
+    "cid": "3",
+    "templateId": "641d9aca54a58202232a5c0d",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "635e2489-8041-4128-8cf4-e72f488bf25a",
+            "data": [
+              "Home"
+            ]
+          },
+          {
+            "id": "a816d7a8-1f2e-4110-832b-0c56c14d4027",
+            "data": [
+              "home"
+            ]
+          },
+          {
+            "id": "6de65dd2-e151-4fd3-861c-ad8905b9d393",
+            "data": {
+              "_id": "641d9aa554a58202232a5c0c",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "bd685cea-215e-4f9a-b9da-35a9ee09f680",
+                      "data": {
+                        "_id": "641d9a3554a58202232a5c0b",
+                        "items": [
+                          {
+                            "props": [
+                              {
+                                "id": "46d66147-d1f2-4341-b919-c46753e80e59",
+                                "data": [
+                                  {
+                                    "id": "b5b2b262-3f22-4f37-b8af-3b0560bcd06f",
+                                    "nodes": [
+                                      {
+                                        "type": "paragraph",
+                                        "content": [
+                                          {
+                                            "type": "text",
+                                            "text": "Find Your"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "68195856-7ef5-4f88-a908-f1d7b6e98055",
+                                "data": [
+                                  {
+                                    "_id": "641d9b4c54a58202232a5c11",
+                                    "alt_text": "Find Your",
+                                    "caption": ""
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "props": [
+                              {
+                                "id": "46d66147-d1f2-4341-b919-c46753e80e59",
+                                "data": [
+                                  {
+                                    "id": "b420aa9e-4ba3-4a31-afed-e0cd71453aec",
+                                    "nodes": [
+                                      {
+                                        "type": "paragraph",
+                                        "content": [
+                                          {
+                                            "type": "text",
+                                            "text": "Dream Job"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "68195856-7ef5-4f88-a908-f1d7b6e98055",
+                                "data": [
+                                  {
+                                    "_id": "641d9b4b54a58202232a5c10",
+                                    "alt_text": "Dream Job",
+                                    "caption": ""
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "props": [
+                              {
+                                "id": "46d66147-d1f2-4341-b919-c46753e80e59",
+                                "data": [
+                                  {
+                                    "id": "c4e22c8d-d42d-4275-95d0-51f1a5aae233",
+                                    "nodes": [
+                                      {
+                                        "type": "paragraph",
+                                        "content": [
+                                          {
+                                            "type": "text",
+                                            "text": "in Hospitality"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "68195856-7ef5-4f88-a908-f1d7b6e98055",
+                                "data": [
+                                  {
+                                    "_id": "",
+                                    "alt_text": "",
+                                    "caption": ""
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "id": "71c73dcd-0f4e-44f3-aa10-6855f9029433",
+                      "data": [
+                        {
+                          "id": "e8bdafaa-3f36-4f22-961e-913147bd6ae1",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Search thousands of jobs at top hotels and restaurants around the world"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "1e60ed19-f86a-4674-b630-a5b1192bb6c5",
+                      "data": [
+                        "Search Jobs Now"
+                      ]
+                    },
+                    {
+                      "id": "cf62d709-7a29-4e16-a399-1425245c0c4d",
+                      "data": [
+                        {
+                          "_id": "641d9bcf54a58202232a5c12",
+                          "alt_text": "Cover",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "1b897bb8-256c-424c-9834-cae645780a4d",
+            "data": {
+              "_id": "641dbb5c54a58202232a5c18",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "f2c3b16f-42ab-4a38-bcb8-70bf872b9ad7",
+                      "data": [
+                        "Find your job base and your location and skill"
+                      ]
+                    },
+                    {
+                      "id": "7dd33fc7-99fa-4802-bbb4-782d4743f283",
+                      "data": [
+                        {
+                          "id": "40e0b936-05c8-4555-a6f2-03876921936a",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Discover your job base on what job are you looking for, type, or even spesific locations"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "a2371a01-4515-4197-b765-04addec259ce",
+            "data": {
+              "_id": "642166fbe3f5b6aa4afbefc6",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "006b31de-6b4a-4667-b029-2c7786ac9507",
+                      "data": [
+                        "Hospitale: Where your passion for hospitality meets your career"
+                      ]
+                    },
+                    {
+                      "id": "86ccfe21-f0d9-444a-82ad-26327746aa78",
+                      "data": [
+                        {
+                          "id": "3862142d-33af-4e3e-8a3a-3b4b20f62f15",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "That's why we strive to provide a comprehensive and holistic experience for both job seekers and employers, ensuring that everyone is connected with the right opportunities and the right talent. With Hospital, you can take your hospitality career to new heights."
+                                },
+                                {
+                                  "type": "hardBreak"
+                                },
+                                {
+                                  "type": "hardBreak"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "\"At Hospitale, we're passionate about hospitality and committed to helping job seekers unlock their full potential in this field. With our cutting-edge technology and personalized approach, we're redefining the job search process for the hospitality industry. We believe that finding the right job is not just about matching skills and qualifications but also about finding the right cultural fit."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "6599856f-d904-4c9a-994d-08755d24580e",
+                      "data": [
+                        "Easy job search",
+                        "Easy job posting",
+                        "Personalized job alerts"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "641dc02d54a58202232a5c19": {
+    "_id": "641dc02d54a58202232a5c19",
+    "createdAt": 1679671341597,
+    "updatedAt": 1679671341597,
+    "cid": "4",
+    "templateId": "641db96b54a58202232a5c15",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "c4aa6269-fadc-4521-9d89-30cef6e4a7a7",
+            "data": [
+              "Plandaan, Tulungagung"
+            ]
+          },
+          {
+            "id": "77fa8de8-7d10-4c1a-966e-f14e52db4512",
+            "data": [
+              "plandaan-tulungagung"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "641dc03554a58202232a5c1a": {
+    "_id": "641dc03554a58202232a5c1a",
+    "createdAt": 1679671349912,
+    "updatedAt": 1679671349912,
+    "cid": "5",
+    "templateId": "641db97454a58202232a5c16",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "37db302a-eeff-4fb4-8adf-ccc5ee2f67e0",
+            "data": [
+              "Job type 1"
+            ]
+          },
+          {
+            "id": "ef3e0b0f-69fe-4100-b95d-5dfacc41c62d",
+            "data": [
+              "job-type-1"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "641dc04a54a58202232a5c1b": {
+    "_id": "641dc04a54a58202232a5c1b",
+    "createdAt": 1679671370150,
+    "updatedAt": 1679927190014,
+    "cid": "6",
+    "templateId": "641db95454a58202232a5c14",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "fda2989a-0a21-4b07-9595-6793fa3d6eff",
+            "data": [
+              "Restaurant Waitress"
+            ]
+          },
+          {
+            "id": "a7e0813d-65d8-45a2-bb87-7d024c0d064f",
+            "data": [
+              "restaurant-waitress"
+            ]
+          },
+          {
+            "id": "b300d30f-2881-4964-99f1-50d4d23a51d5",
+            "data": [
+              {
+                "id": "da4d383f-c5da-4fb6-a6dd-a06f0edec042",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et qu."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "5c659ff5-4ea1-494a-b93e-a6f914dc4218",
+            "data": [
+              {
+                "tid": "641db96b54a58202232a5c15",
+                "eid": "641dc02d54a58202232a5c19"
+              }
+            ]
+          },
+          {
+            "id": "72708249-baab-45d3-a222-821798a380fd",
+            "data": [
+              {
+                "tid": "641db97454a58202232a5c16",
+                "eid": "641dc03554a58202232a5c1a"
+              }
+            ]
+          },
+          {
+            "id": "b3550d89-2089-498c-9415-178c758624cb",
+            "data": [
+              {
+                "_id": "642187a8e3f5b6aa4afbefd4",
+                "alt_text": "Restaurant Waitress",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "27c0f05f-ea35-408f-9aa9-803961b43a9e",
+            "data": [
+              {
+                "_id": "64218809e3f5b6aa4afbefd6",
+                "alt_text": "Restaurant Waitress",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "a58c9ff8-9ea6-4b72-8e32-bcfbce976b24",
+            "data": [
+              {
+                "tid": "642186d1e3f5b6aa4afbefd2",
+                "eid": "64218847e3f5b6aa4afbefd7"
+              }
+            ]
+          },
+          {
+            "id": "4b15c01b-a3a5-44d3-be91-7d3680a66d57",
+            "data": [
+              {
+                "id": "7dc9475e-9f56-41a2-bf11-ab4471acce84",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "We are seeking an experienced and passionate Restaurant Manager to oversee our busy and bustling restaurant at The Royal Cancun Resort. As the Restaurant Manager, you will be responsible for all aspects of the restaurant's operations, including managing staff, overseeing inventory and supplies, maintaining high-quality service, and ensuring customer satisfaction. "
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "text",
+                        "text": "You will also be responsible for implementing new strategies to grow revenue, promote our brand, and increase customer engagement. The ideal candidate will have at least five years of experience in a similar role, excellent leadership and communication skills, and a strong knowledge of the hospitality industry."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "333bf041-e76b-406c-adc3-1978389d7dbe",
+            "data": [
+              {
+                "id": "41d645c0-0b10-48f1-9536-c43ea2b3079f",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Recruit, hire, train, and manage staff, including servers, cooks, and support staff. Create and manage staff schedules to ensure adequate coverage during peak hours. Oversee daily operations, including food preparation, inventory management, and customer service. "
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "text",
+                        "text": "Monitor and maintain quality control to ensure that all food and service meet high standards. Develop and implement new strategies to increase revenue, attract new customers, and improve customer engagement. Handle customer complaints and resolve issues in a timely and professional manner. Ensure that all health and safety regulations are being followed at all times. Prepare reports, budgets, and financial forecasts to measure performance and set goals for the future."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "9ec5b61a-8391-4091-b279-a50c5da577d1",
+            "data": [
+              {
+                "id": "f1167bf1-569a-40ed-982d-f6aa3a592da7",
+                "nodes": [
+                  {
+                    "type": "bulletList",
+                    "content": [
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "text": "At least five years of experience in a similar role in the hospitality industry"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "text": "Excellent leadership and communication skills."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "text": "Strong knowledge of food and beverage service, including menu development and wine selection."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "text": "Ability to work in a fast-paced environment and manage multiple tasks simultaneously."
+                              },
+                              {
+                                "type": "hardBreak"
+                              },
+                              {
+                                "type": "text",
+                                "text": "Strong customer service and problem-solving skills."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "text": "Ability to work flexible hours, including evenings and weekends."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "text": "Bachelor's degree in hospitality management, business, or a related field preferred."
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "text",
+                        "text": "If you have a passion for the hospitality industry and want to work in a fast-paced and dynamic environment, we want to hear from you! Apply now to join our team as a Restaurant Manager."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "6c191866-0b63-417b-84da-b6b6029f494e",
+            "data": [
+              true
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "64217093e3f5b6aa4afbefce": {
+    "_id": "64217093e3f5b6aa4afbefce",
+    "createdAt": 1679913107071,
+    "updatedAt": 1679913107071,
+    "cid": "7",
+    "templateId": "64216ed6e3f5b6aa4afbefc7",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "75dfe885-69ca-4453-9dd1-138293182f1f",
+            "data": [
+              "Jane S."
+            ]
+          },
+          {
+            "id": "b4271b68-45a5-467a-9c7c-05d1861712af",
+            "data": [
+              "jane-s"
+            ]
+          },
+          {
+            "id": "5405627e-2bcb-47f8-8194-a52cc4381404",
+            "data": {
+              "_id": "64216f23e3f5b6aa4afbefc8",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "c06ed2cd-3929-4d3b-b8c6-6fc5d2dda289",
+                      "data": [
+                        "Jane S."
+                      ]
+                    },
+                    {
+                      "id": "0ee6e342-e38f-4ad0-8242-24d39c371202",
+                      "data": [
+                        {
+                          "_id": "6421702fe3f5b6aa4afbefca",
+                          "alt_text": "Jane S.",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "eba50c6a-e65d-49e6-aae6-efdc67dd9688",
+            "data": [
+              {
+                "id": "c67801ec-4ed4-47ed-94d2-dbac5dbf7bbe",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Thanks to Hospitale, I was able to find the perfect job in the hospitality industry. The site was easy to use and provided a wide variety of job postings. I highly recommend it to anyone looking for a job in this field!"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "6421709fe3f5b6aa4afbefcf": {
+    "_id": "6421709fe3f5b6aa4afbefcf",
+    "createdAt": 1679913119127,
+    "updatedAt": 1679913119127,
+    "cid": "8",
+    "templateId": "64216ed6e3f5b6aa4afbefc7",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "75dfe885-69ca-4453-9dd1-138293182f1f",
+            "data": [
+              "John D."
+            ]
+          },
+          {
+            "id": "b4271b68-45a5-467a-9c7c-05d1861712af",
+            "data": [
+              "john-d"
+            ]
+          },
+          {
+            "id": "5405627e-2bcb-47f8-8194-a52cc4381404",
+            "data": {
+              "_id": "64216f23e3f5b6aa4afbefc8",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "c06ed2cd-3929-4d3b-b8c6-6fc5d2dda289",
+                      "data": [
+                        "John D."
+                      ]
+                    },
+                    {
+                      "id": "0ee6e342-e38f-4ad0-8242-24d39c371202",
+                      "data": [
+                        {
+                          "_id": "6421702fe3f5b6aa4afbefcb",
+                          "alt_text": "John D.",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "eba50c6a-e65d-49e6-aae6-efdc67dd9688",
+            "data": [
+              {
+                "id": "e6d19497-189c-4653-aa79-4ee8269b51fc",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "\"I was struggling to find a job in the hospitality industry, but Hospitale made it easy. The site is user-friendly and has a great selection of job postings. Thanks to them, I was able to land my dream job!"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642170b3e3f5b6aa4afbefd0": {
+    "_id": "642170b3e3f5b6aa4afbefd0",
+    "createdAt": 1679913139550,
+    "updatedAt": 1679913139550,
+    "cid": "9",
+    "templateId": "64216ed6e3f5b6aa4afbefc7",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "75dfe885-69ca-4453-9dd1-138293182f1f",
+            "data": [
+              "Sarah L."
+            ]
+          },
+          {
+            "id": "b4271b68-45a5-467a-9c7c-05d1861712af",
+            "data": [
+              "sarah-l"
+            ]
+          },
+          {
+            "id": "5405627e-2bcb-47f8-8194-a52cc4381404",
+            "data": {
+              "_id": "64216f23e3f5b6aa4afbefc8",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "c06ed2cd-3929-4d3b-b8c6-6fc5d2dda289",
+                      "data": [
+                        "Sarah L."
+                      ]
+                    },
+                    {
+                      "id": "0ee6e342-e38f-4ad0-8242-24d39c371202",
+                      "data": [
+                        {
+                          "_id": "64217030e3f5b6aa4afbefcc",
+                          "alt_text": "Sarah L.",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "eba50c6a-e65d-49e6-aae6-efdc67dd9688",
+            "data": [
+              {
+                "id": "541824ed-e880-4dcf-bd49-f1fed01e8390",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "I highly recommend Hospitale to anyone looking for a job in the hospitality industry. The site is well-organized and easy to navigate, and the job postings are always up-to-date. Thanks to them, I was able to find my dream job!"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642170c6e3f5b6aa4afbefd1": {
+    "_id": "642170c6e3f5b6aa4afbefd1",
+    "createdAt": 1679913158339,
+    "updatedAt": 1679913158339,
+    "cid": "a",
+    "templateId": "64216ed6e3f5b6aa4afbefc7",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "75dfe885-69ca-4453-9dd1-138293182f1f",
+            "data": [
+              "Michael B."
+            ]
+          },
+          {
+            "id": "b4271b68-45a5-467a-9c7c-05d1861712af",
+            "data": [
+              "michael-b"
+            ]
+          },
+          {
+            "id": "5405627e-2bcb-47f8-8194-a52cc4381404",
+            "data": {
+              "_id": "64216f23e3f5b6aa4afbefc8",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "c06ed2cd-3929-4d3b-b8c6-6fc5d2dda289",
+                      "data": [
+                        "Michael B."
+                      ]
+                    },
+                    {
+                      "id": "0ee6e342-e38f-4ad0-8242-24d39c371202",
+                      "data": [
+                        {
+                          "_id": "64217030e3f5b6aa4afbefcd",
+                          "alt_text": "Michael B.",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "eba50c6a-e65d-49e6-aae6-efdc67dd9688",
+            "data": [
+              {
+                "id": "1f31b225-9d51-4715-bb56-2c84956308b5",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Hospitale was a game changer for me. I was able to find a job in the hospitality industry quickly and easily. The site is well-designed and the job postings are top-notch. I highly recommend it to anyone looking for a job in this field!"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "64218847e3f5b6aa4afbefd7": {
+    "_id": "64218847e3f5b6aa4afbefd7",
+    "createdAt": 1679919175286,
+    "updatedAt": 1679919175286,
+    "cid": "b",
+    "templateId": "642186d1e3f5b6aa4afbefd2",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "00da225a-bfe6-4840-a56d-17a85a7f1c59",
+            "data": [
+              "Madang Company"
+            ]
+          },
+          {
+            "id": "9b8c9eb7-10be-46d5-a385-6fd78b185231",
+            "data": [
+              "madang-company"
+            ]
+          },
+          {
+            "id": "2f929b7a-6c2c-47f2-857e-667f8e7185e0",
+            "data": [
+              {
+                "_id": "64218809e3f5b6aa4afbefd5",
+                "alt_text": "Madang Company",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "cfa8f5b1-a6c1-4d93-be47-59d2845df8d0",
+            "data": [
+              {
+                "id": "7b476fbd-add6-4f68-966e-388465b56a2b",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Madang Company is a restaurant chain that specializes in Korean cuisine. The company was founded in 1998 and is based in Seoul, South Korea. Madang Company has since expanded to include locations in various countries around the world, including the United States, Canada, Japan, China, and Malaysia."
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "text",
+                        "text": "The mission of Madang Company is to provide high-quality Korean cuisine using fresh, locally sourced ingredients. The restaurant chain is known for its authentic flavors and traditional cooking techniques, which are meant to provide customers with an immersive Korean dining experience. Additionally, Madang Company aims to create a welcoming and inclusive atmosphere where customers can enjoy good food and good company."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "6421a3f7e3f5b6aa4afbefd8": {
+    "_id": "6421a3f7e3f5b6aa4afbefd8",
+    "createdAt": 1679926263070,
+    "updatedAt": 1679927209183,
+    "cid": "c",
+    "templateId": "641db95454a58202232a5c14",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "fda2989a-0a21-4b07-9595-6793fa3d6eff",
+            "data": [
+              "Restaurant Waitress 2"
+            ]
+          },
+          {
+            "id": "a7e0813d-65d8-45a2-bb87-7d024c0d064f",
+            "data": [
+              "restaurant-waitress-2"
+            ]
+          },
+          {
+            "id": "b300d30f-2881-4964-99f1-50d4d23a51d5",
+            "data": [
+              {
+                "id": "27a7f714-b29e-487d-b3c3-95dc8daaccdc",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et qu."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "5c659ff5-4ea1-494a-b93e-a6f914dc4218",
+            "data": [
+              {
+                "tid": "641db96b54a58202232a5c15",
+                "eid": "641dc02d54a58202232a5c19"
+              }
+            ]
+          },
+          {
+            "id": "72708249-baab-45d3-a222-821798a380fd",
+            "data": [
+              {
+                "tid": "641db97454a58202232a5c16",
+                "eid": "641dc03554a58202232a5c1a"
+              }
+            ]
+          },
+          {
+            "id": "b3550d89-2089-498c-9415-178c758624cb",
+            "data": [
+              {
+                "_id": "642187a8e3f5b6aa4afbefd4",
+                "alt_text": "Restaurant Waitress 2",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "27c0f05f-ea35-408f-9aa9-803961b43a9e",
+            "data": [
+              {
+                "_id": "64218809e3f5b6aa4afbefd6",
+                "alt_text": "Restaurant Waitress 2",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "a58c9ff8-9ea6-4b72-8e32-bcfbce976b24",
+            "data": [
+              {
+                "tid": "642186d1e3f5b6aa4afbefd2",
+                "eid": "64218847e3f5b6aa4afbefd7"
+              }
+            ]
+          },
+          {
+            "id": "4b15c01b-a3a5-44d3-be91-7d3680a66d57",
+            "data": [
+              {
+                "id": "244f0911-444a-4212-b34f-d66ea042d573",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "We are seeking an experienced and passionate Restaurant Manager to oversee our busy and bustling restaurant at The Royal Cancun Resort. As the Restaurant Manager, you will be responsible for all aspects of the restaurant's operations, including managing staff, overseeing inventory and supplies, maintaining high-quality service, and ensuring customer satisfaction. "
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "text",
+                        "text": "You will also be responsible for implementing new strategies to grow revenue, promote our brand, and increase customer engagement. The ideal candidate will have at least five years of experience in a similar role, excellent leadership and communication skills, and a strong knowledge of the hospitality industry."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "333bf041-e76b-406c-adc3-1978389d7dbe",
+            "data": [
+              {
+                "id": "207da750-d9b8-40ce-abcc-97d1441c0ba7",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Recruit, hire, train, and manage staff, including servers, cooks, and support staff. Create and manage staff schedules to ensure adequate coverage during peak hours. Oversee daily operations, including food preparation, inventory management, and customer service. "
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "text",
+                        "text": "Monitor and maintain quality control to ensure that all food and service meet high standards. Develop and implement new strategies to increase revenue, attract new customers, and improve customer engagement. Handle customer complaints and resolve issues in a timely and professional manner. Ensure that all health and safety regulations are being followed at all times. Prepare reports, budgets, and financial forecasts to measure performance and set goals for the future."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "9ec5b61a-8391-4091-b279-a50c5da577d1",
+            "data": [
+              {
+                "id": "0f19c59f-2d96-4c2a-a4b4-6ae427b2504b",
+                "nodes": [
+                  {
+                    "type": "bulletList",
+                    "content": [
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "text": "At least five years of experience in a similar role in the hospitality industry"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "text": "Excellent leadership and communication skills."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "text": "Strong knowledge of food and beverage service, including menu development and wine selection."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "text": "Ability to work in a fast-paced environment and manage multiple tasks simultaneously."
+                              },
+                              {
+                                "type": "hardBreak"
+                              },
+                              {
+                                "type": "text",
+                                "text": "Strong customer service and problem-solving skills."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "text": "Ability to work flexible hours, including evenings and weekends."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "text": "Bachelor's degree in hospitality management, business, or a related field preferred."
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "text",
+                        "text": "If you have a passion for the hospitality industry and want to work in a fast-paced and dynamic environment, we want to hear from you! Apply now to join our team as a Restaurant Manager."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "6c191866-0b63-417b-84da-b6b6029f494e",
+            "data": [
+              false
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "6422bf6aaa005084af191197": {
+    "_id": "6422bf6aaa005084af191197",
+    "createdAt": 1679998826550,
+    "updatedAt": 1679998826550,
+    "cid": "d",
+    "templateId": "6422bf5aaa005084af191196",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "e0219678-82eb-4cb4-b9f4-736a846bdc59",
+            "data": [
+              "Post your job"
+            ]
+          },
+          {
+            "id": "4235d4d4-02d1-4fd1-8582-0dc6a951baa0",
+            "data": [
+              "post-your-job"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "6422ded8aa005084af191199": {
+    "_id": "6422ded8aa005084af191199",
+    "createdAt": 1680006872692,
+    "updatedAt": 1692971727414,
+    "cid": "e",
+    "templateId": "6422ddc7aa005084af191198",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "eef4b093-4a7d-42a9-aa90-46e8b6ab2b2b",
+            "data": [
+              "Let’s talk!"
+            ]
+          },
+          {
+            "id": "25e8e671-3e15-4922-bd84-836e3aa5f24f",
+            "data": [
+              "contact"
+            ]
+          },
+          {
+            "id": "a844ca97-d491-42fa-b894-66d1bbf31d1a",
+            "data": [
+              {
+                "id": "f26b439e-f592-4bd2-93ca-4d117e78a193",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Let us know how we can help and we’ll get right back to you."
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "text",
+                        "text": "Please submit your question."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "6422e4a6aa005084af19119b": {
+    "_id": "6422e4a6aa005084af19119b",
+    "createdAt": 1680008358745,
+    "updatedAt": 1680011618668,
+    "cid": "f",
+    "templateId": "6422e496aa005084af19119a",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "22bff809-4c79-4d3f-8ebc-4c8726b2c4b3",
+            "data": [
+              "About us"
+            ]
+          },
+          {
+            "id": "cd7f4987-f510-4b05-a39f-831976e7f3a5",
+            "data": [
+              "about-us"
+            ]
+          },
+          {
+            "id": "3640d6b7-772a-4fec-8c2a-0bc63c6ce9dc",
+            "data": [
+              {
+                "_id": "6422e80aaa005084af19119f",
+                "alt_text": "About us",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "ed3f6453-e13d-470e-b21e-043ce2e5a88d",
+            "data": {
+              "_id": "641d9a3554a58202232a5c0b",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "46d66147-d1f2-4341-b919-c46753e80e59",
+                      "data": [
+                        {
+                          "id": "1f05eb70-ae51-4391-b92c-5dfaced7128f",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "At Hospitale, "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "we are passionate about hospitality"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "68195856-7ef5-4f88-a908-f1d7b6e98055",
+                      "data": [
+                        {
+                          "_id": "6422e8a7aa005084af1911ad",
+                          "alt_text": "About us",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "46d66147-d1f2-4341-b919-c46753e80e59",
+                      "data": [
+                        {
+                          "id": "04a38244-a422-4ffc-82bb-b80d0a04269d",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": " and committed to helping job seekers find their place in this dynamic industry. Our platform was "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "created to fill the need for a job board"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "68195856-7ef5-4f88-a908-f1d7b6e98055",
+                      "data": [
+                        {
+                          "_id": "6422e8a7aa005084af1911ac",
+                          "alt_text": "About us",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "46d66147-d1f2-4341-b919-c46753e80e59",
+                      "data": [
+                        {
+                          "id": "9f9303e2-dabc-4152-bf6c-170cd98a1801",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "that specifically caters to the hospitality industry, with "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "up-to-date job postings, personalized job alerts, and powerful search tools"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": ". Our mission is to help job seekers find their dream jobs"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "68195856-7ef5-4f88-a908-f1d7b6e98055",
+                      "data": [
+                        {
+                          "_id": "6422e8a7aa005084af1911ab",
+                          "alt_text": "About us",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "46d66147-d1f2-4341-b919-c46753e80e59",
+                      "data": [
+                        {
+                          "id": "68909ffa-b59e-4263-b484-f0b4f6dc9d8f",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "hardBreak"
+                                },
+                                {
+                                  "type": "hardBreak"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "Our "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "underline"
+                                    }
+                                  ],
+                                  "text": "team"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " is comprised of experienced professionals with a deep knowledge of the hospitality industry, who are committed to "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "providing the best"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "68195856-7ef5-4f88-a908-f1d7b6e98055",
+                      "data": [
+                        {
+                          "_id": "6422e8a7aa005084af1911aa",
+                          "alt_text": "About us",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "46d66147-d1f2-4341-b919-c46753e80e59",
+                      "data": [
+                        {
+                          "id": "0107254e-40d3-406f-b46c-a2e37c65b59a",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "possible service to our users. We understand the challenges of finding the right job or the right talent in this competitive industry, and we are dedicated"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "68195856-7ef5-4f88-a908-f1d7b6e98055",
+                      "data": [
+                        {
+                          "_id": "6422e8a7aa005084af1911a9",
+                          "alt_text": "About us",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "46d66147-d1f2-4341-b919-c46753e80e59",
+                      "data": [
+                        {
+                          "id": "04f46a4a-17fd-45f4-88be-aa6813a5c3eb",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "to making the process as "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "easy"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "68195856-7ef5-4f88-a908-f1d7b6e98055",
+                      "data": [
+                        {
+                          "_id": "6422e8a7aa005084af1911a8",
+                          "alt_text": "About us",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "46d66147-d1f2-4341-b919-c46753e80e59",
+                      "data": [
+                        {
+                          "id": "313c4d1b-1714-4f0f-b643-d7d2eacd4d87",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "and stress-free"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " as possible. We believe that our platform can make a real difference in the lives of job seekers and employers, and we are proud to be a part of this exciting and rewarding industry."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "68195856-7ef5-4f88-a908-f1d7b6e98055",
+                      "data": [
+                        {
+                          "_id": "",
+                          "alt_text": "",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "46d66147-d1f2-4341-b919-c46753e80e59",
+                      "data": [
+                        {
+                          "id": "3c35eb52-2e61-4e7f-b884-d2cdf3b258be",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "hardBreak"
+                                },
+                                {
+                                  "type": "hardBreak"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "Whether you are just starting out in the hospitality industry or are a seasoned professional looking for your next "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "big opportunity"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "68195856-7ef5-4f88-a908-f1d7b6e98055",
+                      "data": [
+                        {
+                          "_id": "6422e8a7aa005084af1911a7",
+                          "alt_text": "About us",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "46d66147-d1f2-4341-b919-c46753e80e59",
+                      "data": [
+                        {
+                          "id": "7fa18509-0ecc-48c4-9a64-a7e980b04489",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Hospitale is here to help. With our "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "cutting-edge technology and personalized approach, we can connect you with the right opportunities and help you take your career to the next level"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": ". Thank you for choosing Hospitale"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "68195856-7ef5-4f88-a908-f1d7b6e98055",
+                      "data": [
+                        {
+                          "_id": "6422e8a7aa005084af1911a6",
+                          "alt_text": "About us",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "46d66147-d1f2-4341-b919-c46753e80e59",
+                      "data": [
+                        {
+                          "id": "8a694124-72f9-42cf-b162-9a3f1024fb81",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "as your partner in your journey towards success in the hospitality industry."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "68195856-7ef5-4f88-a908-f1d7b6e98055",
+                      "data": [
+                        {
+                          "_id": "",
+                          "alt_text": "",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "f7840df3-a5fd-4758-ae93-8595fb2e810a",
+            "data": {
+              "_id": "6422e57eaa005084af19119c",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "1bc7fa39-8008-4023-82d4-dc43912fe094",
+                      "data": [
+                        "Meet our team"
+                      ]
+                    },
+                    {
+                      "id": "60342175-ac59-4c05-a4bb-0df4a32cac71",
+                      "data": [
+                        {
+                          "id": "2817513d-64b1-4dfb-b293-2518ca14561f",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "At Hospitale, we have a dedicated team of professionals who are passionate about the hospitality industry and committed to helping job seekers and employers connect. Here are some of the key members of our team."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "6422f6c1aa005084af1911ae": {
+    "_id": "6422f6c1aa005084af1911ae",
+    "createdAt": 1680012993376,
+    "updatedAt": 1680012993376,
+    "cid": "10",
+    "templateId": "6422e5a1aa005084af19119d",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "fb535a20-d115-4f15-9434-6a3f8fab683e",
+            "data": [
+              "John Smith"
+            ]
+          },
+          {
+            "id": "5744d117-2801-4708-9652-060064d3cd83",
+            "data": [
+              "john-smith"
+            ]
+          },
+          {
+            "id": "0ac0d456-4348-4b82-b22b-f5fdb78ad355",
+            "data": [
+              {
+                "_id": "6422e84caa005084af1911a5",
+                "alt_text": "John Smith",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "22bc8003-52d2-4f4b-9a14-b55c854772df",
+            "data": [
+              "Founder & CEO"
+            ]
+          },
+          {
+            "id": "06507980-652e-4ff2-8ec0-1fcbef864026",
+            "data": [
+              {
+                "id": "5ef9facc-8a26-4962-9ad9-b3a81ffa7eaa",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "John has over 15 years of experience in the hospitality industry, and he founded Hospitale to address the need for a job board specifically for this field. He oversees the company's strategy, operations, and growth, and is committed to providing the best possible service to our users."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "6422f6cdaa005084af1911af": {
+    "_id": "6422f6cdaa005084af1911af",
+    "createdAt": 1680013005808,
+    "updatedAt": 1680013005808,
+    "cid": "11",
+    "templateId": "6422e5a1aa005084af19119d",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "fb535a20-d115-4f15-9434-6a3f8fab683e",
+            "data": [
+              "Sarah Johnson"
+            ]
+          },
+          {
+            "id": "5744d117-2801-4708-9652-060064d3cd83",
+            "data": [
+              "sarah-johnson"
+            ]
+          },
+          {
+            "id": "0ac0d456-4348-4b82-b22b-f5fdb78ad355",
+            "data": [
+              {
+                "_id": "6422e84caa005084af1911a2",
+                "alt_text": "Sarah Johnson",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "22bc8003-52d2-4f4b-9a14-b55c854772df",
+            "data": [
+              "Marketing Director"
+            ]
+          },
+          {
+            "id": "06507980-652e-4ff2-8ec0-1fcbef864026",
+            "data": [
+              {
+                "id": "8743842c-b8d4-49b1-a6a9-653086421674",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Sarah has a background in digital marketing and content strategy, and she is responsible for promoting Hospitale and building our brand. She develops and executes marketing campaigns, creates content, and manages our social media presence."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "6422f6dcaa005084af1911b0": {
+    "_id": "6422f6dcaa005084af1911b0",
+    "createdAt": 1680013020558,
+    "updatedAt": 1680013020558,
+    "cid": "12",
+    "templateId": "6422e5a1aa005084af19119d",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "fb535a20-d115-4f15-9434-6a3f8fab683e",
+            "data": [
+              "Mark Brown"
+            ]
+          },
+          {
+            "id": "5744d117-2801-4708-9652-060064d3cd83",
+            "data": [
+              "mark-brown"
+            ]
+          },
+          {
+            "id": "0ac0d456-4348-4b82-b22b-f5fdb78ad355",
+            "data": [
+              {
+                "_id": "6422e84caa005084af1911a3",
+                "alt_text": "Mark Brown",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "22bc8003-52d2-4f4b-9a14-b55c854772df",
+            "data": [
+              "Technology Director"
+            ]
+          },
+          {
+            "id": "06507980-652e-4ff2-8ec0-1fcbef864026",
+            "data": [
+              {
+                "id": "b6f5081c-b6ee-4511-a561-6ed2945adbc0",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Mark is an experienced software developer with a deep knowledge of web technologies. He is responsible for managing the technical infrastructure of Hospitale and ensuring that our platform runs smoothly and efficiently."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "6422f6e8aa005084af1911b1": {
+    "_id": "6422f6e8aa005084af1911b1",
+    "createdAt": 1680013032742,
+    "updatedAt": 1680013032742,
+    "cid": "13",
+    "templateId": "6422e5a1aa005084af19119d",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "fb535a20-d115-4f15-9434-6a3f8fab683e",
+            "data": [
+              "Anna Garcia"
+            ]
+          },
+          {
+            "id": "5744d117-2801-4708-9652-060064d3cd83",
+            "data": [
+              "anna-garcia"
+            ]
+          },
+          {
+            "id": "0ac0d456-4348-4b82-b22b-f5fdb78ad355",
+            "data": [
+              {
+                "_id": "6422e84caa005084af1911a4",
+                "alt_text": "Anna Garcia",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "22bc8003-52d2-4f4b-9a14-b55c854772df",
+            "data": [
+              "Customer Support Manager"
+            ]
+          },
+          {
+            "id": "06507980-652e-4ff2-8ec0-1fcbef864026",
+            "data": [
+              {
+                "id": "f46627c1-fef5-4520-858e-22f8aca29116",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Anna is the point person for all customer support inquiries and issues. She is responsible for ensuring that all customer support requests are addressed in a timely and professional manner, and that all users have a positive experience with our platform."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "6422f6f2aa005084af1911b2": {
+    "_id": "6422f6f2aa005084af1911b2",
+    "createdAt": 1680013042878,
+    "updatedAt": 1680013042878,
+    "cid": "14",
+    "templateId": "6422e5a1aa005084af19119d",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "fb535a20-d115-4f15-9434-6a3f8fab683e",
+            "data": [
+              "Emily Lee"
+            ]
+          },
+          {
+            "id": "5744d117-2801-4708-9652-060064d3cd83",
+            "data": [
+              "emily-lee"
+            ]
+          },
+          {
+            "id": "0ac0d456-4348-4b82-b22b-f5fdb78ad355",
+            "data": [
+              {
+                "_id": "6422e84caa005084af1911a0",
+                "alt_text": "Emily Lee",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "22bc8003-52d2-4f4b-9a14-b55c854772df",
+            "data": [
+              "Job Board Specialist"
+            ]
+          },
+          {
+            "id": "06507980-652e-4ff2-8ec0-1fcbef864026",
+            "data": [
+              {
+                "id": "919f561d-7e7b-4055-aa1d-549a4b82ab2c",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Emily is a hospitality industry veteran with experience in job placement and talent acquisition. She is responsible for managing job postings and ensuring that all positions are filled with the right talent."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "6422f6feaa005084af1911b3": {
+    "_id": "6422f6feaa005084af1911b3",
+    "createdAt": 1680013054589,
+    "updatedAt": 1680013054589,
+    "cid": "15",
+    "templateId": "6422e5a1aa005084af19119d",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "fb535a20-d115-4f15-9434-6a3f8fab683e",
+            "data": [
+              "Alex Rodriguez"
+            ]
+          },
+          {
+            "id": "5744d117-2801-4708-9652-060064d3cd83",
+            "data": [
+              "alex-rodriguez"
+            ]
+          },
+          {
+            "id": "0ac0d456-4348-4b82-b22b-f5fdb78ad355",
+            "data": [
+              {
+                "_id": "6422e84caa005084af1911a1",
+                "alt_text": "Alex Rodriguez",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "22bc8003-52d2-4f4b-9a14-b55c854772df",
+            "data": [
+              "Business Development Manager"
+            ]
+          },
+          {
+            "id": "06507980-652e-4ff2-8ec0-1fcbef864026",
+            "data": [
+              {
+                "id": "eacf8439-c72d-408a-a8d6-13d32f1fdd05",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Alex is responsible for identifying and pursuing new business opportunities for Hospitale. He works with employers to understand their staffing needs and to develop partnerships that will benefit both employers and job seekers."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "6422fa12aa005084af1911b5": {
+    "_id": "6422fa12aa005084af1911b5",
+    "createdAt": 1680013842798,
+    "updatedAt": 1680013847339,
+    "cid": "16",
+    "templateId": "6422f956aa005084af1911b4",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "248daa44-764e-4f0d-9575-068b14fd3661",
+            "data": [
+              "Privacy Policy"
+            ]
+          },
+          {
+            "id": "a220bf03-b9bf-4fa3-ad9f-0d36f44739c8",
+            "data": [
+              "privacy-policy"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This privacy policy applies to the website [Hospitale], operated by [company name]. At Hospitale, we are committed to protecting your privacy and ensuring that your personal information is safe and secure. This policy outlines the types of information we collect, how we use and protect that information, and your rights and choices with respect to your personal information."
+              }
+            ]
+          }
+        ],
+        "plainText": "this privacy policy applies to the website [hospitale], operated by [company name]. at hospitale, we are committed to protecting your privacy and ensuring that your personal information is safe and secure. this policy outlines the types of information we collect, how we use and protect that information, and your rights and choices with respect to your personal information.\n\n"
+      }
+    ]
+  },
+  "6422fa1faa005084af1911b6": {
+    "_id": "6422fa1faa005084af1911b6",
+    "createdAt": 1680013855996,
+    "updatedAt": 1680013855996,
+    "cid": "17",
+    "templateId": "6422f956aa005084af1911b4",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "248daa44-764e-4f0d-9575-068b14fd3661",
+            "data": [
+              "Information we collect"
+            ]
+          },
+          {
+            "id": "a220bf03-b9bf-4fa3-ad9f-0d36f44739c8",
+            "data": [
+              "information-we-collect"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "When you use Hospitale, we may collect certain personal information that you provide to us, such as your name, email address, phone number, and other contact information. We may also collect information about your education, employment history, skills, and experience, as well as any other information you choose to provide in your profile or job applications."
+              }
+            ]
+          }
+        ],
+        "plainText": "when you use hospitale, we may collect certain personal information that you provide to us, such as your name, email address, phone number, and other contact information. we may also collect information about your education, employment history, skills, and experience, as well as any other information you choose to provide in your profile or job applications.\n\n"
+      }
+    ]
+  },
+  "6422fa2faa005084af1911b7": {
+    "_id": "6422fa2faa005084af1911b7",
+    "createdAt": 1680013871182,
+    "updatedAt": 1680013874463,
+    "cid": "18",
+    "templateId": "6422f956aa005084af1911b4",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "248daa44-764e-4f0d-9575-068b14fd3661",
+            "data": [
+              "How we use your information"
+            ]
+          },
+          {
+            "id": "a220bf03-b9bf-4fa3-ad9f-0d36f44739c8",
+            "data": [
+              "how-we-use-your-information"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We use the information we collect to provide our services, including matching job seekers with potential employers and facilitating the application process. We may also use your information to communicate with you, provide customer support, and improve our services."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "We may share your information with third-party service providers who assist us in providing our services, such as email and hosting providers. We may also share your information with employers who have job openings that match your skills and experience. However, we will never share your information with third parties for marketing purposes without your consent."
+              }
+            ]
+          }
+        ],
+        "plainText": "we use the information we collect to provide our services, including matching job seekers with potential employers and facilitating the application process. we may also use your information to communicate with you, provide customer support, and improve our services.\n\nwe may share your information with third-party service providers who assist us in providing our services, such as email and hosting providers. we may also share your information with employers who have job openings that match your skills and experience. however, we will never share your information with third parties for marketing purposes without your consent.\n\n"
+      }
+    ]
+  },
+  "6422fa3eaa005084af1911b8": {
+    "_id": "6422fa3eaa005084af1911b8",
+    "createdAt": 1680013886198,
+    "updatedAt": 1680013886198,
+    "cid": "19",
+    "templateId": "6422f956aa005084af1911b4",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "248daa44-764e-4f0d-9575-068b14fd3661",
+            "data": [
+              "How we protect your information"
+            ]
+          },
+          {
+            "id": "a220bf03-b9bf-4fa3-ad9f-0d36f44739c8",
+            "data": [
+              "how-we-protect-your-information"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We take reasonable and appropriate measures to protect your personal information from unauthorized access, disclosure, and misuse. We use industry-standard security technologies and procedures to safeguard your information, and we regularly review and update our security practices to ensure that your information is safe and secure."
+              }
+            ]
+          }
+        ],
+        "plainText": "we take reasonable and appropriate measures to protect your personal information from unauthorized access, disclosure, and misuse. we use industry-standard security technologies and procedures to safeguard your information, and we regularly review and update our security practices to ensure that your information is safe and secure.\n\n"
+      }
+    ]
+  },
+  "6422fa49aa005084af1911b9": {
+    "_id": "6422fa49aa005084af1911b9",
+    "createdAt": 1680013897672,
+    "updatedAt": 1680013897672,
+    "cid": "1a",
+    "templateId": "6422f956aa005084af1911b4",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "248daa44-764e-4f0d-9575-068b14fd3661",
+            "data": [
+              "Your rights and choices"
+            ]
+          },
+          {
+            "id": "a220bf03-b9bf-4fa3-ad9f-0d36f44739c8",
+            "data": [
+              "your-rights-and-choices"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "You have the right to access, update, and delete the personal information we hold about you. You may also object to the processing of your personal information or request that we restrict the use of your information. To exercise your rights or make a request, please contact us using the contact information below."
+              }
+            ]
+          }
+        ],
+        "plainText": "you have the right to access, update, and delete the personal information we hold about you. you may also object to the processing of your personal information or request that we restrict the use of your information. to exercise your rights or make a request, please contact us using the contact information below.\n\n"
+      }
+    ]
+  },
+  "6422fa54aa005084af1911ba": {
+    "_id": "6422fa54aa005084af1911ba",
+    "createdAt": 1680013908333,
+    "updatedAt": 1680013908333,
+    "cid": "1b",
+    "templateId": "6422f956aa005084af1911b4",
+    "userId": "111111111111111111111111",
+    "status": "641d60552a29ceb11f9ce261",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "248daa44-764e-4f0d-9575-068b14fd3661",
+            "data": [
+              "Contact Us"
+            ]
+          },
+          {
+            "id": "a220bf03-b9bf-4fa3-ad9f-0d36f44739c8",
+            "data": [
+              "contact-us"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "If you have any questions or concerns about this privacy policy or our use of your personal information, please contact us at [contact email]. We will respond to your request as soon as possible."
+              }
+            ]
+          }
+        ],
+        "plainText": "if you have any questions or concerns about this privacy policy or our use of your personal information, please contact us at [contact email]. we will respond to your request as soon as possible.\n\n"
+      }
+    ]
+  }
+}

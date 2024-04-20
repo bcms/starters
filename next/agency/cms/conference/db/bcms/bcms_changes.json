@@ -1,0 +1,65 @@
+{
+  "64425272680cc89b3a427eae": {
+    "_id": "64425272680cc89b3a427eae",
+    "createdAt": 1682068082951,
+    "updatedAt": 1682068082951,
+    "name": "color",
+    "count": 0
+  },
+  "64425272680cc89b3a427eaf": {
+    "_id": "64425272680cc89b3a427eaf",
+    "createdAt": 1682068082951,
+    "updatedAt": 1694072821938,
+    "name": "entry",
+    "count": 37
+  },
+  "64425272680cc89b3a427eb0": {
+    "_id": "64425272680cc89b3a427eb0",
+    "createdAt": 1682068082951,
+    "updatedAt": 1694072602245,
+    "name": "group",
+    "count": 63
+  },
+  "64425272680cc89b3a427eb1": {
+    "_id": "64425272680cc89b3a427eb1",
+    "createdAt": 1682068082951,
+    "updatedAt": 1682068082951,
+    "name": "language",
+    "count": 0
+  },
+  "64425272680cc89b3a427eb2": {
+    "_id": "64425272680cc89b3a427eb2",
+    "createdAt": 1682068082951,
+    "updatedAt": 1682415243580,
+    "name": "media",
+    "count": 19
+  },
+  "64425272680cc89b3a427eb3": {
+    "_id": "64425272680cc89b3a427eb3",
+    "createdAt": 1682068082951,
+    "updatedAt": 1682068082951,
+    "name": "status",
+    "count": 0
+  },
+  "64425272680cc89b3a427eb4": {
+    "_id": "64425272680cc89b3a427eb4",
+    "createdAt": 1682068082951,
+    "updatedAt": 1682068082951,
+    "name": "tag",
+    "count": 0
+  },
+  "64425272680cc89b3a427eb5": {
+    "_id": "64425272680cc89b3a427eb5",
+    "createdAt": 1682068082951,
+    "updatedAt": 1694072705424,
+    "name": "templates",
+    "count": 23
+  },
+  "64425272680cc89b3a427eb6": {
+    "_id": "64425272680cc89b3a427eb6",
+    "createdAt": 1682068082951,
+    "updatedAt": 1682068082951,
+    "name": "widget",
+    "count": 0
+  }
+}

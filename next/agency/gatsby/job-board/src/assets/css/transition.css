@@ -1,0 +1,36 @@
+.button-wrapper {
+  position: relative;
+}
+
+.arrow-wrapper {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+  transition: opacity 0.2s ease, width 0.2s ease;
+}
+
+.arrow-wrapper.show {
+  opacity: 1;
+  width: 14px; /* or your default width value */
+}
+
+/* Select.css */
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+

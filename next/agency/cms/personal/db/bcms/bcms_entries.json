@@ -1,0 +1,2647 @@
+{
+  "6426e4ef109812372e9c958b": {
+    "_id": "6426e4ef109812372e9c958b",
+    "createdAt": 1680270575101,
+    "updatedAt": 1680786106737,
+    "cid": "1",
+    "templateId": "6426e3fa109812372e9c9588",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "62f48c00-23ab-4f20-b3d8-cdbda6c72145",
+            "data": [
+              "Header"
+            ]
+          },
+          {
+            "id": "5cf4e8b7-8d47-47b7-9e98-b307f34799dd",
+            "data": [
+              "header"
+            ]
+          },
+          {
+            "id": "943c445a-c5a4-4d98-b940-143241aa8fe1",
+            "data": [
+              {
+                "_id": "6426e4af109812372e9c9589",
+                "alt_text": "Logo",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "a88194c4-4090-46c6-9f20-59f6de33c233",
+            "data": [
+              {
+                "id": "9754b527-898d-4ade-a107-b16fb0bda8fe",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Home"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ab07b67a-54af-49c2-b795-9d0159ece297",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/services",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Services"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ec910529-0d41-4d6d-a18e-d73f8582bece",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/about",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "About"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ccd2d0fc-c820-4dbc-9d31-8a4848861d8c",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/portfolio",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Portfolio"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "33d8bb1c-d7af-4eb4-9498-de15e171f21f",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/testimonials",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Testimonials"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "56ba2cd6-b76f-44c9-bf07-86fa15fd7059",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/contact",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Contact"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642a893b3effc7142eea9d95": {
+    "_id": "642a893b3effc7142eea9d95",
+    "createdAt": 1680509243593,
+    "updatedAt": 1680786331229,
+    "cid": "2",
+    "templateId": "6426f0fc109812372e9c958c",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "498d35c6-9db6-4dca-a63b-f20782c03db3",
+            "data": [
+              "Let’s create something beautiful together"
+            ]
+          },
+          {
+            "id": "2fa1517b-20a2-4b21-ab0f-f6c54a50fb27",
+            "data": [
+              "footer"
+            ]
+          },
+          {
+            "id": "fddd7b74-dbf4-402c-a39e-00e7159f12c9",
+            "data": [
+              {
+                "id": "b6e73d4b-bdfa-4a4f-a248-7405d5a27c3a",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "tel:+173481238162",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "(+1) 734 8123 8162"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ae932f89-ea02-449f-9257-1f3b84d55941",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "mailto:qwerty@mail.com",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "qwerty@mail.com"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "4434d002-3c28-475b-8335-07ea55a5881f",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/legal",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "Legal page"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "4482103d-9ff3-4675-b1a9-cabe75ace267",
+            "data": {
+              "_id": "642a880c3effc7142eea9d90",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "5ded76dd-d715-4e5a-94db-3b68a2c3a695",
+                      "data": [
+                        "Dribbble"
+                      ]
+                    },
+                    {
+                      "id": "800c816b-0519-4d87-9ee2-759092018fc6",
+                      "data": [
+                        "https://dribbble.com/"
+                      ]
+                    },
+                    {
+                      "id": "08aa07d4-13b8-40e8-b148-709a3b985724",
+                      "data": [
+                        {
+                          "_id": "642a88ee3effc7142eea9d92",
+                          "alt_text": "Dribbble",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "5ded76dd-d715-4e5a-94db-3b68a2c3a695",
+                      "data": [
+                        "Linkedin"
+                      ]
+                    },
+                    {
+                      "id": "800c816b-0519-4d87-9ee2-759092018fc6",
+                      "data": [
+                        "https://www.linkedin.com/"
+                      ]
+                    },
+                    {
+                      "id": "08aa07d4-13b8-40e8-b148-709a3b985724",
+                      "data": [
+                        {
+                          "_id": "642a88ee3effc7142eea9d94",
+                          "alt_text": "Linkedin",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "5ded76dd-d715-4e5a-94db-3b68a2c3a695",
+                      "data": [
+                        "Twitter"
+                      ]
+                    },
+                    {
+                      "id": "800c816b-0519-4d87-9ee2-759092018fc6",
+                      "data": [
+                        "https://twitter.com/"
+                      ]
+                    },
+                    {
+                      "id": "08aa07d4-13b8-40e8-b148-709a3b985724",
+                      "data": [
+                        {
+                          "_id": "642a88ee3effc7142eea9d93",
+                          "alt_text": "Twitter",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "5ded76dd-d715-4e5a-94db-3b68a2c3a695",
+                      "data": [
+                        "Contact me"
+                      ]
+                    },
+                    {
+                      "id": "800c816b-0519-4d87-9ee2-759092018fc6",
+                      "data": [
+                        "/contact"
+                      ]
+                    },
+                    {
+                      "id": "08aa07d4-13b8-40e8-b148-709a3b985724",
+                      "data": [
+                        {
+                          "_id": "",
+                          "alt_text": "",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642aa3b23effc7142eea9d97": {
+    "_id": "642aa3b23effc7142eea9d97",
+    "createdAt": 1680516018227,
+    "updatedAt": 1694011846130,
+    "cid": "3",
+    "templateId": "642aa3ae3effc7142eea9d96",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "52fa287b-2786-47fe-96b3-609a087e7c60",
+            "data": [
+              "Home"
+            ]
+          },
+          {
+            "id": "3b30f3d0-3b0c-4754-b18a-75f223b6c93c",
+            "data": [
+              "home"
+            ]
+          },
+          {
+            "id": "f2f2a81d-a058-4415-9141-6442bc8fbe8c",
+            "data": {
+              "_id": "64f89039f2d55bcdf1ca35ae",
+              "items": []
+            }
+          },
+          {
+            "id": "47e5009f-cce5-415d-ae8e-c8fada5a6e7f",
+            "data": {
+              "_id": "642aaafb3effc7142eea9d98",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "aa233c1a-cea8-4708-a3b3-0c3730aec6a0",
+                      "data": [
+                        "Hi, I’m Raloca, a Product Designer\nwith 5 years of experience"
+                      ]
+                    },
+                    {
+                      "id": "470c35ed-da21-475d-a49e-557cc1e24505",
+                      "data": [
+                        {
+                          "id": "a5790b51-bee4-46fd-bb37-1118e299d506",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol ore magna aliqua polator kivtalisto calipso."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "636e238d-b338-4165-8c76-ee73e9d56425",
+                      "data": {
+                        "_id": "642a880c3effc7142eea9d90",
+                        "items": [
+                          {
+                            "props": [
+                              {
+                                "id": "5ded76dd-d715-4e5a-94db-3b68a2c3a695",
+                                "data": [
+                                  "Dribble"
+                                ]
+                              },
+                              {
+                                "id": "800c816b-0519-4d87-9ee2-759092018fc6",
+                                "data": [
+                                  "https://dribbble.com/"
+                                ]
+                              },
+                              {
+                                "id": "08aa07d4-13b8-40e8-b148-709a3b985724",
+                                "data": [
+                                  {
+                                    "_id": "642a88ee3effc7142eea9d92",
+                                    "alt_text": "Dribble",
+                                    "caption": ""
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "props": [
+                              {
+                                "id": "5ded76dd-d715-4e5a-94db-3b68a2c3a695",
+                                "data": [
+                                  "Linkedin"
+                                ]
+                              },
+                              {
+                                "id": "800c816b-0519-4d87-9ee2-759092018fc6",
+                                "data": [
+                                  "https://www.linkedin.com/"
+                                ]
+                              },
+                              {
+                                "id": "08aa07d4-13b8-40e8-b148-709a3b985724",
+                                "data": [
+                                  {
+                                    "_id": "642a88ee3effc7142eea9d94",
+                                    "alt_text": "Linkedin",
+                                    "caption": ""
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "props": [
+                              {
+                                "id": "5ded76dd-d715-4e5a-94db-3b68a2c3a695",
+                                "data": [
+                                  "Twitter"
+                                ]
+                              },
+                              {
+                                "id": "800c816b-0519-4d87-9ee2-759092018fc6",
+                                "data": [
+                                  "https://twitter.com/"
+                                ]
+                              },
+                              {
+                                "id": "08aa07d4-13b8-40e8-b148-709a3b985724",
+                                "data": [
+                                  {
+                                    "_id": "642a88ee3effc7142eea9d93",
+                                    "alt_text": "Twitter",
+                                    "caption": ""
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "id": "dbd337af-a507-444b-b022-ffbb9a43e551",
+                      "data": [
+                        {
+                          "_id": "642aac3c3effc7142eea9d9a",
+                          "alt_text": "Raloca",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642adfd93effc7142eea9d9e": {
+    "_id": "642adfd93effc7142eea9d9e",
+    "createdAt": 1680531417127,
+    "updatedAt": 1680592864359,
+    "cid": "4",
+    "templateId": "642adf8b3effc7142eea9d9d",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "d91838c1-1c7d-457f-8585-e2c1e0f94a46",
+            "data": [
+              "User Interface"
+            ]
+          },
+          {
+            "id": "1bb69a7b-47dd-4396-956d-693553ecfaa6",
+            "data": [
+              "user-interface"
+            ]
+          },
+          {
+            "id": "1b43f18a-d0d4-4fa3-96fb-59e7e9188b87",
+            "data": [
+              "UI"
+            ]
+          },
+          {
+            "id": "12b5b020-1813-4405-9134-9d62fb78f61c",
+            "data": [
+              {
+                "id": "bda0ca6c-90dc-4515-90cb-6381e70afb44",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol ore magna"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "d8a5f72a-a2a0-40a3-a59f-861e21fa0ce6",
+            "data": [
+              600
+            ]
+          },
+          {
+            "id": "0d93fdbc-b8a9-4b30-acab-6442a9776985",
+            "data": [
+              "#FFCD1933"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642adfdc3effc7142eea9d9f": {
+    "_id": "642adfdc3effc7142eea9d9f",
+    "createdAt": 1680531420240,
+    "updatedAt": 1680592872873,
+    "cid": "5",
+    "templateId": "642adf8b3effc7142eea9d9d",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "d91838c1-1c7d-457f-8585-e2c1e0f94a46",
+            "data": [
+              "User Experience"
+            ]
+          },
+          {
+            "id": "1bb69a7b-47dd-4396-956d-693553ecfaa6",
+            "data": [
+              "user-experience"
+            ]
+          },
+          {
+            "id": "1b43f18a-d0d4-4fa3-96fb-59e7e9188b87",
+            "data": [
+              "UX"
+            ]
+          },
+          {
+            "id": "12b5b020-1813-4405-9134-9d62fb78f61c",
+            "data": [
+              {
+                "id": "38363bda-c469-47c6-8ef5-6b706c75ee31",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol ore magna"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "d8a5f72a-a2a0-40a3-a59f-861e21fa0ce6",
+            "data": [
+              600
+            ]
+          },
+          {
+            "id": "0d93fdbc-b8a9-4b30-acab-6442a9776985",
+            "data": [
+              "#EE713C33"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642adfe93effc7142eea9da0": {
+    "_id": "642adfe93effc7142eea9da0",
+    "createdAt": 1680531433859,
+    "updatedAt": 1680592881071,
+    "cid": "6",
+    "templateId": "642adf8b3effc7142eea9d9d",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "d91838c1-1c7d-457f-8585-e2c1e0f94a46",
+            "data": [
+              "Prototype Animation"
+            ]
+          },
+          {
+            "id": "1bb69a7b-47dd-4396-956d-693553ecfaa6",
+            "data": [
+              "prototype-animation"
+            ]
+          },
+          {
+            "id": "1b43f18a-d0d4-4fa3-96fb-59e7e9188b87",
+            "data": [
+              "PA"
+            ]
+          },
+          {
+            "id": "12b5b020-1813-4405-9134-9d62fb78f61c",
+            "data": [
+              {
+                "id": "807a6dd7-9c61-444b-8e70-847dd6220358",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol ore magna"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "d8a5f72a-a2a0-40a3-a59f-861e21fa0ce6",
+            "data": [
+              600
+            ]
+          },
+          {
+            "id": "0d93fdbc-b8a9-4b30-acab-6442a9776985",
+            "data": [
+              "#88C63A33"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642adfff3effc7142eea9da1": {
+    "_id": "642adfff3effc7142eea9da1",
+    "createdAt": 1680531455318,
+    "updatedAt": 1680592890357,
+    "cid": "7",
+    "templateId": "642adf8b3effc7142eea9d9d",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "d91838c1-1c7d-457f-8585-e2c1e0f94a46",
+            "data": [
+              "Logo Branding"
+            ]
+          },
+          {
+            "id": "1bb69a7b-47dd-4396-956d-693553ecfaa6",
+            "data": [
+              "logo-branding"
+            ]
+          },
+          {
+            "id": "1b43f18a-d0d4-4fa3-96fb-59e7e9188b87",
+            "data": [
+              "LB"
+            ]
+          },
+          {
+            "id": "12b5b020-1813-4405-9134-9d62fb78f61c",
+            "data": [
+              {
+                "id": "fbba73cb-6463-4f25-924d-aa10124b9367",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol ore magna"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "d8a5f72a-a2a0-40a3-a59f-861e21fa0ce6",
+            "data": [
+              600
+            ]
+          },
+          {
+            "id": "0d93fdbc-b8a9-4b30-acab-6442a9776985",
+            "data": [
+              "#0048D033"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642ae0093effc7142eea9da2": {
+    "_id": "642ae0093effc7142eea9da2",
+    "createdAt": 1680531465905,
+    "updatedAt": 1680592898606,
+    "cid": "8",
+    "templateId": "642adf8b3effc7142eea9d9d",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "d91838c1-1c7d-457f-8585-e2c1e0f94a46",
+            "data": [
+              "Product Design"
+            ]
+          },
+          {
+            "id": "1bb69a7b-47dd-4396-956d-693553ecfaa6",
+            "data": [
+              "product-design"
+            ]
+          },
+          {
+            "id": "1b43f18a-d0d4-4fa3-96fb-59e7e9188b87",
+            "data": [
+              "PD"
+            ]
+          },
+          {
+            "id": "12b5b020-1813-4405-9134-9d62fb78f61c",
+            "data": [
+              {
+                "id": "c3ffcf25-a6db-4981-9ea9-3ec7a586fb26",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol ore magna"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "d8a5f72a-a2a0-40a3-a59f-861e21fa0ce6",
+            "data": [
+              600
+            ]
+          },
+          {
+            "id": "0d93fdbc-b8a9-4b30-acab-6442a9776985",
+            "data": [
+              "#3B00D033"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642ae0163effc7142eea9da3": {
+    "_id": "642ae0163effc7142eea9da3",
+    "createdAt": 1680531478158,
+    "updatedAt": 1680592905991,
+    "cid": "9",
+    "templateId": "642adf8b3effc7142eea9d9d",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "d91838c1-1c7d-457f-8585-e2c1e0f94a46",
+            "data": [
+              "Front-end Development"
+            ]
+          },
+          {
+            "id": "1bb69a7b-47dd-4396-956d-693553ecfaa6",
+            "data": [
+              "front-end-development"
+            ]
+          },
+          {
+            "id": "1b43f18a-d0d4-4fa3-96fb-59e7e9188b87",
+            "data": [
+              "FD"
+            ]
+          },
+          {
+            "id": "12b5b020-1813-4405-9134-9d62fb78f61c",
+            "data": [
+              {
+                "id": "ac4c1094-9685-4f49-b121-4fe538d7988e",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol ore magna"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "d8a5f72a-a2a0-40a3-a59f-861e21fa0ce6",
+            "data": [
+              600
+            ]
+          },
+          {
+            "id": "0d93fdbc-b8a9-4b30-acab-6442a9776985",
+            "data": [
+              "#F65A5A33"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642bda981599a48b5156b9e7": {
+    "_id": "642bda981599a48b5156b9e7",
+    "createdAt": 1680595608852,
+    "updatedAt": 1680708489230,
+    "cid": "a",
+    "templateId": "642bd7621599a48b5156b9e3",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "00309124-b713-45d2-ae9b-ff34b42f3468",
+            "data": [
+              "Abooout"
+            ]
+          },
+          {
+            "id": "d4b9ad2a-baf8-4ec3-b123-612449abee11",
+            "data": [
+              "abooout"
+            ]
+          },
+          {
+            "id": "a1c74561-7fc8-4ef1-a4a1-4ea7dfeec033",
+            "data": [
+              {
+                "id": "eeca8bac-cf44-43d1-b58a-9cbb4c903b53",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, "
+                      },
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "text": "eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas"
+                      },
+                      {
+                        "type": "text",
+                        "text": " sit aspernatur aut odit aut fugit."
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "text",
+                        "text": "ed quia non "
+                      },
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "text": "numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat volup tatem. Ut enim ad minima veniam, quis"
+                      },
+                      {
+                        "type": "text",
+                        "text": " nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea. consectetur adipiscing elit, sed do eiusmod tempor "
+                      },
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "text": "incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea "
+                      },
+                      {
+                        "type": "text",
+                        "text": "commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "8320359d-1013-441f-a516-fe50a254b257",
+            "data": {
+              "_id": "642bd7831599a48b5156b9e4",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "656fd660-867b-4ae3-828e-b5e923f96cab",
+                      "data": [
+                        "Education"
+                      ]
+                    },
+                    {
+                      "id": "f5405693-d5a2-43b6-a185-d64d90680bbc",
+                      "data": [
+                        {
+                          "id": "9a8361e2-1829-4f63-8ee6-84286555e8e6",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    },
+                                    {
+                                      "type": "underline"
+                                    }
+                                  ],
+                                  "text": "inventore"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    },
+                                    {
+                                      "type": "underline"
+                                    }
+                                  ],
+                                  "text": "voluptatem quia voluptas"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "95f37b90-1568-4bfe-be94-4546a81d05d1",
+                      "data": [
+                        "Bachelor of Art",
+                        "Bachelor of Art",
+                        "Bachelor of Art"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "e656ca91-d254-4e16-aa5c-dfdf67cfc4ec",
+            "data": {
+              "_id": "642bd8591599a48b5156b9e5",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "f1a8f410-2906-4f6a-a18a-2f1ca5096d28",
+                      "data": [
+                        "Work history"
+                      ]
+                    },
+                    {
+                      "id": "8e9596de-68a9-4f62-be72-cbc90968673a",
+                      "data": [
+                        {
+                          "id": "25b84628-4ef9-44d4-af5d-a548e0e6f14e",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    },
+                                    {
+                                      "type": "underline"
+                                    }
+                                  ],
+                                  "text": "inventore"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    },
+                                    {
+                                      "type": "underline"
+                                    }
+                                  ],
+                                  "text": "voluptatem quia voluptas"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "b87747d9-6da0-43c6-ae62-c79f43a080df",
+                      "data": {
+                        "_id": "642bd8821599a48b5156b9e6",
+                        "items": [
+                          {
+                            "props": [
+                              {
+                                "id": "926f5fb6-353f-477b-b23e-2a9bd3b23a8e",
+                                "data": [
+                                  "Google"
+                                ]
+                              },
+                              {
+                                "id": "f636bb18-8b4e-4964-9195-c602813f27e9",
+                                "data": [
+                                  1388534400000
+                                ]
+                              },
+                              {
+                                "id": "2c85093e-66ae-4ae8-88e6-dbf607382f28",
+                                "data": [
+                                  0
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "props": [
+                              {
+                                "id": "926f5fb6-353f-477b-b23e-2a9bd3b23a8e",
+                                "data": [
+                                  "Amazon"
+                                ]
+                              },
+                              {
+                                "id": "f636bb18-8b4e-4964-9195-c602813f27e9",
+                                "data": [
+                                  1514764800000
+                                ]
+                              },
+                              {
+                                "id": "2c85093e-66ae-4ae8-88e6-dbf607382f28",
+                                "data": [
+                                  0
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "props": [
+                              {
+                                "id": "926f5fb6-353f-477b-b23e-2a9bd3b23a8e",
+                                "data": [
+                                  "Microsoft"
+                                ]
+                              },
+                              {
+                                "id": "f636bb18-8b4e-4964-9195-c602813f27e9",
+                                "data": [
+                                  1640995200000
+                                ]
+                              },
+                              {
+                                "id": "2c85093e-66ae-4ae8-88e6-dbf607382f28",
+                                "data": [
+                                  0
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "props": [
+                              {
+                                "id": "926f5fb6-353f-477b-b23e-2a9bd3b23a8e",
+                                "data": [
+                                  "Netflix"
+                                ]
+                              },
+                              {
+                                "id": "f636bb18-8b4e-4964-9195-c602813f27e9",
+                                "data": [
+                                  1672531200000
+                                ]
+                              },
+                              {
+                                "id": "2c85093e-66ae-4ae8-88e6-dbf607382f28",
+                                "data": [
+                                  0
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "41b21b82-67de-41df-9806-ae8cec733a4e",
+            "data": [
+              {
+                "_id": "642be5b41599a48b5156b9eb",
+                "alt_text": "About",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "1d7f2d43-5a00-473a-8fb1-7014a34fffc2",
+            "data": {
+              "_id": "642be1e51599a48b5156b9e8",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "7709a4de-6799-4802-b981-e254cc098b77",
+                      "data": [
+                        {
+                          "id": "24a9ba58-4843-4c98-a578-fecd38b796c7",
+                          "nodes": [
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 2
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Some awards that"
+                                },
+                                {
+                                  "type": "hardBreak"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "I’ve won recently"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "31bc69a4-6b14-44a0-968f-6e027355188d",
+                      "data": {
+                        "_id": "642be1f61599a48b5156b9e9",
+                        "items": [
+                          {
+                            "props": [
+                              {
+                                "id": "4b8398e6-c204-4f42-8959-c53c3dea4f06",
+                                "data": [
+                                  "1st"
+                                ]
+                              },
+                              {
+                                "id": "47281ef3-fd3a-46bb-8fcf-a12eb86935bc",
+                                "data": [
+                                  "Lorem awards"
+                                ]
+                              },
+                              {
+                                "id": "f1943049-6b9d-4e34-a43b-454d948887bf",
+                                "data": [
+                                  1649030400000
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "props": [
+                              {
+                                "id": "4b8398e6-c204-4f42-8959-c53c3dea4f06",
+                                "data": [
+                                  "1st"
+                                ]
+                              },
+                              {
+                                "id": "47281ef3-fd3a-46bb-8fcf-a12eb86935bc",
+                                "data": [
+                                  "Lorem awards"
+                                ]
+                              },
+                              {
+                                "id": "f1943049-6b9d-4e34-a43b-454d948887bf",
+                                "data": [
+                                  1649030400000
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "props": [
+                              {
+                                "id": "4b8398e6-c204-4f42-8959-c53c3dea4f06",
+                                "data": [
+                                  "1st"
+                                ]
+                              },
+                              {
+                                "id": "47281ef3-fd3a-46bb-8fcf-a12eb86935bc",
+                                "data": [
+                                  "Lorem awards"
+                                ]
+                              },
+                              {
+                                "id": "f1943049-6b9d-4e34-a43b-454d948887bf",
+                                "data": [
+                                  1649030400000
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642bf4511599a48b5156b9ef": {
+    "_id": "642bf4511599a48b5156b9ef",
+    "createdAt": 1680602193969,
+    "updatedAt": 1680602589910,
+    "cid": "b",
+    "templateId": "642bf4351599a48b5156b9ee",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "4827df6b-8061-4f26-89ab-f2cafbe94d77",
+            "data": [
+              "Portfolio"
+            ]
+          },
+          {
+            "id": "7aa9cd63-0db5-442c-94cf-fd4f133f247d",
+            "data": [
+              "portfolio"
+            ]
+          },
+          {
+            "id": "0861af4a-9b2c-4bef-8e5d-55f54e3ba86d",
+            "data": [
+              {
+                "id": "22834820-c1d6-40df-bede-735c93cdbb40",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, "
+                      },
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "text": "eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae"
+                      },
+                      {
+                        "type": "text",
+                        "text": " vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642bf62e1599a48b5156b9f3": {
+    "_id": "642bf62e1599a48b5156b9f3",
+    "createdAt": 1680602670688,
+    "updatedAt": 1680790383799,
+    "cid": "c",
+    "templateId": "642bf54b1599a48b5156b9f2",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "b06821e7-9cc3-4ac4-b1c2-ce260290bbee",
+            "data": [
+              "Recipe website"
+            ]
+          },
+          {
+            "id": "454e7885-3d63-4c82-b200-129767e772d9",
+            "data": [
+              "recipe-website"
+            ]
+          },
+          {
+            "id": "2a421563-73bd-4476-920e-2631c796f475",
+            "data": [
+              "1"
+            ]
+          },
+          {
+            "id": "b73834b5-868f-4318-b810-9a6f17d91c9a",
+            "data": [
+              "Flavour Fushion"
+            ]
+          },
+          {
+            "id": "80f91064-9874-4764-8a4f-cc9f46cebbe7",
+            "data": [
+              "UI Designer"
+            ]
+          },
+          {
+            "id": "122ca502-1b99-447e-be47-ed6efe49faec",
+            "data": [
+              0
+            ]
+          },
+          {
+            "id": "1b6f935a-a548-418f-a4c2-4602d393adf6",
+            "data": [
+              "https://www.google.com"
+            ]
+          },
+          {
+            "id": "65488b5c-c244-4d8f-a385-ab734f52cde9",
+            "data": [
+              {
+                "id": "ef4585fb-4811-448b-bb36-631a2d244e7b",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "9c7a694f-06b7-4972-894b-24893e8e3242",
+            "data": [
+              {
+                "_id": "642bf7e01599a48b5156b9f5",
+                "alt_text": "Flavour Fushion",
+                "caption": ""
+              },
+              {
+                "_id": "642bf7e01599a48b5156b9f5",
+                "alt_text": "Flavour Fushion",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "61debc0b-0b62-416a-a3d6-0ecea052fe06",
+            "data": [
+              "#FFCD19"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642bf9cc1599a48b5156b9fb": {
+    "_id": "642bf9cc1599a48b5156b9fb",
+    "createdAt": 1680603596351,
+    "updatedAt": 1680790406682,
+    "cid": "d",
+    "templateId": "642bf54b1599a48b5156b9f2",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "b06821e7-9cc3-4ac4-b1c2-ce260290bbee",
+            "data": [
+              "Find job website"
+            ]
+          },
+          {
+            "id": "454e7885-3d63-4c82-b200-129767e772d9",
+            "data": [
+              "find-job-website"
+            ]
+          },
+          {
+            "id": "2a421563-73bd-4476-920e-2631c796f475",
+            "data": [
+              "2"
+            ]
+          },
+          {
+            "id": "b73834b5-868f-4318-b810-9a6f17d91c9a",
+            "data": [
+              "Hospitale"
+            ]
+          },
+          {
+            "id": "80f91064-9874-4764-8a4f-cc9f46cebbe7",
+            "data": [
+              "UI Designer"
+            ]
+          },
+          {
+            "id": "122ca502-1b99-447e-be47-ed6efe49faec",
+            "data": [
+              0
+            ]
+          },
+          {
+            "id": "1b6f935a-a548-418f-a4c2-4602d393adf6",
+            "data": [
+              "https://www.google.com"
+            ]
+          },
+          {
+            "id": "65488b5c-c244-4d8f-a385-ab734f52cde9",
+            "data": [
+              {
+                "id": "9d5dfb8a-1096-4665-a6a1-8f07bab9264b",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "9c7a694f-06b7-4972-894b-24893e8e3242",
+            "data": [
+              {
+                "_id": "642bf91e1599a48b5156b9f9",
+                "alt_text": "Hospitale",
+                "caption": ""
+              },
+              {
+                "_id": "642bf91e1599a48b5156b9f9",
+                "alt_text": "Hospitale",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "61debc0b-0b62-416a-a3d6-0ecea052fe06",
+            "data": [
+              "#EE713C"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642bf9fd1599a48b5156b9fc": {
+    "_id": "642bf9fd1599a48b5156b9fc",
+    "createdAt": 1680603645619,
+    "updatedAt": 1680790423241,
+    "cid": "e",
+    "templateId": "642bf54b1599a48b5156b9f2",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "b06821e7-9cc3-4ac4-b1c2-ce260290bbee",
+            "data": [
+              "Restaurant website"
+            ]
+          },
+          {
+            "id": "454e7885-3d63-4c82-b200-129767e772d9",
+            "data": [
+              "restaurant-website"
+            ]
+          },
+          {
+            "id": "2a421563-73bd-4476-920e-2631c796f475",
+            "data": [
+              "3"
+            ]
+          },
+          {
+            "id": "b73834b5-868f-4318-b810-9a6f17d91c9a",
+            "data": [
+              "Tastyyy"
+            ]
+          },
+          {
+            "id": "80f91064-9874-4764-8a4f-cc9f46cebbe7",
+            "data": [
+              "UI Designer"
+            ]
+          },
+          {
+            "id": "122ca502-1b99-447e-be47-ed6efe49faec",
+            "data": [
+              0
+            ]
+          },
+          {
+            "id": "1b6f935a-a548-418f-a4c2-4602d393adf6",
+            "data": [
+              "https://www.google.com"
+            ]
+          },
+          {
+            "id": "65488b5c-c244-4d8f-a385-ab734f52cde9",
+            "data": [
+              {
+                "id": "4cf20e55-c8b8-4833-bf7e-d5eb5829c8dc",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "9c7a694f-06b7-4972-894b-24893e8e3242",
+            "data": [
+              {
+                "_id": "642bf91e1599a48b5156b9fa",
+                "alt_text": "Tastyyy",
+                "caption": ""
+              },
+              {
+                "_id": "642bf91e1599a48b5156b9fa",
+                "alt_text": "Tastyyy",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "61debc0b-0b62-416a-a3d6-0ecea052fe06",
+            "data": [
+              "#0048D0"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642bfa191599a48b5156b9fd": {
+    "_id": "642bfa191599a48b5156b9fd",
+    "createdAt": 1680603673169,
+    "updatedAt": 1680790438872,
+    "cid": "f",
+    "templateId": "642bf54b1599a48b5156b9f2",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "b06821e7-9cc3-4ac4-b1c2-ce260290bbee",
+            "data": [
+              "Headless CMS"
+            ]
+          },
+          {
+            "id": "454e7885-3d63-4c82-b200-129767e772d9",
+            "data": [
+              "headless-cms"
+            ]
+          },
+          {
+            "id": "2a421563-73bd-4476-920e-2631c796f475",
+            "data": [
+              "4"
+            ]
+          },
+          {
+            "id": "b73834b5-868f-4318-b810-9a6f17d91c9a",
+            "data": [
+              "BCMS"
+            ]
+          },
+          {
+            "id": "80f91064-9874-4764-8a4f-cc9f46cebbe7",
+            "data": [
+              "UI Designer"
+            ]
+          },
+          {
+            "id": "122ca502-1b99-447e-be47-ed6efe49faec",
+            "data": [
+              0
+            ]
+          },
+          {
+            "id": "1b6f935a-a548-418f-a4c2-4602d393adf6",
+            "data": [
+              "https://thebcms.com/"
+            ]
+          },
+          {
+            "id": "65488b5c-c244-4d8f-a385-ab734f52cde9",
+            "data": [
+              {
+                "id": "16873c35-f307-42d4-8e3e-2e2c87a63af0",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "9c7a694f-06b7-4972-894b-24893e8e3242",
+            "data": [
+              {
+                "_id": "642bf7e11599a48b5156b9f8",
+                "alt_text": "BCMS",
+                "caption": ""
+              },
+              {
+                "_id": "642bf7e11599a48b5156b9f8",
+                "alt_text": "BCMS",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "61debc0b-0b62-416a-a3d6-0ecea052fe06",
+            "data": [
+              "#3B00D0"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642d200294b4bb4f437826ad": {
+    "_id": "642d200294b4bb4f437826ad",
+    "createdAt": 1680678914491,
+    "updatedAt": 1680678914491,
+    "cid": "10",
+    "templateId": "642c2cdd1599a48b5156b9fe",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "6bd0d213-7522-4666-b3ca-02ceb49949fe",
+            "data": [
+              "Testimonials"
+            ]
+          },
+          {
+            "id": "5decf9fa-97d1-4abb-95c8-ed61a57e81b5",
+            "data": [
+              "testimonials"
+            ]
+          },
+          {
+            "id": "55a9547b-b495-46ec-8942-0e761d572967",
+            "data": [
+              {
+                "id": "17bb028a-61a9-4c4a-a136-5f58c4d945e3",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, "
+                      },
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "text": "eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae"
+                      },
+                      {
+                        "type": "text",
+                        "text": " vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642d20dd94b4bb4f437826ae": {
+    "_id": "642d20dd94b4bb4f437826ae",
+    "createdAt": 1680679133737,
+    "updatedAt": 1680681426203,
+    "cid": "11",
+    "templateId": "642c2cee1599a48b5156b9ff",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "f804b5b7-bb07-4656-8472-2deee38cccde",
+            "data": [
+              "Andrew Polit"
+            ]
+          },
+          {
+            "id": "c6d4d6be-577c-4a9a-93c3-31f612c32258",
+            "data": [
+              "andrew-polit"
+            ]
+          },
+          {
+            "id": "e782bd52-505d-4db4-8b0f-ec9b4dbd3bb7",
+            "data": {
+              "_id": "642c2d061599a48b5156ba00",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "442772e1-d8de-4a90-9bd2-164b2a4a7c58",
+                      "data": [
+                        "Andrew Polit"
+                      ]
+                    },
+                    {
+                      "id": "72f06351-10b3-4479-b1a5-2657c3a2ec28",
+                      "data": [
+                        {
+                          "_id": "642d1f7a94b4bb4f437826ac",
+                          "alt_text": "Andrew Polit",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "eea5273d-e9ef-45dc-a742-9c9aac00dfc8",
+            "data": [
+              {
+                "id": "fbed2be4-5aca-4cc6-936e-2a55c18c9f48",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642d222694b4bb4f437826af": {
+    "_id": "642d222694b4bb4f437826af",
+    "createdAt": 1680679462255,
+    "updatedAt": 1700081875546,
+    "cid": "12",
+    "templateId": "642c2cee1599a48b5156b9ff",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "f804b5b7-bb07-4656-8472-2deee38cccde",
+            "data": [
+              "Sutasoma Asmoro"
+            ]
+          },
+          {
+            "id": "c6d4d6be-577c-4a9a-93c3-31f612c32258",
+            "data": [
+              "sutasoma-asmoro"
+            ]
+          },
+          {
+            "id": "e782bd52-505d-4db4-8b0f-ec9b4dbd3bb7",
+            "data": {
+              "_id": "642c2d061599a48b5156ba00",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "442772e1-d8de-4a90-9bd2-164b2a4a7c58",
+                      "data": [
+                        "Sutasoma Asmoro"
+                      ]
+                    },
+                    {
+                      "id": "72f06351-10b3-4479-b1a5-2657c3a2ec28",
+                      "data": [
+                        {
+                          "_id": "642d1f7794b4bb4f437826a4",
+                          "alt_text": "Sutasoma Asmoro",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "eea5273d-e9ef-45dc-a742-9c9aac00dfc8",
+            "data": [
+              {
+                "id": "3c013ee8-bf14-4f45-b5f1-fa46d818ad81",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Quis explicabo voluptas aliquid nihil omnis sit consequuntur. Eos qui est architecto odio beatae quam. Eos aliquam voluptas dolorem. Aut hic explicabo fugit veniam optio dolorem ut. Atque dolore numquam facere sed voluptatem rerum quia quaerat."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642d223594b4bb4f437826b0": {
+    "_id": "642d223594b4bb4f437826b0",
+    "createdAt": 1680679477489,
+    "updatedAt": 1700081860267,
+    "cid": "13",
+    "templateId": "642c2cee1599a48b5156b9ff",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "f804b5b7-bb07-4656-8472-2deee38cccde",
+            "data": [
+              "Asura Jikitama"
+            ]
+          },
+          {
+            "id": "c6d4d6be-577c-4a9a-93c3-31f612c32258",
+            "data": [
+              "asura-jikitama"
+            ]
+          },
+          {
+            "id": "e782bd52-505d-4db4-8b0f-ec9b4dbd3bb7",
+            "data": {
+              "_id": "642c2d061599a48b5156ba00",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "442772e1-d8de-4a90-9bd2-164b2a4a7c58",
+                      "data": [
+                        "Asura Jikitama"
+                      ]
+                    },
+                    {
+                      "id": "72f06351-10b3-4479-b1a5-2657c3a2ec28",
+                      "data": [
+                        {
+                          "_id": "642d1f7794b4bb4f437826a5",
+                          "alt_text": "Asura Jikitama",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "eea5273d-e9ef-45dc-a742-9c9aac00dfc8",
+            "data": [
+              {
+                "id": "4b9a5f46-4c3a-4cab-b8f4-ef5b524ac6fb",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Commodi consequuntur et neque et. Necessitatibus tempora ratione et nobis. Tempore laudantium sequi suscipit illum nihil voluptatem sit. Vel esse sit aut minus sed enim ut fugit. Est et consequatur et qui ab odit. Vitae labore maxime sunt nam itaque."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642d3b3094b4bb4f437826b2": {
+    "_id": "642d3b3094b4bb4f437826b2",
+    "createdAt": 1680685872216,
+    "updatedAt": 1680685872216,
+    "cid": "14",
+    "templateId": "642d3af894b4bb4f437826b1",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "6e0c2be9-b240-4f2a-81d9-a0bb42bdfa65",
+            "data": [
+              "Services"
+            ]
+          },
+          {
+            "id": "2f36cfab-c152-46b5-957b-eaaefeb779ae",
+            "data": [
+              "services"
+            ]
+          },
+          {
+            "id": "5fd9029e-0ba5-4018-a74c-50bfcac0aca6",
+            "data": [
+              {
+                "id": "efe1dec8-0db2-4409-9d31-c1d3b1d0a926",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Sed ut perspiciatis unde omnis iste "
+                      },
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "text": "natus error sit voluptatem accusantium"
+                      },
+                      {
+                        "type": "text",
+                        "text": " doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam "
+                      },
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "text": "voluptatem quia voluptas"
+                      },
+                      {
+                        "type": "text",
+                        "text": " sit aspernatur aut odit aut fugit."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "642ebf3726d420f1dbe66ff7": {
+    "_id": "642ebf3726d420f1dbe66ff7",
+    "createdAt": 1680785207591,
+    "updatedAt": 1680785211198,
+    "cid": "16",
+    "templateId": "642ebee626d420f1dbe66ff5",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "1a8240af-5cbe-4500-8572-619b93b6de2e",
+            "data": [
+              "Privacy and policy"
+            ]
+          },
+          {
+            "id": "c1f94ef4-55fb-4ae1-9e6c-130a7f284a71",
+            "data": [
+              "privacy-and-policy"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This privacy policy applies to the website [Tastyyy], operated by [company name]. At Hospitale, we are committed to protecting your privacy and ensuring that your personal information is safe and secure. This policy outlines the types of information we collect, how we use and protect that information, and your rights and choices with respect to your personal information."
+              }
+            ]
+          }
+        ],
+        "plainText": "this privacy policy applies to the website [tastyyy], operated by [company name]. at hospitale, we are committed to protecting your privacy and ensuring that your personal information is safe and secure. this policy outlines the types of information we collect, how we use and protect that information, and your rights and choices with respect to your personal information.\n\n"
+      }
+    ]
+  },
+  "642ebf4326d420f1dbe66ff8": {
+    "_id": "642ebf4326d420f1dbe66ff8",
+    "createdAt": 1680785219321,
+    "updatedAt": 1680785219321,
+    "cid": "17",
+    "templateId": "642ebee626d420f1dbe66ff5",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "1a8240af-5cbe-4500-8572-619b93b6de2e",
+            "data": [
+              "Information we collect"
+            ]
+          },
+          {
+            "id": "c1f94ef4-55fb-4ae1-9e6c-130a7f284a71",
+            "data": [
+              "information-we-collect"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "When you use Tastyyy, we may collect certain personal information that you provide to us, such as your name, email address, phone number, and other contact information. We may also collect information about your education, employment history, skills, and experience, as well as any other information you choose to provide in your profile or job applications."
+              }
+            ]
+          }
+        ],
+        "plainText": "when you use tastyyy, we may collect certain personal information that you provide to us, such as your name, email address, phone number, and other contact information. we may also collect information about your education, employment history, skills, and experience, as well as any other information you choose to provide in your profile or job applications.\n\n"
+      }
+    ]
+  },
+  "642ebf5526d420f1dbe66ff9": {
+    "_id": "642ebf5526d420f1dbe66ff9",
+    "createdAt": 1680785237084,
+    "updatedAt": 1680785252013,
+    "cid": "18",
+    "templateId": "642ebee626d420f1dbe66ff5",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "1a8240af-5cbe-4500-8572-619b93b6de2e",
+            "data": [
+              "How we use your information"
+            ]
+          },
+          {
+            "id": "c1f94ef4-55fb-4ae1-9e6c-130a7f284a71",
+            "data": [
+              "how-we-use-your-information"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We use the information we collect to provide our services, including matching job seekers with potential employers and facilitating the application process. We may also use your information to communicate with you, provide customer support, and improve our services."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "We may share your information with third-party service providers who assist us in providing our services, such as email and hosting providers. We may also share your information with employers who have job openings that match your skills and experience. However, we will never share your information with third parties for marketing purposes without your consent."
+              }
+            ]
+          }
+        ],
+        "plainText": "we use the information we collect to provide our services, including matching job seekers with potential employers and facilitating the application process. we may also use your information to communicate with you, provide customer support, and improve our services.we may share your information with third-party service providers who assist us in providing our services, such as email and hosting providers. we may also share your information with employers who have job openings that match your skills and experience. however, we will never share your information with third parties for marketing purposes without your consent.\n\n"
+      }
+    ]
+  },
+  "642ebf6b26d420f1dbe66ffa": {
+    "_id": "642ebf6b26d420f1dbe66ffa",
+    "createdAt": 1680785259948,
+    "updatedAt": 1680785259948,
+    "cid": "19",
+    "templateId": "642ebee626d420f1dbe66ff5",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "1a8240af-5cbe-4500-8572-619b93b6de2e",
+            "data": [
+              "How we protect your information"
+            ]
+          },
+          {
+            "id": "c1f94ef4-55fb-4ae1-9e6c-130a7f284a71",
+            "data": [
+              "how-we-protect-your-information"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We take reasonable and appropriate measures to protect your personal information from unauthorized access, disclosure, and misuse. We use industry-standard security technologies and procedures to safeguard your information, and we regularly review and update our security practices to ensure that your information is safe and secure."
+              }
+            ]
+          }
+        ],
+        "plainText": "we take reasonable and appropriate measures to protect your personal information from unauthorized access, disclosure, and misuse. we use industry-standard security technologies and procedures to safeguard your information, and we regularly review and update our security practices to ensure that your information is safe and secure.\n\n"
+      }
+    ]
+  },
+  "642ebf7426d420f1dbe66ffb": {
+    "_id": "642ebf7426d420f1dbe66ffb",
+    "createdAt": 1680785268463,
+    "updatedAt": 1680785268463,
+    "cid": "1a",
+    "templateId": "642ebee626d420f1dbe66ff5",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "1a8240af-5cbe-4500-8572-619b93b6de2e",
+            "data": [
+              "Your rights and choices"
+            ]
+          },
+          {
+            "id": "c1f94ef4-55fb-4ae1-9e6c-130a7f284a71",
+            "data": [
+              "your-rights-and-choices"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "You have the right to access, update, and delete the personal information we hold about you. You may also object to the processing of your personal information or request that we restrict the use of your information. To exercise your rights or make a request, please contact us using the contact information below."
+              }
+            ]
+          }
+        ],
+        "plainText": "you have the right to access, update, and delete the personal information we hold about you. you may also object to the processing of your personal information or request that we restrict the use of your information. to exercise your rights or make a request, please contact us using the contact information below.\n\n"
+      }
+    ]
+  },
+  "642ec37426d420f1dbe66ffd": {
+    "_id": "642ec37426d420f1dbe66ffd",
+    "createdAt": 1680786292823,
+    "updatedAt": 1680786292823,
+    "cid": "1b",
+    "templateId": "642ec35326d420f1dbe66ffc",
+    "userId": "111111111111111111111111",
+    "status": "6426db79153ad5151b287711",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "d58193c3-a9c0-4e8f-b4f4-b2a32ef91153",
+            "data": [
+              "Contact"
+            ]
+          },
+          {
+            "id": "461bde47-3d7e-41db-a273-565e590ea37a",
+            "data": [
+              "contact"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  }
+}

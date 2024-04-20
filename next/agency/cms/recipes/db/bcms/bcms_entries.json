@@ -1,0 +1,4339 @@
+{
+  "6414336f5d4d29a17ac96048": {
+    "_id": "6414336f5d4d29a17ac96048",
+    "createdAt": 1679045487603,
+    "updatedAt": 1679482130978,
+    "cid": "4",
+    "templateId": "6414331f5d4d29a17ac96046",
+    "userId": "111111111111111111111111",
+    "status": "64132297b5a472c14b54596a",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "f29e02ce-886e-40dc-917d-dfde076a1297",
+            "data": [
+              "Header"
+            ]
+          },
+          {
+            "id": "3125c3bc-a57c-4d68-a796-345222ae7d09",
+            "data": [
+              "header"
+            ]
+          },
+          {
+            "id": "9fde78f1-4639-487a-8f36-7921623c210e",
+            "data": [
+              {
+                "_id": "641818eaf7d73b81da796da3",
+                "alt_text": "Logo",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "cc2a5b56-7d6f-4e84-a1c6-9cfbc6841744",
+            "data": [
+              {
+                "id": "484426ff-3534-42bf-b6f9-3cd8c347ee22",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/recipes",
+                              "target": "_blank",
+                              "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                            }
+                          }
+                        ],
+                        "text": "🍱 Popular recipes"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "31ba9a07-25a9-48ec-8a1a-5055cdb0b740",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/",
+                              "target": "_blank"
+                            }
+                          }
+                        ],
+                        "text": "How we work"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "fb008cc9-dd13-4355-b98a-7bdbfa9a7eb9",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/",
+                              "target": "_blank"
+                            }
+                          }
+                        ],
+                        "text": "FAQ"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "64181996f7d73b81da796da4": {
+    "_id": "64181996f7d73b81da796da4",
+    "createdAt": 1679301014597,
+    "updatedAt": 1694089495859,
+    "cid": "5",
+    "templateId": "641817f8f7d73b81da796da2",
+    "userId": "111111111111111111111111",
+    "status": "64132297b5a472c14b54596a",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "e412c792-dba7-4e21-b368-0e220d41fc12",
+            "data": [
+              "Footer"
+            ]
+          },
+          {
+            "id": "8db34b10-99c5-4ebf-aa8a-9dcf19cea913",
+            "data": [
+              "footer"
+            ]
+          },
+          {
+            "id": "ba0d0a98-d5d0-46d2-93bc-49f30d8fb8bd",
+            "data": [
+              {
+                "_id": "641818eaf7d73b81da796da3",
+                "alt_text": "Logo",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "da9139e4-2cd9-40ae-adc6-7a665e637ce1",
+            "data": [
+              {
+                "id": "e661cfcf-23ff-49db-963d-57d2bc7dcd5d",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Lorem ipsum dolor sit amet, consectetur  sed do eiusmod tempor incididunt ut labore."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "c67d0044-4547-485e-b185-cfb113962e23",
+            "data": [
+              {
+                "id": "e4bbf229-31a3-425f-9255-ee176e1370c2",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Content"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "bulletList",
+                    "content": [
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [
+                                  {
+                                    "type": "link",
+                                    "attrs": {
+                                      "href": "/",
+                                      "target": "_blank"
+                                    }
+                                  }
+                                ],
+                                "text": "Recipes"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [
+                                  {
+                                    "type": "link",
+                                    "attrs": {
+                                      "href": "/",
+                                      "target": "_blank"
+                                    }
+                                  }
+                                ],
+                                "text": "About us"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [
+                                  {
+                                    "type": "link",
+                                    "attrs": {
+                                      "href": "/",
+                                      "target": "_blank"
+                                    }
+                                  }
+                                ],
+                                "text": "How we work"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [
+                                  {
+                                    "type": "link",
+                                    "attrs": {
+                                      "href": "/",
+                                      "target": "_blank"
+                                    }
+                                  }
+                                ],
+                                "text": "FAQ"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "afe11f6d-d528-4a3a-bb93-89caceb4bf83",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Legal"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "bulletList",
+                    "content": [
+                      {
+                        "type": "listItem",
+                        "attrs": {
+                          "list": true
+                        },
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [
+                                  {
+                                    "type": "link",
+                                    "attrs": {
+                                      "href": "/",
+                                      "target": "_blank",
+                                      "class": "text-green cursor-pointer relative dark:text-yellow"
+                                    }
+                                  }
+                                ],
+                                "text": "Privacy and policy"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "attrs": {
+                          "list": true
+                        },
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [
+                                  {
+                                    "type": "link",
+                                    "attrs": {
+                                      "href": "/",
+                                      "target": "_blank",
+                                      "class": "text-green cursor-pointer relative dark:text-yellow"
+                                    }
+                                  }
+                                ],
+                                "text": "Terms and agreements"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "attrs": {
+                          "list": true
+                        },
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [
+                                  {
+                                    "type": "link",
+                                    "attrs": {
+                                      "href": "/",
+                                      "target": "_blank",
+                                      "class": "text-green cursor-pointer relative dark:text-yellow"
+                                    }
+                                  }
+                                ],
+                                "text": "Copyright policy"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "attrs": {
+                          "list": true
+                        },
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [
+                                  {
+                                    "type": "link",
+                                    "attrs": {
+                                      "href": "/",
+                                      "target": "_blank",
+                                      "class": "text-green cursor-pointer relative dark:text-yellow"
+                                    }
+                                  }
+                                ],
+                                "text": "Disclaimer"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "9dcc25f2-ee7c-4048-b4e4-7e8793249caf",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Contact"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "bulletList",
+                    "content": [
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [
+                                  {
+                                    "type": "link",
+                                    "attrs": {
+                                      "href": "tel:(+1) 172 91823",
+                                      "target": "_blank"
+                                    }
+                                  }
+                                ],
+                                "text": "(+1) 172 91823"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [
+                                  {
+                                    "type": "link",
+                                    "attrs": {
+                                      "href": "mailto:flavourfus@gmail.com",
+                                      "target": "_blank"
+                                    }
+                                  }
+                                ],
+                                "text": "Flavourfus@gmail.com"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "64182cc9f7d73b81da796da9": {
+    "_id": "64182cc9f7d73b81da796da9",
+    "createdAt": 1679305929871,
+    "updatedAt": 1679305929871,
+    "cid": "6",
+    "templateId": "64182bcef7d73b81da796da8",
+    "userId": "111111111111111111111111",
+    "status": "64132297b5a472c14b54596a",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "8937744b-9108-4ca2-8c32-405462fd074e",
+            "data": [
+              "Rice"
+            ]
+          },
+          {
+            "id": "4ed3c8fc-c37c-4358-b77c-35308ad1bdb1",
+            "data": [
+              "rice"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "64182ccff7d73b81da796daa": {
+    "_id": "64182ccff7d73b81da796daa",
+    "createdAt": 1679305935428,
+    "updatedAt": 1679305935428,
+    "cid": "7",
+    "templateId": "64182bcef7d73b81da796da8",
+    "userId": "111111111111111111111111",
+    "status": "64132297b5a472c14b54596a",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "8937744b-9108-4ca2-8c32-405462fd074e",
+            "data": [
+              "Egg"
+            ]
+          },
+          {
+            "id": "4ed3c8fc-c37c-4358-b77c-35308ad1bdb1",
+            "data": [
+              "egg"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "64182cd8f7d73b81da796dab": {
+    "_id": "64182cd8f7d73b81da796dab",
+    "createdAt": 1679305944544,
+    "updatedAt": 1679305944544,
+    "cid": "8",
+    "templateId": "64182bcef7d73b81da796da8",
+    "userId": "111111111111111111111111",
+    "status": "64132297b5a472c14b54596a",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "8937744b-9108-4ca2-8c32-405462fd074e",
+            "data": [
+              "Seafood"
+            ]
+          },
+          {
+            "id": "4ed3c8fc-c37c-4358-b77c-35308ad1bdb1",
+            "data": [
+              "seafood"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "64182d67f7d73b81da796db0": {
+    "_id": "64182d67f7d73b81da796db0",
+    "createdAt": 1679306087216,
+    "updatedAt": 1700083029346,
+    "cid": "9",
+    "templateId": "64182bc0f7d73b81da796da7",
+    "userId": "111111111111111111111111",
+    "status": "64132297b5a472c14b54596a",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "38ea9e7d-0c2f-4afa-80f7-1c1a5f849cb3",
+            "data": [
+              "Fried rice"
+            ]
+          },
+          {
+            "id": "0055d367-6a80-4616-a27d-286b2e73cf38",
+            "data": [
+              "fried-rice"
+            ]
+          },
+          {
+            "id": "75970e04-fb4f-4fd8-bf61-c97d238b40c9",
+            "data": {
+              "_id": "64f88bd8cb4b37574f5961fb",
+              "items": []
+            }
+          },
+          {
+            "id": "d2e4ed3a-5400-40b1-a847-8374efa3eceb",
+            "data": [
+              {
+                "_id": "64182d53f7d73b81da796daf",
+                "alt_text": "Fried rice",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "aece2589-9fa1-46c4-9c61-5d5eb09834d7",
+            "data": [
+              {
+                "id": "def8f042-aaf6-4119-ab68-2cff39734351",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Lorem ipsum dolorsit ametsek"
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "text",
+                        "text": "ape adus sek bariki yoi"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "2c15cc2e-e154-4870-ad96-bfded1029fb1",
+            "data": [
+              {
+                "id": "d8b1a0ba-6e20-458e-a3bc-d6d36e304f41",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Fried Rice is a popular and delicious Asian dish made by stir-frying cooked rice with a combination of vegetables, proteins (such as eggs, chicken, shrimp, or tofu), and savory seasonings. It's a versatile and quick meal that's perfect for using up leftover rice and creating a flavorful, one-pan dish."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "2380d149-10e5-40ee-a0c5-a43cd2542de7",
+            "data": [
+              " 25 mins"
+            ]
+          },
+          {
+            "id": "9705dd06-56fb-4769-b607-b0a73f4a4a6d",
+            "data": [
+              {
+                "tid": "64182bcef7d73b81da796da8",
+                "eid": "64182cc9f7d73b81da796da9"
+              }
+            ]
+          },
+          {
+            "id": "fb0cf739-6f88-483a-be11-dcd446a1dd37",
+            "data": [
+              false
+            ]
+          },
+          {
+            "id": "c545369a-d813-4a7f-a874-0f901a4efff6",
+            "data": {
+              "_id": "641ad9167ea0642549cf765b",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "What type of rice should I use for Fried Rice?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "2938016b-e075-4488-8c65-f701374fb29f",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Long-grain rice like jasmine or basmati works well, but day-old rice that has been chilled is ideal as it's less sticky."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "Can I use frozen vegetables in Fried Rice?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "c1e7e0c0-2084-4041-9da0-aa47888e93b5",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Yes, frozen mixed vegetables are convenient and work perfectly in Fried Rice."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "How do I prevent my Fried Rice from becoming too soggy?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "8216edef-655e-4844-8bb7-45ff90acfecf",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Use cold, leftover rice, and avoid adding too much sauce. Stir-fry quickly over high heat to prevent excess moisture from accumulating."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "What sauces are typically used in Fried Rice?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "bfd5e7f0-792a-4556-b6ca-fcc5173f3f0e",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Soy sauce, oyster sauce, and sesame oil are common sauces used to season Fried Rice."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "3d51a123-2aa7-4b9e-912b-3bbd2fec3065",
+            "data": [
+              {
+                "id": "a028270b-3494-44d6-84ae-03f51720c839",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "2 cups cooked and cooled rice (preferably day-old)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "fdbaf4b5-5ecc-4437-ace7-7a81925c9e38",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "2 tablespoons vegetable oil"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "d4fcaedd-ba35-49bd-b8dc-cdfee1ecf28a",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "2 cloves garlic, minced"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "46b0c17c-6c50-4848-aaa0-55ce157a2a26",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1/2 cup diced onion"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ce651d4d-5997-43dd-8f9d-71e64ac348e4",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1/2 cup diced carrots"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "b261805a-f3b8-41e6-a81f-cfd3821a1b4d",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1/2 cup frozen peas"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "66bac8e1-e3d3-4308-adb7-672f779300d8",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "2 eggs, beaten"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "9edb652d-b42a-405c-9d73-1ab9438631d8",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "2 tablespoons soy sauce"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "03f4bc82-42f9-4007-83b3-75ef97846882",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1 tablespoon oyster sauce (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "eab12dfc-223a-4052-b570-e263549c6f95",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1/2 teaspoon sesame oil"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "fd2c2e14-578c-4fe7-ad46-bc1ebe2cf1bb",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Salt and pepper to taste"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "b7117d5f-d66a-45c5-bafd-fd178c0eba91",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Chopped green onions for garnish"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "ca2ec2a6-7248-4d2a-9c37-9046395bc9e8",
+            "data": {
+              "_id": "641ada087ea0642549cf765c",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "First Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "aa5873c1-b3bb-4ee7-90ca-0053a5ba1cfd",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Cook the rice ahead of time and allow it to cool. Cold rice works best for fried rice as it's less sticky. Dice the onions and carrots. Beat the eggs in a small bowl. Have all the ingredients ready before you start cooking."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "64182d53f7d73b81da796daf",
+                          "alt_text": "First Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Second Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "c0d7af27-fe26-4b4d-a612-a9ebd3a46884",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Heat a large skillet or wok over medium-high heat. Add 2 tablespoons of vegetable oil and allow it to get hot."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "641ae0827ea0642549cf765f",
+                          "alt_text": "Second Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Third Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "d5cd0271-b3e5-4349-be27-9fadf69b0759",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Add minced garlic and diced onions to the hot oil. Sauté for about 2 minutes until the onions become translucent."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "6555345ddeb3ef8f8e4a419f",
+                          "alt_text": "Third Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Fourth Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "e2df662a-df18-4cb8-a96c-3ec5e1f70798",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Stir in the diced carrots and frozen peas. Cook for 2-3 minutes, or until the vegetables start to soften."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "6555345ddeb3ef8f8e4a41a0",
+                          "alt_text": "Fourth Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Fifth Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "e7191c88-2a8e-43b8-a4d8-b8cc1a01eddd",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Push the vegetables to one side of the pan and pour the beaten eggs into the other side. Scramble the eggs until they are fully cooked."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "6555345edeb3ef8f8e4a41a1",
+                          "alt_text": "Fifth Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Sixth Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "0f62621a-9ab8-447e-a798-c8f997b8dc85",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Add the cold, cooked rice to the pan and stir-fry it with the vegetables and eggs."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "6555345edeb3ef8f8e4a41a2",
+                          "alt_text": "Sixth Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Seventh Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "c8ed96b9-19cf-438f-84a1-f113497346bd",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Drizzle soy sauce, oyster sauce (if using), and sesame oil over the rice mixture. Stir to combine and evenly distribute the sauces. Garnish and serve."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "6555345fdeb3ef8f8e4a41a4",
+                          "alt_text": "Seventh Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "64182d7af7d73b81da796db1": {
+    "_id": "64182d7af7d73b81da796db1",
+    "createdAt": 1679306106819,
+    "updatedAt": 1700082945163,
+    "cid": "a",
+    "templateId": "64182bc0f7d73b81da796da7",
+    "userId": "111111111111111111111111",
+    "status": "64132297b5a472c14b54596a",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "38ea9e7d-0c2f-4afa-80f7-1c1a5f849cb3",
+            "data": [
+              "Omelette"
+            ]
+          },
+          {
+            "id": "0055d367-6a80-4616-a27d-286b2e73cf38",
+            "data": [
+              "omelette"
+            ]
+          },
+          {
+            "id": "75970e04-fb4f-4fd8-bf61-c97d238b40c9",
+            "data": {
+              "_id": "64f88bd8cb4b37574f5961fb",
+              "items": []
+            }
+          },
+          {
+            "id": "d2e4ed3a-5400-40b1-a847-8374efa3eceb",
+            "data": [
+              {
+                "_id": "64182d53f7d73b81da796dad",
+                "alt_text": "Omelette",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "aece2589-9fa1-46c4-9c61-5d5eb09834d7",
+            "data": [
+              {
+                "id": "b76dfedd-42f6-47c8-9641-8fa0eb15a995",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Lorem ipsum dolorsit ametsek"
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "text",
+                        "text": "ape adus sek bariki yoi"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "2c15cc2e-e154-4870-ad96-bfded1029fb1",
+            "data": [
+              {
+                "id": "2ef2f90c-81da-4aae-aad9-983d0a4e5290",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "An omelette is a quick and versatile breakfast dish made from beaten eggs cooked in a hot skillet. It's a blank canvas for creativity, allowing you to customize it with various fillings, such as cheese, vegetables, and herbs, to suit your taste."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "2380d149-10e5-40ee-a0c5-a43cd2542de7",
+            "data": [
+              " 10 mins"
+            ]
+          },
+          {
+            "id": "9705dd06-56fb-4769-b607-b0a73f4a4a6d",
+            "data": [
+              {
+                "tid": "64182bcef7d73b81da796da8",
+                "eid": "64182ccff7d73b81da796daa"
+              }
+            ]
+          },
+          {
+            "id": "fb0cf739-6f88-483a-be11-dcd446a1dd37",
+            "data": [
+              false
+            ]
+          },
+          {
+            "id": "c545369a-d813-4a7f-a874-0f901a4efff6",
+            "data": {
+              "_id": "641ad9167ea0642549cf765b",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "How do I prevent my omelette from sticking to the pan?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "356e1f4b-8e3e-4c76-898b-975224d045e2",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Use a non-stick skillet and add a small amount of butter or oil before pouring in the beaten eggs."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "What's the ideal pan size for making an omelette?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "1a4702c4-08b5-4983-b143-dfb96d576f18",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "An 8-inch or 10-inch non-stick skillet works well for a single-serving omelette."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "How do I know when it's time to flip the omelette?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "1a39cf99-4fee-4adb-9626-8ec617523482",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "When the edges are set but the center is still slightly runny, it's time to add your fillings and fold the omelette."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "Can I use milk or cream in my omelette?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "04ca7a25-18c9-417c-8d5f-9dbf588ab2ef",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Yes, a splash of milk or cream can make your omelette fluffier. Use about 1-2 tablespoons for every 2-3 eggs."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "3d51a123-2aa7-4b9e-912b-3bbd2fec3065",
+            "data": [
+              {
+                "id": "cb05b0ee-a0fc-4c8d-81a5-95f8b054ed4b",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "2-3 large eggs"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ba2ec1b8-0644-4b6a-9d97-c72d0ac75cf8",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Salt and pepper to taste"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "50c35a95-0c63-47a8-8dfb-78976b7a9679",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1-2 tablespoons butter or cooking oil"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "6ec96673-20c6-40d5-8339-e9165486b78e",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Fillings of your choice (e.g., grated cheese, diced vegetables, diced ham, herbs)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "ca2ec2a6-7248-4d2a-9c37-9046395bc9e8",
+            "data": {
+              "_id": "641ada087ea0642549cf765c",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "First Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "229aeeb5-57da-44a9-85a9-d61fa02c6bc6",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Crack the eggs into a bowl and beat them until the yolks and whites are well combined. Season with a pinch of salt and a dash of pepper. Prepare your fillings by chopping or grating them, if necessary."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "64182d53f7d73b81da796dad",
+                          "alt_text": "First Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Second Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "6f11933b-3ddc-4671-b08a-905c60f3db54",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Place an 8-inch or 10-inch non-stick skillet over medium-low heat. Add the butter or oil and let it melt, swirling to coat the pan evenly."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "6555345fdeb3ef8f8e4a41a6",
+                          "alt_text": "Second Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Third Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "7710adbd-23b0-4c5c-8107-2047da8caca0",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Pour the beaten eggs into the heated skillet. Let them cook undisturbed for a minute or two until the edges start to set."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "6555345fdeb3ef8f8e4a41a5",
+                          "alt_text": "Third Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Fourth Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "59a8d1e6-b291-4a03-9435-47d3c39adc22",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Sprinkle your chosen fillings evenly over one-half of the omelette. Serve."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "6555345fdeb3ef8f8e4a41a4",
+                          "alt_text": "Fourth Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "64182d8ef7d73b81da796db2": {
+    "_id": "64182d8ef7d73b81da796db2",
+    "createdAt": 1679306126181,
+    "updatedAt": 1700082911977,
+    "cid": "b",
+    "templateId": "64182bc0f7d73b81da796da7",
+    "userId": "111111111111111111111111",
+    "status": "64132297b5a472c14b54596a",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "38ea9e7d-0c2f-4afa-80f7-1c1a5f849cb3",
+            "data": [
+              "Lobster"
+            ]
+          },
+          {
+            "id": "0055d367-6a80-4616-a27d-286b2e73cf38",
+            "data": [
+              "lobster"
+            ]
+          },
+          {
+            "id": "75970e04-fb4f-4fd8-bf61-c97d238b40c9",
+            "data": {
+              "_id": "64f88bd8cb4b37574f5961fb",
+              "items": []
+            }
+          },
+          {
+            "id": "d2e4ed3a-5400-40b1-a847-8374efa3eceb",
+            "data": [
+              {
+                "_id": "64182d53f7d73b81da796dae",
+                "alt_text": "Lobster",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "aece2589-9fa1-46c4-9c61-5d5eb09834d7",
+            "data": [
+              {
+                "id": "65558e29-ce03-431c-8788-04e7ba5a208f",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Lorem ipsum dolorsit ametsek"
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "text",
+                        "text": "ape adus sek bariki yoi"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "2c15cc2e-e154-4870-ad96-bfded1029fb1",
+            "data": [
+              {
+                "id": "91df109f-5bb6-45de-8333-ec3fc9846878",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Lobster, the undisputed star of the seafood world, takes center stage in our exquisite lobster recipe collection. From succulent lobster bisque to buttery lobster tails and mouthwatering lobster rolls, this luxurious crustacean offers a world of culinary possibilities. Its delicate, sweet flavor and tender texture make it the ultimate canvas for indulgent dishes that will delight your taste buds and elevate any dining experience. Dive into a world of culinary excellence with our lobster recipes, where each bite is a taste of oceanic perfection."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "2380d149-10e5-40ee-a0c5-a43cd2542de7",
+            "data": [
+              "1 hour"
+            ]
+          },
+          {
+            "id": "9705dd06-56fb-4769-b607-b0a73f4a4a6d",
+            "data": [
+              {
+                "tid": "64182bcef7d73b81da796da8",
+                "eid": "64182cd8f7d73b81da796dab"
+              }
+            ]
+          },
+          {
+            "id": "fb0cf739-6f88-483a-be11-dcd446a1dd37",
+            "data": [
+              true
+            ]
+          },
+          {
+            "id": "c545369a-d813-4a7f-a874-0f901a4efff6",
+            "data": {
+              "_id": "641ad9167ea0642549cf765b",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "How do I select a fresh lobster?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "71a9de91-f3d3-42ba-854a-24179836b018",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Look for lively lobsters with intact shells. They should be heavy for their size and have no ammonia-like odor."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "Do I need to remove the lobster's digestive tract?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "1c9125fe-8cd2-441c-895b-a02bab7fa113",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Yes, it's recommended to remove the dark intestinal vein that runs along the tail meat."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "How do I crack lobster claws and legs?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "4811cc13-0538-49cd-b73a-f3550ebaae1f",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Use a nutcracker or lobster cracker to gently crack open the shells to access the meat."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "How can I prevent overcooking lobster?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "416d60b2-5c91-4225-9f35-dcaebef02ac3",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Watch for the lobster to turn opaque and slightly firm. Overcooked lobster can become tough."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "Can I freeze leftover lobster meat?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "318d20d0-3850-4a95-adfd-5d16cc72e54d",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Yes, you can freeze cooked lobster meat for up to 3 months in an airtight container."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "3d51a123-2aa7-4b9e-912b-3bbd2fec3065",
+            "data": [
+              {
+                "id": "123200e5-89ae-49ad-aa5c-cb69c7e351a7",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "2 lobster tails, shells removed"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "d1f2c87a-b322-4087-8bc0-231ff45e7b18",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "4 tbsp. unsalted butter"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "e3490880-38c8-4e85-bc64-ae1df76365a9",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "2 cloves garlic, minced"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "4df1f4ca-f293-4346-880f-a83cf2d34334",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Juice of 1 lemon"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "336137ee-a11f-4ae9-b549-bc3b76be058f",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Salt and pepper to taste"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "759c75bf-d9c2-4546-930e-6b596b4acd37",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Chopped fresh parsley for garnish"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "7ee103e4-ae98-44d1-96ef-31d0ad0cc11c",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1/4 c. white wine"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "277473be-3d5d-46a4-9fab-05d458e46a66",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1/2 c. mayonnaise"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "441714e7-fea2-498b-a94c-8b7aba6bb6c4",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "2 stalks celery, finely chopped"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "67eb88ab-1ca3-4c2e-adb1-130a8dfb6464",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1 small onion, finely chopped"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "a42df907-8d5d-4be9-ad35-03b35f25e9b3",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "4 hot dog buns"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "1ecce464-2c63-4425-90be-4db0c17fb82c",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "2 tbsp. olive oil"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "00564caf-1e8e-43da-8f91-bee65b58783a",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1 carrot, chopped"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ef17d622-d78d-44ba-b80e-ff8c918e7ed7",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1/2 c. heavy cream"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "a03b3f05-9fb9-48f6-a1b3-e8e6f7469116",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "2 tbsp. tomato paste"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "910ee3b1-6070-410a-82df-5d623c460161",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1/4 c. cognac"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "be09a341-92ca-420a-9152-e9167b06c8da",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "4 c. seafood stock"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "36a082ab-5989-445e-8ea2-47ea71ac9eea",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1 tsp. paprika"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "25833f14-ea7b-4e81-8f9b-0ecb77e872c3",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Pinch of cayenne pepper"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "2b00ed83-a054-4446-a8c2-0db8fdbcec24",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1/4 c. sherry (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "931ea374-6169-4238-82c3-f2ff7c99a5e1",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "1/2 tsp. Old Bay seasoning"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "ca2ec2a6-7248-4d2a-9c37-9046395bc9e8",
+            "data": {
+              "_id": "641ada087ea0642549cf765c",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "First Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "a6d7c9e8-c22c-4066-bf55-26f3a9d0d787",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "Sauté Aromatics"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": ": In a large pot, melt 2 tablespoons of butter over medium heat. Add chopped onions, carrots, and celery. Sauté until the vegetables soften, about 5 minutes."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "64182d53f7d73b81da796dae",
+                          "alt_text": "First Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Second Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "840ff457-8b6a-4dc3-96b7-7db3e459e53a",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "Add Lobster Shells"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": ": Stir in the lobster shells and continue to cook, allowing them to release their flavors, for an additional 5 minutes."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "6555345fdeb3ef8f8e4a41a6",
+                          "alt_text": "Second Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Third Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "838cbef1-bc47-4525-b7d5-7050c341799e",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "Deglaze with Wine"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": ": Pour in 1/4 cup of white wine and cook until it reduces by half, scraping up any browned bits from the bottom of the pot."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "6555345fdeb3ef8f8e4a41a4",
+                          "alt_text": "Third Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Fourth Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "9d0f0a73-9465-43a9-9985-17910b9c51df",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "Add Broth"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": ": Pour in 4 cups of seafood stock. Bring the mixture to a boil, then reduce the heat to low, cover, and simmer for 30 minutes."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "6555345edeb3ef8f8e4a41a3",
+                          "alt_text": "Fourth Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Fifth Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "b23bc055-5500-4785-bae4-6391901dc8e5",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "Strain"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": ": Strain the stock through a fine-mesh sieve or cheesecloth into a clean pot, discarding the solids."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "6555345edeb3ef8f8e4a41a2",
+                          "alt_text": "Fifth Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Sixth Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "70c0b4e3-7ead-4fb3-9b96-bb04753f4d7a",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "Add Cream and Tomato Paste"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": ": Return the strained liquid to the pot. Stir in 1/2 cup of heavy cream and 2 tablespoons of tomato paste. Simmer over low heat for 10 minutes, stirring occasionally."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "6555345edeb3ef8f8e4a41a1",
+                          "alt_text": "Sixth Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "Seventh Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "bde8da3e-2888-4eb4-8de0-f53ad065cd39",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "Season and Finish"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": ": Season the bisque with salt, pepper, paprika, cayenne pepper, and optional sherry. Simmer for an additional 5 minutes, allowing the flavors to meld."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "6555345ddeb3ef8f8e4a41a0",
+                          "alt_text": "Seventh Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "64182e78f7d73b81da796db5": {
+    "_id": "64182e78f7d73b81da796db5",
+    "createdAt": 1679306360583,
+    "updatedAt": 1694010667377,
+    "cid": "c",
+    "templateId": "64182b23f7d73b81da796da5",
+    "userId": "111111111111111111111111",
+    "status": "64132297b5a472c14b54596a",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "ecfdffcd-ec8c-47a6-bea2-04ef518585e0",
+            "data": [
+              "Home"
+            ]
+          },
+          {
+            "id": "44ea5af8-8c92-4755-aab5-478b0ea01af1",
+            "data": [
+              "home"
+            ]
+          },
+          {
+            "id": "4714f76f-32df-49b7-9e65-7ebbf09e1d4f",
+            "data": {
+              "_id": "64f88bd8cb4b37574f5961fb",
+              "items": []
+            }
+          },
+          {
+            "id": "023072a5-3c19-4704-8f0d-9e72cb4e525e",
+            "data": {
+              "_id": "64182b34f7d73b81da796da6",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "fa58e0b6-c36e-48a1-abc0-2c4752484fbf",
+                      "data": [
+                        {
+                          "id": "8fa273b3-a8cd-4515-a109-0106b6297c58",
+                          "nodes": [
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 1
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Discover the best "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "italic"
+                                    }
+                                  ],
+                                  "text": "recipes"
+                                },
+                                {
+                                  "type": "hardBreak"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "from our collection"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "beb2a9eb-7642-47a3-9522-4719eda0eef6",
+                      "data": [
+                        {
+                          "id": "f87dbf32-d335-450d-9915-f19f0738681a",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Find your desired recipes from our maestro"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "821a3a1c-adb6-44f6-9cba-b27e014a1182",
+                      "data": [
+                        "Browse recipes"
+                      ]
+                    },
+                    {
+                      "id": "47242042-7282-4db3-ad26-c1f61de30c31",
+                      "data": [
+                        {
+                          "_id": "64182f8af7d73b81da796db6",
+                          "alt_text": "",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "f796c29c-3fe4-4555-b7df-92268bee5027",
+            "data": {
+              "_id": "641869219406d67a48c8afba",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "f3ca3951-974f-45ee-be99-f5f76c4214e7",
+                      "data": [
+                        "Let’s take a look of our recipes"
+                      ]
+                    },
+                    {
+                      "id": "0f14a6d4-bfef-4eef-bd5e-0975bae731a3",
+                      "data": [
+                        {
+                          "tid": "64182bc0f7d73b81da796da7",
+                          "eid": "64182d67f7d73b81da796db0"
+                        },
+                        {
+                          "tid": "64182bc0f7d73b81da796da7",
+                          "eid": "64182d7af7d73b81da796db1"
+                        },
+                        {
+                          "tid": "64182bc0f7d73b81da796da7",
+                          "eid": "64182d8ef7d73b81da796db2"
+                        },
+                        {
+                          "tid": "64182bc0f7d73b81da796da7",
+                          "eid": "64182d67f7d73b81da796db0"
+                        },
+                        {
+                          "tid": "64182bc0f7d73b81da796da7",
+                          "eid": "64182d7af7d73b81da796db1"
+                        },
+                        {
+                          "tid": "64182bc0f7d73b81da796da7",
+                          "eid": "64182d8ef7d73b81da796db2"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "d86247cc-5349-482d-9671-f77a05474097",
+                      "data": [
+                        "Browse more recipes"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "1f8adb78-fb10-49aa-8e2c-3ca8ae03203a",
+            "data": {
+              "_id": "64196b139eeca76eacf3fac2",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "69f6888e-a214-438e-8923-9891cacb88a1",
+                      "data": [
+                        "About us"
+                      ]
+                    },
+                    {
+                      "id": "df9a33bd-52d0-456c-a011-4768c7da4fb6",
+                      "data": [
+                        {
+                          "id": "b2fb2410-40aa-4106-85d0-eb823a2a1ef3",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "We believe that food brings people together and that cooking can be both fun and rewarding. That's why we've created a platform that's packed with mouth-watering recipes."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "89a25468-c8a9-450c-bb50-f39d31a707b0",
+                      "data": {
+                        "_id": "64196b9d9eeca76eacf3fac3",
+                        "items": [
+                          {
+                            "props": [
+                              {
+                                "id": "8de3ce1a-950c-49c6-875c-2716e6b480c6",
+                                "data": [
+                                  "Food recipes"
+                                ]
+                              },
+                              {
+                                "id": "b6f56d77-c4c8-4303-bd9d-fdc36cb85dd6",
+                                "data": [
+                                  "128+"
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "props": [
+                              {
+                                "id": "8de3ce1a-950c-49c6-875c-2716e6b480c6",
+                                "data": [
+                                  "Chef as partners"
+                                ]
+                              },
+                              {
+                                "id": "b6f56d77-c4c8-4303-bd9d-fdc36cb85dd6",
+                                "data": [
+                                  "100+"
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "props": [
+                              {
+                                "id": "8de3ce1a-950c-49c6-875c-2716e6b480c6",
+                                "data": [
+                                  "Lorem ipsum dolor"
+                                ]
+                              },
+                              {
+                                "id": "b6f56d77-c4c8-4303-bd9d-fdc36cb85dd6",
+                                "data": [
+                                  "121+"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "id": "0e2476ab-cb52-4df9-8c8b-0aa3801f7cc0",
+                      "data": [
+                        {
+                          "_id": "64196cfd9eeca76eacf3fac4",
+                          "alt_text": "About us",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "5ff4e617-acaf-45df-9933-506581b88e62",
+            "data": {
+              "_id": "641976739eeca76eacf3fac5",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "c1126ff6-4c7e-4d69-9034-efccf0ff2e2b",
+                      "data": [
+                        "Let’s talk"
+                      ]
+                    },
+                    {
+                      "id": "85b3cfed-42e0-4dec-aab8-915da2be9c48",
+                      "data": [
+                        {
+                          "id": "5bd7d0f2-d97e-4a32-843e-b59ddb34ec4f",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "a1a752ec-a3e7-4c0a-81f6-16ff37da4cf4",
+                      "data": {
+                        "_id": "641976909eeca76eacf3fac6",
+                        "items": [
+                          {
+                            "props": [
+                              {
+                                "id": "172710a2-b763-4632-8f81-f00f56a5ea71",
+                                "data": [
+                                  {
+                                    "_id": "641977699eeca76eacf3fac9",
+                                    "alt_text": "Telephone",
+                                    "caption": ""
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "ab335909-e715-4500-8cf7-76332ab20bec",
+                                "data": [
+                                  "Telephone"
+                                ]
+                              },
+                              {
+                                "id": "6aa63e39-dca1-4df5-98d3-919450c6d286",
+                                "data": [
+                                  {
+                                    "id": "37a58e0a-47bb-4e65-a5e8-4b66f72e2975",
+                                    "nodes": [
+                                      {
+                                        "type": "paragraph",
+                                        "content": [
+                                          {
+                                            "type": "text",
+                                            "marks": [
+                                              {
+                                                "type": "link",
+                                                "attrs": {
+                                                  "href": "tel:(+1) 812 91831",
+                                                  "target": "_blank",
+                                                  "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                                                }
+                                              }
+                                            ],
+                                            "text": "(+1) 812 91831"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "props": [
+                              {
+                                "id": "172710a2-b763-4632-8f81-f00f56a5ea71",
+                                "data": [
+                                  {
+                                    "_id": "641977699eeca76eacf3fac8",
+                                    "alt_text": "Chat",
+                                    "caption": ""
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "ab335909-e715-4500-8cf7-76332ab20bec",
+                                "data": [
+                                  "Chat"
+                                ]
+                              },
+                              {
+                                "id": "6aa63e39-dca1-4df5-98d3-919450c6d286",
+                                "data": [
+                                  {
+                                    "id": "46b246c6-7959-4bc2-b480-4ffeb149298d",
+                                    "nodes": [
+                                      {
+                                        "type": "paragraph",
+                                        "content": [
+                                          {
+                                            "type": "text",
+                                            "marks": [
+                                              {
+                                                "type": "link",
+                                                "attrs": {
+                                                  "href": "tel:(+1) 921 81237",
+                                                  "target": "_blank",
+                                                  "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                                                }
+                                              }
+                                            ],
+                                            "text": "(+1) 921 81237"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "props": [
+                              {
+                                "id": "172710a2-b763-4632-8f81-f00f56a5ea71",
+                                "data": [
+                                  {
+                                    "_id": "641977699eeca76eacf3fac7",
+                                    "alt_text": "Email",
+                                    "caption": ""
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "ab335909-e715-4500-8cf7-76332ab20bec",
+                                "data": [
+                                  "Email"
+                                ]
+                              },
+                              {
+                                "id": "6aa63e39-dca1-4df5-98d3-919450c6d286",
+                                "data": [
+                                  {
+                                    "id": "74ce26df-aac9-4a6d-9718-858f3edeb7d0",
+                                    "nodes": [
+                                      {
+                                        "type": "paragraph",
+                                        "content": [
+                                          {
+                                            "type": "text",
+                                            "marks": [
+                                              {
+                                                "type": "link",
+                                                "attrs": {
+                                                  "href": "mailto:flavourfus@gmail.com",
+                                                  "target": "_blank",
+                                                  "class": "text-green cursor-pointer bcmsUrlPreview dark:text-yellow"
+                                                }
+                                              }
+                                            ],
+                                            "text": "Flavourfus@gmail.com"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "64199dfa9eeca76eacf3facb": {
+    "_id": "64199dfa9eeca76eacf3facb",
+    "createdAt": 1679400442665,
+    "updatedAt": 1694010675254,
+    "cid": "d",
+    "templateId": "64199dbb9eeca76eacf3faca",
+    "userId": "111111111111111111111111",
+    "status": "64132297b5a472c14b54596a",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "ac8f6d71-c852-4b46-b7c7-b50f4b58ec02",
+            "data": [
+              "Recipes"
+            ]
+          },
+          {
+            "id": "7c882384-4d84-47d2-b005-4f4a743d5013",
+            "data": [
+              "recipes"
+            ]
+          },
+          {
+            "id": "811984bd-039e-4caa-9baa-78b3f0e3149b",
+            "data": {
+              "_id": "64f88bd8cb4b37574f5961fb",
+              "items": []
+            }
+          },
+          {
+            "id": "44bc0026-b30d-4155-a3fe-4577c4cb0a04",
+            "data": [
+              {
+                "id": "696de6f7-92c8-421f-9748-ac4701221734",
+                "nodes": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 1
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Find our best recipes"
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "text",
+                        "text": "from our "
+                      },
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "italic"
+                          }
+                        ],
+                        "text": "maestro"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "641ae2097ea0642549cf7661": {
+    "_id": "641ae2097ea0642549cf7661",
+    "createdAt": 1679483401119,
+    "updatedAt": 1700082814949,
+    "cid": "f",
+    "templateId": "64182bc0f7d73b81da796da7",
+    "userId": "111111111111111111111111",
+    "status": "64132297b5a472c14b54596a",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "38ea9e7d-0c2f-4afa-80f7-1c1a5f849cb3",
+            "data": [
+              "Stuffed Peppers"
+            ]
+          },
+          {
+            "id": "0055d367-6a80-4616-a27d-286b2e73cf38",
+            "data": [
+              "stuffed-peppers"
+            ]
+          },
+          {
+            "id": "75970e04-fb4f-4fd8-bf61-c97d238b40c9",
+            "data": {
+              "_id": "64f88bd8cb4b37574f5961fb",
+              "items": []
+            }
+          },
+          {
+            "id": "d2e4ed3a-5400-40b1-a847-8374efa3eceb",
+            "data": [
+              {
+                "_id": "641ae0827ea0642549cf765f",
+                "alt_text": "Stuffed Peppers",
+                "caption": ""
+              }
+            ]
+          },
+          {
+            "id": "aece2589-9fa1-46c4-9c61-5d5eb09834d7",
+            "data": [
+              {
+                "id": "95d3bc47-0da8-4576-baf8-231f6221d48f",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Lorem ipsum dolor"
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "text",
+                        "text": "sit amet dolor amet sit"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "2c15cc2e-e154-4870-ad96-bfded1029fb1",
+            "data": [
+              {
+                "id": "4fc2bc26-4baf-4965-ba8f-6ee74f53ddaf",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "underline"
+                          }
+                        ],
+                        "text": "Stuffed peppers"
+                      },
+                      {
+                        "type": "text",
+                        "text": " hold a special place in our heart. From "
+                      },
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "underline"
+                          }
+                        ],
+                        "text": "cheesesteak stuffed peppers"
+                      },
+                      {
+                        "type": "text",
+                        "text": " to "
+                      },
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "underline"
+                          }
+                        ],
+                        "text": "vegetarian stuffed peppers"
+                      },
+                      {
+                        "type": "text",
+                        "text": ", this versatile veggie is one of our favorites to experiment with. Strong enough to hold their shape, peppers are large enough to hold a decent amount of filling while taking to a variety of flavors—they're the perfect vessel for a variety of fillings and ingredients."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "2380d149-10e5-40ee-a0c5-a43cd2542de7",
+            "data": [
+              "45 mins"
+            ]
+          },
+          {
+            "id": "9705dd06-56fb-4769-b607-b0a73f4a4a6d",
+            "data": [
+              {
+                "tid": "64182bcef7d73b81da796da8",
+                "eid": "64182cc9f7d73b81da796da9"
+              }
+            ]
+          },
+          {
+            "id": "fb0cf739-6f88-483a-be11-dcd446a1dd37",
+            "data": [
+              false
+            ]
+          },
+          {
+            "id": "c545369a-d813-4a7f-a874-0f901a4efff6",
+            "data": {
+              "_id": "641ad9167ea0642549cf765b",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "How do I prep the peppers for stuffing?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "624fe26d-abe6-4531-a43f-35f3df57e8bc",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Lorem ipsum dolor sit amet"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "Should I cook the peppers before stuffing them?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "058ef733-4d32-4235-9c08-703227573a67",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Lorem ipsum dolor sit amet"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "How long should stuffed peppers be baked?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "1c859fbc-9a27-4282-a0a6-af5d54d361e1",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Lorem ipsum dolor sit amet"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+                      "data": [
+                        "Can I make these ahead?"
+                      ]
+                    },
+                    {
+                      "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+                      "data": [
+                        {
+                          "id": "b82435ad-56ed-4ff7-bfbe-52b009e2c979",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "It’s super simple! Just cut off the top (we like to use a small paring knife to carve a circle around the stem, like you might when you’re carving a pumpkin) and pull out the core and the seeds. "
+                                },
+                                {
+                                  "type": "hardBreak"
+                                },
+                                {
+                                  "type": "hardBreak"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "Tip: We suggest turning the peppers upside down over the sink and tapping them to get the excess seeds out! You could even try rinsing the peppers out, but you don’t have to. (Also, if a few seeds stay in, it’s not a big deal!)"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "3d51a123-2aa7-4b9e-912b-3bbd2fec3065",
+            "data": [
+              {
+                "id": "adc61bba-412b-4309-8041-dc0e691050ff",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "text": "1/2 c."
+                      },
+                      {
+                        "type": "text",
+                        "text": " uncooked rice"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "38fe653d-ae95-468a-a467-dc4619c242b8",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "text": "2 tbsp."
+                      },
+                      {
+                        "type": "text",
+                        "text": " extra-virgin olive oil, plus more for drizzling"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "a4d41c3f-7103-441b-89ad-568a8e98d5f9",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "text": "1"
+                      },
+                      {
+                        "type": "text",
+                        "text": " medium onion, chopped"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "a1244dd5-cd09-41e3-80cc-e8d9e0ea7167",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "text": "2 tbsp."
+                      },
+                      {
+                        "type": "text",
+                        "text": " tomato paste"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "a65565c1-49b5-4821-8071-9cee9f425c30",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "text": "3"
+                      },
+                      {
+                        "type": "text",
+                        "text": " cloves garlic, minced"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "32aed041-9b1e-441e-9289-f63f765cf3e7",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "text": "1/2 c."
+                      },
+                      {
+                        "type": "text",
+                        "text": " uncooked rice"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "9d95eb96-3aab-4930-8c26-1b22ea827b79",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "text": "1/2 c."
+                      },
+                      {
+                        "type": "text",
+                        "text": " uncooked rice"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "637707d4-45c9-417d-9265-6cd15bb99771",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "text": "1/2 c."
+                      },
+                      {
+                        "type": "text",
+                        "text": " uncooked rice"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "0c69883d-3636-4bc6-b6a2-e69b3e9e18dd",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "text": "1/2 c."
+                      },
+                      {
+                        "type": "text",
+                        "text": " uncooked rice"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "c4a68da0-2c0d-4dac-9e54-26e7252d4954",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "text": "1/2 c."
+                      },
+                      {
+                        "type": "text",
+                        "text": " uncooked rice"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "2ea830c4-7d18-40fd-977b-6e66afd352f1",
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "text": "1/2 c."
+                      },
+                      {
+                        "type": "text",
+                        "text": " uncooked rice"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "ca2ec2a6-7248-4d2a-9c37-9046395bc9e8",
+            "data": {
+              "_id": "641ada087ea0642549cf765c",
+              "items": [
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "1. First Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "f5f6c844-836a-49b6-928a-778c97b80539",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Preheat oven to 400°. In a small saucepan, prepare rice according to package instructions. In a large skillet over medium heat, heat oil. Cook onion until soft, about 5 minutes. Stir in tomato paste and garlic and cook until fragrant, about 1 minute more. Add ground beef and cook, breaking up meat with a wooden spoon, until no longer pink, 6 minutes. Drain fat."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "641ae0827ea0642549cf765e",
+                          "alt_text": "1. First Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "2. Second Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "db972b2c-76b7-4ab8-8f3d-795f77d79244",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Preheat oven to 400°. In a small saucepan, prepare rice according to package instructions. In a large skillet over medium heat, heat oil. Cook onion until soft, about 5 minutes. Stir in tomato paste and garlic and cook until fragrant, about 1 minute more. Add ground beef and cook, breaking up meat with a wooden spoon, until no longer pink, 6 minutes. Drain fat."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "6555345fdeb3ef8f8e4a41a6",
+                          "alt_text": "2. Second Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "3. Third Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "7c1d3fdf-cf29-4f15-a05e-0ba766b4d84c",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Preheat oven to 400°. In a small saucepan, prepare rice according to package instructions. In a large skillet over medium heat, heat oil. Cook onion until soft, about 5 minutes. Stir in tomato paste and garlic and cook until fragrant, about 1 minute more. Add ground beef and cook, breaking up meat with a wooden spoon, until no longer pink, 6 minutes. Drain fat."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "6555345fdeb3ef8f8e4a41a5",
+                          "alt_text": "3. Third Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "4. Fourth Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "63de059b-416b-4515-af9d-b6b98da9d17a",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Preheat oven to 400°. In a small saucepan, prepare rice according to package instructions. In a large skillet over medium heat, heat oil. Cook onion until soft, about 5 minutes. Stir in tomato paste and garlic and cook until fragrant, about 1 minute more. Add ground beef and cook, breaking up meat with a wooden spoon, until no longer pink, 6 minutes. Drain fat."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "6555345fdeb3ef8f8e4a41a4",
+                          "alt_text": "4. Fourth Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "props": [
+                    {
+                      "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+                      "data": [
+                        "5. Fifth Step"
+                      ]
+                    },
+                    {
+                      "id": "0477aece-1e98-473a-b55b-e415c914714a",
+                      "data": [
+                        {
+                          "id": "e9a934c2-8eab-492e-977f-c13961ab3028",
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Preheat oven to 400°. In a small saucepan, prepare rice according to package instructions. In a large skillet over medium heat, heat oil. Cook onion until soft, about 5 minutes. Stir in tomato paste and garlic and cook until fragrant, about 1 minute more. Add ground beef and cook, breaking up meat with a wooden spoon, until no longer pink, 6 minutes. Drain fat."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+                      "data": [
+                        {
+                          "_id": "6555345edeb3ef8f8e4a41a3",
+                          "alt_text": "5. Fifth Step",
+                          "caption": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [],
+        "plainText": ""
+      }
+    ]
+  },
+  "641c11a6b5e52ba9ac9365e3": {
+    "_id": "641c11a6b5e52ba9ac9365e3",
+    "createdAt": 1679561126695,
+    "updatedAt": 1679565691819,
+    "cid": "10",
+    "templateId": "641c111cb5e52ba9ac9365e2",
+    "userId": "111111111111111111111111",
+    "status": "64132297b5a472c14b54596a",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "6c5b3ce0-f10a-456b-8ee3-d5a863f37932",
+            "data": [
+              "Privacy and policy"
+            ]
+          },
+          {
+            "id": "0d01a520-a78a-464f-b9ad-270b4e18f1f6",
+            "data": [
+              "privacy-and-policy"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "hardBreak"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+              }
+            ]
+          }
+        ],
+        "plainText": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum\n\nlorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum\n\n"
+      }
+    ]
+  },
+  "641c11b4b5e52ba9ac9365e4": {
+    "_id": "641c11b4b5e52ba9ac9365e4",
+    "createdAt": 1679561140269,
+    "updatedAt": 1679565686738,
+    "cid": "11",
+    "templateId": "641c111cb5e52ba9ac9365e2",
+    "userId": "111111111111111111111111",
+    "status": "64132297b5a472c14b54596a",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "6c5b3ce0-f10a-456b-8ee3-d5a863f37932",
+            "data": [
+              "Terms and policy"
+            ]
+          },
+          {
+            "id": "0d01a520-a78a-464f-b9ad-270b4e18f1f6",
+            "data": [
+              "terms-and-policy"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "hardBreak"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+              }
+            ]
+          }
+        ],
+        "plainText": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum\n\nlorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum\n\n"
+      }
+    ]
+  },
+  "641c11c3b5e52ba9ac9365e5": {
+    "_id": "641c11c3b5e52ba9ac9365e5",
+    "createdAt": 1679561155815,
+    "updatedAt": 1679565682069,
+    "cid": "12",
+    "templateId": "641c111cb5e52ba9ac9365e2",
+    "userId": "111111111111111111111111",
+    "status": "64132297b5a472c14b54596a",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "6c5b3ce0-f10a-456b-8ee3-d5a863f37932",
+            "data": [
+              "Copyright Policy"
+            ]
+          },
+          {
+            "id": "0d01a520-a78a-464f-b9ad-270b4e18f1f6",
+            "data": [
+              "copyright-policy"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "hardBreak"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+              }
+            ]
+          }
+        ],
+        "plainText": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum\n\nlorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum\n\n"
+      }
+    ]
+  },
+  "641c11d7b5e52ba9ac9365e6": {
+    "_id": "641c11d7b5e52ba9ac9365e6",
+    "createdAt": 1679561175095,
+    "updatedAt": 1679565677973,
+    "cid": "13",
+    "templateId": "641c111cb5e52ba9ac9365e2",
+    "userId": "111111111111111111111111",
+    "status": "64132297b5a472c14b54596a",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "6c5b3ce0-f10a-456b-8ee3-d5a863f37932",
+            "data": [
+              "Disclaimer"
+            ]
+          },
+          {
+            "id": "0d01a520-a78a-464f-b9ad-270b4e18f1f6",
+            "data": [
+              "disclaimer"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "hardBreak"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+              }
+            ]
+          }
+        ],
+        "plainText": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum\n\nlorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum\n\n"
+      }
+    ]
+  },
+  "641c11eab5e52ba9ac9365e7": {
+    "_id": "641c11eab5e52ba9ac9365e7",
+    "createdAt": 1679561194171,
+    "updatedAt": 1679565674945,
+    "cid": "14",
+    "templateId": "641c111cb5e52ba9ac9365e2",
+    "userId": "111111111111111111111111",
+    "status": "64132297b5a472c14b54596a",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "6c5b3ce0-f10a-456b-8ee3-d5a863f37932",
+            "data": [
+              "Contact Us"
+            ]
+          },
+          {
+            "id": "0d01a520-a78a-464f-b9ad-270b4e18f1f6",
+            "data": [
+              "contact-us"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "hardBreak"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+              }
+            ]
+          }
+        ],
+        "plainText": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum\n\nlorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum\n\n"
+      }
+    ]
+  },
+  "641c11f9b5e52ba9ac9365e8": {
+    "_id": "641c11f9b5e52ba9ac9365e8",
+    "createdAt": 1679561209386,
+    "updatedAt": 1679565664667,
+    "cid": "15",
+    "templateId": "641c111cb5e52ba9ac9365e2",
+    "userId": "111111111111111111111111",
+    "status": "64132297b5a472c14b54596a",
+    "meta": [
+      {
+        "lng": "en",
+        "props": [
+          {
+            "id": "6c5b3ce0-f10a-456b-8ee3-d5a863f37932",
+            "data": [
+              "Legal Notices"
+            ]
+          },
+          {
+            "id": "0d01a520-a78a-464f-b9ad-270b4e18f1f6",
+            "data": [
+              "legal-notices"
+            ]
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "lng": "en",
+        "nodes": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "hardBreak"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+              }
+            ]
+          }
+        ],
+        "plainText": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum\n\nlorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum\n\n"
+      }
+    ]
+  }
+}

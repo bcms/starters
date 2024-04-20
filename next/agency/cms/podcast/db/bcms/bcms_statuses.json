@@ -1,0 +1,18 @@
+{
+  "6436adcd346e3258041e354b": {
+    "_id": "6436adcd346e3258041e354b",
+    "createdAt": 1681305037138,
+    "updatedAt": 1681305037138,
+    "color": "",
+    "label": "Draft",
+    "name": "draft"
+  },
+  "6436adcd346e3258041e354c": {
+    "_id": "6436adcd346e3258041e354c",
+    "createdAt": 1681305037139,
+    "updatedAt": 1681305037139,
+    "color": "",
+    "label": "Active",
+    "name": "active"
+  }
+}

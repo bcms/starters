@@ -1,0 +1,23 @@
+.swiper--customPagination {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  max-width: 440px !important;
+  margin: 0 auto !important;
+}
+
+.swiper--customPagination .swiper-pagination-bullet {
+  flex: 1 !important;
+  height: 0.25rem !important; 
+  border-radius: 0.5rem !important;
+  background-color: #D9D9D9 !important;
+  transition: all 0.3s !important;
+  opacity: 1 !important;
+  margin: 0 !important;
+}
+
+.swiper--customPagination .swiper-pagination-bullet-active {
+  flex: 2 !important;
+  background-color: #000000 !important;
+}

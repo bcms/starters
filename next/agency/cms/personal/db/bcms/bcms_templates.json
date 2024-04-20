@@ -1,0 +1,797 @@
+{
+  "6426e3fa109812372e9c9588": {
+    "_id": "6426e3fa109812372e9c9588",
+    "createdAt": 1680270330250,
+    "updatedAt": 1680270372767,
+    "cid": "1",
+    "desc": "",
+    "label": "Header",
+    "name": "header",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "62f48c00-23ab-4f20-b3d8-cdbda6c72145",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "5cf4e8b7-8d47-47b7-9e98-b307f34799dd",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "943c445a-c5a4-4d98-b940-143241aa8fe1",
+        "name": "logo",
+        "label": "Logo",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "a88194c4-4090-46c6-9f20-59f6de33c233",
+        "name": "nav",
+        "label": "Nav",
+        "array": true,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
+  },
+  "6426f0fc109812372e9c958c": {
+    "_id": "6426f0fc109812372e9c958c",
+    "createdAt": 1680273660676,
+    "updatedAt": 1680509016664,
+    "cid": "2",
+    "desc": "",
+    "label": "Footer",
+    "name": "footer",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "498d35c6-9db6-4dca-a63b-f20782c03db3",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "2fa1517b-20a2-4b21-ab0f-f6c54a50fb27",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "fddd7b74-dbf4-402c-a39e-00e7159f12c9",
+        "name": "nav",
+        "label": "Nav",
+        "array": true,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "4482103d-9ff3-4675-b1a9-cabe75ace267",
+        "name": "social",
+        "label": "Social",
+        "array": true,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "642a880c3effc7142eea9d90"
+        }
+      }
+    ]
+  },
+  "642aa3ae3effc7142eea9d96": {
+    "_id": "642aa3ae3effc7142eea9d96",
+    "createdAt": 1680516014394,
+    "updatedAt": 1694011508674,
+    "cid": "3",
+    "desc": "",
+    "label": "Home page",
+    "name": "home_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "52fa287b-2786-47fe-96b3-609a087e7c60",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "3b30f3d0-3b0c-4754-b18a-75f223b6c93c",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "f2f2a81d-a058-4415-9141-6442bc8fbe8c",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f89039f2d55bcdf1ca35ae"
+        }
+      },
+      {
+        "id": "47e5009f-cce5-415d-ae8e-c8fada5a6e7f",
+        "name": "hero",
+        "label": "Hero",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "642aaafb3effc7142eea9d98"
+        }
+      }
+    ]
+  },
+  "642adf8b3effc7142eea9d9d": {
+    "_id": "642adf8b3effc7142eea9d9d",
+    "createdAt": 1680531339600,
+    "updatedAt": 1680685928877,
+    "cid": "4",
+    "desc": "",
+    "label": "Service item",
+    "name": "service_item",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "d91838c1-1c7d-457f-8585-e2c1e0f94a46",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "1bb69a7b-47dd-4396-956d-693553ecfaa6",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "1b43f18a-d0d4-4fa3-96fb-59e7e9188b87",
+        "name": "abbreviation",
+        "label": "Abbreviation",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "12b5b020-1813-4405-9134-9d62fb78f61c",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "d8a5f72a-a2a0-40a3-a59f-861e21fa0ce6",
+        "name": "start_price",
+        "label": "Start price",
+        "array": false,
+        "required": true,
+        "type": "NUMBER",
+        "defaultData": [
+          0
+        ]
+      },
+      {
+        "id": "0d93fdbc-b8a9-4b30-acab-6442a9776985",
+        "name": "theme",
+        "label": "Theme",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
+  },
+  "642bd7621599a48b5156b9e3": {
+    "_id": "642bd7621599a48b5156b9e3",
+    "createdAt": 1680594786098,
+    "updatedAt": 1694011487392,
+    "cid": "5",
+    "desc": "",
+    "label": "About page",
+    "name": "about_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "00309124-b713-45d2-ae9b-ff34b42f3468",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "d4b9ad2a-baf8-4ec3-b123-612449abee11",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "6257d695-92d0-481c-af66-cae3516c8abc",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f89039f2d55bcdf1ca35ae"
+        }
+      },
+      {
+        "id": "a1c74561-7fc8-4ef1-a4a1-4ea7dfeec033",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "8320359d-1013-441f-a516-fe50a254b257",
+        "name": "education",
+        "label": "Education",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "642bd7831599a48b5156b9e4"
+        }
+      },
+      {
+        "id": "e656ca91-d254-4e16-aa5c-dfdf67cfc4ec",
+        "name": "work_history",
+        "label": "Work history",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "642bd8591599a48b5156b9e5"
+        }
+      },
+      {
+        "id": "41b21b82-67de-41df-9806-ae8cec733a4e",
+        "name": "cover",
+        "label": "Cover",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "1d7f2d43-5a00-473a-8fb1-7014a34fffc2",
+        "name": "awards",
+        "label": "Awards",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "642be1e51599a48b5156b9e8"
+        }
+      }
+    ]
+  },
+  "642bf4351599a48b5156b9ee": {
+    "_id": "642bf4351599a48b5156b9ee",
+    "createdAt": 1680602165125,
+    "updatedAt": 1694011549356,
+    "cid": "7",
+    "desc": "",
+    "label": "Portfolio page",
+    "name": "portfolio_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "4827df6b-8061-4f26-89ab-f2cafbe94d77",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "7aa9cd63-0db5-442c-94cf-fd4f133f247d",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "fee6a9f9-4164-4b69-8fd5-8d73eb685109",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f89039f2d55bcdf1ca35ae"
+        }
+      },
+      {
+        "id": "0861af4a-9b2c-4bef-8e5d-55f54e3ba86d",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
+  },
+  "642bf54b1599a48b5156b9f2": {
+    "_id": "642bf54b1599a48b5156b9f2",
+    "createdAt": 1680602443082,
+    "updatedAt": 1694011541189,
+    "cid": "8",
+    "desc": "",
+    "label": "Portfolio item",
+    "name": "portfolio_item",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "b06821e7-9cc3-4ac4-b1c2-ce260290bbee",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "454e7885-3d63-4c82-b200-129767e772d9",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "8c11775f-a8e1-4c0a-88ff-0ca3f7875d6a",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f89039f2d55bcdf1ca35ae"
+        }
+      },
+      {
+        "id": "2a421563-73bd-4476-920e-2631c796f475",
+        "name": "project_no",
+        "label": "Project No",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "b73834b5-868f-4318-b810-9a6f17d91c9a",
+        "name": "brand_name",
+        "label": "Brand name",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "80f91064-9874-4764-8a4f-cc9f46cebbe7",
+        "name": "role",
+        "label": "Role",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "122ca502-1b99-447e-be47-ed6efe49faec",
+        "name": "year",
+        "label": "Year",
+        "array": false,
+        "required": true,
+        "type": "DATE",
+        "defaultData": [
+          0
+        ]
+      },
+      {
+        "id": "65488b5c-c244-4d8f-a385-ab734f52cde9",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "9c7a694f-06b7-4972-894b-24893e8e3242",
+        "name": "gallery",
+        "label": "Gallery",
+        "array": true,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "61debc0b-0b62-416a-a3d6-0ecea052fe06",
+        "name": "theme",
+        "label": "Theme",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
+  },
+  "642c2cdd1599a48b5156b9fe": {
+    "_id": "642c2cdd1599a48b5156b9fe",
+    "createdAt": 1680616669891,
+    "updatedAt": 1694011711565,
+    "cid": "9",
+    "desc": "",
+    "label": "Testimonials page",
+    "name": "testimonials_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "6bd0d213-7522-4666-b3ca-02ceb49949fe",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "5decf9fa-97d1-4abb-95c8-ed61a57e81b5",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "2f52a4b0-6cc4-4205-9ee0-d6177beb1e2d",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f89039f2d55bcdf1ca35ae"
+        }
+      },
+      {
+        "id": "55a9547b-b495-46ec-8942-0e761d572967",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
+  },
+  "642c2cee1599a48b5156b9ff": {
+    "_id": "642c2cee1599a48b5156b9ff",
+    "createdAt": 1680616686474,
+    "updatedAt": 1680679103834,
+    "cid": "a",
+    "desc": "",
+    "label": "Testimonial item",
+    "name": "testimonial_item",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "f804b5b7-bb07-4656-8472-2deee38cccde",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "c6d4d6be-577c-4a9a-93c3-31f612c32258",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "e782bd52-505d-4db4-8b0f-ec9b4dbd3bb7",
+        "name": "author",
+        "label": "Author",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "642c2d061599a48b5156ba00"
+        }
+      },
+      {
+        "id": "eea5273d-e9ef-45dc-a742-9c9aac00dfc8",
+        "name": "content",
+        "label": "Content",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
+  },
+  "642d3af894b4bb4f437826b1": {
+    "_id": "642d3af894b4bb4f437826b1",
+    "createdAt": 1680685816937,
+    "updatedAt": 1694011700326,
+    "cid": "b",
+    "desc": "",
+    "label": "Services page",
+    "name": "services_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "6e0c2be9-b240-4f2a-81d9-a0bb42bdfa65",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "2f36cfab-c152-46b5-957b-eaaefeb779ae",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "adc612f0-35d2-476d-9cbd-caecd80e5742",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f89039f2d55bcdf1ca35ae"
+        }
+      },
+      {
+        "id": "5fd9029e-0ba5-4018-a74c-50bfcac0aca6",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
+  },
+  "642ebee626d420f1dbe66ff5": {
+    "_id": "642ebee626d420f1dbe66ff5",
+    "createdAt": 1680785126178,
+    "updatedAt": 1680785163412,
+    "cid": "c",
+    "desc": "",
+    "label": "Legal page",
+    "name": "legal_page",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "1a8240af-5cbe-4500-8572-619b93b6de2e",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "c1f94ef4-55fb-4ae1-9e6c-130a7f284a71",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
+  },
+  "642ec35326d420f1dbe66ffc": {
+    "_id": "642ec35326d420f1dbe66ffc",
+    "createdAt": 1680786259807,
+    "updatedAt": 1694011494690,
+    "cid": "d",
+    "desc": "",
+    "label": "Contact page",
+    "name": "contact_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "d58193c3-a9c0-4e8f-b4f4-b2a32ef91153",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "461bde47-3d7e-41db-a273-565e590ea37a",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "4639bf2a-c9fc-4fcc-910c-39a874acefc1",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f89039f2d55bcdf1ca35ae"
+        }
+      }
+    ]
+  }
+}

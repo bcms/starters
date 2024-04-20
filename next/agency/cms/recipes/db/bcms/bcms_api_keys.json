@@ -1,0 +1,73 @@
+{
+  "641322c4b5a472c14b545975": {
+    "_id": "641322c4b5a472c14b545975",
+    "createdAt": 1678975684829,
+    "updatedAt": 1679561102679,
+    "access": {
+      "templates": [
+        {
+          "_id": "6414331f5d4d29a17ac96046",
+          "name": "header",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "641817f8f7d73b81da796da2",
+          "name": "footer",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "64182b23f7d73b81da796da5",
+          "name": "home_page",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "64182bc0f7d73b81da796da7",
+          "name": "recipe",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "64182bcef7d73b81da796da8",
+          "name": "recipe_category",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "64199dbb9eeca76eacf3faca",
+          "name": "recipes_page",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        },
+        {
+          "_id": "641c111cb5e52ba9ac9365e2",
+          "name": "legal_page",
+          "get": true,
+          "post": false,
+          "put": false,
+          "delete": false
+        }
+      ],
+      "functions": []
+    },
+    "blocked": false,
+    "desc": "This is an API key created automatically by the BCMS CLI.",
+    "name": "Development key",
+    "secret": "c03699d4d73b111d4e71898cc601b139e1c68f08f69194a803ab9609a3c88aac",
+    "userId": "111111111111111111111111"
+  }
+}

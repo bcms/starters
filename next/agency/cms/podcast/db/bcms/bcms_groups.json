@@ -1,0 +1,149 @@
+{
+  "6436c090621f5ab5d1b5e7ed": {
+    "_id": "6436c090621f5ab5d1b5e7ed",
+    "createdAt": 1681309840386,
+    "updatedAt": 1681309883049,
+    "cid": "1",
+    "desc": "",
+    "label": "Social link",
+    "name": "social_link",
+    "props": [
+      {
+        "id": "5ba6741e-b5e8-4668-b06e-37538bc61dc3",
+        "name": "icon",
+        "label": "Icon",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "8bba2da8-f606-4c22-8949-d0871fe3826c",
+        "name": "url",
+        "label": "Url",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
+  },
+  "6437c660e88842074b79ce28": {
+    "_id": "6437c660e88842074b79ce28",
+    "createdAt": 1681376864530,
+    "updatedAt": 1681376884403,
+    "cid": "3",
+    "desc": "",
+    "label": "Home hero",
+    "name": "home_hero",
+    "props": [
+      {
+        "id": "487d51d9-f400-4ab6-80c0-2a82145ea6c4",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "24844d0e-6d72-4f38-80c0-fd7c805bd110",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "bc130da9-0b20-4f0b-9631-1101958413c9",
+        "name": "cover",
+        "label": "Cover",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      }
+    ]
+  },
+  "643e63e90a76d51c7228b69f": {
+    "_id": "643e63e90a76d51c7228b69f",
+    "createdAt": 1681810409189,
+    "updatedAt": 1681810423390,
+    "cid": "4",
+    "desc": "",
+    "label": "Home episodes",
+    "name": "home_episodes",
+    "props": [
+      {
+        "id": "ef80c678-d576-42d5-8917-b2219ed4154c",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "4ee0a394-7e74-4039-9992-55ff902b549c",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
+  },
+  "64f88de35b05a4cf971302a2": {
+    "_id": "64f88de35b05a4cf971302a2",
+    "createdAt": 1694010851637,
+    "updatedAt": 1694010864744,
+    "cid": "6",
+    "desc": "",
+    "label": "SEO",
+    "name": "seo",
+    "props": [
+      {
+        "id": "ea032013-6cac-4cf0-818d-5c4381c56177",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": false,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "6916eaeb-c898-461e-ba68-22a01dc495e5",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": false,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
+  }
+}

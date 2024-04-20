@@ -1,0 +1,397 @@
+{
+  "64182b34f7d73b81da796da6": {
+    "_id": "64182b34f7d73b81da796da6",
+    "createdAt": 1679305524741,
+    "updatedAt": 1679306321901,
+    "cid": "2",
+    "desc": "",
+    "label": "Home hero",
+    "name": "home_hero",
+    "props": [
+      {
+        "id": "fa58e0b6-c36e-48a1-abc0-2c4752484fbf",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "beb2a9eb-7642-47a3-9522-4719eda0eef6",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "821a3a1c-adb6-44f6-9cba-b27e014a1182",
+        "name": "cta_label",
+        "label": "Cta label",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "47242042-7282-4db3-ad26-c1f61de30c31",
+        "name": "cover",
+        "label": "Cover",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      }
+    ]
+  },
+  "641869219406d67a48c8afba": {
+    "_id": "641869219406d67a48c8afba",
+    "createdAt": 1679321377651,
+    "updatedAt": 1679321400516,
+    "cid": "3",
+    "desc": "",
+    "label": "Home recipes",
+    "name": "home_recipes",
+    "props": [
+      {
+        "id": "f3ca3951-974f-45ee-be99-f5f76c4214e7",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "0f14a6d4-bfef-4eef-bd5e-0975bae731a3",
+        "name": "recipes",
+        "label": "Recipes",
+        "array": true,
+        "required": true,
+        "type": "ENTRY_POINTER",
+        "defaultData": [
+          {
+            "displayProp": "title",
+            "templateId": "64182bc0f7d73b81da796da7",
+            "entryIds": []
+          }
+        ]
+      },
+      {
+        "id": "d86247cc-5349-482d-9671-f77a05474097",
+        "name": "cta_label",
+        "label": "Cta label",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
+  },
+  "64196b139eeca76eacf3fac2": {
+    "_id": "64196b139eeca76eacf3fac2",
+    "createdAt": 1679387411451,
+    "updatedAt": 1679387608042,
+    "cid": "4",
+    "desc": "",
+    "label": "Home about us",
+    "name": "home_about_us",
+    "props": [
+      {
+        "id": "69f6888e-a214-438e-8923-9891cacb88a1",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "df9a33bd-52d0-456c-a011-4768c7da4fb6",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "89a25468-c8a9-450c-bb50-f39d31a707b0",
+        "name": "stats",
+        "label": "Stats",
+        "array": true,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64196b9d9eeca76eacf3fac3"
+        }
+      },
+      {
+        "id": "0e2476ab-cb52-4df9-8c8b-0aa3801f7cc0",
+        "name": "cover",
+        "label": "Cover",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      }
+    ]
+  },
+  "64196b9d9eeca76eacf3fac3": {
+    "_id": "64196b9d9eeca76eacf3fac3",
+    "createdAt": 1679387549322,
+    "updatedAt": 1679387590354,
+    "cid": "5",
+    "desc": "",
+    "label": "Stat",
+    "name": "stat",
+    "props": [
+      {
+        "id": "8de3ce1a-950c-49c6-875c-2716e6b480c6",
+        "name": "label",
+        "label": "Label",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "b6f56d77-c4c8-4303-bd9d-fdc36cb85dd6",
+        "name": "value",
+        "label": "Value",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
+  },
+  "641976739eeca76eacf3fac5": {
+    "_id": "641976739eeca76eacf3fac5",
+    "createdAt": 1679390323351,
+    "updatedAt": 1679390381147,
+    "cid": "6",
+    "desc": "",
+    "label": "Home let's talk",
+    "name": "home_lets_talk",
+    "props": [
+      {
+        "id": "c1126ff6-4c7e-4d69-9034-efccf0ff2e2b",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "85b3cfed-42e0-4dec-aab8-915da2be9c48",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "a1a752ec-a3e7-4c0a-81f6-16ff37da4cf4",
+        "name": "links",
+        "label": "Links",
+        "array": true,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "641976909eeca76eacf3fac6"
+        }
+      }
+    ]
+  },
+  "641976909eeca76eacf3fac6": {
+    "_id": "641976909eeca76eacf3fac6",
+    "createdAt": 1679390352082,
+    "updatedAt": 1679390369068,
+    "cid": "7",
+    "desc": "",
+    "label": "Let's talk link",
+    "name": "lets_talk_link",
+    "props": [
+      {
+        "id": "172710a2-b763-4632-8f81-f00f56a5ea71",
+        "name": "icon",
+        "label": "Icon",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "ab335909-e715-4500-8cf7-76332ab20bec",
+        "name": "label",
+        "label": "Label",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "6aa63e39-dca1-4df5-98d3-919450c6d286",
+        "name": "link",
+        "label": "Link",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
+  },
+  "641ad9167ea0642549cf765b": {
+    "_id": "641ad9167ea0642549cf765b",
+    "createdAt": 1679481110097,
+    "updatedAt": 1679481124645,
+    "cid": "8",
+    "desc": "",
+    "label": "QA Item",
+    "name": "qa_item",
+    "props": [
+      {
+        "id": "a98204a3-33cf-489e-b270-f00a461f79f5",
+        "name": "question",
+        "label": "Question",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "7800045c-7e64-4ee2-9b45-c1b93beec779",
+        "name": "answer",
+        "label": "Answer",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
+  },
+  "641ada087ea0642549cf765c": {
+    "_id": "641ada087ea0642549cf765c",
+    "createdAt": 1679481352849,
+    "updatedAt": 1679481412882,
+    "cid": "9",
+    "desc": "",
+    "label": "Recipe step",
+    "name": "recipe_step",
+    "props": [
+      {
+        "id": "88322112-ee3a-4725-b6a2-3a735ee7b112",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "0477aece-1e98-473a-b55b-e415c914714a",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "48d6656c-9fca-4899-9605-5425df03d51b",
+        "name": "cover",
+        "label": "Cover",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      }
+    ]
+  },
+  "64f88bd8cb4b37574f5961fb": {
+    "_id": "64f88bd8cb4b37574f5961fb",
+    "createdAt": 1694010328624,
+    "updatedAt": 1694010339502,
+    "cid": "a",
+    "desc": "",
+    "label": "SEO",
+    "name": "seo",
+    "props": [
+      {
+        "id": "c1272b60-8b6d-4e15-9a70-c51a62e69fc5",
+        "name": "title",
+        "label": "Title",
+        "array": false,
+        "required": false,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "12504df4-dd1b-426c-a393-5a9ad24d67c9",
+        "name": "description",
+        "label": "Description",
+        "array": false,
+        "required": false,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
+  }
+}

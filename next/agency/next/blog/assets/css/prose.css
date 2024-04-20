@@ -1,0 +1,12 @@
+.prose h2 {
+  @apply leading-none font-medium tracking-[-0.41px] mb-[14px] md:text-xl md:leading-none lg:text-[32px] lg:leading-none lg:mb-6;
+}
+.prose p {
+  @apply text-sm leading-[1.4] tracking-[-0.41px] text-appGray-500 mb-3 md:text-base md:leading-[1.4] md:mb-4 lg:text-xl lg:leading-[1.4] lg:mb-6;
+}
+.prose p strong {
+  @apply text-appText font-medium;
+}
+.prose p a {
+  @apply underline text-inherit;
+}

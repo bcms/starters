@@ -1,0 +1,12 @@
+.bcmsImage.cover img,
+.bcmsImage.cover svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bcmsImage.position-top img {
+  object-position: top;
+}
+.bcmsImage svg {
+  width: 100%;
+}

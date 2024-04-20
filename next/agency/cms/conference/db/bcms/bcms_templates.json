@@ -1,0 +1,263 @@
+{
+  "64425c5beb7380e95b95e762": {
+    "_id": "64425c5beb7380e95b95e762",
+    "createdAt": 1682070619309,
+    "updatedAt": 1682070902974,
+    "cid": "1",
+    "desc": "",
+    "label": "Header",
+    "name": "header",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "3bfd2ced-b4ce-4ba1-9587-f351aade4204",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "4838957e-dcb6-4e83-953c-75ee1284a8b6",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "fa2d13e2-547d-4cc7-a504-fd48b204bfe9",
+        "name": "logo",
+        "label": "Logo",
+        "array": false,
+        "required": true,
+        "type": "MEDIA",
+        "defaultData": []
+      },
+      {
+        "id": "4f7e0021-7894-47cb-beb4-ce99462fce1b",
+        "name": "nav",
+        "label": "Nav",
+        "array": true,
+        "required": true,
+        "type": "RICH_TEXT",
+        "defaultData": [
+          {
+            "nodes": []
+          }
+        ]
+      }
+    ]
+  },
+  "64426170eb7380e95b95e766": {
+    "_id": "64426170eb7380e95b95e766",
+    "createdAt": 1682071920464,
+    "updatedAt": 1682072163448,
+    "cid": "2",
+    "desc": "",
+    "label": "Footer",
+    "name": "footer",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "5d4f2721-b89f-48e4-94d9-703441167d86",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "25129a14-98a7-4e99-9870-b11f29f93eee",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "dbaa584e-040d-4c29-90d6-f1a9ffbc42a7",
+        "name": "social",
+        "label": "Social",
+        "array": true,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "644261a1eb7380e95b95e768"
+        }
+      },
+      {
+        "id": "e9f7b9b9-2402-44c8-8fbc-c2a446b1f075",
+        "name": "email",
+        "label": "Email",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
+  },
+  "644277a6eb7380e95b95e76f": {
+    "_id": "644277a6eb7380e95b95e76f",
+    "createdAt": 1682077606455,
+    "updatedAt": 1694072705424,
+    "cid": "3",
+    "desc": "",
+    "label": "Home page",
+    "name": "home_page",
+    "singleEntry": true,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "4425822a-02e2-4aff-838d-f9a2a1930f7a",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "145f6f41-11c6-472e-ac23-7b3af3639bfc",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "a7a8c6f4-5cb2-4c9d-9ffa-398e8c99c9f7",
+        "name": "seo",
+        "label": "SEO",
+        "array": false,
+        "required": false,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64f97f0f9371ee408d69115f"
+        }
+      },
+      {
+        "id": "06a0e0ba-b2e1-4d3e-a043-b4269a792540",
+        "name": "hero",
+        "label": "Hero",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64428665eb7380e95b95e771"
+        }
+      },
+      {
+        "id": "0dbba876-3e3c-4b1e-bc0d-b8415209091a",
+        "name": "about",
+        "label": "About",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64428ee5eb7380e95b95e778"
+        }
+      },
+      {
+        "id": "210f980c-723d-484f-8264-a0e957e889e6",
+        "name": "speakers",
+        "label": "Speakers",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64429093eb7380e95b95e77a"
+        }
+      },
+      {
+        "id": "11279d4b-fbeb-423f-9a6f-600090ab9077",
+        "name": "sponsors",
+        "label": "Sponsors",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "644296f8eb7380e95b95e77f"
+        }
+      },
+      {
+        "id": "4037b94a-3630-4c10-a09f-dcbfcb76a210",
+        "name": "tickets",
+        "label": "Tickets",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "64429d61eb7380e95b95e782"
+        }
+      },
+      {
+        "id": "2bdcf8d6-1b4b-4d1a-b9d7-b24f6857d259",
+        "name": "agenda",
+        "label": "Agenda",
+        "array": false,
+        "required": true,
+        "type": "GROUP_POINTER",
+        "defaultData": {
+          "_id": "6442a1bfeb7380e95b95e784"
+        }
+      }
+    ]
+  },
+  "6447cdb6ee35003287262fa9": {
+    "_id": "6447cdb6ee35003287262fa9",
+    "createdAt": 1682427318938,
+    "updatedAt": 1682427373933,
+    "cid": "4",
+    "desc": "",
+    "label": "Legal",
+    "name": "legal",
+    "singleEntry": false,
+    "userId": "111111111111111111111111",
+    "props": [
+      {
+        "id": "8fee0042-038d-40df-b3e5-ee73cce4ff09",
+        "label": "Title",
+        "name": "title",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      },
+      {
+        "id": "1dcbf0db-db6b-4f7a-b31e-a53cb36b80ef",
+        "label": "Slug",
+        "name": "slug",
+        "array": false,
+        "required": true,
+        "type": "STRING",
+        "defaultData": [
+          ""
+        ]
+      }
+    ]
+  }
+}
