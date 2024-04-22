@@ -1,11 +1,11 @@
 import Header from './layout/Header';
 import Footer from './layout/Footer';
 import React, { FC, PropsWithChildren, useMemo } from 'react';
-import { HomePageData, PageProps } from '@/types';
+import { PageProps } from '@/types';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-export const PageWrapper: FC<PropsWithChildren<PageProps<HomePageData>>> = ({
+export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
   page,
   header,
   children,
