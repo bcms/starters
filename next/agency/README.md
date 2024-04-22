@@ -1,66 +1,118 @@
-# BCMS Starters
+https://github.com/bcms/starters/assets/15079459/ceed3ea4-c6c6-40f7-9e18-746874015120
 
-Free, beautiful, customizable, responsive, high-performance starters, integrated with [BCMS](https://github.com/bcms/cms).
-Built with Tailwind CSS and your favorite framework. Ready-to-use.
-
-![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![Nuxtjs](https://img.shields.io/badge/Nuxt-002E3B?style=for-the-badge&logo=nuxtdotjs&logoColor=#00DC82) ![Gatsby](https://img.shields.io/badge/Gatsby-%23663399.svg?style=for-the-badge&logo=gatsby&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-
-SvelteKit and Astro.js - coming soon.
-
-If you like the project, hit that ⭐ button to show some 💛
+<h1 align="center">Conference with Next.js and BCMS</h1>
+<p align="center"><a href="https://conference-starter.thebcms.com/">See this conference in action ⤴</a></p>
+<p align="center">Spin up a fully functional conference with Next.js, Tailwind, and <a href="https://github.com/bcms/cms">BCMS</a> - in a few minutes.<br/>
+Everything from submitting conference, over listing and searching them, to getting applications. All within the same codebase.</p>
 
 ---
 
-![Nuxtjs](https://img.shields.io/badge/Nuxt-002E3B?style=for-the-badge&logo=nuxtdotjs&logoColor=#00DC82)
-
-## Nuxt starters
-
-|     |     |     |
-| --- | --- | --- |
-| [![](https://user-images.githubusercontent.com/15079459/274629022-0d402324-b0a5-4c26-b5a0-5f89aabaa31a.png)](/nuxt/conference) **Nuxt Conference starter** | [![](https://user-images.githubusercontent.com/15079459/274629056-f0baa4c5-d982-46df-91f9-89dd986c48a0.png)](/nuxt/job-board) **Nuxt Job board starter** | [![](https://user-images.githubusercontent.com/15079459/274629077-cca186cb-b06a-46cf-8b8a-6f2f4efd03b0.png)](/nuxt/blog) **Nuxt Blog starter** |
-| [![](https://user-images.githubusercontent.com/15079459/274629098-a135d9f1-b9ac-48ee-81d6-89d0b83a5f41.png)](/nuxt/recipes) **Nuxt Recipes starter** | [![](https://user-images.githubusercontent.com/15079459/274629127-89832762-1a00-4169-b8ef-13731325f81f.png)](/nuxt/e-commerce) **Nuxt E-commerce starter** | [![](https://user-images.githubusercontent.com/15079459/274629159-764e33bc-83dd-487c-95ea-5224a9e263fb.png)](/nuxt/personal) **Nuxt Personal website starter** |
-| [![](https://user-images.githubusercontent.com/15079459/274629184-8ed30c1e-9001-48f3-8a39-b5276cbf7104.png)](/nuxt/restaurant) **Nuxt Restaurant starter** | [![](https://user-images.githubusercontent.com/15079459/274629203-68c2be61-fe6d-4b52-bca0-2f6201e73009.png)](/nuxt/podcast) **Nuxt Podcast starter** | [![](https://github.com/bcms/starters/assets/15079459/652d6e4f-5676-4ba6-ba36-13933ce76b37)](/nuxt/agency) **Nuxt Agency website starter** |     |
+<p align="center">
+  <span>If you like the project, hit that ⭐ button</span>
+</p>
 
 ---
 
-![Gatsby](https://img.shields.io/badge/Gatsby-%23663399.svg?style=for-the-badge&logo=gatsby&logoColor=white)
+<p align="center">Whether you are looking to build a conference for your company or a stand-alone conference website - this starter will save you weeks. You can clone this folder, connect it with your own BCMS instance, and give it a go!</p>
+<br/>
 
-## Gatsby starters
+<h2 align="center">How it works</h2>
+<br/>
 
-|     |     |     |
-| --- | --- | --- |
-| [![](https://user-images.githubusercontent.com/15079459/274629022-0d402324-b0a5-4c26-b5a0-5f89aabaa31a.png)](/gatsby/conference) **Gatsby Conference starter** | [![](https://user-images.githubusercontent.com/15079459/274629056-f0baa4c5-d982-46df-91f9-89dd986c48a0.png)](/gatsby/job-board) **Gatsby Job board starter** | [![](https://user-images.githubusercontent.com/15079459/274629077-cca186cb-b06a-46cf-8b8a-6f2f4efd03b0.png)](/gatsby/blog) **Gatsby Blog starter** |
-| [![](https://user-images.githubusercontent.com/15079459/274629098-a135d9f1-b9ac-48ee-81d6-89d0b83a5f41.png)](/gatsby/recipes) **Gatsby Recipes starter** | [![](https://user-images.githubusercontent.com/15079459/274629127-89832762-1a00-4169-b8ef-13731325f81f.png)](/gatsby/e-commerce) **Gatsby E-commerce starter** | [![](https://user-images.githubusercontent.com/15079459/274629159-764e33bc-83dd-487c-95ea-5224a9e263fb.png)](/gatsby/personal) **Gatsby Personal website starter** |
-| [![](https://user-images.githubusercontent.com/15079459/274629184-8ed30c1e-9001-48f3-8a39-b5276cbf7104.png)](/gatsby/restaurant) **Gatsby Restaurant starter** | [![](https://user-images.githubusercontent.com/15079459/274629203-68c2be61-fe6d-4b52-bca0-2f6201e73009.png)](/gatsby/podcast) **Gatsby Podcast starter** |     |
+<h3 align="center">Step 1: Clone the repo</h3>
+<p align="center">This repository contains a lot of starters. Enter <code>conference</code>, but make sure to check other starters too, later.</p>
+
+```bash
+git clone https://github.com/bcms/starters.git
+```
+
+<br/>
+<h3 align="center">Step 2: Start BCMS (Backend)</h3>
+<p align="center">This step will make sure that you are running BCMS locally and in the background, which is required before starting the Next.js development server.</p>
+
+```bash
+cd starters/cms/conference
+```
+
+<p>Run <code>docker-compose build</code> command, followed with <code>docker-compose up</code>.</p>
+<p>Your BCMS instance is now up and running, and can be inspected by visiting <code>http://localhost:8080</code>.</p>
+
+<br/>
+<h3 align="center">Step 3: Start Next.js (Frontend)</h3>
+<p align="center">After this step you will be able to edit the Frontend side of your starter, everything from styles, content, pages structure and much more.</p>
+
+```bash
+cd starters/next/conference
+```
+
+<p>Before anything, make sure to install node packages ( <code>npm install</code> ).</p>
+<p>Run <code>npm run dev</code> command to start the local frontend development server. This will pull the data from the BCMS which is running in the background.</p>
+<p>Your Next app is now up and running and can be inspected by visiting <code>http://localhost:3000</code>.</p>
 
 ---
 
-![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+<br>
+<br>
 
-## Next.js starters
+<h2>FAQs</h2>
+<h3>
+  Is this Next.js starter template compatible with the latest version of
+  Next.js?
+</h3>
+<p>
+  Yes, the template is designed to be compatible with the latest version of
+  Next.js. Make sure to regularly check for updates to ensure compatibility.
+</p>
 
-|     |     |     |
-| --- | --- | --- |
-| [![](https://user-images.githubusercontent.com/15079459/274629022-0d402324-b0a5-4c26-b5a0-5f89aabaa31a.png)](/next/conference) **Next Conference starter** | [![](https://user-images.githubusercontent.com/15079459/274629056-f0baa4c5-d982-46df-91f9-89dd986c48a0.png)](/next/job-board) **Next Job board starter** | [![](https://user-images.githubusercontent.com/15079459/274629077-cca186cb-b06a-46cf-8b8a-6f2f4efd03b0.png)](/next/blog) **Next Blog starter** |
-| [![](https://user-images.githubusercontent.com/15079459/274629098-a135d9f1-b9ac-48ee-81d6-89d0b83a5f41.png)](/next/recipes) **Next Recipes starter** | [![](https://user-images.githubusercontent.com/15079459/274629127-89832762-1a00-4169-b8ef-13731325f81f.png)](/next/e-commerce) **Next E-commerce starter** | [![](https://user-images.githubusercontent.com/15079459/274629159-764e33bc-83dd-487c-95ea-5224a9e263fb.png)](/next/personal) **Next Personal website starter** |
-| [![](https://user-images.githubusercontent.com/15079459/274629184-8ed30c1e-9001-48f3-8a39-b5276cbf7104.png)](/next/restaurant) **Next Restaurant starter** | [![](https://user-images.githubusercontent.com/15079459/274629203-68c2be61-fe6d-4b52-bca0-2f6201e73009.png)](/next/podcast) **Next Podcast starter** |     |
+<h3>
+  Can I integrate other headless CMS platforms besides BCMS with this starter?
+</h3>
+<p>
+  Absolutely! While it's optimized for BCMS, the structure allows for
+  integration with other headless CMS platforms. You might need to make some
+  adjustments based on your chosen CMS.
+</p>
 
----
+<h3>How customizable is the design? Can I change the theme or colors?</h3>
+<p>
+  The design is highly customizable. We used Tailwind for that very reason Just
+  go to [tailwind.config.js](/tailwind.config.js). There, you can easily change
+  the theme, colors, fonts, and other design elements to match your brand.
+</p>
 
-![Svelte](https://img.shields.io/badge/sveltekit-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white)
+<h3>Is there any built-in SEO optimization with this starter?</h3>
+<p>Yes, the starter follows the SEO best practices.</p>
+<img width="631" alt="image" src="https://github.com/bcms/starters/assets/15079459/1011ce99-10a7-465f-9671-cdd2792d4a34">
 
-## SvelteKit starters
-(coming soon)
+<h3>
+  How is the performance of the website? Does it support lazy loading for
+  images?
+</h3>
+<p>
+  The website is optimized for performance. It supports lazy loading for images
+  to ensure faster page loads, especially with a large number of recipes.
+</p>
+<img width="743" alt="image" src="https://github.com/bcms/starters/assets/15079459/3d2a47a6-d47d-41e9-86f5-ec038c1bc1a6">
 
----
+<h3>Are there any pre-configured analytics or tracking tools integrated?</h3>
+<p>
+  The starter doesn't come with pre-configured analytics tools, but it's
+  straightforward to integrate tools like Google Analytics or other tracking
+  solutions.
+</p>
 
-![Astro](https://img.shields.io/badge/astro-212227.svg?style=for-the-badge&logo=astro&logoColor=white)
+<h3>
+  I'm new to Next.js. Do you provide documentation or support for setting up the
+  starter?
+</h3>
 
-## Astro.js starters
-(coming soon)
+Yes, the starter comes with detailed documentation to help you get started. A few useful resources:
 
----
+- [BCMS documentation](https://docs.thebcms.com/integrations/next-js)
+- [Official Next.js documentation](https://nextjs.org/docs)
+- [Sign up to BCMS](https://cloud.thebcms.com/)
 
-## Support ❤️
-
-If you like the project, hit that ⭐ button to show some ❤
+<h2>Support ❤️</h2>
+<p>
+  If you like the project, hit that ⭐ button !!1
+</p>

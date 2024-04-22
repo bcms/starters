@@ -1,9 +1,0 @@
-.swiper--customPagination {
-  @apply flex items-center justify-center gap-2 lg:max-w-[440px] lg:mx-auto;
-  .swiper-pagination-bullet {
-    @apply flex-1 h-1 rounded-lg bg-appGray-300 transition-all duration-300 opacity-100 m-0 #{!important};
-    &-active {
-      @apply flex-[2] bg-appText #{!important};
-    }
-  }
-}

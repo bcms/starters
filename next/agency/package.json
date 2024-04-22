@@ -1,32 +1,36 @@
 {
-  "name": "@thebcms/starters",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "cms-next-starter",
   "private": true,
   "scripts": {
-    "update:cms": "npm-tool --update-cms",
-    "update:nuxt:packages": "npm-tool --update-nuxt-packages",
-    "build-and-deploy": "npm-tool --build-and-deploy"
+    "dev": "bcms --m all && next dev",
+    "build": "bcms --m all && next build",
+    "start": "bcms --m all && next start",
+    "pull": "bcms --m all",
+    "lint": "eslint . --ext .ts,.tsx"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bcms/starters.git"
+  "dependencies": {
+    "classnames": "^2.3.2",
+    "next": "^12.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "swiper": "^10.2.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bcms/starters/issues"
-  },
-  "homepage": "https://github.com/bcms/starters#readme",
   "devDependencies": {
-    "@banez/child_process": "^1.0.3",
-    "@banez/fs": "^1.0.3",
-    "@banez/npm-tool": "^1.1.1",
-    "@becomes/cms-cli": "^3.1.1",
-    "@svgr/webpack": "^8.1.0",
-    "@types/adm-zip": "^0.5.0",
-    "adm-zip": "^0.5.10"
+    "@becomes/cms-cli": "^3.2.1",
+    "@becomes/cms-client": "^3.3.6",
+    "@becomes/cms-most": "^2.8.0",
+    "@types/react": "^18.2.79",
+    "@typescript-eslint/eslint-plugin": "^7.7.0",
+    "@typescript-eslint/parser": "^7.7.0",
+    "autoprefixer": "^10.4.19",
+    "axios": "^1.6.8",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^14.2.2",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "next-plugin-bcms": "^1.3.0",
+    "prettier": "^3.2.5",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5"
   }
 }
