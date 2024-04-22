@@ -18,21 +18,27 @@ const FormComponent = () => {
     event.preventDefault();
 
     let hasErrors = false;
-    const newForm = { ...form }; // Create a copy to modify errors
+    const newForm = { ...form };
 
     if (!newForm.name.value) {
       newForm.name.error = 'Name is required';
       hasErrors = true;
     }
-    // Similar validation for email & message
+
+    if (!newForm.email.value) {
+      newForm.email.error = 'Email is required';
+      hasErrors = true;
+    }
+
+    if (!newForm.message.value) {
+      newForm.message.error = 'Email is required';
+      hasErrors = true;
+    }
 
     if (hasErrors) {
       setForm(newForm);
       return;
     }
-
-    // If no errors, submit form data (e.g., fetch call to your API)
-    console.log('Form Data:', form);
   };
 
   return (
