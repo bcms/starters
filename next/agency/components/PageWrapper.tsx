@@ -17,7 +17,7 @@ export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
   const description =
     'Jumpstart your Next project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
   const image = '/thumbnail.jpg';
-  const domain = 'https://agency-starter.thebcms.com/team';
+  const domain = 'https://agency-starter.thebcms.com/';
   return (
     <div className="overflow-hidden">
       <Head>
