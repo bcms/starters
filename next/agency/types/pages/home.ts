@@ -1,4 +1,4 @@
-import { HomePageEntryMeta } from '~~/bcms/types';
+import { HomePageEntryMeta } from '@/bcms/types';
 
 export interface HomePageData {
   meta: HomePageEntryMeta;

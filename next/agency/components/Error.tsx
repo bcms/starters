@@ -6,7 +6,7 @@ const ErrorPage = () => {
   const router = useRouter();
 
   const goBack = () => {
-    router.push('/'); 
+    router.push('/');
   };
 
   return (
@@ -22,8 +22,8 @@ const ErrorPage = () => {
           Go back home
         </span>
         <SvgoArrow
-          filled
-          fontControlled={false}
+          filled="true"
+          fontcontrolled="false"
           className="w-[14px] h-[14px] md:w-4 md:h-4 lg:w-5 lg:h-5"
         />
       </button>

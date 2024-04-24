@@ -1,5 +1,5 @@
 import React from 'react';
-import BCMSLogo from '@/assets/media/bcms-logo.svg'; 
+import BCMSLogo from '@/assets/media/bcms-logo.svg';
 import { FooterEntryMeta } from '@/bcms/types';
 
 interface FooterProps {
@@ -15,17 +15,21 @@ const Footer: React.FC<FooterProps> = () => {
             <span className="text-appGray-300 font-Helvetica text-sm font-semibold leading-none tracking-[-0.28px] lg:text-appGray-100 lg:text-base lg:leading-none lg:tracking-[-0.41px] lg:font-normal">
               Powered by
             </span>
-            <a 
+            <a
               href="https://thebcms.com/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="BCMS website"
               className="flex transition-opacity duration-300 hover:opacity-80"
             >
-              <BCMSLogo  />
+              <BCMSLogo />
             </a>
           </div>
-          <img src="logo-cut-off.svg" className="w-full max-w-[1111px] mx-auto" />
+          <img
+            src="logo-cut-off.svg"
+            alt="Footer Logo"
+            className="w-full max-w-[1111px] mx-auto"
+          />
         </div>
       </div>
     </footer>

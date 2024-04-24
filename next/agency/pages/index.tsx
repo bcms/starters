@@ -14,8 +14,11 @@ import HomePageTeam from '@/components/home-page/Team';
 import HomePageCapabilities from '@/components/home-page/Capabilities';
 import ContactBlock from '@/components/ContactBlock';
 
-
-const HomePage: React.FC<PageProps<HomePageData>> = ({ page, header, footer }) => {
+const HomePage: React.FC<PageProps<HomePageData>> = ({
+  page,
+  header,
+  footer,
+}) => {
   return (
     <PageWrapper page={page} header={header} footer={footer}>
       <HomePageHero data={page.meta.hero} />
@@ -27,7 +30,6 @@ const HomePage: React.FC<PageProps<HomePageData>> = ({ page, header, footer }) =
     </PageWrapper>
   );
 };
-
 
 export const getStaticProps: GetStaticProps<
   PageProps<HomePageData>
@@ -54,6 +56,6 @@ export const getStaticProps: GetStaticProps<
       },
     },
   };
-}; 
+};
 
 export default HomePage;

@@ -4,7 +4,7 @@ import ContactUs from './ContactUs';
 import ContentManager from './ContentManager';
 
 interface Props {
-  data: ContactBlockGroup; 
+  data: ContactBlockGroup;
 }
 
 const MyComponent: React.FC<Props> = ({ data }) => {
@@ -15,7 +15,7 @@ const MyComponent: React.FC<Props> = ({ data }) => {
           <h2 className="font-bold leading-[1.2] tracking-[-0.32px] mb-3 lg:mb-4 lg:text-[32px] lg:tracking-[-0.64px]">
             {data.title}
           </h2>
-          <ContentManager 
+          <ContentManager
             item={data.description}
             className="content text-appGray-200 text-xs font-medium leading-none tracking-[-0.24px] mb-4 lg:mb-8 lg:text-base lg:leading-none lg:tracking-[-0.32px]"
           />

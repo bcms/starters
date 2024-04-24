@@ -1,27 +1,28 @@
 import React from 'react';
-import { PageWrapper } from '@/components/PageWrapper';  
+import { PageWrapper } from '@/components/PageWrapper';
 import { PageProps, PortfolioPageData } from '@/types';
-import {
-    PortfolioPageEntry,
-    PortfolioPageEntryMeta,
-  } from '@/bcms/types';
+import { PortfolioPageEntry, PortfolioPageEntryMeta } from '@/bcms/types';
 import { GetStaticProps } from 'next';
 import { getBcmsClient } from 'next-plugin-bcms';
 import { getHeaderAndFooter } from '@/utils/page-data';
 import Hero from '@/components/Hero';
-import PortfolioList from '@/components/portfolio/List'
+import PortfolioList from '@/components/portfolio/List';
 import ContactBlock from '@/components/ContactBlock';
 
-const PortfolioPage: React.FC<PageProps<PortfolioPageData>> = ({ page, header, footer }) => {
-    return (
-      <PageWrapper page={page} header={header} footer={footer}>
-        <Hero 
-            title={page.meta.title} 
-            subtitle="Portfolio" 
-            description={page.meta.description} 
-        />
-        <PortfolioList items={page.meta.items} />
-        <ContactBlock data={page.meta.contact_block} />
+const PortfolioPage: React.FC<PageProps<PortfolioPageData>> = ({
+  page,
+  header,
+  footer,
+}) => {
+  return (
+    <PageWrapper page={page} header={header} footer={footer}>
+      <Hero
+        title={page.meta.title}
+        subtitle="Portfolio"
+        description={page.meta.description}
+      />
+      <PortfolioList items={page.meta.items} />
+      <ContactBlock data={page.meta.contact_block} />
     </PageWrapper>
   );
 };

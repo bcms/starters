@@ -1,8 +1,6 @@
 import type { AppProps } from 'next/app';
 import { BCMSImageConfig } from '@becomes/cms-most/frontend';
 
-
-
 import '@/assets/css/fonts.css';
 import '@/assets/css/main.css';
 import '@/assets/css/reset.css';

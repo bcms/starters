@@ -1,14 +1,14 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import ContentManager from '@/components/ContentManager'; 
-import BCMSImage from 'next-plugin-bcms/components/image'; 
-import Link from 'next/link'; 
-import SvgoArrow from '@/assets/icons/arrow.svg'; 
+import ContentManager from '@/components/ContentManager';
+import BCMSImage from 'next-plugin-bcms/components/image';
+import Link from 'next/link';
+import SvgoArrow from '@/assets/icons/arrow.svg';
 import { HomeCapabilitiesGroup } from '@/bcms/types';
 import { BCMSMediaParsed } from '@becomes/cms-client/types';
 
 interface CapabilitiesProps {
-  data: HomeCapabilitiesGroup; 
+  data: HomeCapabilitiesGroup;
 }
 
 const Capabilities: React.FC<CapabilitiesProps> = ({ data }) => {
@@ -32,7 +32,7 @@ const Capabilities: React.FC<CapabilitiesProps> = ({ data }) => {
                 <span className="font-Inter text-xs font-medium leading-none tracking-[-0.24px] lg:text-base lg:leading-none lg:tracking-[-0.32px]">
                   See all portfolios
                 </span>
-                <SvgoArrow className="w-4 h-4" /> 
+                <SvgoArrow className="w-4 h-4" />
               </a>
             </Link>
           </div>
@@ -54,7 +54,7 @@ const Capabilities: React.FC<CapabilitiesProps> = ({ data }) => {
             <SwiperSlide key={index}>
               <Link href={item.meta.en?.url as string} target="_blank" passHref>
                 <a className="flex flex-col gap-2.5 lg:gap-6">
-                  <BCMSImage 
+                  <BCMSImage
                     media={item.meta.en?.project_cover as BCMSMediaParsed}
                     options={{
                       sizes: {
@@ -67,7 +67,10 @@ const Capabilities: React.FC<CapabilitiesProps> = ({ data }) => {
                       },
                     }}
                     className="full rounded overflow-hidden lg:rounded-2xl"
-                    style={{ boxShadow: '0px 0px 0px 1px #EDEDED, 0px 1.5px 1px 0px rgba(15, 18, 35, 0.14)' }}
+                    style={{
+                      boxShadow:
+                        '0px 0px 0px 1px #EDEDED, 0px 1.5px 1px 0px rgba(15, 18, 35, 0.14)',
+                    }}
                   />
                   <h3 className="text-appGray-300 font-Inter text-xs font-semibold leading-none tracking-[-0.24px] lg:text-base lg:leading-none lg:tracking-[-0.32px]">
                     {item.meta.en?.subtitle}

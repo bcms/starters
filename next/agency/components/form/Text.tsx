@@ -4,15 +4,25 @@ interface FormTextProps {
   placeholder?: string;
   type?: 'text' | 'email' | 'textarea';
   error?: string;
-  name: string; 
+  name: string;
   value: string;
   className?: string;
-  onChange: (event: any) => void;
+  onChange: (
+    event:
+      | React.ChangeEvent<HTMLInputElement>
+      | React.ChangeEvent<HTMLTextAreaElement>,
+  ) => void;
 }
 
-const FormText: React.FC<FormTextProps> = ({ placeholder, className, type = 'text', error, name, onChange, value }) => {
-
-
+const FormText: React.FC<FormTextProps> = ({
+  placeholder,
+  className,
+  type = 'text',
+  error,
+  name,
+  onChange,
+  value,
+}) => {
   return (
     <label className={className}>
       {type !== 'textarea' ? (
@@ -24,7 +34,8 @@ const FormText: React.FC<FormTextProps> = ({ placeholder, className, type = 'tex
             error ? 'border-red-500' : 'border-transparent'
           }`}
           style={{
-            boxShadow: '0rem 0rem 0rem .0625rem #EDEDED, 0rem .0938rem .0625rem 0rem rgba(15, 18, 35, 0.14)',
+            boxShadow:
+              '0rem 0rem 0rem .0625rem #EDEDED, 0rem .0938rem .0625rem 0rem rgba(15, 18, 35, 0.14)',
           }}
           onChange={onChange}
           name={name}
@@ -37,7 +48,8 @@ const FormText: React.FC<FormTextProps> = ({ placeholder, className, type = 'tex
             error ? 'border-red-500' : 'border-transparent'
           }`}
           style={{
-            boxShadow: '0rem 0rem 0rem .0625rem #EDEDED, 0rem .0938rem .0625rem 0rem rgba(15, 18, 35, 0.14)',
+            boxShadow:
+              '0rem 0rem 0rem .0625rem #EDEDED, 0rem .0938rem .0625rem 0rem rgba(15, 18, 35, 0.14)',
           }}
           onChange={onChange}
           name={name}

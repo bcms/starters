@@ -26,7 +26,7 @@ export async function getHeaderAndFooter(
     // Entry slug or ID
     entry: 'footer',
   })) as FooterEntry;
-  
+
   return {
     header: header.meta.en as HeaderEntryMeta,
     footer: footer.meta.en as FooterEntryMeta,

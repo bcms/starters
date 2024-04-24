@@ -1,5 +1,5 @@
 import React from 'react';
-import ContentManager from './ContentManager'; 
+import ContentManager from './ContentManager';
 import { BCMSPropRichTextDataParsed } from '@becomes/cms-client/types';
 
 interface HeroProps {
@@ -19,7 +19,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, description }) => {
           <h1 className="font-bold leading-none tracking-[-0.32px] mb-2 md:text-3xl md:leading-none lg:font-Inter lg:font-medium lg:text-5xl lg:leading-none lg:tracking-[-0.96px] lg:mb-4">
             {title}
           </h1>
-          <ContentManager 
+          <ContentManager
             item={description}
             className="text-appGray-200 text-xs font-medium leading-[1.3] tracking-[-0.24px] lg:text-base lg:leading-[1.4] lg:tracking-[-0.32px]"
           />

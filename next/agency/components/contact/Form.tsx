@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import FormText from '@/components/form/Text'
+import FormText from '@/components/form/Text';
 
 const FormComponent = () => {
   const [form, setForm] = useState({
@@ -7,14 +7,18 @@ const FormComponent = () => {
     email: { value: '', error: '' },
     message: { value: '', error: '' },
   });
-  const formRef = useRef(null); 
+  const formRef = useRef(null);
 
-  const handleChange = (event: any) => {
+  const handleChange = (
+    event:
+      | React.ChangeEvent<HTMLInputElement>
+      | React.ChangeEvent<HTMLTextAreaElement>,
+  ) => {
     const { name, value } = event.target;
     setForm({ ...form, [name]: { value, error: '' } });
   };
 
-  const handleSubmit = (event: any) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     let hasErrors = false;
@@ -44,7 +48,11 @@ const FormComponent = () => {
   return (
     <section>
       <div className="container">
-        <form className="grid grid-cols-2 gap-3 lg:gap-4" onSubmit={handleSubmit} ref={formRef}> 
+        <form
+          className="grid grid-cols-2 gap-3 lg:gap-4"
+          onSubmit={handleSubmit}
+          ref={formRef}
+        >
           <FormText
             value={form.name.value}
             onChange={handleChange}
@@ -69,9 +77,7 @@ const FormComponent = () => {
             className="col-span-2"
             name="message"
           />
-          <button
-            className="bg-appAccent-300 flex max-w-max px-6 py-3 rounded-[7px] text-appText-light font-Inter text-sm font-medium leading-none tracking-[-0.28px] mt-1 transition-colors duration-300 hover:bg-appAccent lg:mt-2"
-          >
+          <button className="bg-appAccent-300 flex max-w-max px-6 py-3 rounded-[7px] text-appText-light font-Inter text-sm font-medium leading-none tracking-[-0.28px] mt-1 transition-colors duration-300 hover:bg-appAccent lg:mt-2">
             Send
           </button>
         </form>

@@ -1,9 +1,9 @@
-https://github.com/bcms/starters/assets/15079459/ceed3ea4-c6c6-40f7-9e18-746874015120
+https://github.com/bcms/starters/assets/15079459/84dcf8dd-4cf9-48b8-919f-07f359ea9541
 
-<h1 align="center">Conference with Next.js and BCMS</h1>
-<p align="center"><a href="https://conference-starter.thebcms.com/">See this conference in action ⤴</a></p>
-<p align="center">Spin up a fully functional conference with Next.js, Tailwind, and <a href="https://github.com/bcms/cms">BCMS</a> - in a few minutes.<br/>
-Everything from submitting conference, over listing and searching them, to getting applications. All within the same codebase.</p>
+<h1 align="center">Agency website with Next.js and BCMS</h1>
+<p align="center"><a href="https://agency-starter.thebcms.com/">See this website in action ⤴</a></p>
+<p align="center">Spin up a fully functional agency website with Next.js, Tailwind, and <a href="https://github.com/bcms/cms">BCMS</a> - in a few minutes.<br/>
+Everything from managing services page, portfolio posts, team page, to contact us page. All within the same codebase.</p>
 
 ---
 
@@ -13,14 +13,14 @@ Everything from submitting conference, over listing and searching them, to getti
 
 ---
 
-<p align="center">Whether you are looking to build a conference for your company or a stand-alone conference website - this starter will save you weeks. You can clone this folder, connect it with your own BCMS instance, and give it a go!</p>
+<p align="center">Whether you are looking to build an agency website for your company or for a client - this starter will save you weeks. You can clone this folder, connect it with your own BCMS instance, and give it a go!</p>
 <br/>
 
 <h2 align="center">How it works</h2>
 <br/>
 
 <h3 align="center">Step 1: Clone the repo</h3>
-<p align="center">This repository contains a lot of starters. Enter <code>conference</code>, but make sure to check other starters too, later.</p>
+<p align="center">This repository contains a lot of starters. Enter <code>agency</code>, but make sure to check other starters too, later.</p>
 
 ```bash
 git clone https://github.com/bcms/starters.git
@@ -31,7 +31,7 @@ git clone https://github.com/bcms/starters.git
 <p align="center">This step will make sure that you are running BCMS locally and in the background, which is required before starting the Next.js development server.</p>
 
 ```bash
-cd starters/cms/conference
+cd starters/cms/agency
 ```
 
 <p>Run <code>docker-compose build</code> command, followed with <code>docker-compose up</code>.</p>
@@ -42,12 +42,12 @@ cd starters/cms/conference
 <p align="center">After this step you will be able to edit the Frontend side of your starter, everything from styles, content, pages structure and much more.</p>
 
 ```bash
-cd starters/next/conference
+cd starters/nuxt/agency
 ```
 
 <p>Before anything, make sure to install node packages ( <code>npm install</code> ).</p>
 <p>Run <code>npm run dev</code> command to start the local frontend development server. This will pull the data from the BCMS which is running in the background.</p>
-<p>Your Next app is now up and running and can be inspected by visiting <code>http://localhost:3000</code>.</p>
+<p>Your Nuxt app is now up and running and can be inspected by visiting <code>http://localhost:3000</code>.</p>
 
 ---
 
@@ -114,5 +114,5 @@ Yes, the starter comes with detailed documentation to help you get started. A fe
 
 <h2>Support ❤️</h2>
 <p>
-  If you like the project, hit that ⭐ button !!1
+  If you like the project, hit that ⭐ button!
 </p>

@@ -19,7 +19,7 @@ export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
   const image = '/thumbnail.jpg';
   const domain = 'https://agency-starter.thebcms.com/';
   return (
-    <div className="overflow-hidden">
+    <div className="flex flex-col min-h-screen flex-1 overflow-hidden">
       <Head>
         <title>{title} - BrandCrafters</title>
         <meta name="description" content={description} />
@@ -47,10 +47,8 @@ export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
         />
       </Head>
       <Header data={header} />
-      <main>{children}</main>
-      <Footer
-        data={footer}
-      />
+      <main className="flex-1">{children}</main>
+      <Footer data={footer} />
     </div>
   );
 };
