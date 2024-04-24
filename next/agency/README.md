@@ -42,12 +42,12 @@ cd starters/cms/agency
 <p align="center">After this step you will be able to edit the Frontend side of your starter, everything from styles, content, pages structure and much more.</p>
 
 ```bash
-cd starters/nuxt/agency
+cd starters/next/agency
 ```
 
 <p>Before anything, make sure to install node packages ( <code>npm install</code> ).</p>
 <p>Run <code>npm run dev</code> command to start the local frontend development server. This will pull the data from the BCMS which is running in the background.</p>
-<p>Your Nuxt app is now up and running and can be inspected by visiting <code>http://localhost:3000</code>.</p>
+<p>Your Next app is now up and running and can be inspected by visiting <code>http://localhost:3000</code>.</p>
 
 ---
 
