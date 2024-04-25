@@ -12,7 +12,7 @@ const ContactUs = ({ className }: { className?: string }) => {
             '0px 0px 0px 1px #EDEDED, 0px 1.5px 1px 0px rgba(15, 18, 35, 0.14)',
         }}
       >
-        <SvgoHeadphones className="w-4 h-4" filled />
+        <SvgoHeadphones className="w-4 h-4" filled="true" />
         <span className="font-Inter text-sm font-medium leading-none tracking-[-0.28px]">
           Contact Us
         </span>

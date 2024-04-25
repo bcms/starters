@@ -4,7 +4,15 @@ export const useHeadTags = () => {
   const router = useRouter();
   const { pathname } = router;
 
-  const setOgHead = ({ title, description, image }: { title: string, description: string, image: string }) => {
+  const setOgHead = ({
+    title,
+    description,
+    image,
+  }: {
+    title: string;
+    description: string;
+    image: string;
+  }) => {
     if (!title) title = 'BrandCrafters';
     if (!description)
       description =
