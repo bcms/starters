@@ -9,7 +9,7 @@ const { setOgHead } = useHeadTags();
 
 useHead(() =>
   setOgHead({
-    title: 'Error page',
+    title: 'Page Not Found',
   }),
 );
 </script>

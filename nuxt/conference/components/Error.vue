@@ -3,7 +3,7 @@
     class="w-screen h-[calc(100vh-150px)] flex flex-col gap-6 items-center justify-center lg:gap-10"
   >
     <h1 class="text-3xl font-semibold text-center md:text-4xl lg:text-5xl">
-      Error page
+      Page Not Found
     </h1>
     <button
       class="flex items-center px-5 py-[13px] bg-black rounded-[48px] lg:col-start-2 lg:row-start-1 lg:px-[26px] lg:py-[19px]"
