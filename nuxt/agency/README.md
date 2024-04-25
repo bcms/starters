@@ -1,4 +1,4 @@
-https://github.com/bcms/starters/assets/15079459/84dcf8dd-4cf9-48b8-919f-07f359ea9541
+https://github.com/bcms/starters/assets/15079459/0b290156-3a49-4544-b716-eb2c0a712f64
 
 <h1 align="center">Agency website with Nuxt.js and BCMS</h1>
 <p align="center"><a href="https://agency-starter.thebcms.com/">See this website in action ⤴</a></p>
