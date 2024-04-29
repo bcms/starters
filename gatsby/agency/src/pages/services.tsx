@@ -59,7 +59,7 @@ const ServicesPage: React.FC<{
         <>
           <Hero
             title={data.page.bcms.meta.en.title}
-            subtitle="Our Services"
+            subtitle="Our services"
             description={data.page.bcms.meta.en.description}
           />
           <Services services={data.services.nodes} />

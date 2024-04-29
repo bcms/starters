@@ -50,32 +50,30 @@ const Capabilities: React.FC<CapabilitiesProps> = ({ data }) => {
         >
           {data.portfolio_items.map((item, index) => (
             <SwiperSlide key={index}>
-              <Link to={item.portfolio.meta?.en?.url as string} target="_blank">
-                <a className="flex flex-col gap-2.5 lg:gap-6">
-                  <BCMSImage
-                    media={
-                      item.portfolio.meta?.en?.project_cover as BCMSMediaParsed
-                    }
-                    options={{
-                      sizes: {
-                        exec: [
-                          {
-                            width: 786,
-                            height: 902,
-                          },
-                        ],
-                      },
-                    }}
-                    className="full rounded overflow-hidden lg:rounded-2xl"
-                    style={{
-                      boxShadow:
-                        '0px 0px 0px 1px #EDEDED, 0px 1.5px 1px 0px rgba(15, 18, 35, 0.14)',
-                    }}
-                  />
-                  <h3 className="text-appGray-300 font-Inter text-xs font-semibold leading-none tracking-[-0.24px] lg:text-base lg:leading-none lg:tracking-[-0.32px]">
-                    {item.portfolio.meta?.en?.subtitle}
-                  </h3>
-                </a>
+              <Link className="flex flex-col gap-2.5 lg:gap-6" to={item.portfolio.meta?.en?.url as string} target="_blank">
+                <BCMSImage
+                  media={
+                    item.portfolio.meta?.en?.project_cover as BCMSMediaParsed
+                  }
+                  options={{
+                    sizes: {
+                      exec: [
+                        {
+                          width: 786,
+                          height: 902,
+                        },
+                      ],
+                    },
+                  }}
+                  className="full rounded overflow-hidden lg:rounded-2xl"
+                  style={{
+                    boxShadow:
+                      '0px 0px 0px 1px #EDEDED, 0px 1.5px 1px 0px rgba(15, 18, 35, 0.14)',
+                  }}
+                />
+                <h3 className="text-appGray-300 font-Inter text-xs font-semibold leading-none tracking-[-0.24px] lg:text-base lg:leading-none lg:tracking-[-0.32px]">
+                  {item.portfolio.meta?.en?.subtitle}
+                </h3>
               </Link>
             </SwiperSlide>
           ))}

@@ -23,6 +23,7 @@ export const PageWrapper: FC<PropsWithChildren<PageData>> = ({
   const title =
     defaultTitle ??
     page?.bcms.meta?.en.seo?.title ??
+    page?.bcms.meta?.en.title ??
     '';
 
   const description =
