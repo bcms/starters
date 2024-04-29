@@ -35,14 +35,12 @@ const Header: React.FC<HeaderProps> = ({ data, location }) => {
     <header className="relative z-50">
       <div className="relative z-10 container">
         <nav className="relative flex items-center justify-between py-4 lg:py-5">
-          <Link to="/">
-            <a className="flex" aria-label="Home page">
-              <img
-                src="/logo.svg"
-                alt="Logo"
-                className={`w-auto h-4 ${showMobileMenu ? 'max-md:grayscale max-md:brightness-0 max-md:invert' : ''}`}
-              />
-            </a>
+          <Link className="flex" aria-label="Home page" to="/">
+            <img
+              src="/logo.svg"
+              alt="Logo"
+              className={`w-auto h-4 ${showMobileMenu ? 'max-md:grayscale max-md:brightness-0 max-md:invert' : ''}`}
+            />
           </Link>
           <ul
             className={`flex gap-5 max-md:absolute max-md:left-0 max-md:-bottom-6 max-md:translate-y-full max-md:w-full md:flex-row md:justify-center ${showMobileMenu ? 'flex-col' : 'max-md:hidden'}`}
@@ -50,7 +48,6 @@ const Header: React.FC<HeaderProps> = ({ data, location }) => {
             {data.nav.map((item, index) => (
               <li key={index}>
                 <Link to={getHref(item)}>
-                  <a>
                     <ContentManager
                       className={`relative font-Inter text-sm leading-none font-medium tracking-[-0.56px] max-md:text-appText-light transition-colors duration-300 md:hover:text-appText ${
                         getHref(item) === location
@@ -59,7 +56,6 @@ const Header: React.FC<HeaderProps> = ({ data, location }) => {
                       }`}
                       item={item}
                     />
-                  </a>
                 </Link>
               </li>
             ))}

@@ -27,13 +27,11 @@ const Capabilities: React.FC<CapabilitiesProps> = ({ data }) => {
               item={data.description}
               className="text-appGray-200 text-xs font-medium leading-[1.3] tracking-[-0.24px] max-w-[66%] mb-8 lg:text-base lg:leading-[1.3] lg:tracking-[-0.32px] lg:max-w-[488px]"
             />
-            <Link to="/portfolio">
-              <a className="flex items-center gap-1 text-appGray-300 transition-colors duration-300 hover:text-appText">
+            <Link className="flex items-center gap-1 text-appGray-300 transition-colors duration-300 hover:text-appText" to="/portfolio">
                 <span className="font-Inter text-xs font-medium leading-none tracking-[-0.24px] lg:text-base lg:leading-none lg:tracking-[-0.32px]">
                   See all portfolios
                 </span>
                 <SvgoArrow className="w-4 h-4" />
-              </a>
             </Link>
           </div>
         </div>
@@ -75,7 +73,7 @@ const Capabilities: React.FC<CapabilitiesProps> = ({ data }) => {
                     }}
                   />
                   <h3 className="text-appGray-300 font-Inter text-xs font-semibold leading-none tracking-[-0.24px] lg:text-base lg:leading-none lg:tracking-[-0.32px]">
-                    {item.meta?.en?.subtitle}
+                    {item.portfolio.meta?.en?.subtitle}
                   </h3>
                 </a>
               </Link>

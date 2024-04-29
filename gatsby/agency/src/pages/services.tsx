@@ -47,6 +47,7 @@ const ServicesPage: React.FC<{
     };
   };
 }> = ({ data }) => {
+  
   return (
     <PageWrapper
       header={data.header}
@@ -58,7 +59,7 @@ const ServicesPage: React.FC<{
         <>
           <Hero
             title={data.page.bcms.meta.en.title}
-            subtitle="Services"
+            subtitle="Our Services"
             description={data.page.bcms.meta.en.description}
           />
           <Services services={data.services.nodes} />

@@ -5,6 +5,9 @@ export const query = graphql`
     bcms {
       meta {
         en {
+          seo {
+            title
+          }
           title
           description {
             type

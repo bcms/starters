@@ -9,7 +9,6 @@ export const query = graphql`
           slug
           seo {
             title
-            description
           }
           about {
             title
