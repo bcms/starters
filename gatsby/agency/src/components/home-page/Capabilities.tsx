@@ -50,7 +50,7 @@ const Capabilities: React.FC<CapabilitiesProps> = ({ data }) => {
         >
           {data.portfolio_items.map((item, index) => (
             <SwiperSlide key={index}>
-              <Link className="flex flex-col gap-2.5 lg:gap-6" to={item.portfolio.meta?.en?.url as string} target="_blank">
+              <a className="flex flex-col gap-2.5 lg:gap-6" href={item.portfolio.meta?.en?.url as string} target="_blank">
                 <BCMSImage
                   media={
                     item.portfolio.meta?.en?.project_cover as BCMSMediaParsed
@@ -74,7 +74,7 @@ const Capabilities: React.FC<CapabilitiesProps> = ({ data }) => {
                 <h3 className="text-appGray-300 font-Inter text-xs font-semibold leading-none tracking-[-0.24px] lg:text-base lg:leading-none lg:tracking-[-0.32px]">
                   {item.portfolio.meta?.en?.subtitle}
                 </h3>
-              </Link>
+              </a>
             </SwiperSlide>
           ))}
         </Swiper>
