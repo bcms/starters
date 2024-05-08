@@ -19,11 +19,7 @@ const ErrorPage = () => {
         <span className="text-sm leading-none tracking-[-0.41px] mr-1.5 md:text-base md:leading-none md:mr-2 lg:text-xl lg:leading-none">
           Go back home
         </span>
-        <SvgoArrow
-          filled
-          fontControlled={false}
-          className="w-[14px] h-[14px] md:w-4 md:h-4 lg:w-5 lg:h-5"
-        />
+        <SvgoArrow className="w-[14px] h-[14px] md:w-4 md:h-4 lg:w-5 lg:h-5" />
       </button>
     </div>
   );

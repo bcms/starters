@@ -39,23 +39,29 @@ const Header: React.FC<HeaderProps> = ({ data, location }) => {
             <img
               src="/logo.svg"
               alt="Logo"
-              className={`w-auto h-4 ${showMobileMenu ? 'max-md:grayscale max-md:brightness-0 max-md:invert' : ''}`}
+              className={`w-auto h-4 ${
+                showMobileMenu
+                  ? 'max-md:grayscale max-md:brightness-0 max-md:invert'
+                  : ''
+              }`}
             />
           </Link>
           <ul
-            className={`flex gap-5 max-md:absolute max-md:left-0 max-md:-bottom-6 max-md:translate-y-full max-md:w-full md:flex-row md:justify-center ${showMobileMenu ? 'flex-col' : 'max-md:hidden'}`}
+            className={`flex gap-5 max-md:absolute max-md:left-0 max-md:-bottom-6 max-md:translate-y-full max-md:w-full md:flex-row md:justify-center ${
+              showMobileMenu ? 'flex-col' : 'max-md:hidden'
+            }`}
           >
             {data.nav.map((item, index) => (
               <li key={index}>
                 <Link to={getHref(item)}>
-                    <ContentManager
-                      className={`relative font-Inter text-sm leading-none font-medium tracking-[-0.56px] max-md:text-appText-light transition-colors duration-300 md:hover:text-appText ${
-                        getHref(item) === location
-                          ? 'text-appAccent-300 after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-2 after:translate-y-full after:w-1.5 after:h-1.5 after:bg-appAccent-300 after:rounded-full max-md:after:opacity-0'
-                          : 'text-appGray-300'
-                      }`}
-                      item={item}
-                    />
+                  <ContentManager
+                    className={`relative font-Inter text-sm leading-none font-medium tracking-[-0.56px] max-md:text-appText-light transition-colors duration-300 md:hover:text-appText ${
+                      getHref(item) === location
+                        ? 'text-appAccent-300 after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-2 after:translate-y-full after:w-1.5 after:h-1.5 after:bg-appAccent-300 after:rounded-full max-md:after:opacity-0'
+                        : 'text-appGray-300'
+                    }`}
+                    item={item}
+                  />
                 </Link>
               </li>
             ))}
@@ -68,7 +74,11 @@ const Header: React.FC<HeaderProps> = ({ data, location }) => {
           >
             {showMobileMenu ? (
               <SvgoX
-                className={`w-6 h-6 ${showMobileMenu ? 'max-md:grayscale max-md:brightness-0 max-md:invert' : ''}`}
+                className={`w-6 h-6 ${
+                  showMobileMenu
+                    ? 'max-md:grayscale max-md:brightness-0 max-md:invert'
+                    : ''
+                }`}
               />
             ) : (
               <SvgoMenu className="w-6 h-6" />

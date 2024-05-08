@@ -13,13 +13,14 @@ const Services: React.FC<ServicesProps> = ({ data }) => {
   return (
     <section className="mb-4 lg:mb-6">
       <div className="container">
-        <Link to="/services">
-          <a className="flex items-center gap-1 text-appGray-300 transition-colors duration-300 mb-8 hover:text-appText lg:mb-6">
-            <span className="font-Inter text-xs font-medium leading-none tracking-[-0.24px] lg:text-base lg:leading-none lg:tracking-[-0.32px]">
-              {data.subtitle}
-            </span>
-            <SvgoArrow className="w-4 h-4" />
-          </a>
+        <Link
+          to="/services"
+          className="flex items-center gap-1 text-appGray-300 transition-colors duration-300 mb-8 hover:text-appText lg:mb-6"
+        >
+          <span className="font-Inter text-xs font-medium leading-none tracking-[-0.24px] lg:text-base lg:leading-none lg:tracking-[-0.32px]">
+            {data.subtitle}
+          </span>
+          <SvgoArrow className="w-4 h-4" />
         </Link>
         <div
           className="grid grid-cols-[37.5%,62.5%] min-h-[280px] rounded-2xl overflow-hidden"

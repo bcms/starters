@@ -3,11 +3,11 @@ import ContentManager from '@/components/ContentManager';
 import BCMSImage from 'gatsby-source-bcms/components/image';
 import { Link } from 'gatsby';
 import { ReactComponent as SvgoArrow } from '@/assets/icons/arrow.svg';
-import { HomeTeamGroup, TeamMemberEntry } from '../../../bcms/types';
 import { BCMSMediaParsed } from '@becomes/cms-client/types';
+import { HomePageTeamType } from '../../../types';
 
 interface TeamProps {
-  data: HomeTeamGroup;
+  data: HomePageTeamType;
 }
 
 const Team: React.FC<TeamProps> = ({ data }) => {
@@ -61,7 +61,7 @@ const Team: React.FC<TeamProps> = ({ data }) => {
         </div>
         <div className="flex flex-col gap-2.5 lg:gap-6">
           <div className="grid grid-cols-3 gap-2 lg:gap-6">
-            {data.members.map((item: TeamMemberEntry, index: number) => (
+            {data.members.map((item, index: number) => (
               <BCMSImage
                 key={index}
                 media={item.teamMember.meta?.en?.image as BCMSMediaParsed}
@@ -83,13 +83,14 @@ const Team: React.FC<TeamProps> = ({ data }) => {
               />
             ))}
           </div>
-          <Link to="/team">
-            <a className="flex items-center gap-1 text-appGray-300 transition-colors duration-300 mb-8 hover:text-appText lg:mb-6">
-              <span className="font-Inter text-xs font-medium leading-none tracking-[-0.24px] lg:text-base lg:leading-none lg:tracking-[-0.32px]">
-                See our team
-              </span>
-              <SvgoArrow className="w-4 h-4" />
-            </a>
+          <Link
+            to="/team"
+            className="flex items-center gap-1 text-appGray-300 transition-colors duration-300 mb-8 hover:text-appText lg:mb-6"
+          >
+            <span className="font-Inter text-xs font-medium leading-none tracking-[-0.24px] lg:text-base lg:leading-none lg:tracking-[-0.32px]">
+              See our team
+            </span>
+            <SvgoArrow className="w-4 h-4" />
           </Link>
         </div>
       </div>

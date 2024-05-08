@@ -47,7 +47,6 @@ const ServicesPage: React.FC<{
     };
   };
 }> = ({ data }) => {
-  
   return (
     <PageWrapper
       header={data.header}

@@ -4,7 +4,7 @@ import { ReactComponent as SvgoHeadphones } from '@/assets/icons/headphones.svg'
 
 const ContactUs = ({ className }: { className?: string }) => {
   return (
-    <Link 
+    <Link
       to="/contact"
       className={`${className} flex items-center gap-2 flex-shrink-0 bg-white px-[9px] py-2 rounded-[7px] transition-colors duration-300 hover:bg-appAccent-300 hover:text-appText-light lg:px-4 lg:py-3`}
       style={{
@@ -21,4 +21,3 @@ const ContactUs = ({ className }: { className?: string }) => {
 };
 
 export default ContactUs;
-

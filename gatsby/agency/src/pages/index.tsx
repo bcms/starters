@@ -15,6 +15,7 @@ import HomePageCapabilities from '@/components/home-page/Capabilities';
 import ContactBlock from '@/components/ContactBlock';
 import { graphql } from 'gatsby';
 import { BCMSPropRichTextDataParsed } from '@becomes/cms-client/types';
+import { HomePageCapabilitiesType, HomePageTeamType } from '../../types';
 
 const HomePage: React.FC<{
   data: {
@@ -35,7 +36,10 @@ const HomePage: React.FC<{
     page: {
       bcms: {
         meta: {
-          en: HomePageEntryMeta;
+          en: Omit<HomePageEntryMeta, 'capabilities' | 'team'> & {
+            capabilities: HomePageCapabilitiesType;
+            team: HomePageTeamType;
+          };
         };
         content: {
           en: BCMSPropRichTextDataParsed;

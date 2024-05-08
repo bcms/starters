@@ -3,14 +3,14 @@ import {
   FooterEntryMeta,
   HeaderEntry,
   HeaderEntryMeta,
-  LegalEntry,
+  LegalPageEntry,
 } from '../../bcms/types';
 import { BCMSClient } from '@becomes/cms-client/types';
 
 export interface HeaderAndFooter {
   header: HeaderEntryMeta;
   footer: FooterEntryMeta;
-  legal: LegalEntry[];
+  legal: LegalPageEntry[];
 }
 
 export async function getHeaderAndFooter(
@@ -31,7 +31,7 @@ export async function getHeaderAndFooter(
   const legal = (await client.entry.getAll({
     // Template name or ID
     template: 'legal',
-  })) as LegalEntry[];
+  })) as LegalPageEntry[];
   return {
     header: header.meta.en as HeaderEntryMeta,
     footer: footer.meta.en as FooterEntryMeta,
