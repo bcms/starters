@@ -6,7 +6,8 @@
     "private": true,
     "scripts": {
         "build:nuxt": "node scripts/main.js --build nuxt",
-        "build:next": "node scripts/main.js --build next"
+        "build:next": "node scripts/main.js --build next",
+        "build:gatsby": "node scripts/main.js --build gatsby"
     },
     "repository": {
         "type": "git",

@@ -31,6 +31,14 @@ async function main() {
                 },
             }).awaiter;
             zip.addLocalFolder(path.join(fs.baseRoot, 'out'));
+        } else if (args.build === 'gatsby') {
+            await ChildProcess.advancedExec(`npm run build`, {
+                cwd: fs.baseRoot,
+                onChunk(type, chunk) {
+                    process[type].write(chunk);
+                },
+            }).awaiter;
+            zip.addLocalFolder(path.join(fs.baseRoot, 'public'));
         } else {
             throw Error(`Unknown build param: ${args.build}`);
         }
