@@ -1,0 +1,21 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bcms --pull types --lng ts && nuxt build",
+    "dev": "bcms --pull types --lng ts && nuxt dev",
+    "generate": "bcms --pull types --lng ts && nuxt generate",
+    "preview": "bcms --pull types --lng ts && nuxt preview",
+    "postinstall": "bcms --pull types --lng ts && nuxt prepare"
+  },
+  "dependencies": {
+    "@thebcms/cli": "^1.1.1",
+    "@thebcms/client": "^1.2.0",
+    "@thebcms/types": "^1.0.1",
+    "@thebcms/utils": "^1.0.0",
+    "nuxt": "^3.13.0",
+    "vue": "latest",
+    "vue-router": "latest"
+  }
+}

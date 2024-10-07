@@ -1,27 +1,30 @@
 {
-  "name": "@thebcms/starters",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "private": true,
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bcms/starters.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bcms/starters/issues"
-  },
-  "homepage": "https://github.com/bcms/starters#readme",
-  "devDependencies": {
-    "@thebcms/utils": "^1.0.0",
-    "@types/adm-zip": "^0.5.5",
-    "adm-zip": "^0.5.16"
-  },
-  "dependencies": {
-    "prettier": "^3.3.3"
-  }
+    "name": "@thebcms/starters",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "private": true,
+    "scripts": {
+        "build:nuxt": "node scripts/main.js --build nuxt",
+        "build:next": "node scripts/main.js --build next"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bcms/starters.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/bcms/starters/issues"
+    },
+    "homepage": "https://github.com/bcms/starters#readme",
+    "devDependencies": {
+        "@thebcms/utils": "^1.0.0",
+        "@types/adm-zip": "^0.5.5",
+        "adm-zip": "^0.5.16"
+    },
+    "dependencies": {
+        "prettier": "^3.3.3"
+    }
 }
