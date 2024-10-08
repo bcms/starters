@@ -23,7 +23,8 @@
     "devDependencies": {
         "@thebcms/utils": "^1.0.0",
         "@types/adm-zip": "^0.5.5",
-        "adm-zip": "^0.5.16"
+        "adm-zip": "^0.5.16",
+        "dotenv": "^16.4.5"
     },
     "dependencies": {
         "prettier": "^3.3.3"
