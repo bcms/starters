@@ -8,7 +8,7 @@
         "gatsby"
     ],
     "scripts": {
-        "develop": "bcms --pull types --lng ts && gatsby develop",
+        "dev": "bcms --pull types --lng ts && gatsby develop",
         "start": "bcms --pull types --lng ts && gatsby develop",
         "build": "bcms --pull types --lng ts && gatsby build",
         "serve": "bcms --pull types --lng ts && gatsby serve",
