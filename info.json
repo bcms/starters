@@ -1,0 +1,39 @@
+{
+    "saas": {
+        "frameworks": [
+            {
+                "id": "next",
+                "title": "Next.js",
+                "available": true
+            },
+            {
+                "id": "nuxt",
+                "title": "Nuxt.js",
+                "available": true
+            },
+            {
+                "id": "gatsby",
+                "title": "Gatsby.js",
+                "available": true
+            },
+            {
+                "id": "svelte",
+                "title": "SvelteKit",
+                "available": false
+            },
+            {
+                "id": "astro",
+                "title": "Astro.js",
+                "available": false
+            }
+        ],
+        "starters": [
+            {
+                "available": true,
+                "title": "Simple blog",
+                "slug": "simple-blog",
+                "frameworks": ["next", "nuxt", "gatsby"]
+            }
+        ]
+    }
+}
