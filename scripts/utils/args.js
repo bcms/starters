@@ -3,6 +3,7 @@
  *   build?: string;
  *   deplay?: string;
  *   project?: string;
+ *   updatePackages?: string;
  * }} Args
  */
 
