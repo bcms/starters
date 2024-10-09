@@ -7,7 +7,8 @@
     "scripts": {
         "build:nuxt": "node scripts/main.js --build nuxt",
         "build:next": "node scripts/main.js --build next",
-        "build:gatsby": "node scripts/main.js --build gatsby"
+        "build:gatsby": "node scripts/main.js --build gatsby",
+        "update:packages": "node scripts/main.js --updatePackages true"
     },
     "repository": {
         "type": "git",
