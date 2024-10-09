@@ -10,7 +10,7 @@
     "postinstall": "bcms --pull types --lng ts && nuxt prepare"
   },
   "dependencies": {
-    "@thebcms/cli": "^1.2.2",
+    "@thebcms/cli": "^1.2.3",
     "@thebcms/client": "^1.3.0",
     "@thebcms/types": "^1.0.2",
     "@thebcms/utils": "^1.0.0",
