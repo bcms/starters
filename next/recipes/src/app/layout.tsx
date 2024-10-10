@@ -70,9 +70,9 @@ const RootLayout: React.FC<PropsWithChildren> = async ({ children }) => {
     return (
         <html lang="en">
             <body className={`${inter.className} overflow-x-hidden bg-white`}>
-                <div className="overflow-hidden">
+                <div className="overflow-hidden flex flex-col min-h-screen">
                     <Header header={header} />
-                    <main>{children}</main>
+                    <main className="flex flex-col flex-1">{children}</main>
                     <Footer footer={footer} />
                 </div>
             </body>
