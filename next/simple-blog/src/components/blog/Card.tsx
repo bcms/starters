@@ -16,7 +16,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
         <article>
             <Link
                 href={`/blog/${blog.slug}`}
-                className="group w-full grid grid-cols-1 gap-6 border border-solid border-appGray-200 rounded-2xl overflow-hidden md:gap-12 md:grid-cols-[45%,55%]"
+                className="group w-full grid grid-cols-1 border border-solid border-appGray-200 rounded-2xl overflow-hidden md:grid-cols-[45%,55%]"
             >
                 <div className="aspect-[1.25] self-stretch overflow-hidden">
                     <BCMSImage
@@ -25,7 +25,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
                         className="size-full object-cover transition-transform duration-500 object-center group-hover:scale-105 group-focus-visible:scale-105"
                     />
                 </div>
-                <div className="flex flex-col self-center max-md:px-4 max-md:pb-4">
+                <div className="flex flex-col self-center pt-6 max-md:px-4 max-md:pb-4 md:px-12">
                     <h3 className="text-2xl font-semibold leading-none mb-4">
                         {blog.title}
                     </h3>
