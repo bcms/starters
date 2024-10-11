@@ -17,7 +17,6 @@ const PageLayout: React.FC<PropsWithChildren<Props>> = ({
         description ||
         'Jumpstart your Next project with this Simple Blog. Easily manage your content and scale your application without the backend hassle. Get started now!';
     // const image = '/thumbnail.jpg';
-    const domain = 'https://simple-blog-starter.thebcms.com/';
 
     return (
         <div className="overflow-hidden flex flex-col min-h-screen">
@@ -34,11 +33,6 @@ const PageLayout: React.FC<PropsWithChildren<Props>> = ({
                 />
                 <meta property="og:type" content="website" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta
-                    name="ogUrl"
-                    property="og:url"
-                    content={`${domain}${location}`}
-                />
                 <meta name="msapplication-TileColor" content="#da532c" />
                 <meta name="theme-color" content="#ffffff" />
                 <meta
@@ -47,7 +41,6 @@ const PageLayout: React.FC<PropsWithChildren<Props>> = ({
                 />
                 <meta property="og:description" content={metaDescription} />
                 {/* <meta property="og:image" content={image} /> */}
-                <meta property="twitter:url" content={`${domain}${location}`} />
                 <meta
                     property="twitter:title"
                     content={`${metaTitle} - Insightful Ink`}
