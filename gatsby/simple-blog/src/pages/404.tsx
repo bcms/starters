@@ -1,49 +1,25 @@
-import * as React from "react"
-import { Link, HeadFC, PageProps } from "gatsby"
-
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+import * as React from 'react';
+import { Link, HeadFC, PageProps } from 'gatsby';
+import PageWrapper from '../components/PageWrapper';
 
 const NotFoundPage: React.FC<PageProps> = () => {
-  return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
-}
+    return (
+        <PageWrapper title={`Page not found - Simple Blog`}>
+            <div className="flex flex-col items-center gap-6 justify-center my-auto min-h-[400px] lg:gap-10">
+                <h1 className="text-3xl font-semibold text-center md:text-4xl lg:text-5xl">
+                    Page Not Found
+                </h1>
+                <Link
+                    to="/"
+                    className="border border-appGray-200 bg-appGray-100 flex leading-none px-3 py-2 text-xl font-medium rounded-lg transition-colors duration-300 hover:bg-appGray-200 focus-visible:bg-appGray-200 md:px-5 md:py-4 md:text-2xl"
+                >
+                    Go back home
+                </Link>
+            </div>
+        </PageWrapper>
+    );
+};
 
-export default NotFoundPage
+export default NotFoundPage;
 
-export const Head: HeadFC = () => <title>Not found</title>
+export const Head: HeadFC = () => <title>Not found</title>;

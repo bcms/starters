@@ -23,14 +23,18 @@ export const createPages = async ({
 }: CreatePagesArgs) => {
     const blogsTemplate = path.resolve('./src/templates/blogs.tsx');
     const blogTemplate = path.resolve('./src/templates/blog.tsx');
+
     const blogEntries = (await bcms.entry.getAll('blog')) as BlogEntry[];
+
     const blogs: Array<{
         meta: BlogEntryMetaItem;
         content: EntryContentParsedItem[];
     }> = [];
+
     for (let i = 0; i < blogEntries.length; i++) {
         const blogEntry = blogEntries[i];
         const meta = blogEntry.meta.en as BlogEntryMetaItem;
+
         createPage({
             path: `/blog/${meta.slug}`,
             component: blogTemplate,
@@ -38,6 +42,12 @@ export const createPages = async ({
                 data: {
                     meta,
                     content: blogEntry.content.en as EntryContentParsedItem[],
+                    otherBlogs: blogEntries
+                        .filter((blog) => blog.meta.en?.slug !== meta.slug)
+                        .map((blog) => {
+                            return blog.meta.en as BlogEntryMetaItem;
+                        }),
+                    bcmsConfig: bcms.getConfig(),
                 },
             },
         });
@@ -46,16 +56,15 @@ export const createPages = async ({
             content: blogEntry.content.en as EntryContentParsedItem[],
         });
     }
+
     createPage({
         path: '/',
         component: blogsTemplate,
         context: {
             items: blogs.map((blog) => {
-                return {
-                    title: blog.meta.title,
-                    slug: blog.meta.slug,
-                };
+                return blog.meta;
             }),
+            bcmsConfig: bcms.getConfig(),
         },
     });
 };
