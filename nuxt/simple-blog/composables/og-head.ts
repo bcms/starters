@@ -31,7 +31,7 @@ export const useHeadTags = () => {
                 },
                 {
                     property: 'og:site_name',
-                    content: `${title} - Insightful Ink`,
+                    content: `${title} - Simple Blog`,
                 },
                 { property: 'og:type', content: 'website' },
                 { property: 'twitter:card', content: 'summary_large_image' },
@@ -43,7 +43,7 @@ export const useHeadTags = () => {
                 {
                     hid: 'ogTitle',
                     property: 'og:title',
-                    content: `${title} - Insightful Ink`,
+                    content: `${title} - Simple Blog`,
                 },
                 {
                     hid: 'ogDescription',
@@ -63,7 +63,7 @@ export const useHeadTags = () => {
                 {
                     hid: 'twitterTitle',
                     property: 'twitter:title',
-                    content: `${title} - Insightful Ink`,
+                    content: `${title} - Simple Blog`,
                 },
                 {
                     hid: 'twitterDescription',

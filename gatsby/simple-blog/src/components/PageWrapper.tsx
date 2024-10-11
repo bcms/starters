@@ -29,7 +29,7 @@ const PageLayout: React.FC<PropsWithChildren<Props>> = ({
                 <meta name="description" content={metaDescription} />
                 <meta
                     property="og:site_name"
-                    content={`${metaTitle} - Insightful Ink`}
+                    content={`${metaTitle} - Simple Blog`}
                 />
                 <meta property="og:type" content="website" />
                 <meta property="twitter:card" content="summary_large_image" />
@@ -37,13 +37,13 @@ const PageLayout: React.FC<PropsWithChildren<Props>> = ({
                 <meta name="theme-color" content="#ffffff" />
                 <meta
                     property="og:title"
-                    content={`${metaTitle} - Insightful Ink`}
+                    content={`${metaTitle} - Simple Blog`}
                 />
                 <meta property="og:description" content={metaDescription} />
                 {/* <meta property="og:image" content={image} /> */}
                 <meta
                     property="twitter:title"
-                    content={`${metaTitle} - Insightful Ink`}
+                    content={`${metaTitle} - Simple Blog`}
                 />
                 <meta
                     property="twitter:description"
