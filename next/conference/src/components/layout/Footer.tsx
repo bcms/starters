@@ -26,12 +26,12 @@ const Footer: React.FC<Props> = ({ legal }) => {
         {
             label: 'Reddit',
             href: 'https://www.reddit.com',
-            icon: () => <Reddit className="w-6 h-6 lg:w-8 lg:h-8" />,
+            icon: () => <Reddit className="w-7 h-7 lg:w-9 lg:h-9" />,
         },
         {
             label: 'Instagram',
             href: 'https://www.instagram.com/',
-            icon: () => <Instagram className="w-6 h-6 lg:w-8 lg:h-8" />,
+            icon: () => <Instagram className="w-7 h-7 lg:w-9 lg:h-9" />,
         },
         {
             label: 'X',
@@ -41,7 +41,7 @@ const Footer: React.FC<Props> = ({ legal }) => {
         {
             label: 'Snapchat',
             href: 'https://www.snapchat.com/',
-            icon: () => <Snapchat className="w-6 h-6 lg:w-8 lg:h-8" />,
+            icon: () => <Snapchat className="w-7 h-7 lg:w-9 lg:h-9" />,
         },
     ];
 
