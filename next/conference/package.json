@@ -14,15 +14,20 @@
         "@thebcms/components-react": "^1.2.0",
         "@thebcms/types": "^1.1.0",
         "@thebcms/utils": "^1.0.0",
+        "classnames": "^2.5.1",
         "next": "14.2.14",
         "react": "^18",
-        "react-dom": "^18"
+        "react-dom": "^18",
+        "react-paginate": "^8.2.0",
+        "react-transition-group": "^4.4.5",
+        "swiper": "^11.1.14"
     },
     "devDependencies": {
-        "@tailwindcss/typography": "^0.5.15",
+        "@svgr/webpack": "^8.1.0",
         "@types/node": "^20",
         "@types/react": "^18",
         "@types/react-dom": "^18",
+        "@types/react-transition-group": "^4.4.11",
         "eslint": "^8",
         "eslint-config-next": "14.2.14",
         "postcss": "^8",
