@@ -17,6 +17,6 @@ and follow the prompts.
 ### Useful links:
 - [BCMS website](https://thebcms.com/)
 - [BCMS documentation](https://thebcms.com/docs/)
-- [BCMS and Next.js integration](https://thebcms.com/docs/integrations/nuxt-js)
+- [BCMS and Nuxt.js integration](https://thebcms.com/docs/integrations/nuxt-js)
 - [All BCMS starters](https://thebcms.com/starters)
 - [Join our Discord](https://discord.com/invite/SYBY89ccaR)
