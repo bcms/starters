@@ -1,4 +1,4 @@
-# BCMS Simple blog code starter
+# BCMS Simple blog code starter for Nuxt.js
 
 This is a bare-bones Nuxt.js starter kit for BCMS, a headless CMS. It's minimal but solid, with a clean codebase that hooks directly into your BCMS project, ready to extend and scale as needed.
 
