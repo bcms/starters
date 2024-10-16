@@ -1,75 +1,22 @@
-# Nuxt 3 Minimal Starter
+# BCMS Simple blog code starter for Nuxt.js
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a bare-bones Nuxt.js starter kit for BCMS, a headless CMS. It's minimal but solid, with a clean codebase that hooks directly into your BCMS project, ready to extend and scale as needed.
 
-## Setup
+## Getting Started
 
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Run the following command
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+npx @thebcms/cli create nuxt starter simple-blog
 ```
 
-## Production
+and follow the prompts.
 
-Build the application for production:
+---
 
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+### Useful links:
+- [BCMS website](https://thebcms.com/)
+- [BCMS documentation](https://thebcms.com/docs/)
+- [BCMS and Nuxt.js integration](https://thebcms.com/docs/integrations/nuxt-js)
+- [All BCMS starters](https://thebcms.com/starters)
+- [Join our Discord](https://discord.com/invite/SYBY89ccaR)
