@@ -7,11 +7,11 @@ import ContentManager from '../ContentManager';
 import { toReadableDate } from '@/utils/date';
 import Tag from '../Tag';
 
-interface BlogCardProps {
+interface Props {
     blog: BlogEntryMetaItem;
 }
 
-const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
+const BlogCard: React.FC<Props> = ({ blog }) => {
     return (
         <article>
             <Link

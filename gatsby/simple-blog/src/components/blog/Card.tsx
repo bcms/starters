@@ -7,12 +7,12 @@ import { BlogEntryMetaItem } from '../../../bcms/types/ts';
 import { toReadableDate } from '../../utils/date';
 import { ClientConfig } from '@thebcms/client';
 
-interface BlogCardProps {
+interface Props {
     blog: BlogEntryMetaItem;
     bcmsConfig: ClientConfig;
 }
 
-const BlogCard: React.FC<BlogCardProps> = ({ blog, bcmsConfig }) => {
+const BlogCard: React.FC<Props> = ({ blog, bcmsConfig }) => {
     return (
         <article>
             <Link

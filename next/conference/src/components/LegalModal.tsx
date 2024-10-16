@@ -3,12 +3,12 @@ import classNames from 'classnames';
 import ContentManager from './ContentManager';
 import { LegalEntry } from '@bcms-types/types/ts';
 
-interface LegalEntriesProps {
+interface Props {
     legal: LegalEntry[];
     onClose: () => void;
 }
 
-const LegalEntries: React.FC<LegalEntriesProps> = ({ legal, onClose }) => {
+const LegalEntries: React.FC<Props> = ({ legal, onClose }) => {
     return (
         <div className="fixed z-50 top-0 left-0 w-full h-full flex items-center justify-center">
             <div className="relative z-10 bg-white rounded-2xl border border-[#D4D4D4] p-6 w-[962px] max-w-[95vw] max-h-[90vh] overflow-y-auto overscroll-contain lg:p-14">

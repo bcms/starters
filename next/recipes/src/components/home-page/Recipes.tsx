@@ -7,13 +7,13 @@ import { RecipeEntry, RecipeEntryMetaItem } from '@bcms-types/types/ts';
 import RecipesCard from '../recipes/Card';
 import { ClientConfig } from '@thebcms/client';
 
-interface HomePageRecipesProps {
+interface Props {
     title: string;
     recipes: RecipeEntry[];
     bcmsConfig: ClientConfig;
 }
 
-const HomePageRecipes: React.FC<HomePageRecipesProps> = ({
+const HomePageRecipes: React.FC<Props> = ({
     title,
     recipes: items,
     bcmsConfig,

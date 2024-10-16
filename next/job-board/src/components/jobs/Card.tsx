@@ -4,11 +4,11 @@ import Btn from '@/components/Btn';
 import Link from 'next/link';
 import { JobLite } from '@/utils/job';
 
-interface JobsCardProps {
+interface Props {
     card: JobLite;
 }
 
-const JobsCard: FC<JobsCardProps> = ({ card }) => {
+const JobsCard: FC<Props> = ({ card }) => {
     return (
         <article>
             <Link

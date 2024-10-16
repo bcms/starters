@@ -7,14 +7,14 @@ import { PropMediaDataParsed, PropRichTextDataParsed } from '@thebcms/types';
 import { BCMSImage } from '@thebcms/components-react';
 import { ClientConfig } from '@thebcms/client';
 
-interface HomeHeroProps {
+interface Props {
     gallery: PropMediaDataParsed[];
     description: PropRichTextDataParsed;
     cover: PropMediaDataParsed;
     bcmsConfig: ClientConfig;
 }
 
-const HomeHero: React.FC<HomeHeroProps> = ({
+const HomeHero: React.FC<Props> = ({
     gallery,
     description,
     cover,

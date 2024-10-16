@@ -4,7 +4,7 @@ import { PropMediaDataParsed, PropRichTextDataParsed } from '@thebcms/types';
 import { BCMSImage } from '@thebcms/components-react';
 import { ClientConfig } from '@thebcms/client';
 
-interface HomepageAboutProps {
+interface Props {
     title: string;
     cover: PropMediaDataParsed;
     description: PropRichTextDataParsed;
@@ -12,7 +12,7 @@ interface HomepageAboutProps {
     bcmsConfig: ClientConfig;
 }
 
-const HomeAbout: React.FC<HomepageAboutProps> = ({
+const HomeAbout: React.FC<Props> = ({
     title,
     cover,
     description,

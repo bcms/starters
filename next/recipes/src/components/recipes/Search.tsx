@@ -13,7 +13,7 @@ import SearchIcon from '@/assets/icons/search.svg';
 import { Transition } from 'react-transition-group';
 import { RecipeLight } from '@/types';
 
-interface SearchBarProps {
+interface Props {
     value?: string;
     recipes?: RecipeLight[];
     static?: boolean;
@@ -24,7 +24,7 @@ interface SearchBarProps {
     className?: string;
 }
 
-const RecipesSearchBar: React.FC<SearchBarProps> = ({
+const RecipesSearchBar: React.FC<Props> = ({
     value = '',
     recipes = [],
     static: isStatic = false,
@@ -34,7 +34,7 @@ const RecipesSearchBar: React.FC<SearchBarProps> = ({
     onEnter,
     className = '',
 }) => {
-    const [searchValue, setSearchValue] = useState<string>(value);
+    const [searchValue, setSearchValue] = useState(value);
     const transitionRef = useRef(null);
 
     const handleInput = ({ target }: ChangeEvent<HTMLInputElement>) => {

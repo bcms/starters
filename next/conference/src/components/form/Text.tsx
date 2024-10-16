@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-interface TextInputProps {
+interface Props {
     value: string;
     label?: string;
     placeholder?: string;
@@ -10,7 +10,7 @@ interface TextInputProps {
     onChange: (value: string) => void;
 }
 
-const TextInput: React.FC<TextInputProps> = ({
+const TextInput: React.FC<Props> = ({
     value,
     label,
     placeholder,

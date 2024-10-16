@@ -20,13 +20,13 @@ const sliderOptions = {
     },
 };
 
-interface HomePageAgendaProps {
+interface Props {
     title: string;
     days: AgendaDayGroup[];
 }
 
-const HomeAgenda: React.FC<HomePageAgendaProps> = ({ title, days }) => {
-    const [activeSlide, setActiveSlide] = useState<number>(0);
+const HomeAgenda: React.FC<Props> = ({ title, days }) => {
+    const [activeSlide, setActiveSlide] = useState(0);
 
     const handleIndexChange = (swiper: SwiperClass): void => {
         setActiveSlide(swiper.activeIndex);

@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import ChevronIcon from '@/assets/icons/chevron-down.svg';
 import NextImage from 'next/image';
 
-interface DropdownProps {
+interface Props {
     value: string;
     label?: string;
     placeholder?: string;
@@ -15,7 +15,7 @@ interface DropdownProps {
     name?: string;
 }
 
-const FormSelect: FC<DropdownProps> = ({
+const FormSelect: FC<Props> = ({
     value,
     label,
     placeholder = '',

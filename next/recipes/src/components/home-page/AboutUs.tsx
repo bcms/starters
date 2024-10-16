@@ -4,11 +4,11 @@ import { HomeAboutUsGroup } from '@bcms-types/types/ts';
 import { BCMSImage } from '@thebcms/components-react';
 import { bcms } from '@/bcms-client';
 
-interface HomePageAboutUsProps {
+interface Props {
     data: HomeAboutUsGroup;
 }
 
-const HomePageAboutUs: React.FC<HomePageAboutUsProps> = ({ data }) => {
+const HomePageAboutUs: React.FC<Props> = ({ data }) => {
     return (
         <section className="relative pb-8 lg:pb-20 xl:pb-[120px]">
             <div className="container">

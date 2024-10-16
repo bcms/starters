@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 const metaTitle = 'CONference';
 const metaDescription =
-    'Jumpstart your Next project with this CONference. Easily manage your content and scale your application without the backend hassle. Get started now!';
+    'Jumpstart your Next project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
 const metaImage = '/thumbnail.jpg';
 
 export const metadata: Metadata = {

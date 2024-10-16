@@ -8,15 +8,15 @@ import { RecipesDropdown } from './Dropdown';
 import { ClientConfig } from '@thebcms/client';
 import { RecipesPagination } from './Pagination';
 
-interface RecipesCardProps {
+interface Props {
     recipes: RecipeLight[];
     bcmsConfig: ClientConfig;
 }
 
-const RecipesList: React.FC<RecipesCardProps> = ({ recipes, bcmsConfig }) => {
-    const [searchValue, setSearchValue] = useState<string>('');
-    const [popularValue, setPopularValue] = useState<string>('');
-    const [categoriesValue, setCategoriesValue] = useState<string>('');
+const RecipesList: React.FC<Props> = ({ recipes, bcmsConfig }) => {
+    const [searchValue, setSearchValue] = useState('');
+    const [popularValue, setPopularValue] = useState('');
+    const [categoriesValue, setCategoriesValue] = useState('');
     const recipesListDOM = useRef<HTMLDivElement | null>(null);
     const [paginationPage, setPaginationPage] = useState(1);
     const [recipesPerPage, setRecipesPerPage] = useState(8);

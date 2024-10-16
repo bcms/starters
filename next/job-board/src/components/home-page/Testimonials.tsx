@@ -11,17 +11,14 @@ import { BCMSImage } from '@thebcms/components-react';
 import 'swiper/css';
 import { SwiperOptions } from 'swiper/types';
 
-interface TestimonialsProps {
+interface Props {
     testimonials: TestimonialEntryMetaItem[];
     bcmsConfig: ClientConfig;
 }
 
 SwiperCore.use([A11y]);
 
-const Testimonials: React.FC<TestimonialsProps> = ({
-    testimonials,
-    bcmsConfig,
-}) => {
+const Testimonials: React.FC<Props> = ({ testimonials, bcmsConfig }) => {
     const sliderOptions: SwiperOptions = {
         slidesPerView: 1.1,
         watchOverflow: true,

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import FormText from '@/components/form/Text';
 import FormSelect from '@/components/form/Select';
 
-interface ContactFormProps {
+interface Props {
     onClose: () => void;
 }
 
@@ -13,7 +13,7 @@ interface FormState {
     query: string;
 }
 
-const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
+const ContactForm: React.FC<Props> = ({ onClose }) => {
     const [form, setForm] = useState<FormState>({
         name: '',
         email: '',

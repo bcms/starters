@@ -7,12 +7,12 @@ import { ClientConfig } from '@thebcms/client';
 import { toReadableDate } from '@/utils/date';
 import Link from 'next/link';
 
-interface BlogsCardProps {
+interface Props {
     blog: BlogLite;
     bcmsConfig: ClientConfig;
 }
 
-const BlogCard: FC<BlogsCardProps> = ({ blog, bcmsConfig }) => {
+const BlogCard: FC<Props> = ({ blog, bcmsConfig }) => {
     return (
         <article>
             <Link href={`/blog/${blog.slug}`}>

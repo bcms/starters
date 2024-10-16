@@ -6,7 +6,7 @@ import FormDropzone from '@/components/form/Dropzone';
 import Btn from '@/components/Btn';
 import { JobPostEntryMetaItem } from '@bcms-types/types/ts';
 
-interface JobApplicationFormProps {
+interface Props {
     job: JobPostEntryMetaItem;
     close: () => void;
 }
@@ -20,7 +20,7 @@ interface Form {
     description: string;
 }
 
-const ApplyModal: FC<JobApplicationFormProps> = ({ close }) => {
+const ApplyModal: FC<Props> = ({ close }) => {
     const formRef = useRef<HTMLFormElement>(null);
     const [form, setForm] = useState<Form>({
         firstName: '',

@@ -11,13 +11,13 @@ import JobTypeIcon from '@/assets/icons/briefcase.svg';
 import { PropRichTextDataParsed } from '@thebcms/types';
 import { JobLite } from '@/utils/job';
 
-interface HomeJobsProps {
+interface Props {
     title: string;
     description: PropRichTextDataParsed;
     jobs: JobLite[];
 }
 
-const HomeJobs: FC<HomeJobsProps> = ({ title, description, jobs }) => {
+const HomeJobs: FC<Props> = ({ title, description, jobs }) => {
     const sectionDOM = useRef<HTMLElement>(null);
 
     const paginationPage = useRef(1);

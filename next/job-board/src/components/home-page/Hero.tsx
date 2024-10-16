@@ -8,19 +8,14 @@ import { PropMediaDataParsed, PropRichTextDataParsed } from '@thebcms/types';
 import { ClientConfig } from '@thebcms/client';
 import { BCMSImage } from '@thebcms/components-react';
 
-interface HomeHeroProps {
+interface Props {
     title: InlineTextWithImageGroup[];
     description: PropRichTextDataParsed;
     cover: PropMediaDataParsed;
     bcmsConfig: ClientConfig;
 }
 
-const HomeHero: FC<HomeHeroProps> = ({
-    title,
-    description,
-    cover,
-    bcmsConfig,
-}) => {
+const HomeHero: FC<Props> = ({ title, description, cover, bcmsConfig }) => {
     const scrollToJobs = () => {
         const jobs = document.getElementById('homeJobs');
 

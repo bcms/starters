@@ -9,13 +9,13 @@ import {
 import { EntryContentParsedItem } from '@thebcms/types';
 import TextWithImageWidget from './widgets/TextWithImageComponent';
 
-interface ContentManagerProps {
+interface Props {
     items: EntryContentParsedItem[];
     widgetComponents?: BCMSWidgetComponents;
     className?: string;
 }
 
-export const ContentManager: FC<ContentManagerProps> = ({
+export const ContentManager: FC<Props> = ({
     items,
     widgetComponents,
     className,

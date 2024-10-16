@@ -3,7 +3,7 @@ import Link from 'next/link';
 import classnames from 'classnames';
 import ArrowIcon from '@/assets/icons/arrow.svg';
 
-interface ButtonProps {
+interface Props {
     className?: string;
     to?: string;
     theme?: 'accent' | 'pale' | 'dark' | 'accent-outline';
@@ -13,7 +13,7 @@ interface ButtonProps {
     onClick?: () => void;
 }
 
-const Button: FC<PropsWithChildren<ButtonProps>> = ({
+const Button: FC<PropsWithChildren<Props>> = ({
     className,
     to,
     theme = 'accent',

@@ -5,13 +5,13 @@ import ContentManager from '@/components/ContentManager';
 import Btn from '@/components/Btn';
 import { PropRichTextDataParsed } from '@thebcms/types';
 
-interface HomeAboutProps {
+interface Props {
     title: string;
     description: PropRichTextDataParsed;
     features: string[];
 }
 
-const HomeAbout: FC<HomeAboutProps> = ({ title, description, features }) => {
+const HomeAbout: FC<Props> = ({ title, description, features }) => {
     const scrollToJobs = () => {
         const jobs = document.getElementById('homeJobs');
 

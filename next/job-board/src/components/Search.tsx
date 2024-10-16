@@ -2,7 +2,7 @@ import { FC, ChangeEvent, KeyboardEvent, useState, useEffect } from 'react';
 import SearchIcon from '@/assets/icons/search.svg';
 import classNames from 'classnames';
 
-interface SearchInputProps {
+interface Props {
     value?: string;
     options: Array<{ title: string }>;
     placeholder?: string;
@@ -11,7 +11,7 @@ interface SearchInputProps {
     className?: string;
 }
 
-const SearchInput: FC<SearchInputProps> = ({
+const SearchInput: FC<Props> = ({
     className,
     value = '',
     options,
@@ -21,12 +21,11 @@ const SearchInput: FC<SearchInputProps> = ({
     ),
     onInput,
 }) => {
-    const [searchValue, setSearchValue] = useState<string>(value);
+    const [searchValue, setSearchValue] = useState(value);
     const [filteredOptions, setFilteredOptions] = useState<
         Array<{ title: string }>
     >([]);
-    const [placeholderSuggestion, setPlaceholderSuggestion] =
-        useState<string>('');
+    const [placeholderSuggestion, setPlaceholderSuggestion] = useState('');
 
     useEffect(() => {
         // Filter options based on searchValue

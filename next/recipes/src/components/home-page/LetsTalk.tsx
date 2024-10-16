@@ -14,14 +14,14 @@ interface ContactForm {
     question: string;
 }
 
-interface HomePageLetsTalkProps {
+interface Props {
     title: string;
     description: PropRichTextDataParsed;
     phone: PropRichTextDataParsed;
     email: PropRichTextDataParsed;
 }
 
-const HomePageLetsTalk: React.FC<HomePageLetsTalkProps> = ({
+const HomePageLetsTalk: React.FC<Props> = ({
     title,
     description,
     phone,

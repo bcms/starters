@@ -17,7 +17,7 @@ interface Props {
 const Header: React.FC<Props> = ({ header }) => {
     const pathname = usePathname();
     const navItemsDOM = useRef<HTMLDivElement | null>(null);
-    const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
+    const [showMobileNav, setShowMobileNav] = useState(false);
 
     useEffect(() => {
         const handleMobileNavClickOutside = (event: MouseEvent) => {

@@ -5,22 +5,22 @@ import ArrowIcon from '@/assets/icons/arrow-right.svg';
 import { useClickOutside } from '@/hooks/useClickOutside';
 import { Transition } from 'react-transition-group';
 
-interface DropdownProps {
+interface Props {
     value: string;
     options: string[];
     placeholder: string;
     dropdownPosition?: 'left' | 'right';
-
     onSelect: (value: string) => void;
 }
-export const RecipesDropdown: React.FC<DropdownProps> = ({
+
+export const RecipesDropdown: React.FC<Props> = ({
     onSelect,
     dropdownPosition = 'right',
     placeholder,
     options,
     value,
 }) => {
-    const [showOptions, setShowOptions] = useState<boolean>(false);
+    const [showOptions, setShowOptions] = useState(false);
     const dropdownOptionRef = useRef<HTMLDivElement | null>(null);
     const transitionRef = useRef<HTMLDivElement | null>(null);
 

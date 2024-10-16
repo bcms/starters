@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import classnames from 'classnames';
 import ChevronIcon from '@/assets/icons/chevron-down.svg';
 
-interface SelectProps {
+interface Props {
     value: string;
     options: string[];
     placeholder: string;
@@ -10,7 +10,7 @@ interface SelectProps {
     onChange: (value: string) => void;
 }
 
-const Select: React.FC<SelectProps> = ({
+const Select: React.FC<Props> = ({
     value,
     options,
     placeholder,

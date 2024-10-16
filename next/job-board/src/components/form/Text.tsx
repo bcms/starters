@@ -1,7 +1,7 @@
 import React, { FC, ChangeEvent } from 'react';
 import classNames from 'classnames';
 
-interface InputProps {
+interface Props {
     name: string;
     value: string;
     label?: string;
@@ -11,7 +11,7 @@ interface InputProps {
     onChange: (value: string) => void;
 }
 
-const FormText: FC<InputProps> = ({
+const FormText: FC<Props> = ({
     name,
     value,
     label = '',

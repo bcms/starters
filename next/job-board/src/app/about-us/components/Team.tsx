@@ -5,19 +5,14 @@ import { TeamMemberEntryMetaItem } from '@bcms-types/types/ts';
 import { ClientConfig } from '@thebcms/client';
 import { BCMSImage } from '@thebcms/components-react';
 
-interface TeamSectionProps {
+interface Props {
     title: string;
     description: PropRichTextDataParsed;
     members: TeamMemberEntryMetaItem[];
     bcmsConfig: ClientConfig;
 }
 
-const Team: React.FC<TeamSectionProps> = ({
-    title,
-    description,
-    members,
-    bcmsConfig,
-}) => {
+const Team: React.FC<Props> = ({ title, description, members, bcmsConfig }) => {
     return (
         <section>
             <div className="container">

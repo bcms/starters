@@ -2,10 +2,11 @@ import ContentManager from '@/components/ContentManager';
 import { PropRichTextDataParsed } from '@thebcms/types';
 import React from 'react';
 
-interface IngredientsProps {
+interface Props {
     ingredients: PropRichTextDataParsed[];
 }
-export const Ingredients: React.FC<IngredientsProps> = ({ ingredients }) => {
+
+export const Ingredients: React.FC<Props> = ({ ingredients }) => {
     return (
         <div className="mb-8 lg:mb-16">
             <h2 className="leading-none font-medium tracking-[-0.41px] text-appGray-700 mb-6 lg:text-2xl lg:leading-none">
