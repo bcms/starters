@@ -19,7 +19,7 @@
             {
                 "id": "svelte",
                 "title": "SvelteKit",
-                "available": false
+                "available": true
             },
             {
                 "id": "astro",
@@ -32,7 +32,7 @@
                 "available": true,
                 "title": "Simple blog",
                 "slug": "simple-blog",
-                "frameworks": ["next", "nuxt", "gatsby"]
+                "frameworks": ["next", "nuxt", "gatsby", "svelte"]
             }
         ]
     }
