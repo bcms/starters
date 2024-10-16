@@ -1,0 +1,47 @@
+{
+	"name": "simple-blog",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "bcms pull types lng ts && vite dev",
+		"build": "bcms pull types lng ts && vite build",
+		"preview": "bcms pull types lng ts && vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@fontsource/fira-mono": "^5.0.0",
+		"@neoconfetti/svelte": "^2.0.0",
+		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/adapter-node": "^5.2.7",
+		"@sveltejs/adapter-static": "^3.0.5",
+		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"@tailwindcss/typography": "^0.5.15",
+		"@types/eslint": "^9.6.0",
+		"autoprefixer": "^10.4.20",
+		"eslint": "^9.0.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-svelte": "^2.36.0",
+		"globals": "^15.0.0",
+		"postcss": "^8.4.47",
+		"prettier": "^3.1.1",
+		"prettier-plugin-svelte": "^3.2.7",
+		"svelte": "^4.2.7",
+		"svelte-check": "^4.0.0",
+		"tailwindcss": "^3.4.13",
+		"typescript": "^5.0.0",
+		"typescript-eslint": "^8.0.0",
+		"vite": "^5.0.3"
+	},
+	"type": "module",
+	"dependencies": {
+		"@thebcms/cli": "^1.2.5",
+		"@thebcms/client": "^1.3.0",
+		"@thebcms/types": "^1.0.2",
+		"@thebcms/utils": "^1.0.0",
+		"@thebcms/components-svelte": "^1.0.0"
+	}
+}
