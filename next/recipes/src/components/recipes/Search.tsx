@@ -171,7 +171,6 @@ const RecipesSearchBar: React.FC<SearchBarProps> = ({
                                     <Link
                                         key={index}
                                         href={`/recipes/${recipe.slug}`}
-                                        passHref
                                         onClick={() => setSearchValue('')}
                                         className="flex bg-white px-4 py-3 text-sm leading-none font-medium tracking-[-0.41px] text-appGray-500 transition-colors duration-300 hover:text-appAccent"
                                     >
