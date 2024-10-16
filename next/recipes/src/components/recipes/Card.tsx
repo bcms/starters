@@ -9,17 +9,13 @@ import { RecipeLight } from '@/types';
 import { BCMSImage } from '@thebcms/components-react';
 import { ClientConfig } from '@thebcms/client';
 
-interface RecipesCardProps {
+interface Props {
     card: RecipeLight;
     showTitleLayer?: boolean;
     bcmsConfig: ClientConfig;
 }
 
-const RecipesCard: React.FC<RecipesCardProps> = ({
-    card,
-    showTitleLayer,
-    bcmsConfig,
-}) => {
+const RecipesCard: React.FC<Props> = ({ card, showTitleLayer, bcmsConfig }) => {
     return (
         <article>
             <Link href={`/recipes/${card.slug}`} className="flex flex-col">

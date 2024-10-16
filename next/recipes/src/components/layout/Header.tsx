@@ -8,14 +8,16 @@ import classNames from 'classnames';
 import { HeaderEntryMetaItem } from '@bcms-types/types/ts';
 import { bcms } from '@/bcms-client';
 import { BCMSImage } from '@thebcms/components-react';
+import { usePathname } from 'next/navigation';
 
 interface Props {
     header: HeaderEntryMetaItem;
 }
 
 const Header: React.FC<Props> = ({ header }) => {
+    const pathname = usePathname();
     const navItemsDOM = useRef<HTMLDivElement | null>(null);
-    const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
+    const [showMobileNav, setShowMobileNav] = useState(false);
 
     useEffect(() => {
         const handleMobileNavClickOutside = (event: MouseEvent) => {
@@ -53,11 +55,10 @@ const Header: React.FC<Props> = ({ header }) => {
                                     clientConfig={bcms.getConfig()}
                                     className={classNames(
                                         'w-full md:grayscale md:brightness-0 md:invert',
-                                        // TODO: For the '/' path
-                                        // {
-                                        //     'grayscale brightness-0 invert':
-                                        //         router.pathname === '/',
-                                        // },
+                                        {
+                                            'grayscale brightness-0 invert':
+                                                pathname === '/',
+                                        },
                                     )}
                                 />
                             </Link>

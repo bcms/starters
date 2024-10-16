@@ -10,7 +10,7 @@ import { BCMSImage } from '@thebcms/components-react';
 import { ClientConfig } from '@thebcms/client';
 import './speakers.scss';
 
-interface HomePageSpeakersProps {
+interface Props {
     title: string;
     description: PropRichTextDataParsed;
     cover: PropMediaDataParsed;
@@ -31,7 +31,7 @@ const sliderOptions = {
     },
 };
 
-const HomeSpeakers: React.FC<HomePageSpeakersProps> = ({
+const HomeSpeakers: React.FC<Props> = ({
     title,
     description,
     cover,

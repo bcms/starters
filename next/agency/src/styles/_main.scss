@@ -1,0 +1,11 @@
+@import './fonts';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+    @apply box-border m-0 p-0;
+}

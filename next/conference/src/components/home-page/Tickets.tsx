@@ -6,14 +6,14 @@ import { TicketGroup } from '@bcms-types/types/ts';
 import { BCMSImage } from '@thebcms/components-react';
 import { ClientConfig } from '@thebcms/client';
 
-interface HomePageTicketsProp {
+interface Prop {
     title: string;
     description: PropRichTextDataParsed;
     tickets: TicketGroup[];
     bcmsConfig: ClientConfig;
 }
 
-const HomeTickets: React.FC<HomePageTicketsProp> = ({
+const HomeTickets: React.FC<Prop> = ({
     title,
     description,
     tickets,

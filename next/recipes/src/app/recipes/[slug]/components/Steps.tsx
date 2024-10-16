@@ -9,12 +9,12 @@ import ContentManager from '@/components/ContentManager';
 import ArrowIcon from '@/assets/icons/arrow-right.svg';
 import Btn from '@/components/Btn';
 
-interface StepsProps {
+interface Props {
     steps: RecipeStepGroup[];
     bcmsConfig: ClientConfig;
 }
 
-export const Steps: React.FC<StepsProps> = ({ steps, bcmsConfig }) => {
+export const Steps: React.FC<Props> = ({ steps, bcmsConfig }) => {
     const [activeStep, setActiveStep] = useState(0);
     return (
         <div className="mb-8 lg:mb-20 xl:mb-[120px]">

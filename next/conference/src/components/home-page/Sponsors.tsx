@@ -11,7 +11,7 @@ import { SponsorGroup } from '@bcms-types/types/ts';
 import { BCMSImage } from '@thebcms/components-react';
 import { ClientConfig } from '@thebcms/client';
 
-interface HomePageSponsorsProps {
+interface Props {
     title: string;
     sponsors: SponsorGroup[];
     bcmsConfig: ClientConfig;
@@ -33,14 +33,11 @@ const sliderOptions = {
         clickable: true,
     },
 };
-const HomeSponsors: React.FC<HomePageSponsorsProps> = ({
-    title,
-    sponsors,
-    bcmsConfig,
-}) => {
+
+const HomeSponsors: React.FC<Props> = ({ title, sponsors, bcmsConfig }) => {
     const [activeTier, setActiveTier] = useState<TiersType>('platinum');
 
-    const [showContactForm, setShowContactForm] = useState<boolean>(false);
+    const [showContactForm, setShowContactForm] = useState(false);
 
     const filteredSponsors = useMemo(() => {
         return sponsors.filter(

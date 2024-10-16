@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactPaginate from 'react-paginate';
 
-interface PaginationProps {
+interface Props {
     atPage: number;
     pageCount: number;
     pageRange?: number;
     onPageChange: (value: number) => void;
     className?: string;
 }
-export const RecipesPagination: React.FC<PaginationProps> = ({
+
+export const RecipesPagination: React.FC<Props> = ({
     atPage,
     pageCount,
     pageRange = 4,

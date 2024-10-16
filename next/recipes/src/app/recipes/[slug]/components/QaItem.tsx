@@ -6,12 +6,12 @@ import { QaItemGroup } from '@bcms-types/types/ts';
 import ChevronIcon from '@/assets/icons/chevron-down.svg';
 import ContentManager from '@/components/ContentManager';
 
-interface QAItemProps {
+interface Props {
     item: QaItemGroup;
 }
 
-export const QAItem: React.FC<QAItemProps> = ({ item }) => {
-    const [showAnswer, setShowAnswer] = useState<boolean>(false);
+export const QAItem: React.FC<Props> = ({ item }) => {
+    const [showAnswer, setShowAnswer] = useState(false);
 
     return (
         <div className="border border-[#E8E8E8] rounded-lg">

@@ -12,9 +12,9 @@ interface Props {
 
 const Filters: React.FC<Props> = ({ popular, categories }) => {
     const router = useRouter();
-    const [searchValue, setSearchValue] = useState<string>('');
-    const [popularValue, setPopularValue] = useState<string>('');
-    const [categoriesValue, setCategoriesValue] = useState<string>('');
+    const [searchValue, setSearchValue] = useState('');
+    const [popularValue, setPopularValue] = useState('');
+    const [categoriesValue, setCategoriesValue] = useState('');
 
     const filterRedirect = (key: string, val: string) => {
         if (val) {

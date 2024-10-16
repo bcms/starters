@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import classNames from 'classnames';
 import { useClickOutside } from '@/hooks/useClickOutside';
 
-interface SelectInputProps {
+interface Props {
     value: string;
     label?: string;
     placeholder?: string;
@@ -11,7 +11,7 @@ interface SelectInputProps {
     onSelect: (value: string) => void;
 }
 
-const SelectInput: React.FC<SelectInputProps> = ({
+const SelectInput: React.FC<Props> = ({
     value,
     label,
     placeholder,

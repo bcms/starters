@@ -8,14 +8,14 @@ import { RecipeLight } from '@/types';
 import { PropMediaDataParsed, PropRichTextDataParsed } from '@thebcms/types';
 import RecipesSearchBar from '../recipes/Search';
 
-interface HomePageHeroProps {
+interface Props {
     headline: PropRichTextDataParsed;
     description: PropRichTextDataParsed;
     coverImage: PropMediaDataParsed;
     recipes: RecipeLight[];
 }
 
-const HomePageHero: React.FC<HomePageHeroProps> = ({
+const HomePageHero: React.FC<Props> = ({
     headline,
     description,
     coverImage,
