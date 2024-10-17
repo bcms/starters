@@ -1,0 +1,60 @@
+---
+import type { BlogEntryMetaItem } from '../../bcms/types/ts';
+import { BCMSImage, BCMSContentManager } from '@thebcms/components-vue';
+import type { ClientConfig } from '@thebcms/client';
+import Tag from '../components/tag.astro';
+import { toReadableDate } from '../utils/date';
+
+interface Props {
+	blog: BlogEntryMetaItem;
+	bcmsConfig: ClientConfig;
+}
+
+const props = Astro.props;
+---
+
+<article>
+	<a
+		href={`/blog/${props.blog.slug}`}
+		class="group w-full grid grid-cols-1 border border-solid border-appGray-200 rounded-2xl overflow-hidden md:grid-cols-[45%,55%]"
+	>
+		<div class="aspect-[1.25] self-stretch overflow-hidden">
+			<BCMSImage
+				client={props.bcmsConfig}
+				media={props.blog.cover_image}
+				class="size-full object-cover transition-transform duration-500 object-center group-hover:scale-105 group-focus-visible:scale-105"
+			/>
+		</div>
+		<div
+			class="flex flex-col self-center pt-6 max-md:px-4 max-md:pb-4 md:px-12">
+			<h3 class="text-2xl font-semibold leading-none mb-4">
+				{props.blog.title}
+			</h3>
+			<div class="flex items-center flex-wrap gap-2 mb-8">
+				{props.blog.category.map((category) => {
+					return (
+						<Tag class="capitalize">
+							{category.toLowerCase()}
+						</Tag>
+					);
+				})}
+				<svg
+					width="5"
+					height="5"
+					viewBox="0 0 5 5"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<circle cx="2.5" cy="2.5" r="2.5" fill="#D9D9D9" />
+				</svg>
+				<div class="leading-none">
+					{toReadableDate(props.blog.date)}
+				</div>
+			</div>
+			<BCMSContentManager
+				items={props.blog.description.nodes}
+				class="text-appGray-300 font-medium leading-[1.38] tracking-[-0.36px] md:text-lg"
+			/>
+		</div>
+	</a>
+</article>
