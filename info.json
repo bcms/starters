@@ -24,7 +24,7 @@
             {
                 "id": "astro",
                 "title": "Astro.js",
-                "available": false
+                "available": true
             }
         ],
         "starters": [
@@ -32,7 +32,7 @@
                 "available": true,
                 "title": "Simple blog",
                 "slug": "simple-blog",
-                "frameworks": ["next", "nuxt", "gatsby", "svelte"]
+                "frameworks": ["next", "nuxt", "gatsby", "svelte", "astro"]
             }
         ]
     }
