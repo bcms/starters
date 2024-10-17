@@ -23,6 +23,7 @@ const props = Astro.props;
 				client={props.bcmsConfig}
 				media={props.blog.cover_image}
 				class="size-full object-cover transition-transform duration-500 object-center group-hover:scale-105 group-focus-visible:scale-105"
+				client:load
 			/>
 		</div>
 		<div
