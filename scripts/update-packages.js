@@ -4,7 +4,7 @@ const path = require('node:path');
 
 async function updatePackages() {
     const fs = new FS(process.cwd());
-    const frameworks = ['gatsby', 'next', 'nuxt'];
+    const frameworks = ['gatsby', 'next', 'nuxt', 'svelte', 'astro'];
     for (let i = 0; i < frameworks.length; i++) {
         const framework = frameworks[i];
         const dirs = await fs.readdir(framework);
