@@ -33,6 +33,42 @@
                 "title": "Simple blog",
                 "slug": "simple-blog",
                 "frameworks": ["next", "nuxt", "gatsby", "svelte", "astro"]
+            },
+            {
+                "available": true,
+                "title": "Agency",
+                "slug": "agency",
+                "frameworks": ["next"]
+            },
+            {
+                "available": true,
+                "title": "Blog",
+                "slug": "blog",
+                "frameworks": ["next"]
+            },
+            {
+                "available": true,
+                "title": "Conference",
+                "slug": "conference",
+                "frameworks": ["next"]
+            },
+            {
+                "available": true,
+                "title": "Job board",
+                "slug": "job-board",
+                "frameworks": ["next"]
+            },
+            {
+                "available": true,
+                "title": "Personal",
+                "slug": "personal",
+                "frameworks": ["next"]
+            },
+            {
+                "available": true,
+                "title": "Recipes",
+                "slug": "recipes",
+                "frameworks": ["next"]
             }
         ]
     }
