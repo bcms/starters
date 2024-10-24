@@ -1,41 +1,101 @@
-
 # BCMS Starters
 
-We're excited to announce that our BCMS code starters are being upgraded for the upcoming BCMS Cloud version. Soon, you'll have access to free, customizable, high-performance starters built with your favorite frameworks, fully integrated with BCMS.
+Free, beautiful, customizable, responsive, high-performance starters, integrated with [BCMS](https://github.com/bcms/cms).
+Built with Tailwind CSS and your favorite framework. Ready-to-use.
 
-In the meantime, you can start using BCMS with these simple blog starters:
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![Nuxtjs](https://img.shields.io/badge/Nuxt-002E3B?style=for-the-badge&logo=nuxtdotjs&logoColor=%2300DC82) ![Gatsby](https://img.shields.io/badge/Gatsby-%23663399.svg?style=for-the-badge&logo=gatsby&logoColor=white) ![Astro](https://img.shields.io/badge/astro-212227.svg?style=for-the-badge&logo=astro&logoColor=white) ![Svelte](https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+If you like the project, hit that ⭐ button to show some 💛
+
+---
+
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+
+## Next.js starters
 
 ```bash
 npx @thebcms/cli create next
 ```
 
+|     |     |     |
+| --- | --- | --- |
+| [![](https://github.com/user-attachments/assets/ee443126-01b8-4a27-941a-f88984504f3c)](/next/simple-blog) **Next Simple blog starter** | [![](https://user-images.githubusercontent.com/15079459/274629022-0d402324-b0a5-4c26-b5a0-5f89aabaa31a.png)](/next/conference) **Next Conference starter** | [![](https://user-images.githubusercontent.com/15079459/274629056-f0baa4c5-d982-46df-91f9-89dd986c48a0.png)](/next/job-board) **Next Job board starter** | [![](https://user-images.githubusercontent.com/15079459/274629077-cca186cb-b06a-46cf-8b8a-6f2f4efd03b0.png)](/next/blog) **Next Blog starter** |
+| [![](https://user-images.githubusercontent.com/15079459/274629098-a135d9f1-b9ac-48ee-81d6-89d0b83a5f41.png)](/next/recipes) **Next Recipes starter** | [![](https://user-images.githubusercontent.com/15079459/274629159-764e33bc-83dd-487c-95ea-5224a9e263fb.png)](/next/personal) **Next Personal website starter** | [![](https://user-images.githubusercontent.com/15079459/274629184-8ed30c1e-9001-48f3-8a39-b5276cbf7104.png)](#) Coming soon |
+| [![](https://user-images.githubusercontent.com/15079459/274629203-68c2be61-fe6d-4b52-bca0-2f6201e73009.png)](#) Coming soon | [![](https://user-images.githubusercontent.com/15079459/274629127-89832762-1a00-4169-b8ef-13731325f81f.png)](#) Coming soon | [![](https://github.com/bcms/starters/assets/15079459/652d6e4f-5676-4ba6-ba36-13933ce76b37)](#) Coming soon |   |
+
+---
+
+![Astro](https://img.shields.io/badge/astro-212227.svg?style=for-the-badge&logo=astro&logoColor=white)
+
+## Astro.js starters
+
 ```bash
-npx @thebcms/cli create gatsby
+npx @thebcms/cli create astro
 ```
+
+|     |     |     |
+| --- | --- | --- |
+| [![](https://github.com/user-attachments/assets/ee443126-01b8-4a27-941a-f88984504f3c)](/astro/simple-blog) **Astro Simple blog starter** |[ ![](https://user-images.githubusercontent.com/15079459/274629022-0d402324-b0a5-4c26-b5a0-5f89aabaa31a.png)](#) Coming soon | [![](https://user-images.githubusercontent.com/15079459/274629056-f0baa4c5-d982-46df-91f9-89dd986c48a0.png)](#) Coming soon | [![](https://user-images.githubusercontent.com/15079459/274629077-cca186cb-b06a-46cf-8b8a-6f2f4efd03b0.png)](#) Coming soon |
+| [![](https://user-images.githubusercontent.com/15079459/274629098-a135d9f1-b9ac-48ee-81d6-89d0b83a5f41.png)](#) Coming soon | [![](https://user-images.githubusercontent.com/15079459/274629159-764e33bc-83dd-487c-95ea-5224a9e263fb.png)](#) Coming soon | [![](https://user-images.githubusercontent.com/15079459/274629184-8ed30c1e-9001-48f3-8a39-b5276cbf7104.png)](#) Coming soon |
+| [![](https://user-images.githubusercontent.com/15079459/274629203-68c2be61-fe6d-4b52-bca0-2f6201e73009.png)](#) Coming soon | [![](https://user-images.githubusercontent.com/15079459/274629127-89832762-1a00-4169-b8ef-13731325f81f.png)](#) Coming soon | [![](https://github.com/bcms/starters/assets/15079459/652d6e4f-5676-4ba6-ba36-13933ce76b37)](#) Coming soon |   |
+
+---
+
+![Nuxtjs](https://img.shields.io/badge/Nuxt-002E3B?style=for-the-badge&logo=nuxtdotjs&logoColor=%2300DC82)
+
+## Nuxt starters
 
 ```bash
 npx @thebcms/cli create nuxt
 ```
 
-<br />
-
-
-Stay tuned for more updates and new features coming soon!<br />
-⭐ Star this repository to get notifications 
-
-<br />
-
+|     |     |     |
+| --- | --- | --- |
+| [![](https://github.com/user-attachments/assets/ee443126-01b8-4a27-941a-f88984504f3c)](/nuxt/simple-blog) **Nuxt Simple blog starter** |[ ![](https://user-images.githubusercontent.com/15079459/274629022-0d402324-b0a5-4c26-b5a0-5f89aabaa31a.png)](#) Coming soon | [![](https://user-images.githubusercontent.com/15079459/274629056-f0baa4c5-d982-46df-91f9-89dd986c48a0.png)](#) Coming soon | [![](https://user-images.githubusercontent.com/15079459/274629077-cca186cb-b06a-46cf-8b8a-6f2f4efd03b0.png)](#) Coming soon |
+| [![](https://user-images.githubusercontent.com/15079459/274629098-a135d9f1-b9ac-48ee-81d6-89d0b83a5f41.png)](#) Coming soon | [![](https://user-images.githubusercontent.com/15079459/274629159-764e33bc-83dd-487c-95ea-5224a9e263fb.png)](#) Coming soon | [![](https://user-images.githubusercontent.com/15079459/274629184-8ed30c1e-9001-48f3-8a39-b5276cbf7104.png)](#) Coming soon |
+| [![](https://user-images.githubusercontent.com/15079459/274629203-68c2be61-fe6d-4b52-bca0-2f6201e73009.png)](#) Coming soon | [![](https://user-images.githubusercontent.com/15079459/274629127-89832762-1a00-4169-b8ef-13731325f81f.png)](#) Coming soon | [![](https://github.com/bcms/starters/assets/15079459/652d6e4f-5676-4ba6-ba36-13933ce76b37)](#) Coming soon |   |
 
 ---
 
-<br />
+![Svelte](https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white)
 
+## SvelteKit starters
 
-
-### These Starters are comming back soon
+```bash
+npx @thebcms/cli create svelte
+```
 
 |     |     |     |
 | --- | --- | --- |
-| ![](https://user-images.githubusercontent.com/15079459/274629022-0d402324-b0a5-4c26-b5a0-5f89aabaa31a.png) **Conference starter** | ![](https://user-images.githubusercontent.com/15079459/274629056-f0baa4c5-d982-46df-91f9-89dd986c48a0.png) **Job board starter** | ![](https://user-images.githubusercontent.com/15079459/274629077-cca186cb-b06a-46cf-8b8a-6f2f4efd03b0.png) **Blog starter** |
-| ![](https://user-images.githubusercontent.com/15079459/274629098-a135d9f1-b9ac-48ee-81d6-89d0b83a5f41.png) **Recipes starter** | ![](https://user-images.githubusercontent.com/15079459/274629127-89832762-1a00-4169-b8ef-13731325f81f.png) **E-commerce starter** | ![](https://user-images.githubusercontent.com/15079459/274629159-764e33bc-83dd-487c-95ea-5224a9e263fb.png) **Personal website starter** |
-| ![](https://user-images.githubusercontent.com/15079459/274629184-8ed30c1e-9001-48f3-8a39-b5276cbf7104.png) **Restaurant starter** | ![](https://user-images.githubusercontent.com/15079459/274629203-68c2be61-fe6d-4b52-bca0-2f6201e73009.png) **Podcast starter** | ![](https://github.com/bcms/starters/assets/15079459/652d6e4f-5676-4ba6-ba36-13933ce76b37) **Agency starter** |
+| [![](https://github.com/user-attachments/assets/ee443126-01b8-4a27-941a-f88984504f3c)](/svelte/simple-blog) **Svelte Simple blog starter** |[ ![](https://user-images.githubusercontent.com/15079459/274629022-0d402324-b0a5-4c26-b5a0-5f89aabaa31a.png)](#) Coming soon | [![](https://user-images.githubusercontent.com/15079459/274629056-f0baa4c5-d982-46df-91f9-89dd986c48a0.png)](#) Coming soon | [![](https://user-images.githubusercontent.com/15079459/274629077-cca186cb-b06a-46cf-8b8a-6f2f4efd03b0.png)](#) Coming soon |
+| [![](https://user-images.githubusercontent.com/15079459/274629098-a135d9f1-b9ac-48ee-81d6-89d0b83a5f41.png)](#) Coming soon | [![](https://user-images.githubusercontent.com/15079459/274629159-764e33bc-83dd-487c-95ea-5224a9e263fb.png)](#) Coming soon | [![](https://user-images.githubusercontent.com/15079459/274629184-8ed30c1e-9001-48f3-8a39-b5276cbf7104.png)](#) Coming soon |
+| [![](https://user-images.githubusercontent.com/15079459/274629203-68c2be61-fe6d-4b52-bca0-2f6201e73009.png)](#) Coming soon | [![](https://user-images.githubusercontent.com/15079459/274629127-89832762-1a00-4169-b8ef-13731325f81f.png)](#) Coming soon | [![](https://github.com/bcms/starters/assets/15079459/652d6e4f-5676-4ba6-ba36-13933ce76b37)](#) Coming soon |   |
+
+---
+
+![Gatsby](https://img.shields.io/badge/Gatsby-%23663399.svg?style=for-the-badge&logo=gatsby&logoColor=white)
+
+## Gatsby starters
+
+```bash
+npx @thebcms/cli create gatsby
+```
+
+|     |     |     |
+| --- | --- | --- |
+| [![](https://github.com/user-attachments/assets/ee443126-01b8-4a27-941a-f88984504f3c)](/gatsby/simple-blog) **Gatsby Simple blog starter** |[ ![](https://user-images.githubusercontent.com/15079459/274629022-0d402324-b0a5-4c26-b5a0-5f89aabaa31a.png)](#) Coming soon | [![](https://user-images.githubusercontent.com/15079459/274629056-f0baa4c5-d982-46df-91f9-89dd986c48a0.png)](#) Coming soon | [![](https://user-images.githubusercontent.com/15079459/274629077-cca186cb-b06a-46cf-8b8a-6f2f4efd03b0.png)](#) Coming soon |
+| [![](https://user-images.githubusercontent.com/15079459/274629098-a135d9f1-b9ac-48ee-81d6-89d0b83a5f41.png)](#) Coming soon | [![](https://user-images.githubusercontent.com/15079459/274629159-764e33bc-83dd-487c-95ea-5224a9e263fb.png)](#) Coming soon | [![](https://user-images.githubusercontent.com/15079459/274629184-8ed30c1e-9001-48f3-8a39-b5276cbf7104.png)](#) Coming soon |
+| [![](https://user-images.githubusercontent.com/15079459/274629203-68c2be61-fe6d-4b52-bca0-2f6201e73009.png)](#) Coming soon | [![](https://user-images.githubusercontent.com/15079459/274629127-89832762-1a00-4169-b8ef-13731325f81f.png)](#) Coming soon | [![](https://github.com/bcms/starters/assets/15079459/652d6e4f-5676-4ba6-ba36-13933ce76b37)](#) Coming soon |   |
+
+### Useful links:
+
+-   [BCMS website](https://thebcms.com/)
+-   [BCMS documentation](https://thebcms.com/docs/)
+-   [All BCMS starters](https://thebcms.com/starters)
+-   [Join our Discord](https://discord.com/invite/SYBY89ccaR)
+
+---
+
+## Support
+
+If you like the project, please consider starring the repository to show your support! ⭐️
