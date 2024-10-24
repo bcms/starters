@@ -1,38 +1,20 @@
-# create-svelte
+# BCMS Simple blog code starter for Svelte
+This is a bare-bones Svelte starter kit for BCMS, a headless CMS. It's minimal but solid, with a clean codebase that hooks directly into your BCMS project, ready to extend and scale as needed.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## Getting Started
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Run the following command
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+npx @thebcms/cli create svelte starter simple-blog
 ```
 
-## Building
+and follow the prompts.
 
-To create a production version of your app:
+---
 
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+### Useful links:
+- [BCMS website](https://thebcms.com/)
+- [BCMS documentation](https://thebcms.com/docs/)
+- [All BCMS starters](https://thebcms.com/starters)
+- [Join our Discord](https://discord.com/invite/SYBY89ccaR)
