@@ -27,13 +27,9 @@ const blogs = (
 ) as BlogEntry[];
 
 const blog = blogs.find((e) => e.meta.en?.slug === params.slug);
-
-if (!blog) {
-	return notFound();
-}
 const data = {
-	meta: blog.meta.en as BlogEntryMetaItem,
-	content: blog.content.en as EntryContentParsedItem[],
+	meta: blog?.meta.en as BlogEntryMetaItem,
+	content: blog?.content.en as EntryContentParsedItem[],
 };
 
 const otherBlogs = blogs

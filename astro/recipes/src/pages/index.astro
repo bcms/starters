@@ -14,9 +14,6 @@ const homePageEntry = (await bcms.entry.getBySlug(
   'home',
   'home-page',
 )) as HomePageEntry;
-if (!homePageEntry) {
-  return notFound();
-}
 const homePageMeta = homePageEntry.meta.en as HomePageEntryMetaItem;
 const recipeEntries = (await bcms.entry.getAll('recipe')) as RecipeEntry[];
 const lightRecipes = recipeEntries.map((e) => {

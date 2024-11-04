@@ -1,0 +1,40 @@
+---
+import { bcms } from '../bcms-client';
+import type { TestimonialEntry, TestimonialEntryMetaItem, TestimonialsPageEntry, TestimonialsPageEntryMetaItem } from '../../bcms/types/ts';
+
+import Layout from '../layouts/Layout.astro';
+import AnimatedTitle from '../components/AnimatedTitle';
+import Items from '../components/testimonials/Items';
+
+const testimonialsPageEntry = (await bcms.entry.getBySlug(
+    'testimonials',
+    'testimonials-page',
+)) as TestimonialsPageEntry;
+const testimonialsPageMeta = testimonialsPageEntry.meta
+    .en as TestimonialsPageEntryMetaItem;
+const testimonialEntries = (await bcms.entry.getAll(
+    'testimonial',
+)) as TestimonialEntry[];
+
+const bcmsConfig = bcms.getConfig();
+---
+
+<Layout title={`Testimonials - Personal Website`}>
+	<div class="pt-8 pb-10 overflow-hidden md:pb-20 lg:pt-[72px] lg:pb-[120px]">
+        <div class="container">
+            <AnimatedTitle
+                title={testimonialsPageMeta.title}
+                className="mb-10 md:mb-20 lg:mb-[124px]"
+                titleClassName="text-[114px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[190px] md:text-[220px] lg:text-[300px] lg:tracking-[5.59px] xl:text-[464px]"
+                client:load
+            />
+            <Items
+                items={testimonialEntries.map(
+                    (e) => e.meta.en as TestimonialEntryMetaItem,
+                )}
+                client:load
+                bcmsConfig={bcmsConfig}
+            />
+        </div>
+    </div>
+</Layout>

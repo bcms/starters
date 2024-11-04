@@ -5,7 +5,7 @@ import AnimatedTitle from '@/components/AnimatedTitle';
 import ContentManager from '@/components/ContentManager';
 import { bcms } from '../bcms-client';
 
-const pageTitle = 'Home - Personal Website';
+const pageTitle = 'Legal - Personal Website';
 export const metadata: Metadata = {
     title: pageTitle,
     openGraph: {
