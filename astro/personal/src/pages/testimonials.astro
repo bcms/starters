@@ -1,6 +1,11 @@
 ---
 import { bcms } from '../bcms-client';
-import type { TestimonialEntry, TestimonialEntryMetaItem, TestimonialsPageEntry, TestimonialsPageEntryMetaItem } from '../../bcms/types/ts';
+import type {
+    TestimonialEntry,
+    TestimonialEntryMetaItem,
+    TestimonialsPageEntry,
+    TestimonialsPageEntryMetaItem,
+} from '../../bcms/types/ts';
 
 import Layout from '../layouts/Layout.astro';
 import AnimatedTitle from '../components/AnimatedTitle';
@@ -20,7 +25,7 @@ const bcmsConfig = bcms.getConfig();
 ---
 
 <Layout title={`Testimonials - Personal Website`}>
-	<div class="pt-8 pb-10 overflow-hidden md:pb-20 lg:pt-[72px] lg:pb-[120px]">
+    <div class="pt-8 pb-10 overflow-hidden md:pb-20 lg:pt-[72px] lg:pb-[120px]">
         <div class="container">
             <AnimatedTitle
                 title={testimonialsPageMeta.title}

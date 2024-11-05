@@ -1,6 +1,9 @@
 ---
 import { bcms } from '../../../bcms-client';
-import type { PortfolioEntry, PortfolioEntryMetaItem } from '../../../../bcms/types/ts/entry/portfolio';
+import type {
+    PortfolioEntry,
+    PortfolioEntryMetaItem,
+} from '../../../../bcms/types/ts/entry/portfolio';
 
 import Layout from '../../../layouts/Layout.astro';
 import { BCMSImage } from '@thebcms/components-react';
@@ -8,11 +11,11 @@ import ContentManager from '../../../components/ContentManager';
 
 export async function getStaticPaths() {
     const entries = (await bcms.entry.getAll('portfolio')) as PortfolioEntry[];
-    return entries.map(e => ({
+    return entries.map((e) => ({
         params: {
-            slug: e.meta.en?.slug || ''
-        }
-    }))
+            slug: e.meta.en?.slug || '',
+        },
+    }));
 }
 
 const { slug } = Astro.params;
@@ -26,46 +29,77 @@ const portfolioEntryMeta = portfolioEntry.meta.en as PortfolioEntryMetaItem;
 const clientConfig = bcms.getConfig();
 ---
 
-<Layout title={`${portfolioEntryMeta.seo?.title || portfolioEntryMeta.title} - Personal Website`}>
+<Layout
+    title={`${portfolioEntryMeta.seo?.title || portfolioEntryMeta.title} - Personal Website`}
+>
     <div class="pt-6 pb-10 overflow-hidden md:pb-20 lg:pt-8 lg:pb-[120px]">
         <div class="relative mb-4 lg:mb-6">
             <div class="py-6">
                 <div class="container">
                     <div class="relative z-10 aspect-[1.23] md:aspect-[1.95]">
-                        <h1 class="text-xl leading-none tracking-[-0.41px] font-Helvetica text-white lg:text-[72px] lg:leading-none">
+                        <h1
+                            class="text-xl leading-none tracking-[-0.41px] font-Helvetica text-white lg:text-[72px] lg:leading-none"
+                        >
                             {portfolioEntryMeta.title}
                         </h1>
-                        <div class="flex items-end justify-between gap-5 h-full">
+                        <div
+                            class="flex items-end justify-between gap-5 h-full"
+                        >
                             <div class="flex flex-col">
-                                <div class="leading-none tracking-[-0.41px] font-Helvetica text-appGray-200 mb-1.5 lg:text-2xl lg:leading-none lg:mb-3">
+                                <div
+                                    class="leading-none tracking-[-0.41px] font-Helvetica text-appGray-200 mb-1.5 lg:text-2xl lg:leading-none lg:mb-3"
+                                >
                                     Project
                                 </div>
-                                <div class="text-sm leading-none tracking-[-0.41px] font-Helvetica text-white lg:text-[26px] lg:leading-none">
-                                    {portfolioEntryMeta.project_no.padStart(2,'0')}
+                                <div
+                                    class="text-sm leading-none tracking-[-0.41px] font-Helvetica text-white lg:text-[26px] lg:leading-none"
+                                >
+                                    {
+                                        portfolioEntryMeta.project_no.padStart(
+                                            2,
+                                            '0',
+                                        )
+                                    }
                                 </div>
                             </div>
                             <div class="flex flex-col">
-                                <div class="leading-none tracking-[-0.41px] font-Helvetica text-appGray-200 mb-1.5 lg:text-2xl lg:leading-none lg:mb-3">
+                                <div
+                                    class="leading-none tracking-[-0.41px] font-Helvetica text-appGray-200 mb-1.5 lg:text-2xl lg:leading-none lg:mb-3"
+                                >
                                     Brand name
                                 </div>
-                                <div class="text-sm leading-none tracking-[-0.41px] font-Helvetica text-white lg:text-[26px] lg:leading-none">
+                                <div
+                                    class="text-sm leading-none tracking-[-0.41px] font-Helvetica text-white lg:text-[26px] lg:leading-none"
+                                >
                                     {portfolioEntryMeta.brand_name}
                                 </div>
                             </div>
                             <div class="flex flex-col">
-                                <div class="leading-none tracking-[-0.41px] font-Helvetica text-appGray-200 mb-1.5 lg:text-2xl lg:leading-none lg:mb-3">
+                                <div
+                                    class="leading-none tracking-[-0.41px] font-Helvetica text-appGray-200 mb-1.5 lg:text-2xl lg:leading-none lg:mb-3"
+                                >
                                     Role
                                 </div>
-                                <div class="text-sm leading-none tracking-[-0.41px] font-Helvetica text-white lg:text-[26px] lg:leading-none">
+                                <div
+                                    class="text-sm leading-none tracking-[-0.41px] font-Helvetica text-white lg:text-[26px] lg:leading-none"
+                                >
                                     {portfolioEntryMeta.role}
                                 </div>
                             </div>
                             <div class="flex flex-col">
-                                <div class="leading-none tracking-[-0.41px] font-Helvetica text-appGray-200 mb-1.5 lg:text-2xl lg:leading-none lg:mb-3">
+                                <div
+                                    class="leading-none tracking-[-0.41px] font-Helvetica text-appGray-200 mb-1.5 lg:text-2xl lg:leading-none lg:mb-3"
+                                >
                                     Year
                                 </div>
-                                <div class="text-sm leading-none tracking-[-0.41px] font-Helvetica text-white lg:text-[26px] lg:leading-none">
-                                    {new Date(portfolioEntryMeta.date.timestamp).getFullYear()}
+                                <div
+                                    class="text-sm leading-none tracking-[-0.41px] font-Helvetica text-white lg:text-[26px] lg:leading-none"
+                                >
+                                    {
+                                        new Date(
+                                            portfolioEntryMeta.date.timestamp,
+                                        ).getFullYear()
+                                    }
                                 </div>
                             </div>
                         </div>
@@ -80,7 +114,8 @@ const clientConfig = bcms.getConfig();
                     client:load
                 />
             </div>
-            <div class="absolute top-0 left-0 w-full h-full bg-appText/80" />
+            <div class="absolute top-0 left-0 w-full h-full bg-appText/80">
+            </div>
         </div>
         <div class="container">
             <ContentManager
@@ -88,14 +123,18 @@ const clientConfig = bcms.getConfig();
                 className="text-sm leading-[1.2] tracking-[-0.41px] max-w-[1138px] mb-8 lg:text-[40px] lg:leading-[1.2] lg:mb-[72px]"
             />
             <div class="grid grid-cols-3 gap-3 mb-4 lg:gap-8 lg:mb-6">
-                {portfolioEntryMeta.gallery.slice(1).map((image) => (
-                    <BCMSImage
-                        media={image}
-                        clientConfig={clientConfig}
-                        className="portfolioItemPage--galleryImage w-full object-cover h-full"
-                        client:load
-                    />
-                ))}
+                {
+                    portfolioEntryMeta.gallery
+                        .slice(1)
+                        .map((image) => (
+                            <BCMSImage
+                                media={image}
+                                clientConfig={clientConfig}
+                                className="portfolioItemPage--galleryImage w-full object-cover h-full"
+                                client:load
+                            />
+                        ))
+                }
             </div>
         </div>
     </div>

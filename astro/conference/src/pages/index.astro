@@ -1,6 +1,10 @@
 ---
 import { bcms } from '../bcms-client';
-import type { HomePageEntry, HomePageEntryMetaItem, LegalEntry } from '../../bcms/types/ts';
+import type {
+    HomePageEntry,
+    HomePageEntryMetaItem,
+    LegalEntry,
+} from '../../bcms/types/ts';
 
 import Layout from '../layouts/Layout.astro';
 import HomeHero from '../components/home-page/Hero';
@@ -13,8 +17,8 @@ import HomeAgenda from '../components/home-page/Agenda';
 import 'swiper/css';
 
 const homePageEntry = (await bcms.entry.getBySlug(
-        'home',
-        'home-page',
+    'home',
+    'home-page',
 )) as HomePageEntry;
 const homePageMeta = homePageEntry.meta.en as HomePageEntryMetaItem;
 const legalEntries = (await bcms.entry.getAll('legal')) as LegalEntry[];
@@ -23,47 +27,47 @@ const bcmsConfig = bcms.getConfig();
 ---
 
 <Layout title={`${homePageMeta.title} - CONference`}>
-	<PageWrapper legal={legalEntries} client:load>
-		<HomeHero
-				gallery={homePageMeta.hero_gallery}
-				description={homePageMeta.hero_description}
-				cover={homePageMeta.hero_cover_image}
-				bcmsConfig={bcmsConfig}
-				client:load
-		/>
-		<HomeAbout
-				title={homePageMeta.about_title}
-				cover={homePageMeta.about_cover}
-				description={homePageMeta.about_description}
-				topics={homePageMeta.about_topics}
-				bcmsConfig={bcmsConfig}
-				client:load
-		/>
-		<HomeSpeakers
-				title={homePageMeta.speakers_title}
-				description={homePageMeta.speakers_description}
-				cover={homePageMeta.speakers_cover_image}
-				speakers={homePageMeta.speakers}
-				bcmsConfig={bcmsConfig}
-				client:load
-		/>
-		<HomeSponsors
-				title={homePageMeta.sponsors_title}
-				sponsors={homePageMeta.sponsors}
-				bcmsConfig={bcmsConfig}
-				client:load
-		/>
-		<HomeTickets
-				title={homePageMeta.tickets_title}
-				description={homePageMeta.tickets_description}
-				tickets={homePageMeta.tickets}
-				bcmsConfig={bcmsConfig}
-				client:load
-		/>
-		<HomeAgenda
-				title={homePageMeta.agenda_title}
-				days={homePageMeta.agenda_days}
-				client:load
-		/>
-	</PageWrapper>
+    <PageWrapper legal={legalEntries} client:load>
+        <HomeHero
+            gallery={homePageMeta.hero_gallery}
+            description={homePageMeta.hero_description}
+            cover={homePageMeta.hero_cover_image}
+            bcmsConfig={bcmsConfig}
+            client:load
+        />
+        <HomeAbout
+            title={homePageMeta.about_title}
+            cover={homePageMeta.about_cover}
+            description={homePageMeta.about_description}
+            topics={homePageMeta.about_topics}
+            bcmsConfig={bcmsConfig}
+            client:load
+        />
+        <HomeSpeakers
+            title={homePageMeta.speakers_title}
+            description={homePageMeta.speakers_description}
+            cover={homePageMeta.speakers_cover_image}
+            speakers={homePageMeta.speakers}
+            bcmsConfig={bcmsConfig}
+            client:load
+        />
+        <HomeSponsors
+            title={homePageMeta.sponsors_title}
+            sponsors={homePageMeta.sponsors}
+            bcmsConfig={bcmsConfig}
+            client:load
+        />
+        <HomeTickets
+            title={homePageMeta.tickets_title}
+            description={homePageMeta.tickets_description}
+            tickets={homePageMeta.tickets}
+            bcmsConfig={bcmsConfig}
+            client:load
+        />
+        <HomeAgenda
+            title={homePageMeta.agenda_title}
+            days={homePageMeta.agenda_days}
+            client:load
+        />
+    </PageWrapper>
 </Layout>

@@ -1,31 +1,38 @@
 ---
 import { bcms } from '../bcms-client';
-import type { ContactPageEntry, ContactPageEntryMetaItem } from '../../bcms/types/ts';
+import type {
+    ContactPageEntry,
+    ContactPageEntryMetaItem,
+} from '../../bcms/types/ts';
 
 import Layout from '../layouts/Layout.astro';
 import ContentManager from '../components/ContentManager';
 import Form from '../components/contact/Form';
 
 const contactPageEntry = (await bcms.entry.getBySlug(
-  'lets-talk',
-  'contact-page',
+    'lets-talk',
+    'contact-page',
 )) as ContactPageEntry;
 const contactPageMeta = contactPageEntry.meta.en as ContactPageEntryMetaItem;
 ---
 
-<Layout title={`${contactPageMeta.seo?.title || contactPageMeta.title} - Hospitale`}>
-	<div class="pt-8 pb-14 md:py-20 lg:py-[120px]">
-    <div class="container">
-        <div class="max-w-[632px] mx-auto">
-            <h1 class="text-2xl leading-none font-medium font-PlayfairDisplay tracking-[-0.41px] text-center mb-4 md:text-3xl md:leading-none lg:text-[80px] lg:leading-none lg:mb-5">
-                {contactPageMeta.title}
-            </h1>
-            <ContentManager
-                items={contactPageMeta.description.nodes}
-                className="text-sm leading-[1.4] font-medium tracking-[-0.41px] text-center text-appGray-600 max-w-[446px] mx-auto mb-12 lg:text-base lg:leading-normal lg:mb-[88px]"
-            />
-            <Form />
+<Layout
+    title={`${contactPageMeta.seo?.title || contactPageMeta.title} - Hospitale`}
+>
+    <div class="pt-8 pb-14 md:py-20 lg:py-[120px]">
+        <div class="container">
+            <div class="max-w-[632px] mx-auto">
+                <h1
+                    class="text-2xl leading-none font-medium font-PlayfairDisplay tracking-[-0.41px] text-center mb-4 md:text-3xl md:leading-none lg:text-[80px] lg:leading-none lg:mb-5"
+                >
+                    {contactPageMeta.title}
+                </h1>
+                <ContentManager
+                    items={contactPageMeta.description.nodes}
+                    className="text-sm leading-[1.4] font-medium tracking-[-0.41px] text-center text-appGray-600 max-w-[446px] mx-auto mb-12 lg:text-base lg:leading-normal lg:mb-[88px]"
+                />
+                <Form />
+            </div>
         </div>
     </div>
-  </div>
 </Layout>

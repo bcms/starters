@@ -1,6 +1,12 @@
 ---
 import { bcms } from '../bcms-client';
-import type { HomePageEntry, HomePageEntryMetaItem, JobPostEntry, TestimonialEntry, TestimonialEntryMetaItem } from '../../bcms/types/ts';
+import type {
+    HomePageEntry,
+    HomePageEntryMetaItem,
+    JobPostEntry,
+    TestimonialEntry,
+    TestimonialEntryMetaItem,
+} from '../../bcms/types/ts';
 
 import Layout from '../layouts/Layout.astro';
 import HomeHero from '../components/home-page/Hero';
@@ -29,29 +35,29 @@ const bcmsConfig = bcms.getConfig();
 ---
 
 <Layout title={`${homePageMeta.seo?.title || homePageMeta.title} - Hospitale`}>
-	<div>
-		<HomeHero
-				title={homePageMeta.hero_title}
-				description={homePageMeta.hero_description}
-				cover={homePageMeta.hero_cover_image}
-				bcmsConfig={bcmsConfig}
-				client:load
-		/>
-		<HomeJobs
-				title={homePageMeta.jobs_title}
-				description={homePageMeta.jobs_description}
-				jobs={jobEntriesLite}
-				client:load
-		/>
-		<HomeAbout
-				title={homePageMeta.about_title}
-				description={homePageMeta.about_description}
-				features={homePageMeta.about_features}
-		/>
-		<Testimonials
-				testimonials={testimonialEntriesMeta}
-				bcmsConfig={bcmsConfig}
-				client:load
-		/>
-	</div>
+    <div>
+        <HomeHero
+            title={homePageMeta.hero_title}
+            description={homePageMeta.hero_description}
+            cover={homePageMeta.hero_cover_image}
+            bcmsConfig={bcmsConfig}
+            client:load
+        />
+        <HomeJobs
+            title={homePageMeta.jobs_title}
+            description={homePageMeta.jobs_description}
+            jobs={jobEntriesLite}
+            client:load
+        />
+        <HomeAbout
+            title={homePageMeta.about_title}
+            description={homePageMeta.about_description}
+            features={homePageMeta.about_features}
+        />
+        <Testimonials
+            testimonials={testimonialEntriesMeta}
+            bcmsConfig={bcmsConfig}
+            client:load
+        />
+    </div>
 </Layout>

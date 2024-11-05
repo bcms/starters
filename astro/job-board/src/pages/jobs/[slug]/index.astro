@@ -1,6 +1,9 @@
 ---
 import { bcms } from '../../../bcms-client';
-import type { JobPostEntry, JobPostEntryMetaItem } from '../../../../bcms/types/ts';
+import type {
+    JobPostEntry,
+    JobPostEntryMetaItem,
+} from '../../../../bcms/types/ts';
 
 import Layout from '../../../layouts/Layout.astro';
 import { BCMSImage } from '@thebcms/components-react';
@@ -9,30 +12,28 @@ import { toJobLite } from '../../../utils/job';
 
 export async function getStaticPaths() {
     const jobPostEntries = (await bcms.entry.getAll(
-    'job-post',
+        'job-post',
     )) as JobPostEntry[];
-    return jobPostEntries.map(e => ({
+    return jobPostEntries.map((e) => ({
         params: {
-            slug: e.meta.en?.slug || ''
-        }
-    }))
+            slug: e.meta.en?.slug || '',
+        },
+    }));
 }
 
 const { slug } = Astro.params;
 
-const jobPostEntries = (await bcms.entry.getAll(
-    'job-post',
-)) as JobPostEntry[];
+const jobPostEntries = (await bcms.entry.getAll('job-post')) as JobPostEntry[];
 
-const jobPostEntry = jobPostEntries.find(
-    (e) => e.meta.en?.slug === slug,
-);
+const jobPostEntry = jobPostEntries.find((e) => e.meta.en?.slug === slug);
 const jobPostEntryMeta = jobPostEntry?.meta.en as JobPostEntryMetaItem;
 
 const clientConfig = bcms.getConfig();
 ---
 
-<Layout title={`${jobPostEntryMeta.seo?.title || jobPostEntryMeta.title} - Hospitale`}>
+<Layout
+    title={`${jobPostEntryMeta.seo?.title || jobPostEntryMeta.title} - Hospitale`}
+>
     <div>
         <div class="relative mt-6 mb-10 lg:mt-0 lg:mb-[72px]">
             <BCMSImage
@@ -41,7 +42,7 @@ const clientConfig = bcms.getConfig();
                 className="w-full aspect-[2.76] object-cover lg:aspect-[3.71]"
                 client:load
             />
-            <div class="absolute top-0 left-0 w-full h-full bg-black/20" />
+            <div class="absolute top-0 left-0 w-full h-full bg-black/20"></div>
         </div>
         <Details
             meta={jobPostEntryMeta}

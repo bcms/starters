@@ -3,7 +3,7 @@ import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 
 interface Props {
-	title: string;
+    title: string;
 }
 
 const { title } = Astro.props;
@@ -12,39 +12,45 @@ const ogImageUrl = '/thumbnail.jpg';
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Jumpstart your Astro project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<meta property="og:image" content={ogImageUrl} />
-		<meta property="og:image:secure_url" content={ogImageUrl} />
-		<meta property="twitter:title" content="Hospitale" />
-		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:image" content={ogImageUrl} />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-		<title>{title}</title>
-	</head>
-	<body class="font-SpaceGrotesk overflow-x-hidden bg-appLight text-appText">
-		<div class="overflow-hidden flex flex-col min-h-screen">
-			<Header />
-			<main class="flex flex-col flex-1"><slot /></main>
-			<Footer />
-	</div>
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="description"
+            content="Jumpstart your Astro project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!"
+        />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+        <meta name="generator" content={Astro.generator} />
+        <meta property="og:image" content={ogImageUrl} />
+        <meta property="og:image:secure_url" content={ogImageUrl} />
+        <meta property="twitter:title" content="Hospitale" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:image" content={ogImageUrl} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap"
+            rel="stylesheet"
+        />
+        <title>{title}</title>
+    </head>
+    <body class="font-SpaceGrotesk overflow-x-hidden bg-appLight text-appText">
+        <div class="overflow-hidden flex flex-col min-h-screen">
+            <Header />
+            <main class="flex flex-col flex-1"><slot /></main>
+            <Footer />
+        </div>
+    </body>
 </html>
 
 <style is:global>
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
 
-*,
-*::before,
-*::after {
-    @apply box-border m-0 p-0;
-}
+    *,
+    *::before,
+    *::after {
+        @apply box-border m-0 p-0;
+    }
 </style>

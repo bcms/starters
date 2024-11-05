@@ -1,6 +1,10 @@
 ---
 import { bcms } from '../../bcms-client';
-import type { RecipeEntry, RecipesPageEntry, RecipesPageEntryMetaItem } from '../../../bcms/types/ts';
+import type {
+    RecipeEntry,
+    RecipesPageEntry,
+    RecipesPageEntryMetaItem,
+} from '../../../bcms/types/ts';
 
 import Layout from '../../layouts/Layout.astro';
 import ContentManager from '../../components/ContentManager';
@@ -8,24 +12,30 @@ import RecipesList from '../../components/recipes/List';
 import { recipeToLight } from '../../utils/recipe';
 
 const recipesPageEntry = (await bcms.entry.getBySlug(
-  'recipes',
-  'recipes-page',
+    'recipes',
+    'recipes-page',
 )) as RecipesPageEntry;
 const recipesPageMeta = recipesPageEntry.meta.en as RecipesPageEntryMetaItem;
 const recipeEntries = (await bcms.entry.getAll('recipe')) as RecipeEntry[];
 const lightRecipes = recipeEntries.map((e) => {
-  return recipeToLight(e);
+    return recipeToLight(e);
 });
 
 const clientConfig = bcms.getConfig();
 ---
 
-<Layout title={`${recipesPageMeta.seo?.title || recipesPageMeta.title} - Flavour Fushion`}>
-  <div class="container pt-24 pb-8 md:pb-16 lg:pt-[104px] lg:pb-[120px]">
-    <ContentManager
-        items={recipesPageMeta.headline.nodes}
-        className="recipesPage--title text-xl leading-[1.2] font-medium text-center text-appGray-700 mb-8 md:text-3xl lg:text-[56px] lg:leading-[1.2] lg:mb-10"
-    />
-    <RecipesList recipes={lightRecipes} bcmsConfig={clientConfig} client:load />
-  </div>
+<Layout
+    title={`${recipesPageMeta.seo?.title || recipesPageMeta.title} - Flavour Fushion`}
+>
+    <div class="container pt-24 pb-8 md:pb-16 lg:pt-[104px] lg:pb-[120px]">
+        <ContentManager
+            items={recipesPageMeta.headline.nodes}
+            className="recipesPage--title text-xl leading-[1.2] font-medium text-center text-appGray-700 mb-8 md:text-3xl lg:text-[56px] lg:leading-[1.2] lg:mb-10"
+        />
+        <RecipesList
+            recipes={lightRecipes}
+            bcmsConfig={clientConfig}
+            client:load
+        />
+    </div>
 </Layout>

@@ -5,31 +5,33 @@ import type { BlogEntry, BlogEntryMetaItem } from '../../bcms/types/ts';
 import Tag from '../components/tag.astro';
 import BlogCard from '../components/blog-card.astro';
 
-const blogs = await bcms.entry.getAll('blog') as BlogEntry[];
-const items = blogs.map(e => e.meta.en as BlogEntryMetaItem);
+const blogs = (await bcms.entry.getAll('blog')) as BlogEntry[];
+const items = blogs.map((e) => e.meta.en as BlogEntryMetaItem);
 const bcmsConfig = bcms.getConfig();
 ---
 
 <Layout>
-	<div class="py-24 md:py-32">
-		<div class="container">
-			<div
-				class="flex flex-col gap-6 items-center text-center mb-20 md:mb-[120px]">
-				<Tag size="lg">Hi, I’m Mark 👋</Tag>
-				<h1 class="text-4xl font-bold leading-none md:text-5xl">
-					This is my blog
-				</h1>
-			</div>
-			<div>
-				<div class="grid grid-cols-1 gap-12 max-w-[1040px] mx-auto">
-					{items.map((item) => {
-						return (
-							<BlogCard blog={item} bcmsConfig={bcmsConfig} />
-						);
-					})}
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="py-24 md:py-32">
+        <div class="container">
+            <div
+                class="flex flex-col gap-6 items-center text-center mb-20 md:mb-[120px]"
+            >
+                <Tag size="lg">Hi, I’m Mark 👋</Tag>
+                <h1 class="text-4xl font-bold leading-none md:text-5xl">
+                    This is my blog
+                </h1>
+            </div>
+            <div>
+                <div class="grid grid-cols-1 gap-12 max-w-[1040px] mx-auto">
+                    {
+                        items.map((item) => {
+                            return (
+                                <BlogCard blog={item} bcmsConfig={bcmsConfig} />
+                            );
+                        })
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
 </Layout>
-

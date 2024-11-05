@@ -8,114 +8,106 @@ import { toReadableDate } from '../../utils/date';
 import { BCMSImage, BCMSContentManager } from '@thebcms/components-vue';
 
 export async function getStaticPaths() {
-	const blogs = await bcms.entry.getAll('blog') as BlogEntry[];
-	return blogs.map(blog => {
-		const meta = blog.meta.en as BlogEntryMetaItem;
-		return {
-			params: {
-				slug: meta.slug,
-			},
-		};
-	});
+    const blogs = (await bcms.entry.getAll('blog')) as BlogEntry[];
+    return blogs.map((blog) => {
+        const meta = blog.meta.en as BlogEntryMetaItem;
+        return {
+            params: {
+                slug: meta.slug,
+            },
+        };
+    });
 }
 
 const params = Astro.params;
 const bcmsConfig = bcms.getConfig();
 
-const blogs = (
-	await bcms.entry.getAll('blog')
-) as BlogEntry[];
+const blogs = (await bcms.entry.getAll('blog')) as BlogEntry[];
 
 const blog = blogs.find((e) => e.meta.en?.slug === params.slug);
 const data = {
-	meta: blog?.meta.en as BlogEntryMetaItem,
-	content: blog?.content.en as EntryContentParsedItem[],
+    meta: blog?.meta.en as BlogEntryMetaItem,
+    content: blog?.content.en as EntryContentParsedItem[],
 };
 
 const otherBlogs = blogs
-	.filter((e) => e.meta.en?.slug !== params.slug)
-	.slice(
-		0,
-		2,
-	)
-	.map((otherBlog) => {
-		return otherBlog.meta.en as BlogEntryMetaItem;
-	});
+    .filter((e) => e.meta.en?.slug !== params.slug)
+    .slice(0, 2)
+    .map((otherBlog) => {
+        return otherBlog.meta.en as BlogEntryMetaItem;
+    });
 ---
 
 <div class="py-24 md:py-32">
-	<div class="container">
-		<a
-			href="/"
-			class="border border-appGray-200 bg-appGray-100 flex w-fit leading-none px-3 py-2 text-xl font-medium rounded-lg transition-colors duration-300 hover:bg-appGray-200 focus-visible:bg-appGray-200 mb-14 md:mb-20 md:px-5 md:py-4 md:text-2xl"
-		>
-			Back to home
-		</a>
-		<div>
-			<header class="mb-10 md:mb-16">
-				<div
-					class="flex flex-col gap-5 mb-8 md:flex-row md:items-center md:justify-between">
-					<h1 class="text-3xl font-semibold leading-none md:text-[40px]">
-						{data.meta.title}
-					</h1>
-					<div class="flex items-center flex-wrap gap-2">
-						{data.meta.category.map((category) => {
-							return (
-								<Tag class="capitalize">
-									{category.toLowerCase()}
-								</Tag>
-							);
-						})}
-						<svg
-							width="5"
-							height="5"
-							viewBox="0 0 5 5"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<circle
-								cx="2.5"
-								cy="2.5"
-								r="2.5"
-								fill="#D9D9D9"
-							/>
-						</svg>
-						<div class="leading-none">
-							{toReadableDate(data.meta.date)}
-						</div>
-					</div>
-				</div>
-				<BCMSImage
-					client={bcmsConfig}
-					media={data.meta.cover_image}
-					class="w-full aspect-[2.21] object-cover rounded-2xl md:rounded-3xl"
-					client:load
-				/>
-			</header>
-			<BCMSContentManager
-				items={data.content}
-				class="prose max-w-full lg:prose-lg"
-			/>
-		</div>
-		{otherBlogs.length > 0 && (
-			<div class="max-w-[1040px] mt-20">
-				<h3 class="text-xl font-semibold leading-none tracking-[-0.24px] mb-8 md:mb-12 md:text-2xl">
-					See my other blogs
-				</h3>
-				<div class="grid grid-cols-1 gap-12">
-					{otherBlogs.slice(
-						0,
-						2,
-					).map((blog) => {
-						return (
-							<BlogCard
-								blog={blog}
-								bcmsConfig={bcmsConfig}
-							/>
-						);
-					})}
-				</div>
-			</div>
-		)}
-	</div>
+    <div class="container">
+        <a
+            href="/"
+            class="border border-appGray-200 bg-appGray-100 flex w-fit leading-none px-3 py-2 text-xl font-medium rounded-lg transition-colors duration-300 hover:bg-appGray-200 focus-visible:bg-appGray-200 mb-14 md:mb-20 md:px-5 md:py-4 md:text-2xl"
+        >
+            Back to home
+        </a>
+        <div>
+            <header class="mb-10 md:mb-16">
+                <div
+                    class="flex flex-col gap-5 mb-8 md:flex-row md:items-center md:justify-between"
+                >
+                    <h1
+                        class="text-3xl font-semibold leading-none md:text-[40px]"
+                    >
+                        {data.meta.title}
+                    </h1>
+                    <div class="flex items-center flex-wrap gap-2">
+                        {
+                            data.meta.category.map((category) => {
+                                return (
+                                    <Tag class="capitalize">
+                                        {category.toLowerCase()}
+                                    </Tag>
+                                );
+                            })
+                        }
+                        <svg
+                            width="5"
+                            height="5"
+                            viewBox="0 0 5 5"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#D9D9D9"
+                            ></circle>
+                        </svg>
+                        <div class="leading-none">
+                            {toReadableDate(data.meta.date)}
+                        </div>
+                    </div>
+                </div>
+                <BCMSImage
+                    client={bcmsConfig}
+                    media={data.meta.cover_image}
+                    class="w-full aspect-[2.21] object-cover rounded-2xl md:rounded-3xl"
+                    client:load
+                />
+            </header>
+            <BCMSContentManager
+                items={data.content}
+                class="prose max-w-full lg:prose-lg"
+            />
+        </div>
+        {
+            otherBlogs.length > 0 && (
+                <div class="max-w-[1040px] mt-20">
+                    <h3 class="text-xl font-semibold leading-none tracking-[-0.24px] mb-8 md:mb-12 md:text-2xl">
+                        See my other blogs
+                    </h3>
+                    <div class="grid grid-cols-1 gap-12">
+                        {otherBlogs.slice(0, 2).map((blog) => {
+                            return (
+                                <BlogCard blog={blog} bcmsConfig={bcmsConfig} />
+                            );
+                        })}
+                    </div>
+                </div>
+            )
+        }
+    </div>
 </div>

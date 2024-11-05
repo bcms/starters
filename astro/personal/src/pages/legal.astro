@@ -12,7 +12,7 @@ const legalEntries = (await bcms.entry.getAll(
 ---
 
 <Layout title={`Legal - Personal Website`}>
-	<div class="pt-8 pb-10 overflow-hidden md:pb-20 lg:pt-[72px] lg:pb-[120px]">
+    <div class="pt-8 pb-10 overflow-hidden md:pb-20 lg:pt-[72px] lg:pb-[120px]">
         <div class="container">
             <AnimatedTitle
                 title="Legal Page"
@@ -21,19 +21,19 @@ const legalEntries = (await bcms.entry.getAll(
                 client:load
             />
             <div class="grid grid-cols-1 gap-8 lg:gap-14">
-                {legalEntries.map((item) => (
-                    <div
-                        class="lg:grid lg:grid-cols-[300px,1fr] lg:items-start lg:gap-[100px]"
-                    >
-                        <h2 class="text-lg leading-none tracking-[-0.41px] font-Helvetica mb-[14px] lg:text-[32px]">
-                            {item.meta.en?.title}
-                        </h2>
-                        <ContentManager
-                            items={item.content.en || []}
-                            className="text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 lg:text-2xl lg:leading-[1.35] lg:text-appGray-500"
-                        />
-                    </div>
-                ))}
+                {
+                    legalEntries.map((item) => (
+                        <div class="lg:grid lg:grid-cols-[300px,1fr] lg:items-start lg:gap-[100px]">
+                            <h2 class="text-lg leading-none tracking-[-0.41px] font-Helvetica mb-[14px] lg:text-[32px]">
+                                {item.meta.en?.title}
+                            </h2>
+                            <ContentManager
+                                items={item.content.en || []}
+                                className="text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 lg:text-2xl lg:leading-[1.35] lg:text-appGray-500"
+                            />
+                        </div>
+                    ))
+                }
             </div>
         </div>
     </div>

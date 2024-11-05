@@ -1,6 +1,9 @@
 ---
 import { bcms } from '../bcms-client';
-import type { HomePageEntry, HomePageEntryMetaItem } from '../../bcms/types/ts/entry/home-page';
+import type {
+    HomePageEntry,
+    HomePageEntryMetaItem,
+} from '../../bcms/types/ts/entry/home-page';
 import type { RecipeEntry } from '../../bcms/types/ts/entry/recipe';
 
 import Layout from '../layouts/Layout.astro';
@@ -8,44 +11,50 @@ import HomePageHero from '../components/home-page/Hero';
 import HomePageRecipes from '../components/home-page/Recipes';
 import HomePageAboutUs from '../components/home-page/AboutUs';
 import HomePageLetsTalk from '../components/home-page/LetsTalk';
-import {recipeToLight} from '../utils/recipe';
+import { recipeToLight } from '../utils/recipe';
 
 const homePageEntry = (await bcms.entry.getBySlug(
-  'home',
-  'home-page',
+    'home',
+    'home-page',
 )) as HomePageEntry;
 const homePageMeta = homePageEntry.meta.en as HomePageEntryMetaItem;
 const recipeEntries = (await bcms.entry.getAll('recipe')) as RecipeEntry[];
 const lightRecipes = recipeEntries.map((e) => {
-  return recipeToLight(e);
+    return recipeToLight(e);
 });
 
 const bcmsConfig = bcms.getConfig();
 ---
 
-<Layout title={`${homePageMeta.seo?.title || homePageMeta.title} - Flavour Fushion`}>
-	<div>
-		<HomePageHero
-				headline={homePageMeta.headline}
-				description={homePageMeta.description}
-				coverImage={homePageMeta.cover_image}
-				recipes={lightRecipes}
-				bcmsConfig={bcmsConfig}
-				client:load
-		/>
-		<HomePageRecipes
-				bcmsConfig={bcms.getConfig()}
-				title={homePageMeta.recipes_title}
-				recipes={homePageMeta.recipes}
-				bcmsConfig={bcmsConfig}
-		/>
-		<HomePageAboutUs data={homePageMeta.about_us} bcmsConfig={bcmsConfig} client:load />
-		<HomePageLetsTalk
-				title={homePageMeta.contact_title}
-				description={homePageMeta.contact_description}
-				phone={homePageMeta.contact_phone}
-				email={homePageMeta.contact_email}
-				client:load
-		/>
-</div>
+<Layout
+    title={`${homePageMeta.seo?.title || homePageMeta.title} - Flavour Fushion`}
+>
+    <div>
+        <HomePageHero
+            headline={homePageMeta.headline}
+            description={homePageMeta.description}
+            coverImage={homePageMeta.cover_image}
+            recipes={lightRecipes}
+            bcmsConfig={bcmsConfig}
+            client:load
+        />
+        <HomePageRecipes
+            bcmsConfig={bcms.getConfig()}
+            title={homePageMeta.recipes_title}
+            recipes={homePageMeta.recipes}
+            bcmsConfig={bcmsConfig}
+        />
+        <HomePageAboutUs
+            data={homePageMeta.about_us}
+            bcmsConfig={bcmsConfig}
+            client:load
+        />
+        <HomePageLetsTalk
+            title={homePageMeta.contact_title}
+            description={homePageMeta.contact_description}
+            phone={homePageMeta.contact_phone}
+            email={homePageMeta.contact_email}
+            client:load
+        />
+    </div>
 </Layout>

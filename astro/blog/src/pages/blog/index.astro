@@ -1,7 +1,10 @@
 ---
 import { bcms } from '../../bcms-client';
 import type { BlogEntry } from '../../../bcms/types/ts/entry/blog';
-import type { BlogsPageEntry, BlogsPageEntryMetaItem } from '../../../bcms/types/ts/entry/blogs-page';
+import type {
+    BlogsPageEntry,
+    BlogsPageEntryMetaItem,
+} from '../../../bcms/types/ts/entry/blogs-page';
 import { blogToLite } from '../../utils/blog';
 
 import Layout from '../../layouts/Layout.astro';
@@ -26,11 +29,17 @@ const clientConfig = bcms.getConfig();
         <div class="relative pt-10 pb-8 md:pt-[72px] md:pb-10 lg:pb-12">
             <div class="container">
                 <div>
-                    <div class="flex flex-col-reverse items-center text-center md:gap-4">
-                        <h1 class="leading-none font-medium tracking-[-0.41px] md:text-2xl md:leading-none lg:text-[56px] lg:leading-none">
+                    <div
+                        class="flex flex-col-reverse items-center text-center md:gap-4"
+                    >
+                        <h1
+                            class="leading-none font-medium tracking-[-0.41px] md:text-2xl md:leading-none lg:text-[56px] lg:leading-none"
+                        >
                             {blogsPageMeta.title}
                         </h1>
-                        <h2 class="text-sm leading-none tracking-[-0.41px] text-appGray-600 mb-2.5 md:text-base md:leading-none lg:text-xl lg:leading-none lg:mb-5">
+                        <h2
+                            class="text-sm leading-none tracking-[-0.41px] text-appGray-600 mb-2.5 md:text-base md:leading-none lg:text-xl lg:leading-none lg:mb-5"
+                        >
                             {blogsPageMeta.subtitle}
                         </h2>
                     </div>

@@ -1,6 +1,9 @@
 ---
 import { bcms } from '../../../bcms-client';
-import type { RecipeEntry, RecipeEntryMetaItem } from '../../../../bcms/types/ts';
+import type {
+    RecipeEntry,
+    RecipeEntryMetaItem,
+} from '../../../../bcms/types/ts';
 
 import Layout from '../../../layouts/Layout.astro';
 import { BCMSImage } from '@thebcms/components-react';
@@ -14,64 +17,71 @@ import ContentManager from '../../../components/ContentManager';
 
 export async function getStaticPaths() {
     const blogs = (await bcms.entry.getAll('recipe')) as RecipeEntry[];
-    return blogs.map(e => ({
+    return blogs.map((e) => ({
         params: {
-            slug: e.meta.en?.slug || ''
-        }
-    }))
+            slug: e.meta.en?.slug || '',
+        },
+    }));
 }
 
 const { slug } = Astro.params;
 
 const recipeEntries = (await bcms.entry.getAll('recipe')) as RecipeEntry[];
-const recipeEntry = recipeEntries.find(
-    (e) => e.meta.en?.slug === slug,
-);
+const recipeEntry = recipeEntries.find((e) => e.meta.en?.slug === slug);
 const recipeEntryMeta = recipeEntry?.meta.en as RecipeEntryMetaItem;
 const lightRecipes = recipeEntries.map((e) => {
     return recipeToLight(e);
 });
-const popularRecipes = lightRecipes.filter((e) => e.popular).map((e) => e.title) || [];
-const categories = recipeEntries.reduce((acc, e) => {
-    e.meta.en?.categories.forEach((category) => {
-        const categoryTitle = category.meta.en?.title || '';
-        if (!acc.includes(categoryTitle)) {
-            acc.push(categoryTitle);
+const popularRecipes =
+    lightRecipes.filter((e) => e.popular).map((e) => e.title) || [];
+const categories =
+    recipeEntries.reduce((acc, e) => {
+        e.meta.en?.categories.forEach((category) => {
+            const categoryTitle = category.meta.en?.title || '';
+            if (!acc.includes(categoryTitle)) {
+                acc.push(categoryTitle);
+            }
+        });
+        return acc;
+    }, [] as string[]) || [];
+const similarRecipes =
+    lightRecipes.filter((e) => {
+        const entryCategories =
+            recipeEntryMeta.categories.map((i) => i.meta.en?.title) || [];
+        const categories = e.categories.map((i) => i) || [];
+        for (let i = 0; i < categories.length; i++) {
+            if (
+                entryCategories.includes(categories[i]) &&
+                recipeEntryMeta.slug !== e.slug
+            ) {
+                return true;
+            }
         }
-    });
-    return acc;
-}, [] as string[]) || [];
-const similarRecipes = lightRecipes.filter((e) => {
-    const entryCategories =
-        recipeEntryMeta.categories.map((i) => i.meta.en?.title) || [];
-    const categories = e.categories.map((i) => i) || [];
-    for (let i = 0; i < categories.length; i++) {
-        if (
-            entryCategories.includes(categories[i]) &&
-            recipeEntryMeta.slug !== e.slug
-        ) {
-            return true;
-        }
-    }
-    return false;
-}) || [];
+        return false;
+    }) || [];
 
 const clientConfig = bcms.getConfig();
 ---
 
-<Layout title={`${recipeEntryMeta.seo?.title || recipeEntryMeta.title} - Flavour Fushion`}>
+<Layout
+    title={`${recipeEntryMeta.seo?.title || recipeEntryMeta.title} - Flavour Fushion`}
+>
     <div class="pb-10 md:pb-16 lg:pb-[120px]">
         <Filters popular={popularRecipes} categories={categories} client:load />
         <div class="container">
-            {recipeEntryMeta.cover_image && (
-                <BCMSImage
-                    media={recipeEntryMeta.cover_image}
-                    clientConfig={clientConfig}
-                    className="aspect-square rounded-2xl w-full overflow-hidden object-cover mb-5 md:aspect-[1.93] lg:mb-10"
-                    client:load
-                />
-            )}
-            <h1 class="leading-none font-medium tracking-[-0.41px] text-appGray-700 mb-[14px] lg:text-[40px] lg:leading-none lg:mb-6">
+            {
+                recipeEntryMeta.cover_image && (
+                    <BCMSImage
+                        media={recipeEntryMeta.cover_image}
+                        clientConfig={clientConfig}
+                        className="aspect-square rounded-2xl w-full overflow-hidden object-cover mb-5 md:aspect-[1.93] lg:mb-10"
+                        client:load
+                    />
+                )
+            }
+            <h1
+                class="leading-none font-medium tracking-[-0.41px] text-appGray-700 mb-[14px] lg:text-[40px] lg:leading-none lg:mb-6"
+            >
                 {recipeEntryMeta.title}
             </h1>
             <ContentManager
@@ -79,19 +89,25 @@ const clientConfig = bcms.getConfig();
                 className="[&_u]:font-semibold [&_u]:text-appGray-700 text-sm leading-[1.55] font-medium tracking-[-0.41px] text-[#86838C] mb-6 lg:text-lg lg:mb-8"
             />
             <div class="flex flex-wrap gap-3 mb-8 lg:gap-4">
-                <div class="bg-[#F7F7F7] rounded-[40px] px-5 py-[13px] text-sm leading-none font-medium tracking-[-0.41px]">
+                <div
+                    class="bg-[#F7F7F7] rounded-[40px] px-5 py-[13px] text-sm leading-none font-medium tracking-[-0.41px]"
+                >
                     <span class="text-appGray-700">Total: </span>
                     <span class="text-[#9C9C9C]">
                         {recipeEntryMeta.cook_time}
                     </span>
                 </div>
-                <div class="bg-[#F7F7F7] rounded-[40px] px-5 py-[13px] text-sm leading-none font-medium tracking-[-0.41px]">
+                <div
+                    class="bg-[#F7F7F7] rounded-[40px] px-5 py-[13px] text-sm leading-none font-medium tracking-[-0.41px]"
+                >
                     <span class="text-appGray-700">Ingredients: </span>
                     <span class="text-[#9C9C9C]">
                         {recipeEntryMeta.ingredients.length} items
                     </span>
                 </div>
-                <div class="bg-[#F7F7F7] rounded-[40px] px-5 py-[13px] text-sm leading-none font-medium tracking-[-0.41px]">
+                <div
+                    class="bg-[#F7F7F7] rounded-[40px] px-5 py-[13px] text-sm leading-none font-medium tracking-[-0.41px]"
+                >
                     <span class="text-appGray-700">Steps: </span>
                     <span class="text-[#9C9C9C]">
                         {recipeEntryMeta.steps.length} steps
@@ -99,9 +115,11 @@ const clientConfig = bcms.getConfig();
                 </div>
             </div>
             <div class="grid grid-cols-1 gap-2 mb-8 lg:mb-16">
-                {recipeEntryMeta.qa.map((item) => (
-                    <QAItem item={item} client:load />
-                ))}
+                {
+                    recipeEntryMeta.qa.map((item) => (
+                        <QAItem item={item} client:load />
+                    ))
+                }
             </div>
             <Ingredients ingredients={recipeEntryMeta.ingredients} />
             <Steps
@@ -109,23 +127,25 @@ const clientConfig = bcms.getConfig();
                 bcmsConfig={clientConfig}
                 client:load
             />
-            {similarRecipes.length > 0 && (
-                <div>
-                    <div class="flex items-center justify-between leading-none font-medium tracking-[-0.41px] text-appGray-700 mb-8 lg:text-2xl lg:leading-none lg:mb-12">
-                        <h2>Other recipes you may like</h2>
-                        <a href="/recipes"> Show all </a>
+            {
+                similarRecipes.length > 0 && (
+                    <div>
+                        <div class="flex items-center justify-between leading-none font-medium tracking-[-0.41px] text-appGray-700 mb-8 lg:text-2xl lg:leading-none lg:mb-12">
+                            <h2>Other recipes you may like</h2>
+                            <a href="/recipes"> Show all </a>
+                        </div>
+                        <div class="grid grid-cols-2 gap-x-5 gap-y-8 lg:gap-x-16 lg:gap-y-[72px]">
+                            {similarRecipes.map((card) => (
+                                <RecipesCard
+                                    card={card}
+                                    bcmsConfig={clientConfig}
+                                    showTitleLayer={true}
+                                />
+                            ))}
+                        </div>
                     </div>
-                    <div class="grid grid-cols-2 gap-x-5 gap-y-8 lg:gap-x-16 lg:gap-y-[72px]">
-                        {similarRecipes.map((card) => (
-                            <RecipesCard
-                                card={card}
-                                bcmsConfig={clientConfig}
-                                showTitleLayer={true}
-                            />
-                        ))}
-                    </div>
-                </div>
-            )}
+                )
+            }
         </div>
     </div>
 </Layout>
