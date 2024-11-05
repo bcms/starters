@@ -1,0 +1,69 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+const ogImageUrl = '/thumbnail.jpg';
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Jumpstart your Astro project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<meta property="og:image" content={ogImageUrl} />
+		<meta property="og:image:secure_url" content={ogImageUrl} />
+		<meta property="twitter:title" content="CONference" />
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:image" content={ogImageUrl} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+		<title>{title}</title>
+	</head>
+	<body class="font-inter overflow-x-hidden bg-appBody text-appText scroll-smooth">
+		<div class="overflow-hidden flex flex-col min-h-screen">
+			<slot />
+		</div>
+	</body>
+</html>
+
+<style is:global>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+    @apply box-border m-0 p-0;
+}
+
+.swiper--customPagination {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    max-width: 440px !important;
+    margin: 0 auto !important;
+}
+
+.swiper--customPagination .swiper-pagination-bullet {
+    flex: 1 !important;
+    height: 0.25rem !important;
+    border-radius: 0.5rem !important;
+    background-color: #d9d9d9 !important;
+    transition: all 0.3s !important;
+    opacity: 1 !important;
+    margin: 0 !important;
+}
+
+.swiper--customPagination .swiper-pagination-bullet-active {
+    flex: 2 !important;
+    background-color: #000000 !important;
+}
+</style>
