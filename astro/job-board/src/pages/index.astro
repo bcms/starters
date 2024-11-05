@@ -1,0 +1,57 @@
+---
+import { bcms } from '../bcms-client';
+import type { HomePageEntry, HomePageEntryMetaItem, JobPostEntry, TestimonialEntry, TestimonialEntryMetaItem } from '../../bcms/types/ts';
+
+import Layout from '../layouts/Layout.astro';
+import HomeHero from '../components/home-page/Hero';
+import HomeJobs from '../components/home-page/Jobs';
+import HomeAbout from '../components/home-page/About';
+import Testimonials from '../components/home-page/Testimonials';
+import { toJobLite } from '../utils/job';
+
+const homePageEntry = (await bcms.entry.getBySlug(
+    'home',
+    'home-page',
+)) as HomePageEntry;
+const homePageMeta = homePageEntry.meta.en as HomePageEntryMetaItem;
+const jobEntries = (await bcms.entry.getAll('job-post')) as JobPostEntry[];
+const jobEntriesLite = jobEntries.map((job) => {
+    return toJobLite(job);
+});
+const testimonialEntries = (await bcms.entry.getAll(
+    'testimonial',
+)) as TestimonialEntry[];
+const testimonialEntriesMeta = testimonialEntries.map(
+    (testimonial) => testimonial.meta.en as TestimonialEntryMetaItem,
+);
+
+const bcmsConfig = bcms.getConfig();
+---
+
+<Layout title={`${homePageMeta.seo?.title || homePageMeta.title} - Hospitale`}>
+	<div>
+		<HomeHero
+				title={homePageMeta.hero_title}
+				description={homePageMeta.hero_description}
+				cover={homePageMeta.hero_cover_image}
+				bcmsConfig={bcmsConfig}
+				client:load
+		/>
+		<HomeJobs
+				title={homePageMeta.jobs_title}
+				description={homePageMeta.jobs_description}
+				jobs={jobEntriesLite}
+				client:load
+		/>
+		<HomeAbout
+				title={homePageMeta.about_title}
+				description={homePageMeta.about_description}
+				features={homePageMeta.about_features}
+		/>
+		<Testimonials
+				testimonials={testimonialEntriesMeta}
+				bcmsConfig={bcmsConfig}
+				client:load
+		/>
+	</div>
+</Layout>

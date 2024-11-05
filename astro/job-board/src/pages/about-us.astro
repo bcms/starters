@@ -1,0 +1,79 @@
+---
+import { bcms } from '../bcms-client';
+import type { AboutPageEntry, AboutPageEntryMetaItem, TeamMemberEntry, TeamMemberEntryMetaItem } from '../../bcms/types/ts';
+
+import Layout from '../layouts/Layout.astro';
+import ContentManager from '../components/ContentManager';
+import { BCMSImage } from '@thebcms/components-react';
+import classNames from 'classnames';
+import Team from '../components/about/Team'
+
+const aboutUsPageEntry = (await bcms.entry.getBySlug(
+    'about-us',
+    'about-page',
+)) as AboutPageEntry;
+const aboutUsPageMeta = aboutUsPageEntry.meta.en as AboutPageEntryMetaItem;
+
+const teamMembers = (await bcms.entry.getAll(
+    'team-member',
+)) as TeamMemberEntry[];
+const teamMembersMeta = teamMembers.map(
+    (member) => member.meta.en as TeamMemberEntryMetaItem,
+);
+
+const clientConfig = bcms.getConfig();
+---
+
+<Layout title={`${aboutUsPageMeta.seo?.title || aboutUsPageMeta.title} - Hospitale`}>
+	<div class="pt-8 pb-14 md:pb-20 lg:pt-0 lg:pb-[120px]">
+        <BCMSImage
+            media={aboutUsPageMeta.cover_image}
+            clientConfig={clientConfig}
+            className={classNames(
+                'w-full aspect-[2.76] object-cover object-top mb-8 md:mb-20 lg:aspect-[3.1] lg:mb-[120px]',
+            )}
+            client:load
+        />
+        <div class="container">
+            <h1 class="text-2xl leading-none font-medium font-PlayfairDisplay tracking-[-0.41px] text-center mb-6 lg:text-5xl lg:leading-none lg:mb-16">
+                {aboutUsPageMeta.title}
+            </h1>
+            <div
+                class={classNames(
+                    'aboutUs--content [&_*]:inline text-center [&_strong]:text-[#48465f] [&_u]:text-[#191824]',
+                    'mb-12 md:mb-20 lg:mb-[120px]',
+                )}
+            >
+                {aboutUsPageMeta.content.map((item) => (
+                    <div>
+                        {item.text && item.text.nodes.length > 0 && (
+                            <ContentManager
+                                items={item.text.nodes}
+                                className={classNames(
+                                    'leading-normal font-medium tracking-[-0.41px] text-appGray-600',
+                                    'lg:text-[32px] lg:leading-normal',
+                                )}
+                            />
+                        )}
+                        {item.image && (
+                            <BCMSImage
+                                media={item.image}
+                                clientConfig={clientConfig}
+                                className={classNames(
+                                    'inline-block object-cover w-[37px] h-4 flex-shrink-0 mx-1 -translate-y-0.5 bg-center bg-cover',
+                                    'lg:w-[112px] lg:h-12 lg:mx-3 lg:-translate-y-2',
+                                )}
+                            />
+                        )}
+                    </div>
+                ))}
+            </div>
+        </div>
+        <Team
+            title={aboutUsPageMeta.team_title}
+            description={aboutUsPageMeta.team_description}
+            members={teamMembersMeta}
+            bcmsConfig={clientConfig}
+        />
+    </div>
+</Layout>

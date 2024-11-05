@@ -1,0 +1,14 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Form from '../../../components/jobs/Form';
+---
+
+<Layout title={`Post your job - Hospitale`}>
+	<div class="pt-8 pb-14 md:pb-20 lg:pt-20 lg:pb-[120px]">
+        <div class="container">
+            <div class="max-w-[632px] mx-auto">
+                <Form client:load />
+            </div>
+        </div>
+    </div>
+</Layout>
