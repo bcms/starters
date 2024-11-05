@@ -1,0 +1,41 @@
+---
+import { bcms } from '../bcms-client';
+import type {
+    TeamMemberEntry,
+    TeamPageEntry,
+    TeamPageEntryMetaItem,
+} from '../../bcms/types/ts';
+
+import Layout from '../layouts/Layout.astro';
+import ContactBlock from '../components/ContactBlock';
+import Hero from '../components/Hero';
+import List from '../components/team-page/List';
+
+const teamPageEntry = (await bcms.entry.getBySlug(
+    'team',
+    'team-page',
+)) as TeamPageEntry;
+const teamPageMeta = teamPageEntry.meta.en as TeamPageEntryMetaItem;
+const teamMembersEntries = (await bcms.entry.getAll(
+    'team-member',
+)) as TeamMemberEntry[];
+
+const bcmsConfig = bcms.getConfig();
+---
+
+<Layout
+    title={`${teamPageMeta.seo?.title || teamPageMeta.title} - BrandCrafters`}
+>
+    <div>
+        <Hero
+            title={teamPageMeta.title}
+            subtitle="Team"
+            description={teamPageMeta.description}
+        />
+        <List items={teamMembersEntries} bcmsConfig={bcmsConfig} client:load />
+        <ContactBlock
+            title={teamPageMeta.contact_title}
+            description={teamPageMeta.contact_description}
+        />
+    </div>
+</Layout>

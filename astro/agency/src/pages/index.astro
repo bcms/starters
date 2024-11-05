@@ -1,0 +1,81 @@
+---
+import { bcms } from '../bcms-client';
+import type {
+    HomePageEntry,
+    HomePageEntryMetaItem,
+    PortfolioEntryMetaItem,
+    TeamMemberEntryMetaItem,
+} from '../../bcms/types/ts';
+
+import Layout from '../layouts/Layout.astro';
+import HomeHero from '../components/home-page/Hero';
+import HomeAbout from '../components/home-page/About';
+import 'swiper/css';
+import ContactBlock from '../components/ContactBlock';
+import HomeTeam from '../components/home-page/Team';
+import HomeCapabilities from '../components/home-page/Capabilities';
+import HomeServices from '../components/home-page/Services';
+
+const homePageEntry = (await bcms.entry.getBySlug(
+    'home',
+    'home-page',
+)) as HomePageEntry;
+const homePageMeta = homePageEntry.meta.en as HomePageEntryMetaItem;
+
+const bcmsConfig = bcms.getConfig();
+---
+
+<Layout title={`${homePageMeta.title} - BrandCrafters`}>
+    <div>
+        <HomeHero
+            title={homePageMeta.hero_title}
+            gallery={homePageMeta.hero_gallery_image}
+            bcmsConfig={bcmsConfig}
+            client:load
+        />
+        <HomeAbout
+            title={homePageMeta.about_title}
+            subtitle={homePageMeta.about_subtitle}
+            description={homePageMeta.about_description}
+            cover={homePageMeta.about_cover_image}
+            bcmsConfig={bcmsConfig}
+            client:load
+        />
+        <HomeServices
+            title={homePageMeta.services_title}
+            subtitle={homePageMeta.services_subtitle}
+            cover={homePageMeta.services_cover_image}
+            description={homePageMeta.services_description}
+            bcmsConfig={bcmsConfig}
+            client:load
+        />
+        <HomeCapabilities
+            title={homePageMeta.capabilities_title}
+            subtitle={homePageMeta.capabilities_subtitle}
+            description={homePageMeta.capabilities_description}
+            portfolio_items={homePageMeta.capabilities_portfolio_items.map(
+                (e) => e.meta.en as PortfolioEntryMetaItem,
+            )}
+            bcmsConfig={bcmsConfig}
+            client:load
+        />
+        <HomeTeam
+            title={homePageMeta.team_title}
+            subtitle={homePageMeta.team_subtitle}
+            description={homePageMeta.team_description}
+            cover={homePageMeta.team_cover_image}
+            members_title={homePageMeta.team_members_title}
+            members_description={homePageMeta.team_members_description}
+            members={homePageMeta.team_members.map(
+                (e) => e.meta.en as TeamMemberEntryMetaItem,
+            )}
+            bcmsConfigs={bcmsConfig}
+            client:load
+        />
+        <ContactBlock
+            title={homePageMeta.contact_title}
+            description={homePageMeta.contact_description}
+            client:load
+        />
+    </div>
+</Layout>

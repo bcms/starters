@@ -1,0 +1,12 @@
+---
+import Form from '../components/contact-page/Form';
+import Hero from '../components/contact-page/Hero';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title={`Contact - BrandCrafters`}>
+    <div>
+        <Hero />
+        <Form client:load />
+    </div>
+</Layout>

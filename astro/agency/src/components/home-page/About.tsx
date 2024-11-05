@@ -1,8 +1,11 @@
 import React from 'react';
 import { BCMSImage } from '@thebcms/components-react';
-import { PropMediaDataParsed, PropRichTextDataParsed } from '@thebcms/types';
-import { ClientConfig } from '@thebcms/client';
 import ContentManager from '../ContentManager';
+import type {
+    PropMediaDataParsed,
+    PropRichTextDataParsed,
+} from '@thebcms/types';
+import type { ClientConfig } from '@thebcms/client';
 
 interface Props {
     cover: PropMediaDataParsed;

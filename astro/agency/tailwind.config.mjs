@@ -1,0 +1,47 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+    content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+    theme: {
+        extend: {
+            colors: {
+                appAccent: {
+                    300: '#5073EF',
+                    DEFAULT: '#324EE0',
+                },
+                appAccent2: '#2FA470',
+                appBody: '#ffffff',
+                appText: {
+                    DEFAULT: '#0F1223',
+                    light: '#ffffff',
+                },
+                appGray: {
+                    100: '#5E5E5E',
+                    200: '#585961',
+                    300: '#46474F',
+                },
+            },
+            fontFamily: {
+                Inter: ['Inter', 'sans-serif'],
+                Helvetica: ['Helvetica', 'sans-serif'],
+                HelveticaNeue: ['Helvetica Neue', 'sans-serif'],
+                PlayfairDisplay: ['Playfair Display', 'serif'],
+            },
+            container: {
+                center: true,
+                padding: {
+                    DEFAULT: '1rem',
+                    lg: '2.5rem',
+                    xl: '5rem',
+                },
+                screens: {
+                    sm: '640px',
+                    md: '768px',
+                    lg: '1024px',
+                    xl: '1280px',
+                    '2xl': '1440px',
+                },
+            },
+        },
+    },
+    plugins: [],
+};
