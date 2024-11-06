@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import { BCMSContentManager } from '@thebcms/components-react';
 import type { BCMSWidgetComponents } from '@thebcms/components-react';
 import type { EntryContentParsedItem } from '@thebcms/types';
@@ -15,35 +15,8 @@ export const ContentManager: React.FC<Props> = ({
     widgetComponents,
     className,
 }) => {
-    const managerDOM = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const parseInternalLinks = (): void => {
-            if (managerDOM.current) {
-                const links = managerDOM.current.querySelectorAll('a');
-                links.forEach((link) => {
-                    const href = link.getAttribute('href');
-                    if (href && href.startsWith('/')) {
-                        link.target = '_self';
-                        const clickHandler = (event: Event): void => {
-                            event.preventDefault();
-                            window.location.href = href;
-                        };
-                        link.addEventListener('click', clickHandler);
-
-                        return () => {
-                            link.removeEventListener('click', clickHandler);
-                        };
-                    }
-                });
-            }
-        };
-
-        parseInternalLinks();
-    }, []);
-
     return (
-        <div ref={managerDOM}>
+        <div>
             <BCMSContentManager
                 className={className}
                 items={items}
