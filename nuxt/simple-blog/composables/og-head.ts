@@ -16,7 +16,7 @@ export const useHeadTags = () => {
         if (!title) title = 'Simple Blog';
         if (!description)
             description =
-                'Jumpstart your Next project with this Simple Blog. Easily manage your content and scale your application without the backend hassle. Get started now!';
+                'Jumpstart your Nuxt project with this Simple Blog. Easily manage your content and scale your application without the backend hassle. Get started now!';
         // if (!image) image = '/thumbnail.jpg';
 
         const domain = 'https://blog-starter.thebcms.com';

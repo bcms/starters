@@ -1,6 +1,7 @@
 import { bcms } from '~/bcms-client';
 import type { BlogEntry, BlogEntryMetaItem } from '~/bcms/types/ts';
 import { EntryContentParsedItem } from '@thebcms/types';
+import { ClientConfig } from '@thebcms/client';
 
 export type BlogResponse = {
     item: {
@@ -8,6 +9,7 @@ export type BlogResponse = {
         content: EntryContentParsedItem[];
     };
     otherBlogs: BlogEntry[];
+    bcms: ClientConfig;
 };
 
 export default defineEventHandler(async (event) => {
@@ -27,6 +29,7 @@ export default defineEventHandler(async (event) => {
             content: blog.content.en as EntryContentParsedItem[],
         },
         otherBlogs: blogs.filter((e) => e.meta.en?.slug !== slug),
+        bcms: bcms.getConfig(),
     };
     return res;
 });

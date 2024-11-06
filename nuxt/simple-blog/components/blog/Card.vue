@@ -50,11 +50,15 @@
 <script setup lang="ts">
 import type { BlogEntryMetaItem } from '~/bcms/types/ts/entry/blog';
 import { BCMSImage, BCMSContentManager } from '@thebcms/components-vue';
-import { bcms } from '~/bcms-client';
+import type { ClientConfig } from '@thebcms/client';
 
 defineProps({
     blog: {
         type: Object as PropType<BlogEntryMetaItem>,
+        required: true,
+    },
+    bcms: {
+        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

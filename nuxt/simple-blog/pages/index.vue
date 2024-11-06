@@ -10,11 +10,15 @@
                 </h1>
             </div>
             <div>
-                <div class="grid grid-cols-1 gap-12 max-w-[1040px] mx-auto">
+                <div
+                    v-if="data"
+                    class="grid grid-cols-1 gap-12 max-w-[1040px] mx-auto"
+                >
                     <BlogCard
                         v-for="(card, index) in data?.items"
                         :key="index"
                         :blog="card"
+                        :bcms="data.bcms"
                     />
                 </div>
             </div>

@@ -46,7 +46,7 @@
                         </div>
                     </div>
                     <BCMSImage
-                        :client="bcms"
+                        :client="data.bcms"
                         :media="data.item.meta.cover_image"
                         class="w-full aspect-[2.21] object-cover rounded-2xl md:rounded-3xl"
                     />
@@ -63,11 +63,16 @@
                     See my other blogs
                 </h3>
                 <div class="grid grid-cols-1 gap-12">
-                    <BlogCard
+                    <template
                         v-for="(blog, index) in data.otherBlogs.slice(0, 2)"
-                        :key="index"
-                        :blog="blog.meta.en"
-                    />
+                    >
+                        <BlogCard
+                            v-if="blog.meta.en"
+                            :key="index"
+                            :blog="blog.meta.en"
+                            :bcms="data.bcms"
+                        />
+                    </template>
                 </div>
             </div>
         </div>
@@ -78,6 +83,7 @@
 import { bcms } from '~/bcms-client';
 import type { BlogResponse } from '~/server/api/blog/[slug]';
 import { BCMSImage, BCMSContentManager } from '@thebcms/components-vue';
+import type { BlogEntryMetaItem } from '~/bcms/types/ts';
 
 const route = useRoute();
 const { setOgHead } = useHeadTags();
