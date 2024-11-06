@@ -1,6 +1,6 @@
 <template>
     <div class="py-24 md:py-32">
-        <div class="container">
+        <div v-if="data" class="container">
             <div
                 class="flex flex-col gap-6 items-center text-center mb-20 md:mb-[120px]"
             >
@@ -10,10 +10,7 @@
                 </h1>
             </div>
             <div>
-                <div
-                    v-if="data"
-                    class="grid grid-cols-1 gap-12 max-w-[1040px] mx-auto"
-                >
+                <div class="grid grid-cols-1 gap-12 max-w-[1040px] mx-auto">
                     <BlogCard
                         v-for="(card, index) in data?.items"
                         :key="index"
