@@ -80,10 +80,8 @@
 </template>
 
 <script setup lang="ts">
-import { bcms } from '~/bcms-client';
 import type { BlogResponse } from '~/server/api/blog/[slug]';
 import { BCMSImage, BCMSContentManager } from '@thebcms/components-vue';
-import type { BlogEntryMetaItem } from '~/bcms/types/ts';
 
 const route = useRoute();
 const { setOgHead } = useHeadTags();
