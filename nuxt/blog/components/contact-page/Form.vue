@@ -65,8 +65,6 @@
 </template>
 
 <script setup lang="ts">
-import { useErrors } from '~/composables/error';
-
 const { checkForInputErrors } = useErrors();
 
 const form = ref({
