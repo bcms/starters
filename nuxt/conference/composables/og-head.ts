@@ -13,13 +13,13 @@ export const useHeadTags = () => {
         description?: string;
         image?: string;
     }) => {
-        if (!title) title = 'Insightfull Ink';
+        if (!title) title = 'CONference';
         if (!description)
             description =
-                'Jumpstart your Nuxt project with this Blog. Easily manage your content and scale your application without the backend hassle. Get started now!';
+                'Jumpstart your Nuxt project with this starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
         if (!image) image = '/thumbnail.jpg';
 
-        const domain = 'https://blog-starter.thebcms.com';
+        const domain = 'https://conference-starter.thebcms.com';
 
         return {
             title,
@@ -31,7 +31,7 @@ export const useHeadTags = () => {
                 },
                 {
                     property: 'og:site_name',
-                    content: `${title} - Blog`,
+                    content: `${title} - CONference`,
                 },
                 { property: 'og:type', content: 'website' },
                 { property: 'twitter:card', content: 'summary_large_image' },
@@ -43,7 +43,7 @@ export const useHeadTags = () => {
                 {
                     hid: 'ogTitle',
                     property: 'og:title',
-                    content: `${title} - Blog`,
+                    content: `${title} - CONference`,
                 },
                 {
                     hid: 'ogDescription',
@@ -63,7 +63,7 @@ export const useHeadTags = () => {
                 {
                     hid: 'twitterTitle',
                     property: 'twitter:title',
-                    content: `${title} - Blog`,
+                    content: `${title} - CONference`,
                 },
                 {
                     hid: 'twitterDescription',
