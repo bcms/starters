@@ -1,3 +1,5 @@
+https://github.com/bcms/starters/assets/15079459/84dcf8dd-4cf9-48b8-919f-07f359ea9541
+
 # BCMS Blog code starter for Nuxt.js
 
 This is a Nuxt.js starter kit for BCMS, a headless CMS. It's minimal but solid, with a clean codebase that hooks directly into your BCMS project, ready to extend and scale as needed.

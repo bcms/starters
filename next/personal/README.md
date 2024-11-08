@@ -1,15 +1,8 @@
 https://github.com/bcms/starters/assets/15079459/48f8d716-ee47-4a37-9408-ccd204f2838a
 
-# Personal with Next.js and BCMS
+# BCMS Personal code starter for Next.js
 
-[See this personal in action ⤴](https://personal-starter.thebcms.com/)<br />
-Spin up a fully functional personal with Next.js, Tailwind, and [BCMS](https://thebcms.com) - in under a minute.<br/>
-
----
-
-If you like the project, [star this repository](https://github.com/bcms/starters) ⭐
-
----
+This is a Next.js starter kit for BCMS, a headless CMS. It's minimal but solid, with a clean codebase that hooks directly into your BCMS project, ready to extend and scale as needed.
 
 ## Getting Started
 

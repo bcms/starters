@@ -1,15 +1,8 @@
 https://github.com/bcms/starters/assets/15079459/84dcf8dd-4cf9-48b8-919f-07f359ea9541
 
-# Blog with Next.js and BCMS
+# BCMS Blog code starter for Next.js
 
-[See this blog in action ⤴](https://blog-starter.thebcms.com/)<br />
-Spin up a fully functional blog with Next.js, Tailwind, and [BCMS](https://thebcms.com) - in under a minute.<br/>
-
----
-
-If you like the project, [star this repository](https://github.com/bcms/starters) ⭐
-
----
+This is a Next.js starter kit for BCMS, a headless CMS. It's minimal but solid, with a clean codebase that hooks directly into your BCMS project, ready to extend and scale as needed.
 
 ## Getting Started
 

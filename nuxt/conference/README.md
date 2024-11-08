@@ -1,3 +1,5 @@
+https://github.com/bcms/starters/assets/15079459/ceed3ea4-c6c6-40f7-9e18-746874015120
+
 # BCMS Conference code starter for Nuxt.js
 
 This is a Nuxt.js starter for BCMS, a headless CMS. It's minimal but solid, with a clean codebase that hooks directly into your BCMS project, ready to extend and scale as needed.

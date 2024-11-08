@@ -1,15 +1,8 @@
 https://github.com/bcms/starters/assets/15079459/0b290156-3a49-4544-b716-eb2c0a712f64
 
-# Agency with Next.js and BCMS
+# BCMS Agency code starter for Next.js
 
-[See this agency in action ⤴](https://agency-starter.thebcms.com/)<br />
-Spin up a fully functional agency with Next.js, Tailwind, and [BCMS](https://thebcms.com) - in under a minute.<br/>
-
----
-
-If you like the project, [star this repository](https://github.com/bcms/starters) ⭐
-
----
+This is a Next.js starter kit for BCMS, a headless CMS. It's minimal but solid, with a clean codebase that hooks directly into your BCMS project, ready to extend and scale as needed.
 
 ## Getting Started
 

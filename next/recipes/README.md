@@ -1,15 +1,8 @@
 https://github.com/bcms/starters/assets/15079459/05d4a313-d7b6-4b0f-95d9-e041eca3ce9e
 
-# Recipes with Next.js and BCMS
+# BCMS Recipes code starter for Next.js
 
-[See this recipes in action ⤴](https://recipes-starter.thebcms.com/)<br />
-Spin up a fully functional recipes with Next.js, Tailwind, and [BCMS](https://thebcms.com) - in under a minute.<br/>
-
----
-
-If you like the project, [star this repository](https://github.com/bcms/starters) ⭐
-
----
+This is a Next.js starter kit for BCMS, a headless CMS. It's minimal but solid, with a clean codebase that hooks directly into your BCMS project, ready to extend and scale as needed.
 
 ## Getting Started
 

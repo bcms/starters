@@ -38,37 +38,37 @@
                 "available": true,
                 "title": "Agency",
                 "slug": "agency",
-                "frameworks": ["next"]
+                "frameworks": ["next", "astro"]
             },
             {
                 "available": true,
                 "title": "Blog",
                 "slug": "blog",
-                "frameworks": ["next"]
+                "frameworks": ["next", "nuxt", "astro"]
             },
             {
                 "available": true,
                 "title": "Conference",
                 "slug": "conference",
-                "frameworks": ["next"]
+                "frameworks": ["next", "nuxt", "astro"]
             },
             {
                 "available": true,
                 "title": "Job board",
                 "slug": "job-board",
-                "frameworks": ["next"]
+                "frameworks": ["next", "astro"]
             },
             {
                 "available": true,
                 "title": "Personal",
                 "slug": "personal",
-                "frameworks": ["next"]
+                "frameworks": ["next", "astro"]
             },
             {
                 "available": true,
                 "title": "Recipes",
                 "slug": "recipes",
-                "frameworks": ["next"]
+                "frameworks": ["next", "nuxt", "astro"]
             }
         ]
     }

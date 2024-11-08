@@ -1,15 +1,8 @@
 https://github.com/bcms/starters/assets/15079459/ceed3ea4-c6c6-40f7-9e18-746874015120
 
-# Conference with Next.js and BCMS
+# BCMS Conference code starter for Next.js
 
-[See this conference in action ⤴](https://conference-starter.thebcms.com/)<br />
-Spin up a fully functional conference with Next.js, Tailwind, and [BCMS](https://thebcms.com) - in under a minute.<br/>
-
----
-
-If you like the project, [star this repository](https://github.com/bcms/starters) ⭐
-
----
+This is a Next.js starter kit for BCMS, a headless CMS. It's minimal but solid, with a clean codebase that hooks directly into your BCMS project, ready to extend and scale as needed.
 
 ## Getting Started
 
