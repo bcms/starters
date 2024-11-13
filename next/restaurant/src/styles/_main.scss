@@ -1,0 +1,123 @@
+@import './fonts';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+    @apply box-border m-0 p-0;
+}
+
+.homeHero--description * {
+    display: inline;
+}
+
+.homeHero--description picture {
+    display: inline-block;
+}
+
+.homeAmbience--gridItem:nth-of-type(5n + 1) {
+    grid-column: span 2 !important;
+    grid-row: span 2 !important;
+    aspect-ratio: 1.49 !important;
+}
+
+.homeAmbience--gridItem:nth-of-type(5n + 3) {
+    grid-row: span 2;
+}
+
+.homeAmbience--gridItem:nth-of-type(5n + 4) {
+    grid-row: span 2;
+}
+
+@media (min-width: 1024px) {
+    .homeAmbience--gridItem:nth-of-type(5n + 1) {
+        grid-row: span 1 !important;
+        aspect-ratio: 3.82 !important;
+    }
+}
+
+.homeSpecials--gridItem:nth-of-type(5n + 1) {
+    grid-row: span 2 !important;
+}
+
+.homeSpecials--gridItem:nth-of-type(5n + 2) {
+    aspect-ratio: 1.49 !important;
+}
+
+.homeSpecials--gridItem:nth-of-type(5n + 3) {
+    grid-row: span 2 !important;
+}
+
+.homeSpecials--gridItem:nth-of-type(5n + 5) {
+    grid-column: span 2 !important;
+    grid-row: span 2 !important;
+}
+
+.homeSpecials--gridItem:nth-of-type(5n + 5) > div {
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+@media (min-width: 1024px) {
+    .homeSpecials--gridItem:nth-of-type(5n + 2) {
+        aspect-ratio: 3.82 !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .homeSpecials--gridItem:nth-of-type(5n + 5) {
+        grid-row: span 1 !important;
+    }
+}
+
+.homeTestimonials--swiperPrev .swiper-button-lock,
+.homeTestimonials--swiperNext .swiper-button-lock {
+    opacity: 0.5 !important;
+    display: flex !important;
+}
+
+.aboutHero--title h1 {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.375rem !important;
+}
+
+@media (min-width: 1024px) {
+    .aboutHero--title h1 {
+        gap: 0.75rem !important;
+    }
+}
+
+.aboutHero--title u {
+    @apply no-underline;
+}
+
+.aboutHero--title u + br + u {
+    text-align: right !important;
+}
+
+// Transitions
+.fade-entered,
+.fade-exited {
+    transition: opacity 0.3s;
+}
+.fade-entering,
+.fade-exiting {
+    opacity: 0;
+}
+
+.scaleBtnArrow-entering,
+.scaleBtnArrow-exiting {
+    transition:
+        opacity 0.2s ease,
+        width 0.2s ease;
+}
+.scaleBtnArrow-entering,
+.scaleBtnArrow-exiting {
+    opacity: 0;
+    width: 0;
+}

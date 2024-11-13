@@ -69,6 +69,12 @@
                 "title": "Recipes",
                 "slug": "recipes",
                 "frameworks": ["next", "nuxt", "astro"]
+            },
+            {
+                "available": true,
+                "title": "Restaurant",
+                "slug": "restaurant",
+                "frameworks": ["next"]
             }
         ]
     }
