@@ -1,0 +1,23 @@
+---
+import type { ReservationPageEntry, ReservationPageEntryMetaItem } from "../../../bcms/types/ts";
+import { bcms } from "../../bcms-client";
+import ReservationForm from "../../components/reservation-page/Form";
+import Layout from "../../layouts/Layout.astro";
+
+const reservationPage = (await bcms.entry.getBySlug(
+    'reservation',
+    'reservation-page',
+)) as ReservationPageEntry;
+
+if (!reservationPage) {
+    return notFound();
+}
+
+const reservationPageMeta = reservationPage.meta.en as ReservationPageEntryMetaItem;
+---
+
+<Layout title={`${reservationPageMeta.seo?.title || reservationPageMeta.title} - Tastyyy`}>
+    <div>
+        <ReservationForm title={reservationPageMeta.title} client:load />
+    </div>
+</Layout>

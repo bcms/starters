@@ -1,0 +1,87 @@
+---
+import type { FoodItemEntry, FoodItemEntryMetaItem, HomePageEntry, HomePageEntryMetaItem } from '../../bcms/types/ts';
+import { bcms } from '../bcms-client';
+import HomeAmbience from '../components/home-page/Ambience';
+import HomeEvents from '../components/home-page/Events';
+import HomeHero from '../components/home-page/Hero';
+import HomeMenu from '../components/home-page/Menu';
+import HomeSeasons from '../components/home-page/Seasons';
+import HomeSpecials from '../components/home-page/Specials';
+import HomeTestimonials from '../components/home-page/Testimonials';
+import 'swiper/css';
+
+import Layout from '../layouts/Layout.astro';
+
+const homePageEntry = (await bcms.entry.getBySlug(
+    'home',
+    'home-page',
+)) as HomePageEntry;
+
+if (!homePageEntry) {
+    return notFound();
+}
+
+const homePageMeta = homePageEntry.meta.en as HomePageEntryMetaItem;
+
+const foodItems = (await bcms.entry.getAll('food-item')) as FoodItemEntry[];
+
+const bcmsConfig = bcms.getConfig();
+---
+
+<Layout
+    title={`${homePageMeta.seo?.title || homePageMeta.title} - Tastyyy`}
+>
+    <div>
+        <HomeHero
+                title={homePageMeta.hero_title}
+                open_time={homePageMeta.hero_open_time}
+                address={homePageMeta.hero_address}
+                map={homePageMeta.hero_map_image}
+                description={homePageMeta.description}
+                client:load
+                bcmsConfig={bcmsConfig}
+            />
+            <HomeMenu
+                title={homePageMeta.menu_title}
+                description={homePageMeta.menu_description}
+                meals={homePageMeta.menu_meals}
+                client:load
+                bcmsConfig={bcmsConfig}
+            />
+            <HomeSeasons
+                title={homePageMeta.seasons_title}
+                description={homePageMeta.seasons_description}
+                seasons={homePageMeta.seasons}
+                client:load
+                bcmsConfig={bcmsConfig}
+            />
+            <HomeAmbience
+                title={homePageMeta.ambience_title}
+                description={homePageMeta.ambience_description}
+                items={homePageMeta.ambience_items}
+                client:load
+                bcmsConfig={bcmsConfig}
+            />
+            <HomeSpecials
+                title={homePageMeta.specials_title}
+                description={homePageMeta.specials_description}
+                items={foodItems.map((e) => e.meta.en as FoodItemEntryMetaItem)}
+                client:load
+                bcmsConfig={bcmsConfig}
+            />
+            <HomeEvents
+                title={homePageMeta.events_title}
+                description={homePageMeta.events_description}
+                events={homePageMeta.events}
+                client:load
+                bcmsConfig={bcmsConfig}
+            />
+            <HomeTestimonials
+                title={homePageMeta.testimonials_title}
+                description={homePageMeta.testimonials_description}
+                testimonials={homePageMeta.testimonials}
+                client:load
+                bcmsConfig={bcmsConfig}
+            />
+    </div>
+</Layout>
