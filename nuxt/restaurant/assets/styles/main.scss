@@ -1,0 +1,25 @@
+@import './fonts';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+    @apply box-border m-0 p-0;
+}
+
+body {
+    @apply font-Helvetica overflow-x-hidden bg-appBody text-appText;
+}
+
+// Transitions
+.fade-entered,
+.fade-exited {
+    transition: opacity 0.3s;
+}
+.fade-entering,
+.fade-exiting {
+    opacity: 0;
+}
