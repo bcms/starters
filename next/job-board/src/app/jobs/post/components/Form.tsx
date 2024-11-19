@@ -4,8 +4,12 @@ import Button from '@/components/Btn';
 import FileUpload from '@/components/form/Dropzone';
 import FormSelect from '@/components/form/Select';
 import FormText from '@/components/form/Text';
-import { InputObject } from '@/composables/error';
 import React, { useState } from 'react';
+
+export interface InputObject {
+    value?: unknown;
+    error: string;
+}
 
 const Form: React.FC = () => {
     const [activeStep, setActiveStep] = useState(1);
