@@ -56,7 +56,7 @@
                 "available": true,
                 "title": "Job board",
                 "slug": "job-board",
-                "frameworks": ["next", "astro"]
+                "frameworks": ["next", "nuxt", "astro"]
             },
             {
                 "available": true,
