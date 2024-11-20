@@ -10,6 +10,9 @@ async function updatePackages() {
         const dirs = await fs.readdir(framework);
         for (let j = 0; j < dirs.length; j++) {
             const dir = dirs[j];
+            if (dir.startsWith('.')) {
+                continue;
+            }
             if (!(await fs.exist([framework, dir, 'package.json'], true))) {
                 console.log(1);
                 continue;
