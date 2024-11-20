@@ -1,8 +1,8 @@
 {
-    "name": "simple-blog",
+    "name": "blog",
     "version": "1.0.0",
     "private": true,
-    "description": "simple-blog",
+    "description": "blog",
     "author": "becomes",
     "keywords": [
         "gatsby"
@@ -22,8 +22,10 @@
         "@thebcms/types": "^1.1.0",
         "@thebcms/utils": "^1.1.0",
         "autoprefixer": "^10.4.20",
+        "classnames": "^2.5.1",
         "gatsby": "^5.13.7",
         "gatsby-plugin-postcss": "^6.13.1",
+        "gatsby-plugin-react-svg": "^3.3.0",
         "postcss": "^8.4.47",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
@@ -31,7 +33,6 @@
         "tailwindcss": "^3.4.13"
     },
     "devDependencies": {
-        "@tailwindcss/typography": "^0.5.15",
         "@types/node": "^20.11.19",
         "@types/react": "^18.2.55",
         "@types/react-dom": "^18.2.19",

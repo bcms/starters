@@ -44,7 +44,7 @@
                 "available": true,
                 "title": "Blog",
                 "slug": "blog",
-                "frameworks": ["next", "nuxt", "astro"]
+                "frameworks": ["next", "nuxt", "gatsby", "astro"]
             },
             {
                 "available": true,
