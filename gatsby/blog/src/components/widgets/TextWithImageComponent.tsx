@@ -21,7 +21,7 @@ const TextWithImageWidget: FC<Props> = ({ data }) => {
                     : 'lg:flex-row'
             }`}
         >
-            {hasText && (
+            {!!hasText && (
                 <ContentManager
                     items={data.text?.nodes || []}
                     className="prose"
@@ -30,7 +30,7 @@ const TextWithImageWidget: FC<Props> = ({ data }) => {
             {data.image && (
                 <div
                     className={`aspect-[2.07] rounded-lg overflow-hidden w-full flex-shrink-0 lg:rounded-2xl ${
-                        hasText
+                        !!hasText
                             ? 'lg:aspect-[1.14] lg:w-[500px] lg:mb-0 xl:w-[728px]'
                             : 'lg:aspect-[2.43]'
                     }`}
