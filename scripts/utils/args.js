@@ -4,6 +4,7 @@
  *   deplay?: string;
  *   project?: string;
  *   updatePackages?: string;
+ *   removeNodeModules?: string;
  * }} Args
  */
 
