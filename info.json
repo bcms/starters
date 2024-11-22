@@ -38,7 +38,7 @@
                 "available": true,
                 "title": "Agency",
                 "slug": "agency",
-                "frameworks": ["next", "nuxt", "astro"]
+                "frameworks": ["next", "nuxt", "gatsby", "astro"]
             },
             {
                 "available": true,
