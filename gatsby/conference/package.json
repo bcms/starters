@@ -1,8 +1,8 @@
 {
-    "name": "agency",
+    "name": "conference",
     "version": "1.0.0",
     "private": true,
-    "description": "agency",
+    "description": "conference",
     "author": "becomes",
     "keywords": [
         "gatsby"
@@ -30,8 +30,8 @@
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-helmet": "^6.1.0",
-        "swiper": "^11.1.15",
-        "tailwindcss": "^3.4.13"
+        "tailwindcss": "^3.4.13",
+        "swiper": "^11.1.14"
     },
     "devDependencies": {
         "@types/node": "^20.11.19",

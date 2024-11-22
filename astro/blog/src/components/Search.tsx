@@ -1,5 +1,3 @@
-'use client';
-
 import SearchIcon from '../assets/icons/search.svg?raw';
 import classNames from 'classnames';
 import React, { type FC } from 'react';

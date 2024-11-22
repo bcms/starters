@@ -50,7 +50,7 @@
                 "available": true,
                 "title": "Conference",
                 "slug": "conference",
-                "frameworks": ["next", "nuxt", "astro"]
+                "frameworks": ["next", "nuxt", "gatsby", "astro"]
             },
             {
                 "available": true,

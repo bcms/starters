@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import ContentManager from '../ContentManager';
+import { PropMediaDataParsed, PropRichTextDataParsed } from '@thebcms/types';
 import { BCMSImage } from '@thebcms/components-react';
-import type {
-    PropMediaDataParsed,
-    PropRichTextDataParsed,
-} from '@thebcms/types';
-import type { ClientConfig } from '@thebcms/client';
+import { ClientConfig } from '@thebcms/client';
+import { Link } from 'gatsby';
 
 interface Props {
     gallery: PropMediaDataParsed[];
@@ -75,8 +73,8 @@ const HomeHero: React.FC<Props> = ({
                         items={description.nodes}
                         className="[&_strong]:text-appText [&_strong]:font-medium text-sm leading-[1.4] tracking-[-0.8px] text-appGray-500 max-lg:mb-8 lg:col-start-1 lg:row-start-2 lg:text-[26px] lg:leading-[1.4]"
                     />
-                    <a
-                        href="#tickets"
+                    <Link
+                        to="#tickets"
                         className="flex items-center px-5 py-[13px] bg-black rounded-[48px] lg:col-start-2 lg:row-start-1 lg:px-[26px] lg:py-[19px]"
                     >
                         <span className="text-sm leading-none tracking-[-0.41px] font-semibold text-white uppercase mr-2 lg:text-lg lg:leading-none">
@@ -93,7 +91,7 @@ const HomeHero: React.FC<Props> = ({
                                 fill="currentColor"
                             />
                         </svg>
-                    </a>
+                    </Link>
                     <div className="text-2xl leading-none tracking-[-0.41px] text-appGray-500 font-medium text-center max-lg:hidden">
                         (scroll)
                     </div>

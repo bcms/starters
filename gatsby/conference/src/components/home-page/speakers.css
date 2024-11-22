@@ -1,0 +1,11 @@
+.homeSpeakers--rt h3 {
+    @apply leading-none tracking-[-0.04em] font-semibold mb-3 lg:text-[32px] lg:leading-none lg:mb-5;
+}
+
+.homeSpeakers--rt p {
+    @apply text-sm leading-[1.4] tracking-[-0.8px] font-medium text-appGray-500 lg:text-[26px] lg:leading-[1.4];
+}
+
+.homeSpeakers--rt p strong {
+    @apply text-appText font-medium;
+}

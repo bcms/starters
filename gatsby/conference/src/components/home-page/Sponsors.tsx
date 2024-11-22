@@ -1,11 +1,11 @@
 import classNames from 'classnames';
-import { useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import SwiperCore from 'swiper';
 import { A11y, Pagination } from 'swiper/modules';
 import { SwiperSlide, Swiper } from 'swiper/react';
 import { BCMSImage } from '@thebcms/components-react';
-import type { SponsorGroup } from '../../../bcms/types/ts';
-import type { ClientConfig } from '@thebcms/client';
+import { ClientConfig } from '@thebcms/client';
+import { SponsorGroup } from '../../../bcms/types/ts';
 import ContentManager from '../ContentManager';
 import ContactForm from '../ContactForm';
 
