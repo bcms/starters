@@ -74,7 +74,8 @@ const Footer: React.FC<Props> = ({ legal }) => {
                             </button>
                         </div>
                         <div className="flex items-end text-xs leading-none tracking-[-0.41px] max-lg:mb-8 lg:text-base lg:leading-none lg:order-1">
-                            &copy; 2023 CONference. All rights reserved
+                            &copy; {new Date().getFullYear()} CONference. All
+                            rights reserved
                         </div>
                         <a
                             href="https://thebcms.com/"
