@@ -62,7 +62,7 @@
                 "available": true,
                 "title": "Personal",
                 "slug": "personal",
-                "frameworks": ["next", "nuxt", "astro"]
+                "frameworks": ["next", "nuxt", "gatsby", "astro"]
             },
             {
                 "available": true,
