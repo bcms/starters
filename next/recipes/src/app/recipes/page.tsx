@@ -35,7 +35,7 @@ export async function generateMetadata(): Promise<Metadata> {
     };
 }
 
-const HomePage: React.FC = async () => {
+const RecipesPage: React.FC = async () => {
     const recipesPageEntry = (await bcms.entry.getBySlug(
         'recipes',
         'recipes-page',
@@ -66,4 +66,4 @@ const HomePage: React.FC = async () => {
     );
 };
 
-export default HomePage;
+export default RecipesPage;
