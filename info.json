@@ -74,7 +74,7 @@
                 "available": true,
                 "title": "Restaurant",
                 "slug": "restaurant",
-                "frameworks": ["next", "nuxt", "astro"]
+                "frameworks": ["next", "nuxt", "gatsby", "astro"]
             }
         ]
     }
