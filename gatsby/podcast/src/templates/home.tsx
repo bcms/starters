@@ -13,7 +13,6 @@ const HomeTemplate: React.FC<HomeTemplateProps> = ({
     pageContext: { meta, episodes, bcms },
 }) => {
     const { setEpisodes, setBcms } = useEpisodes();
-    console.log('dada', useEpisodes, setEpisodes);
 
     setBcms(bcms);
 

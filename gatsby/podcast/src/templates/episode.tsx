@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { MouseEvent, useEffect, useRef, useState } from 'react';
 import PageWrapper from '../components/PageWrapper';
 import { EpisodePageContent } from '../types';
 import { useEpisodes } from '../context/EpisodeContext';
@@ -16,60 +16,55 @@ export interface EpisodeTemplateProps {
 const EpisodeTemplate: React.FC<EpisodeTemplateProps> = ({
     pageContext: { meta, episodes, bcms },
 }) => {
-    const [audioDOM, setAudioDOM] = useState<HTMLAudioElement | null>(null);
-    const { setEpisodes, setBcms } = useEpisodes();
-    const [fileLength, setFileLength] = useState<string>('...');
-
     const {
         episode,
-        settings,
-        updateSettings,
-        getFileLength,
-        setEpisodeDOM,
         setEpisode,
+        setEpisodeDOM,
+        getFileLength,
+        settings,
+        episodeDOM,
+        updateSettings,
     } = usePlayer();
 
-    const handlePlayPause = () => {
+    const { setBcms, setEpisodes } = useEpisodes();
+
+    const audioDOM = useRef<HTMLAudioElement | null>(null);
+    const [fileLength, setFileLength] = useState<string>('...');
+
+    const handlePlayPause = (e: MouseEvent<HTMLButtonElement>) => {
+        e.preventDefault();
         if (!episode && meta) {
             setEpisode(meta);
-            if (audioDOM) {
-                setEpisodeDOM(audioDOM);
+            if (audioDOM.current) {
+                setEpisodeDOM(audioDOM.current as HTMLAudioElement);
             }
-            updateSettings({
-                playing: true,
-            });
+            updateSettings({ playing: true });
         } else if (episode && meta) {
-            if (episode.slug === meta.slug) {
+            if (episode?.slug === meta.slug) {
                 updateSettings({
                     playing: !settings.playing,
                 });
             } else {
-                if (audioDOM) {
+                if (episodeDOM) {
                     updateSettings({
                         playing: false,
                     });
-                    setEpisodeDOM(audioDOM);
+                    setEpisodeDOM(audioDOM.current as HTMLAudioElement);
                 }
                 setEpisode(meta);
-                updateSettings({
-                    playing: true,
-                });
             }
         }
     };
 
-    setBcms(bcms);
-
     useEffect(() => {
-        setEpisodes(episodes);
-    }, [episodes]);
+        updateSettings({ playing: true });
+    }, [episodeDOM]);
 
     useEffect(() => {
         const audio = audioUtil.createAudio(bcms, meta.media_file);
         audio.preload = 'metadata';
-
-        audio.onloadedmetadata = () => {
-            setAudioDOM(audio);
+        audio.addEventListener('loadedmetadata', () => {
+            audioDOM.current = audio;
             const { durationInMinutes, durationInSeconds } =
                 getFileLength(audio);
 
@@ -80,8 +75,14 @@ const EpisodeTemplate: React.FC<EpisodeTemplateProps> = ({
                     .toFixed(0)
                     .padStart(2, '0')}`,
             );
-        };
-    }, [meta]);
+        });
+    }, [meta, episode]);
+
+    setBcms(bcms);
+
+    useEffect(() => {
+        setEpisodes(episodes);
+    }, [episodes]);
 
     return (
         <PageWrapper title={`${meta.seo?.title || meta.title} - The Podium`}>
