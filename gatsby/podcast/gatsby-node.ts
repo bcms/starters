@@ -89,14 +89,13 @@ export const createPages = async ({
     // EPISODE
     const episodeTemplate = path.resolve('./src/templates/episode.tsx');
 
-    episodes.forEach((episode) => {
-        const episodeMeta = episode.meta.en as EpisodeEntryMetaItem;
+    episodesMeta.forEach((episode) => {
 
         createPage({
-            path: `/episode/${episodeMeta.slug}`,
+            path: `/episode/${episode.slug}`,
             component: episodeTemplate,
             context: {
-                meta: episodeMeta,
+                meta: episode,
                 episodes: episodesMeta,
                 bcms: bcms.getConfig(),
             } as EpisodePageContent,

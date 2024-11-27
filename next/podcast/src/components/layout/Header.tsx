@@ -1,8 +1,10 @@
+'use client';
+
 import React, { useState } from 'react';
-import Logo from '../../assets/icons/logo.inline.svg';
-import XIcon from '../../assets/icons/x.inline.svg';
-import MenuIcon from '../../assets/icons/menu.inline.svg';
-import { Link } from 'gatsby';
+import Logo from '@/assets/icons/logo.svg';
+import XIcon from '@/assets/icons/x.svg';
+import MenuIcon from '@/assets/icons/menu.svg';
+import Link from 'next/link';
 
 const Header: React.FC = () => {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -26,7 +28,7 @@ const Header: React.FC = () => {
         <header className="absolute top-0 left-0 w-full z-50">
             <div className="relative z-10 container">
                 <nav className="relative flex items-center justify-between pt-6 lg:pt-8">
-                    <Link to="/" className="flex" aria-label="Home page">
+                    <Link href="/" className="flex" aria-label="Home page">
                         <Logo className="w-[101px] md:w-[135px]" />
                     </Link>
                     <ul
@@ -36,7 +38,7 @@ const Header: React.FC = () => {
                             return (
                                 <li key={index}>
                                     <Link
-                                        to={item.to}
+                                        href={item.to}
                                         className={`text-lg leading-none font-semibold tracking-[-0.8px] md:text-xl md:leading-none`}
                                     >
                                         {item.label}
