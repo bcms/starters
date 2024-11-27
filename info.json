@@ -80,7 +80,7 @@
                 "available": true,
                 "title": "Podcast",
                 "slug": "podcast",
-                "frameworks": ["nuxt"]
+                "frameworks": ["nuxt", "gatsby"]
             }
         ]
     }

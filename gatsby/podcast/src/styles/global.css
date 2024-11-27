@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+    @apply box-border m-0 p-0;
+}
+
+html {
+    @apply scroll-smooth;
+}
+body {
+    @apply font-Inter overflow-x-hidden bg-appBody text-appText scroll-smooth;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.3s;
+}
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.aboutPage--content p {
+    @apply text-xs leading-[1.3] tracking-[-0.8px] text-appGray-500 lg:text-2xl lg:leading-[1.3];
+}
+.aboutPage--content h2 {
+    @apply text-sm leading-none font-medium tracking-[-1.41px] text-white mb-2.5 lg:text-[32px] lg:leading-none lg:mb-6;
+}
+
+.episodePage--description h2 {
+    @apply text-sm leading-none font-medium tracking-[-0.8px] mb-3 lg:text-[32px] lg:leading-none lg:mb-4;
+}
+.episodePage--description p {
+    @apply text-xs leading-[1.3] tracking-[-0.41px] text-appGray-200 lg:text-2xl lg:leading-[1.3];
+}

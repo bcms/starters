@@ -1,0 +1,45 @@
+{
+    "name": "podcast",
+    "version": "1.0.0",
+    "private": true,
+    "description": "podcast",
+    "author": "becomes",
+    "keywords": [
+        "gatsby"
+    ],
+    "scripts": {
+        "dev": "bcms --pull types --lng ts && gatsby develop",
+        "start": "bcms --pull types --lng ts && gatsby develop",
+        "build": "bcms --pull types --lng ts && gatsby build",
+        "serve": "bcms --pull types --lng ts && gatsby serve",
+        "clean": "gatsby clean",
+        "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+        "@thebcms/cli": "^1.2.6",
+        "@thebcms/client": "^1.4.1",
+        "@thebcms/components-react": "^1.2.2",
+        "@thebcms/types": "^1.1.0",
+        "@thebcms/utils": "^1.1.0",
+        "autoprefixer": "^10.4.20",
+        "classnames": "^2.5.1",
+        "gatsby": "^5.13.7",
+        "gatsby-plugin-postcss": "^6.13.1",
+        "gatsby-plugin-react-svg": "^3.3.0",
+        "postcss": "^8.4.47",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-helmet": "^6.1.0",
+        "tailwindcss": "^3.4.13"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.19",
+        "@types/react": "^18.2.55",
+        "@types/react-dom": "^18.2.19",
+        "@types/react-helmet": "^6.1.11",
+        "dotenv": "^16.4.5",
+        "prettier": "^3.3.3",
+        "sass": "^1.79.4",
+        "typescript": "^5.3.3"
+    }
+}
