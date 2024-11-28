@@ -1,0 +1,35 @@
+---
+import { bcms } from '../bcms-client';
+import AboutPageWrapper from '../components/about-page/PageWrapper';
+
+import Layout from '../layouts/Layout.astro';
+import type {
+    AboutPageEntry,
+    AboutPageEntryMetaItem,
+    EpisodeEntry,
+    EpisodeEntryMetaItem,
+} from '../../bcms/types/ts';
+
+const aboutPageEntry = (await bcms.entry.getBySlug(
+    'about-us',
+    'about-page',
+)) as AboutPageEntry;
+
+const meta = aboutPageEntry.meta.en as AboutPageEntryMetaItem;
+
+const episodes = (await bcms.entry.getAll('episode')) as EpisodeEntry[];
+const episodesMeta = episodes.map(
+    (episode) => episode.meta.en as EpisodeEntryMetaItem,
+);
+
+const bcmsConfig = bcms.getConfig();
+---
+
+<Layout title={`${meta.seo?.title || meta.title} - The Podium`}>
+    <AboutPageWrapper
+        client:load
+        bcms={bcmsConfig}
+        episodes={episodesMeta}
+        meta={meta}
+    />
+</Layout>

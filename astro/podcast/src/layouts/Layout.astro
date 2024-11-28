@@ -1,0 +1,72 @@
+---
+import Footer from '../components/layout/Footer';
+import Header from '../components/layout/Header';
+
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+const ogImageUrl = '/thumbnail.jpg';
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="description"
+            content="Jumpstart your Astro project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!"
+        />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <meta property="og:image" content={ogImageUrl} />
+        <meta property="og:image:secure_url" content={ogImageUrl} />
+        <meta property="twitter:title" content="The Podium" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:image" content={ogImageUrl} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <title>{title}</title>
+    </head>
+    <body
+        class={`font-Inter overflow-x-hidden bg-appBody text-appText scroll-smooth`}
+    >
+        <div class="overflow-hidden flex flex-col min-h-screen">
+            <Header client:load />
+            <main class="flex flex-col flex-1">
+                <slot />
+            </main>
+            <Footer />
+        </div>
+    </body>
+</html>
+
+<style is:global>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    *,
+    *::before,
+    *::after {
+        @apply box-border m-0 p-0;
+    }
+    .aboutPage--content p {
+        @apply text-xs leading-[1.3] tracking-[-0.8px] text-appGray-500 lg:text-2xl lg:leading-[1.3];
+    }
+    .aboutPage--content h2 {
+        @apply text-sm leading-none font-medium tracking-[-1.41px] text-white mb-2.5 lg:text-[32px] lg:leading-none lg:mb-6;
+    }
+    .episodePage--description h2 {
+        @apply text-sm leading-none font-medium tracking-[-0.8px] mb-3 lg:text-[32px] lg:leading-none lg:mb-4;
+    }
+    .episodePage--description p {
+        @apply text-xs leading-[1.3] tracking-[-0.41px] text-appGray-200 lg:text-2xl lg:leading-[1.3];
+    }
+</style>

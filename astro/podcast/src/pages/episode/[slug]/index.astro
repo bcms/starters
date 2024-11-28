@@ -1,0 +1,45 @@
+---
+import { bcms } from '../../../bcms-client';
+
+import Layout from '../../../layouts/Layout.astro';
+import type {
+    EpisodeEntry,
+    EpisodeEntryMetaItem,
+} from '../../../../bcms/types/ts/entry/episode';
+import EpisodePageWrapper from '../../../components/episode-page/PageWrapper';
+
+export async function getStaticPaths() {
+    const episodes = (await bcms.entry.getAll('episode')) as EpisodeEntry[];
+    return episodes.map((e) => ({
+        params: {
+            slug: e.meta.en?.slug || '',
+        },
+    }));
+}
+
+const { slug } = Astro.params;
+
+const episodes = (await bcms.entry.getAll('episode')) as EpisodeEntry[];
+const episodesMeta = episodes.map(
+    (episode) => episode.meta.en as EpisodeEntryMetaItem,
+);
+
+const episode = episodesMeta.find((e) => e.slug === slug);
+
+if (!episode) {
+    return {
+        status: 404,
+    };
+}
+
+const bcmsConfig = bcms.getConfig();
+---
+
+<Layout title={`${episode.seo?.title || episode.title} - The Podium`}>
+    <EpisodePageWrapper
+        client:load
+        bcms={bcmsConfig}
+        episodes={episodesMeta}
+        meta={episode}
+    />
+</Layout>
