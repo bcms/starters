@@ -11,9 +11,9 @@
     },
     "dependencies": {
         "@thebcms/cli": "^1.2.6",
-        "@thebcms/client": "^1.4.1",
+        "@thebcms/client": "^1.4.2",
         "@thebcms/components-vue": "^1.2.2",
-        "@thebcms/types": "^1.1.0",
+        "@thebcms/types": "^1.2.0",
         "@thebcms/utils": "^1.1.0",
         "gsap": "^3.12.5",
         "nuxt": "^3.13.0",
