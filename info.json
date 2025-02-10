@@ -81,6 +81,12 @@
                 "title": "Podcast",
                 "slug": "podcast",
                 "frameworks": ["next", "nuxt", "gatsby", "astro"]
+            },
+            {
+                "available": true,
+                "title": "E-commerce",
+                "slug": "e-commerce",
+                "frameworks": ["nuxt"]
             }
         ]
     }
