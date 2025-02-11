@@ -38,8 +38,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@thebcms/cli": "^1.2.6",
-		"@thebcms/client": "^1.4.4",
+		"@thebcms/cli": "^1.2.7",
+		"@thebcms/client": "^1.4.5",
 		"@thebcms/components-svelte": "^1.0.1",
 		"@thebcms/types": "^1.2.0",
 		"@thebcms/utils": "^1.1.0"
