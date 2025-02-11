@@ -1,10 +1,8 @@
-'use client';
-
 import { ClientConfig } from '@thebcms/client';
 import React from 'react';
-import Link from 'next/link';
-import { useCart } from '@/context/CartContext';
 import { BCMSImage } from '@thebcms/components-react';
+import { useCart } from '../../context/CartContext';
+import { Link } from 'gatsby';
 
 interface Props {
     bcms: ClientConfig;
@@ -32,7 +30,7 @@ export const Main: React.FC<Props> = ({ bcms }) => {
                                     />
                                     <div>
                                         <Link
-                                            href={`/shop/${item.slug}`}
+                                            to={`/shop/${item.slug}`}
                                             className="flex text-[24px] leading-none tracking-[-0.48px] mb-3"
                                         >
                                             {item.title}
@@ -166,7 +164,7 @@ export const Main: React.FC<Props> = ({ bcms }) => {
                         Your cart is empty
                     </div>
                     <Link
-                        href="/shop"
+                        to="/shop"
                         className="flex max-w-max text-2xl leading-none tracking-[-0.5px] px-14 pt-3.5 pb-[18px] bg-white border border-appGray-400 mx-auto transition-colors duration-300 hover:bg-appText hover:text-white"
                     >
                         Shop

@@ -1,16 +1,14 @@
-'use client';
-
 import { ClientConfig } from '@thebcms/client';
 import React, { useEffect, useMemo, useState } from 'react';
-import TrashIcon from '@/assets/icons/trash.svg';
-import { ProductLite } from '@/utils/product';
+import TrashIcon from '../../assets/icons/trash.inline.svg';
+import { ProductLite } from '../../utils/product';
 import {
     ProductCategoryEntryMetaItem,
     ProductGenderEntryMetaItem,
-} from '@bcms-types/types/ts';
-import Link from 'next/link';
-import { FormCheck } from '@/components/form/Check';
-import { ProductCard } from '@/components/ProductCard';
+} from '../../../bcms/types/ts';
+import { FormCheck } from '../form/Check';
+import { ProductCard } from '../ProductCard';
+import { Link } from 'gatsby';
 
 interface Props {
     products: ProductLite[];
@@ -133,7 +131,7 @@ export const HomeProducts: React.FC<Props> = ({ products, filters, bcms }) => {
                     })}
                 </div>
                 <Link
-                    href="/shop"
+                    to="/shop"
                     className="flex max-w-max text-2xl leading-none tracking-[-0.5px] px-14 pt-3.5 pb-[18px] bg-white border border-appGray-400 mx-auto transition-colors duration-300 hover:bg-appText hover:text-white"
                 >
                     See all

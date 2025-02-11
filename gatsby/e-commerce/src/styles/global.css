@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+    @apply box-border m-0 p-0;
+}
+
+body {
+    @apply font-Helvetica overflow-x-hidden bg-appBody text-appText pt-[84px] md:pt-[100px];
+}
+
+.blog--content h2 {
+    @apply text-2xl leading-none tracking-[-2%] mt-10 mb-4;
+}
+.blog--content p {
+    @apply leading-[1.3] text-appGray-600 mb-2.5;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.3s;
+}
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
