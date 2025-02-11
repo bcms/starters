@@ -1,0 +1,10 @@
+.blog {
+    &--content {
+        h2 {
+            @apply text-2xl leading-none tracking-[-2%] mt-10 mb-4;
+        }
+        p {
+            @apply leading-[1.3] text-appGray-600 mb-2.5;
+        }
+    }
+}

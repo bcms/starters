@@ -86,7 +86,7 @@
                 "available": true,
                 "title": "E-commerce",
                 "slug": "e-commerce",
-                "frameworks": ["nuxt"]
+                "frameworks": ["next", "nuxt"]
             }
         ]
     }
