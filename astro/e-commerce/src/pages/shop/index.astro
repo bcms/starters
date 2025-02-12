@@ -1,0 +1,40 @@
+---
+import { bcms } from '../../bcms-client';
+import type { ProductEntry } from '../../../bcms/types/ts/entry/product';
+import type { ProductGenderEntryMetaItem } from '../../../bcms/types/ts/entry/product-gender';
+import type {
+    ProductCategoryEntry,
+    ProductCategoryEntryMetaItem,
+} from '../../../bcms/types/ts/entry/product-category';
+import type { ProductBrandEntryMetaItem } from '../../../bcms/types/ts/entry/product-brand';
+import { productToLite } from '../../utils/product';
+
+import Layout from '../../layouts/Layout.astro';
+import ProductsPageWrapper from '../../components/shop/products/PageWrapper';
+
+const products = (await bcms.entry.getAll('product')) as ProductEntry[];
+
+const data = {
+    products: products.map((e) => productToLite(e)),
+    genders: products
+        .map((e) => e.meta.en?.gender.meta.en as ProductGenderEntryMetaItem)
+        .filter((e, _, arr) => arr.find((i) => i.slug === e.slug) === e),
+    categories: products
+        .map((e) =>
+            (e.meta.en?.categories as ProductCategoryEntry[]).map(
+                (i) => i.meta.en as ProductCategoryEntryMetaItem,
+            ),
+        )
+        .flat()
+        .filter((e, _, arr) => arr.find((i) => i.slug === e.slug) === e),
+    brands: products
+        .map((e) => e.meta.en?.brand.meta.en as ProductBrandEntryMetaItem)
+        .filter((e, _, arr) => arr.find((i) => i.slug === e.slug) === e),
+};
+
+const clientConfig = bcms.getConfig();
+---
+
+<Layout title={`Products - Moda`}>
+    <ProductsPageWrapper client:load data={data} bcms={clientConfig} />
+</Layout>

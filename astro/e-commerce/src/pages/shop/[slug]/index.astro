@@ -1,0 +1,41 @@
+---
+import { bcms } from '../../../bcms-client';
+import type {
+    ProductEntry,
+    ProductEntryMetaItem,
+} from '../../../../bcms/types/ts/entry/product';
+import { productToLite } from '../../../utils/product';
+
+import Layout from '../../../layouts/Layout.astro';
+import ProductPageWrapper from '../../../components/shop/product/PageWrapper';
+
+export async function getStaticPaths() {
+    const products = (await bcms.entry.getAll('product')) as ProductEntry[];
+    return products.map((e) => ({
+        params: {
+            slug: e.meta.en?.slug || '',
+        },
+    }));
+}
+
+const { slug } = Astro.params;
+
+const products = (await bcms.entry.getAll('product')) as ProductEntry[];
+const meta = products.find((e) => e.meta.en?.slug === slug)?.meta
+    .en as ProductEntryMetaItem;
+
+const data = {
+    meta,
+    otherProducts: products
+        .filter((e) => e.meta.en?.slug !== slug)
+        .map((e) => productToLite(e))
+        .sort((a, b) => b.date - a.date)
+        .slice(0, 4),
+};
+
+const clientConfig = bcms.getConfig();
+---
+
+<Layout title={`${meta.title} - Moda`}>
+    <ProductPageWrapper client:load data={data} bcms={clientConfig} />
+</Layout>

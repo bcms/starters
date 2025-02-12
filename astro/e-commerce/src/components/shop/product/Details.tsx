@@ -1,17 +1,14 @@
-'use client';
-
 import React, { useMemo, useState } from 'react';
-import { useRouter } from 'next/navigation';
-import { useCart } from '@/context/CartContext';
 import classNames from 'classnames';
-import LoadingIcon from '@/assets/icons/loader.svg';
-import {
+import LoadingIcon from '../../../assets/icons/loader.svg?raw';
+import type {
     ProductColorEntry,
     ProductColorEntryMetaItem,
     ProductEntryMetaItem,
     ProductSizeEntryMetaItem,
-} from '@bcms-types/types/ts';
-import { ContentManager } from '@/components/ContentManager';
+} from '../../../../bcms/types/ts';
+import { useCart } from '../../../context/CartContext';
+import ContentManager from '../../ContentManager';
 
 interface Props {
     meta: ProductEntryMetaItem;
@@ -23,7 +20,6 @@ export const Details: React.FC<Props> = ({
     activeColor,
     colorChange,
 }) => {
-    const router = useRouter();
     const { addCartItem } = useCart();
     const [isLoading, setIsLoading] = useState(false);
     const [selectedSize, setSelectedSize] = useState<
@@ -50,7 +46,7 @@ export const Details: React.FC<Props> = ({
                 setIsLoading(false);
             }, 750);
             if (redirect) {
-                void router.push('/shop/cart');
+                window.location.href = '/shop/cart';
             }
         }
     };
@@ -102,7 +98,12 @@ export const Details: React.FC<Props> = ({
                 >
                     <span> Add to cart </span>
                     {isLoading && (
-                        <LoadingIcon className="w-3.5 h-3.5 ml-3 mt-0.5 animate-spin" />
+                        <div
+                            dangerouslySetInnerHTML={{
+                                __html: LoadingIcon,
+                            }}
+                            className="w-3.5 h-3.5 ml-3 mt-0.5 animate-spin"
+                        />
                     )}
                 </button>
             </div>

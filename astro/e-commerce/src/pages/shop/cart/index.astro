@@ -1,0 +1,12 @@
+---
+import { bcms } from '../../../bcms-client';
+
+import Layout from '../../../layouts/Layout.astro';
+import CartPageWrapper from '../../../components/shop/cart/PageWrapper';
+
+const clientConfig = bcms.getConfig();
+---
+
+<Layout title={`Cart - Moda`}>
+    <CartPageWrapper client:load bcms={clientConfig} />
+</Layout>

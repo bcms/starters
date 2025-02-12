@@ -1,0 +1,15 @@
+---
+import { bcms } from '../bcms-client';
+import type { LegalEntry } from '../../bcms/types/ts';
+
+import Layout from '../layouts/Layout.astro';
+import LegalPageWrapper from '../components/legal-page/PageWrapper';
+
+const legalEntries = (await bcms.entry.getAll('legal')) as LegalEntry[];
+
+const clientConfig = bcms.getConfig();
+---
+
+<Layout title={`Legal - Moda`}>
+    <LegalPageWrapper client:load entries={legalEntries} bcms={clientConfig} />
+</Layout>

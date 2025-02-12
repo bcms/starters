@@ -1,0 +1,47 @@
+---
+import '../styles/fonts.css';
+
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+const ogImageUrl = '/thumbnail.jpg';
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="description"
+            content="Jumpstart your Astro project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!"
+        />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <meta property="og:image" content={ogImageUrl} />
+        <meta property="og:image:secure_url" content={ogImageUrl} />
+        <meta property="twitter:title" content="Moda" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:image" content={ogImageUrl} />
+        <title>{title}</title>
+    </head>
+    <body
+        class={`font-Helvetica overflow-x-hidden bg-appBody text-appText pt-[84px] md:pt-[100px]`}
+    >
+        <slot />
+    </body>
+</html>
+
+<style is:global>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    *,
+    *::before,
+    *::after {
+        @apply box-border m-0 p-0;
+    }
+</style>

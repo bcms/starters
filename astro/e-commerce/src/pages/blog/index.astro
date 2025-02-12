@@ -1,0 +1,25 @@
+---
+import { bcms } from '../../bcms-client';
+import type {
+    BlogEntry,
+    BlogEntryMetaItem,
+} from '../../../bcms/types/ts/entry/blog';
+
+import Layout from '../../layouts/Layout.astro';
+import BlogPagesWrapper from '../../components/blogs/PageWrapper';
+import List from '../../components/blogs/List';
+
+const blogs = ((await bcms.entry.getAll('blog')) as BlogEntry[])
+    .map((e) => e.meta.en as BlogEntryMetaItem)
+    .sort((a, b) => b.date.timestamp - a.date.timestamp);
+
+const clientConfig = bcms.getConfig();
+---
+
+<Layout title={`Blogs - Moda`}>
+    <BlogPagesWrapper client:load bcms={clientConfig}>
+        <div class="container pb-14 md:pb-20 lg:pb-[136px]">
+            <List client:load blogs={blogs} bcms={clientConfig} />
+        </div>
+    </BlogPagesWrapper>
+</Layout>
