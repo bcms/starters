@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { PageData } from './$types';
+	import type { PageProps } from './$types';
 
 	import { BCMSImage } from '@thebcms/components-svelte';
 	import ContentManager from '$lib/components/content-manager.svelte';
@@ -7,7 +7,7 @@
 	import Tag from '$lib/components/tag.svelte';
 	import { toReadableDate } from '../../../utils/date';
 
-	export let data: PageData;
+	let { data }: PageProps = $props();
 </script>
 
 <div class="py-24 md:py-32">

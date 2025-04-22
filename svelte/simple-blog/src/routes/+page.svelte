@@ -1,9 +1,9 @@
 <script lang="ts">
 	import Tag from '$lib/components/tag.svelte';
 	import BlogCard from '$lib/components/blog-card.svelte';
-	import type { PageData } from './$types';
+	import type { PageProps } from './$types';
 
-	export let data: PageData;
+	let { data }: PageProps = $props();
 </script>
 
 <svelte:head>
