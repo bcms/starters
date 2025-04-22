@@ -12,6 +12,7 @@ const Footer: React.FC = async () => {
                         className="flex items-center text-sm max-md:mb-3 lg:text-base lg:leading-none"
                     >
                         Powered by
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                             src="/logo-dark.png"
                             alt="BCMS Logo"

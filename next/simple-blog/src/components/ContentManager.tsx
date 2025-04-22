@@ -21,30 +21,32 @@ const ContentManager: React.FC<Props> = ({
 }) => {
     const managerDOM = useRef<HTMLDivElement>(null);
     const router = useRouter();
-    const parseInternalLinks = (): void => {
-        if (managerDOM.current) {
-            const links = managerDOM.current.querySelectorAll('a');
-            links.forEach((link: HTMLAnchorElement) => {
-                const href = link.getAttribute('href');
-                if (href && href.startsWith('/')) {
-                    link.target = '_self';
-                    const clickHandler = (event: Event): void => {
-                        event.preventDefault();
-                        void router.push(href);
-                    };
-                    link.addEventListener('click', clickHandler);
-
-                    return () => {
-                        link.removeEventListener('click', clickHandler);
-                    };
-                }
-            });
-        }
-    };
 
     useEffect(() => {
-        parseInternalLinks();
-    }, []);
+        if (!managerDOM.current) {
+            return;
+        }
+        const links = managerDOM.current.querySelectorAll('a');
+        const unsubs: Array<() => void> = [];
+        for (let i = 0; i < links.length; i++) {
+            const link = links[i];
+            const href = link.getAttribute('href');
+            if (href && href.startsWith('/')) {
+                link.target = '_self';
+                const clickHandler = (event: Event): void => {
+                    event.preventDefault();
+                    void router.push(href);
+                };
+                link.addEventListener('click', clickHandler);
+                unsubs.push(() => {
+                    link.removeEventListener('click', clickHandler);
+                });
+            }
+        }
+        return () => {
+            unsubs.forEach((unsub) => unsub());
+        };
+    }, [router]);
 
     return (
         <div ref={managerDOM}>

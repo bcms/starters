@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { BlogEntry, BlogEntryMetaItem } from '../../../../bcms/types/ts';
+import { BlogEntry, BlogEntryMetaItem } from '@bcms-types/types/ts';
 import { EntryContentParsedItem } from '@thebcms/types';
 import { bcms } from '@/app/bcms-client';
 import { notFound } from 'next/navigation';
@@ -12,9 +12,9 @@ import { Metadata } from 'next';
 import BlogCard from '@/components/blog/Card';
 
 type Props = {
-    params: {
+    params: Promise<{
         slug: string;
-    };
+    }>;
 };
 
 export async function generateStaticParams() {
@@ -28,7 +28,8 @@ export async function generateStaticParams() {
     });
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata(props: Props): Promise<Metadata> {
+    const params = await props.params;
     const blog = (await bcms.entry.getBySlug(params.slug, 'blog')) as BlogEntry;
 
     if (!blog) {
@@ -49,7 +50,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
 }
 
-const BlogPage: React.FC<Props> = async ({ params }) => {
+const BlogPage: React.FC<Props> = async (props) => {
+    const params = await props.params;
     const blogs = (await bcms.entry.getAll('blog')) as BlogEntry[];
 
     const blog = blogs.find((e) => e.meta.en?.slug === params.slug);
@@ -62,7 +64,9 @@ const BlogPage: React.FC<Props> = async ({ params }) => {
         content: blog.content.en as EntryContentParsedItem[],
     };
 
-    const otherBlogs = blogs.filter((e) => e.meta.en?.slug !== params.slug);
+    const otherBlogs = blogs
+        .filter((e) => e.meta.en?.slug !== params.slug)
+        .slice(0, 2);
 
     return (
         <div className="py-24 md:py-32">
@@ -123,7 +127,7 @@ const BlogPage: React.FC<Props> = async ({ params }) => {
                             See my other blogs
                         </h3>
                         <div className="grid grid-cols-1 gap-12">
-                            {otherBlogs.slice(0, 2).map((blog, index) => {
+                            {otherBlogs.map((blog, index) => {
                                 return (
                                     <BlogCard
                                         key={index}
