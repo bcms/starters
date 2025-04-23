@@ -4,9 +4,9 @@ import {
     ContactPageEntry,
     ContactPageEntryMetaItem,
 } from '@bcms-types/types/ts';
-import { bcms } from '../bcms-client';
 import ContentManager from '@/components/ContentManager';
 import Form from './components/Form';
+import { bcmsPrivate } from '@/app/bcms-private';
 
 const pageTitle = "Let's talk! - Hospitale";
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 };
 
 const ContactPage: React.FC = async () => {
-    const contactPageEntry = (await bcms.entry.getBySlug(
+    const contactPageEntry = (await bcmsPrivate.entry.getBySlug(
         'lets-talk',
         'contact-page',
     )) as ContactPageEntry;

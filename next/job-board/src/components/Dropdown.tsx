@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { type JSX, useState } from 'react';
 import classnames from 'classnames';
 import ChevronIcon from '@/assets/icons/chevron-down.svg';
 

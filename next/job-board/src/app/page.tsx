@@ -1,6 +1,5 @@
 import React from 'react';
 import { Metadata } from 'next';
-import { bcms } from './bcms-client';
 import {
     HomePageEntry,
     HomePageEntryMetaItem,
@@ -13,6 +12,8 @@ import HomeJobs from '@/components/home-page/Jobs';
 import { toJobLite } from '@/utils/job';
 import HomeAbout from '@/components/home-page/About';
 import Testimonials from '@/components/home-page/Testimonials';
+import { bcmsPrivate } from '@/app/bcms-private';
+import { bcmsPublic } from '@/app/bcms-public';
 
 const pageTitle = 'Home - Hospitale';
 export const metadata: Metadata = {
@@ -26,18 +27,20 @@ export const metadata: Metadata = {
 };
 
 const HomePage: React.FC = async () => {
-    const homePageEntry = (await bcms.entry.getBySlug(
+    const homePageEntry = (await bcmsPrivate.entry.getBySlug(
         'home',
         'home-page',
     )) as HomePageEntry;
     const homePageMeta = homePageEntry.meta.en as HomePageEntryMetaItem;
 
-    const jobEntries = (await bcms.entry.getAll('job-post')) as JobPostEntry[];
+    const jobEntries = (await bcmsPrivate.entry.getAll(
+        'job-post',
+    )) as JobPostEntry[];
     const jobEntriesLite = jobEntries.map((job) => {
         return toJobLite(job);
     });
 
-    const testimonialEntries = (await bcms.entry.getAll(
+    const testimonialEntries = (await bcmsPrivate.entry.getAll(
         'testimonial',
     )) as TestimonialEntry[];
     const testimonialEntriesMeta = testimonialEntries.map(
@@ -50,7 +53,7 @@ const HomePage: React.FC = async () => {
                 title={homePageMeta.hero_title}
                 description={homePageMeta.hero_description}
                 cover={homePageMeta.hero_cover_image}
-                bcmsConfig={bcms.getConfig()}
+                bcmsConfig={bcmsPublic.getConfig()}
             />
             <HomeJobs
                 title={homePageMeta.jobs_title}
@@ -64,7 +67,7 @@ const HomePage: React.FC = async () => {
             />
             <Testimonials
                 testimonials={testimonialEntriesMeta}
-                bcmsConfig={bcms.getConfig()}
+                bcmsConfig={bcmsPublic.getConfig()}
             />
         </div>
     );

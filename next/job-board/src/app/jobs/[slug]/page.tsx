@@ -1,20 +1,21 @@
 import React from 'react';
 import { BCMSImage } from '@thebcms/components-react';
 import { Metadata } from 'next';
-import { bcms } from '@/app/bcms-client';
 import { JobPostEntry, JobPostEntryMetaItem } from '@bcms-types/types/ts';
 import { notFound } from 'next/navigation';
 import Details from './components/Details';
 import { toJobLite } from '@/utils/job';
+import { bcmsPrivate } from '@/app/bcms-private';
+import { bcmsPublic } from '@/app/bcms-public';
 
 type Props = {
-    params: {
+    params: Promise<{
         slug: string;
-    };
+    }>;
 };
 
 export async function generateStaticParams() {
-    const jobPostsEntries = (await bcms.entry.getAll(
+    const jobPostsEntries = (await bcmsPrivate.entry.getAll(
         'job-post',
     )) as JobPostEntry[];
 
@@ -26,8 +27,9 @@ export async function generateStaticParams() {
     });
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const jobPostEntry = (await bcms.entry.getBySlug(
+export async function generateMetadata(props: Props): Promise<Metadata> {
+    const params = await props.params;
+    const jobPostEntry = (await bcmsPrivate.entry.getBySlug(
         params.slug,
         'job-post',
     )) as JobPostEntry;
@@ -50,8 +52,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
 }
 
-const JobPostPage: React.FC<Props> = async ({ params }) => {
-    const jobPostEntries = (await bcms.entry.getAll(
+const JobPostPage: React.FC<Props> = async (props) => {
+    const params = await props.params;
+    const jobPostEntries = (await bcmsPrivate.entry.getAll(
         'job-post',
     )) as JobPostEntry[];
 
@@ -70,7 +73,7 @@ const JobPostPage: React.FC<Props> = async ({ params }) => {
             <div className="relative mt-6 mb-10 lg:mt-0 lg:mb-[72px]">
                 <BCMSImage
                     media={jobPostEntryMeta.cover_image}
-                    clientConfig={bcms.getConfig()}
+                    clientConfig={bcmsPublic.getConfig()}
                     className="w-full aspect-[2.76] object-cover lg:aspect-[3.71]"
                 />
                 <div className="absolute top-0 left-0 w-full h-full bg-black/20" />
@@ -78,7 +81,7 @@ const JobPostPage: React.FC<Props> = async ({ params }) => {
             <Details
                 meta={jobPostEntryMeta}
                 jobs={jobPostEntries.map((e) => toJobLite(e))}
-                bcmsConfig={bcms.getConfig()}
+                bcmsConfig={bcmsPublic.getConfig()}
             />
         </div>
     );

@@ -1,4 +1,11 @@
-import { FC, ChangeEvent, KeyboardEvent, useState, useEffect } from 'react';
+import {
+    FC,
+    ChangeEvent,
+    KeyboardEvent,
+    useState,
+    useEffect,
+    type JSX,
+} from 'react';
 import SearchIcon from '@/assets/icons/search.svg';
 import classNames from 'classnames';
 
