@@ -105,6 +105,7 @@ export const Footer: React.FC = () => {
                         <span className="leading-none tracking-[-0.41px] text-gray-700">
                             Powered by
                         </span>
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                             src="/logo-dark.png"
                             alt="BCMS"

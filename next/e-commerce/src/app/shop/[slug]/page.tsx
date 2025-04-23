@@ -1,19 +1,22 @@
 import React from 'react';
-import { ProductEntry, ProductEntryMetaItem } from '../../../../bcms/types/ts';
-import { bcms } from '@/app/bcms-client';
+import { ProductEntry, ProductEntryMetaItem } from '@bcms-types/types/ts';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { Main } from './components/Main';
 import { productToLite } from '@/utils/product';
+import { bcmsPrivate } from '@/app/bcms-private';
+import { bcmsPublic } from '@/app/bcms-public';
 
 type Props = {
-    params: {
+    params: Promise<{
         slug: string;
-    };
+    }>;
 };
 
 export async function generateStaticParams() {
-    const products = (await bcms.entry.getAll('product')) as ProductEntry[];
+    const products = (await bcmsPrivate.entry.getAll(
+        'product',
+    )) as ProductEntry[];
 
     return products.map((product) => {
         const meta = product.meta.en as ProductEntryMetaItem;
@@ -23,8 +26,11 @@ export async function generateStaticParams() {
     });
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const products = (await bcms.entry.getAll('product')) as ProductEntry[];
+export async function generateMetadata(props: Props): Promise<Metadata> {
+    const params = await props.params;
+    const products = (await bcmsPrivate.entry.getAll(
+        'product',
+    )) as ProductEntry[];
     const product = products.find((e) => e.meta.en?.slug === params.slug);
 
     if (!product) {
@@ -45,8 +51,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
 }
 
-const ProductPage: React.FC<Props> = async ({ params }) => {
-    const products = (await bcms.entry.getAll('product')) as ProductEntry[];
+const ProductPage: React.FC<Props> = async (props) => {
+    const params = await props.params;
+    const products = (await bcmsPrivate.entry.getAll(
+        'product',
+    )) as ProductEntry[];
     const meta = products.find((e) => e.meta.en?.slug === params.slug)?.meta
         .en as ProductEntryMetaItem;
 
@@ -60,7 +69,7 @@ const ProductPage: React.FC<Props> = async ({ params }) => {
                         .map((e) => productToLite(e))
                         .sort((a, b) => b.date - a.date)
                         .slice(0, 4)}
-                    bcms={bcms.getConfig()}
+                    bcms={bcmsPublic.getConfig()}
                 />
             </div>
         </div>

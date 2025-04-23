@@ -1,23 +1,24 @@
 import React from 'react';
 import Link from 'next/link';
-import { BlogEntry, BlogEntryMetaItem } from '../../../../bcms/types/ts';
+import { BlogEntry, BlogEntryMetaItem } from '@bcms-types/types/ts';
 import { EntryContentParsedItem } from '@thebcms/types';
-import { bcms } from '@/app/bcms-client';
 import { notFound } from 'next/navigation';
 import { BCMSImage } from '@thebcms/components-react';
 import { Metadata } from 'next';
 import { ContentManager } from '@/components/ContentManager';
 import Card from '../components/Card';
 import './style.scss';
+import { bcmsPrivate } from '@/app/bcms-private';
+import { bcmsPublic } from '@/app/bcms-public';
 
 type Props = {
-    params: {
+    params: Promise<{
         slug: string;
-    };
+    }>;
 };
 
 export async function generateStaticParams() {
-    const blogs = (await bcms.entry.getAll('blog')) as BlogEntry[];
+    const blogs = (await bcmsPrivate.entry.getAll('blog')) as BlogEntry[];
 
     return blogs.map((blog) => {
         const meta = blog.meta.en as BlogEntryMetaItem;
@@ -27,8 +28,9 @@ export async function generateStaticParams() {
     });
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const blogs = (await bcms.entry.getAll('blog')) as BlogEntry[];
+export async function generateMetadata(props: Props): Promise<Metadata> {
+    const params = await props.params;
+    const blogs = (await bcmsPrivate.entry.getAll('blog')) as BlogEntry[];
     const blog = blogs.find((e) => e.meta.en?.slug === params.slug);
 
     if (!blog) {
@@ -49,8 +51,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
 }
 
-const BlogPage: React.FC<Props> = async ({ params }) => {
-    const blogs = (await bcms.entry.getAll('blog')) as BlogEntry[];
+const BlogPage: React.FC<Props> = async (props) => {
+    const params = await props.params;
+    const blogs = (await bcmsPrivate.entry.getAll('blog')) as BlogEntry[];
     const blog = blogs.find((e) => e.meta.en?.slug === params.slug);
 
     if (!blog) {
@@ -93,7 +96,7 @@ const BlogPage: React.FC<Props> = async ({ params }) => {
                     <div className="absolute top-0 left-0 size-full">
                         <BCMSImage
                             media={data.meta.media_image}
-                            clientConfig={bcms.getConfig()}
+                            clientConfig={bcmsPublic.getConfig()}
                             className="size-full object-cover"
                         />
                     </div>
@@ -117,7 +120,7 @@ const BlogPage: React.FC<Props> = async ({ params }) => {
                                     <Card
                                         key={index}
                                         card={e}
-                                        bcms={bcms.getConfig()}
+                                        bcms={bcmsPublic.getConfig()}
                                     />
                                 );
                             })}

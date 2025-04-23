@@ -1,8 +1,8 @@
 import React from 'react';
 import { Metadata } from 'next';
 import { LegalEntry } from '@bcms-types/types/ts';
-import { bcms } from '../bcms-client';
 import { ContentManager } from '@/components/ContentManager';
+import { bcmsPrivate } from '@/app/bcms-private';
 
 const pageTitle = 'Legal - Moda';
 export const metadata: Metadata = {
@@ -16,7 +16,9 @@ export const metadata: Metadata = {
 };
 
 const LegalPage: React.FC = async () => {
-    const legalEntries = (await bcms.entry.getAll('legal')) as LegalEntry[];
+    const legalEntries = (await bcmsPrivate.entry.getAll(
+        'legal',
+    )) as LegalEntry[];
 
     return (
         <div>

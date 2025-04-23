@@ -1,6 +1,5 @@
 import React from 'react';
 import { Metadata } from 'next';
-import { bcms } from './bcms-client';
 import {
     HomeEntry,
     HomeEntryMetaItem,
@@ -15,6 +14,8 @@ import { HomeCategories } from './components/Categories';
 import { HomeCta } from './components/Cta';
 import { productToLite } from '@/utils/product';
 import { HomeProducts } from './components/Products';
+import { bcmsPrivate } from '@/app/bcms-private';
+import { bcmsPublic } from '@/app/bcms-public';
 
 const pageTitle = 'Moda - Moda';
 export const metadata: Metadata = {
@@ -28,17 +29,21 @@ export const metadata: Metadata = {
 };
 
 const HomePage: React.FC = async () => {
-    const home = (await bcms.entry.getById('home', 'home')) as HomeEntry;
+    const home = (await bcmsPrivate.entry.getById('home', 'home')) as HomeEntry;
 
     if (!home) {
         return notFound();
     }
 
     const homeMeta = home.meta.en as HomeEntryMetaItem;
-    const products = (await bcms.entry.getAll('product')) as ProductEntry[];
+    const products = (await bcmsPrivate.entry.getAll(
+        'product',
+    )) as ProductEntry[];
     const productsLite = products.map((e) => productToLite(e));
     const categories = (
-        (await bcms.entry.getAll('product-category')) as ProductCategoryEntry[]
+        (await bcmsPrivate.entry.getAll(
+            'product-category',
+        )) as ProductCategoryEntry[]
     ).map((e) => {
         return {
             meta: e.meta.en as ProductCategoryEntryMetaItem,
@@ -72,7 +77,6 @@ const HomePage: React.FC = async () => {
             return acc;
         }, [] as ProductGenderEntryMetaItem[]),
     };
-    const bcmsConfig = bcms.getConfig();
 
     return (
         <div>
@@ -80,12 +84,12 @@ const HomePage: React.FC = async () => {
                 title={homeMeta.hero_title}
                 description={homeMeta.hero_description}
                 image={homeMeta.hero_cover_image}
-                bcms={bcmsConfig}
+                bcms={bcmsPublic.getConfig()}
             />
             <HomeCategories
                 data={categories.slice(0, 6)}
                 ctaTheme="dark-green"
-                bcms={bcmsConfig}
+                bcms={bcmsPublic.getConfig()}
             />
             <HomeCta
                 title={homeMeta.cta_title}
@@ -95,17 +99,17 @@ const HomePage: React.FC = async () => {
                     label: homeMeta.cta_label,
                     href: homeMeta.cta_link,
                 }}
-                bcms={bcmsConfig}
+                bcms={bcmsPublic.getConfig()}
             />
             <HomeCategories
                 data={categories.slice(6, 12)}
                 ctaTheme="orange"
-                bcms={bcmsConfig}
+                bcms={bcmsPublic.getConfig()}
             />
             <HomeProducts
                 products={productsLite}
                 filters={filters}
-                bcms={bcmsConfig}
+                bcms={bcmsPublic.getConfig()}
             />
         </div>
     );

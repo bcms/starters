@@ -1,5 +1,4 @@
 import React from 'react';
-import { bcms } from '@/app/bcms-client';
 import {
     ProductBrandEntryMetaItem,
     ProductCategoryEntry,
@@ -10,6 +9,8 @@ import {
 import { Metadata } from 'next';
 import { productToLite } from '@/utils/product';
 import { Main } from './components/Main';
+import { bcmsPrivate } from '@/app/bcms-private';
+import { bcmsPublic } from '@/app/bcms-public';
 
 const pageTitle = 'Products - Moda';
 export const metadata: Metadata = {
@@ -23,7 +24,9 @@ export const metadata: Metadata = {
 };
 
 const ProductsPage: React.FC = async () => {
-    const products = (await bcms.entry.getAll('product')) as ProductEntry[];
+    const products = (await bcmsPrivate.entry.getAll(
+        'product',
+    )) as ProductEntry[];
 
     const data = {
         products: products.map((e) => productToLite(e)),
@@ -41,7 +44,7 @@ const ProductsPage: React.FC = async () => {
         brands: products
             .map((e) => e.meta.en?.brand.meta.en as ProductBrandEntryMetaItem)
             .filter((e, _, arr) => arr.find((i) => i.slug === e.slug) === e),
-        bcms: bcms.getConfig(),
+        bcms: bcmsPublic.getConfig(),
     };
 
     return (
