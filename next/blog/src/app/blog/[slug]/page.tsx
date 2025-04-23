@@ -1,26 +1,27 @@
 import React from 'react';
 import Link from 'next/link';
-import { BlogEntry, BlogEntryMetaItem } from '../../../../bcms/types/ts';
+import { BlogEntry, BlogEntryMetaItem } from '@bcms-types/types/ts';
 import { EntryContentParsedItem } from '@thebcms/types';
-import { bcms } from '@/app/bcms-client';
+import { bcmsPrivate } from '@/app/bcms-private';
 import { notFound } from 'next/navigation';
 import { toReadableDate } from '@/utils/date';
 import { BCMSImage } from '@thebcms/components-react';
 import { Metadata } from 'next';
 import { ContentManager } from '@/components/ContentManager';
 import ArrowIcon from '@/assets/icons/arrow.svg';
-import BlogCard from '@/components/blogs/Card';
 import { blogToLite } from '@/utils/blog';
 import { TopGradient } from '@/components/TopGradient';
+import { bcmsPublic } from '@/app/bcms-public';
+import { BlogCard } from '@/components/blogs/Card';
 
 type Props = {
-    params: {
+    params: Promise<{
         slug: string;
-    };
+    }>;
 };
 
 export async function generateStaticParams() {
-    const blogs = (await bcms.entry.getAll('blog')) as BlogEntry[];
+    const blogs = (await bcmsPrivate.entry.getAll('blog')) as BlogEntry[];
 
     return blogs.map((blog) => {
         const meta = blog.meta.en as BlogEntryMetaItem;
@@ -30,8 +31,12 @@ export async function generateStaticParams() {
     });
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const blog = (await bcms.entry.getBySlug(params.slug, 'blog')) as BlogEntry;
+export async function generateMetadata(props: Props): Promise<Metadata> {
+    const params = await props.params;
+    const blog = (await bcmsPrivate.entry.getBySlug(
+        params.slug,
+        'blog',
+    )) as BlogEntry;
 
     if (!blog) {
         return notFound();
@@ -51,8 +56,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
 }
 
-const BlogPage: React.FC<Props> = async ({ params }) => {
-    const blogEntries = (await bcms.entry.getAll('blog')) as BlogEntry[];
+const BlogPage: React.FC<Props> = async (props) => {
+    const params = await props.params;
+    const blogEntries = (await bcmsPrivate.entry.getAll('blog')) as BlogEntry[];
 
     const blogEntry = blogEntries.find((e) => e.meta.en?.slug === params.slug);
 
@@ -83,7 +89,7 @@ const BlogPage: React.FC<Props> = async ({ params }) => {
                         </div>
                         <BCMSImage
                             media={data.meta.cover_image}
-                            clientConfig={bcms.getConfig()}
+                            clientConfig={bcmsPublic.getConfig()}
                             className="aspect-[2.07] rounded-lg overflow-hidden w-full object-cover mb-6 md:mb-8 lg:aspect-[2.43]
                         lg:rounded-2xl lg:mb-12"
                         />
@@ -112,7 +118,7 @@ const BlogPage: React.FC<Props> = async ({ params }) => {
                                 <BlogCard
                                     key={index}
                                     blog={blog}
-                                    bcmsConfig={bcms.getConfig()}
+                                    bcmsConfig={bcmsPublic.getConfig()}
                                 />
                             ))}
                         </div>

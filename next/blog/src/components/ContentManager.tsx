@@ -7,7 +7,7 @@ import {
     BCMSWidgetComponents,
 } from '@thebcms/components-react';
 import { EntryContentParsedItem } from '@thebcms/types';
-import TextWithImageWidget from './widgets/TextWithImageComponent';
+import { TextWithImageWidget } from '@/components/widgets/TextWithImageComponent';
 
 interface Props {
     items: EntryContentParsedItem[];

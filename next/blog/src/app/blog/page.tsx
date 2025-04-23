@@ -1,5 +1,4 @@
 import React from 'react';
-import { bcms } from '@/app/bcms-client';
 import { notFound } from 'next/navigation';
 import {
     BlogEntry,
@@ -10,6 +9,8 @@ import { TopGradient } from '@/components/TopGradient';
 import List from './components/List';
 import { blogToLite } from '@/utils/blog';
 import { Metadata } from 'next';
+import { bcmsPrivate } from '@/app/bcms-private';
+import { bcmsPublic } from '@/app/bcms-public';
 
 const pageTitle = 'Happy reading for my amazing journey - Insightfull Ink';
 export const metadata: Metadata = {
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
 };
 
 const BlogsPage: React.FC = async () => {
-    const blogsPageEntry = (await bcms.entry.getBySlug(
+    const blogsPageEntry = (await bcmsPrivate.entry.getBySlug(
         'blog',
         'blogs-page',
     )) as BlogsPageEntry;
@@ -34,7 +35,7 @@ const BlogsPage: React.FC = async () => {
 
     const blogsPageMeta = blogsPageEntry.meta.en as BlogsPageEntryMetaItem;
 
-    const blogs = (await bcms.entry.getAll('blog')) as BlogEntry[];
+    const blogs = (await bcmsPrivate.entry.getAll('blog')) as BlogEntry[];
 
     const blogsLite = blogs.map((blog) => blogToLite(blog));
 
@@ -55,7 +56,7 @@ const BlogsPage: React.FC = async () => {
                 </div>
                 <TopGradient />
             </div>
-            <List blogs={blogsLite} bcmsConfig={bcms.getConfig()} />
+            <List blogs={blogsLite} bcmsConfig={bcmsPublic.getConfig()} />
         </div>
     );
 };

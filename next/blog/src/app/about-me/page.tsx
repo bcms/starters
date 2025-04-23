@@ -2,11 +2,12 @@ import React from 'react';
 import { Metadata } from 'next';
 import { AboutPageEntry, AboutPageEntryMetaItem } from '@bcms-types/types/ts';
 import { notFound } from 'next/navigation';
-import { bcms } from '../bcms-client';
 import { TopGradient } from '@/components/TopGradient';
 import { ContentManager } from '@/components/ContentManager';
 import { BCMSImage } from '@thebcms/components-react';
 import { EntryContentParsedItem } from '@thebcms/types';
+import { bcmsPrivate } from '@/app/bcms-private';
+import { bcmsPublic } from '@/app/bcms-public';
 
 const pageTitle = 'Me, Myself, and My World - Insightfull Ink';
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 const AboutPage: React.FC = async () => {
-    const aboutPageEntry = (await bcms.entry.getBySlug(
+    const aboutPageEntry = (await bcmsPrivate.entry.getBySlug(
         'about',
         'about-page',
     )) as AboutPageEntry;
@@ -49,7 +50,7 @@ const AboutPage: React.FC = async () => {
                     <div className="relative aspect-[2.07] rounded-lg overflow-hidden mb-6 lg:aspect-[2.43] lg:rounded-2xl lg:mb-8">
                         <BCMSImage
                             media={aboutPageMeta.cover_image}
-                            clientConfig={bcms.getConfig()}
+                            clientConfig={bcmsPublic.getConfig()}
                             className="w-full h-full bg-cover"
                         />
                         <div className="absolute top-0 left-0 w-full h-full bg-black/50" />

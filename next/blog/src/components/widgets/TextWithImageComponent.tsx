@@ -1,15 +1,15 @@
-import { bcms } from '@/app/bcms-client';
 import { ContentManager } from '@/components/ContentManager';
 import { TextWithImageWidget as TextWithImageWidgetType } from '@bcms-types/types/ts';
 import { BCMSImage } from '@thebcms/components-react';
 import './_text-with-image.scss';
 import React, { FC, useMemo } from 'react';
+import { bcmsPublic } from '@/app/bcms-public';
 
 interface Props {
     data: TextWithImageWidgetType;
 }
 
-const TextWithImageWidget: FC<Props> = ({ data }) => {
+export const TextWithImageWidget: FC<Props> = ({ data }) => {
     const hasText = useMemo(() => {
         return data.text?.nodes.length ?? 0;
     }, []);
@@ -38,7 +38,7 @@ const TextWithImageWidget: FC<Props> = ({ data }) => {
                 >
                     <BCMSImage
                         media={data.image}
-                        clientConfig={bcms.getConfig()}
+                        clientConfig={bcmsPublic.getConfig()}
                         className={`size-full object-cover`}
                     />
                 </div>
@@ -46,5 +46,3 @@ const TextWithImageWidget: FC<Props> = ({ data }) => {
         </div>
     );
 };
-
-export default TextWithImageWidget;

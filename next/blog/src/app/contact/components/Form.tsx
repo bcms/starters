@@ -12,7 +12,7 @@ export interface ContactFormFields {
 
 export type ContactFormFieldName = keyof ContactFormFields;
 
-const Form: FC = () => {
+export const Form: FC = () => {
     const [form, setForm] = useState<ContactFormFields>({
         name: '',
         email: '',
@@ -90,5 +90,3 @@ const Form: FC = () => {
         </section>
     );
 };
-
-export default Form;

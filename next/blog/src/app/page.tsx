@@ -5,13 +5,14 @@ import {
     HomePageEntry,
     HomePageEntryMetaItem,
 } from '@bcms-types/types/ts';
-import { bcms } from './bcms-client';
 import { notFound } from 'next/navigation';
 import HomeHero from '@/components/home-page/Hero';
 import { blogToLite } from '@/utils/blog';
 import ArrowIcon from '@/assets/icons/arrow.svg';
 import Link from 'next/link';
-import BlogCard from '@/components/blogs/Card';
+import { bcmsPrivate } from '@/app/bcms-private';
+import { bcmsPublic } from '@/app/bcms-public';
+import { BlogCard } from '@/components/blogs/Card';
 
 const pageTitle = 'A Fashionable Journey Around the World - Insightfull Ink';
 export const metadata: Metadata = {
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
 };
 
 const HomePage: React.FC = async () => {
-    const homePageEntry = (await bcms.entry.getBySlug(
+    const homePageEntry = (await bcmsPrivate.entry.getBySlug(
         'home',
         'home-page',
     )) as HomePageEntry;
@@ -34,7 +35,7 @@ const HomePage: React.FC = async () => {
         return notFound();
     }
     const homePageMeta = homePageEntry.meta.en as HomePageEntryMetaItem;
-    const blogs = (await bcms.entry.getAll('blog')) as BlogEntry[];
+    const blogs = (await bcmsPrivate.entry.getAll('blog')) as BlogEntry[];
 
     const liteBlogs = blogs.map((blog) => {
         return blogToLite(blog);
@@ -52,7 +53,7 @@ const HomePage: React.FC = async () => {
                 title={homePageMeta.hero_title}
                 subtitle={homePageMeta.hero_subtitle}
                 blogs={featuredLiteBlogs}
-                bcmsConfig={bcms.getConfig()}
+                bcmsConfig={bcmsPublic.getConfig()}
             />
             <section className="pb-8 md:pb-20 lg:pb-[104px]">
                 <div className="container">
@@ -74,7 +75,7 @@ const HomePage: React.FC = async () => {
                         {liteBlogs.map((blog, index) => (
                             <BlogCard
                                 key={index}
-                                bcmsConfig={bcms.getConfig()}
+                                bcmsConfig={bcmsPublic.getConfig()}
                                 blog={blog}
                             />
                         ))}

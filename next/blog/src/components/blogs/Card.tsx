@@ -12,7 +12,7 @@ interface Props {
     bcmsConfig: ClientConfig;
 }
 
-const BlogCard: FC<Props> = ({ blog, bcmsConfig }) => {
+export const BlogCard: FC<Props> = ({ blog, bcmsConfig }) => {
     return (
         <article>
             <Link href={`/blog/${blog.slug}`}>
@@ -40,5 +40,3 @@ const BlogCard: FC<Props> = ({ blog, bcmsConfig }) => {
         </article>
     );
 };
-
-export default BlogCard;

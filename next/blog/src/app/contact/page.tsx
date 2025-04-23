@@ -5,9 +5,9 @@ import {
     ContactPageEntryMetaItem,
 } from '@bcms-types/types/ts';
 import { notFound } from 'next/navigation';
-import { bcms } from '../bcms-client';
 import { TopGradient } from '@/components/TopGradient';
-import Form from './components/Form';
+import { bcmsPrivate } from '@/app/bcms-private';
+import { Form } from '@/app/contact/components/Form';
 
 const pageTitle = 'Feel free to reach out to me - Insightfull Ink';
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 const ContactPage: React.FC = async () => {
-    const contactPageEntry = (await bcms.entry.getBySlug(
+    const contactPageEntry = (await bcmsPrivate.entry.getBySlug(
         'contact',
         'contact-page',
     )) as ContactPageEntry;

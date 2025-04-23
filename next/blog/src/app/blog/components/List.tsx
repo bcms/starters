@@ -1,10 +1,10 @@
 'use client';
 
-import BlogCard from '@/components/blogs/Card';
 import { Search } from '@/components/Search';
 import { BlogLite } from '@/utils/blog';
 import { ClientConfig } from '@thebcms/client';
 import React, { FC, useMemo, useState } from 'react';
+import { BlogCard } from '@/components/blogs/Card';
 
 interface Props {
     blogs: BlogLite[];
