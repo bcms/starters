@@ -1,6 +1,6 @@
 import { Client } from '@thebcms/client';
 
-export const bcms = new Client(
+export const bcmsPrivate = new Client(
     process.env.BCMS_ORG_ID || '',
     process.env.BCMS_INSTANCE_ID || '',
     {

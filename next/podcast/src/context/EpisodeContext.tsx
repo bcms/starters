@@ -2,11 +2,12 @@
 
 import React, {
     createContext,
+    type JSX,
     PropsWithChildren,
     useContext,
     useState,
 } from 'react';
-import { EpisodeEntryMetaItem } from '../../bcms/types/ts';
+import { EpisodeEntryMetaItem } from '@bcms-types/types/ts';
 import { ClientConfig } from '@thebcms/client';
 
 interface EpisodeContextI {

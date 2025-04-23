@@ -2,6 +2,7 @@
 
 import React, {
     createContext,
+    JSX,
     MouseEvent,
     PropsWithChildren,
     useCallback,
@@ -10,9 +11,9 @@ import React, {
     useRef,
     useState,
 } from 'react';
-import { EpisodeEntryMetaItem } from '../../bcms/types/ts';
+import { EpisodeEntryMetaItem } from '@bcms-types/types/ts';
 import { useEpisodes } from './EpisodeContext';
-import { audioUtil } from '../utils/audio';
+import { audioUtil } from '@/utils/audio';
 
 interface PlayerContextValue {
     episode: EpisodeEntryMetaItem | undefined;
@@ -65,7 +66,7 @@ export function PlayerProvider(
         undefined,
     );
 
-    const oldEpisodeSlugRef = useRef<string | undefined>();
+    const oldEpisodeSlugRef = useRef<string | undefined>(undefined);
 
     const getFileLength = useCallback((el: HTMLAudioElement) => {
         const durationInSeconds = +el.duration.toFixed(0);

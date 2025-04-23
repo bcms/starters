@@ -1,19 +1,22 @@
 import React from 'react';
-import { bcms } from '@/app/bcms-client';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import PageWrapper from '@/components/PageWrapper';
 import { EpisodeEntry, EpisodeEntryMetaItem } from '@bcms-types/types/ts';
 import Content from './components/Content';
+import { bcmsPublic } from '@/app/bcms-public';
+import { bcmsPrivate } from '@/app/bcms-private';
 
 type Props = {
-    params: {
+    params: Promise<{
         slug: string;
-    };
+    }>;
 };
 
 export async function generateStaticParams() {
-    const episodes = (await bcms.entry.getAll('episode')) as EpisodeEntry[];
+    const episodes = (await bcmsPrivate.entry.getAll(
+        'episode',
+    )) as EpisodeEntry[];
     const episodesMeta = episodes.map(
         (episode) => episode.meta.en as EpisodeEntryMetaItem,
     );
@@ -25,8 +28,9 @@ export async function generateStaticParams() {
     });
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const episode = (await bcms.entry.getBySlug(
+export async function generateMetadata(props: Props): Promise<Metadata> {
+    const params = await props.params;
+    const episode = (await bcmsPrivate.entry.getBySlug(
         params.slug,
         'episode',
     )) as EpisodeEntry;
@@ -49,8 +53,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
 }
 
-const EpisodePage: React.FC<Props> = async ({ params }) => {
-    const episodes = (await bcms.entry.getAll('episode')) as EpisodeEntry[];
+const EpisodePage: React.FC<Props> = async (props) => {
+    const params = await props.params;
+    const episodes = (await bcmsPrivate.entry.getAll(
+        'episode',
+    )) as EpisodeEntry[];
 
     const episodesMeta = episodes.map(
         (episode) => episode.meta.en as EpisodeEntryMetaItem,
@@ -64,8 +71,8 @@ const EpisodePage: React.FC<Props> = async ({ params }) => {
     }
 
     return (
-        <PageWrapper bcms={bcms.getConfig()} episodes={episodesMeta}>
-            <Content bcms={bcms.getConfig()} meta={episode} />
+        <PageWrapper bcms={bcmsPublic.getConfig()} episodes={episodesMeta}>
+            <Content bcms={bcmsPublic.getConfig()} meta={episode} />
         </PageWrapper>
     );
 };

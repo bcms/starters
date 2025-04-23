@@ -6,8 +6,12 @@ const nextConfig = {
             test: /\.svg$/,
             use: ['@svgr/webpack'],
         });
-
         return config;
+    },
+    turbopack: {
+        rules: {
+            '*.svg': { loaders: ['@svgr/webpack'], as: '*.js' },
+        },
     },
 };
 
