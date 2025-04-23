@@ -1,5 +1,4 @@
 ---
-import { bcms } from '../bcms-client';
 import type {
     LegalPageEntry,
     LegalPageEntryMetaItem,
@@ -7,8 +6,9 @@ import type {
 
 import Layout from '../layouts/Layout.astro';
 import ContentManager from '../components/ContentManager';
+import { bcmsPrivate } from '../bcms-private';
 
-const legalPageEntry = (await bcms.entry.getBySlug(
+const legalPageEntry = (await bcmsPrivate.entry.getBySlug(
     'legal',
     'legal-page',
 )) as LegalPageEntry;

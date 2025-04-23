@@ -1,5 +1,4 @@
 ---
-import { bcms } from '../bcms-client';
 import type {
     TeamMemberEntry,
     TeamPageEntry,
@@ -10,17 +9,17 @@ import Layout from '../layouts/Layout.astro';
 import ContactBlock from '../components/ContactBlock';
 import Hero from '../components/Hero';
 import List from '../components/team-page/List';
+import { bcmsPrivate } from '../bcms-private';
+import { bcmsPublic } from '../bcms-public';
 
-const teamPageEntry = (await bcms.entry.getBySlug(
+const teamPageEntry = (await bcmsPrivate.entry.getBySlug(
     'team',
     'team-page',
 )) as TeamPageEntry;
 const teamPageMeta = teamPageEntry.meta.en as TeamPageEntryMetaItem;
-const teamMembersEntries = (await bcms.entry.getAll(
+const teamMembersEntries = (await bcmsPrivate.entry.getAll(
     'team-member',
 )) as TeamMemberEntry[];
-
-const bcmsConfig = bcms.getConfig();
 ---
 
 <Layout
@@ -32,7 +31,7 @@ const bcmsConfig = bcms.getConfig();
             subtitle="Team"
             description={teamPageMeta.description}
         />
-        <List items={teamMembersEntries} bcmsConfig={bcmsConfig} client:load />
+        <List items={teamMembersEntries} bcmsConfig={bcmsPublic.getConfig()} client:load />
         <ContactBlock
             title={teamPageMeta.contact_title}
             description={teamPageMeta.contact_description}

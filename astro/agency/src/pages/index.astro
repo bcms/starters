@@ -1,5 +1,4 @@
 ---
-import { bcms } from '../bcms-client';
 import type {
     HomePageEntry,
     HomePageEntryMetaItem,
@@ -15,14 +14,14 @@ import ContactBlock from '../components/ContactBlock';
 import HomeTeam from '../components/home-page/Team';
 import HomeCapabilities from '../components/home-page/Capabilities';
 import HomeServices from '../components/home-page/Services';
+import { bcmsPrivate } from '../bcms-private';
+import { bcmsPublic } from '../bcms-public';
 
-const homePageEntry = (await bcms.entry.getBySlug(
+const homePageEntry = (await bcmsPrivate.entry.getBySlug(
     'home',
     'home-page',
 )) as HomePageEntry;
 const homePageMeta = homePageEntry.meta.en as HomePageEntryMetaItem;
-
-const bcmsConfig = bcms.getConfig();
 ---
 
 <Layout title={`${homePageMeta.title} - BrandCrafters`}>
@@ -30,7 +29,7 @@ const bcmsConfig = bcms.getConfig();
         <HomeHero
             title={homePageMeta.hero_title}
             gallery={homePageMeta.hero_gallery_image}
-            bcmsConfig={bcmsConfig}
+            bcmsConfig={bcmsPublic.getConfig()}
             client:load
         />
         <HomeAbout
@@ -38,7 +37,7 @@ const bcmsConfig = bcms.getConfig();
             subtitle={homePageMeta.about_subtitle}
             description={homePageMeta.about_description}
             cover={homePageMeta.about_cover_image}
-            bcmsConfig={bcmsConfig}
+            bcmsConfig={bcmsPublic.getConfig()}
             client:load
         />
         <HomeServices
@@ -46,7 +45,7 @@ const bcmsConfig = bcms.getConfig();
             subtitle={homePageMeta.services_subtitle}
             cover={homePageMeta.services_cover_image}
             description={homePageMeta.services_description}
-            bcmsConfig={bcmsConfig}
+            bcmsConfig={bcmsPublic.getConfig()}
             client:load
         />
         <HomeCapabilities
@@ -56,7 +55,7 @@ const bcmsConfig = bcms.getConfig();
             portfolio_items={homePageMeta.capabilities_portfolio_items.map(
                 (e) => e.meta.en as PortfolioEntryMetaItem,
             )}
-            bcmsConfig={bcmsConfig}
+            bcmsConfig={bcmsPublic.getConfig()}
             client:load
         />
         <HomeTeam
@@ -69,7 +68,7 @@ const bcmsConfig = bcms.getConfig();
             members={homePageMeta.team_members.map(
                 (e) => e.meta.en as TeamMemberEntryMetaItem,
             )}
-            bcmsConfigs={bcmsConfig}
+            bcmsConfigs={bcmsPublic.getConfig()}
             client:load
         />
         <ContactBlock

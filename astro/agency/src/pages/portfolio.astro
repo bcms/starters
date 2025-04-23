@@ -1,5 +1,4 @@
 ---
-import { bcms } from '../bcms-client';
 import type {
     PortfolioEntry,
     PortfolioPageEntry,
@@ -10,18 +9,18 @@ import Layout from '../layouts/Layout.astro';
 import ContactBlock from '../components/ContactBlock';
 import Hero from '../components/Hero';
 import List from '../components/portfolio-page/List';
+import { bcmsPrivate } from '../bcms-private';
+import { bcmsPublic } from '../bcms-public';
 
-const portfolioPageEntry = (await bcms.entry.getBySlug(
+const portfolioPageEntry = (await bcmsPrivate.entry.getBySlug(
     'portfolio',
     'portfolio-page',
 )) as PortfolioPageEntry;
 const portfolioPageMeta = portfolioPageEntry.meta
     .en as PortfolioPageEntryMetaItem;
-const portfolioEntries = (await bcms.entry.getAll(
+const portfolioEntries = (await bcmsPrivate.entry.getAll(
     'portfolio',
 )) as PortfolioEntry[];
-
-const bcmsConfig = bcms.getConfig();
 ---
 
 <Layout
@@ -34,7 +33,7 @@ const bcmsConfig = bcms.getConfig();
             description={portfolioPageMeta.description}
             client:load
         />
-        <List items={portfolioEntries} bcmsConfig={bcmsConfig} client:load />
+        <List items={portfolioEntries} bcmsConfig={bcmsPublic.getConfig()} client:load />
         <ContactBlock
             title={portfolioPageMeta.contact_title}
             description={portfolioPageMeta.contact_description}
