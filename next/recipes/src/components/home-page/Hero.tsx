@@ -3,10 +3,10 @@ import ContentManager from '@/components/ContentManager';
 import Btn from '@/components/Btn';
 import ArrowIcon from '@/assets/icons/arrow-right.svg';
 import { BCMSImage } from '@thebcms/components-react';
-import { bcms } from '@/bcms-client';
 import { RecipeLight } from '@/types';
 import { PropMediaDataParsed, PropRichTextDataParsed } from '@thebcms/types';
 import RecipesSearchBar from '../recipes/Search';
+import { bcmsPublic } from '@/bcms-public';
 
 interface Props {
     headline: PropRichTextDataParsed;
@@ -50,7 +50,7 @@ const HomePageHero: React.FC<Props> = ({
             <div className="absolute top-0 left-0 size-full">
                 <BCMSImage
                     media={coverImage}
-                    clientConfig={bcms.getConfig()}
+                    clientConfig={bcmsPublic.getConfig()}
                     className="size-full object-cover position-top"
                 />
                 <div className="absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-t from-[#1E1E1E] to-[#1E1E1E]/0" />

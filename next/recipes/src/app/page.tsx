@@ -1,4 +1,3 @@
-import { bcms } from '@/bcms-client';
 import HomePageAboutUs from '@/components/home-page/AboutUs';
 import HomePageHero from '@/components/home-page/Hero';
 import HomePageLetsTalk from '@/components/home-page/LetsTalk';
@@ -11,9 +10,11 @@ import {
 } from '@bcms-types/types/ts';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { bcmsPrivate } from '@/bcms-private';
+import { bcmsPublic } from '@/bcms-public';
 
 export async function generateMetadata(): Promise<Metadata> {
-    const homePageEntry = (await bcms.entry.getBySlug(
+    const homePageEntry = (await bcmsPrivate.entry.getBySlug(
         'home',
         'home-page',
     )) as HomePageEntry;
@@ -37,7 +38,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const HomePage: React.FC = async () => {
-    const homePageEntry = (await bcms.entry.getBySlug(
+    const homePageEntry = (await bcmsPrivate.entry.getBySlug(
         'home',
         'home-page',
     )) as HomePageEntry;
@@ -48,7 +49,9 @@ const HomePage: React.FC = async () => {
 
     const homePageMeta = homePageEntry.meta.en as HomePageEntryMetaItem;
 
-    const recipeEntries = (await bcms.entry.getAll('recipe')) as RecipeEntry[];
+    const recipeEntries = (await bcmsPrivate.entry.getAll(
+        'recipe',
+    )) as RecipeEntry[];
 
     const lightRecipes = recipeEntries.map((e) => {
         return recipeToLight(e);
@@ -63,7 +66,7 @@ const HomePage: React.FC = async () => {
                 recipes={lightRecipes}
             />
             <HomePageRecipes
-                bcmsConfig={bcms.getConfig()}
+                bcmsConfig={bcmsPublic.getConfig()}
                 title={homePageMeta.recipes_title}
                 recipes={homePageMeta.recipes}
             />

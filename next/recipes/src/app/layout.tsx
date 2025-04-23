@@ -2,7 +2,6 @@ import { PropsWithChildren } from 'react';
 import '@/styles/_main.scss';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import { bcms } from '@/bcms-client';
 import {
     FooterEntry,
     FooterEntryMetaItem,
@@ -12,6 +11,7 @@ import {
 import { notFound } from 'next/navigation';
 import { Inter } from 'next/font/google';
 import { Metadata } from 'next';
+import { bcmsPrivate } from '@/bcms-private';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
 };
 
 const RootLayout: React.FC<PropsWithChildren> = async ({ children }) => {
-    const headerEntry = (await bcms.entry.getBySlug(
+    const headerEntry = (await bcmsPrivate.entry.getBySlug(
         'header',
         'header',
     )) as HeaderEntry;
@@ -56,7 +56,7 @@ const RootLayout: React.FC<PropsWithChildren> = async ({ children }) => {
 
     const header = headerEntry.meta.en as HeaderEntryMetaItem;
 
-    const footerEntry = (await bcms.entry.getBySlug(
+    const footerEntry = (await bcmsPrivate.entry.getBySlug(
         'footer',
         'footer',
     )) as FooterEntry;

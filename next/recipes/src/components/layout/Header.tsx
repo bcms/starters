@@ -6,9 +6,9 @@ import XIcon from '@/assets/icons/nav/x.svg';
 import Link from 'next/link';
 import classNames from 'classnames';
 import { HeaderEntryMetaItem } from '@bcms-types/types/ts';
-import { bcms } from '@/bcms-client';
 import { BCMSImage } from '@thebcms/components-react';
 import { usePathname } from 'next/navigation';
+import { bcmsPublic } from '@/bcms-public';
 
 interface Props {
     header: HeaderEntryMetaItem;
@@ -52,7 +52,7 @@ const Header: React.FC<Props> = ({ header }) => {
                             >
                                 <BCMSImage
                                     media={header.logo}
-                                    clientConfig={bcms.getConfig()}
+                                    clientConfig={bcmsPublic.getConfig()}
                                     className={classNames(
                                         'w-full md:grayscale md:brightness-0 md:invert',
                                         {

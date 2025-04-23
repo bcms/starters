@@ -1,7 +1,7 @@
-import { bcms } from '@/bcms-client';
 import ContentManager from '@/components/ContentManager';
 import { LegalPageEntry } from '@bcms-types/types/ts';
 import { Metadata } from 'next';
+import { bcmsPrivate } from '@/bcms-private';
 
 const updatedDate = (val: number) => {
     const date = new Date(val);
@@ -30,7 +30,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const LegalPage: React.FC = async () => {
-    const legalPageEntries = (await bcms.entry.getAll(
+    const legalPageEntries = (await bcmsPrivate.entry.getAll(
         'legal-page',
     )) as LegalPageEntry[];
 

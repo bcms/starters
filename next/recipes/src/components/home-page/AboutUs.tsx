@@ -2,7 +2,7 @@ import React from 'react';
 import ContentManager from '@/components/ContentManager';
 import { HomeAboutUsGroup } from '@bcms-types/types/ts';
 import { BCMSImage } from '@thebcms/components-react';
-import { bcms } from '@/bcms-client';
+import { bcmsPublic } from '@/bcms-public';
 
 interface Props {
     data: HomeAboutUsGroup;
@@ -40,7 +40,7 @@ const HomePageAboutUs: React.FC<Props> = ({ data }) => {
                     <div className="absolute top-0 left-0 size-full">
                         <BCMSImage
                             media={data.cover_image}
-                            clientConfig={bcms.getConfig()}
+                            clientConfig={bcmsPublic.getConfig()}
                             className=" size-full object-cover"
                         />
                     </div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { recipeToLight } from '@/utils/recipe';
 import ContentManager from '@/components/ContentManager';
-import { bcms } from '@/bcms-client';
 import { RecipeEntry, RecipeEntryMetaItem } from '@bcms-types/types/ts';
 import { notFound } from 'next/navigation';
 import { BCMSImage } from '@thebcms/components-react';
@@ -12,15 +11,19 @@ import { Steps } from './components/Steps';
 import Link from 'next/link';
 import RecipesCard from '@/components/recipes/Card';
 import { Metadata } from 'next';
+import { bcmsPrivate } from '@/bcms-private';
+import { bcmsPublic } from '@/bcms-public';
 
 type Props = {
-    params: {
+    params: Promise<{
         slug: string;
-    };
+    }>;
 };
 
 export async function generateStaticParams() {
-    const recipeEntries = (await bcms.entry.getAll('recipe')) as RecipeEntry[];
+    const recipeEntries = (await bcmsPrivate.entry.getAll(
+        'recipe',
+    )) as RecipeEntry[];
     return recipeEntries.map((recipe) => {
         const meta = recipe.meta.en as RecipeEntryMetaItem;
         return {
@@ -29,8 +32,9 @@ export async function generateStaticParams() {
     });
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const recipeEntry = (await bcms.entry.getBySlug(
+export async function generateMetadata(props: Props): Promise<Metadata> {
+    const params = await props.params;
+    const recipeEntry = (await bcmsPrivate.entry.getBySlug(
         params.slug,
         'recipe',
     )) as RecipeEntry;
@@ -53,8 +57,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
 }
 
-const RecipePage: React.FC<Props> = async ({ params }) => {
-    const recipeEntries = (await bcms.entry.getAll('recipe')) as RecipeEntry[];
+const RecipePage: React.FC<Props> = async (props) => {
+    const params = await props.params;
+    const recipeEntries = (await bcmsPrivate.entry.getAll(
+        'recipe',
+    )) as RecipeEntry[];
 
     const recipeEntry = recipeEntries.find(
         (e) => e.meta.en?.slug === params.slug,
@@ -109,7 +116,7 @@ const RecipePage: React.FC<Props> = async ({ params }) => {
                 {recipeEntryMeta.cover_image && (
                     <BCMSImage
                         media={recipeEntryMeta.cover_image}
-                        clientConfig={bcms.getConfig()}
+                        clientConfig={bcmsPrivate.getConfig()}
                         className="aspect-square rounded-2xl w-full overflow-hidden object-cover mb-5 md:aspect-[1.93] lg:mb-10"
                     />
                 )}
@@ -148,7 +155,7 @@ const RecipePage: React.FC<Props> = async ({ params }) => {
                 <Ingredients ingredients={recipeEntryMeta.ingredients} />
                 <Steps
                     steps={recipeEntryMeta.steps}
-                    bcmsConfig={bcms.getConfig()}
+                    bcmsConfig={bcmsPublic.getConfig()}
                 />
                 {similarRecipes.length > 0 && (
                     <div>
@@ -161,7 +168,7 @@ const RecipePage: React.FC<Props> = async ({ params }) => {
                                 <RecipesCard
                                     key={index}
                                     card={card}
-                                    bcmsConfig={bcms.getConfig()}
+                                    bcmsConfig={bcmsPublic.getConfig()}
                                     showTitleLayer={true}
                                 />
                             ))}
