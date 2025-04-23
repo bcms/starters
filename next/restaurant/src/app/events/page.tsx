@@ -1,4 +1,3 @@
-import { bcms } from '@/bcms-client';
 import 'swiper/css';
 import { EventsPageEntry, EventsPageEntryMetaItem } from '@bcms-types/types/ts';
 import { Metadata } from 'next';
@@ -6,9 +5,11 @@ import { notFound } from 'next/navigation';
 import ArchWithStar from '@/components/ArchWithStar';
 import ContentManager from '@/components/ContentManager';
 import { EventCard } from '@/components/events-page/EventCard';
+import { bcmsPrivate } from '@/bcms-private';
+import { bcmsPublic } from '@/bcms-public';
 
 export async function generateMetadata(): Promise<Metadata> {
-    const eventsPageEntry = (await bcms.entry.getBySlug(
+    const eventsPageEntry = (await bcmsPrivate.entry.getBySlug(
         'events',
         'events-page',
     )) as EventsPageEntry;
@@ -32,7 +33,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const EventsPage: React.FC = async () => {
-    const eventsPageEntry = (await bcms.entry.getBySlug(
+    const eventsPageEntry = (await bcmsPrivate.entry.getBySlug(
         'events',
         'events-page',
     )) as EventsPageEntry;
@@ -66,7 +67,7 @@ const EventsPage: React.FC = async () => {
                                 <EventCard
                                     key={index}
                                     card={item}
-                                    bcmsConfig={bcms.getConfig()}
+                                    bcmsConfig={bcmsPublic.getConfig()}
                                 />
                             ))}
                         </div>

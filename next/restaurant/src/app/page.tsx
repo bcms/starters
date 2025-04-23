@@ -1,4 +1,3 @@
-import { bcms } from '@/bcms-client';
 import HomeHero from '@/components/home-page/Hero';
 import HomeMenu from '@/components/home-page/Menu';
 import HomeSeasons from '@/components/home-page/Seasons';
@@ -15,9 +14,11 @@ import {
 } from '@bcms-types/types/ts';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { bcmsPrivate } from '@/bcms-private';
+import { bcmsPublic } from '@/bcms-public';
 
 export async function generateMetadata(): Promise<Metadata> {
-    const homePageEntry = (await bcms.entry.getBySlug(
+    const homePageEntry = (await bcmsPrivate.entry.getBySlug(
         'home',
         'home-page',
     )) as HomePageEntry;
@@ -41,7 +42,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const HomePage: React.FC = async () => {
-    const homePageEntry = (await bcms.entry.getBySlug(
+    const homePageEntry = (await bcmsPrivate.entry.getBySlug(
         'home',
         'home-page',
     )) as HomePageEntry;
@@ -52,7 +53,9 @@ const HomePage: React.FC = async () => {
 
     const homePageMeta = homePageEntry.meta.en as HomePageEntryMetaItem;
 
-    const foodItems = (await bcms.entry.getAll('food-item')) as FoodItemEntry[];
+    const foodItems = (await bcmsPrivate.entry.getAll(
+        'food-item',
+    )) as FoodItemEntry[];
 
     return (
         <div>
@@ -62,43 +65,43 @@ const HomePage: React.FC = async () => {
                 address={homePageMeta.hero_address}
                 map={homePageMeta.hero_map_image}
                 description={homePageMeta.description}
-                bcmsConfig={bcms.getConfig()}
+                bcmsConfig={bcmsPublic.getConfig()}
             />
             <HomeMenu
                 title={homePageMeta.menu_title}
                 description={homePageMeta.menu_description}
                 meals={homePageMeta.menu_meals}
-                bcmsConfig={bcms.getConfig()}
+                bcmsConfig={bcmsPublic.getConfig()}
             />
             <HomeSeasons
                 title={homePageMeta.seasons_title}
                 description={homePageMeta.seasons_description}
                 seasons={homePageMeta.seasons}
-                bcmsConfig={bcms.getConfig()}
+                bcmsConfig={bcmsPublic.getConfig()}
             />
             <HomeAmbience
                 title={homePageMeta.ambience_title}
                 description={homePageMeta.ambience_description}
                 items={homePageMeta.ambience_items}
-                bcmsConfig={bcms.getConfig()}
+                bcmsConfig={bcmsPublic.getConfig()}
             />
             <HomeSpecials
                 title={homePageMeta.specials_title}
                 description={homePageMeta.specials_description}
                 items={foodItems.map((e) => e.meta.en as FoodItemEntryMetaItem)}
-                bcmsConfig={bcms.getConfig()}
+                bcmsConfig={bcmsPublic.getConfig()}
             />
             <HomeEvents
                 title={homePageMeta.events_title}
                 description={homePageMeta.events_description}
                 events={homePageMeta.events}
-                bcmsConfig={bcms.getConfig()}
+                bcmsConfig={bcmsPublic.getConfig()}
             />
             <HomeTestimonials
                 title={homePageMeta.testimonials_title}
                 description={homePageMeta.testimonials_description}
                 testimonials={homePageMeta.testimonials}
-                bcmsConfig={bcms.getConfig()}
+                bcmsConfig={bcmsPublic.getConfig()}
             />
         </div>
     );

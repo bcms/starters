@@ -1,9 +1,9 @@
-import { bcms } from '@/bcms-client';
 import 'swiper/css';
 import { LegalPageEntry } from '@bcms-types/types/ts';
 import { Metadata } from 'next';
 import ArchWithStar from '@/components/ArchWithStar';
 import ContentManager from '@/components/ContentManager';
+import { bcmsPrivate } from '@/bcms-private';
 
 export async function generateMetadata(): Promise<Metadata> {
     const pageTitle = `Legal - Tastyyy`;
@@ -20,7 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const LegalPage: React.FC = async () => {
-    const legalEntries = (await bcms.entry.getAll(
+    const legalEntries = (await bcmsPrivate.entry.getAll(
         'legal-page',
     )) as LegalPageEntry[];
 

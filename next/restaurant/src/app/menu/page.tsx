@@ -1,4 +1,3 @@
-import { bcms } from '@/bcms-client';
 import 'swiper/css';
 import {
     FoodItemEntry,
@@ -12,9 +11,11 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import MenuMeals from '@/components/menu-page/Meals';
 import { Suspense } from 'react';
+import { bcmsPrivate } from '@/bcms-private';
+import { bcmsPublic } from '@/bcms-public';
 
 export async function generateMetadata(): Promise<Metadata> {
-    const menuPageEntries = (await bcms.entry.getBySlug(
+    const menuPageEntries = (await bcmsPrivate.entry.getBySlug(
         'menu',
         'menu-page',
     )) as MenuPageEntry;
@@ -38,7 +39,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const MenuPage: React.FC = async () => {
-    const menuPageEntries = (await bcms.entry.getBySlug(
+    const menuPageEntries = (await bcmsPrivate.entry.getBySlug(
         'menu',
         'menu-page',
     )) as MenuPageEntry;
@@ -50,10 +51,10 @@ const MenuPage: React.FC = async () => {
     const menuPageMeta = menuPageEntries.meta.en as MenuPageEntryMetaItem;
 
     const mealTypes = (
-        (await bcms.entry.getAll('meal-type')) as MealTypeEntry[]
+        (await bcmsPrivate.entry.getAll('meal-type')) as MealTypeEntry[]
     ).map((e) => e.meta.en as MealTypeEntryMetaItem);
     const foodItems = (
-        (await bcms.entry.getAll('food-item')) as FoodItemEntry[]
+        (await bcmsPrivate.entry.getAll('food-item')) as FoodItemEntry[]
     ).map((e) => e.meta.en as FoodItemEntryMetaItem);
 
     return (
@@ -63,7 +64,7 @@ const MenuPage: React.FC = async () => {
                     meta={menuPageMeta}
                     meals={mealTypes}
                     foodItems={foodItems}
-                    bcmsConfig={bcms.getConfig()}
+                    bcmsConfig={bcmsPublic.getConfig()}
                 />
             </Suspense>
         </div>

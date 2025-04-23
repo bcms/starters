@@ -1,4 +1,3 @@
-import { bcms } from '@/bcms-client';
 import 'swiper/css';
 import {
     FoodItemEntry,
@@ -9,6 +8,8 @@ import {
 import { Metadata } from 'next';
 import { Seasons } from '@/components/seasonal-menu-page/Seasons';
 import { Suspense } from 'react';
+import { bcmsPrivate } from '@/bcms-private';
+import { bcmsPublic } from '@/bcms-public';
 
 export async function generateMetadata(): Promise<Metadata> {
     const pageTitle = `Seasonal Menu - Tastyyy`;
@@ -25,12 +26,12 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const SeasonalMenuPage: React.FC = async () => {
-    const seasons = ((await bcms.entry.getAll('season')) as SeasonEntry[]).map(
-        (e) => e.meta.en as SeasonEntryMetaItem,
-    );
+    const seasons = (
+        (await bcmsPrivate.entry.getAll('season')) as SeasonEntry[]
+    ).map((e) => e.meta.en as SeasonEntryMetaItem);
 
     const foodItems = (
-        (await bcms.entry.getAll('food-item')) as FoodItemEntry[]
+        (await bcmsPrivate.entry.getAll('food-item')) as FoodItemEntry[]
     ).map((e) => e.meta.en as FoodItemEntryMetaItem);
 
     return (
@@ -39,7 +40,7 @@ const SeasonalMenuPage: React.FC = async () => {
                 <Seasons
                     seasons={seasons}
                     foodItems={foodItems}
-                    bcmsConfig={bcms.getConfig()}
+                    bcmsConfig={bcmsPublic.getConfig()}
                 />
             </Suspense>
         </div>

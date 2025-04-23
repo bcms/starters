@@ -1,4 +1,3 @@
-import { bcms } from '@/bcms-client';
 import 'swiper/css';
 import {
     ContactPageEntry,
@@ -10,9 +9,11 @@ import ArchWithStar from '@/components/ArchWithStar';
 import ContentManager from '@/components/ContentManager';
 import { BCMSImage } from '@thebcms/components-react';
 import Btn from '@/components/Btn';
+import { bcmsPrivate } from '@/bcms-private';
+import { bcmsPublic } from '@/bcms-public';
 
 export async function generateMetadata(): Promise<Metadata> {
-    const contactPageEntry = (await bcms.entry.getBySlug(
+    const contactPageEntry = (await bcmsPrivate.entry.getBySlug(
         'contact',
         'contact-page',
     )) as ContactPageEntry;
@@ -37,7 +38,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const ContactPage: React.FC = async () => {
-    const contactPageEntry = (await bcms.entry.getBySlug(
+    const contactPageEntry = (await bcmsPrivate.entry.getBySlug(
         'contact',
         'contact-page',
     )) as ContactPageEntry;
@@ -65,7 +66,7 @@ const ContactPage: React.FC = async () => {
                         <div className="bg-[#E5E4DA] rounded-2xl p-4 mb-8 lg:mb-10">
                             <BCMSImage
                                 media={contactPageMeta.map_image}
-                                clientConfig={bcms.getConfig()}
+                                clientConfig={bcmsPublic.getConfig()}
                                 className="w-full h-auto cover rounded-[10px] overflow-hidden pointer-events-auto"
                             />
                         </div>

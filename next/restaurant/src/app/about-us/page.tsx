@@ -1,13 +1,14 @@
-import { bcms } from '@/bcms-client';
 import 'swiper/css';
 import { AboutPageEntry, AboutPageEntryMetaItem } from '@bcms-types/types/ts';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import AboutHero from '@/components/about-page/Hero';
 import AboutTextImage from '@/components/about-page/TextImage';
+import { bcmsPrivate } from '@/bcms-private';
+import { bcmsPublic } from '@/bcms-public';
 
 export async function generateMetadata(): Promise<Metadata> {
-    const aboutPageEntry = (await bcms.entry.getBySlug(
+    const aboutPageEntry = (await bcmsPrivate.entry.getBySlug(
         'about-us',
         'about-page',
     )) as AboutPageEntry;
@@ -31,7 +32,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const AboutUsPage: React.FC = async () => {
-    const aboutPageEntry = (await bcms.entry.getBySlug(
+    const aboutPageEntry = (await bcmsPrivate.entry.getBySlug(
         'about-us',
         'about-page',
     )) as AboutPageEntry;
@@ -49,11 +50,11 @@ const AboutUsPage: React.FC = async () => {
                 subtitle={aboutPageMeta.hero_subtitle}
                 description={aboutPageMeta.hero_description}
                 cover={aboutPageMeta.hero_cover}
-                bcmsConfig={bcms.getConfig()}
+                bcmsConfig={bcmsPublic.getConfig()}
             />
             <AboutTextImage
                 data={aboutPageMeta.text_image_cols}
-                bcmsConfig={bcms.getConfig()}
+                bcmsConfig={bcmsPublic.getConfig()}
             />
         </div>
     );

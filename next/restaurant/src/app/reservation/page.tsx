@@ -1,4 +1,3 @@
-import { bcms } from '@/bcms-client';
 import 'swiper/css';
 import {
     ReservationPageEntry,
@@ -7,9 +6,10 @@ import {
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import ReservationForm from '@/components/reservation-page/Form';
+import { bcmsPrivate } from '@/bcms-private';
 
 export async function generateMetadata(): Promise<Metadata> {
-    const reservationPage = (await bcms.entry.getBySlug(
+    const reservationPage = (await bcmsPrivate.entry.getBySlug(
         'reservation',
         'reservation-page',
     )) as ReservationPageEntry;
@@ -34,7 +34,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const ReservationPage: React.FC = async () => {
-    const reservationPage = (await bcms.entry.getBySlug(
+    const reservationPage = (await bcmsPrivate.entry.getBySlug(
         'reservation',
         'reservation-page',
     )) as ReservationPageEntry;
