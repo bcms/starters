@@ -2,10 +2,11 @@ import React from 'react';
 import { Metadata } from 'next';
 import { AboutPageEntry, AboutPageEntryMetaItem } from '@bcms-types/types/ts';
 import AnimatedTitle from '@/components/AnimatedTitle';
-import { bcms } from '../bcms-client';
 import { notFound } from 'next/navigation';
 import ContentManager from '@/components/ContentManager';
 import { BCMSImage } from '@thebcms/components-react';
+import { bcmsPrivate } from '@/app/bcms-private';
+import { bcmsPublic } from '@/app/bcms-public';
 
 const pageTitle = 'Aboooout - Personal Website';
 export const metadata: Metadata = {
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
 };
 
 const AboutPage: React.FC = async () => {
-    const aboutPageEntry = (await bcms.entry.getBySlug(
+    const aboutPageEntry = (await bcmsPrivate.entry.getBySlug(
         'about',
         'about-page',
     )) as AboutPageEntry;
@@ -99,7 +100,7 @@ const AboutPage: React.FC = async () => {
             </div>
             <BCMSImage
                 media={aboutPageMeta.cover_image}
-                clientConfig={bcms.getConfig()}
+                clientConfig={bcmsPublic.getConfig()}
                 className="w-full object-cover aspect-[1.84] mb-10 lg:aspect-[2.59] lg:mb-20"
             />
             <div className="container">

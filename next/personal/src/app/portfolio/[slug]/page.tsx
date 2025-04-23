@@ -3,17 +3,18 @@ import { PortfolioEntry, PortfolioEntryMetaItem } from '@bcms-types/types/ts';
 import { notFound } from 'next/navigation';
 import { BCMSImage } from '@thebcms/components-react';
 import ContentManager from '@/components/ContentManager';
-import { bcms } from '@/app/bcms-client';
 import { Metadata } from 'next';
+import { bcmsPrivate } from '@/app/bcms-private';
+import { bcmsPublic } from '@/app/bcms-public';
 
 type Props = {
-    params: {
+    params: Promise<{
         slug: string;
-    };
+    }>;
 };
 
 export async function generateStaticParams() {
-    const portfolioEntries = (await bcms.entry.getAll(
+    const portfolioEntries = (await bcmsPrivate.entry.getAll(
         'portfolio',
     )) as PortfolioEntry[];
 
@@ -25,8 +26,9 @@ export async function generateStaticParams() {
     });
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const portfolioEntry = (await bcms.entry.getBySlug(
+export async function generateMetadata(props: Props): Promise<Metadata> {
+    const params = await props.params;
+    const portfolioEntry = (await bcmsPrivate.entry.getBySlug(
         params.slug,
         'portfolio',
     )) as PortfolioEntry;
@@ -49,8 +51,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
 }
 
-const PortfolioPage: React.FC<Props> = async ({ params }) => {
-    const portfolioEntry = (await bcms.entry.getBySlug(
+const PortfolioPage: React.FC<Props> = async (props) => {
+    const params = await props.params;
+    const portfolioEntry = (await bcmsPrivate.entry.getBySlug(
         params.slug,
         'portfolio',
     )) as PortfolioEntry;
@@ -115,7 +118,7 @@ const PortfolioPage: React.FC<Props> = async ({ params }) => {
                 <div className="absolute top-0 left-0 size-full">
                     <BCMSImage
                         media={portfolioEntryMeta.gallery[0]}
-                        clientConfig={bcms.getConfig()}
+                        clientConfig={bcmsPublic.getConfig()}
                         className="size-full object-cover"
                     />
                 </div>
@@ -131,7 +134,7 @@ const PortfolioPage: React.FC<Props> = async ({ params }) => {
                         <BCMSImage
                             key={index}
                             media={image}
-                            clientConfig={bcms.getConfig()}
+                            clientConfig={bcmsPublic.getConfig()}
                             className="portfolioItemPage--galleryImage w-full object-cover h-full"
                         />
                     ))}

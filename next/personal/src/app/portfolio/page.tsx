@@ -6,11 +6,12 @@ import {
     PortfolioPageEntryMetaItem,
 } from '@bcms-types/types/ts';
 import AnimatedTitle from '@/components/AnimatedTitle';
-import { bcms } from '../bcms-client';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { BCMSImage } from '@thebcms/components-react';
 import ContentManager from '@/components/ContentManager';
+import { bcmsPrivate } from '@/app/bcms-private';
+import { bcmsPublic } from '@/app/bcms-public';
 
 const pageTitle = 'Portfolio - Personal Website';
 export const metadata: Metadata = {
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
 };
 
 const PortfoliosPage: React.FC = async () => {
-    const portfolioPageEntry = (await bcms.entry.getBySlug(
+    const portfolioPageEntry = (await bcmsPrivate.entry.getBySlug(
         'portfolio',
         'portfolio-page',
     )) as PortfolioPageEntry;
@@ -36,7 +37,7 @@ const PortfoliosPage: React.FC = async () => {
     const portfolioPageMeta = portfolioPageEntry.meta
         .en as PortfolioPageEntryMetaItem;
 
-    const portfolioEntries = (await bcms.entry.getAll(
+    const portfolioEntries = (await bcmsPrivate.entry.getAll(
         'portfolio',
     )) as PortfolioEntry[];
 
@@ -57,7 +58,7 @@ const PortfoliosPage: React.FC = async () => {
                             {item.meta.en?.gallery?.[0] && (
                                 <BCMSImage
                                     media={item.meta.en.gallery[0]}
-                                    clientConfig={bcms.getConfig()}
+                                    clientConfig={bcmsPublic.getConfig()}
                                     className="w-full aspect-[2.07] object-cover rounded-[6px] overflow-hidden mb-4 lg:rounded-3xl lg:mb-12"
                                 />
                             )}

@@ -6,9 +6,9 @@ import {
     ServicesPageEntryMetaItem,
 } from '@bcms-types/types/ts';
 import AnimatedTitle from '@/components/AnimatedTitle';
-import { bcms } from '../bcms-client';
 import { notFound } from 'next/navigation';
 import ContentManager from '@/components/ContentManager';
+import { bcmsPrivate } from '@/app/bcms-private';
 
 const pageTitle = 'Services - Personal Website';
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 };
 
 const ServicesPage: React.FC = async () => {
-    const servicesPageEntry = (await bcms.entry.getBySlug(
+    const servicesPageEntry = (await bcmsPrivate.entry.getBySlug(
         'services',
         'services-page',
     )) as ServicesPageEntry;
@@ -34,7 +34,7 @@ const ServicesPage: React.FC = async () => {
     const servicesPageMeta = servicesPageEntry.meta
         .en as ServicesPageEntryMetaItem;
 
-    const servicesEntries = (await bcms.entry.getAll(
+    const servicesEntries = (await bcmsPrivate.entry.getAll(
         'service',
     )) as ServiceEntry[];
 

@@ -7,9 +7,10 @@ import {
     TestimonialsPageEntryMetaItem,
 } from '@bcms-types/types/ts';
 import AnimatedTitle from '@/components/AnimatedTitle';
-import { bcms } from '../bcms-client';
 import { notFound } from 'next/navigation';
 import Items from './components/Items';
+import { bcmsPrivate } from '@/app/bcms-private';
+import { bcmsPublic } from '@/app/bcms-public';
 
 const pageTitle = 'Testimonials - Personal Website';
 export const metadata: Metadata = {
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
 };
 
 const TestimonialsPage: React.FC = async () => {
-    const testimonialsPageEntry = (await bcms.entry.getBySlug(
+    const testimonialsPageEntry = (await bcmsPrivate.entry.getBySlug(
         'testimonials',
         'testimonials-page',
     )) as TestimonialsPageEntry;
@@ -35,7 +36,7 @@ const TestimonialsPage: React.FC = async () => {
     const testimonialsPageMeta = testimonialsPageEntry.meta
         .en as TestimonialsPageEntryMetaItem;
 
-    const testimonialEntries = (await bcms.entry.getAll(
+    const testimonialEntries = (await bcmsPrivate.entry.getAll(
         'testimonial',
     )) as TestimonialEntry[];
 
@@ -51,7 +52,7 @@ const TestimonialsPage: React.FC = async () => {
                     items={testimonialEntries.map(
                         (e) => e.meta.en as TestimonialEntryMetaItem,
                     )}
-                    bcmsConfig={bcms.getConfig()}
+                    bcmsConfig={bcmsPublic.getConfig()}
                 />
             </div>
         </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import { bcms } from './bcms-client';
 import { Metadata } from 'next';
 import {
     AboutPageEntry,
@@ -24,6 +23,8 @@ import HomeServices from '@/components/home-page/Services';
 import HomeAbout from '@/components/home-page/About';
 import HomePortfolio from '@/components/home-page/Portfolio';
 import HomeTestimonials from '@/components/home-page/Testimonials';
+import { bcmsPrivate } from '@/app/bcms-private';
+import { bcmsPublic } from '@/app/bcms-public';
 
 const pageTitle = 'Home - Personal Website';
 export const metadata: Metadata = {
@@ -37,33 +38,33 @@ export const metadata: Metadata = {
 };
 
 const HomePage: React.FC = async () => {
-    const homePageEntry = (await bcms.entry.getBySlug(
+    const homePageEntry = (await bcmsPrivate.entry.getBySlug(
         'home',
         'home-page',
     )) as HomePageEntry;
-    const servicesPageEntry = (await bcms.entry.getBySlug(
+    const servicesPageEntry = (await bcmsPrivate.entry.getBySlug(
         'services',
         'services-page',
     )) as ServicesPageEntry;
-    const servicesEntries = (await bcms.entry.getAll(
+    const servicesEntries = (await bcmsPrivate.entry.getAll(
         'service',
     )) as ServiceEntry[];
-    const aboutPageEntry = (await bcms.entry.getBySlug(
+    const aboutPageEntry = (await bcmsPrivate.entry.getBySlug(
         'about',
         'about-page',
     )) as AboutPageEntry;
-    const portfolioPageEntry = (await bcms.entry.getBySlug(
+    const portfolioPageEntry = (await bcmsPrivate.entry.getBySlug(
         'portfolio',
         'portfolio-page',
     )) as PortfolioPageEntry;
-    const portfolioEntries = (await bcms.entry.getAll(
+    const portfolioEntries = (await bcmsPrivate.entry.getAll(
         'portfolio',
     )) as PortfolioEntry[];
-    const testimonialsPageEntry = (await bcms.entry.getBySlug(
+    const testimonialsPageEntry = (await bcmsPrivate.entry.getBySlug(
         'testimonials',
         'testimonials-page',
     )) as TestimonialsPageEntry;
-    const testimonialEntries = (await bcms.entry.getAll(
+    const testimonialEntries = (await bcmsPrivate.entry.getAll(
         'testimonial',
     )) as TestimonialEntry[];
 
@@ -91,7 +92,7 @@ const HomePage: React.FC = async () => {
                 title={homePageMeta.hero_title}
                 description={homePageMeta.hero_description}
                 image={homePageMeta.image}
-                bcmsConfig={bcms.getConfig()}
+                bcmsConfig={bcmsPublic.getConfig()}
             />
             <HomeServices
                 title={servicesPageMeta.title}
@@ -114,7 +115,7 @@ const HomePage: React.FC = async () => {
                 items={portfolioEntries.map(
                     (e) => e.meta.en as PortfolioEntryMetaItem,
                 )}
-                bcmsConfig={bcms.getConfig()}
+                bcmsConfig={bcmsPublic.getConfig()}
             />
             <HomeTestimonials
                 title={testimonialsPageMeta.title}
@@ -122,7 +123,7 @@ const HomePage: React.FC = async () => {
                 items={testimonialEntries.map(
                     (e) => e.meta.en as TestimonialEntryMetaItem,
                 )}
-                bcmsConfig={bcms.getConfig()}
+                bcmsConfig={bcmsPublic.getConfig()}
             />
         </div>
     );

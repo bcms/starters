@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import { LegalPageEntry } from '@bcms-types/types/ts';
 import AnimatedTitle from '@/components/AnimatedTitle';
 import ContentManager from '@/components/ContentManager';
-import { bcms } from '../bcms-client';
+import { bcmsPrivate } from '@/app/bcms-private';
 
 const pageTitle = 'Legal - Personal Website';
 export const metadata: Metadata = {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 };
 
 const LegalPage: React.FC = async () => {
-    const legalEntries = (await bcms.entry.getAll(
+    const legalEntries = (await bcmsPrivate.entry.getAll(
         'legal-page',
     )) as LegalPageEntry[];
 
