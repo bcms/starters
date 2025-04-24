@@ -1,5 +1,4 @@
 ---
-import { bcms } from '../bcms-client';
 import type {
     HomePageEntry,
     HomePageEntryMetaItem,
@@ -15,15 +14,21 @@ import HomeSponsors from '../components/home-page/Sponsors';
 import HomeTickets from '../components/home-page/Tickets';
 import HomeAgenda from '../components/home-page/Agenda';
 import 'swiper/css';
+import { bcmsPrivate } from '../bcms-private';
+import { bcmsPublic } from '../bcms-public';
 
-const homePageEntry = (await bcms.entry.getBySlug(
-    'home',
-    'home-page',
-)) as HomePageEntry;
+const homePageEntry = (
+    await bcmsPrivate.entry.getBySlug(
+        'home',
+        'home-page',
+    )
+) as HomePageEntry;
 const homePageMeta = homePageEntry.meta.en as HomePageEntryMetaItem;
-const legalEntries = (await bcms.entry.getAll('legal')) as LegalEntry[];
+const legalEntries = (
+    await bcmsPrivate.entry.getAll('legal')
+) as LegalEntry[];
 
-const bcmsConfig = bcms.getConfig();
+const bcmsConfig = bcmsPublic.getConfig();
 ---
 
 <Layout title={`${homePageMeta.title} - CONference`}>
