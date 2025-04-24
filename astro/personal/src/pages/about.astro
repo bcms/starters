@@ -1,5 +1,4 @@
 ---
-import { bcms } from '../bcms-client';
 import type {
     AboutPageEntry,
     AboutPageEntryMetaItem,
@@ -9,15 +8,17 @@ import Layout from '../layouts/Layout.astro';
 import { BCMSImage } from '@thebcms/components-react';
 import ContentManager from '../components/ContentManager';
 import AnimatedTitle from '../components/AnimatedTitle';
+import { bcmsPrivate } from '../bcms-private';
+import { bcmsPublic } from '../bcms-public';
 
-const aboutPageEntry = (await bcms.entry.getBySlug(
+const aboutPageEntry = (await bcmsPrivate.entry.getBySlug(
     'about',
     'about-page',
 )) as AboutPageEntry;
 
 const aboutPageMeta = aboutPageEntry.meta.en as AboutPageEntryMetaItem;
 
-const bcmsConfig = bcms.getConfig();
+const bcmsConfig = bcmsPublic.getConfig();
 ---
 
 <Layout

@@ -1,5 +1,4 @@
 ---
-import { bcms } from '../../bcms-client';
 import type {
     PortfolioEntry,
     PortfolioPageEntry,
@@ -10,18 +9,20 @@ import { BCMSImage } from '@thebcms/components-react';
 import AnimatedTitle from '../../components/AnimatedTitle';
 import Layout from '../../layouts/Layout.astro';
 import ContentManager from '../../components/ContentManager';
+import { bcmsPrivate } from '../../bcms-private';
+import { bcmsPublic } from '../../bcms-public';
 
-const portfolioPageEntry = (await bcms.entry.getBySlug(
+const portfolioPageEntry = (await bcmsPrivate.entry.getBySlug(
     'portfolio',
     'portfolio-page',
 )) as PortfolioPageEntry;
 const portfolioPageMeta = portfolioPageEntry.meta
     .en as PortfolioPageEntryMetaItem;
-const portfolioEntries = (await bcms.entry.getAll(
+const portfolioEntries = (await bcmsPrivate.entry.getAll(
     'portfolio',
 )) as PortfolioEntry[];
 
-const bcmsConfig = bcms.getConfig();
+const bcmsConfig = bcmsPublic.getConfig();
 ---
 
 <Layout

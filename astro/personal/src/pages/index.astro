@@ -1,9 +1,8 @@
 ---
-import { bcms } from '../bcms-client';
 import type {
     HomePageEntry,
     HomePageEntryMetaItem,
-} from '../../bcms/types/ts/entry/home-page';
+} from '../../bcms/types/ts';
 import type {
     AboutPageEntry,
     AboutPageEntryMetaItem,
@@ -26,32 +25,34 @@ import HomeServices from '../components/home-page/Services';
 import HomeAbout from '../components/home-page/About';
 import HomePortfolio from '../components/home-page/Portfolio';
 import HomeTestimonials from '../components/home-page/Testimonials';
+import { bcmsPrivate } from '../bcms-private';
+import { bcmsPublic } from '../bcms-public';
 
-const homePageEntry = (await bcms.entry.getBySlug(
+const homePageEntry = (await bcmsPrivate.entry.getBySlug(
     'home',
     'home-page',
 )) as HomePageEntry;
-const servicesPageEntry = (await bcms.entry.getBySlug(
+const servicesPageEntry = (await bcmsPrivate.entry.getBySlug(
     'services',
     'services-page',
 )) as ServicesPageEntry;
-const servicesEntries = (await bcms.entry.getAll('service')) as ServiceEntry[];
-const aboutPageEntry = (await bcms.entry.getBySlug(
+const servicesEntries = (await bcmsPrivate.entry.getAll('service')) as ServiceEntry[];
+const aboutPageEntry = (await bcmsPrivate.entry.getBySlug(
     'about',
     'about-page',
 )) as AboutPageEntry;
-const portfolioPageEntry = (await bcms.entry.getBySlug(
+const portfolioPageEntry = (await bcmsPrivate.entry.getBySlug(
     'portfolio',
     'portfolio-page',
 )) as PortfolioPageEntry;
-const portfolioEntries = (await bcms.entry.getAll(
+const portfolioEntries = (await bcmsPrivate.entry.getAll(
     'portfolio',
 )) as PortfolioEntry[];
-const testimonialsPageEntry = (await bcms.entry.getBySlug(
+const testimonialsPageEntry = (await bcmsPrivate.entry.getBySlug(
     'testimonials',
     'testimonials-page',
 )) as TestimonialsPageEntry;
-const testimonialEntries = (await bcms.entry.getAll(
+const testimonialEntries = (await bcmsPrivate.entry.getAll(
     'testimonial',
 )) as TestimonialEntry[];
 
@@ -63,7 +64,7 @@ const portfolioPageMeta = portfolioPageEntry.meta
 const testimonialsPageMeta = testimonialsPageEntry.meta
     .en as TestimonialsPageEntryMetaItem;
 
-const bcmsConfig = bcms.getConfig();
+const bcmsConfig = bcmsPublic.getConfig();
 ---
 
 <Layout

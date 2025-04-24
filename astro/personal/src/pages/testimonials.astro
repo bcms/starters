@@ -1,5 +1,4 @@
 ---
-import { bcms } from '../bcms-client';
 import type {
     TestimonialEntry,
     TestimonialEntryMetaItem,
@@ -10,18 +9,20 @@ import type {
 import Layout from '../layouts/Layout.astro';
 import AnimatedTitle from '../components/AnimatedTitle';
 import Items from '../components/testimonials/Items';
+import { bcmsPrivate } from '../bcms-private';
+import { bcmsPublic } from '../bcms-public';
 
-const testimonialsPageEntry = (await bcms.entry.getBySlug(
+const testimonialsPageEntry = (await bcmsPrivate.entry.getBySlug(
     'testimonials',
     'testimonials-page',
 )) as TestimonialsPageEntry;
 const testimonialsPageMeta = testimonialsPageEntry.meta
     .en as TestimonialsPageEntryMetaItem;
-const testimonialEntries = (await bcms.entry.getAll(
+const testimonialEntries = (await bcmsPrivate.entry.getAll(
     'testimonial',
 )) as TestimonialEntry[];
 
-const bcmsConfig = bcms.getConfig();
+const bcmsConfig = bcmsPublic.getConfig();
 ---
 
 <Layout title={`Testimonials - Personal Website`}>

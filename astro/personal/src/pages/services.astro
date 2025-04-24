@@ -1,5 +1,4 @@
 ---
-import { bcms } from '../bcms-client';
 import type {
     ServiceEntry,
     ServicesPageEntry,
@@ -9,13 +8,14 @@ import type {
 import Layout from '../layouts/Layout.astro';
 import AnimatedTitle from '../components/AnimatedTitle';
 import ContentManager from '../components/ContentManager';
+import { bcmsPrivate } from '../bcms-private';
 
-const servicesPageEntry = (await bcms.entry.getBySlug(
+const servicesPageEntry = (await bcmsPrivate.entry.getBySlug(
     'services',
     'services-page',
 )) as ServicesPageEntry;
 const servicesPageMeta = servicesPageEntry.meta.en as ServicesPageEntryMetaItem;
-const servicesEntries = (await bcms.entry.getAll('service')) as ServiceEntry[];
+const servicesEntries = (await bcmsPrivate.entry.getAll('service')) as ServiceEntry[];
 ---
 
 <Layout title={`Services - Personal Website`}>

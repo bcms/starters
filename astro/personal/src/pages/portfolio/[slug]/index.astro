@@ -1,16 +1,17 @@
 ---
-import { bcms } from '../../../bcms-client';
 import type {
     PortfolioEntry,
     PortfolioEntryMetaItem,
-} from '../../../../bcms/types/ts/entry/portfolio';
+} from '../../../../bcms/types/ts';
 
 import Layout from '../../../layouts/Layout.astro';
 import { BCMSImage } from '@thebcms/components-react';
 import ContentManager from '../../../components/ContentManager';
+import { bcmsPrivate } from '../../../bcms-private';
+import { bcmsPublic } from '../../../bcms-public';
 
 export async function getStaticPaths() {
-    const entries = (await bcms.entry.getAll('portfolio')) as PortfolioEntry[];
+    const entries = (await bcmsPrivate.entry.getAll('portfolio')) as PortfolioEntry[];
     return entries.map((e) => ({
         params: {
             slug: e.meta.en?.slug || '',
@@ -20,13 +21,13 @@ export async function getStaticPaths() {
 
 const { slug } = Astro.params;
 
-const portfolioEntry = (await bcms.entry.getBySlug(
+const portfolioEntry = (await bcmsPrivate.entry.getBySlug(
     slug,
     'portfolio',
 )) as PortfolioEntry;
 const portfolioEntryMeta = portfolioEntry.meta.en as PortfolioEntryMetaItem;
 
-const clientConfig = bcms.getConfig();
+const clientConfig = bcmsPublic.getConfig();
 ---
 
 <Layout
