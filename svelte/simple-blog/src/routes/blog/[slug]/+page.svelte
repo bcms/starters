@@ -52,7 +52,11 @@
 					class="w-full aspect-[2.21] object-cover rounded-2xl md:rounded-3xl"
 				/>
 			</header>
-			<ContentManager items={data.blog.content} class="prose max-w-full lg:prose-lg" />
+			<ContentManager
+				items={data.blog.content}
+				class="prose max-w-full lg:prose-lg"
+				clientConfig={data.bcmsConfig}
+			/>
 		</div>
 		{#if data.otherBlogs.length > 0}
 			<div class="max-w-[1040px] mt-20">

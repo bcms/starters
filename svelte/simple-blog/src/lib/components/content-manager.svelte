@@ -1,14 +1,17 @@
 <script lang="ts">
 	import type { EntryContentParsedItem } from '@thebcms/types';
 	import { goto } from '$app/navigation';
-	import { onMount } from 'svelte';
 	import { BCMSContentManager, type BCMSWidgetComponents } from '@thebcms/components-svelte';
+	import { onMount } from 'svelte';
+	import type { ClientConfig } from '@thebcms/client';
 
-	export let items: EntryContentParsedItem[];
-	export let widgetComponents: BCMSWidgetComponents | undefined = undefined;
-	export { className as class };
+	let props: {
+		items: EntryContentParsedItem[];
+		widgetComponents?: BCMSWidgetComponents;
+		class?: string;
+		clientConfig?: ClientConfig;
+	} = $props();
 
-	let className = '';
 	let managerDOM: HTMLDivElement | undefined = undefined;
 
 	function parseInternalLinks(): void {
@@ -38,5 +41,10 @@
 </script>
 
 <div bind:this={managerDOM}>
-	<BCMSContentManager class={className} {items} widgetComponents={widgetComponents || {}} />
+	<BCMSContentManager
+		class={props.class}
+		items={props.items}
+		widgetComponents={props.widgetComponents || {}}
+		clientConfig={props.clientConfig}
+	/>
 </div>
