@@ -1,10 +1,10 @@
 ---
 import type { ReservationPageEntry, ReservationPageEntryMetaItem } from "../../../bcms/types/ts";
-import { bcms } from "../../bcms-client";
 import ReservationForm from "../../components/reservation-page/Form";
 import Layout from "../../layouts/Layout.astro";
+import { bcmsPrivate } from '../../bcms-private';
 
-const reservationPage = (await bcms.entry.getBySlug(
+const reservationPage = (await bcmsPrivate.entry.getBySlug(
     'reservation',
     'reservation-page',
 )) as ReservationPageEntry;

@@ -1,12 +1,13 @@
 ---
 import type { EventsPageEntry, EventsPageEntryMetaItem } from "../../../bcms/types/ts";
-import { bcms } from "../../bcms-client";
 import ArchWithStar from "../../components/ArchWithStar";
 import ContentManager from "../../components/ContentManager";
 import { EventCard } from "../../components/events-page/EventCard";
 import Layout from "../../layouts/Layout.astro";
+import { bcmsPrivate } from '../../bcms-private';
+import { bcmsPublic } from '../../bcms-public';
 
-const eventsPageEntry = (await bcms.entry.getBySlug(
+const eventsPageEntry = (await bcmsPrivate.entry.getBySlug(
     'events',
     'events-page',
 )) as EventsPageEntry;
@@ -17,7 +18,7 @@ if (!eventsPageEntry) {
 
 const eventsPageMeta = eventsPageEntry.meta.en as EventsPageEntryMetaItem;
 
-const bcmsConfig = bcms.getConfig();
+const bcmsConfig = bcmsPublic.getConfig();
 ---
 
 <Layout title={`${eventsPageMeta.seo?.title || eventsPageMeta.title} - Tastyyy`}>

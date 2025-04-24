@@ -1,10 +1,11 @@
 ---
 import type { FoodItemEntry, FoodItemEntryMetaItem, MealTypeEntry, MealTypeEntryMetaItem, MenuPageEntry, MenuPageEntryMetaItem } from "../../../bcms/types/ts";
-import { bcms } from "../../bcms-client";
 import MenuMeals from "../../components/menu-page/Meals";
 import Layout from "../../layouts/Layout.astro";
+import { bcmsPrivate } from '../../bcms-private';
+import { bcmsPublic } from '../../bcms-public';
 
-const menuPageEntries = (await bcms.entry.getBySlug(
+const menuPageEntries = (await bcmsPrivate.entry.getBySlug(
     'menu',
     'menu-page',
 )) as MenuPageEntry;
@@ -16,13 +17,13 @@ if (!menuPageEntries) {
 const menuPageMeta = menuPageEntries.meta.en as MenuPageEntryMetaItem;
 
 const mealTypes = (
-    (await bcms.entry.getAll('meal-type')) as MealTypeEntry[]
+    (await bcmsPrivate.entry.getAll('meal-type')) as MealTypeEntry[]
 ).map((e) => e.meta.en as MealTypeEntryMetaItem);
 const foodItems = (
-    (await bcms.entry.getAll('food-item')) as FoodItemEntry[]
+    (await bcmsPrivate.entry.getAll('food-item')) as FoodItemEntry[]
 ).map((e) => e.meta.en as FoodItemEntryMetaItem);
 
-const bcmsConfig = bcms.getConfig();
+const bcmsConfig = bcmsPublic.getConfig();
 ---
 
 <Layout title={`${menuPageMeta.seo?.title || menuPageMeta.title} - Tastyyy`}>

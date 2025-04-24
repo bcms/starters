@@ -1,6 +1,5 @@
 ---
 import type { FoodItemEntry, FoodItemEntryMetaItem, HomePageEntry, HomePageEntryMetaItem } from '../../bcms/types/ts';
-import { bcms } from '../bcms-client';
 import HomeAmbience from '../components/home-page/Ambience';
 import HomeEvents from '../components/home-page/Events';
 import HomeHero from '../components/home-page/Hero';
@@ -11,8 +10,10 @@ import HomeTestimonials from '../components/home-page/Testimonials';
 import 'swiper/css';
 
 import Layout from '../layouts/Layout.astro';
+import { bcmsPrivate } from '../bcms-private';
+import { bcmsPublic } from '../bcms-public';
 
-const homePageEntry = (await bcms.entry.getBySlug(
+const homePageEntry = (await bcmsPrivate.entry.getBySlug(
     'home',
     'home-page',
 )) as HomePageEntry;
@@ -23,9 +24,9 @@ if (!homePageEntry) {
 
 const homePageMeta = homePageEntry.meta.en as HomePageEntryMetaItem;
 
-const foodItems = (await bcms.entry.getAll('food-item')) as FoodItemEntry[];
+const foodItems = (await bcmsPrivate.entry.getAll('food-item')) as FoodItemEntry[];
 
-const bcmsConfig = bcms.getConfig();
+const bcmsConfig = bcmsPublic.getConfig();
 ---
 
 <Layout

@@ -1,15 +1,16 @@
 ---
 import type { FoodItemEntry, FoodItemEntryMetaItem, SeasonEntry, SeasonEntryMetaItem } from "../../../bcms/types/ts";
-import { bcms } from "../../bcms-client";
 import { Seasons } from "../../components/seasonal-menu-page/Seasons";
 import Layout from "../../layouts/Layout.astro";
+import { bcmsPrivate } from '../../bcms-private';
+import { bcmsPublic } from '../../bcms-public';
 
-const seasons = ((await bcms.entry.getAll('season')) as SeasonEntry[]).map(
+const seasons = ((await bcmsPrivate.entry.getAll('season')) as SeasonEntry[]).map(
     (e) => e.meta.en as SeasonEntryMetaItem,
 );
 
 const foodItems = (
-    (await bcms.entry.getAll('food-item')) as FoodItemEntry[]
+    (await bcmsPrivate.entry.getAll('food-item')) as FoodItemEntry[]
 ).map((e) => e.meta.en as FoodItemEntryMetaItem);
 ---
 
@@ -19,7 +20,7 @@ const foodItems = (
             seasons={seasons}
             foodItems={foodItems}
             client:load
-            bcmsConfig={bcms.getConfig()}
+            bcmsConfig={bcmsPublic.getConfig()}
         />
     </div>
 </Layout>
