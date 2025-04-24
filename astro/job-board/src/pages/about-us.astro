@@ -1,5 +1,4 @@
 ---
-import { bcms } from '../bcms-client';
 import type {
     AboutPageEntry,
     AboutPageEntryMetaItem,
@@ -12,21 +11,23 @@ import ContentManager from '../components/ContentManager';
 import { BCMSImage } from '@thebcms/components-react';
 import classNames from 'classnames';
 import Team from '../components/about/Team';
+import { bcmsPrivate } from '../bcms-private';
+import { bcmsPublic } from '../bcms-public';
 
-const aboutUsPageEntry = (await bcms.entry.getBySlug(
+const aboutUsPageEntry = (await bcmsPrivate.entry.getBySlug(
     'about-us',
     'about-page',
 )) as AboutPageEntry;
 const aboutUsPageMeta = aboutUsPageEntry.meta.en as AboutPageEntryMetaItem;
 
-const teamMembers = (await bcms.entry.getAll(
+const teamMembers = (await bcmsPrivate.entry.getAll(
     'team-member',
 )) as TeamMemberEntry[];
 const teamMembersMeta = teamMembers.map(
     (member) => member.meta.en as TeamMemberEntryMetaItem,
 );
 
-const clientConfig = bcms.getConfig();
+const clientConfig = bcmsPublic.getConfig();
 ---
 
 <Layout

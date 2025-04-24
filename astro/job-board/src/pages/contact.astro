@@ -1,5 +1,4 @@
 ---
-import { bcms } from '../bcms-client';
 import type {
     ContactPageEntry,
     ContactPageEntryMetaItem,
@@ -8,8 +7,9 @@ import type {
 import Layout from '../layouts/Layout.astro';
 import ContentManager from '../components/ContentManager';
 import Form from '../components/contact/Form';
+import { bcmsPrivate } from '../bcms-private';
 
-const contactPageEntry = (await bcms.entry.getBySlug(
+const contactPageEntry = (await bcmsPrivate.entry.getBySlug(
     'lets-talk',
     'contact-page',
 )) as ContactPageEntry;

@@ -1,5 +1,4 @@
 ---
-import { bcms } from '../bcms-client';
 import type {
     HomePageEntry,
     HomePageEntryMetaItem,
@@ -14,24 +13,26 @@ import HomeJobs from '../components/home-page/Jobs';
 import HomeAbout from '../components/home-page/About';
 import Testimonials from '../components/home-page/Testimonials';
 import { toJobLite } from '../utils/job';
+import { bcmsPrivate } from '../bcms-private';
+import { bcmsPublic } from '../bcms-public';
 
-const homePageEntry = (await bcms.entry.getBySlug(
+const homePageEntry = (await bcmsPrivate.entry.getBySlug(
     'home',
     'home-page',
 )) as HomePageEntry;
 const homePageMeta = homePageEntry.meta.en as HomePageEntryMetaItem;
-const jobEntries = (await bcms.entry.getAll('job-post')) as JobPostEntry[];
+const jobEntries = (await bcmsPrivate.entry.getAll('job-post')) as JobPostEntry[];
 const jobEntriesLite = jobEntries.map((job) => {
     return toJobLite(job);
 });
-const testimonialEntries = (await bcms.entry.getAll(
+const testimonialEntries = (await bcmsPrivate.entry.getAll(
     'testimonial',
 )) as TestimonialEntry[];
 const testimonialEntriesMeta = testimonialEntries.map(
     (testimonial) => testimonial.meta.en as TestimonialEntryMetaItem,
 );
 
-const bcmsConfig = bcms.getConfig();
+const bcmsConfig = bcmsPublic.getConfig();
 ---
 
 <Layout title={`${homePageMeta.seo?.title || homePageMeta.title} - Hospitale`}>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { type JSX, useState } from 'react';
 import classnames from 'classnames';
 import ChevronIcon from '../assets/icons/chevron-down.svg?raw';
 
@@ -52,7 +52,8 @@ const Select: React.FC<Props> = ({
                         {value || placeholder}
                     </span>
                 </div>
-                <div dangerouslySetInnerHTML={{__html: ChevronIcon}}
+                <div
+                    dangerouslySetInnerHTML={{ __html: ChevronIcon }}
                     className={classnames(
                         'w-[14px] h-[14px] transition-transform duration-300',
                         {
