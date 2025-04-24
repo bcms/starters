@@ -1,5 +1,6 @@
 import React, {
     createContext,
+    type JSX,
     type PropsWithChildren,
     useContext,
     useState,

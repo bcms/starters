@@ -1,5 +1,6 @@
 import {
     createContext,
+    type JSX,
     type MouseEvent,
     type PropsWithChildren,
     useCallback,
@@ -69,7 +70,7 @@ export function PlayerProvider(
         undefined,
     );
 
-    const oldEpisodeSlugRef = useRef<string | undefined>();
+    const oldEpisodeSlugRef = useRef<string | undefined>(undefined);
 
     const getFileLength = useCallback((el: HTMLAudioElement) => {
         const durationInSeconds = +el.duration.toFixed(0);
@@ -250,10 +251,11 @@ export function PlayerProvider(
     };
 
     const getEpisodeProgressBarWidth = useCallback((): string => {
-        return `${(settings.currentTime /
-            getPlayingEpisodeFileLength().durationInSeconds) *
+        return `${
+            (settings.currentTime /
+                getPlayingEpisodeFileLength().durationInSeconds) *
             100
-            }%`;
+        }%`;
     }, [settings.currentTime]);
     return (
         <PlayerContext.Provider

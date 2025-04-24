@@ -1,15 +1,15 @@
 ---
-import { bcms } from '../../../bcms-client';
-
 import Layout from '../../../layouts/Layout.astro';
 import type {
     EpisodeEntry,
     EpisodeEntryMetaItem,
-} from '../../../../bcms/types/ts/entry/episode';
+} from '../../../../bcms/types/ts';
 import EpisodePageWrapper from '../../../components/episode-page/PageWrapper';
+import { bcmsPrivate } from '../../../bcms-private';
+import { bcmsPublic } from '../../../bcms-public';
 
 export async function getStaticPaths() {
-    const episodes = (await bcms.entry.getAll('episode')) as EpisodeEntry[];
+    const episodes = (await bcmsPrivate.entry.getAll('episode')) as EpisodeEntry[];
     return episodes.map((e) => ({
         params: {
             slug: e.meta.en?.slug || '',
@@ -19,7 +19,7 @@ export async function getStaticPaths() {
 
 const { slug } = Astro.params;
 
-const episodes = (await bcms.entry.getAll('episode')) as EpisodeEntry[];
+const episodes = (await bcmsPrivate.entry.getAll('episode')) as EpisodeEntry[];
 const episodesMeta = episodes.map(
     (episode) => episode.meta.en as EpisodeEntryMetaItem,
 );
@@ -32,7 +32,7 @@ if (!episode) {
     };
 }
 
-const bcmsConfig = bcms.getConfig();
+const bcmsConfig = bcmsPublic.getConfig();
 ---
 
 <Layout title={`${episode.seo?.title || episode.title} - The Podium`}>
