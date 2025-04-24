@@ -1,11 +1,11 @@
 ---
-import { bcms } from '../bcms-client';
 import type { LegalPageEntry } from '../../bcms/types/ts';
 
 import Layout from '../layouts/Layout.astro';
 import ContentManager from '../components/ContentManager';
+import { bcmsPrivate } from '../bcms-private';
 
-const legalPageEntries = (await bcms.entry.getAll(
+const legalPageEntries = (await bcmsPrivate.entry.getAll(
     'legal-page',
 )) as LegalPageEntry[];
 

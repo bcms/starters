@@ -4,12 +4,12 @@ import Footer from '../components/layout/Footer';
 import type {
     HeaderEntry,
     HeaderEntryMetaItem,
-} from '../../bcms/types/ts/entry/header';
-import { bcms } from '../bcms-client';
+} from '../../bcms/types/ts';
 import type {
     FooterEntry,
     FooterEntryMetaItem,
-} from '../../bcms/types/ts/entry/footer';
+} from '../../bcms/types/ts';
+import { bcmsPrivate } from '../bcms-private';
 
 interface Props {
     title: string;
@@ -18,12 +18,12 @@ interface Props {
 const { title } = Astro.props;
 const ogImageUrl = '/thumbnail.jpg';
 
-const headerEntry = (await bcms.entry.getBySlug(
+const headerEntry = (await bcmsPrivate.entry.getBySlug(
     'header',
     'header',
 )) as HeaderEntry;
 const header = headerEntry.meta.en as HeaderEntryMetaItem;
-const footerEntry = (await bcms.entry.getBySlug(
+const footerEntry = (await bcmsPrivate.entry.getBySlug(
     'footer',
     'footer',
 )) as FooterEntry;

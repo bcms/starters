@@ -3,8 +3,8 @@ import MenuIcon from '../../assets/icons/nav/menu.svg?raw';
 import XIcon from '../../assets/icons/nav/x.svg?raw';
 import classNames from 'classnames';
 import { BCMSImage } from '@thebcms/components-react';
-import { bcms } from '../../bcms-client';
 import type { HeaderEntryMetaItem } from '../../../bcms/types/ts';
+import { bcmsPublic } from '../../bcms-public.ts';
 
 interface Props {
     header: HeaderEntryMetaItem;
@@ -49,7 +49,7 @@ const Header: React.FC<Props> = ({ header }) => {
                             >
                                 <BCMSImage
                                     media={header.logo}
-                                    clientConfig={bcms.getConfig()}
+                                    clientConfig={bcmsPublic.getConfig()}
                                     className={classNames(
                                         'w-full md:grayscale md:brightness-0 md:invert',
                                         {

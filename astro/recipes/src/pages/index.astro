@@ -1,10 +1,9 @@
 ---
-import { bcms } from '../bcms-client';
 import type {
     HomePageEntry,
     HomePageEntryMetaItem,
-} from '../../bcms/types/ts/entry/home-page';
-import type { RecipeEntry } from '../../bcms/types/ts/entry/recipe';
+} from '../../bcms/types/ts';
+import type { RecipeEntry } from '../../bcms/types/ts';
 
 import Layout from '../layouts/Layout.astro';
 import HomePageHero from '../components/home-page/Hero';
@@ -12,18 +11,20 @@ import HomePageRecipes from '../components/home-page/Recipes';
 import HomePageAboutUs from '../components/home-page/AboutUs';
 import HomePageLetsTalk from '../components/home-page/LetsTalk';
 import { recipeToLight } from '../utils/recipe';
+import { bcmsPrivate } from '../bcms-private';
+import { bcmsPublic } from '../bcms-public';
 
-const homePageEntry = (await bcms.entry.getBySlug(
+const homePageEntry = (await bcmsPrivate.entry.getBySlug(
     'home',
     'home-page',
 )) as HomePageEntry;
 const homePageMeta = homePageEntry.meta.en as HomePageEntryMetaItem;
-const recipeEntries = (await bcms.entry.getAll('recipe')) as RecipeEntry[];
+const recipeEntries = (await bcmsPrivate.entry.getAll('recipe')) as RecipeEntry[];
 const lightRecipes = recipeEntries.map((e) => {
     return recipeToLight(e);
 });
 
-const bcmsConfig = bcms.getConfig();
+const bcmsConfig = bcmsPublic.getConfig();
 ---
 
 <Layout
@@ -39,7 +40,7 @@ const bcmsConfig = bcms.getConfig();
             client:load
         />
         <HomePageRecipes
-            bcmsConfig={bcms.getConfig()}
+            bcmsConfig={bcmsConfig}
             title={homePageMeta.recipes_title}
             recipes={homePageMeta.recipes}
             bcmsConfig={bcmsConfig}

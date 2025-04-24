@@ -1,5 +1,4 @@
 ---
-import { bcms } from '../../bcms-client';
 import type {
     RecipeEntry,
     RecipesPageEntry,
@@ -10,18 +9,20 @@ import Layout from '../../layouts/Layout.astro';
 import ContentManager from '../../components/ContentManager';
 import RecipesList from '../../components/recipes/List';
 import { recipeToLight } from '../../utils/recipe';
+import { bcmsPrivate } from '../../bcms-private';
+import { bcmsPublic } from '../../bcms-public';
 
-const recipesPageEntry = (await bcms.entry.getBySlug(
+const recipesPageEntry = (await bcmsPrivate.entry.getBySlug(
     'recipes',
     'recipes-page',
 )) as RecipesPageEntry;
 const recipesPageMeta = recipesPageEntry.meta.en as RecipesPageEntryMetaItem;
-const recipeEntries = (await bcms.entry.getAll('recipe')) as RecipeEntry[];
+const recipeEntries = (await bcmsPrivate.entry.getAll('recipe')) as RecipeEntry[];
 const lightRecipes = recipeEntries.map((e) => {
     return recipeToLight(e);
 });
 
-const clientConfig = bcms.getConfig();
+const clientConfig = bcmsPublic.getConfig();
 ---
 
 <Layout

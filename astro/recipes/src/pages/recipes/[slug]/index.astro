@@ -1,5 +1,4 @@
 ---
-import { bcms } from '../../../bcms-client';
 import type {
     RecipeEntry,
     RecipeEntryMetaItem,
@@ -14,9 +13,11 @@ import { Ingredients } from '../../../components/recipes/Ingredients';
 import { QAItem } from '../../../components/recipes/QaItem';
 import { recipeToLight } from '../../../utils/recipe';
 import ContentManager from '../../../components/ContentManager';
+import { bcmsPrivate } from '../../../bcms-private';
+import { bcmsPublic } from '../../../bcms-public';
 
 export async function getStaticPaths() {
-    const blogs = (await bcms.entry.getAll('recipe')) as RecipeEntry[];
+    const blogs = (await bcmsPrivate.entry.getAll('recipe')) as RecipeEntry[];
     return blogs.map((e) => ({
         params: {
             slug: e.meta.en?.slug || '',
@@ -26,7 +27,7 @@ export async function getStaticPaths() {
 
 const { slug } = Astro.params;
 
-const recipeEntries = (await bcms.entry.getAll('recipe')) as RecipeEntry[];
+const recipeEntries = (await bcmsPrivate.entry.getAll('recipe')) as RecipeEntry[];
 const recipeEntry = recipeEntries.find((e) => e.meta.en?.slug === slug);
 const recipeEntryMeta = recipeEntry?.meta.en as RecipeEntryMetaItem;
 const lightRecipes = recipeEntries.map((e) => {
@@ -60,7 +61,7 @@ const similarRecipes =
         return false;
     }) || [];
 
-const clientConfig = bcms.getConfig();
+const clientConfig = bcmsPublic.getConfig();
 ---
 
 <Layout

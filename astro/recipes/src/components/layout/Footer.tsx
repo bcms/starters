@@ -2,7 +2,7 @@ import React from 'react';
 import { BCMSImage } from '@thebcms/components-react';
 import ContentManager from '../ContentManager';
 import type { FooterEntryMetaItem } from '../../../bcms/types/ts';
-import { bcms } from '../../bcms-client';
+import { bcmsPublic } from '../../bcms-public.ts';
 
 interface Props {
     footer: FooterEntryMetaItem;
@@ -16,7 +16,7 @@ const Footer: React.FC<Props> = ({ footer }) => {
                     <div className="lg:max-w-[320px]">
                         <BCMSImage
                             media={footer.logo}
-                            clientConfig={bcms.getConfig()}
+                            clientConfig={bcmsPublic.getConfig()}
                             className="mb-3 lg:mb-4"
                         />
                         <ContentManager
