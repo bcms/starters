@@ -1,14 +1,15 @@
 ---
-import { bcms } from '../../bcms-client';
 import type { BlogEntry, BlogEntryMetaItem } from '../../../bcms/types/ts';
 import type { EntryContentParsedItem } from '@thebcms/types';
 import Tag from '../../components/tag.astro';
 import BlogCard from '../../components/blog-card.astro';
 import { toReadableDate } from '../../utils/date';
 import { BCMSImage, BCMSContentManager } from '@thebcms/components-vue';
+import { bcmsPrivate } from '../../bcms-private';
+import { bcmsPublic } from '../../bcms-public';
 
 export async function getStaticPaths() {
-    const blogs = (await bcms.entry.getAll('blog')) as BlogEntry[];
+    const blogs = (await bcmsPrivate.entry.getAll('blog')) as BlogEntry[];
     return blogs.map((blog) => {
         const meta = blog.meta.en as BlogEntryMetaItem;
         return {
@@ -20,9 +21,8 @@ export async function getStaticPaths() {
 }
 
 const params = Astro.params;
-const bcmsConfig = bcms.getConfig();
 
-const blogs = (await bcms.entry.getAll('blog')) as BlogEntry[];
+const blogs = (await bcmsPrivate.entry.getAll('blog')) as BlogEntry[];
 
 const blog = blogs.find((e) => e.meta.en?.slug === params.slug);
 const data = {
@@ -36,6 +36,8 @@ const otherBlogs = blogs
     .map((otherBlog) => {
         return otherBlog.meta.en as BlogEntryMetaItem;
     });
+
+const bcmsConfig = bcmsPublic.getConfig();
 ---
 
 <div class="py-24 md:py-32">

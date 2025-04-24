@@ -1,13 +1,14 @@
 ---
 import Layout from '../layouts/layout.astro';
-import { bcms } from '../bcms-client';
 import type { BlogEntry, BlogEntryMetaItem } from '../../bcms/types/ts';
 import Tag from '../components/tag.astro';
 import BlogCard from '../components/blog-card.astro';
+import { bcmsPrivate } from '../bcms-private';
+import { bcmsPublic } from '../bcms-public';
 
-const blogs = (await bcms.entry.getAll('blog')) as BlogEntry[];
+const blogs = (await bcmsPrivate.entry.getAll('blog')) as BlogEntry[];
 const items = blogs.map((e) => e.meta.en as BlogEntryMetaItem);
-const bcmsConfig = bcms.getConfig();
+const bcmsConfig = bcmsPublic.getConfig();
 ---
 
 <Layout>
