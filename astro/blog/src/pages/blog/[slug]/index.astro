@@ -1,9 +1,8 @@
 ---
-import { bcms } from '../../../bcms-client';
 import type {
     BlogEntry,
     BlogEntryMetaItem,
-} from '../../../../bcms/types/ts/entry/blog';
+} from '../../../../bcms/types/ts';
 import { blogToLite } from '../../../utils/blog';
 import { toReadableDate } from '../../../utils/date';
 import { type EntryContentParsedItem } from '@thebcms/types';
@@ -14,9 +13,11 @@ import { ContentManager } from '../../../components/ContentManager';
 import BlogCard from '../../../components/blogs/Card';
 import ArrowIcon from '../../../assets/icons/arrow.svg?raw';
 import { TopGradient } from '../../../components/TopGradient';
+import { bcmsPrivate } from '../../../bcms-private';
+import { bcmsPublic } from '../../../bcms-public';
 
 export async function getStaticPaths() {
-    const blogs = (await bcms.entry.getAll('blog')) as BlogEntry[];
+    const blogs = (await bcmsPrivate.entry.getAll('blog')) as BlogEntry[];
     return blogs.map((e) => ({
         params: {
             slug: e.meta.en?.slug || '',
@@ -26,7 +27,7 @@ export async function getStaticPaths() {
 
 const { slug } = Astro.params;
 
-const blogs = (await bcms.entry.getAll('blog')) as BlogEntry[];
+const blogs = (await bcmsPrivate.entry.getAll('blog')) as BlogEntry[];
 const blogEntry = blogs.find((e) => e.meta.en?.slug === slug);
 const otherBlogs = blogs
     .filter((e) => e.meta.en?.slug !== slug)
@@ -36,7 +37,8 @@ const data = {
     content: blogEntry?.content.en as EntryContentParsedItem[],
 };
 
-const clientConfig = bcms.getConfig();
+const clientConfig = bcmsPublic.getConfig();
+
 ---
 
 <Layout title={data.meta.title}>
@@ -64,7 +66,7 @@ const clientConfig = bcms.getConfig();
                         clientConfig={clientConfig}
                         className="aspect-[2.07] rounded-lg overflow-hidden w-full object-cover mb-6 md:mb-8 lg:aspect-[2.43] lg:rounded-2xl lg:mb-12"
                     />
-                    <ContentManager items={data.content} className="prose" />
+                    <ContentManager client:load items={data.content} className="prose" />
                 </div>
                 <div class="max-md:hidden">
                     <div
@@ -97,6 +99,7 @@ const clientConfig = bcms.getConfig();
                         {
                             otherBlogs.map((blog) => (
                                 <BlogCard
+                                    client:load
                                     blog={blog}
                                     bcmsConfig={clientConfig}
                                 />

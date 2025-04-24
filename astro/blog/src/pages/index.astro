@@ -1,23 +1,28 @@
 ---
-import { bcms } from '../bcms-client';
-import type { BlogEntry } from '../../bcms/types/ts/entry/blog';
+import type { BlogEntry } from '../../bcms/types/ts';
 import type {
     HomePageEntry,
     HomePageEntryMetaItem,
-} from '../../bcms/types/ts/entry/home-page';
+} from '../../bcms/types/ts';
 import { blogToLite } from '../utils/blog';
 
 import Layout from '../layouts/Layout.astro';
 import HomeHero from '../components/home-page/Hero';
 import BlogCard from '../components/blogs/Card';
 import ArrowIcon from '../assets/icons/arrow.svg?raw';
+import { bcmsPrivate } from '../bcms-private';
+import { bcmsPublic } from '../bcms-public';
 
-const homePageEntry = (await bcms.entry.getBySlug(
-    'home',
-    'home-page',
-)) as HomePageEntry;
+const homePageEntry = (
+    await bcmsPrivate.entry.getBySlug(
+        'home',
+        'home-page',
+    )
+) as HomePageEntry;
 const homePageMeta = homePageEntry.meta.en as HomePageEntryMetaItem;
-const blogs = (await bcms.entry.getAll('blog')) as BlogEntry[];
+const blogs = (
+    await bcmsPrivate.entry.getAll('blog')
+) as BlogEntry[];
 
 const liteBlogs = blogs.map((blog) => {
     return blogToLite(blog);
@@ -28,7 +33,7 @@ const featuredLiteBlogs = liteBlogs.filter((blog) => {
     );
 });
 
-const bcmsConfig = bcms.getConfig();
+const bcmsConfig = bcmsPublic.getConfig();
 ---
 
 <Layout title={homePageMeta.title}>
@@ -70,8 +75,9 @@ const bcmsConfig = bcms.getConfig();
                     class="grid grid-cols-1 auto-rows-fr gap-6 p-4 border border-appGray-300 rounded-2xl md:grid-cols-2 lg:grid-cols-3 xl:gap-10 xl:p-8"
                 >
                     {
-                        liteBlogs.map((blog, index) => (
-                            <BlogCard bcmsConfig={bcmsConfig} blog={blog} />
+                        liteBlogs.map((blog) => (
+                            <BlogCard client:load bcmsConfig={bcmsConfig}
+                                      blog={blog} />
                         ))
                     }
                 </div>

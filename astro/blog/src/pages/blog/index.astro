@@ -1,27 +1,28 @@
 ---
-import { bcms } from '../../bcms-client';
-import type { BlogEntry } from '../../../bcms/types/ts/entry/blog';
+import type { BlogEntry } from '../../../bcms/types/ts';
 import type {
     BlogsPageEntry,
     BlogsPageEntryMetaItem,
-} from '../../../bcms/types/ts/entry/blogs-page';
+} from '../../../bcms/types/ts';
 import { blogToLite } from '../../utils/blog';
 
 import Layout from '../../layouts/Layout.astro';
 import List from '../../components/blogs/List';
 import { TopGradient } from '../../components/TopGradient';
+import { bcmsPrivate } from '../../bcms-private';
+import { bcmsPublic } from '../../bcms-public';
 
-const blogsPageEntry = (await bcms.entry.getBySlug(
+const blogsPageEntry = (await bcmsPrivate.entry.getBySlug(
     'blog',
     'blogs-page',
 )) as BlogsPageEntry;
 const blogsPageMeta = blogsPageEntry.meta.en as BlogsPageEntryMetaItem;
-const blogs = (await bcms.entry.getAll('blog')) as BlogEntry[];
+const blogs = (await bcmsPrivate.entry.getAll('blog')) as BlogEntry[];
 const blogsLite = blogs.map((blog) => blogToLite(blog));
 
 const pageTitle = 'Happy reading for my amazing journey - Insightfull Ink';
 
-const clientConfig = bcms.getConfig();
+const clientConfig = bcmsPublic.getConfig();
 ---
 
 <Layout title={pageTitle}>

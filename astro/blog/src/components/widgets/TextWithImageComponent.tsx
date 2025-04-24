@@ -1,9 +1,9 @@
-import { bcms } from '../../bcms-client';
 import { ContentManager } from '../ContentManager';
 import { BCMSImage } from '@thebcms/components-react';
 import './text-with-image.css';
 import { type FC, useMemo } from 'react';
 import type { TextWithImageWidget } from '../../../bcms/types/ts';
+import { bcmsPublic } from '../../bcms-public.ts';
 
 interface Props {
     data: TextWithImageWidget;
@@ -38,7 +38,7 @@ const TextWithImageWidgetComponent: FC<Props> = ({ data }) => {
                 >
                     <BCMSImage
                         media={data.image}
-                        clientConfig={bcms.getConfig()}
+                        clientConfig={bcmsPublic.getConfig()}
                         className={`size-full object-cover`}
                     />
                 </div>

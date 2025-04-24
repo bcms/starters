@@ -1,17 +1,18 @@
 ---
-import { bcms } from '../bcms-client';
 import type {
     AboutPageEntry,
     AboutPageEntryMetaItem,
-} from '../../bcms/types/ts/entry/about-page';
+} from '../../bcms/types/ts';
 import { type EntryContentParsedItem } from '@thebcms/types';
 
 import Layout from '../layouts/Layout.astro';
 import { BCMSImage } from '@thebcms/components-react';
 import { ContentManager } from '../components/ContentManager';
 import { TopGradient } from '../components/TopGradient';
+import { bcmsPrivate } from '../bcms-private';
+import { bcmsPublic } from '../bcms-public';
 
-const aboutPageEntry = (await bcms.entry.getBySlug(
+const aboutPageEntry = (await bcmsPrivate.entry.getBySlug(
     'about',
     'about-page',
 )) as AboutPageEntry;
@@ -19,7 +20,7 @@ const aboutPageMeta = aboutPageEntry.meta.en as AboutPageEntryMetaItem;
 
 const pageTitle = 'Me, Myself, and My World - Insightfull Ink';
 
-const clientConfig = bcms.getConfig();
+const clientConfig = bcmsPublic.getConfig();
 ---
 
 <Layout title={pageTitle}>

@@ -1,12 +1,12 @@
 ---
-import { bcms } from '../bcms-client';
-import type { ContactPageEntry, ContactPageEntryMetaItem } from '../../bcms/types/ts/entry/contact-page';
+import type { ContactPageEntry, ContactPageEntryMetaItem } from '../../bcms/types/ts';
 
 import Layout from '../layouts/Layout.astro';
 import { TopGradient } from '../components/TopGradient';
 import  Form from '../components/contact/Form';
+import { bcmsPrivate } from '../bcms-private';
 
-const contactPageEntry = (await bcms.entry.getBySlug(
+const contactPageEntry = (await bcmsPrivate.entry.getBySlug(
     'contact',
     'contact-page',
 )) as ContactPageEntry;
