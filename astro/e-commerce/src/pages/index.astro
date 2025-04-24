@@ -1,5 +1,4 @@
 ---
-import { bcms } from '../bcms-client';
 import type {
     HomeEntry,
     HomeEntryMetaItem,
@@ -12,15 +11,17 @@ import { productToLite } from '../utils/product';
 
 import Layout from '../layouts/Layout.astro';
 import HomePageWrapper from '../components/home-page/PageWrapper';
+import { bcmsPrivate } from '../bcms-private';
+import { bcmsPublic } from '../bcms-public';
 
-const home = (await bcms.entry.getById('home', 'home')) as HomeEntry;
+const home = (await bcmsPrivate.entry.getById('home', 'home')) as HomeEntry;
 const homeMeta = home.meta.en as HomeEntryMetaItem;
 
-const products = (await bcms.entry.getAll('product')) as ProductEntry[];
+const products = (await bcmsPrivate.entry.getAll('product')) as ProductEntry[];
 const productsLite = products.map((e) => productToLite(e));
 
 const categories = (
-    (await bcms.entry.getAll('product-category')) as ProductCategoryEntry[]
+    (await bcmsPrivate.entry.getAll('product-category')) as ProductCategoryEntry[]
 ).map((e) => {
     return {
         meta: e.meta.en as ProductCategoryEntryMetaItem,
@@ -56,7 +57,7 @@ const filters = {
     }, [] as ProductGenderEntryMetaItem[]),
 };
 
-const clientConfig = bcms.getConfig();
+const clientConfig = bcmsPublic.getConfig();
 ---
 
 <Layout title={`${homeMeta.seo?.title || homeMeta.title} - Moda`}>

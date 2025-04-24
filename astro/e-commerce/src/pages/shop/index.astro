@@ -1,18 +1,19 @@
 ---
-import { bcms } from '../../bcms-client';
-import type { ProductEntry } from '../../../bcms/types/ts/entry/product';
-import type { ProductGenderEntryMetaItem } from '../../../bcms/types/ts/entry/product-gender';
+import type { ProductEntry } from '../../../bcms/types/ts';
+import type { ProductGenderEntryMetaItem } from '../../../bcms/types/ts';
 import type {
     ProductCategoryEntry,
     ProductCategoryEntryMetaItem,
-} from '../../../bcms/types/ts/entry/product-category';
-import type { ProductBrandEntryMetaItem } from '../../../bcms/types/ts/entry/product-brand';
+} from '../../../bcms/types/ts';
+import type { ProductBrandEntryMetaItem } from '../../../bcms/types/ts';
 import { productToLite } from '../../utils/product';
 
 import Layout from '../../layouts/Layout.astro';
 import ProductsPageWrapper from '../../components/shop/products/PageWrapper';
+import { bcmsPrivate } from '../../bcms-private';
+import { bcmsPublic } from '../../bcms-public';
 
-const products = (await bcms.entry.getAll('product')) as ProductEntry[];
+const products = (await bcmsPrivate.entry.getAll('product')) as ProductEntry[];
 
 const data = {
     products: products.map((e) => productToLite(e)),
@@ -32,7 +33,7 @@ const data = {
         .filter((e, _, arr) => arr.find((i) => i.slug === e.slug) === e),
 };
 
-const clientConfig = bcms.getConfig();
+const clientConfig = bcmsPublic.getConfig();
 ---
 
 <Layout title={`Products - Moda`}>

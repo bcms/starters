@@ -1,20 +1,17 @@
 import ContextWrapper from '../ContextWrapper';
 import InnerPageWrapper from '../InnnerPageWrapper';
 import type {
-    HomeEntry,
     HomeEntryMetaItem,
-    ProductCategoryEntry,
     ProductCategoryEntryMetaItem,
-    ProductEntry,
     ProductGenderEntryMetaItem,
 } from '../../../bcms/types/ts';
-import { productToLite, type ProductLite } from '../../utils/product';
-import { bcms } from '../../bcms-client';
+import { type ProductLite } from '../../utils/product';
 import { HomeHero } from './Hero';
 import { HomeCategories } from './Categories';
 import { HomeCta } from './Cta';
 import { HomeProducts } from './Products';
 import type { ClientConfig } from '@thebcms/client';
+import { bcmsPublic } from '../../bcms-public.ts';
 
 interface Props {
     meta: HomeEntryMetaItem;
@@ -44,12 +41,12 @@ const HomePageWrapper: React.FC<Props> = ({
                     title={meta.hero_title}
                     description={meta.hero_description}
                     image={meta.hero_cover_image}
-                    bcms={bcms}
+                    bcms={bcmsPublic.getConfig()}
                 />
                 <HomeCategories
                     data={categories.slice(0, 6)}
                     ctaTheme="dark-green"
-                    bcms={bcms}
+                    bcms={bcmsPublic.getConfig()}
                 />
                 <HomeCta
                     title={meta.cta_title}
@@ -59,17 +56,17 @@ const HomePageWrapper: React.FC<Props> = ({
                         label: meta.cta_label,
                         href: meta.cta_link,
                     }}
-                    bcms={bcms}
+                    bcms={bcmsPublic.getConfig()}
                 />
                 <HomeCategories
                     data={categories.slice(6, 12)}
                     ctaTheme="orange"
-                    bcms={bcms}
+                    bcms={bcmsPublic.getConfig()}
                 />
                 <HomeProducts
                     products={products}
                     filters={filters}
-                    bcms={bcms}
+                    bcms={bcmsPublic.getConfig()}
                 />
             </InnerPageWrapper>
         </ContextWrapper>
