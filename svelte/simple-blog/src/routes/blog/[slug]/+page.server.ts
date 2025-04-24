@@ -1,9 +1,10 @@
-import { bcms } from '../../../bcms-client';
 import type { BlogEntry, BlogEntryMetaItem } from '../../../../bcms/types/ts';
 import type { EntryContentParsedItem } from '@thebcms/types';
+import { bcmsPrivate } from '../../../bcms-private';
+import { bcmsPublic } from '../../../bcms-public';
 
 export const load = async (req) => {
-	const blogs = (await bcms.entry.getAll('blog')) as BlogEntry[];
+	const blogs = (await bcmsPrivate.entry.getAll('blog')) as BlogEntry[];
 
 	const blog = blogs.find((e) => e.meta.en?.slug === req.params.slug);
 
@@ -25,6 +26,6 @@ export const load = async (req) => {
 	return {
 		blog: data,
 		otherBlogs,
-		bcmsConfig: bcms.getConfig(),
+		bcmsConfig: bcmsPublic.getConfig(),
 	};
 };
