@@ -1,0 +1,19 @@
+---
+interface Props {
+	size?: 'md' | 'lg';
+	class?: string;
+}
+
+const props = Astro.props;
+const sizeClass =
+		  props.size === 'md'
+		  ? 'px-2 py-1 max-md:text-sm md:p-2'
+		  : 'px-3 py-2 text-xl font-medium rounded-lg md:px-5 md:py-4 md:text-2xl';
+---
+
+<div
+	class={`border border-appGray-200 bg-appGray-100 flex leading-none rounded-lg ${sizeClass} ${props.class
+	|| ''}`}
+>
+	<slot />
+</div>
