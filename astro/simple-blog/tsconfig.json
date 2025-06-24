@@ -1,6 +1,12 @@
 {
-  "extends": "astro/tsconfigs/strict",
-  "compilerOptions": {
-    "jsx": "preserve",
-  }
+    "extends": "astro/tsconfigs/strict",
+    "include": [".astro/types.d.ts", "**/*"],
+    "exclude": ["dist"],
+    "compilerOptions": {
+        "paths": {
+            "@bcms-types": ["./bcms/types/ts"]
+        }
+    },
+    "include": ["src/**/*", "node_modules/@thebcms/astro-component/**/*"]
 }
+

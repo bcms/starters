@@ -1,14 +1,12 @@
 ---
 import Layout from '../layouts/layout.astro';
-import type { BlogEntry, BlogEntryMetaItem } from '../../bcms/types/ts';
 import Tag from '../components/tag.astro';
 import BlogCard from '../components/blog-card.astro';
 import { bcmsPrivate } from '../bcms-private';
-import { bcmsPublic } from '../bcms-public';
+import type { BlogEntry, BlogEntryMetaItem } from '@bcms-types';
 
 const blogs = (await bcmsPrivate.entry.getAll('blog')) as BlogEntry[];
 const items = blogs.map((e) => e.meta.en as BlogEntryMetaItem);
-const bcmsConfig = bcmsPublic.getConfig();
 ---
 
 <Layout>
@@ -26,9 +24,7 @@ const bcmsConfig = bcmsPublic.getConfig();
                 <div class="grid grid-cols-1 gap-12 max-w-[1040px] mx-auto">
                     {
                         items.map((item) => {
-                            return (
-                                <BlogCard blog={item} bcmsConfig={bcmsConfig} />
-                            );
+                            return <BlogCard blog={item} />;
                         })
                     }
                 </div>
