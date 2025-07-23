@@ -45,13 +45,12 @@
                             </div>
                         </div>
                     </div>
-                    <BCMSImage
-                        :client="data.bcms"
+                    <BcmsImage
                         :media="data.item.meta.cover_image"
                         class="w-full aspect-[2.21] object-cover rounded-2xl md:rounded-3xl"
                     />
                 </header>
-                <BCMSContentManager
+                <BcmsContentManager
                     :items="data.item.content"
                     class="prose max-w-full lg:prose-lg"
                 />
@@ -81,7 +80,6 @@
 
 <script setup lang="ts">
 import type { BlogResponse } from '~/server/api/blog/[slug]';
-import { BCMSImage, BCMSContentManager } from '@thebcms/components-vue';
 
 const route = useRoute();
 const { setOgHead } = useHeadTags();

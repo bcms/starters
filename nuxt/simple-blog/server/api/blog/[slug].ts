@@ -1,4 +1,3 @@
-import { bcms } from '~/bcms-client';
 import type { BlogEntry, BlogEntryMetaItem } from '~/bcms/types/ts';
 import { EntryContentParsedItem } from '@thebcms/types';
 import { ClientConfig } from '@thebcms/client';
@@ -13,6 +12,7 @@ export type BlogResponse = {
 };
 
 export default defineEventHandler(async (event) => {
+    const bcms = useBcmsPrivate();
     const blogs = (await bcms.entry.getAll('blog')) as BlogEntry[];
 
     const slug = getRouterParam(event, 'slug');

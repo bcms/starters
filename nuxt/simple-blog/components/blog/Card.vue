@@ -5,8 +5,7 @@
             class="group w-full grid grid-cols-1 border border-solid border-appGray-200 rounded-2xl overflow-hidden md:grid-cols-[45%,55%]"
         >
             <div class="aspect-[1.25] self-stretch overflow-hidden">
-                <BCMSImage
-                    :client="bcms"
+                <BcmsImage
                     :media="blog.cover_image"
                     class="size-full object-cover transition-transform duration-500 object-center group-hover:scale-105 group-focus-visible:scale-105"
                 />
@@ -38,7 +37,7 @@
                         {{ toReadableDate(blog.date) }}
                     </div>
                 </div>
-                <BCMSContentManager
+                <BcmsContentManager
                     :items="blog.description.nodes"
                     class="text-appGray-300 font-medium leading-[1.38] tracking-[-0.36px] md:text-lg"
                 />
@@ -48,17 +47,12 @@
 </template>
 
 <script setup lang="ts">
-import type { BlogEntryMetaItem } from '~/bcms/types/ts/entry/blog';
-import { BCMSImage, BCMSContentManager } from '@thebcms/components-vue';
-import type { ClientConfig } from '@thebcms/client';
+import type { BlogEntryMetaItem } from '#bcms-type';
+import { toReadableDate } from '~/utils/date';
 
 defineProps({
     blog: {
         type: Object as PropType<BlogEntryMetaItem>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });
