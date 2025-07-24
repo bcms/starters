@@ -15,9 +15,8 @@
                                     '0px 0px 0px 1px #EDEDED, 0px 1.5px 1px 0px rgba(15, 18, 35, 0.14)',
                             }"
                         >
-                            <BCMSImage
+                            <BcmsImage
                                 :media="item.meta.en.cover_image"
-                                :client="bcms"
                                 class="size-full object-cover rounded-t-xl overflow-hidden"
                             />
                         </div>
@@ -47,17 +46,11 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
-import type { PortfolioEntry } from '~/bcms/types/ts';
+import type { PortfolioEntry } from '~/bcms/type/ts';
 
 defineProps({
     items: {
         type: Array as PropType<PortfolioEntry[]>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

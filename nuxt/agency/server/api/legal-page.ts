@@ -1,13 +1,11 @@
-import { ClientConfig } from '@thebcms/client';
-import { bcms } from '~/bcms-client';
-import { LegalPageEntry, LegalPageEntryMetaItem } from '~/bcms/types/ts';
+import { LegalPageEntry, LegalPageEntryMetaItem } from '~/bcms/type/ts';
 
 export type LegalPageResponse = {
     meta: LegalPageEntryMetaItem;
-    bcms: ClientConfig;
 };
 
 export default defineEventHandler(async () => {
+    const bcms = useBcmsPrivate();
     const legalPageEntry = (await bcms.entry.getBySlug(
         'legal',
         'legal-page',
@@ -17,7 +15,6 @@ export default defineEventHandler(async () => {
 
     const res: LegalPageResponse = {
         meta: legalPageMeta,
-        bcms: bcms.getConfig(),
     };
 
     return res;

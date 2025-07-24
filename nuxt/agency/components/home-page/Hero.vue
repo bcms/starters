@@ -9,11 +9,7 @@
                 <div
                     class="absolute top-0 right-0 w-[49%] h-full min-h-[200px] max-sm:-right-2"
                 >
-                    <BCMSImage
-                        :media="gallery"
-                        :client="bcms"
-                        class="w-full full"
-                    />
+                    <BcmsImage :media="gallery" class="w-full full" />
                 </div>
             </div>
             <ContactUs class="max-w-max md:hidden" />
@@ -22,8 +18,6 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
 import type {
     PropMediaDataParsed,
     PropRichTextDataParsed,
@@ -36,10 +30,6 @@ defineProps({
     },
     gallery: {
         type: Object as PropType<PropMediaDataParsed>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

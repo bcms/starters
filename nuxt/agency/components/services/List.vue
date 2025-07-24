@@ -18,9 +18,8 @@
                         }"
                     >
                         <div :class="`${index % 2 === 0 ? '' : 'order-2'}`">
-                            <BCMSImage
+                            <BcmsImage
                                 :media="service.meta.en.cover_image"
-                                :client="bcms"
                                 class="size-full object-cover"
                             />
                         </div>
@@ -48,17 +47,11 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
-import type { ServiceEntry } from '~/bcms/types/ts';
+import type { ServiceEntry } from '~/bcms/type/ts';
 
 defineProps({
     services: {
         type: Array as PropType<ServiceEntry[]>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });
