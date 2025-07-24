@@ -74,9 +74,8 @@
                         <div
                             class="flex items-center justify-center w-[295px] aspect-[2.17] rounded-lg bg-white mx-auto mb-6 lg:w-[462px] lg:aspect-[1.7] lg:rounded-2xl lg:mb-12"
                         >
-                            <BCMSImage
+                            <BcmsImage
                                 :media="sponsor.cover_image"
-                                :client="bcms"
                                 class="w-auto h-6 object-cover lg:h-12"
                             />
                         </div>
@@ -98,21 +97,19 @@
             </button>
         </div>
     </section>
-    <Teleport to="body">
-        <Transition name="fade">
-            <ContactForm
-                v-if="showContactForm"
-                @close="showContactForm = false"
-            />
-        </Transition>
-    </Teleport>
+<!--    <Teleport to="body">-->
+<!--        <Transition name="fade">-->
+<!--            <ContactForm-->
+<!--                v-if="showContactForm"-->
+<!--                @close="showContactForm = false"-->
+<!--            />-->
+<!--        </Transition>-->
+<!--    </Teleport>-->
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
 import { A11y, Pagination } from 'swiper/modules';
-import type { SponsorGroup } from '~/bcms/types/ts';
+import type { SponsorGroup } from '~/bcms/type/ts';
 
 const props = defineProps({
     title: {
@@ -121,10 +118,6 @@ const props = defineProps({
     },
     sponsors: {
         type: Array as PropType<SponsorGroup[]>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

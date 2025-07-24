@@ -72,7 +72,7 @@
 </template>
 
 <script setup lang="ts">
-import type { LegalEntry } from '~/bcms/types/ts';
+import type { LegalEntry } from '~/bcms/type/ts';
 import FacebookIcon from '@/assets/icons/facebook.svg';
 import RedditIcon from '@/assets/icons/reddit.svg';
 import InstagramIcon from '@/assets/icons/instagram.svg';
