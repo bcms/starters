@@ -18,18 +18,12 @@
             </div>
         </div>
         <div class="absolute top-0 left-0 size-full">
-            <BCMSImage
-                :media="image"
-                class="size-full object-cover"
-                :client="bcms"
-            />
+            <BcmsImage :media="image" class="size-full object-cover" />
         </div>
     </section>
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
 import type { PropMediaDataParsed } from '@thebcms/types';
 
 defineProps({
@@ -50,10 +44,6 @@ defineProps({
     },
     image: {
         type: Object as PropType<PropMediaDataParsed>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

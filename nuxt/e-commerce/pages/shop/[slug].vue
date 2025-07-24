@@ -8,7 +8,6 @@
                 <ShopPageGallery
                     :gallery="data.meta.gallery"
                     :active-color="activeColor"
-                    :bcms="data.bcms"
                 />
                 <ShopPageDetails
                     :meta="data.meta"
@@ -30,7 +29,6 @@
                         v-for="(product, index) in data.otherProducts"
                         :key="index"
                         :card="product"
-                        :bcms="data.bcms"
                     />
                 </div>
             </div>
@@ -39,7 +37,7 @@
 </template>
 
 <script setup lang="ts">
-import type { ProductColorEntry } from '~/bcms/types/ts';
+import type { ProductColorEntry } from '~/bcms/type/ts';
 import type { ShopProductResponse } from '~/server/api/shop/[slug]';
 
 const { setOgHead } = useHeadTags();

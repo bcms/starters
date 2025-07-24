@@ -119,7 +119,7 @@ import type {
     ProductColorEntryMetaItem,
     ProductEntryMetaItem,
     ProductSizeEntryMetaItem,
-} from '~/bcms/types/ts';
+} from '~/bcms/type/ts';
 
 const props = defineProps({
     meta: {

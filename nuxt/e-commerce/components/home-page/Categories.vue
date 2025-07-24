@@ -42,9 +42,8 @@
                     <Btn :theme="ctaTheme" label="Shop now" />
                 </NuxtLink>
                 <div class="absolute top-0 left-0 size-full">
-                    <BCMSImage
+                    <BcmsImage
                         :media="category.meta.gallery[0]"
-                        :client="bcms"
                         class="size-full object-cover"
                     />
                 </div>
@@ -54,9 +53,7 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
-import type { ProductCategoryEntryMetaItem } from '~/bcms/types/ts';
+import type { ProductCategoryEntryMetaItem } from '~/bcms/type/ts';
 import type { BtnTheme } from '~/types';
 
 defineProps({
@@ -71,10 +68,6 @@ defineProps({
     },
     ctaTheme: {
         type: String as PropType<BtnTheme>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

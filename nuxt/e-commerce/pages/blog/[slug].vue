@@ -21,9 +21,8 @@
                     </h1>
                 </div>
                 <div class="absolute top-0 left-0 size-full">
-                    <BCMSImage
+                    <BcmsImage
                         :media="data.meta.media_image"
-                        :client="data.bcms"
                         class="size-full object-cover"
                     />
                 </div>
@@ -47,7 +46,6 @@
                             v-for="(blog, index) in data.otherBlogs"
                             :key="index"
                             :card="blog"
-                            :bcms="data.bcms"
                         />
                     </div>
                 </div>
@@ -57,7 +55,6 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from '@thebcms/components-vue';
 import type { BlogResponse } from '~/server/api/blog/[slug]';
 
 const { setOgHead } = useHeadTags();

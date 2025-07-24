@@ -6,7 +6,6 @@
                 :genders="data.genders"
                 :categories="data.categories"
                 :brands="data.brands"
-                :bcms="data.bcms"
             />
         </div>
     </div>

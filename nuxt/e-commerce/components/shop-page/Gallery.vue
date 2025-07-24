@@ -1,11 +1,10 @@
 <template>
     <div class="flex flex-col">
         <div class="aspect-square overflow-hidden mb-6">
-            <BCMSImage
+            <BcmsImage
                 v-for="(image, index) in galleryByColor"
                 :key="image.image._id"
                 :media="image.image"
-                :client="bcms"
                 :class="`size-full object-cover flex-1 ${activeImage === index ? 'flex' : 'hidden'}`"
             />
         </div>
@@ -22,9 +21,8 @@
                 @click="activeImage = index"
             >
                 <div class="overflow-hidden">
-                    <BCMSImage
+                    <BcmsImage
                         :media="image.image"
-                        :client="bcms"
                         class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                     />
                 </div>
@@ -34,9 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
-import type { ProductColorEntry, ProductImageGroup } from '~/bcms/types/ts';
+import type { ProductColorEntry, ProductImageGroup } from '~/bcms/type/ts';
 
 const props = defineProps({
     gallery: {
@@ -45,10 +41,6 @@ const props = defineProps({
     },
     activeColor: {
         type: Object as PropType<ProductColorEntry>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

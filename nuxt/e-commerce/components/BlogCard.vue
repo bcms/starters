@@ -2,10 +2,9 @@
     <NuxtLink :to="`/blog/${card.slug}`" class="group flex flex-col">
         <div class="flex overflow-hidden mb-6">
             <div class="size-full">
-                <BCMSImage
+                <BcmsImage
                     :media="card.media_image"
                     class="w-full h-[320px] object-cover transition-transform duration-500 group-hover:scale-105"
-                    :client="bcms"
                 />
             </div>
         </div>
@@ -32,17 +31,11 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
-import type { BlogEntryMetaItem } from '~/bcms/types/ts';
+import type { BlogEntryMetaItem } from '~/bcms/type/ts';
 
 defineProps({
     card: {
         type: Object as PropType<BlogEntryMetaItem>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

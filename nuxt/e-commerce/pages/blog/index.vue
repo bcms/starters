@@ -11,7 +11,6 @@
                     :style="{
                         display: index < loadedBlogs ? '' : 'none',
                     }"
-                    :bcms="data.bcms"
                 />
             </div>
             <button

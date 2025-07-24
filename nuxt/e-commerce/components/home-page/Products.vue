@@ -35,7 +35,6 @@
                     v-for="(card, index) in filteredProducts"
                     :key="index"
                     :card="card"
-                    :bcms="bcms"
                 />
             </div>
             <NuxtLink
@@ -49,11 +48,10 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
 import type {
     ProductCategoryEntryMetaItem,
     ProductGenderEntryMetaItem,
-} from '~/bcms/types/ts';
+} from '~/bcms/type/ts';
 import type { ProductFilter } from '~/types';
 
 const props = defineProps({
@@ -66,10 +64,6 @@ const props = defineProps({
             genders: ProductGenderEntryMetaItem[];
             categories: ProductCategoryEntryMetaItem[];
         }>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });
