@@ -1,9 +1,8 @@
 <template>
     <article>
         <NuxtLink :to="`/blog/${blog.slug}`">
-            <BCMSImage
+            <BcmsImage
                 :media="blog.cover"
-                :client="bcms"
                 class="w-full object-cover aspect-[1.48] rounded-2xl overflow-hidden mb-4 xl:aspect-[1.04] xl:mb-6"
             />
             <div
@@ -33,16 +32,10 @@
 
 <script setup lang="ts">
 import OpenIcon from '@/assets/icons/open.svg';
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
 
 defineProps({
     blog: {
         type: Object as PropType<BlogLite>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

@@ -17,10 +17,9 @@
                             {{ data.meta.title }}
                         </h1>
                     </div>
-                    <BCMSImage
+                    <BcmsImage
                         :media="data.meta.cover_image"
-                        class="aspect-[2.07] rounded-lg overflow-hidden w-full cover mb-6 md:mb-8 lg:aspect-[2.43] lg:rounded-2xl lg:mb-12"
-                        :client="data.bcms"
+                        class="aspect-[2.07] rounded-lg overflow-hidden w-full object-cover mb-6 md:mb-8 lg:aspect-[2.43] lg:rounded-2xl lg:mb-12"
                     />
                     <ContentManager :items="data.content" class="prose" />
                 </div>
@@ -56,7 +55,6 @@
                             v-for="(blog, index) in data.otherBlogs"
                             :key="index"
                             :blog="blog"
-                            :bcms="data.bcms"
                         />
                     </div>
                 </div>
@@ -67,7 +65,6 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from '@thebcms/components-vue';
 import type { BlogResponse } from '~/server/api/blog/[slug]';
 
 const { setOgHead } = useHeadTags();

@@ -23,9 +23,8 @@
                 <div
                     class="relative aspect-[2.07] rounded-lg overflow-hidden mb-6 lg:aspect-[2.43] lg:rounded-2xl lg:mb-8"
                 >
-                    <BCMSImage
+                    <BcmsImage
                         :media="data.meta.cover_image"
-                        :client="data.bcms"
                         class="w-full h-full bg-cover"
                     />
                     <div
@@ -40,7 +39,6 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from '@thebcms/components-vue';
 import type { AboutPageResponse } from '~/server/api/about-page';
 
 const { setOgHead } = useHeadTags();

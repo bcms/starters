@@ -4,7 +4,6 @@
             :title="data.meta.hero_title"
             :subtitle="data.meta.hero_subtitle"
             :blogs="featuredBlogs"
-            :bcms="data.bcms"
         />
         <section class="pb-8 md:pb-20 lg:pb-[104px]">
             <div class="container">
@@ -39,7 +38,6 @@
                         v-for="(blog, index) in data.blogs"
                         :key="index"
                         :blog="blog"
-                        :bcms="data.bcms"
                     />
                 </div>
             </div>

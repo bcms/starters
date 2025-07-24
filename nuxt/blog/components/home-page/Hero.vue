@@ -55,9 +55,8 @@
                             </div>
                         </div>
                     </div>
-                    <BCMSImage
+                    <BcmsImage
                         :media="blog.cover"
-                        :client="bcms"
                         class="absolute top-0 left-0 w-full h-full object-cover"
                     />
                     <div
@@ -71,9 +70,6 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
-
 defineProps({
     title: {
         type: String,
@@ -85,10 +81,6 @@ defineProps({
     },
     blogs: {
         type: Array as PropType<BlogLite[]>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

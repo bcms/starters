@@ -62,7 +62,6 @@
                     v-for="blog in filteredBlogs"
                     :key="blog.slug"
                     :blog="blog"
-                    :bcms="data.bcms"
                 />
             </div>
             <div
@@ -86,7 +85,6 @@
                         v-for="(blog, index) in data.blogs"
                         :key="index"
                         :blog="blog"
-                        :bcms="data.bcms"
                     />
                 </div>
             </div>
