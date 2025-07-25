@@ -25,7 +25,7 @@
 </template>
 
 <script setup lang="ts">
-import type { QaItemGroup } from '~/bcms/types/ts';
+import type { QaItemGroup } from '~/bcms/type/ts';
 
 defineProps({
     item: {

@@ -5,11 +5,10 @@
                 class="relative"
                 :class="[showTitleLayer ? 'lg:mb-[34px]' : '']"
             >
-                <BCMSImage
+                <BcmsImage
                     v-if="card.cover"
                     :media="card.cover"
                     :alt="card.title"
-                    :client="bcms"
                     :class="`rounded-[10px] aspect-square overflow-hidden object-cover w-full mb-[14px] ${[
                         showTitleLayer
                             ? 'lg:aspect-[1.88] lg:rounded-2xl lg:mb-0'
@@ -92,9 +91,6 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
-
 defineProps({
     card: {
         type: Object as PropType<RecipeLight>,
@@ -103,10 +99,6 @@ defineProps({
     showTitleLayer: {
         type: Boolean,
         required: false,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
-        required: true,
     },
 });
 </script>

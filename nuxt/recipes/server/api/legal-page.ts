@@ -1,21 +1,19 @@
-import { ClientConfig } from '@thebcms/client';
-import { bcms } from '~/bcms-client';
 import {
     FooterEntry,
     FooterEntryMetaItem,
     HeaderEntry,
     HeaderEntryMetaItem,
     LegalPageEntry,
-} from '~/bcms/types/ts';
+} from '~/bcms/type/ts';
 
 export type LegalPageResponse = {
     entries: LegalPageEntry[];
     header: HeaderEntryMetaItem;
     footer: FooterEntryMetaItem;
-    bcms: ClientConfig;
 };
 
 export default defineEventHandler(async () => {
+    const bcms = useBcmsPrivate();
     const header = (await bcms.entry.getBySlug(
         'header',
         'header',
@@ -31,7 +29,6 @@ export default defineEventHandler(async () => {
         entries,
         header: header.meta.en as HeaderEntryMetaItem,
         footer: footer.meta.en as FooterEntryMetaItem,
-        bcms: bcms.getConfig(),
     };
 
     return res;

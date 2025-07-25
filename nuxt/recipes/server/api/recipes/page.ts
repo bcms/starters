@@ -1,5 +1,3 @@
-import { ClientConfig } from '@thebcms/client';
-import { bcms } from '~/bcms-client';
 import {
     FooterEntry,
     FooterEntryMetaItem,
@@ -8,7 +6,7 @@ import {
     RecipeEntry,
     RecipesPageEntry,
     RecipesPageEntryMetaItem,
-} from '~/bcms/types/ts';
+} from '~/bcms/type/ts';
 import { RecipeLight, recipeToLight } from '~/utils/recipe';
 
 export type RecipesPageResponse = {
@@ -16,10 +14,10 @@ export type RecipesPageResponse = {
     recipes: RecipeLight[];
     header: HeaderEntryMetaItem;
     footer: FooterEntryMetaItem;
-    bcms: ClientConfig;
 };
 
 export default defineEventHandler(async () => {
+    const bcms = useBcmsPrivate();
     const header = (await bcms.entry.getBySlug(
         'header',
         'header',
@@ -42,7 +40,6 @@ export default defineEventHandler(async () => {
         }),
         header: header.meta.en as HeaderEntryMetaItem,
         footer: footer.meta.en as FooterEntryMetaItem,
-        bcms: bcms.getConfig(),
     };
 
     return res;

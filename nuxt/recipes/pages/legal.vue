@@ -1,10 +1,5 @@
 <template>
-    <PageWrapper
-        v-if="data"
-        :header="data.header"
-        :footer="data.footer"
-        :bcms="data.bcms"
-    >
+    <PageWrapper v-if="data" :header="data.header" :footer="data.footer">
         <div class="pt-24 pb-10 lg:pt-[104px] lg:pb-20 xl:pb-[120px]">
             <div class="container">
                 <div class="grid grid-cols-1 gap-6 lg:gap-12">

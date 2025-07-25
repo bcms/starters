@@ -37,9 +37,8 @@
                         </div>
                     </div>
                 </div>
-                <BCMSImage
+                <BcmsImage
                     :media="data.cover_image"
-                    :client="bcms"
                     class="absolute top-0 left-0 w-full h-full object-cover"
                 />
             </div>
@@ -48,17 +47,11 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
-import type { HomeAboutUsGroup } from '~/bcms/types/ts';
+import type { HomeAboutUsGroup } from '~/bcms/type/ts';
 
 defineProps({
     data: {
         type: Object as PropType<HomeAboutUsGroup>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });
