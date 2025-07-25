@@ -62,7 +62,7 @@
 </template>
 
 <script setup lang="ts">
-import type { JobPostEntryMetaItem } from '~/bcms/types/ts';
+import type { JobPostEntryMetaItem } from '~/bcms/type/ts';
 
 defineProps({
     job: {

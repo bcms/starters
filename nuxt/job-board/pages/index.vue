@@ -4,7 +4,6 @@
             :title="data.meta.hero_title"
             :description="data.meta.hero_description"
             :cover="data.meta.hero_cover_image"
-            :bcms="data.bcms"
         />
         <HomePageJobs
             :title="data.meta.jobs_title"
@@ -16,10 +15,7 @@
             :description="data.meta.about_description"
             :features="data.meta.about_features"
         />
-        <HomePageTestimonials
-            :testimonials="data.testimonials"
-            :bcms="data.bcms"
-        />
+        <HomePageTestimonials :testimonials="data.testimonials" />
     </div>
 </template>
 

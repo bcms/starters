@@ -1,19 +1,17 @@
-import { ClientConfig } from '@thebcms/client';
-import { bcms } from '~/bcms-client';
 import {
     AboutPageEntry,
     AboutPageEntryMetaItem,
     TeamMemberEntry,
     TeamMemberEntryMetaItem,
-} from '~/bcms/types/ts';
+} from '~/bcms/type/ts';
 
 export type AboutPageResponse = {
     meta: AboutPageEntryMetaItem;
     members: TeamMemberEntryMetaItem[];
-    bcms: ClientConfig;
 };
 
 export default defineEventHandler(async () => {
+    const bcms = useBcmsPrivate();
     const aboutUsPageEntry = (await bcms.entry.getBySlug(
         'about-us',
         'about-page',
@@ -30,7 +28,6 @@ export default defineEventHandler(async () => {
     const res: AboutPageResponse = {
         meta: aboutUsPageMeta,
         members: teamMembersMeta,
-        bcms: bcms.getConfig(),
     };
 
     return res;

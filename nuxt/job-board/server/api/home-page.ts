@@ -1,22 +1,20 @@
-import { ClientConfig } from '@thebcms/client';
-import { bcms } from '~/bcms-client';
 import {
     HomePageEntry,
     HomePageEntryMetaItem,
     JobPostEntry,
     TestimonialEntry,
     TestimonialEntryMetaItem,
-} from '~/bcms/types/ts';
+} from '~/bcms/type/ts';
 import { JobLite, toJobLite } from '~/utils/job';
 
 export type HomePageResponse = {
     meta: HomePageEntryMetaItem;
     jobs: JobLite[];
     testimonials: TestimonialEntryMetaItem[];
-    bcms: ClientConfig;
 };
 
 export default defineEventHandler(async () => {
+    const bcms = useBcmsPrivate();
     const homePageEntry = (await bcms.entry.getBySlug(
         'home',
         'home-page',
@@ -39,7 +37,6 @@ export default defineEventHandler(async () => {
         meta: homePageMeta,
         jobs: jobEntriesLite,
         testimonials: testimonialEntriesMeta,
-        bcms: bcms.getConfig(),
     };
 
     return res;
