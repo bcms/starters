@@ -67,9 +67,8 @@
                                 :items="testimonial.quote.nodes"
                                 class="text-sm leading-[1.4] font-Gloock text-appGray-700 mb-4 lg:text-[32px] lg:leading-[1.4] lg:mb-12"
                             />
-                            <BCMSImage
+                            <BcmsImage
                                 :media="testimonial.author_avatar_image"
-                                :client="bcms"
                                 class="w-10 h-10 rounded-full overflow-hidden object-cover mb-3 mx-auto lg:w-16 lg:h-16 lg:mb-6"
                             />
                             <div
@@ -113,11 +112,9 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
 import type { PropRichTextDataParsed } from '@thebcms/types';
-import type { TestimonialGroup } from '~/bcms/types/ts';
+import type { TestimonialGroup } from '~/bcms/type/ts';
 import { A11y, Navigation } from 'swiper/modules';
-import { BCMSImage } from '@thebcms/components-vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 
 defineProps({
@@ -131,10 +128,6 @@ defineProps({
     },
     items: {
         type: Array as PropType<TestimonialGroup[]>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

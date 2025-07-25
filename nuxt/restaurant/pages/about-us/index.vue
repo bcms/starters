@@ -5,12 +5,8 @@
             :subtitle="data.meta.hero_subtitle"
             :description="data.meta.hero_description"
             :cover="data.meta.hero_cover"
-            :bcms="data.bcms"
         />
-        <AboutPageTextImage
-            :data="data.meta.text_image_cols"
-            :bcms="data.bcms"
-        />
+        <AboutPageTextImage :data="data.meta.text_image_cols" />
     </div>
 </template>
 

@@ -23,5 +23,32 @@ export default defineNuxtConfig({
         },
     },
     css: ['~/assets/styles/main.scss', 'swiper/css'],
-    modules: ['@nuxtjs/tailwindcss', 'nuxt-svgo', 'nuxt-swiper'],
+    bcms: {
+        orgId: process.env.BCMS_ORG_ID,
+        instanceId: process.env.BCMS_INSTANCE_ID,
+        privateClientOptions: {
+            key: {
+                id: process.env.BCMS_API_KEY_ID!,
+                secret: process.env.BCMS_API_KEY_SECRET!,
+            },
+            options: {
+                injectSvg: true,
+            },
+        },
+        publicClientOptions: {
+            key: {
+                id: process.env.NUXT_PUBLIC_BCMS_API_KEY_ID!,
+                secret: process.env.NUXT_PUBLIC_BCMS_API_KEY_SECRET!,
+            },
+            options: {
+                injectSvg: true,
+            },
+        },
+    },
+    modules: [
+        '@nuxtjs/tailwindcss',
+        'nuxt-svgo',
+        'nuxt-swiper',
+        '@thebcms/nuxt',
+    ],
 });

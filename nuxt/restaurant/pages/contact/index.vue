@@ -18,9 +18,8 @@
                         class="contactPage--description text-sm leading-[1.3] tracking-[-0.41px] uppercase text-center text-appGray-700 mb-8 lg:text-base lg:leading-[1.3] lg:mb-12"
                     />
                     <div class="bg-[#E5E4DA] rounded-2xl p-4 mb-8 lg:mb-10">
-                        <BCMSImage
+                        <BcmsImage
                             :media="data.meta.map_image"
-                            :client="data.bcms"
                             class="w-full h-auto cover rounded-[10px] overflow-hidden pointer-events-auto"
                         />
                     </div>
@@ -38,7 +37,6 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from '@thebcms/components-vue';
 import type { ContactPageResponse } from '~/server/api/contact-page';
 
 const { setOgHead } = useHeadTags();

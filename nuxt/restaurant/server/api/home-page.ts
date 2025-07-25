@@ -1,18 +1,16 @@
-import { ClientConfig } from '@thebcms/client';
-import { bcms } from '~/bcms-client';
 import {
     FoodItemEntry,
     HomePageEntry,
     HomePageEntryMetaItem,
-} from '~/bcms/types/ts';
+} from '~/bcms/type/ts';
 
 export type HomePageResponse = {
     meta: HomePageEntryMetaItem;
     foodItems: FoodItemEntry[];
-    bcms: ClientConfig;
 };
 
 export default defineEventHandler(async () => {
+    const bcms = useBcmsPrivate();
     const homePageEntry = (await bcms.entry.getBySlug(
         'home',
         'home-page',
@@ -25,7 +23,6 @@ export default defineEventHandler(async () => {
     const res: HomePageResponse = {
         meta: homePageMeta,
         foodItems,
-        bcms: bcms.getConfig(),
     };
 
     return res;

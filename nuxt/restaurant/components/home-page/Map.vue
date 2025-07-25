@@ -16,9 +16,8 @@
                 <div
                     class="relative z-10 top-4 translate-y-full bg-[#E5E4DA] rounded-2xl p-4 pb-6 xl:p-2 xl:w-[440px]"
                 >
-                    <BCMSImage
+                    <BcmsImage
                         :media="map"
-                        :client="bcms"
                         class="w-full h-auto object-cover rounded-[10px] overflow-hidden pointer-events-auto"
                     />
                     <div
@@ -51,17 +50,11 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
 import type { PropMediaDataParsed } from '@thebcms/types';
 
 defineProps({
     map: {
         type: Object as PropType<PropMediaDataParsed>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

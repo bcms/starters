@@ -38,9 +38,8 @@
                         class="text-xs leading-[1.3] tracking-[-0.41px] uppercase text-appGray-100 lg:text-lg lg:leading-[1.3]"
                     />
                 </div>
-                <BCMSImage
+                <BcmsImage
                     :media="meal.meta.en?.cover_image"
-                    :client="bcms"
                     class="absolute top-0 left-0 w-full h-full object-cover"
                 />
                 <div class="absolute top-0 left-0 w-full h-full bg-black/50" />
@@ -51,10 +50,8 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
 import type { PropRichTextDataParsed } from '@thebcms/types';
-import type { MealTypeEntry } from '~/bcms/types/ts';
+import type { MealTypeEntry } from '~/bcms/type/ts';
 
 defineProps({
     title: {
@@ -67,10 +64,6 @@ defineProps({
     },
     meals: {
         type: Array as PropType<MealTypeEntry[]>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

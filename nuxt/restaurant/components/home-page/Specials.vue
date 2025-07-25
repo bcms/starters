@@ -74,9 +74,8 @@
                             class="leading-[1.3] tracking-[-0.41px] uppercase text-appGray-100 max-w-[475px] max-lg:hidden"
                         />
                     </div>
-                    <BCMSImage
+                    <BcmsImage
                         :media="item.cover_image"
-                        :client="bcms"
                         class="absolute top-0 left-0 w-full h-full object-cover"
                     />
                     <div
@@ -96,10 +95,8 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
 import type { PropRichTextDataParsed } from '@thebcms/types';
-import type { FoodItemEntryMetaItem } from '~/bcms/types/ts';
+import type { FoodItemEntryMetaItem } from '~/bcms/type/ts';
 import { A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 
@@ -114,10 +111,6 @@ const props = defineProps({
     },
     items: {
         type: Array as PropType<FoodItemEntryMetaItem[]>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

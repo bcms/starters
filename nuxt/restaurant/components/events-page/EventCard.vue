@@ -1,8 +1,7 @@
 <template>
     <article class="px-6 py-8 rounded-2xl bg-[#EDEBE1]">
-        <BCMSImage
+        <BcmsImage
             :media="card.cover_image"
-            :client="bcms"
             class="object-cover w-full aspect-[1.25] rounded-2xl overflow-hidden mb-4 lg:aspect-[1.77] lg:mb-6"
         />
         <div
@@ -23,17 +22,11 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
-import type { EventGroup } from '~/bcms/types/ts';
+import type { EventGroup } from '~/bcms/type/ts';
 
 defineProps({
     card: {
         type: Object as PropType<EventGroup>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

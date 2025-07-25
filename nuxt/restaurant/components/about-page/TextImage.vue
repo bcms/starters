@@ -10,9 +10,8 @@
                     class="md:flex md:items-center md:even:flex-row-reverse md:gap-20 lg:gap-[112px]"
                 >
                     <div class="max-md:mb-4 md:flex-1">
-                        <BCMSImage
+                        <BcmsImage
                             :media="col.image"
-                            :client="bcms"
                             class="w-full object-cover aspect-[1.7] lg:aspect-[1.36]"
                         />
                     </div>
@@ -30,17 +29,11 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
-import type { TextWithImageGroup } from '~/bcms/types/ts';
+import type { TextWithImageGroup } from '~/bcms/type/ts';
 
 defineProps({
     data: {
         type: Array as PropType<TextWithImageGroup[]>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

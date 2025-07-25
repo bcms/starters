@@ -1,19 +1,17 @@
-import { ClientConfig } from '@thebcms/client';
-import { bcms } from '~/bcms-client';
 import {
     FoodItemEntry,
     FoodItemEntryMetaItem,
     SeasonEntry,
     SeasonEntryMetaItem,
-} from '~/bcms/types/ts';
+} from '~/bcms/type/ts';
 
 export type SeasonalMenuPageResponse = {
     seasons: SeasonEntryMetaItem[];
     foodItems: FoodItemEntryMetaItem[];
-    bcms: ClientConfig;
 };
 
 export default defineEventHandler(async () => {
+    const bcms = useBcmsPrivate();
     const seasons = ((await bcms.entry.getAll('season')) as SeasonEntry[]).map(
         (e) => e.meta.en as SeasonEntryMetaItem,
     );
@@ -25,7 +23,6 @@ export default defineEventHandler(async () => {
     const res: SeasonalMenuPageResponse = {
         seasons,
         foodItems,
-        bcms: bcms.getConfig(),
     };
 
     return res;
