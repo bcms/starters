@@ -1,19 +1,17 @@
-import { ClientConfig } from '@thebcms/client';
-import { bcms } from '~/bcms-client';
 import {
     TestimonialEntry,
     TestimonialEntryMetaItem,
     TestimonialsPageEntry,
     TestimonialsPageEntryMetaItem,
-} from '~/bcms/types/ts';
+} from '~/bcms/type/ts';
 
 export type TestimonialsPageResponse = {
     meta: TestimonialsPageEntryMetaItem;
     testimonials: TestimonialEntryMetaItem[];
-    bcms: ClientConfig;
 };
 
 export default defineEventHandler(async () => {
+    const bcms = useBcmsPrivate();
     const testimonialsPageEntry = (await bcms.entry.getBySlug(
         'testimonials',
         'testimonials-page',
@@ -30,7 +28,6 @@ export default defineEventHandler(async () => {
         testimonials: testimonialEntries.map(
             (e) => e.meta.en as TestimonialEntryMetaItem,
         ),
-        bcms: bcms.getConfig(),
     };
 
     return res;

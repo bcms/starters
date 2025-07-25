@@ -52,7 +52,7 @@
 
 <script setup lang="ts">
 import type { PropRichTextDataParsed } from '@thebcms/types';
-import type { ServiceEntryMetaItem } from '~/bcms/types/ts';
+import type { ServiceEntryMetaItem } from '~/bcms/type/ts';
 
 defineProps({
     title: {

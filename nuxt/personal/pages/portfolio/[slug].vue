@@ -76,9 +76,8 @@
                         </div>
                     </div>
                 </div>
-                <BCMSImage
+                <BcmsImage
                     :media="data.meta.gallery[0]"
-                    :client="data.bcms"
                     class="absolute top-0 left-0 w-full h-full object-cover"
                 />
                 <div
@@ -91,11 +90,10 @@
                     class="text-sm leading-[1.2] tracking-[-0.41px] max-w-[1138px] mb-8 lg:text-[40px] lg:leading-[1.2] lg:mb-[72px]"
                 />
                 <div class="grid grid-cols-3 gap-3 mb-4 lg:gap-8 lg:mb-6">
-                    <BCMSImage
+                    <BcmsImage
                         v-for="(image, index) in data.meta.gallery.slice(1)"
                         :key="index"
                         :media="image"
-                        :client="data.bcms"
                         class="portfolioItemPage--galleryImage w-full object-cover h-full"
                     />
                 </div>
@@ -105,7 +103,6 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from '@thebcms/components-vue';
 import type { PortfolioResponse } from '~/server/api/portfolio/[slug]';
 
 const { setOgHead } = useHeadTags();

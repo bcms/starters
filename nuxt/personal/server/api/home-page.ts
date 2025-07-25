@@ -1,5 +1,3 @@
-import { ClientConfig } from '@thebcms/client';
-import { bcms } from '~/bcms-client';
 import {
     AboutPageEntry,
     AboutPageEntryMetaItem,
@@ -17,7 +15,7 @@ import {
     TestimonialEntryMetaItem,
     TestimonialsPageEntry,
     TestimonialsPageEntryMetaItem,
-} from '~/bcms/types/ts';
+} from '~/bcms/type/ts';
 
 export type HomePageResponse = {
     meta: HomePageEntryMetaItem;
@@ -28,10 +26,10 @@ export type HomePageResponse = {
     portfolioMeta: PortfolioPageEntryMetaItem;
     testimonials: TestimonialEntryMetaItem[];
     testimonialsMeta: TestimonialsPageEntryMetaItem;
-    bcms: ClientConfig;
 };
 
 export default defineEventHandler(async () => {
+    const bcms = useBcmsPrivate();
     const homePageEntry = (await bcms.entry.getBySlug(
         'home',
         'home-page',
@@ -83,7 +81,6 @@ export default defineEventHandler(async () => {
             (e) => e.meta.en as TestimonialEntryMetaItem,
         ),
         testimonialsMeta: testimonialsPageMeta,
-        bcms: bcms.getConfig(),
     };
 
     return res;

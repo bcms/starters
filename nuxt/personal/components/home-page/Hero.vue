@@ -57,10 +57,9 @@
                 <div
                     class="relative rounded-3xl overflow-hidden aspect-square md:aspect-auto xl:aspect-[1.3]"
                 >
-                    <BCMSImage
+                    <BcmsImage
                         :media="cover"
                         class="absolute top-0 left-0 w-full h-full object-cover"
-                        :client="bcms"
                     />
                 </div>
             </div>
@@ -69,8 +68,6 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
 import type {
     PropMediaDataParsed,
     PropRichTextDataParsed,
@@ -87,10 +84,6 @@ defineProps({
     },
     cover: {
         type: Object as PropType<PropMediaDataParsed>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

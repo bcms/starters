@@ -1,19 +1,17 @@
-import { ClientConfig } from '@thebcms/client';
-import { bcms } from '~/bcms-client';
 import {
     ServiceEntry,
     ServiceEntryMetaItem,
     ServicesPageEntry,
     ServicesPageEntryMetaItem,
-} from '~/bcms/types/ts';
+} from '~/bcms/type/ts';
 
 export type ServicesPageResponse = {
     meta: ServicesPageEntryMetaItem;
     services: ServiceEntryMetaItem[];
-    bcms: ClientConfig;
 };
 
 export default defineEventHandler(async () => {
+    const bcms = useBcmsPrivate();
     const servicesPageEntry = (await bcms.entry.getBySlug(
         'services',
         'services-page',
@@ -27,7 +25,6 @@ export default defineEventHandler(async () => {
     const res: ServicesPageResponse = {
         meta: servicesPageMeta,
         services: servicesEntries.map((e) => e.meta.en as ServiceEntryMetaItem),
-        bcms: bcms.getConfig(),
     };
 
     return res;

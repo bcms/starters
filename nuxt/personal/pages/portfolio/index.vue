@@ -15,9 +15,8 @@
                         :key="index"
                         :to="`/portfolio/${item.slug}`"
                     >
-                        <BCMSImage
+                        <BcmsImage
                             :media="item.gallery[0]"
-                            :client="data.bcms"
                             class="w-full aspect-[2.07] object-cover rounded-[6px] overflow-hidden mb-4 lg:rounded-3xl lg:mb-12"
                         />
                         <div class="lg:flex lg:items-start lg:justify-between">
@@ -43,7 +42,6 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from '@thebcms/components-vue';
 import type { PortfolioPageResponse } from '~/server/api/portfolio/page';
 
 const { setOgHead } = useHeadTags();

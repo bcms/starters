@@ -26,9 +26,8 @@
                             class="pb-6 border-b border-appGray-100 lg:pb-8"
                         >
                             <div class="flex items-center mb-[14px] lg:mb-6">
-                                <BCMSImage
+                                <BcmsImage
                                     :media="item.author_image"
-                                    :client="bcms"
                                     class="w-8 h-8 rounded-full overflow-hidden object-cover mr-2.5 lg:w-12 lg:h-12 lg:mr-4"
                                 />
                                 <div
@@ -56,10 +55,8 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
 import type { PropRichTextDataParsed } from '@thebcms/types';
-import type { TestimonialEntryMetaItem } from '~/bcms/types/ts';
+import type { TestimonialEntryMetaItem } from '~/bcms/type/ts';
 
 defineProps({
     title: {
@@ -72,10 +69,6 @@ defineProps({
     },
     items: {
         type: Array as PropType<TestimonialEntryMetaItem[]>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

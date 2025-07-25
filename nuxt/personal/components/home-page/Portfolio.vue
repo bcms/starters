@@ -63,9 +63,8 @@
                                 :key="galleryIndex"
                                 class="w-full"
                             >
-                                <BCMSImage
+                                <BcmsImage
                                     :media="galleryItem"
-                                    :client="bcms"
                                     :class="`w-full h-full aspect-[1.45] object-cover rounded-3xl overflow-hidden ${
                                         index % 2 === 2 || index % 3 === 0
                                             ? 'xl:aspect-[1.45]'
@@ -103,9 +102,7 @@
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { A11y, Pagination } from 'swiper/modules';
 import type { PropRichTextDataParsed } from '@thebcms/types';
-import type { ClientConfig } from '@thebcms/client';
-import type { PortfolioEntryMetaItem } from '~/bcms/types/ts';
-import { BCMSImage } from '@thebcms/components-vue';
+import type { PortfolioEntryMetaItem } from '~/bcms/type/ts';
 
 defineProps({
     title: {
@@ -118,10 +115,6 @@ defineProps({
     },
     items: {
         type: Array as PropType<PortfolioEntryMetaItem[]>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });
