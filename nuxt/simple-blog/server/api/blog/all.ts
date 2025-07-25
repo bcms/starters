@@ -1,4 +1,4 @@
-import type { BlogEntry, BlogEntryMetaItem } from '~/bcms/types/ts';
+import type { BlogEntry, BlogEntryMetaItem } from '~/bcms/type/ts';
 
 export type BlogsResponse = {
     items: BlogEntryMetaItem[];

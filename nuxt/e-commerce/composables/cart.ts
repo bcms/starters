@@ -2,7 +2,7 @@ import type { PropMediaDataParsed } from '@thebcms/types';
 import type {
     ProductColorEntryMetaItem,
     ProductSizeEntryMetaItem,
-} from '~/bcms/types/ts';
+} from '~/bcms/type/ts';
 
 interface CartItem {
     slug: string;

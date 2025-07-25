@@ -2,7 +2,7 @@ import type {
     PropMediaDataParsed,
     PropRichTextDataParsed,
 } from '@thebcms/types';
-import type { RecipeEntry, RecipeEntryMetaItem } from '~/bcms/types/ts';
+import type { RecipeEntry, RecipeEntryMetaItem } from '~/bcms/type/ts';
 
 export interface RecipeLight {
     title: string;

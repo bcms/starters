@@ -69,7 +69,6 @@
                             v-if="blog.meta.en"
                             :key="index"
                             :blog="blog.meta.en"
-                            :bcms="data.bcms"
                         />
                     </template>
                 </div>

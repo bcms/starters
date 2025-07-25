@@ -1,5 +1,5 @@
 import type { PropRichTextDataParsed } from '@thebcms/types';
-import type { JobPostEntry, JobPostEntryMetaItem } from '~/bcms/types/ts';
+import type { JobPostEntry, JobPostEntryMetaItem } from '~/bcms/type/ts';
 
 export interface JobLite {
     title: string;
