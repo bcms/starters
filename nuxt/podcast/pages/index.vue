@@ -1,9 +1,16 @@
 <template>
     <div v-if="data">
-        <HomePageHero :title="data.meta.hero_title" :description="data.meta.hero_description"
-            :episodes="data.episodes.slice(0, 3)" :bcms="data.bcms" :cover="data.meta.hero_cover_image" />
-        <HomePageEpisodes :title="data.meta.episodes_title" :description="data.meta.episodes_description"
-            :episodes="data.episodes" :bcms="data.bcms" />
+        <HomePageHero
+            :title="data.meta.hero_title"
+            :description="data.meta.hero_description"
+            :episodes="data.episodes.slice(0, 3)"
+            :cover="data.meta.hero_cover_image"
+        />
+        <HomePageEpisodes
+            :title="data.meta.episodes_title"
+            :description="data.meta.episodes_description"
+            :episodes="data.episodes"
+        />
     </div>
 </template>
 
@@ -11,7 +18,7 @@
 import type { HomePageResponse } from '~/server/api/home-page';
 
 const { setOgHead } = useHeadTags();
-const { setEpisodes } = useEpisodes()
+const { setEpisodes } = useEpisodes();
 
 const { data, error } = await useFetch<HomePageResponse>('/api/home-page');
 
@@ -23,8 +30,11 @@ if (!data.value || error.value) {
 }
 
 setEpisodes(
-    data.value.episodes ? data.value.episodes.sort((a, b) => b.date.timestamp - a.date.timestamp) : [],
-    data.value.bcms
+    data.value.episodes
+        ? data.value.episodes.sort(
+              (a, b) => b.date.timestamp - a.date.timestamp,
+          )
+        : [],
 );
 
 useHead(() =>

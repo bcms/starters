@@ -5,19 +5,8 @@
             <slot />
         </main>
         <LayoutFooter />
-        <LayoutPlayingEpisode v-if="$route.name !== 'now-playing' && data" :bcms="data.bcms" />
+        <LayoutPlayingEpisode v-if="$route.name !== 'now-playing'" />
     </div>
 </template>
 
-<script setup lang="ts">
-import type { BCMSConfigResponse } from '~/server/api/bcms-config';
-
-const { data, error } = await useFetch<BCMSConfigResponse>('/api/bcms-config');
-
-if (!data.value || error.value) {
-    throw createError({
-        statusCode: 404,
-        statusMessage: 'Config Not Found',
-    });
-}
-</script>
+<script setup lang="ts"></script>

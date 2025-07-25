@@ -1,14 +1,17 @@
-import { ClientConfig } from '@thebcms/client';
-import { bcms } from '~/bcms-client';
-import {  EpisodeEntry, EpisodeEntryMetaItem, HomePageEntry, HomePageEntryMetaItem } from '~/bcms/types/ts';
+import {
+    EpisodeEntry,
+    EpisodeEntryMetaItem,
+    HomePageEntry,
+    HomePageEntryMetaItem,
+} from '~/bcms/type/ts';
 
 export type HomePageResponse = {
     meta: HomePageEntryMetaItem;
     episodes: EpisodeEntryMetaItem[];
-    bcms: ClientConfig;
 };
 
 export default defineEventHandler(async () => {
+    const bcms = useBcmsPrivate();
     const homePageEntry = (await bcms.entry.getBySlug(
         'home',
         'home-page',
@@ -16,14 +19,14 @@ export default defineEventHandler(async () => {
 
     const homePageMeta = homePageEntry.meta.en as HomePageEntryMetaItem;
 
-    const episodes = await bcms.entry.getAll('episode') as EpisodeEntry[];
-    const episodeMeta = episodes.map((episode) => episode.meta.en as EpisodeEntryMetaItem);
-
+    const episodes = (await bcms.entry.getAll('episode')) as EpisodeEntry[];
+    const episodeMeta = episodes.map(
+        (episode) => episode.meta.en as EpisodeEntryMetaItem,
+    );
 
     const res: HomePageResponse = {
         meta: homePageMeta,
         episodes: episodeMeta,
-        bcms: bcms.getConfig(),
     };
 
     return res;

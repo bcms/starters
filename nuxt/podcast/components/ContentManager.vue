@@ -1,10 +1,9 @@
 <template>
-    <BCMSContentManager ref="managerDOM" :items="items" />
+    <BcmsContentManager ref="managerDOM" :items="items" />
 </template>
 
 <script setup lang="ts">
 import type { EntryContentParsedItem } from '@thebcms/types';
-import { BCMSContentManager } from '@thebcms/components-vue';
 
 defineProps({
     items: {
