@@ -1,12 +1,10 @@
-import { ClientConfig } from '@thebcms/client';
-import { bcms } from '~/bcms-client';
 import {
     ProductBrandEntryMetaItem,
     ProductCategoryEntry,
     ProductCategoryEntryMetaItem,
     ProductEntry,
     ProductGenderEntryMetaItem,
-} from '~/bcms/types/ts';
+} from '~/bcms/type/ts';
 import { ProductLite, productToLite } from '~/utils/product';
 
 export type ShopPageResponse = {
@@ -14,10 +12,10 @@ export type ShopPageResponse = {
     genders: ProductGenderEntryMetaItem[];
     categories: ProductCategoryEntryMetaItem[];
     brands: ProductBrandEntryMetaItem[];
-    bcms: ClientConfig;
 };
 
 export default defineEventHandler(async () => {
+    const bcms = useBcmsPrivate();
     const products = (await bcms.entry.getAll('product')) as ProductEntry[];
 
     const res: ShopPageResponse = {
@@ -36,7 +34,6 @@ export default defineEventHandler(async () => {
         brands: products
             .map((e) => e.meta.en?.brand.meta.en as ProductBrandEntryMetaItem)
             .filter((e, _, arr) => arr.find((i) => i.slug === e.slug) === e),
-        bcms: bcms.getConfig(),
     };
 
     return res;

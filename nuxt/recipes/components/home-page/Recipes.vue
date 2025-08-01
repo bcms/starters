@@ -18,7 +18,6 @@
                     v-for="(card, index) in recipes"
                     :key="index"
                     :card="card"
-                    :bcms="bcms"
                 />
             </div>
             <div class="flex justify-center">
@@ -36,8 +35,6 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-
 defineProps({
     title: {
         type: String,
@@ -45,10 +42,6 @@ defineProps({
     },
     recipes: {
         type: Array as PropType<RecipeLight[]>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

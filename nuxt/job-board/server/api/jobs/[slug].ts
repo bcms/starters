@@ -1,15 +1,13 @@
-import { ClientConfig } from '@thebcms/client';
-import { bcms } from '~/bcms-client';
-import { JobPostEntry, JobPostEntryMetaItem } from '~/bcms/types/ts';
+import { JobPostEntry, JobPostEntryMetaItem } from '~/bcms/type/ts';
 import { JobLite, toJobLite } from '~/utils/job';
 
 export type JobPageResponse = {
     meta: JobPostEntryMetaItem;
     jobs: JobLite[];
-    bcms: ClientConfig;
 };
 
 export default defineEventHandler(async (event) => {
+    const bcms = useBcmsPrivate();
     const slug = getRouterParam(event, 'slug');
     const jobPostEntries = (await bcms.entry.getAll(
         'job-post',
@@ -24,7 +22,6 @@ export default defineEventHandler(async (event) => {
         jobs: jobPostEntries
             .map((job) => toJobLite(job))
             .filter((e) => e.slug !== slug),
-        bcms: bcms.getConfig(),
     };
 
     return res;

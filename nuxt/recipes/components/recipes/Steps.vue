@@ -18,9 +18,8 @@
                         : '',
                 ]"
             >
-                <BCMSImage
+                <BcmsImage
                     :media="step.cover"
-                    :client="bcms"
                     class="aspect-[1.475] rounded-md overflow-hidden object-cover w-full mb-4 lg:aspect-[2.2] lg:rounded-xl lg:mb-10"
                 />
                 <div
@@ -79,17 +78,11 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
-import type { RecipeStepGroup } from '~/bcms/types/ts';
+import type { RecipeStepGroup } from '~/bcms/type/ts';
 
 defineProps({
     steps: {
         type: Array as PropType<RecipeStepGroup[]>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

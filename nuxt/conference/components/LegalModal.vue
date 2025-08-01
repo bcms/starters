@@ -31,7 +31,7 @@
 </template>
 
 <script setup lang="ts">
-import type { LegalEntry } from '~/bcms/types/ts';
+import type { LegalEntry } from '~/bcms/type/ts';
 
 defineProps({
     legal: {

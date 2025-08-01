@@ -16,8 +16,8 @@ and follow the prompts.
 
 ### Useful links:
 
--   [BCMS website](https://thebcms.com/)
--   [BCMS documentation](https://thebcms.com/docs/)
--   [BCMS and Astro integration](https://thebcms.com/docs/integrations/astro)
--   [All BCMS starters](https://thebcms.com/starters)
--   [Join our Discord](https://discord.com/invite/SYBY89ccaR)
+- [BCMS website](https://thebcms.com/)
+- [BCMS documentation](https://thebcms.com/docs/)
+- [BCMS and Astro integration](https://thebcms.com/docs/integrations/astro)
+- [All BCMS starters](https://thebcms.com/starters)
+- [Join our Discord](https://discord.com/invite/SYBY89ccaR)

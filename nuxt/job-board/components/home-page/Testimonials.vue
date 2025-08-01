@@ -34,9 +34,8 @@
                     class="homeTestimonials--slide flex flex-col bg-appLight rounded-lg p-5 border border-[#CCCAC6] xl:p-8"
                 >
                     <div class="flex items-center mb-[18px]">
-                        <BCMSImage
+                        <BcmsImage
                             :media="slide.author.avatar_image"
-                            :client="bcms"
                             class="w-8 h-8 object-cover rounded-full mr-[14px] xl:w-10 xl:h-10"
                         />
                         <span
@@ -59,19 +58,13 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { A11y, Pagination } from 'swiper/modules';
-import type { TestimonialEntryMetaItem } from '~/bcms/types/ts';
+import type { TestimonialEntryMetaItem } from '~/bcms/type/ts';
 
 defineProps({
     testimonials: {
         type: Array as PropType<TestimonialEntryMetaItem[]>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

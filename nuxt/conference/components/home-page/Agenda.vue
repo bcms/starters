@@ -64,7 +64,7 @@
 </template>
 
 <script setup lang="ts">
-import type { AgendaDayGroup } from '~/bcms/types/ts';
+import type { AgendaDayGroup } from '~/bcms/type/ts';
 
 defineProps({
     title: {

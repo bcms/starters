@@ -1,10 +1,5 @@
 <template>
-    <PageWrapper
-        v-if="data"
-        :header="data.header"
-        :footer="data.footer"
-        :bcms="data.bcms"
-    >
+    <PageWrapper v-if="data" :header="data.header" :footer="data.footer">
         <div class="pb-10 md:pb-16 lg:pb-[120px]">
             <div
                 class="pt-24 mb-8 md:pt-6 lg:pb-6 lg:border-b lg:border-[#F0F0F0] lg:mb-14"
@@ -36,10 +31,9 @@
                 </div>
             </div>
             <div class="container">
-                <BCMSImage
+                <BcmsImage
                     v-if="data.meta.cover_image"
                     :media="data.meta.cover_image"
-                    :client="data.bcms"
                     class="aspect-square rounded-2xl overflow-hidden object-cover w-full mb-5 md:aspect-[1.93] lg:mb-10"
                 />
                 <h1
@@ -85,7 +79,7 @@
                     />
                 </div>
                 <RecipesIngredients :ingredients="data.meta.ingredients" />
-                <RecipesSteps :steps="data.meta.steps" :bcms="data.bcms" />
+                <RecipesSteps :steps="data.meta.steps" />
                 <div v-if="similarRecipes.length > 0">
                     <div
                         class="flex items-center justify-between leading-none font-medium tracking-[-0.41px] text-appGray-700 mb-8 lg:text-2xl lg:leading-none lg:mb-12"
@@ -101,7 +95,6 @@
                             :key="index"
                             :card="card"
                             show-title-layer
-                            :bcms="data.bcms"
                         />
                     </div>
                 </div>
@@ -111,7 +104,6 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from '@thebcms/components-vue';
 import type { RecipeResponse } from '~/server/api/recipes/[slug]';
 
 const { setOgHead } = useHeadTags();

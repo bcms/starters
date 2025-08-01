@@ -7,7 +7,7 @@ import type {
     ProductEntryMetaItem,
     ProductGenderEntryMetaItem,
     ProductSizeGroup,
-} from '~/bcms/types/ts';
+} from '~/bcms/type/ts';
 
 export interface ProductLite {
     title: string;

@@ -17,9 +17,8 @@
                     <div
                         class="relative rounded-xl overflow-hidden mb-[18px] lg:mb-6"
                     >
-                        <BCMSImage
+                        <BcmsImage
                             :media="member.image"
-                            :client="bcms"
                             class="aspect-[1.69] object-cover xl:aspect-square"
                         />
                         <div
@@ -47,10 +46,8 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
 import type { PropRichTextDataParsed } from '@thebcms/types';
-import type { TeamMemberEntryMetaItem } from '~/bcms/types/ts';
+import type { TeamMemberEntryMetaItem } from '~/bcms/type/ts';
 
 defineProps({
     title: {
@@ -63,10 +60,6 @@ defineProps({
     },
     members: {
         type: Array as PropType<TeamMemberEntryMetaItem[]>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

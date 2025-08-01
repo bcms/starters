@@ -1,19 +1,14 @@
-import type { ClientConfig } from "@thebcms/client";
-import type { EpisodeEntryMetaItem } from "~/bcms/types/ts";
+import type { EpisodeEntryMetaItem } from '~/bcms/type/ts';
 
 export const useEpisodes = () => {
-  const bcmsConfig = useState<ClientConfig | undefined>('bcms-config', () => undefined);
-  const episodes = useState<EpisodeEntryMetaItem[]>('episodes', () => []);
+    const episodes = useState<EpisodeEntryMetaItem[]>('episodes', () => []);
 
-  const setEpisodes = (val: EpisodeEntryMetaItem[], bcms: ClientConfig) => {
-    episodes.value = val;
-    if(bcmsConfig.value) return;
-    bcmsConfig.value = bcms;
-  };
+    const setEpisodes = (val: EpisodeEntryMetaItem[]) => {
+        episodes.value = val;
+    };
 
-  return {
-    episodes,
-    bcmsConfig,
-    setEpisodes,
-  };
+    return {
+        episodes,
+        setEpisodes,
+    };
 };

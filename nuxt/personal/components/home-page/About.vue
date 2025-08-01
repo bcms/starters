@@ -95,7 +95,7 @@
 
 <script setup lang="ts">
 import type { PropRichTextDataParsed } from '@thebcms/types';
-import type { WorkHistoryItemGroup } from '~/bcms/types/ts';
+import type { WorkHistoryItemGroup } from '~/bcms/type/ts';
 
 const props = defineProps({
     title: {

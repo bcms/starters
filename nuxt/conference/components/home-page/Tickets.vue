@@ -68,9 +68,8 @@
                             </div>
                         </div>
                     </div>
-                    <BCMSImage
+                    <BcmsImage
                         :media="ticket.background_image"
-                        :client="bcms"
                         class="absolute top-0 left-0 w-full h-full object-cover"
                     />
                 </button>
@@ -80,10 +79,8 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
 import type { PropRichTextDataParsed } from '@thebcms/types';
-import type { TicketGroup } from '~/bcms/types/ts';
+import type { TicketGroup } from '~/bcms/type/ts';
 
 defineProps({
     title: {
@@ -96,10 +93,6 @@ defineProps({
     },
     tickets: {
         type: Array as PropType<TicketGroup[]>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

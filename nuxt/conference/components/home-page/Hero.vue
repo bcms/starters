@@ -12,11 +12,10 @@
                 <div
                     class="flex items-center gap-1 max-lg:mb-6 lg:gap-2.5 lg:col-start-1 lg:row-start-1"
                 >
-                    <BCMSImage
+                    <BcmsImage
                         v-for="(image, index) in gallery"
                         :key="index"
                         :media="image"
-                        :client="bcms"
                         :class="`w-10 h-10 object-cover lg:w-[128px] lg:h-[128px] ${[index % 2 !== 0 ? '-rotate-[9deg]' : '']}`"
                     />
                 </div>
@@ -62,9 +61,8 @@
                         Until event
                     </div>
                 </div>
-                <BCMSImage
+                <BcmsImage
                     :media="cover"
-                    :client="bcms"
                     class="absolute top-0 left-0 w-full h-full object-cover"
                 />
             </div>
@@ -73,12 +71,10 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from '@thebcms/components-vue';
 import type {
     PropMediaDataParsed,
     PropRichTextDataParsed,
 } from '@thebcms/types';
-import type { ClientConfig } from '@thebcms/client';
 
 defineProps({
     gallery: {
@@ -91,10 +87,6 @@ defineProps({
     },
     cover: {
         type: Object as PropType<PropMediaDataParsed>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

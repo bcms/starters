@@ -61,10 +61,9 @@
                                     '0px 0px 0px 1px #EDEDED, 0px 1.5px 1px 0px rgba(15, 18, 35, 0.14)',
                             }"
                         >
-                            <BCMSImage
+                            <BcmsImage
                                 v-if="item.meta.en?.project_image"
                                 :media="item.meta.en.project_image"
-                                :client="bcms"
                                 class="size-full object-cover"
                             />
                         </div>
@@ -81,10 +80,8 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
 import type { PropRichTextDataParsed } from '@thebcms/types';
-import type { PortfolioEntry } from '~/bcms/types/ts';
+import type { PortfolioEntry } from '~/bcms/type/ts';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { A11y } from 'swiper/modules';
 
@@ -103,10 +100,6 @@ defineProps({
     },
     portfolio_items: {
         type: Array as PropType<PortfolioEntry[]>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

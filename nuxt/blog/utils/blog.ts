@@ -2,7 +2,7 @@ import type {
     BlogEntry,
     BlogEntryMetaItem,
     BlogEntryMetaItemCategory,
-} from '~/bcms/types/ts';
+} from '~/bcms/type/ts';
 import type {
     PropMediaDataParsed,
     PropRichTextDataParsed,

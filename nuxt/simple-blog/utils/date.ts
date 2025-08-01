@@ -1,4 +1,4 @@
-import { PropValueDateData } from '@thebcms/types';
+import type { PropValueDateData } from '@thebcms/types';
 
 export const toReadableDate = (date: PropValueDateData) => {
     return new Date(date.timestamp).toLocaleDateString('en-US', {

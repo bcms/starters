@@ -21,7 +21,7 @@
                         class="text-xs leading-tight tracking-[-0.24px] max-w-[483px] lg:text-base lg:leading-tight lg:tracking-[-0.32px]"
                     />
                 </div>
-                <BCMSImage
+                <BcmsImage
                     :media="cover"
                     :client="bcms"
                     class="size-full object-cover"
@@ -58,7 +58,7 @@
                                     '0px 0px 0px 0.227px #EDEDED, 0px 0.34px 0.227px 0px rgba(15, 18, 35, 0.14)',
                             }"
                         >
-                            <BCMSImage
+                            <BcmsImage
                                 :key="index"
                                 :media="item.meta.en.image"
                                 :client="bcms"
@@ -84,13 +84,11 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
 import type {
     PropMediaDataParsed,
     PropRichTextDataParsed,
 } from '@thebcms/types';
-import type { TeamMemberEntry } from '~/bcms/types/ts';
+import type { TeamMemberEntry } from '~/bcms/type/ts';
 
 defineProps({
     title: {
@@ -119,10 +117,6 @@ defineProps({
     },
     members: {
         type: Array as PropType<TeamMemberEntry[]>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

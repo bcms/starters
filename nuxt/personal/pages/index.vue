@@ -4,7 +4,6 @@
             :title="data.meta.hero_title"
             :description="data.meta.hero_description"
             :cover="data.meta.image"
-            :bcms="data.bcms"
         />
         <HomePageServices
             :title="data.servicesMeta.title"
@@ -27,13 +26,11 @@
             :title="data.portfolioMeta.title"
             :description="data.portfolioMeta.description"
             :items="data.portfolio"
-            :bcms="data.bcms"
         />
         <HomePageTestimonials
             :title="data.testimonialsMeta.title"
             :description="data.testimonialsMeta.description"
             :items="data.testimonials"
-            :bcms="data.bcms"
         />
     </div>
 </template>

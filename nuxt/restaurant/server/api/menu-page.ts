@@ -1,5 +1,3 @@
-import { ClientConfig } from '@thebcms/client';
-import { bcms } from '~/bcms-client';
 import {
     FoodItemEntry,
     FoodItemEntryMetaItem,
@@ -7,16 +5,16 @@ import {
     MealTypeEntryMetaItem,
     MenuPageEntry,
     MenuPageEntryMetaItem,
-} from '~/bcms/types/ts';
+} from '~/bcms/type/ts';
 
-export type ReservationPageResponse = {
+export type MenuPageResponse = {
     meta: MenuPageEntryMetaItem;
     mealTypes: MealTypeEntryMetaItem[];
     foodItems: FoodItemEntryMetaItem[];
-    bcms: ClientConfig;
 };
 
 export default defineEventHandler(async () => {
+    const bcms = useBcmsPrivate();
     const menuPageEntries = (await bcms.entry.getBySlug(
         'menu',
         'menu-page',
@@ -31,11 +29,10 @@ export default defineEventHandler(async () => {
         (await bcms.entry.getAll('food-item')) as FoodItemEntry[]
     ).map((e) => e.meta.en as FoodItemEntryMetaItem);
 
-    const res: ReservationPageResponse = {
+    const res: MenuPageResponse = {
         meta: menuPageMeta,
         mealTypes,
         foodItems,
-        bcms: bcms.getConfig(),
     };
 
     return res;

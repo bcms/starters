@@ -1,23 +1,16 @@
 <template>
-    <PageWrapper
-        v-if="data"
-        :header="data.header"
-        :footer="data.footer"
-        :bcms="data.bcms"
-    >
+    <PageWrapper v-if="data" :header="data.header" :footer="data.footer">
         <HomePageHero
             :title="data.meta.headline"
             :description="data.meta.description"
             :cover="data.meta.cover_image"
             :recipes="data.recipes"
-            :bcms="data.bcms"
         />
         <HomePageRecipes
             :title="data.meta.recipes_title"
             :recipes="data.recipes"
-            :bcms="data.bcms"
         />
-        <HomePageAboutUs :data="data.meta.about_us" :bcms="data.bcms" />
+        <HomePageAboutUs :data="data.meta.about_us" />
         <HomePageLetsTalk
             :title="data.meta.contact_title"
             :description="data.meta.contact_description"

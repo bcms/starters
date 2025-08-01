@@ -31,7 +31,7 @@
                 </ul>
             </nav>
         </div>
-        <ContactForm v-if="showContactForm" @close="showContactForm = false" />
+<!--        <ContactForm v-if="showContactForm" @close="showContactForm = false" />-->
     </header>
 </template>
 

@@ -1,17 +1,15 @@
-import { ClientConfig } from '@thebcms/client';
 import { EntryContentParsedItem } from '@thebcms/types';
-import { bcms } from '~/bcms-client';
-import { BlogEntry, BlogEntryMetaItem } from '~/bcms/types/ts';
+import { BlogEntry, BlogEntryMetaItem } from '~/bcms/type/ts';
 import { BlogLite, blogToLite } from '~/utils/blog';
 
 export type BlogResponse = {
     meta: BlogEntryMetaItem;
     content: EntryContentParsedItem[];
     otherBlogs: BlogLite[];
-    bcms: ClientConfig;
 };
 
 export default defineEventHandler(async (event) => {
+    const bcms = useBcmsPrivate();
     const blogs = (await bcms.entry.getAll('blog')) as BlogEntry[];
     const slug = getRouterParam(event, 'slug');
     const blog = blogs.find((e) => e.meta.en?.slug === slug);
@@ -26,7 +24,6 @@ export default defineEventHandler(async (event) => {
         otherBlogs: blogs
             .filter((e) => e.meta.en?.slug !== slug)
             .map((e) => blogToLite(e)),
-        bcms: bcms.getConfig(),
     };
 
     return res;

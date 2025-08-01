@@ -3,10 +3,9 @@
         <NuxtLink :to="`/shop/${card.slug}`" class="group flex flex-col">
             <div class="flex overflow-hidden mb-6">
                 <div class="size-full">
-                    <BCMSImage
+                    <BcmsImage
                         :media="card.cover"
                         class="w-full h-[320px] object-cover transition-transform duration-500 group-hover:scale-105"
-                        :client="bcms"
                     />
                 </div>
             </div>
@@ -76,17 +75,11 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
-import type { ProductSizeEntryMetaItem } from '~/bcms/types/ts';
+import type { ProductSizeEntryMetaItem } from '~/bcms/type/ts';
 
 const props = defineProps({
     card: {
         type: Object as PropType<ProductLite>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

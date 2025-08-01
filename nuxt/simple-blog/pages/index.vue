@@ -15,7 +15,6 @@
                         v-for="(card, index) in data?.items"
                         :key="index"
                         :blog="card"
-                        :bcms="data.bcms"
                     />
                 </div>
             </div>

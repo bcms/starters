@@ -5,11 +5,7 @@
                 class="grid grid-cols-1 gap-8 mb-12 lg:grid-cols-[auto,1fr] lg:mb-24"
             >
                 <div class="lg:max-w-[320px]">
-                    <BCMSImage
-                        :media="data.logo"
-                        :client="bcms"
-                        class="mb-3 lg:mb-4"
-                    />
+                    <BcmsImage :media="data.logo" class="mb-3 lg:mb-4" />
                     <ContentManager
                         :items="data.description.nodes"
                         class="text-xs tracking-[-0.41px] font-medium leading-normal text-appGray-500 lg:text-base"
@@ -62,17 +58,11 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
-import type { FooterEntryMetaItem } from '~/bcms/types/ts';
+import type { FooterEntryMetaItem } from '~/bcms/type/ts';
 
 defineProps({
     data: {
         type: Object as PropType<FooterEntryMetaItem>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

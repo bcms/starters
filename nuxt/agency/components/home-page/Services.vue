@@ -19,11 +19,7 @@
                         '0px 0px 0px 1px #EDEDED, 0px 1.5px 1px 0px rgba(15, 18, 35, 0.14)',
                 }"
             >
-                <BCMSImage
-                    :media="cover"
-                    :client="bcms"
-                    class="size-full object-cover"
-                />
+                <BcmsImage :media="cover" class="size-full object-cover" />
                 <div
                     class="flex flex-col justify-between bg-appAccent text-appText-light p-4 pr-8 lg:p-8"
                 >
@@ -43,8 +39,6 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
 import type {
     PropMediaDataParsed,
     PropRichTextDataParsed,
@@ -65,10 +59,6 @@ defineProps({
     },
     description: {
         type: Object as PropType<PropRichTextDataParsed>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

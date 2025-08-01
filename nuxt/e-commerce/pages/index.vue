@@ -4,12 +4,10 @@
             :title="data.meta.hero_title"
             :description="data.meta.hero_description"
             :image="data.meta.hero_cover_image"
-            :bcms="data.bcms"
         />
         <HomePageCategories
             :data="data.categories.slice(0, 6)"
             cta-theme="dark-green"
-            :bcms="data.bcms"
         />
         <HomePageCta
             :title="data.meta.cta_title"
@@ -19,18 +17,12 @@
                 label: data.meta.cta_label,
                 to: data.meta.cta_link,
             }"
-            :bcms="data.bcms"
         />
         <HomePageCategories
             :data="data.categories.slice(6, 12)"
             cta-theme="orange"
-            :bcms="data.bcms"
         />
-        <HomePageProducts
-            :products="data.products"
-            :filters="data.filters"
-            :bcms="data.bcms"
-        />
+        <HomePageProducts :products="data.products" :filters="data.filters" />
     </div>
 </template>
 

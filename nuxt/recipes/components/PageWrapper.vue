@@ -1,16 +1,15 @@
 <template>
     <div>
-        <LayoutHeader :data="header" :bcms="bcms" />
+        <LayoutHeader :data="header" />
         <main>
             <slot />
         </main>
-        <LayoutFooter :data="footer" :bcms="bcms" />
+        <LayoutFooter :data="footer" />
     </div>
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import type { FooterEntryMetaItem, HeaderEntryMetaItem } from '~/bcms/types/ts';
+import type { FooterEntryMetaItem, HeaderEntryMetaItem } from '~/bcms/type/ts';
 
 defineProps({
     header: {
@@ -19,10 +18,6 @@ defineProps({
     },
     footer: {
         type: Object as PropType<FooterEntryMetaItem>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

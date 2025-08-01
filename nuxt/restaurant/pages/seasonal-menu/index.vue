@@ -68,9 +68,8 @@
                             ${{ item.price }}
                         </div>
                     </div>
-                    <BCMSImage
+                    <BcmsImage
                         :media="item.cover_image"
-                        :client="data.bcms"
                         class="absolute top-0 left-0 w-full h-full object-cover"
                     />
                     <div
@@ -89,7 +88,6 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from '@thebcms/components-vue';
 import type { PropRichTextDataParsed } from '@thebcms/types';
 import type { SeasonalMenuPageResponse } from '~/server/api/seasonal-menu-page';
 

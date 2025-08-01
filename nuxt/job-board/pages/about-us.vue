@@ -1,9 +1,8 @@
 <template>
     <div v-if="data">
         <div class="pt-8 pb-14 md:pb-20 lg:pt-0 lg:pb-[120px]">
-            <BCMSImage
+            <BcmsImage
                 :media="data.meta.cover_image"
-                :client="data.bcms"
                 class="w-full aspect-[2.76] object-cover object-top mb-8 md:mb-20 lg:aspect-[3.1] lg:mb-[120px]"
             />
             <div class="container">
@@ -25,10 +24,9 @@
                             :items="item.text.nodes"
                             class="leading-normal font-medium tracking-[-0.41px] text-appGray-600 lg:text-[32px] lg:leading-normal"
                         />
-                        <BCMSImage
+                        <BcmsImage
                             v-if="item.image"
                             :key="index"
-                            :client="data.bcms"
                             :media="item.image"
                             class="image object-cover w-[37px] h-4 flex-shrink-0 mx-1 -translate-y-0.5 bg-center bg-cover lg:w-[112px] lg:h-12 lg:mx-3 lg:-translate-y-2"
                         />
@@ -39,14 +37,12 @@
                 :title="data.meta.team_title"
                 :description="data.meta.team_description"
                 :members="data.members"
-                :bcms="data.bcms"
             />
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from '@thebcms/components-vue';
 import type { AboutPageResponse } from '~/server/api/about-page';
 
 const { setOgHead } = useHeadTags();

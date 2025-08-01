@@ -1,15 +1,13 @@
-import { ClientConfig } from '@thebcms/client';
 import { EntryContentParsedItem } from '@thebcms/types';
-import { bcms } from '~/bcms-client';
-import { AboutPageEntry, AboutPageEntryMetaItem } from '~/bcms/types/ts';
+import { AboutPageEntry, AboutPageEntryMetaItem } from '~/bcms/type/ts';
 
 export type AboutPageResponse = {
     meta: AboutPageEntryMetaItem;
     content: EntryContentParsedItem[];
-    bcms: ClientConfig;
 };
 
 export default defineEventHandler(async () => {
+    const bcms = useBcmsPrivate();
     const aboutPage = (await bcms.entry.getBySlug(
         'about',
         'about-page',
@@ -18,7 +16,6 @@ export default defineEventHandler(async () => {
     const res: AboutPageResponse = {
         meta: aboutPage.meta.en as AboutPageEntryMetaItem,
         content: aboutPage.content.en as EntryContentParsedItem[],
-        bcms: bcms.getConfig(),
     };
 
     return res;

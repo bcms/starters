@@ -17,11 +17,10 @@
                                     '0px 0px 0px 0.227px #EDEDED, 0px 0.34px 0.227px 0px rgba(15, 18, 35, 0.14)',
                             }"
                         >
-                            <BCMSImage
+                            <BcmsImage
                                 v-if="item.meta.en"
                                 :key="index"
                                 :media="item.meta.en.image"
-                                :client="bcms"
                                 class="size-full object-cover"
                             />
                         </div>
@@ -44,17 +43,11 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
-import type { TeamMemberEntry } from '~/bcms/types/ts';
+import type { TeamMemberEntry } from '~/bcms/type/ts';
 
 defineProps({
     items: {
         type: Array as PropType<TeamMemberEntry[]>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

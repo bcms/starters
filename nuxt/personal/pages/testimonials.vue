@@ -18,9 +18,8 @@
                         class="flex"
                         @click="activeItemIndex = index"
                     >
-                        <BCMSImage
+                        <BcmsImage
                             :media="item.author_image"
-                            :client="data.bcms"
                             :class="`w-10 h-10 rounded-full overflow-hidden object-cover transition-all duration-300 ${
                                 activeItemIndex === index
                                     ? 'scale-125'
@@ -61,7 +60,6 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from '@thebcms/components-vue';
 import type { TestimonialsPageResponse } from '~/server/api/testimonials-page';
 
 const { setOgHead } = useHeadTags();

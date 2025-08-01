@@ -13,9 +13,8 @@
                     class="w-4 h-4 lg:w-[100px] lg:h-[104px]"
                 />
             </div>
-            <BCMSImage
+            <BcmsImage
                 :media="cover"
-                :client="bcms"
                 class="w-full aspect-[1.78] object-cover mb-5 lg:aspect-[2.15] lg:mb-12"
             />
             <ContentManager
@@ -38,8 +37,6 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
 import type {
     PropMediaDataParsed,
     PropRichTextDataParsed,
@@ -60,10 +57,6 @@ defineProps({
     },
     topics: {
         type: Array as PropType<string[]>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

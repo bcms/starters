@@ -1,5 +1,3 @@
-import { ClientConfig } from '@thebcms/client';
-import { bcms } from '~/bcms-client';
 import {
     HomeEntry,
     HomeEntryMetaItem,
@@ -7,7 +5,7 @@ import {
     ProductCategoryEntryMetaItem,
     ProductEntry,
     ProductGenderEntryMetaItem,
-} from '~/bcms/types/ts';
+} from '~/bcms/type/ts';
 import { ProductLite, productToLite } from '~/utils/product';
 
 export type HomePageResponse = {
@@ -21,10 +19,10 @@ export type HomePageResponse = {
         genders: ProductGenderEntryMetaItem[];
         categories: ProductCategoryEntryMetaItem[];
     };
-    bcms: ClientConfig;
 };
 
 export default defineEventHandler(async () => {
+    const bcms = useBcmsPrivate();
     const homePage = (await bcms.entry.getBySlug('home', 'home')) as HomeEntry;
     const categories = (await bcms.entry.getAll(
         'product-category',
@@ -68,7 +66,6 @@ export default defineEventHandler(async () => {
                 return acc;
             }, [] as ProductGenderEntryMetaItem[]),
         },
-        bcms: bcms.getConfig(),
     };
 
     return res;

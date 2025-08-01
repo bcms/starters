@@ -12,11 +12,10 @@
                             :items="item.text.nodes"
                             class="text-2xl leading-[1.4] font-medium font-PlayfairDisplay tracking-[-0.41px] md:text-4xl lg:text-[80px] lg:leading-[1.1]"
                         />
-                        <BCMSImage
+                        <BcmsImage
                             v-if="item.image"
                             :key="index"
                             :media="item.image"
-                            :client="bcms"
                             class="object-cover w-[53px] h-6 flex-shrink-0 -translate-y-1 mx-1 bg-center bg-cover lg:w-[176px] lg:h-20 lg:mx-3 lg:-translate-y-5"
                         />
                     </template>
@@ -31,9 +30,8 @@
             </div>
         </div>
         <div class="relative">
-            <BCMSImage
+            <BcmsImage
                 :media="cover"
-                :client="bcms"
                 class="w-full aspect-[2.76] object-cover lg:aspect-[3.1]"
             />
             <div class="absolute top-0 left-0 w-full h-full bg-black/60" />
@@ -42,13 +40,11 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
 import type {
     PropMediaDataParsed,
     PropRichTextDataParsed,
 } from '@thebcms/types';
-import type { InlineTextWithImageGroup } from '~/bcms/types/ts';
+import type { InlineTextWithImageGroup } from '~/bcms/type/ts';
 
 defineProps({
     title: {
@@ -61,10 +57,6 @@ defineProps({
     },
     cover: {
         type: Object as PropType<PropMediaDataParsed>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

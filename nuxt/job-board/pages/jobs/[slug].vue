@@ -1,9 +1,8 @@
 <template>
     <div v-if="data">
         <div class="relative mt-6 mb-10 lg:mt-0 lg:mb-[72px]">
-            <BCMSImage
+            <BcmsImage
                 :media="data.meta.cover_image"
-                :client="data.bcms"
                 class="w-full aspect-[2.76] object-cover lg:aspect-[3.71]"
             />
             <div class="absolute top-0 left-0 w-full h-full bg-black/20" />
@@ -17,9 +16,8 @@
                         class="flex items-center justify-between rounded-t-lg bg-[#C9C8C3] p-4 lg:px-8 lg:py-6 lg:rounded-t-[14px]"
                     >
                         <div class="flex items-center">
-                            <BCMSImage
+                            <BcmsImage
                                 :media="data.meta.avatar_image"
-                                :client="data.bcms"
                                 class="w-8 h-8 rounded-full object-cover mr-3 lg:w-12 lg:h-12 lg:mr-[14px]"
                             />
                             <div>
@@ -120,10 +118,7 @@
                         <div
                             class="flex items-center justify-center w-8 h-8 border border-[#CFCCC7] rounded-full p-1 mr-3 lg:w-12 lg:h-12 lg:p-0 lg:mr-4"
                         >
-                            <BCMSImage
-                                :media="data.meta.company_logo"
-                                :client="data.bcms"
-                            />
+                            <BcmsImage :media="data.meta.company_logo" />
                         </div>
                         <div
                             class="text-sm leading-none font-medium tracking-[-0.41px] font-PlayfairDisplay lg:text-base lg:leading-none"
@@ -202,7 +197,6 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from '@thebcms/components-vue';
 import type { JobPageResponse } from '~/server/api/jobs/[slug]';
 
 const route = useRoute();

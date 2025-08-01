@@ -28,7 +28,6 @@
                         v-for="(item, index) in data.meta.events"
                         :key="index"
                         :card="item"
-                        :bcms="data.bcms"
                     />
                 </div>
                 <div

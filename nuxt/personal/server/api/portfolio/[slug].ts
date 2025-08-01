@@ -1,13 +1,11 @@
-import { ClientConfig } from '@thebcms/client';
-import { bcms } from '~/bcms-client';
-import { PortfolioEntry, PortfolioEntryMetaItem } from '~/bcms/types/ts';
+import { PortfolioEntry, PortfolioEntryMetaItem } from '~/bcms/type/ts';
 
 export type PortfolioResponse = {
     meta: PortfolioEntryMetaItem;
-    bcms: ClientConfig;
 };
 
 export default defineEventHandler(async (event) => {
+    const bcms = useBcmsPrivate();
     const slug = getRouterParam(event, 'slug') as string;
     const portfolioEntry = (await bcms.entry.getBySlug(
         slug,
@@ -18,7 +16,6 @@ export default defineEventHandler(async (event) => {
 
     const res: PortfolioResponse = {
         meta: portfolioEntryMeta,
-        bcms: bcms.getConfig(),
     };
 
     return res;

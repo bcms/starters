@@ -40,7 +40,7 @@
                         <div class="text-lg leading-none mb-1.5">
                             {{ address }}
                         </div>
-                        <HomePageMap :map="map" :bcms="bcms" />
+                        <HomePageMap :map="map" />
                     </div>
                     <div class="h-px flex-1 bg-[#D9D9D9] mx-4 max-xl:hidden" />
                     <div
@@ -78,7 +78,7 @@
                     >
                         {{ address }}
                     </div>
-                    <HomePageMap :map="map" :bcms="bcms" />
+                    <HomePageMap :map="map" />
                 </div>
                 <ContentManager
                     :items="open_time.nodes"
@@ -93,19 +93,17 @@
                         :items="item.text.nodes"
                         class="text-sm leading-[1.3] tracking-[-0.41px] uppercase text-appGray-700 lg:text-[40px] lg:leading-none"
                     />
-                    <BCMSImage
+                    <BcmsImage
                         v-if="item.image"
                         :key="index"
                         :media="item.image"
-                        :client="bcms"
                         class="image image_sm h-4 flex-shrink-0 mx-2 bg-center bg-cover lg:hidden"
                         :style="`width: ${item.image.width / 5}px`"
                     />
-                    <BCMSImage
+                    <BcmsImage
                         v-if="item.image"
                         :key="index"
                         :media="item.image"
-                        :client="bcms"
                         class="image image_lg h-10 flex-shrink-0 mx-4 bg-center bg-cover max-lg:hidden lg:-translate-y-2"
                         :style="`width: ${item.image.width / 2}px`"
                     />
@@ -124,13 +122,11 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
 import type {
     PropMediaDataParsed,
     PropRichTextDataParsed,
 } from '@thebcms/types';
-import type { InlineTextWithImageGroup } from '~/bcms/types/ts';
+import type { InlineTextWithImageGroup } from '~/bcms/type/ts';
 
 defineProps({
     title: {
@@ -151,10 +147,6 @@ defineProps({
     },
     description: {
         type: Array as PropType<InlineTextWithImageGroup[]>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

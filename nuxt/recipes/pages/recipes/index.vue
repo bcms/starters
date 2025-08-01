@@ -1,10 +1,5 @@
 <template>
-    <PageWrapper
-        v-if="data"
-        :header="data.header"
-        :footer="data.footer"
-        :bcms="data.bcms"
-    >
+    <PageWrapper v-if="data" :header="data.header" :footer="data.footer">
         <div class="container pt-24 pb-8 md:pb-16 lg:pt-[104px] lg:pb-[120px]">
             <ContentManager
                 :items="data.meta.headline.nodes"
@@ -44,7 +39,6 @@
                     )"
                     :key="recipe.slug + index"
                     :card="recipe"
-                    :bcms="data.bcms"
                 />
             </div>
             <div

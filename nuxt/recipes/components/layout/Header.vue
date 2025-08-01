@@ -11,9 +11,8 @@
                             class="flex max-md:absolute max-md:left-0 max-md:-bottom-[50px] md:mr-8"
                             aria-label="Home page"
                         >
-                            <BCMSImage
+                            <BcmsImage
                                 :media="data.logo"
-                                :client="bcms"
                                 :class="`w-full md:grayscale md:brightness-0 md:invert ${[
                                     $route.name === 'index'
                                         ? 'grayscale brightness-0 invert'
@@ -71,17 +70,11 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from '@thebcms/components-vue';
-import type { ClientConfig } from '@thebcms/client';
-import type { HeaderEntryMetaItem } from '~/bcms/types/ts';
+import type { HeaderEntryMetaItem } from '~/bcms/type/ts';
 
 defineProps({
     data: {
         type: Object as PropType<HeaderEntryMetaItem>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

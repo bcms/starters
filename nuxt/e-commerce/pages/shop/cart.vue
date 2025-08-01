@@ -1,5 +1,5 @@
 <template>
-    <div v-if="data">
+    <div>
         <div class="container pb-14 md:pb-20 lg:pb-[136px]">
             <template v-if="cartItems.length > 0">
                 <div class="grid grid-cols-1 gap-4">
@@ -9,9 +9,8 @@
                         class="border border-appGray-300 bg-white p-[26px] flex flex-col justify-between gap-10 md:flex-row md:items-center"
                     >
                         <div class="flex items-center gap-5">
-                            <BCMSImage
+                            <BcmsImage
                                 :media="item.item.cover"
-                                :client="data.bcms"
                                 class="w-[96px] aspect-square object-cover"
                             />
                             <div>
@@ -166,20 +165,8 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from '@thebcms/components-vue';
-import type { CartPageResponse } from '~/server/api/shop/cart';
-
 const { setOgHead } = useHeadTags();
 const { cartItems, addCartItem, removeCartItem, totalCartPrice } = useCart();
-
-const { data, error } = await useFetch<CartPageResponse>('/api/shop/cart');
-
-if (!data.value || error.value) {
-    throw createError({
-        statusCode: 404,
-        statusMessage: 'Page Not Found',
-    });
-}
 
 useHead(() =>
     setOgHead({

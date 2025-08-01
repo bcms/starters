@@ -25,7 +25,6 @@
                     v-for="(item, index) in items"
                     :key="index"
                     :card="item"
-                    :bcms="bcms"
                 />
             </div>
             <div
@@ -40,9 +39,8 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
 import type { PropRichTextDataParsed } from '@thebcms/types';
-import type { EventGroup } from '~/bcms/types/ts';
+import type { EventGroup } from '~/bcms/type/ts';
 
 defineProps({
     title: {
@@ -55,10 +53,6 @@ defineProps({
     },
     items: {
         type: Array as PropType<EventGroup[]>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

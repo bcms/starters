@@ -35,9 +35,8 @@
                             {{ meal.meta.en.title }}
                         </h3>
                     </div>
-                    <BCMSImage
+                    <BcmsImage
                         :media="meal.meta.en?.cover_image"
-                        :client="bcms"
                         class="absolute top-0 left-0 w-full h-full object-cover"
                     />
                     <div
@@ -51,10 +50,8 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
 import type { PropRichTextDataParsed } from '@thebcms/types';
-import type { SeasonEntry } from '~/bcms/types/ts';
+import type { SeasonEntry } from '~/bcms/type/ts';
 
 defineProps({
     title: {
@@ -67,10 +64,6 @@ defineProps({
     },
     seasons: {
         type: Array as PropType<SeasonEntry[]>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

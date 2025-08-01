@@ -183,7 +183,6 @@
                     :style="{
                         display: index < loadedProducts ? '' : 'none',
                     }"
-                    :bcms="bcms"
                 />
             </div>
             <button
@@ -198,13 +197,12 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
 import type { ProductFilter } from '~/types';
 import type {
     ProductBrandEntryMetaItem,
     ProductCategoryEntryMetaItem,
     ProductGenderEntryMetaItem,
-} from '~/bcms/types/ts';
+} from '~/bcms/type/ts';
 
 const props = defineProps({
     products: {
@@ -223,10 +221,6 @@ const props = defineProps({
         type: Array as PropType<ProductBrandEntryMetaItem[]>,
         required: true,
     },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
-        required: true,
-    },
 });
 
 const route = useRoute();
@@ -238,7 +232,7 @@ const loadMore = () => {
 };
 
 const searchVal = ref('');
-const filters = ref<ProductFilter[]>([
+const filters = ref([
     {
         active: false,
         type: 'price',
@@ -263,7 +257,7 @@ const filters = ref<ProductFilter[]>([
         label: 'New comer',
         value: 1,
     },
-]);
+] as ProductFilter[]);
 
 const activeFilters = computed(() => {
     return filters.value.filter((e) => e.active);

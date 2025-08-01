@@ -1,5 +1,5 @@
 <template>
-    <BCMSContentManager
+    <BcmsContentManager
         ref="managerDOM"
         :items="items"
         :widget-components="widgetComponents"
@@ -9,7 +9,6 @@
 <script setup lang="ts">
 import type { EntryContentParsedItem } from '@thebcms/types';
 import TextWithImage from './widgets/TextWithImage.vue';
-import { BCMSContentManager } from '@thebcms/components-vue';
 
 defineProps({
     items: {

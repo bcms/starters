@@ -1,18 +1,16 @@
-import { ClientConfig } from '@thebcms/client';
-import { bcms } from '~/bcms-client';
 import {
     PortfolioEntry,
     PortfolioPageEntry,
     PortfolioPageEntryMetaItem,
-} from '~/bcms/types/ts';
+} from '~/bcms/type/ts';
 
 export type PortfolioPageResponse = {
     meta: PortfolioPageEntryMetaItem;
     portfolio: PortfolioEntry[];
-    bcms: ClientConfig;
 };
 
 export default defineEventHandler(async () => {
+    const bcms = useBcmsPrivate();
     const portfolioPageEntry = (await bcms.entry.getBySlug(
         'portfolio',
         'portfolio-page',
@@ -28,7 +26,6 @@ export default defineEventHandler(async () => {
     const res: PortfolioPageResponse = {
         meta: portfolioPageMeta,
         portfolio: portfolioEntries,
-        bcms: bcms.getConfig(),
     };
 
     return res;

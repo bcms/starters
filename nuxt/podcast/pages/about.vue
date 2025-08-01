@@ -1,19 +1,34 @@
 <template>
     <div v-if="data">
-        <div class="container relative z-10 pt-20 pb-10 lg:pt-[104px] lg:pb-[128px]">
-            <div class="relative aspect-square rounded overflow-hidden mb-6 md:aspect-[2.47] lg:rounded-2xl lg:mb-10">
+        <div
+            class="container relative z-10 pt-20 pb-10 lg:pt-[104px] lg:pb-[128px]"
+        >
+            <div
+                class="relative aspect-square rounded overflow-hidden mb-6 md:aspect-[2.47] lg:rounded-2xl lg:mb-10"
+            >
                 <h1
-                    class="absolute z-10 bottom-6 left-6 text-lg leading-none font-medium tracking-[-0.41px] lg:bottom-10 lg:left-10 lg:text-[56px] lg:leading-none lg:tracking-[-2.41px]">
+                    class="absolute z-10 bottom-6 left-6 text-lg leading-none font-medium tracking-[-0.41px] lg:bottom-10 lg:left-10 lg:text-[56px] lg:leading-none lg:tracking-[-2.41px]"
+                >
                     {{ data.meta.title }}
                 </h1>
-                <BCMSImage :media="data.meta.cover_image" :client="data.bcms"
-                    class="absolute top-0 left-0 w-full h-full object-cover rounded overflow-hidden lg:rounded-2xl" />
-                <div class="absolute top-0 left-0 w-full h-full bg-black/50 lg:bg-black/60" />
+                <BcmsImage
+                    :media="data.meta.cover_image"
+                    class="absolute top-0 left-0 w-full h-full object-cover rounded overflow-hidden lg:rounded-2xl"
+                />
+                <div
+                    class="absolute top-0 left-0 w-full h-full bg-black/50 lg:bg-black/60"
+                />
             </div>
             <div class="grid grid-cols-1 gap-4">
-                <div v-for="(item, index) in data.meta.content" :key="index"
-                    class="p-4 border border-appGray-600 rounded-2xl bg-appBody lg:p-8">
-                    <ContentManager :items="item.nodes" class="aboutPage--content" />
+                <div
+                    v-for="(item, index) in data.meta.content"
+                    :key="index"
+                    class="p-4 border border-appGray-600 rounded-2xl bg-appBody lg:p-8"
+                >
+                    <ContentManager
+                        :items="item.nodes"
+                        class="aboutPage--content"
+                    />
                 </div>
             </div>
         </div>
@@ -21,11 +36,10 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from '@thebcms/components-vue';
 import type { AboutPageResponse } from '~/server/api/about-page';
 
 const { setOgHead } = useHeadTags();
-const { setEpisodes } = useEpisodes()
+const { setEpisodes } = useEpisodes();
 
 const { data, error } = await useFetch<AboutPageResponse>('/api/about-page');
 
@@ -37,8 +51,11 @@ if (!data.value || error.value) {
 }
 
 setEpisodes(
-    data.value.episodes ? data.value.episodes.sort((a, b) => b.date.timestamp - a.date.timestamp) : [],
-    data.value.bcms
+    data.value.episodes
+        ? data.value.episodes.sort(
+              (a, b) => b.date.timestamp - a.date.timestamp,
+          )
+        : [],
 );
 
 useHead(() =>

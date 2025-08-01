@@ -3,9 +3,8 @@
         <div class="container">
             <div class="px-4 mb-[14px] lg:px-16 lg:mb-12">
                 <div class="relative aspect-[1.6] lg:aspect-[1.67]">
-                    <BCMSImage
+                    <BcmsImage
                         :media="cover"
-                        :client="bcms"
                         class="absolute z-10 top-0 left-0 w-full h-full object-cover"
                     />
                     <div
@@ -43,9 +42,8 @@
                         :key="index"
                     >
                         <div class="flex items-center mb-5 lg:mb-14">
-                            <BCMSImage
+                            <BcmsImage
                                 :media="speaker.avatar_image"
-                                :client="bcms"
                                 class="w-8 h-8 object-cover rounded-full overflow-hidden mr-3 lg:w-24 lg:h-24 lg:mr-6"
                             />
                             <div>
@@ -80,14 +78,12 @@
 </template>
 
 <script setup lang="ts">
-import type { ClientConfig } from '@thebcms/client';
-import { BCMSImage } from '@thebcms/components-vue';
 import type {
     PropMediaDataParsed,
     PropRichTextDataParsed,
 } from '@thebcms/types';
 import { A11y, Pagination } from 'swiper/modules';
-import type { SpeakerGroup } from '~/bcms/types/ts';
+import type { SpeakerGroup } from '~/bcms/type/ts';
 
 defineProps({
     cover: {
@@ -104,10 +100,6 @@ defineProps({
     },
     speakers: {
         type: Array as PropType<SpeakerGroup[]>,
-        required: true,
-    },
-    bcms: {
-        type: Object as PropType<ClientConfig>,
         required: true,
     },
 });

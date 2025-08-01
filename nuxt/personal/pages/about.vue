@@ -76,9 +76,8 @@
                     </div>
                 </div>
             </div>
-            <BCMSImage
+            <BcmsImage
                 :media="data.meta.cover_image"
-                :client="data.bcms"
                 class="w-full object-cover aspect-[1.84] mb-10 lg:aspect-[2.59] lg:mb-20"
             />
             <div class="container">
@@ -123,7 +122,6 @@
 </template>
 
 <script setup lang="ts">
-import { BCMSImage } from '@thebcms/components-vue';
 import type { AboutPageResponse } from '~/server/api/about-page';
 
 const { setOgHead } = useHeadTags();
