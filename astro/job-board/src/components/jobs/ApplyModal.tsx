@@ -46,8 +46,8 @@ const ApplyModal: FC<Props> = ({ close }) => {
     };
 
     return (
-        <div className="fixed z-[60] top-0 left-0 w-full h-full pt-[100px] px-6">
-            <div className="relative z-10 bg-[#E3E1DC] border border-[#B0AEAB] p-6 rounded-[14px] max-w-[632px] mx-auto max-h-[80vh] overflow-auto overscroll-contain lg:p-8">
+        <div className="fixed z-[60] top-0 left-0 w-full h-dvh flex items-center px-6">
+            <div className="relative z-10 bg-[#E3E1DC] border border-[#B0AEAB] p-6 rounded-[14px] w-[632px] max-w-[98vw] mx-auto max-h-[80vh] overflow-x-hidden overflow-y-auto overscroll-contain lg:p-8">
                 <form
                     ref={formRef}
                     className="grid grid-cols-1 gap-6"

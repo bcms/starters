@@ -24,7 +24,9 @@ export async function getStaticPaths() {
 
 const { slug } = Astro.params;
 
-const jobPostEntries = (await bcmsPrivate.entry.getAll('job-post')) as JobPostEntry[];
+const jobPostEntries = (await bcmsPrivate.entry.getAll(
+    'job-post',
+)) as JobPostEntry[];
 
 const jobPostEntry = jobPostEntries.find((e) => e.meta.en?.slug === slug);
 const jobPostEntryMeta = jobPostEntry?.meta.en as JobPostEntryMetaItem;
@@ -49,6 +51,7 @@ const clientConfig = bcmsPublic.getConfig();
             meta={jobPostEntryMeta}
             jobs={jobPostEntries.map((e) => toJobLite(e))}
             bcmsConfig={clientConfig}
+            client:load
         />
     </div>
 </Layout>

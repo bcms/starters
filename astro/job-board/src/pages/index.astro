@@ -21,7 +21,9 @@ const homePageEntry = (await bcmsPrivate.entry.getBySlug(
     'home-page',
 )) as HomePageEntry;
 const homePageMeta = homePageEntry.meta.en as HomePageEntryMetaItem;
-const jobEntries = (await bcmsPrivate.entry.getAll('job-post')) as JobPostEntry[];
+const jobEntries = (await bcmsPrivate.entry.getAll(
+    'job-post',
+)) as JobPostEntry[];
 const jobEntriesLite = jobEntries.map((job) => {
     return toJobLite(job);
 });
@@ -54,6 +56,7 @@ const bcmsConfig = bcmsPublic.getConfig();
             title={homePageMeta.about_title}
             description={homePageMeta.about_description}
             features={homePageMeta.about_features}
+            client:load
         />
         <Testimonials
             testimonials={testimonialEntriesMeta}
