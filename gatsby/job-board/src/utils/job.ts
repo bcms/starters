@@ -1,4 +1,4 @@
-import { PropRichTextDataParsed } from '@thebcms/types';
+import { EntryContentNode, PropRichTextDataParsed } from '@thebcms/types';
 import { JobPostEntry, JobPostEntryMetaItem } from '../../bcms/types/ts';
 
 export interface JobLite {
@@ -20,5 +20,23 @@ export function toJobLite(job: JobPostEntry): JobLite {
         featured: meta.featured || false,
         location: meta.location || '',
         type: meta.type || '',
+    };
+}
+
+export function textToRichTextNodes(text: string): {
+    nodes: EntryContentNode[];
+} {
+    return {
+        nodes: [
+            {
+                type: 'paragraph',
+                content: [
+                    {
+                        type: 'text',
+                        text,
+                    },
+                ],
+            },
+        ],
     };
 }

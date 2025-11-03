@@ -46,7 +46,7 @@ const JobDetails: React.FC<Props> = ({ meta, jobs, bcmsConfig }) => {
                         <div className="flex items-center justify-between rounded-t-lg bg-[#C9C8C3] p-4 lg:px-8 lg:py-6 lg:rounded-t-[14px]">
                             <div className="flex items-center">
                                 <BCMSImage
-                                    media={meta.avatar_image}
+                                    media={meta.company_logo}
                                     clientConfig={bcmsConfig}
                                     className="w-8 h-8 rounded-full object-cover mr-3 lg:w-12 lg:h-12 lg:mr-[14px]"
                                 />
@@ -57,7 +57,7 @@ const JobDetails: React.FC<Props> = ({ meta, jobs, bcmsConfig }) => {
                                     <div className="flex items-center">
                                         <LocationIcon className="w-3 h-3 flex-shrink-0 text-appGray-600 mr-1 lg:w-[14px] lg:h-[14px]" />
                                         <span className="text-xs leading-none font-medium tracking-[-0.41px] text-appGray-600 lg:text-sm lg:leading-none">
-                                            {meta.title}
+                                            {meta.location}
                                         </span>
                                     </div>
                                 </div>

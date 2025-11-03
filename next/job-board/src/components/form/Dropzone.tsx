@@ -3,31 +3,27 @@ import { FC, useState } from 'react';
 interface Props {
     value?: File | undefined;
     label?: string;
+    accept?: string;
     error?: string;
     onFileUpload: (file: File | undefined) => void;
 }
 
-const FileUpload: FC<Props> = ({ value, label, error, onFileUpload }) => {
+const FileUpload: FC<Props> = ({
+    value,
+    label,
+    accept,
+    error,
+    onFileUpload,
+}) => {
     const [isDropzoneActive, setIsDropzoneActive] = useState(false);
 
     const handleDrop = (event: React.DragEvent<HTMLLabelElement>) => {
         event.preventDefault();
-        setIsDropzoneActive(false);
 
         const files = event.dataTransfer.files;
 
-        for (let i = 0; i < files.length; i++) {
-            const file = files[i];
-
-            if (
-                ['application/pdf', 'text/plain'].some(
-                    (type) => file.type === type,
-                )
-            ) {
-                onFileUpload(file);
-                break;
-            }
-        }
+        onFileUpload(files[0]);
+        setIsDropzoneActive(false);
     };
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -67,7 +63,7 @@ const FileUpload: FC<Props> = ({ value, label, error, onFileUpload }) => {
                 <input
                     type="file"
                     className="sr-only"
-                    accept=".pdf,.txt"
+                    accept={accept}
                     onChange={handleChange}
                 />
                 <div className="flex flex-col text-xs leading-none font-medium tracking-[-0.41px] lg:text-sm lg:leading-none">

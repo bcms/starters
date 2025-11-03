@@ -38,12 +38,9 @@ const FormSelect: FC<Props> = ({
             <div className="relative">
                 <button
                     className={classNames(
-                        'flex items-center justify-between w-full border bg-transparent rounded-[40px] px-4 py-[14px] transition-colors duration-300 focus:outline-none lg:px-5 lg:py-[17px]',
-                        {
-                            'border-red-500': error,
-                            'border-[#C2C0BC]': !error && !value,
-                            'text-[#56565F]': !value,
-                        },
+                        'flex items-center justify-between w-full border border-solid bg-transparent rounded-[40px] px-4 py-[14px] transition-colors duration-300 focus:outline-none lg:px-5 lg:py-[17px]',
+                        error ? 'border-red-500' : 'border-[#C2C0BC]',
+                        !value && 'text-[#56565F]',
                     )}
                     style={{
                         boxShadow: '0px 0px 4px rgba(196, 202, 217, 0.3)',

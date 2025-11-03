@@ -3,11 +3,18 @@ import React, { useState } from 'react';
 interface Props {
     value?: File | undefined;
     label?: string;
+    accept?: string;
     error?: string;
     onFileUpload: (file: File | undefined) => void;
 }
 
-const Dropzone: React.FC<Props> = ({ value, label, error, onFileUpload }) => {
+const Dropzone: React.FC<Props> = ({
+    value,
+    label,
+    accept,
+    error,
+    onFileUpload,
+}) => {
     const [isDropzoneActive, setIsDropzoneActive] = useState(false);
 
     const handleDrop = (event: React.DragEvent<HTMLLabelElement>) => {
@@ -67,7 +74,7 @@ const Dropzone: React.FC<Props> = ({ value, label, error, onFileUpload }) => {
                 <input
                     type="file"
                     className="sr-only"
-                    accept=".pdf,.txt"
+                    accept={accept}
                     onChange={handleChange}
                 />
                 <div className="flex flex-col text-xs leading-none font-medium tracking-[-0.41px] lg:text-sm lg:leading-none">

@@ -5,6 +5,12 @@
         >
             <h1 class="sr-only">Post your job</h1>
             <template v-if="activeStep === 1">
+                <FormDropzone
+                    v-model="stepOne.coverImage.value"
+                    :error="stepOne.coverImage.error"
+                    accept="image/*"
+                    label="Job cover image"
+                />
                 <FormText
                     v-model="stepOne.jobTitle.value"
                     :error="stepOne.jobTitle.error"
@@ -202,6 +208,10 @@ const { checkForInputErrors } = useErrors();
 const activeStep = ref(1);
 
 const stepOne = ref({
+    coverImage: {
+        value: undefined as File | undefined,
+        error: '',
+    },
     jobTitle: {
         value: '',
         error: '',
@@ -210,11 +220,11 @@ const stepOne = ref({
         value: '',
         error: '',
     },
-    responsibility: {
+    jobDetails: {
         value: '',
         error: '',
     },
-    jobDetails: {
+    responsibility: {
         value: '',
         error: '',
     },
@@ -226,7 +236,7 @@ const stepTwo = ref({
         error: '',
     },
     companyLogo: {
-        value: undefined,
+        value: undefined as File | undefined,
         error: '',
     },
     companyWebsite: {
@@ -319,13 +329,77 @@ const stepFour = ref({
     },
 });
 
-const handleNextStep = () => {
+const handleSubmit = async () => {
+    try {
+        // const formData: {
+        //     [key: string]: any;
+        // } = {
+        //     title: stepOne.value.jobTitle.value,
+        //     slug: stepOne.value.jobTitle.value
+        //         .toLowerCase()
+        //         .replace(/ /g, '-')
+        //         .replace(/[^\w-]+/g, ''),
+        //     description: textToRichTextNodes(
+        //         stepOne.value.jobDescription.value,
+        //     ),
+        //     description_extended: textToRichTextNodes(
+        //         stepOne.value.jobDescription.value,
+        //     ),
+        //     location: stepTwo.value.companyAddress.value,
+        //     type: stepThree.value.jobType.value,
+        //     company_name: stepTwo.value.companyName.value,
+        //     company_description: textToRichTextNodes(
+        //         stepTwo.value.companyWebsite.value,
+        //     ),
+        //     responsibilities: textToRichTextNodes(
+        //         stepOne.value.responsibility.value,
+        //     ),
+        //     details: textToRichTextNodes(stepOne.value.jobDetails.value),
+        // };
+
+        // if (stepOne.value.coverImage.value && stepTwo.value.companyLogo.value) {
+        // const fd = new FormData();
+        // fd.set('file', stepOne.value.coverImage.value);
+        // const coverImageId = await $fetch('/api/jobs/create-file', {
+        //     method: 'POST',
+        //     body: fd,
+        // });
+        // formData['cover_image'] = {
+        //     mediaId: coverImageId,
+        // };
+        // fd.set('file', stepTwo.value.companyLogo.value);
+        // const companyLogoId = await $fetch(
+        //     '/api/jobs/create-file',
+        //     {
+        //         method: 'POST',
+        //         body: fd,
+        //     },
+        // );
+        // formData['company_logo'] = {
+        //     mediaId: companyLogoId,
+        // };
+        // }
+        // const response = await $fetch('/api/jobs/create', {
+        //     method: 'POST',
+        //     body: formData,
+        // });
+        // console.log('Success:', response);
+        alert(
+            'Uncomment the job post submission code to enable posting to BCMS.',
+        );
+    } catch (error) {
+        console.error('Error:', error);
+    }
+};
+
+const handleNextStep = async () => {
     if (activeStep.value === 1) {
         const errors = checkForInputErrors([
+            stepOne.value.coverImage,
             stepOne.value.jobTitle,
             stepOne.value.jobDescription,
-            stepOne.value.responsibility,
             stepOne.value.jobDetails,
+            stepOne.value.responsibility,
         ]);
 
         if (!errors) {
@@ -371,7 +445,7 @@ const handleNextStep = () => {
         ]);
 
         if (!errors) {
-            // TODO: Submit
+            await handleSubmit();
         }
     }
 };

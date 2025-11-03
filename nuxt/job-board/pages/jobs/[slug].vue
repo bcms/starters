@@ -17,7 +17,7 @@
                     >
                         <div class="flex items-center">
                             <BcmsImage
-                                :media="data.meta.avatar_image"
+                                :media="data.meta.company_logo"
                                 class="w-8 h-8 rounded-full object-cover mr-3 lg:w-12 lg:h-12 lg:mr-[14px]"
                             />
                             <div>
@@ -34,7 +34,7 @@
                                     />
                                     <span
                                         class="text-xs leading-none font-medium tracking-[-0.41px] text-appGray-600 lg:text-sm lg:leading-none"
-                                        >{{ data.meta.title }}</span
+                                        >{{ data.meta.location }}</span
                                     >
                                 </div>
                             </div>
