@@ -113,6 +113,7 @@ const ApplyModal: FC<Props> = ({ close }) => {
                     />
                     <FormDropzone
                         value={file}
+                        accept=".pdf,.doc,.docx,.txt"
                         onFileUpload={(value) => setFile(value as File)}
                         label="Upload your document"
                     />

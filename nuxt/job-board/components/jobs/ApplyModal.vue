@@ -48,6 +48,7 @@
                     v-model="form.document.value"
                     :error="form.document.error"
                     label="Upload your document"
+                    accept=".pdf,.doc,.docx,.txt"
                 />
                 <Btn size="sm" class="justify-center w-full lg:mt-4">
                     <span>Submit</span>

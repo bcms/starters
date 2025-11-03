@@ -112,6 +112,7 @@ const ApplyModal: React.FC<Props> = ({ close }) => {
                     <Dropzone
                         value={file}
                         onFileUpload={(value) => setFile(value as File)}
+                        accept=".pdf,.doc,.docx,.txt"
                         label="Upload your document"
                     />
                     <Btn size="sm" className="justify-center w-full lg:mt-4">

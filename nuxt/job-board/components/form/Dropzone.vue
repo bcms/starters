@@ -23,7 +23,7 @@
             <input
                 type="file"
                 class="sr-only"
-                accept=".pdf,.txt"
+                :accept="accept"
                 @change="handleChange"
             />
             <div
@@ -41,7 +41,7 @@
 </template>
 
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
     modelValue: {
         type: File,
         required: false,
@@ -51,6 +51,11 @@ defineProps({
         type: String,
         required: false,
         default: '',
+    },
+    accept: {
+        type: String,
+        required: false,
+        default: '*',
     },
     error: {
         type: String,
@@ -66,13 +71,9 @@ const isDropzoneActive = ref(false);
 const handleDrop = (event: DragEvent) => {
     const files = (event.dataTransfer as DataTransfer).files;
 
-    for (let i = 0; i < files.length; i++) {
-        const file = files[i];
-
-        if (['docx', 'pdf', 'txt'].some((type) => file.type.includes(type))) {
-            emits('update:modelValue', file);
-        }
-    }
+    const file = files[0];
+    emits('update:modelValue', file);
+    isDropzoneActive.value = false;
 };
 
 const handleChange = (event: Event) => {

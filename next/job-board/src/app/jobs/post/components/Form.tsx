@@ -5,6 +5,8 @@ import FileUpload from '@/components/form/Dropzone';
 import FormSelect from '@/components/form/Select';
 import FormText from '@/components/form/Text';
 import React, { useState } from 'react';
+// import { textToRichTextNodes } from '@/utils/job';
+// import axios from 'axios';
 
 export interface InputObject {
     value?: unknown;
@@ -15,6 +17,10 @@ const Form: React.FC = () => {
     const [activeStep, setActiveStep] = useState(1);
 
     const [stepOne, setStepOne] = useState({
+        coverImage: {
+            value: undefined as File | undefined,
+            error: '',
+        },
         jobTitle: {
             value: '',
             error: '',
@@ -23,11 +29,11 @@ const Form: React.FC = () => {
             value: '',
             error: '',
         },
-        responsibility: {
+        jobDetails: {
             value: '',
             error: '',
         },
-        jobDetails: {
+        responsibility: {
             value: '',
             error: '',
         },
@@ -39,7 +45,7 @@ const Form: React.FC = () => {
             error: '',
         },
         companyLogo: {
-            value: undefined,
+            value: undefined as File | undefined,
             error: '',
         },
         companyWebsite: {
@@ -194,7 +200,68 @@ const Form: React.FC = () => {
         return hasError;
     };
 
-    const handleNextStep = () => {
+    const handleSubmit = async () => {
+        try {
+            // const formData: {
+            //     [key: string]: unknown;
+            // } = {
+            //     title: stepOne.jobTitle.value,
+            //     slug: stepOne.jobTitle.value
+            //         .toLowerCase()
+            //         .replace(/ /g, '-')
+            //         .replace(/[^\w-]+/g, ''),
+            //     description: textToRichTextNodes(stepOne.jobDescription.value),
+            //     description_extended: textToRichTextNodes(
+            //         stepOne.jobDescription.value,
+            //     ),
+            //     location: stepTwo.companyAddress.value,
+            //     type: stepThree.jobType.value,
+            //     company_name: stepTwo.companyName.value,
+            //     company_description: textToRichTextNodes(
+            //         stepTwo.companyWebsite.value,
+            //     ),
+            //     responsibilities: textToRichTextNodes(
+            //         stepOne.responsibility.value,
+            //     ),
+            //     details: textToRichTextNodes(stepOne.jobDetails.value),
+            // };
+
+            // if (stepOne.coverImage.value && stepTwo.companyLogo.value) {
+            //     const fd = new FormData();
+            //     fd.set('file', stepOne.coverImage.value);
+            //     const {
+            //         data: { fileId: coverImageId },
+            //     } = await axios.post('/api/create-file', fd, {
+            //         headers: {
+            //             'Content-Type': 'multipart/form-data',
+            //         },
+            //     });
+            //     formData['cover_image'] = {
+            //         mediaId: coverImageId,
+            //     };
+            //     fd.set('file', stepTwo.companyLogo.value);
+            //     const {
+            //         data: { fileId: companyLogoId },
+            //     } = await axios.post('/api/create-file', fd, {
+            //         headers: {
+            //             'Content-Type': 'multipart/form-data',
+            //         },
+            //     });
+            //     formData['company_logo'] = {
+            //         mediaId: companyLogoId,
+            //     };
+            // }
+            // const response = await axios.post('/api/create-job', formData);
+            // console.log('Success:', response);
+            alert(
+                'Uncomment the job post submission code to enable posting to BCMS.',
+            );
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    };
+
+    const handleNextStep = async () => {
         if (activeStep === 1) {
             const errors = checkForInputErrors(stepOne, setStepOne);
 
@@ -217,7 +284,7 @@ const Form: React.FC = () => {
             const errors = checkForInputErrors(stepFour, setStepFour);
 
             if (!errors) {
-                // TODO: Submit
+                await handleSubmit();
             }
         }
     };
@@ -228,6 +295,18 @@ const Form: React.FC = () => {
                 <h1 className="sr-only">Post your job</h1>
                 {activeStep === 1 && (
                     <>
+                        <FileUpload
+                            value={stepOne.coverImage.value}
+                            error={stepOne.coverImage.error}
+                            accept="image/*"
+                            label="Job cover image"
+                            onFileUpload={(value) =>
+                                handleInputChange(
+                                    'coverImage',
+                                    value as unknown as string,
+                                )
+                            }
+                        />
                         <FormText
                             value={stepOne.jobTitle.value}
                             error={stepOne.jobTitle.error}
