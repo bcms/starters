@@ -1,10 +1,13 @@
 /**
  * @typedef {{
  *   build?: string;
- *   deplay?: string;
+ *   deploy?: string;
+ *   framework?: string;
  *   project?: string;
  *   updatePackages?: string;
  *   removeNodeModules?: string;
+ *   deployServerUser?: string;
+ *   deployServerIp?: string;
  * }} Args
  */
 

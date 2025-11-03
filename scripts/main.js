@@ -4,6 +4,7 @@ const { getArgs } = require('./utils/args');
 const { build } = require('./build');
 const { updatePackages } = require('./update-packages');
 const { removeNodeModules } = require('./remove-node-modules');
+const { deploy } = require('./deploy');
 
 async function main() {
     const args = getArgs();
@@ -13,6 +14,8 @@ async function main() {
         await updatePackages();
     } else if (args.removeNodeModules) {
         await removeNodeModules();
+    } else if (args.deploy) {
+        await deploy();
     } else {
         throw Error(`Unknown commands: ${JSON.stringify({ args }, null, 4)}`);
     }
