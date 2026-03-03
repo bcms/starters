@@ -6,17 +6,7 @@ import { BlogEntry, BlogEntryMetaItem } from './bcms/types/ts';
 import { EntryContentParsedItem } from '@thebcms/types';
 import { Client } from '@thebcms/client';
 
-const bcms = new Client(
-    process.env.BCMS_ORG_ID || '',
-    process.env.BCMS_INSTANCE_ID || '',
-    {
-        id: process.env.BCMS_API_KEY_ID || '',
-        secret: process.env.BCMS_API_KEY_SECRET || '',
-    },
-    {
-        injectSvg: true,
-    },
-);
+const bcms = new Client({ injectSvg: true });
 
 export const createPages = async ({
     actions: { createPage },

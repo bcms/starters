@@ -18,17 +18,7 @@ import {
     NowPlayingPageContent,
 } from './src/types';
 
-const bcms = new Client(
-    process.env.BCMS_ORG_ID || '',
-    process.env.BCMS_INSTANCE_ID || '',
-    {
-        id: process.env.BCMS_API_KEY_ID || '',
-        secret: process.env.BCMS_API_KEY_SECRET || '',
-    },
-    {
-        injectSvg: true,
-    },
-);
+const bcms = new Client({ injectSvg: true });
 
 export const createPages = async ({
     actions: { createPage },
