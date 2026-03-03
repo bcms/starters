@@ -3,14 +3,15 @@
 	import { goto } from '$app/navigation';
 	import { BCMSContentManager, type BCMSWidgetComponents } from '@thebcms/components-svelte';
 	import { onMount } from 'svelte';
-	import type { ClientConfig } from '@thebcms/client';
+	import { bcmsPublic } from '../../bcms-public';
 
-	let props: {
+	interface Props {
 		items: EntryContentParsedItem[];
 		widgetComponents?: BCMSWidgetComponents;
 		class?: string;
-		clientConfig?: ClientConfig;
-	} = $props();
+	}
+
+	let { items, widgetComponents, class: className }: Props = $props();
 
 	let managerDOM: HTMLDivElement | undefined = undefined;
 
@@ -42,9 +43,9 @@
 
 <div bind:this={managerDOM}>
 	<BCMSContentManager
-		class={props.class}
-		items={props.items}
-		widgetComponents={props.widgetComponents || {}}
-		clientConfig={props.clientConfig}
+		class={className}
+		{items}
+		widgetComponents={widgetComponents || {}}
+		clientConfig={bcmsPublic.getConfig()}
 	/>
 </div>

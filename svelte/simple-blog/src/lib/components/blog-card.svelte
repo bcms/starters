@@ -3,11 +3,10 @@
 	import Tag from './tag.svelte';
 	import type { BlogEntryMetaItem } from '../../../bcms/types/ts';
 	import { toReadableDate } from '../../utils/date';
-	import type { ClientConfig } from '@thebcms/client';
 	import { BCMSImage } from '@thebcms/components-svelte';
+	import { bcmsPublic } from '../../bcms-public';
 
 	export let blog: BlogEntryMetaItem;
-	export let bcmsConfig: ClientConfig;
 </script>
 
 <article>
@@ -17,7 +16,7 @@
 	>
 		<div class="aspect-[1.25] self-stretch overflow-hidden">
 			<BCMSImage
-				clientConfig={bcmsConfig}
+                clientConfig={bcmsPublic.getConfig()}
 				media={blog.cover_image}
 				class="size-full object-cover transition-transform duration-500 object-center group-hover:scale-105 group-focus-visible:scale-105"
 			/>
