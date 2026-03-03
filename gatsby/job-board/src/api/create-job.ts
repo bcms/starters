@@ -10,13 +10,7 @@ export default async function handler(
         return;
     }
 
-    const bcms = new Client(
-        process.env.BCMS_INSTANCE_ID || '',
-        {
-            id: process.env.BCMS_API_KEY_ID || '',
-            secret: process.env.BCMS_API_KEY_SECRET || '',
-        },
-    );
+    const bcms = new Client({ injectSvg: true });
 
     try {
         const entryStatuses = await bcms.entryStatus.getAll();
