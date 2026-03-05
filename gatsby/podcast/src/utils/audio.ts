@@ -1,5 +1,5 @@
 import type { PropMediaDataParsed } from "@thebcms/types";
-import { bcmsPublic } from "../../../bcms-public";
+import { bcmsPublic } from "../../bcms-public";
 
 export const audioUtil = {
   createAudio(media: PropMediaDataParsed) {

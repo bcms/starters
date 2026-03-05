@@ -33,7 +33,7 @@ export const createPages = async ({
     const homePageMeta = homePageEntry.meta.en as HomePageEntryMetaItem;
 
     const episodes = await bcms.entry.getAll('episode') as EpisodeEntry[];
-    const episodesMeta = episodes.map((episode) => episode.meta.en as EpisodeEntryMetaItem); 
+    const episodesMeta = episodes.map((episode) => episode.meta.en as EpisodeEntryMetaItem);
 
     createPage({
         path: `/`,
