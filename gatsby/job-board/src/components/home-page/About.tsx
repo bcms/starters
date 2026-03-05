@@ -30,6 +30,7 @@ const HomeAbout: React.FC<Props> = ({ title, description, features }) => {
                             <ContentManager
                                 items={description.nodes}
                                 className="text-sm leading-[1.4] font-medium tracking-[-0.41px] text-appGray-600 text-center max-lg:px-3 mb-6 lg:text-base lg:leading-[1.45]"
+                                clientConfig={undefined}
                             />
                             <div className="flex flex-col items-center gap-2.5 mb-8 lg:flex-row lg:justify-center lg:mb-12 xl:gap-5">
                                 {features.map((feature, index) => (

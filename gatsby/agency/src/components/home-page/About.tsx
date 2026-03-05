@@ -44,6 +44,7 @@ const HomeAbout: React.FC<Props> = ({
                             <ContentManager
                                 items={description.nodes}
                                 className="text-appGray-200 text-xs font-medium leading-[1.3] tracking-[-0.24px] max-w-[66%] lg:text-base lg:leading-[1.3] lg:tracking-[-0.32px]"
+                                clientConfig={bcmsConfig}
                             />
                         </div>
                     </div>

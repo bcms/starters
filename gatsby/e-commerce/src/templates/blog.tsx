@@ -45,7 +45,11 @@ const BlogTemplate: React.FC<BlogTemplateProps> = ({
                     <div className="absolute inset-0 bg-black/50" />
                 </div>
                 <div className="grid grid-cols-1 gap-10 items-start lg:grid-cols-[1fr,400px] lg:gap-16 xl:grid-cols-[1fr,600px]">
-                    <ContentManager items={content} className="blog--content" />
+                    <ContentManager
+                        items={content}
+                        className="blog--content"
+                        clientConfig={bcms}
+                    />
                     <div className="border border-appGray-300 p-4 lg:p-8">
                         <div className="flex flex-col items-center gap-5 justify-between text-xl leading-none tracking-[-2%] mb-6 lg:text-[24px] lg:flex-row">
                             <div>Others you may like</div>

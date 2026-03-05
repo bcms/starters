@@ -52,6 +52,7 @@ const ServicesList: React.FC<ListProps> = ({ items, bcmsConfig }) => {
                                                 item.meta.en.description.nodes
                                             }
                                             className="text-xs leading-tight tracking-[-0.24px] max-w-[90%] lg:text-base lg:leading-tight lg:tracking-[-0.32px]"
+                                            clientConfig={bcmsConfig}
                                         />
                                     </div>
                                 </div>

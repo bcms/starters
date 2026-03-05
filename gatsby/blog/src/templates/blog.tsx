@@ -34,7 +34,11 @@ const BlogTemplate: React.FC<BlogTemplateProps> = ({
                             clientConfig={bcms}
                             className="aspect-[2.07] rounded-lg overflow-hidden w-full object-cover mb-6 md:mb-8 lg:aspect-[2.43] lg:rounded-2xl lg:mb-12"
                         />
-                        <ContentManager items={content} className="prose" />
+                        <ContentManager
+                            items={content}
+                            className="prose"
+                            clientConfig={bcms}
+                        />
                     </div>
                     <div className="max-md:hidden">
                         <div className="flex items-center justify-between mb-8 lg:mb-12">

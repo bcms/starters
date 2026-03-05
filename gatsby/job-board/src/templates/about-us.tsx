@@ -42,6 +42,7 @@ const AboutUsTemplate: React.FC<AboutUsTemplateProps> = ({
                                             'leading-normal font-medium tracking-[-0.41px] text-appGray-600',
                                             'lg:text-[32px] lg:leading-normal',
                                         )}
+                                        clientConfig={bcms}
                                     />
                                 )}
                                 {item.image && (

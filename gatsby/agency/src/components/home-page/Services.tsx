@@ -52,6 +52,7 @@ const HomeServices: React.FC<Props> = ({
                         <ContentManager
                             items={description.nodes}
                             className="text-xs leading-tight tracking-[-0.24px] max-w-[428px] lg:text-base lg:leading-tight lg:tracking-[-0.32px]"
+                            clientConfig={bcmsConfig}
                         />
                     </div>
                 </div>

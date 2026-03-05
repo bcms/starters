@@ -81,6 +81,7 @@ const BlogTemplate: React.FC<BlogTemplateProps> = (props) => {
                         <ContentManager
                             items={data.content}
                             className="prose max-w-full lg:prose-lg"
+                            clientConfig={props.pageContext.data.bcmsConfig}
                         />
                     </div>
                     {data.otherBlogs.length > 0 && (

@@ -72,6 +72,7 @@ const HomeHero: React.FC<Props> = ({
                     <ContentManager
                         items={description.nodes}
                         className="[&_strong]:text-appText [&_strong]:font-medium text-sm leading-[1.4] tracking-[-0.8px] text-appGray-500 max-lg:mb-8 lg:col-start-1 lg:row-start-2 lg:text-[26px] lg:leading-[1.4]"
+                        clientConfig={bcmsConfig}
                     />
                     <Link
                         to="#tickets"

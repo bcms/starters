@@ -58,6 +58,7 @@ const HomeSpeakers: React.FC<Props> = ({
                     <ContentManager
                         items={description.nodes}
                         className="text-sm leading-[1.4] font-medium tracking-[-0.8px] text-appGray-500 mb-6 lg:text-[26px] lg:leading-[1.4] lg:mb-[88px]"
+                        clientConfig={bcmsConfig}
                     />
                     <Swiper {...sliderOptions} className="mb-8 lg:mb-16">
                         {speakers &&
@@ -81,10 +82,12 @@ const HomeSpeakers: React.FC<Props> = ({
                                     <ContentManager
                                         items={speaker.biography.nodes}
                                         className="homeSpeakers--rt mb-4 lg:mb-12"
+                                        clientConfig={bcmsConfig}
                                     />
                                     <ContentManager
                                         items={speaker.topic.nodes}
                                         className="homeSpeakers--rt"
+                                        clientConfig={bcmsConfig}
                                     />
                                 </SwiperSlide>
                             ))}

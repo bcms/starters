@@ -58,6 +58,7 @@ const HomeHero: React.FC<Props> = ({ title, subtitle, blogs, bcmsConfig }) => {
                                     <ContentManager
                                         items={blog.description.nodes}
                                         className="text-xs leading-[1.2] tracking-[-0.41px] text-white line-clamp-3 max-w-[150px] md:text-base md:leading-[1.2] md:max-w-[568px] lg:text-xl lg:leading-none"
+                                        clientConfig={bcmsConfig}
                                     />
                                     {index > 0 && index % 2 === 0 && (
                                         <div className="text-xs font-medium leading-none tracking-[-0.41px] text-appGray-200 md:text-base md:leading-none lg:text-xl lg:leading-none">

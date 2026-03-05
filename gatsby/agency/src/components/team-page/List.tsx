@@ -39,6 +39,7 @@ const TeamList: React.FC<ListProps> = ({ items, bcmsConfig }) => {
                                                 item.meta.en.description.nodes
                                             }
                                             className="text-appGray-200 text-xs font-medium leading-[1.3] tracking-[-0.24px] lg:text-base lg:leading-[1.4] lg:tracking-[-0.32px] lg:max-w-[85%]"
+                                            clientConfig={bcmsConfig}
                                         />
                                     </div>
                                 </div>

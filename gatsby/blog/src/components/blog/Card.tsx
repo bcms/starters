@@ -35,6 +35,7 @@ export const BlogsCard: FC<BlogsCardProps> = ({ blog, bcms }) => {
                 <ContentManager
                     items={blog.description.nodes}
                     className="text-sm leading-[1.3] tracking-[-0.41px] text-appGray-500 xl:text-xl xl:leading-[1.3]"
+                    clientConfig={bcms}
                 />
             </Link>
         </article>

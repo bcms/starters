@@ -28,6 +28,7 @@ const HomeTickets: React.FC<Prop> = ({
                 <ContentManager
                     items={description.nodes}
                     className="text-sm leading-[1.4] font-medium tracking-[-0.41px] text-appGray-500 text-center max-w-[823px] mx-auto mb-10 lg:text-2xl lg:leading-none lg:mb-16"
+                    clientConfig={bcmsConfig}
                 />
                 <div className="grid grid-cols-1 gap-4 lg:gap-16">
                     {tickets &&

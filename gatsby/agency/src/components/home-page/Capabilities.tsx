@@ -38,6 +38,7 @@ const HomeCapabilities: React.FC<Props> = ({
                         <ContentManager
                             items={description.nodes}
                             className="text-appGray-200 text-xs font-medium leading-[1.3] tracking-[-0.24px] max-w-[66%] mb-8 lg:text-base lg:leading-[1.3] lg:tracking-[-0.32px] lg:max-w-[488px]"
+                            clientConfig={bcmsConfig}
                         />
                         <Link
                             to="/portfolio"
