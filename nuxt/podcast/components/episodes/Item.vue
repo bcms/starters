@@ -128,10 +128,8 @@ const handlePlayPause = () => {
 };
 
 onMounted(() => {
-    const bcms = useBcmsPublic();
     nextTick(() => {
         const audio = audioUtil.createAudio(
-            bcms.getConfig(),
             props.item.media_file,
         );
         audio.preload = 'metadata';

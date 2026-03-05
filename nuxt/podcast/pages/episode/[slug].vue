@@ -136,7 +136,6 @@ const {
 } = usePlayingEpisode();
 
 const route = useRoute();
-const bcms = useBcmsPublic();
 
 const { data, error } = await useFetch<EpisodePageResponse>(
     `/api/episode/${route.params.slug}`,
@@ -186,7 +185,6 @@ watch(
     (newVal) => {
         if (newVal && data.value) {
             const audio = audioUtil.createAudio(
-                bcms.getConfig(),
                 data.value.meta.media_file,
             );
             audio.preload = 'metadata';

@@ -56,7 +56,7 @@ export function usePlayer(): PlayerContextValue {
 export function PlayerProvider(
     props: PropsWithChildren<unknown>,
 ): JSX.Element | null {
-    const { episodes, bcms } = useEpisodes();
+    const { episodes } = useEpisodes();
 
     const [episodeDOM, setEpisodeDOM] = useState<HTMLAudioElement | undefined>(
         undefined,
@@ -153,7 +153,6 @@ export function PlayerProvider(
             });
 
             const audio = audioUtil.createAudio(
-                bcms,
                 episodes[index - 1].media_file,
             );
             audio.preload = 'metadata';
@@ -182,7 +181,6 @@ export function PlayerProvider(
             });
 
             const audio = audioUtil.createAudio(
-                bcms,
                 episodes[index + 1].media_file,
             );
             audio.preload = 'metadata';
