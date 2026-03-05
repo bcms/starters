@@ -156,8 +156,8 @@ export function PlayerProvider(
                 playing: false,
             });
 
+            console.log(episodes[index - 1].media_file)
             const audio = audioUtil.createAudio(
-                bcms,
                 episodes[index - 1].media_file,
             );
             audio.preload = 'metadata';
@@ -186,9 +186,9 @@ export function PlayerProvider(
             });
 
             const audio = audioUtil.createAudio(
-                bcms,
                 episodes[index + 1].media_file,
             );
+            console.log(episodes[index - 1].media_file)
             audio.preload = 'metadata';
             audio.onloadedmetadata = () => {
                 setEpisodeDOM(audio);

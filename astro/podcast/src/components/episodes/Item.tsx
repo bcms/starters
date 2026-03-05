@@ -67,7 +67,7 @@ export const EpisodesItem: React.FC<EpisodeItemProps> = ({
     }, [episodeDOM]);
 
     useEffect(() => {
-        const audio = audioUtil.createAudio(bcms, item.media_file);
+        const audio = audioUtil.createAudio(item.media_file);
         audio.preload = 'metadata';
         audio.addEventListener('loadedmetadata', () => {
             audioDOM.current = audio;
@@ -103,7 +103,7 @@ export const EpisodesItem: React.FC<EpisodeItemProps> = ({
             )}
         >
             <button
-                className="flex items-center justify-center"
+                className="flex justify-center items-center"
                 onClick={(e) => handlePlayPause(e)}
             >
                 {renderIndex && (
@@ -126,7 +126,7 @@ export const EpisodesItem: React.FC<EpisodeItemProps> = ({
             <BCMSImage
                 media={item.cover_image}
                 clientConfig={bcms}
-                className="w-6 h-6 rounded object-cover overflow-hidden lg:w-16 lg:h-16"
+                className="object-cover overflow-hidden w-6 h-6 rounded lg:w-16 lg:h-16"
             />
             <div className="max-lg:pl-2.5">
                 <div

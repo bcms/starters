@@ -1,8 +1,8 @@
-import type { ClientConfig } from "@thebcms/client";
 import type { PropMediaDataParsed } from "@thebcms/types";
+import { bcmsPublic } from "../bcms-public"
 
 export const audioUtil = {
-  createAudio(bcms: ClientConfig, file: PropMediaDataParsed) {
-    return  new Audio(`${bcms.cmsOrigin}/api/v3/instance/${bcms.instanceId}/media/${file._id}/bin2${file.src}?apiKey=${bcms.apiKey.id}.${bcms.apiKey.secret}`);
+  createAudio(media: PropMediaDataParsed) {
+    return new Audio(bcmsPublic.cmsOrigin + bcmsPublic.media.toUri(media._id, media.name))
   },
 };
