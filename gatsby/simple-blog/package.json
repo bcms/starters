@@ -21,6 +21,7 @@
         "@thebcms/components-react": "^3.0.0",
         "@thebcms/types": "^2.0.0",
         "@thebcms/utils": "^2.0.0",
+        "ajv": "^8.18.0",
         "autoprefixer": "^10.4.20",
         "gatsby": "^5.13.7",
         "gatsby-plugin-postcss": "^6.13.1",
