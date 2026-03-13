@@ -20,7 +20,7 @@
         <Transition name="fade">
             <div
                 v-if="showOptions"
-                v-click-outside="() => (showOptions = !showOptions)"
+                v-click-outside="() => (showOptions = false)"
                 class="absolute -bottom-1 w-full translate-y-full grid grid-cols-1 gap-px border border-[#EBEBEB] bg-[#EBEBEB] rounded-lg max-h-[194px] overflow-y-auto lg:-bottom-4 lg:w-[470px] lg:flex lg:flex-wrap lg:gap-4 lg:bg-white lg:p-6 xl:w-[636px]"
                 :class="[dropdownPosition === 'left' ? 'right-0' : 'left-0']"
             >
