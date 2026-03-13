@@ -1,17 +1,18 @@
 import { v4 as uuidv4 } from 'uuid';
+import type { DirectiveBinding } from 'vue';
 
 const handlers: Record<string, { callback: (event: MouseEvent) => void }> = {};
 
 export default defineNuxtPlugin((nuxtApp) => {
     nuxtApp.vueApp.directive('click-outside', {
-        mounted(el, binding) {
+        mounted(el: HTMLElement, binding: DirectiveBinding<() => void>) {
             const id = uuidv4();
             el.setAttribute('dir-id', id);
 
             let latch = false;
 
             handlers[id] = {
-                callback: (event: any) => {
+                callback: (event: MouseEvent) => {
                     if (latch) {
                         const clickedEl = event.target as Node | null;
 
@@ -19,7 +20,7 @@ export default defineNuxtPlugin((nuxtApp) => {
                             return;
                         }
 
-                        if (!el.contains(clickedEl)) {
+                        if (!el.contains(clickedEl) && typeof binding.value === 'function') {
                             binding.value();
                         }
                     } else {
