@@ -24,22 +24,15 @@ export default defineNuxtConfig({
     },
     css: ['~/assets/styles/main.scss'],
     bcms: {
-        instanceId: process.env.BCMS_INSTANCE_ID,
         privateClientOptions: {
-            key: {
-                id: process.env.BCMS_API_KEY_ID!,
-                secret: process.env.BCMS_API_KEY_SECRET!,
-            },
             options: {
+                apiKey: process.env.BCMS_API_KEY!,
                 injectSvg: true,
             },
         },
         publicClientOptions: {
-            key: {
-                id: process.env.NUXT_PUBLIC_BCMS_API_KEY_ID!,
-                secret: process.env.NUXT_PUBLIC_BCMS_API_KEY_SECRET!,
-            },
             options: {
+                apiKey: process.env.NUXT_PUBLIC_BCMS_API_KEY!,
                 injectSvg: true,
             },
         },
