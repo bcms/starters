@@ -10,17 +10,20 @@ import { dateUtil } from '../../utils/date';
 import { audioUtil } from '../../utils/audio';
 import Link from 'next/link';
 import classNames from 'classnames';
+import type { ClientConfig } from '@thebcms/client';
 
 interface EpisodeItemProps {
     item: EpisodeEntryMetaItem;
     index: number;
     className?: string;
+    bcms: ClientConfig;
 }
 
 export const EpisodesItem: React.FC<EpisodeItemProps> = ({
     item,
     index,
     className,
+    bcms,
 }) => {
     const {
         episode,
