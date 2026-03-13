@@ -156,7 +156,7 @@ export function PlayerProvider(
                 playing: false,
             });
 
-å            const audio = audioUtil.createAudio(
+            const audio = audioUtil.createAudio(
                 episodes[index - 1].media_file,
             );
             audio.preload = 'metadata';
