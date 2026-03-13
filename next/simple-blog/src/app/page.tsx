@@ -1,5 +1,5 @@
 import React from 'react';
-import { bcms } from './bcms-client';
+import { bcmsPrivate } from './bcms-client';
 import { BlogEntry, BlogEntryMetaItem } from '@bcms-types/types/ts';
 import { Metadata } from 'next';
 import BlogCard from '@/components/blog/Card';

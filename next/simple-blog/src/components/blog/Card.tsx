@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { BlogEntryMetaItem } from '@bcms-types/types/ts';
 import { BCMSImage } from '@thebcms/components-react';
-import { bcms } from '@/app/bcms-client';
+import { bcmsPrivate } from '@/app/bcms-client';
 import ContentManager from '../ContentManager';
 import { toReadableDate } from '@/utils/date';
 import Tag from '../Tag';
