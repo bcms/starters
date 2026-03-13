@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 const ServicesPage: React.FC = async () => {
-    const servicesPageEntry = (await bcms.entry.getBySlug(
+    const servicesPageEntry = (await bcmsPrivate.entry.getBySlug(
         'services',
         'services-page',
     )) as ServicesPageEntry;
@@ -35,7 +35,7 @@ const ServicesPage: React.FC = async () => {
     const servicesPageMeta = servicesPageEntry.meta
         .en as ServicesPageEntryMetaItem;
 
-    const servicesEntries = (await bcms.entry.getAll(
+    const servicesEntries = (await bcmsPrivate.entry.getAll(
         'service',
     )) as ServiceEntry[];
 

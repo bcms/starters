@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 };
 
 const HomePage: React.FC = async () => {
-    const homePageEntry = (await bcms.entry.getBySlug(
+    const homePageEntry = (await bcmsPrivate.entry.getBySlug(
         'home',
         'home-page',
     )) as HomePageEntry;

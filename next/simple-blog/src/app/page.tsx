@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 };
 
 const HomePage: React.FC = async () => {
-    const blogs = (await bcms.entry.getAll('blog')) as BlogEntry[];
+    const blogs = (await bcmsPrivate.entry.getAll('blog')) as BlogEntry[];
 
     const items = blogs.map((blog) => {
         return blog.meta.en as BlogEntryMetaItem;

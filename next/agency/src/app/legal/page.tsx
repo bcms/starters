@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 };
 
 const LegalPage: React.FC = async () => {
-    const legalPageEntry = (await bcms.entry.getBySlug(
+    const legalPageEntry = (await bcmsPrivate.entry.getBySlug(
         'legal',
         'legal-page',
     )) as LegalPageEntry;

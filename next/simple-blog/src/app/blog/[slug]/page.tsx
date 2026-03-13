@@ -18,7 +18,7 @@ type Props = {
 };
 
 export async function generateStaticParams() {
-    const blogs = (await bcms.entry.getAll('blog')) as BlogEntry[];
+    const blogs = (await bcmsPrivate.entry.getAll('blog')) as BlogEntry[];
 
     return blogs.map((blog) => {
         const meta = blog.meta.en as BlogEntryMetaItem;
@@ -30,7 +30,10 @@ export async function generateStaticParams() {
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
     const params = await props.params;
-    const blog = (await bcms.entry.getBySlug(params.slug, 'blog')) as BlogEntry;
+    const blog = (await bcmsPrivate.entry.getBySlug(
+        params.slug,
+        'blog',
+    )) as BlogEntry;
 
     if (!blog) {
         return notFound();
@@ -52,7 +55,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 
 const BlogPage: React.FC<Props> = async (props) => {
     const params = await props.params;
-    const blogs = (await bcms.entry.getAll('blog')) as BlogEntry[];
+    const blogs = (await bcmsPrivate.entry.getAll('blog')) as BlogEntry[];
 
     const blog = blogs.find((e) => e.meta.en?.slug === params.slug);
 
@@ -111,7 +114,7 @@ const BlogPage: React.FC<Props> = async (props) => {
                             </div>
                         </div>
                         <BCMSImage
-                            clientConfig={bcms.getConfig()}
+                            clientConfig={bcmsPrivate.getConfig()}
                             media={data.meta.cover_image}
                             className="w-full aspect-[2.21] object-cover rounded-2xl md:rounded-3xl"
                         />

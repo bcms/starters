@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 const TeamPage: React.FC = async () => {
-    const teamPageEntry = (await bcms.entry.getBySlug(
+    const teamPageEntry = (await bcmsPrivate.entry.getBySlug(
         'team',
         'team-page',
     )) as TeamPageEntry;
@@ -34,7 +34,7 @@ const TeamPage: React.FC = async () => {
 
     const teamPageMeta = teamPageEntry.meta.en as TeamPageEntryMetaItem;
 
-    const teamMembersEntries = (await bcms.entry.getAll(
+    const teamMembersEntries = (await bcmsPrivate.entry.getAll(
         'team-member',
     )) as TeamMemberEntry[];
 

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 const PortfolioPage: React.FC = async () => {
-    const portfolioPageEntry = (await bcms.entry.getBySlug(
+    const portfolioPageEntry = (await bcmsPrivate.entry.getBySlug(
         'portfolio',
         'portfolio-page',
     )) as PortfolioPageEntry;
@@ -35,7 +35,7 @@ const PortfolioPage: React.FC = async () => {
     const portfolioPageMeta = portfolioPageEntry.meta
         .en as PortfolioPageEntryMetaItem;
 
-    const portfolioEntries = (await bcms.entry.getAll(
+    const portfolioEntries = (await bcmsPrivate.entry.getAll(
         'portfolio',
     )) as PortfolioEntry[];
 
