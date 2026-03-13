@@ -9,7 +9,7 @@
                 }"
             >
                 <div
-                    class="flex flex-col justify-between bg-appAccent2 text-appText-light p-4 pr-8 lg:p-8"
+                    class="flex flex-col justify-between p-4 pr-8 bg-appAccent2 text-appText-light lg:p-8"
                 >
                     <h2
                         class="text-sm font-bold leading-tight tracking-[-0.28px] max-w-[540px] mb-14 lg:text-[32px] lg:font-bold lg:tracking-[-0.64px] lg:mb-[200px] xl:mb-[520px]"
@@ -23,8 +23,7 @@
                 </div>
                 <BcmsImage
                     :media="cover"
-                    :client="bcms"
-                    class="size-full object-cover"
+                    class="object-cover size-full"
                 />
             </div>
             <div
@@ -61,15 +60,14 @@
                             <BcmsImage
                                 :key="index"
                                 :media="item.meta.en.image"
-                                :client="bcms"
-                                class="size-full object-cover"
+                                class="object-cover size-full"
                             />
                         </div>
                     </template>
                 </div>
                 <NuxtLink
                     to="/team"
-                    class="flex items-center gap-1 text-appGray-300 transition-colors duration-300 mb-8 hover:text-appText lg:mb-6"
+                    class="flex gap-1 items-center mb-8 transition-colors duration-300 text-appGray-300 hover:text-appText lg:mb-6"
                 >
                     <span
                         class="font-Inter text-xs font-medium leading-none tracking-[-0.24px] lg:text-base lg:leading-none lg:tracking-[-0.32px]"
