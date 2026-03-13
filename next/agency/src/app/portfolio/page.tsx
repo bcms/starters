@@ -46,7 +46,7 @@ const PortfolioPage: React.FC = async () => {
                 subtitle="Portfolio"
                 description={portfolioPageMeta.description}
             />
-            <List items={portfolioEntries} bcmsConfig={bcms.getConfig()} />
+            <List items={portfolioEntries} />
             <ContactBlock
                 title={portfolioPageMeta.contact_title}
                 description={portfolioPageMeta.contact_description}

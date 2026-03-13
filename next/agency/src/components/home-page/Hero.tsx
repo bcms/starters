@@ -1,17 +1,16 @@
 import React from 'react';
 import ContactUs from '../ContactUs';
 import { PropMediaDataParsed, PropRichTextDataParsed } from '@thebcms/types';
-import { ClientConfig } from '@thebcms/client';
 import { BCMSImage } from '@thebcms/components-react';
 import ContentManager from '../ContentManager';
+import { bcmsPublic } from '@/app/bcms-public';
 
 interface Props {
     title: PropRichTextDataParsed;
     gallery: PropMediaDataParsed;
-    bcmsConfig: ClientConfig;
 }
 
-const HomeHero: React.FC<Props> = ({ title, gallery, bcmsConfig }) => {
+const HomeHero: React.FC<Props> = ({ title, gallery }) => {
     return (
         <section className="relative z-10 pt-2 pb-6 md:pt-5 md:mb-10 lg:mb-10">
             <div className="container">
@@ -23,7 +22,7 @@ const HomeHero: React.FC<Props> = ({ title, gallery, bcmsConfig }) => {
                     <div className="absolute top-0 right-0 w-[49%] h-full min-h-[200px] max-sm:-right-2">
                         <BCMSImage
                             media={gallery}
-                            clientConfig={bcmsConfig}
+                            clientConfig={bcmsPublic.getConfig()}
                             className="w-full full"
                         />
                     </div>

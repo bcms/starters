@@ -43,21 +43,18 @@ const HomePage: React.FC = async () => {
             <HomeHero
                 title={homePageMeta.hero_title}
                 gallery={homePageMeta.hero_gallery_image}
-                bcmsConfig={bcms.getConfig()}
             />
             <HomeAbout
                 title={homePageMeta.about_title}
                 subtitle={homePageMeta.about_subtitle}
                 description={homePageMeta.about_description}
                 cover={homePageMeta.about_cover_image}
-                bcmsConfig={bcms.getConfig()}
             />
             <HomeServices
                 title={homePageMeta.services_title}
                 subtitle={homePageMeta.services_subtitle}
                 cover={homePageMeta.services_cover_image}
                 description={homePageMeta.services_description}
-                bcmsConfig={bcms.getConfig()}
             />
             <HomeCapabilities
                 title={homePageMeta.capabilities_title}
@@ -66,7 +63,6 @@ const HomePage: React.FC = async () => {
                 portfolio_items={homePageMeta.capabilities_portfolio_items.map(
                     (e) => e.meta.en as PortfolioEntryMetaItem,
                 )}
-                bcmsConfig={bcms.getConfig()}
             />
             <HomeTeam
                 title={homePageMeta.team_title}
@@ -78,7 +74,6 @@ const HomePage: React.FC = async () => {
                 members={homePageMeta.team_members.map(
                     (e) => e.meta.en as TeamMemberEntryMetaItem,
                 )}
-                bcmsConfigs={bcms.getConfig()}
             />
             <ContactBlock
                 title={homePageMeta.contact_title}

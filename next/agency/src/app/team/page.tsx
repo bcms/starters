@@ -45,7 +45,7 @@ const TeamPage: React.FC = async () => {
                 subtitle="Team"
                 description={teamPageMeta.description}
             />
-            <List items={teamMembersEntries} bcmsConfig={bcms.getConfig()} />
+            <List items={teamMembersEntries} />
             <ContactBlock
                 title={teamPageMeta.contact_title}
                 description={teamPageMeta.contact_description}

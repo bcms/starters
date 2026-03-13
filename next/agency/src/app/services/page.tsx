@@ -46,7 +46,7 @@ const ServicesPage: React.FC = async () => {
                 subtitle="Services"
                 description={servicesPageMeta.description}
             />
-            <List items={servicesEntries} bcmsConfig={bcms.getConfig()} />
+            <List items={servicesEntries} />
             <ContactBlock
                 title={servicesPageMeta.contact_title}
                 description={servicesPageMeta.contact_description}
