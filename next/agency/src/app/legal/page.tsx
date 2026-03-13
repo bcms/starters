@@ -1,6 +1,6 @@
 import React from 'react';
 import { Metadata } from 'next';
-import { bcms } from '../bcms-client';
+import { bcmsPrivate } from '../bcms-client';
 import { LegalPageEntry, LegalPageEntryMetaItem } from '@bcms-types/types/ts';
 import { notFound } from 'next/navigation';
 import ContentManager from '@/components/ContentManager';
