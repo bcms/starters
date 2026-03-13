@@ -108,6 +108,7 @@
 </template>
 
 <script setup lang="ts">
+import { Swiper, SwiperSlide } from 'swiper/vue';
 import { A11y, Pagination } from 'swiper/modules';
 import type { SponsorGroup } from '~/bcms/type/ts';
 

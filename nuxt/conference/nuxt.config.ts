@@ -23,31 +23,37 @@ export default defineNuxtConfig({
         },
     },
     bcms: {
-        instanceId: process.env.BCMS_INSTANCE_ID,
         privateClientOptions: {
-            key: {
-                id: process.env.BCMS_API_KEY_ID!,
-                secret: process.env.BCMS_API_KEY_SECRET!,
-            },
             options: {
+                apiKey: process.env.BCMS_API_KEY!,
                 injectSvg: true,
             },
         },
         publicClientOptions: {
-            key: {
-                id: process.env.NUXT_PUBLIC_BCMS_API_KEY_ID!,
-                secret: process.env.NUXT_PUBLIC_BCMS_API_KEY_SECRET!,
-            },
             options: {
+                apiKey: process.env.NUXT_PUBLIC_BCMS_API_KEY!,
                 injectSvg: true,
             },
         },
     },
-    css: ['~/assets/styles/main.scss'],
+    css: ['~/assets/styles/main.scss', 'swiper/css'],
     modules: [
         '@nuxtjs/tailwindcss',
         'nuxt-svgo',
         'nuxt-swiper',
         '@thebcms/nuxt',
     ],
+    vite: {
+        optimizeDeps: {
+            include: [
+                '@thebcms/client',
+                'form-data',
+                'uuid',
+                'buffer',
+                '@vue/devtools-core',
+                '@vue/devtools-kit',
+                'swiper/modules',
+            ],
+        },
+    },
 });
