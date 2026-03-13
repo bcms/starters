@@ -20,16 +20,16 @@ const BlogCard: React.FC<Props> = ({ blog }) => {
             >
                 <div className="aspect-[1.25] self-stretch overflow-hidden">
                     <BCMSImage
-                        clientConfig={bcms.getConfig()}
+                        clientConfig={bcmsPrivate.getConfig()}
                         media={blog.cover_image}
-                        className="size-full object-cover transition-transform duration-500 object-center group-hover:scale-105 group-focus-visible:scale-105"
+                        className="object-cover object-center transition-transform duration-500 size-full group-hover:scale-105 group-focus-visible:scale-105"
                     />
                 </div>
                 <div className="flex flex-col self-center pt-6 max-md:px-4 max-md:pb-4 md:px-12">
-                    <h3 className="text-2xl font-semibold leading-none mb-4">
+                    <h3 className="mb-4 text-2xl font-semibold leading-none">
                         {blog.title}
                     </h3>
-                    <div className="flex items-center flex-wrap gap-2 mb-8">
+                    <div className="flex flex-wrap gap-2 items-center mb-8">
                         {blog.category.map((category, index) => {
                             return (
                                 <Tag key={index} className="capitalize">
