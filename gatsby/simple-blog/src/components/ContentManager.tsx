@@ -5,17 +5,20 @@ import {
 } from '@thebcms/components-react';
 import { EntryContentParsedItem } from '@thebcms/types';
 import { navigate } from 'gatsby';
+import type { ClientConfig } from '@thebcms/client';
 
 interface Props {
     items: EntryContentParsedItem[];
     widgetComponents?: BCMSWidgetComponents;
     className?: string;
+    clientConfig?: ClientConfig;
 }
 
 const ContentManager: React.FC<Props> = ({
     items,
     widgetComponents,
     className = '',
+    clientConfig,
 }) => {
     const managerDOM = useRef<HTMLDivElement>(null);
     const parseInternalLinks = (): void => {
@@ -49,6 +52,7 @@ const ContentManager: React.FC<Props> = ({
                 className={className}
                 items={items}
                 widgetComponents={widgetComponents || {}}
+                clientConfig={clientConfig}
             />
         </div>
     );

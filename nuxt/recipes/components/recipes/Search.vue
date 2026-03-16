@@ -52,13 +52,13 @@
         <Transition name="fade">
             <div
                 v-if="searchValue && showResults"
+                v-click-outside="() => (searchValue = '')"
                 class="absolute -bottom-1 left-0 w-full translate-y-full grid grid-cols-1 gap-px bg-[#EBEBEB] border border-[#EBEBEB] rounded-lg overflow-hidden max-h-[200px] overflow-y-auto"
             >
                 <template v-if="filteredRecipes.length > 0">
                     <NuxtLink
                         v-for="(recipe, index) in filteredRecipes"
                         :key="index"
-                        v-click-outside="() => (searchValue = '')"
                         :to="`/recipes/${recipe.slug}`"
                         class="flex bg-white px-4 py-3 text-sm leading-none font-medium tracking-[-0.41px] text-appGray-500 transition-colors duration-300 hover:text-appAccent"
                     >

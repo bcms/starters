@@ -9,31 +9,29 @@
         "lint": "bcms --pull types --lng ts && next lint"
     },
     "dependencies": {
-        "@thebcms/cli": "^1.4.0",
-        "@thebcms/client": "^1.5.1",
-        "@thebcms/components-react": "^2.0.0",
-        "@thebcms/types": "^1.3.0",
-        "@thebcms/utils": "^1.1.0",
+        "@thebcms/cli": "^2.0.1",
+        "@thebcms/client": "^2.0.1",
+        "@thebcms/components-react": "^3.0.0",
+        "@thebcms/types": "^2.0.0",
+        "@thebcms/utils": "^2.0.0",
         "classnames": "^2.5.1",
         "next": "^15.3.1",
         "react": "^19.1.0",
         "react-dom": "^19.1.0",
-        "react-paginate": "^8.3.0",
-        "react-transition-group": "^4.4.5",
-        "swiper": "^11.1.14"
+        "swiper": "^12.1.2"
     },
     "devDependencies": {
         "@svgr/webpack": "^8.1.0",
+        "@tailwindcss/typography": "^0.5.15",
         "@types/node": "^20",
         "@types/react": "^19.1.2",
-        "@types/react-dom": "^19.1.2",
-        "@types/react-transition-group": "^4.4.12",
+        "@types/react-dom": "^19",
         "eslint": "^8",
         "eslint-config-next": "14.2.14",
         "postcss": "^8",
         "prettier": "^3.3.3",
         "sass": "^1.79.4",
-        "tailwindcss": "^3.4.1",
+        "tailwindcss": "^3.4.14",
         "typescript": "^5"
     }
 }

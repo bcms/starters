@@ -1,15 +1,14 @@
 import ContentManager from '@/components/ContentManager';
 import { PortfolioEntry } from '@bcms-types/types/ts';
-import { ClientConfig } from '@thebcms/client';
 import { BCMSImage } from '@thebcms/components-react';
 import React from 'react';
+import { bcmsPublic } from '@/app/bcms-public';
 
 interface Props {
     items: PortfolioEntry[];
-    bcmsConfig: ClientConfig;
 }
 
-const List: React.FC<Props> = ({ items, bcmsConfig }) => {
+const List: React.FC<Props> = ({ items }) => {
     return (
         <section className="mb-8 md:mb-14 lg:mb-20 xl:mb-32">
             <div className="container">
@@ -30,7 +29,7 @@ const List: React.FC<Props> = ({ items, bcmsConfig }) => {
                                     >
                                         <BCMSImage
                                             media={item.meta.en.cover_image}
-                                            clientConfig={bcmsConfig}
+                                            clientConfig={bcmsPublic.getConfig()}
                                             className="size-full rounded-t-xl overflow-hidden object-cover"
                                         />
                                     </div>

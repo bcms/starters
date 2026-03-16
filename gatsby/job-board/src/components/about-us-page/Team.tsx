@@ -27,6 +27,7 @@ const AboutUsTeam: React.FC<Props> = ({
                 <ContentManager
                     items={description.nodes}
                     className="text-sm leading-[1.4] font-medium tracking-[-0.41px] text-appGray-600 text-center max-w-[833px] mx-auto mb-10 lg:text-lg lg:leading-normal lg:mb-[105px]"
+                    clientConfig={bcmsConfig}
                 />
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 xl:gap-x-12 xl:gap-y-14">
                     {members.map((member, index) => (
@@ -48,6 +49,7 @@ const AboutUsTeam: React.FC<Props> = ({
                             <ContentManager
                                 items={member.description.nodes}
                                 className="text-xs leading-[1.4] font-medium tracking-[-0.41px] text-appGray-600 lg:text-lg lg:leading-normal"
+                                clientConfig={bcmsConfig}
                             />
                         </div>
                     ))}

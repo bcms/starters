@@ -4,13 +4,13 @@ import React, { useEffect, useRef, MouseEvent, useState } from 'react';
 import PauseIcon from '@/assets/icons/pause.svg';
 import PlayIcon from '@/assets/icons/play.svg';
 import { EpisodeEntryMetaItem } from '../../../bcms/types/ts';
-import { ClientConfig } from '@thebcms/client';
 import { usePlayer } from '../../context/PlayerContext';
 import { BCMSImage } from '@thebcms/components-react';
 import { dateUtil } from '../../utils/date';
 import { audioUtil } from '../../utils/audio';
 import Link from 'next/link';
 import classNames from 'classnames';
+import type { ClientConfig } from '@thebcms/client';
 
 interface EpisodeItemProps {
     item: EpisodeEntryMetaItem;
@@ -70,7 +70,7 @@ export const EpisodesItem: React.FC<EpisodeItemProps> = ({
     }, [episodeDOM]);
 
     useEffect(() => {
-        const audio = audioUtil.createAudio(bcms, item.media_file);
+        const audio = audioUtil.createAudio(item.media_file);
         audio.preload = 'metadata';
         audio.addEventListener('loadedmetadata', () => {
             audioDOM.current = audio;

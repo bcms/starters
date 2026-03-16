@@ -1,31 +1,24 @@
 import React from 'react';
 import { BCMSImage } from '@thebcms/components-react';
 import { PropMediaDataParsed, PropRichTextDataParsed } from '@thebcms/types';
-import { ClientConfig } from '@thebcms/client';
 import ContentManager from '../ContentManager';
+import { bcmsPublic } from '@/app/bcms-public';
 
 interface Props {
     cover: PropMediaDataParsed;
     title: string;
     subtitle: string;
     description: PropRichTextDataParsed;
-    bcmsConfig: ClientConfig;
 }
 
-const HomeAbout: React.FC<Props> = ({
-    cover,
-    title,
-    subtitle,
-    description,
-    bcmsConfig,
-}) => {
+const HomeAbout: React.FC<Props> = ({ cover, title, subtitle, description }) => {
     return (
         <section className="pb-8 md:pb-20 lg:pb-[150px] xl:pb-[280px]">
             <div className="container">
                 <div className="flex flex-col gap-4 lg:gap-6">
                     <BCMSImage
                         media={cover}
-                        clientConfig={bcmsConfig}
+                        clientConfig={bcmsPublic.getConfig()}
                         className="w-full aspect-[2.26] object-cover rounded-lg overflow-hidden lg:aspect-[2.35]"
                         style={{
                             boxShadow:

@@ -51,6 +51,7 @@ const HomeHero: React.FC<Props> = ({
                             <ContentManager
                                 items={description.nodes}
                                 className="text-xs leading-[1.4] tracking-[-0.41px] text-appGray-400 pr-[70px] mb-8 lg:text-base lg:leading-[1.4] lg:mb-8"
+                                clientConfig={bcmsConfig}
                             />
                             <Link
                                 to="/contact"

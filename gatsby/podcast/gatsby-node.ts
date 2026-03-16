@@ -18,17 +18,7 @@ import {
     NowPlayingPageContent,
 } from './src/types';
 
-const bcms = new Client(
-    process.env.BCMS_ORG_ID || '',
-    process.env.BCMS_INSTANCE_ID || '',
-    {
-        id: process.env.BCMS_API_KEY_ID || '',
-        secret: process.env.BCMS_API_KEY_SECRET || '',
-    },
-    {
-        injectSvg: true,
-    },
-);
+const bcms = new Client({ injectSvg: true });
 
 export const createPages = async ({
     actions: { createPage },
@@ -43,7 +33,7 @@ export const createPages = async ({
     const homePageMeta = homePageEntry.meta.en as HomePageEntryMetaItem;
 
     const episodes = await bcms.entry.getAll('episode') as EpisodeEntry[];
-    const episodesMeta = episodes.map((episode) => episode.meta.en as EpisodeEntryMetaItem); 
+    const episodesMeta = episodes.map((episode) => episode.meta.en as EpisodeEntryMetaItem);
 
     createPage({
         path: `/`,

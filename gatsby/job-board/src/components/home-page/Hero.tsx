@@ -33,6 +33,7 @@ const HomeHero: FC<Props> = ({ title, description, cover, bcmsConfig }) => {
                                     <ContentManager
                                         items={item.text.nodes}
                                         className="text-2xl leading-[1.4] font-medium font-PlayfairDisplay tracking-[-0.41px] md:text-4xl lg:text-[80px] lg:leading-[1.1]"
+                                        clientConfig={bcmsConfig}
                                     />
                                 )}
                                 {item.image && (
@@ -49,6 +50,7 @@ const HomeHero: FC<Props> = ({ title, description, cover, bcmsConfig }) => {
                     <ContentManager
                         items={description.nodes}
                         className="text-sm leading-[1.4] font-medium tracking-[-0.41px] text-center text-appGray-600 mb-8 md:text-base lg:leading-none lg:mb-10"
+                        clientConfig={bcmsConfig}
                     />
                     <Btn
                         className="mx-auto mb-12 lg:mb-[120px]"

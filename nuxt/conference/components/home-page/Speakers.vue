@@ -82,6 +82,7 @@ import type {
     PropMediaDataParsed,
     PropRichTextDataParsed,
 } from '@thebcms/types';
+import { Swiper, SwiperSlide } from 'swiper/vue';
 import { A11y, Pagination } from 'swiper/modules';
 import type { SpeakerGroup } from '~/bcms/type/ts';
 

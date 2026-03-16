@@ -20,7 +20,7 @@
 		<div>
 			<div class="grid grid-cols-1 gap-12 max-w-[1040px] mx-auto">
 				{#each data.items as item}
-					<BlogCard bcmsConfig={data.bcmsConfig} blog={item} />
+					<BlogCard blog={item} />
 				{/each}
 			</div>
 		</div>

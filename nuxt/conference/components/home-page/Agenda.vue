@@ -64,6 +64,8 @@
 </template>
 
 <script setup lang="ts">
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { A11y as SwiperA11y, Pagination as SwiperPagination } from 'swiper/modules';
 import type { AgendaDayGroup } from '~/bcms/type/ts';
 
 defineProps({

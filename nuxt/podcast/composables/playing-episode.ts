@@ -133,7 +133,6 @@ export const usePlayingEpisode = () => {
 
             if (!bcms) return;
             const audio = audioUtil.createAudio(
-                bcms.getConfig(),
                 episodes.value[index - 1]?.media_file,
             );
             audio.preload = 'metadata';
@@ -166,7 +165,6 @@ export const usePlayingEpisode = () => {
 
             if (!bcms) return;
             const audio = audioUtil.createAudio(
-                bcms.getConfig(),
                 episodes.value[index + 1]?.media_file,
             );
             audio.preload = 'metadata';

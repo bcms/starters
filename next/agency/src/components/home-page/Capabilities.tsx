@@ -8,7 +8,7 @@ import { PropRichTextDataParsed } from '@thebcms/types';
 import ContentManager from '../ContentManager';
 import { PortfolioEntryMetaItem } from '@bcms-types/types/ts';
 import { BCMSImage } from '@thebcms/components-react';
-import { ClientConfig } from '@thebcms/client';
+import { bcmsPublic } from '@/app/bcms-public';
 import 'swiper/css';
 
 interface Props {
@@ -16,7 +16,6 @@ interface Props {
     subtitle: string;
     description: PropRichTextDataParsed;
     portfolio_items: PortfolioEntryMetaItem[];
-    bcmsConfig: ClientConfig;
 }
 
 const HomeCapabilities: React.FC<Props> = ({
@@ -24,7 +23,6 @@ const HomeCapabilities: React.FC<Props> = ({
     subtitle,
     description,
     portfolio_items,
-    bcmsConfig,
 }) => {
     return (
         <section className="mb-8 lg:mb-16 xl:mb-[104px]">
@@ -73,7 +71,7 @@ const HomeCapabilities: React.FC<Props> = ({
                             >
                                 <BCMSImage
                                     media={item.project_image}
-                                    clientConfig={bcmsConfig}
+                                    clientConfig={bcmsPublic.getConfig()}
                                     className="size-full object-cover rounded overflow-hidden lg:rounded-2xl"
                                     style={{
                                         boxShadow:

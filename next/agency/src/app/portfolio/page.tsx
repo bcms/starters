@@ -1,6 +1,6 @@
 import React from 'react';
 import { Metadata } from 'next';
-import { bcms } from '../bcms-client';
+import { bcmsPrivate } from '../bcms-client';
 import {
     PortfolioEntry,
     PortfolioPageEntry,
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 const PortfolioPage: React.FC = async () => {
-    const portfolioPageEntry = (await bcms.entry.getBySlug(
+    const portfolioPageEntry = (await bcmsPrivate.entry.getBySlug(
         'portfolio',
         'portfolio-page',
     )) as PortfolioPageEntry;
@@ -35,7 +35,7 @@ const PortfolioPage: React.FC = async () => {
     const portfolioPageMeta = portfolioPageEntry.meta
         .en as PortfolioPageEntryMetaItem;
 
-    const portfolioEntries = (await bcms.entry.getAll(
+    const portfolioEntries = (await bcmsPrivate.entry.getAll(
         'portfolio',
     )) as PortfolioEntry[];
 
@@ -46,7 +46,7 @@ const PortfolioPage: React.FC = async () => {
                 subtitle="Portfolio"
                 description={portfolioPageMeta.description}
             />
-            <List items={portfolioEntries} bcmsConfig={bcms.getConfig()} />
+            <List items={portfolioEntries} />
             <ContactBlock
                 title={portfolioPageMeta.contact_title}
                 description={portfolioPageMeta.contact_description}

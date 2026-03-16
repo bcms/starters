@@ -54,6 +54,7 @@ const BlogCard: React.FC<Props> = ({ blog, bcmsConfig }) => {
                     <ContentManager
                         items={blog.description.nodes}
                         className="text-appGray-300 font-medium leading-[1.38] tracking-[-0.36px] md:text-lg"
+                        clientConfig={bcmsConfig}
                     />
                 </div>
             </Link>

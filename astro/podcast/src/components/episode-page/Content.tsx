@@ -57,7 +57,7 @@ const EpisodeContent: React.FC<Props> = ({ meta, bcms }) => {
     }, [episodeDOM]);
 
     useEffect(() => {
-        const audio = audioUtil.createAudio(bcms, meta.media_file);
+        const audio = audioUtil.createAudio(meta.media_file);
         audio.preload = 'metadata';
         audio.addEventListener('loadedmetadata', () => {
             audioDOM.current = audio;
@@ -85,13 +85,13 @@ const EpisodeContent: React.FC<Props> = ({ meta, bcms }) => {
                     <div className="absolute z-10 bottom-6 right-6 leading-none tracking-[-0.8px] font-medium lg:hidden">
                         {fileLength}
                     </div>
-                    <button className="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center w-12 h-12 bg-appText rounded-full lg:hidden">
+                    <button className="flex absolute top-1/2 left-1/2 z-10 justify-center items-center w-12 h-12 rounded-full -translate-x-1/2 -translate-y-1/2 bg-appText lg:hidden">
                         <div dangerouslySetInnerHTML={{ __html: PlayIcon }} className="w-8 h-8 text-appBody" />
                     </button>
                     <BCMSImage
                         media={meta.cover_image}
                         clientConfig={bcms}
-                        className="absolute top-0 left-0 w-full h-full object-cover rounded overflow-hidden lg:rounded-2xl"
+                        className="object-cover overflow-hidden absolute top-0 left-0 w-full h-full rounded lg:rounded-2xl"
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-black/40 lg:bg-black/60" />
                 </div>
@@ -104,10 +104,10 @@ const EpisodeContent: React.FC<Props> = ({ meta, bcms }) => {
                             {meta.guest?.meta?.en?.title || 'N / A'}
                         </div>
                     </div>
-                    <div className="flex items-center justify-between mb-8 lg:mb-14">
+                    <div className="flex justify-between items-center mb-8 lg:mb-14">
                         <div className="flex items-center">
                             <button
-                                className="flex items-center justify-center w-12 h-12 bg-appText rounded-full mr-4 max-lg:hidden"
+                                className="flex justify-center items-center mr-4 w-12 h-12 rounded-full bg-appText max-lg:hidden"
                                 onClick={handlePlayPause}
                             >
                                 {(episode

@@ -116,7 +116,7 @@ const RecipePage: React.FC<Props> = async (props) => {
                 {recipeEntryMeta.cover_image && (
                     <BCMSImage
                         media={recipeEntryMeta.cover_image}
-                        clientConfig={bcmsPrivate.getConfig()}
+                        clientConfig={bcmsPublic.getConfig()}
                         className="aspect-square rounded-2xl w-full overflow-hidden object-cover mb-5 md:aspect-[1.93] lg:mb-10"
                     />
                 )}

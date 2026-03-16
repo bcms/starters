@@ -2,16 +2,15 @@ import React from 'react';
 import Link from 'next/link';
 import SvgoArrow from '@/assets/icons/arrow.svg';
 import { PropMediaDataParsed, PropRichTextDataParsed } from '@thebcms/types';
-import { ClientConfig } from '@thebcms/client';
 import { BCMSImage } from '@thebcms/components-react';
 import ContentManager from '../ContentManager';
+import { bcmsPublic } from '@/app/bcms-public';
 
 interface Props {
     title: string;
     subtitle: string;
     cover: PropMediaDataParsed;
     description: PropRichTextDataParsed;
-    bcmsConfig: ClientConfig;
 }
 
 const HomeServices: React.FC<Props> = ({
@@ -19,7 +18,6 @@ const HomeServices: React.FC<Props> = ({
     subtitle,
     cover,
     description,
-    bcmsConfig,
 }) => {
     return (
         <section className="mb-4 lg:mb-6">
@@ -42,7 +40,7 @@ const HomeServices: React.FC<Props> = ({
                 >
                     <BCMSImage
                         media={cover}
-                        clientConfig={bcmsConfig}
+                        clientConfig={bcmsPublic.getConfig()}
                         className="size-full object-cover"
                     />
                     <div className="flex flex-col justify-between bg-appAccent text-appText-light p-4 pr-8 lg:p-8">

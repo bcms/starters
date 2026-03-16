@@ -10,17 +10,17 @@
         "postinstall": "nuxt prepare"
     },
     "dependencies": {
-        "@thebcms/nuxt": "^1.0.5",
-        "@thebcms/types": "^1.2.0",
-        "nuxt": "^3.13.0",
-        "nuxt-svgo": "^4.0.7",
-        "nuxt-swiper": "^2.0.0",
+        "@thebcms/nuxt": "^2.0.2",
+        "@thebcms/types": "^2.0.0",
+        "nuxt": "^4.4.2",
+        "nuxt-svgo": "^4.2.6",
+        "nuxt-swiper": "^2.0.1",
         "vue": "latest",
         "vue-router": "latest",
         "vuejs-paginate-next": "^1.0.2"
     },
     "devDependencies": {
-        "@nuxtjs/tailwindcss": "^6.12.1",
-        "sass": "^1.79.4"
+        "@nuxtjs/tailwindcss": "^6.14.0",
+        "sass": "^1.98.0"
     }
 }

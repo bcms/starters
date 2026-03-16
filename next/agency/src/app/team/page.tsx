@@ -1,6 +1,6 @@
 import React from 'react';
 import { Metadata } from 'next';
-import { bcms } from '../bcms-client';
+import { bcmsPrivate } from '../bcms-client';
 import {
     TeamMemberEntry,
     TeamPageEntry,
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 const TeamPage: React.FC = async () => {
-    const teamPageEntry = (await bcms.entry.getBySlug(
+    const teamPageEntry = (await bcmsPrivate.entry.getBySlug(
         'team',
         'team-page',
     )) as TeamPageEntry;
@@ -34,7 +34,7 @@ const TeamPage: React.FC = async () => {
 
     const teamPageMeta = teamPageEntry.meta.en as TeamPageEntryMetaItem;
 
-    const teamMembersEntries = (await bcms.entry.getAll(
+    const teamMembersEntries = (await bcmsPrivate.entry.getAll(
         'team-member',
     )) as TeamMemberEntry[];
 
@@ -45,7 +45,7 @@ const TeamPage: React.FC = async () => {
                 subtitle="Team"
                 description={teamPageMeta.description}
             />
-            <List items={teamMembersEntries} bcmsConfig={bcms.getConfig()} />
+            <List items={teamMembersEntries} />
             <ContactBlock
                 title={teamPageMeta.contact_title}
                 description={teamPageMeta.contact_description}

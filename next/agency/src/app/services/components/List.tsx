@@ -1,15 +1,14 @@
 import ContentManager from '@/components/ContentManager';
 import { ServiceEntry } from '@bcms-types/types/ts';
-import { ClientConfig } from '@thebcms/client';
 import { BCMSImage } from '@thebcms/components-react';
 import React from 'react';
+import { bcmsPublic } from '@/app/bcms-public';
 
 interface ListProps {
     items: ServiceEntry[];
-    bcmsConfig: ClientConfig;
 }
 
-const List: React.FC<ListProps> = ({ items, bcmsConfig }) => {
+const List: React.FC<ListProps> = ({ items }) => {
     return (
         <section className="mb-8 md:mb-14 lg:mb-20 xl:mb-32">
             <div className="container">
@@ -34,7 +33,7 @@ const List: React.FC<ListProps> = ({ items, bcmsConfig }) => {
                                     >
                                         <BCMSImage
                                             media={item.meta.en.cover_image}
-                                            clientConfig={bcmsConfig}
+                                            clientConfig={bcmsPublic.getConfig()}
                                             className={`size-full object-cover`}
                                         />
                                     </div>

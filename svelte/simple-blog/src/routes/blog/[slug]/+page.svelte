@@ -6,6 +6,7 @@
 	import BlogCard from '$lib/components/blog-card.svelte';
 	import Tag from '$lib/components/tag.svelte';
 	import { toReadableDate } from '../../../utils/date';
+	import { bcmsPublic } from '../../../bcms-public';
 
 	let { data }: PageProps = $props();
 </script>
@@ -47,16 +48,12 @@
 					</div>
 				</div>
 				<BCMSImage
-					clientConfig={data.bcmsConfig}
+					clientConfig={bcmsPublic.getConfig()}
 					media={data.blog.meta.cover_image}
 					class="w-full aspect-[2.21] object-cover rounded-2xl md:rounded-3xl"
 				/>
 			</header>
-			<ContentManager
-				items={data.blog.content}
-				class="prose max-w-full lg:prose-lg"
-				clientConfig={data.bcmsConfig}
-			/>
+			<ContentManager items={data.blog.content} class="prose max-w-full lg:prose-lg" />
 		</div>
 		{#if data.otherBlogs.length > 0}
 			<div class="max-w-[1040px] mt-20">
@@ -67,7 +64,7 @@
 				</h3>
 				<div class="grid grid-cols-1 gap-12">
 					{#each data.otherBlogs as blog}
-						<BlogCard {blog} bcmsConfig={data.bcmsConfig} />
+						<BlogCard {blog} />
 					{/each}
 				</div>
 			</div>

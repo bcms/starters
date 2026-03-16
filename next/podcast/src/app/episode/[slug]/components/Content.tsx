@@ -59,7 +59,7 @@ const Content: React.FC<Props> = ({ meta, bcms }) => {
     }, [episodeDOM]);
 
     useEffect(() => {
-        const audio = audioUtil.createAudio(bcms, meta.media_file);
+        const audio = audioUtil.createAudio(meta.media_file);
         audio.preload = 'metadata';
         audio.addEventListener('loadedmetadata', () => {
             audioDOM.current = audio;

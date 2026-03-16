@@ -2,10 +2,10 @@ import React from 'react';
 import Link from 'next/link';
 import SvgoArrow from '@/assets/icons/arrow.svg';
 import { PropMediaDataParsed, PropRichTextDataParsed } from '@thebcms/types';
-import { ClientConfig } from '@thebcms/client';
 import { TeamMemberEntryMetaItem } from '@bcms-types/types/ts';
 import ContentManager from '../ContentManager';
 import { BCMSImage } from '@thebcms/components-react';
+import { bcmsPublic } from '@/app/bcms-public';
 
 interface Props {
     title: string;
@@ -15,7 +15,6 @@ interface Props {
     members_title: string;
     members_description: PropRichTextDataParsed;
     members: TeamMemberEntryMetaItem[];
-    bcmsConfigs: ClientConfig;
 }
 
 const HomeTeam: React.FC<Props> = ({
@@ -26,7 +25,6 @@ const HomeTeam: React.FC<Props> = ({
     members_title,
     members_description,
     members,
-    bcmsConfigs,
 }) => {
     return (
         <section className="mb-8 lg:mb-20 xl:mb-32">
@@ -49,7 +47,7 @@ const HomeTeam: React.FC<Props> = ({
                     </div>
                     <BCMSImage
                         media={cover}
-                        clientConfig={bcmsConfigs}
+                        clientConfig={bcmsPublic.getConfig()}
                         className="size-full object-cover"
                     />
                 </div>
@@ -73,7 +71,7 @@ const HomeTeam: React.FC<Props> = ({
                             <BCMSImage
                                 key={index}
                                 media={item.image}
-                                clientConfig={bcmsConfigs}
+                                clientConfig={bcmsPublic.getConfig()}
                                 className="size-full aspect-[0.48] object-cover rounded overflow-hidden lg:rounded-2xl lg:aspect-[0.9]"
                                 style={{
                                     boxShadow:

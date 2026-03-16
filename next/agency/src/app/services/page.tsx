@@ -1,6 +1,6 @@
 import React from 'react';
 import { Metadata } from 'next';
-import { bcms } from '../bcms-client';
+import { bcmsPrivate } from '../bcms-client';
 import { notFound } from 'next/navigation';
 import ContactBlock from '@/components/ContactBlock';
 import Hero from '@/components/Hero';
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 const ServicesPage: React.FC = async () => {
-    const servicesPageEntry = (await bcms.entry.getBySlug(
+    const servicesPageEntry = (await bcmsPrivate.entry.getBySlug(
         'services',
         'services-page',
     )) as ServicesPageEntry;
@@ -35,7 +35,7 @@ const ServicesPage: React.FC = async () => {
     const servicesPageMeta = servicesPageEntry.meta
         .en as ServicesPageEntryMetaItem;
 
-    const servicesEntries = (await bcms.entry.getAll(
+    const servicesEntries = (await bcmsPrivate.entry.getAll(
         'service',
     )) as ServiceEntry[];
 
@@ -46,7 +46,7 @@ const ServicesPage: React.FC = async () => {
                 subtitle="Services"
                 description={servicesPageMeta.description}
             />
-            <List items={servicesEntries} bcmsConfig={bcms.getConfig()} />
+            <List items={servicesEntries} />
             <ContactBlock
                 title={servicesPageMeta.contact_title}
                 description={servicesPageMeta.contact_description}

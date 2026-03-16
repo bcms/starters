@@ -58,6 +58,7 @@ const Testimonials: React.FC<Props> = ({ testimonials, bcmsConfig }) => {
                             <ContentManager
                                 items={slide.review.nodes}
                                 className="text-sm leading-[1.45] font-medium text-appGray-600 tracking-[-0.41px] xl:text-base xl:leading-[1.45]"
+                                clientConfig={bcmsConfig}
                             />
                         </SwiperSlide>
                     ))}

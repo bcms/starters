@@ -25,10 +25,11 @@ const AboutTemplate: React.FC<AboutTemplateProps> = ({
                         <h1 className="leading-none font-medium tracking-[-0.41px] mb-3 md:text-2xl md:leading-none md:mb-4 lg:text-[56px] lg:leading-none lg:mb-6">
                             {meta.title}
                         </h1>
-                        <ContentManager
-                            items={meta.description.nodes}
-                            className="text-sm leading-[1.3] tracking-[-0.41px] text-appGray-500 font-medium max-w-[633px] mx-auto md:text-lg md:leading-none lg:text-[22px] lg:leading-[1.3]"
-                        />
+                    <ContentManager
+                        items={meta.description.nodes}
+                        className="text-sm leading-[1.3] tracking-[-0.41px] text-appGray-500 font-medium max-w-[633px] mx-auto md:text-lg md:leading-none lg:text-[22px] lg:leading-[1.3]"
+                        clientConfig={bcms}
+                    />
                     </div>
                     <div className="relative aspect-[2.07] rounded-lg overflow-hidden mb-6 lg:aspect-[2.43] lg:rounded-2xl lg:mb-8">
                         <BCMSImage
@@ -38,7 +39,11 @@ const AboutTemplate: React.FC<AboutTemplateProps> = ({
                         />
                         <div className="absolute top-0 left-0 w-full h-full bg-black/50" />
                     </div>
-                    <ContentManager items={content} className="prose" />
+                    <ContentManager
+                        items={content}
+                        className="prose"
+                        clientConfig={bcms}
+                    />
                 </div>
                 <TopGradient />
             </div>
