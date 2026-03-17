@@ -60,7 +60,7 @@ export function usePlayer(): PlayerContextValue {
 export function PlayerProvider(
     props: PropsWithChildren<unknown>,
 ): JSX.Element | null {
-    const { episodes, bcms } = useEpisodes();
+    const { episodes } = useEpisodes();
 
     const [episodeDOM, setEpisodeDOM] = useState<HTMLAudioElement | undefined>(
         undefined,
