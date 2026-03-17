@@ -34,7 +34,7 @@ const RecipesSearchBar: React.FC<Props> = ({
     const [searchValue, setSearchValue] = useState(value);
     const transitionRef = useRef(null);
 
-    const handleInput = ({ target }: ChangeEvent<HTMLInputElement>) => {
+    const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
         setSearchValue(target.value);
         if (onInput) onInput(target.value);
     };
@@ -114,7 +114,7 @@ const RecipesSearchBar: React.FC<Props> = ({
                                     size === 'lg',
                             },
                         )}
-                        onInput={handleInput}
+                        onChange={handleChange}
                         onKeyUp={handleEnter}
                         onKeyDown={(e) => {
                             if (e.key === 'Tab' && placeholderSuggestion) {
