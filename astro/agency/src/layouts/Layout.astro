@@ -1,6 +1,7 @@
 ---
 import Footer from '../components/layout/Footer';
 import Header from '../components/layout/Header';
+import { Font } from 'astro:assets';
 import '../styles/fonts.css';
 
 interface Props {
@@ -27,12 +28,8 @@ const ogImageUrl = '/thumbnail.jpg';
         <meta property="twitter:title" content="BrandCrafters" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:image" content={ogImageUrl} />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-            rel="stylesheet"
-        />
+        <Font cssVariable="--font-inter" preload />
+        <Font cssVariable="--font-playfair-display" preload />
         <title>{title}</title>
     </head>
     <body

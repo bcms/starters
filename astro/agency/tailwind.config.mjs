@@ -21,10 +21,14 @@ export default {
                 },
             },
             fontFamily: {
-                Inter: ['Inter', 'sans-serif'],
+                Inter: ['var(--font-inter)', 'system-ui', 'sans-serif'],
                 Helvetica: ['Helvetica', 'sans-serif'],
                 HelveticaNeue: ['Helvetica Neue', 'sans-serif'],
-                PlayfairDisplay: ['Playfair Display', 'serif'],
+                PlayfairDisplay: [
+                    'var(--font-playfair-display)',
+                    'Georgia',
+                    'serif',
+                ],
             },
             container: {
                 center: true,
