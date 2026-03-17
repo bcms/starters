@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig, fontProviders } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import react from '@astrojs/react';
 import node from '@astrojs/node';
@@ -10,4 +10,14 @@ export default defineConfig({
     adapter: node({
         mode: 'standalone',
     }),
+    fonts: [
+        {
+            name: 'Inter',
+            cssVariable: '--font-inter',
+            provider: fontProviders.google(),
+        },
+    ],
+    security: {
+        csp: true,
+    },
 });
