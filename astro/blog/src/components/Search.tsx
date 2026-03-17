@@ -14,7 +14,7 @@ export const Search: FC<Props> = ({ value, onEnter, onChange, className }) => {
         onChange(e.target.value);
     };
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
         e.preventDefault();
         onEnter?.();
     };
