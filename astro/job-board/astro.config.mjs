@@ -12,8 +12,13 @@ export default defineConfig({
     }),
     fonts: [
         {
-            name: 'Inter',
-            cssVariable: '--font-inter',
+            name: 'Space Grotesk',
+            cssVariable: '--font-space-grotesk',
+            provider: fontProviders.google(),
+        },
+        {
+            name: 'Playfair Display',
+            cssVariable: '--font-playfair-display',
             provider: fontProviders.google(),
         },
     ],
