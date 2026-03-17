@@ -1,4 +1,4 @@
-import React, { type FormEvent, useState } from 'react';
+import React, { useState } from 'react';
 import FormText from '../form/Text';
 import Btn from '../Btn';
 
@@ -21,7 +21,7 @@ const Form: React.FC = () => {
         setForm((prev) => ({ ...prev, [name]: value }));
     };
 
-    const handleSubmit = (event: FormEvent) => {
+    const handleSubmit = (event: React.SyntheticEvent<HTMLFormElement>) => {
         event.preventDefault();
         // TODO: Handle form submission
     };

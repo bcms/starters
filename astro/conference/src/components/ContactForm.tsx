@@ -21,7 +21,7 @@ const ContactForm: React.FC<Props> = ({ onClose }) => {
         query: '',
     });
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = (e: React.SyntheticEvent<HTMLFormElement>) => {
         e.preventDefault();
     };
 
@@ -62,7 +62,7 @@ const ContactForm: React.FC<Props> = ({ onClose }) => {
                     />
                     <button
                         className="flex justify-center w-full p-[17px] rounded-lg bg-[#7EE984] text-sm leading-none font-medium tracking-[-0.04em] text-appGray-600 lg:p-5 lg:text-2xl lg:leading-none"
-                        onClick={handleSubmit}
+                        type="submit"
                     >
                         Submit
                     </button>

@@ -10,11 +10,11 @@ interface Props {
 }
 
 export const Search: FC<Props> = ({ value, onEnter, onChange, className }) => {
-    const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         onChange(e.target.value);
     };
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
         e.preventDefault();
         onEnter?.();
     };
@@ -39,7 +39,7 @@ export const Search: FC<Props> = ({ value, onEnter, onChange, className }) => {
                     type="search"
                     placeholder="Search"
                     className="placeholder:text-appText bg-transparent py-[11px] text-sm leading-none tracking-[-0.41px] w-full focus:outline-none md:text-lg md:leading-none md:py-4 lg:text-2xl lg:leading-none lg:py-[21px]"
-                    onInput={handleInput}
+                    onChange={handleChange}
                 />
             </label>
         </form>

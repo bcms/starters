@@ -1,4 +1,4 @@
-import React, { useState, type FormEvent } from 'react';
+import React, { useState } from 'react';
 import Phone from '../../assets/icons/phone.svg?raw';
 import Email from '../../assets/icons/email.svg?raw';
 import classnames from 'classnames';
@@ -39,8 +39,8 @@ const HomePageLetsTalk: React.FC<Props> = ({
         question: false,
     });
 
-    const handleSubmit = (e?: FormEvent<HTMLFormElement>) => {
-        e?.preventDefault();
+    const handleSubmit = (e: React.SyntheticEvent<HTMLFormElement>) => {
+        e.preventDefault();
 
         setFormErrors({
             email: false,
@@ -201,7 +201,6 @@ const HomePageLetsTalk: React.FC<Props> = ({
                             )}
                         </label>
                         <Btn
-                            onClick={() => handleSubmit()}
                             theme="dark"
                             className="justify-center w-full"
                         >

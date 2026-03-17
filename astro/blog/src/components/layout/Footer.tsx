@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
         },
     ];
 
-    const handleSubmit = (event: React.FormEvent) => {
+    const handleSubmit: React.FormEventHandler<HTMLFormElement> = (event) => {
         event.preventDefault();
         // TODO: Send email
     };

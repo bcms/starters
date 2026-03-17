@@ -31,8 +31,12 @@ export default {
                 },
             },
             fontFamily: {
-                SpaceGrotesk: ['Space Grotesk', 'sans-serif'],
-                PlayfairDisplay: ['Playfair Display', 'serif'],
+                SpaceGrotesk: ['var(--font-space-grotesk)', 'system-ui', 'sans-serif'],
+                PlayfairDisplay: [
+                    'var(--font-playfair-display)',
+                    'Georgia',
+                    'serif',
+                ],
             },
         },
     },

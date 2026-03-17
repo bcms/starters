@@ -1,4 +1,4 @@
-import { type FC, type FormEvent, useState } from 'react';
+import { type FC, useState } from 'react';
 import EmailIcon from '../../assets/icons/email.svg?raw';
 import { FormText } from './Text';
 
@@ -21,7 +21,7 @@ const Form: FC = () => {
         setForm((prev) => ({ ...prev, [field]: value }));
     };
 
-    const handleSubmit = (event: FormEvent) => {
+    const handleSubmit: React.FormEventHandler<HTMLFormElement> = (event) => {
         event.preventDefault();
         // Todo
     };

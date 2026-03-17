@@ -33,7 +33,7 @@ export default {
             },
             fontFamily: {
                 Helvetica: ['Helvetica', 'sans-serif'],
-                Gloock: ['Gloock', 'sans-serif'],
+                Gloock: ['var(--font-gloock)', 'serif'],
             },
         },
     },

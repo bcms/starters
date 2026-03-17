@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig, fontProviders } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import react from '@astrojs/react';
 import node from '@astrojs/node';
@@ -10,4 +10,22 @@ export default defineConfig({
     adapter: node({
         mode: 'standalone',
     }),
+    fonts: [
+        {
+            name: 'Space Grotesk',
+            cssVariable: '--font-space-grotesk',
+            provider: fontProviders.google(),
+        },
+        {
+            name: 'Playfair Display',
+            cssVariable: '--font-playfair-display',
+            provider: fontProviders.google(),
+        },
+    ],
+    security: {
+        csp: true,
+    },
+    markdown: {
+        syntaxHighlight: 'prism',
+    },
 });
