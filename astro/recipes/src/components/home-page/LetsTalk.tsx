@@ -39,7 +39,7 @@ const HomePageLetsTalk: React.FC<Props> = ({
         question: false,
     });
 
-    const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
+    const handleSubmit = (e: React.SyntheticEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         setFormErrors({
