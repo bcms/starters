@@ -14,6 +14,12 @@ npx @thebcms/cli create astro starter conference
 
 and follow the prompts.
 
+## Requirements
+
+- Node.js **22.x** or newer
+- npm **10.x** or newer
+- Astro **6.x** (this starter is built and tested against Astro 6)
+
 ---
 
 ### Useful links:
