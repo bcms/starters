@@ -21,7 +21,7 @@ const Form: React.FC = () => {
         setForm((prev) => ({ ...prev, [name]: value }));
     };
 
-    const handleSubmit: React.FormEventHandler<HTMLFormElement> = (event) => {
+    const handleSubmit = (event: React.SyntheticEvent<HTMLFormElement>) => {
         event.preventDefault();
         // TODO: Handle form submission
     };

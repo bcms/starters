@@ -20,4 +20,7 @@ export default defineConfig({
     security: {
         csp: true,
     },
+    markdown: {
+        syntaxHighlight: 'prism',
+    },
 });

@@ -35,7 +35,7 @@ const ApplyModal: FC<Props> = ({ close }) => {
         setForm((prev) => ({ ...prev, [name]: value }));
     };
 
-    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = (event: React.SyntheticEvent<HTMLFormElement>) => {
         event.preventDefault();
 
         if (formRef.current) {
