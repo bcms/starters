@@ -8,8 +8,8 @@ export default defineConfig({
     integrations: [tailwind(), react()],
     fonts: [
         {
-            name: 'Inter',
-            cssVariable: '--font-inter',
+            name: 'Gloock',
+            cssVariable: '--font-gloock',
             provider: fontProviders.google(),
         },
     ],
