@@ -1,0 +1,88 @@
+---
+
+import { Swiper, SwiperWrapper, SwiperSlide } from 'astro-swiper';
+import SvgoArrow from '../../assets/icons/arrow.svg?raw';
+import ContentManager from '../ContentManager';
+import { BCMSImage } from '@thebcms/components-react';
+import type { PropRichTextDataParsed } from '@thebcms/types';
+import type { PortfolioEntryMetaItem } from '../../../bcms/types/ts';
+import type { ClientConfig } from '@thebcms/client';
+
+interface Props {
+    title: string;
+    subtitle: string;
+    description: PropRichTextDataParsed;
+    portfolio_items: PortfolioEntryMetaItem[];
+    bcmsConfig: ClientConfig;
+}
+
+const { title, subtitle, description, portfolio_items, bcmsConfig } = Astro.props as Props;
+---
+
+<section class="mb-8 lg:mb-16 xl:mb-[104px]">
+    <div class="container">
+        <div class="flex flex-col gap-6 mb-8 lg:grid lg:grid-cols-[254px,1fr] lg:mb-12 xl:mb-16">
+            <div class="text-appGray-300 font-Inter text-xs font-medium leading-none tracking-[-0.24px] lg:text-base lg:leading-none lg:tracking-[-0.32px] lg:flex-shrink-0">
+                {subtitle}
+            </div>
+            <div>
+                <h2 class="font-bold leading-[1.2] tracking-[-0.32px] max-w-[52%] mb-2 lg:text-[32px] lg:tracking-[-0.64px] lg:max-w-[488px]">
+                    {title}
+                </h2>
+                <ContentManager
+                    items={description.nodes}
+                    className="text-appGray-200 text-xs font-medium leading-[1.3] tracking-[-0.24px] max-w-[66%] mb-8 lg:text-base lg:leading-[1.3] lg:tracking-[-0.32px] lg:max-w-[488px]"
+                    client:load
+                />
+                <a
+                    href="/portfolio"
+                    class="flex items-center gap-1 text-appGray-300 transition-colors duration-300 hover:text-appText"
+                >
+                    <span class="font-Inter text-xs font-medium leading-none tracking-[-0.24px] lg:text-base lg:leading-none lg:tracking-[-0.32px]">
+                        See all portfolios
+                    </span>
+                    <div class="w-4 h-4" set:html={SvgoArrow} />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="lg:container">
+        <Swiper options={{
+                slidesPerView: 1.6,
+                spaceBetween: 24,
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2.1,
+                    },
+                }
+            }}
+            class="!overflow-visible !px-5 lg:!pl-[278px]"
+        >
+            <SwiperWrapper>
+                {portfolio_items.map(item => (
+                    <SwiperSlide>
+                        <a
+                            href={item.url}
+                            target="_blank"
+                            class="flex flex-col gap-2.5 lg:gap-6"
+                        >
+                            <BCMSImage
+                                media={item.project_image}
+                                clientConfig={bcmsConfig}
+                                className="size-full object-cover rounded overflow-hidden lg:rounded-2xl"
+                                style={{
+                                    boxShadow:
+                                        '0px 0px 0px 1px #EDEDED, 0px 1.5px 1px 0px rgba(15, 18, 35, 0.14)',
+                                }}
+                                client:load
+                            />
+                            <h3 class="text-appGray-300 font-Inter text-xs font-semibold leading-none tracking-[-0.24px] lg:text-base lg:leading-none lg:tracking-[-0.32px]">
+                                {item.subtitle}
+                            </h3>
+                        </a>
+                    </SwiperSlide>
+                ))}
+            </SwiperWrapper>
+        </Swiper>
+    </div>
+</section>

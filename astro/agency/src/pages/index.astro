@@ -9,10 +9,9 @@ import type {
 import Layout from '../layouts/Layout.astro';
 import HomeHero from '../components/home-page/Hero';
 import HomeAbout from '../components/home-page/About';
-import 'swiper/css';
 import ContactBlock from '../components/ContactBlock';
 import HomeTeam from '../components/home-page/Team';
-import HomeCapabilities from '../components/home-page/Capabilities';
+import HomeCapabilities from '../components/home-page/Capabilities.astro';
 import HomeServices from '../components/home-page/Services';
 import { bcmsPrivate } from '../bcms-private';
 import { bcmsPublic } from '../bcms-public';
@@ -56,7 +55,6 @@ const homePageMeta = homePageEntry.meta.en as HomePageEntryMetaItem;
                 (e) => e.meta.en as PortfolioEntryMetaItem,
             )}
             bcmsConfig={bcmsPublic.getConfig()}
-            client:load
         />
         <HomeTeam
             title={homePageMeta.team_title}
