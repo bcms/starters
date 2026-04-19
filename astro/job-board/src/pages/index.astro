@@ -11,7 +11,7 @@ import Layout from '../layouts/Layout.astro';
 import HomeHero from '../components/home-page/Hero';
 import HomeJobs from '../components/home-page/Jobs';
 import HomeAbout from '../components/home-page/About';
-import Testimonials from '../components/home-page/Testimonials';
+import Testimonials from '../components/home-page/Testimonials.astro';
 import { toJobLite } from '../utils/job';
 import { bcmsPrivate } from '../bcms-private';
 import { bcmsPublic } from '../bcms-public';
@@ -61,7 +61,6 @@ const bcmsConfig = bcmsPublic.getConfig();
         <Testimonials
             testimonials={testimonialEntriesMeta}
             bcmsConfig={bcmsConfig}
-            client:load
         />
     </div>
 </Layout>
