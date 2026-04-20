@@ -1,0 +1,64 @@
+---
+import { Swiper, SwiperWrapper, SwiperSlide, } from 'astro-swiper';
+import type { AstroSwiperOptions } from 'astro-swiper';
+import { BCMSImage } from '@thebcms/components-react';
+import type { TestimonialEntryMetaItem } from '../../../bcms/types/ts';
+import type { ClientConfig } from '@thebcms/client';
+import ContentManager from '../ContentManager';
+
+interface Props {
+    testimonials: TestimonialEntryMetaItem[];
+    bcmsConfig: ClientConfig;
+}
+const { testimonials, bcmsConfig } = Astro.props;
+const sliderOptions: AstroSwiperOptions = {
+    slidesPerView: 1.1,
+    watchOverflow: true,
+    grabCursor: true,
+    spaceBetween: 16,
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+        1280: {
+            slidesPerView: 4,
+            spaceBetween: 32,
+        },
+    },
+};
+
+---
+
+<section class="pt-12 pb-14 md:py-20 lg:py-[120px]">
+    <div class="container">
+        <Swiper options={sliderOptions}>
+            <SwiperWrapper>
+                {testimonials.map((slide) => (
+                    <SwiperSlide
+                        class="!h-auto flex flex-col bg-appLight rounded-lg p-5 border border-[#CCCAC6] xl:p-8"
+                    >
+                        <div class="flex items-center mb-[18px]">
+                            <BCMSImage
+                                media={slide.author.avatar_image}
+                                clientConfig={bcmsConfig}
+                                className="w-8 h-8 object-cover rounded-full mr-[14px] xl:w-10 xl:h-10"
+                                client:load
+                            />
+                            <span class="text-sm leading-none font-semibold font-PlayfairDisplay tracking-[-0.41px] xl:text-base xl:leading-none">
+                                {slide.author.name}
+                            </span>
+                        </div>
+                        <ContentManager
+                            items={slide.review.nodes}
+                            className="text-sm leading-[1.45] font-medium text-appGray-600 tracking-[-0.41px] xl:text-base xl:leading-[1.45]"
+                            client:load
+                        />
+                    </SwiperSlide>
+                ))}
+            </SwiperWrapper>
+        </Swiper>
+    </div>
+</section>
