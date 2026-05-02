@@ -23,7 +23,7 @@ import Layout from '../layouts/Layout.astro';
 import HomeHero from '../components/home-page/Hero';
 import HomeServices from '../components/home-page/Services';
 import HomeAbout from '../components/home-page/About';
-import HomePortfolio from '../components/home-page/Portfolio';
+import HomePortfolio from '../components/home-page/Portfolio.astro';
 import HomeTestimonials from '../components/home-page/Testimonials';
 import { bcmsPrivate } from '../bcms-private';
 import { bcmsPublic } from '../bcms-public';
@@ -101,7 +101,6 @@ const bcmsConfig = bcmsPublic.getConfig();
                 (e) => e.meta.en as PortfolioEntryMetaItem,
             )}
             bcmsConfig={bcmsConfig}
-            client:load
         />
         <HomeTestimonials
             title={testimonialsPageMeta.title}
